@@ -1,0 +1,78 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() &&
+             request.auth.token.email != null &&
+             exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower()));
+    }
+
+    // ── Tarifler ────────────────────────────────────────────────────────────────
+    match /recipes/{recipeId} {
+      allow read: if true;
+      allow create: if isSignedIn();
+      allow update: if isSignedIn() &&
+                       (isAdmin() ||
+                        request.auth.uid == resource.data.authorId ||
+                        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount']));
+      allow delete: if isAdmin();
+
+      // Beğeniler — kullanıcı sadece kendi beğeni dokümanını okur/yazar
+      match /likes/{userId} {
+        allow read, write: if isSignedIn() && request.auth.uid == userId;
+      }
+
+      // Yorumlar — herkes okur, giriş yapan yazar
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if isSignedIn();
+        allow update, delete: if isSignedIn() &&
+                                  (isAdmin() || request.auth.uid == resource.data.userId);
+      }
+    }
+
+    // ── Malzemeler ───────────────────────────────────────────────────────────────
+    match /ingredients/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // ── Meta (seed kontrolü) — giriş yapan yazabilir ─────────────────────────────
+    match /_meta/{docId} {
+      allow read: if true;
+      allow write: if isSignedIn();
+    }
+
+    // ── Kullanıcı profilleri ─────────────────────────────────────────────────────
+    match /users/{userId} {
+      allow read, write: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // ── Bekleyen tarifler ────────────────────────────────────────────────────────
+    // Giriş yapan kullanıcı kendi başvurusunu oluşturabilir ve okuyabilir.
+    // Admin tüm bekleyenleri okuyabilir ve status güncelleyebilir.
+    match /pending_recipes/{docId} {
+      allow read: if isSignedIn() &&
+                     (request.auth.uid == resource.data.authorId || isAdmin());
+      allow create: if isSignedIn() && !request.auth.token.firebase.sign_in_provider.matches('anonymous');
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // ── Admin koleksiyonu ────────────────────────────────────────────────────────
+    // Giriş yapan herkes okuyabilir (kendi admin durumunu kontrol etmek için).
+    // İlk admin seed'i için: koleksiyon boşsa anonim kullanıcı da yazabilir.
+    match /admins/{email} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin() ||
+                      (isSignedIn() &&
+                       !exists(/databases/$(database)/documents/admins/$(email)));
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": ["node_modules", ".git"]
+    }
+  ],
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "kolaytarifler-37c45",
+          "appId": "1:129219992136:android:699603a851034e702c967d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "kolaytarifler-37c45",
+          "configurations": {
+            "android": "1:129219992136:android:699603a851034e702c967d",
+            "ios": "1:129219992136:ios:f77105392c98d7c92c967d",
+            "macos": "1:129219992136:ios:f77105392c98d7c92c967d",
+            "web": "1:129219992136:web:4a79ee488a3fc8792c967d",
+            "windows": "1:129219992136:web:35722b35b5463a1b2c967d"
+          }
+        }
+      }
+    }
+  }
+}
