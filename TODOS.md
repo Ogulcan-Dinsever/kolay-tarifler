@@ -32,12 +32,15 @@
   - Context: `/qa` code-audit session, 2026-07-05. See `~/.gstack/projects/nepisirsem/ogulc-main-test-outcome-20260705.md` (ISSUE-003, 004, 005).
   - Depends on: None — independent, but high-value given what was just found.
 
-- [ ] **Manually verify "Kendi Versiyonumu Paylaş" and admin "Malzeme Ekle" now actually work** — both were likely broken end-to-end (permission-denied on photo upload) before this session's `storage.rules` fix added their missing paths. Not confirmed working live (browser rendering blocked in dev sandbox — see CanvasKit note in the QA report).
-  - Why: The rules fix should have unblocked both, but the underlying upload code itself was never verified live — only the rules gap was found and closed.
-  - Pros: Confirms two possibly long-broken features are genuinely fixed, not masking a second bug.
-  - Cons: None — this is just "go tap the button and see."
-  - Context: `/qa` code-audit session, 2026-07-05, ISSUE-005 (5b/5c).
-  - Depends on: A device or emulator/browser where Flutter actually renders (this dev sandbox's headless browser can't paint CanvasKit).
+- [x] **Manually verify "Kendi Versiyonumu Paylaş" now actually works** — **VERIFIED on Android emulator (Pixel 10), 2026-07-05.** Registered a test account (`qatest_20260705` / `qatest.kolaytarifler.20260705@gmail.com`), submitted a community recipe version with a photo on "Düğün Çorbası", and it appeared correctly in the Topluluk tab with the photo, description, author name, and duration all correct. Confirms the `storage.rules` fix actually unblocked the feature — it was genuinely broken before. **Test data left live for the founder to clean up themselves** (their choice): the test account and the "QA test versiyonu" community recipe on Düğün Çorbası.
+  - admin "Malzeme Ekle" (ingredient photo upload) — still NOT verified live, only the rules gap was closed. Needs a separate admin-account test.
+
+- [ ] **Ingredient thumbnail images look mismatched — found incidentally during emulator testing** — on "Düğün Çorbası"'s ingredient list, several ingredient photos don't match their names: "Su" (water) showed a potato photo, "Yumurta sarısı" (egg yolk) showed a watermelon photo, "Yoğurt" showed an orange photo, "Limon suyu" showed a grain/wheat photo, "Tereyağı" (butter) showed what looked like a coffee machine. Only "Kuzu eti" showed an unrelated stock photo of two people.
+  - Why: Not yet root-caused — could be seed data (`assets/data/turk_malzemeleri.json`), a Firestore `ingredients` collection data issue, or an id-matching bug in the ingredient thumbnail lookup.
+  - Pros: Fixing this improves trust/polish on every screen that shows ingredient thumbnails (recipe detail, shopping list, ingredient picker).
+  - Cons: Scope/root cause not investigated this session — found while testing something else, not chased down.
+  - Context: Found live on Android emulator, 2026-07-05, while testing "Kendi Versiyonumu Paylaş".
+  - Depends on: Needs its own investigation pass to find the root cause before fixing.
 
 ## Security fixes shipped (2026-07-05, /qa code-audit)
 
