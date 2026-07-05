@@ -67,11 +67,14 @@ service cloud.firestore {
 
     // ── Admin koleksiyonu ────────────────────────────────────────────────────────
     // Giriş yapan herkes okuyabilir (kendi admin durumunu kontrol etmek için).
-    // İlk admin seed'i için: koleksiyon boşsa anonim kullanıcı da yazabilir.
+    // İlk admin seed'i: SADECE kurucunun e-postası için, o belge henüz yoksa,
+    // giriş yapan herhangi bir kullanıcı yazabilir (bootstrap). Başka hiçbir
+    // e-posta için bu istisna geçerli değil — yoksa herkes kendini admin yapabilir.
     match /admins/{email} {
       allow read: if isSignedIn();
       allow write: if isAdmin() ||
                       (isSignedIn() &&
+                       email == 'ogulcandnsvr@gmail.com' &&
                        !exists(/databases/$(database)/documents/admins/$(email)));
     }
   }
