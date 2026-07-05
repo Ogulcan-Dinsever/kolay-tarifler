@@ -93,12 +93,18 @@ class _CreateSubRecipeScreenState
       return;
     }
 
-    // En az bir malzeme seçilmiş olmalı
-    final validRows =
-        _ingredientRows.where((r) => r.ingredientId != null).toList();
-    if (validRows.isEmpty) {
+    // Tüm satırlar tamamlanmış olmalı — bir satır malzeme seçilmeden veya
+    // miktar girilmeden bırakılırsa artık sessizce atılmıyor, kullanıcı uyarılıyor.
+    if (_ingredientRows.isEmpty ||
+        _ingredientRows.any((r) => r.ingredientId == null)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('En az bir malzeme seçin')),
+        const SnackBar(content: Text('Tüm malzemeleri listeden seç')),
+      );
+      return;
+    }
+    if (_ingredientRows.any((r) => r.amountCtrl.text.trim().isEmpty)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Tüm malzemelerin miktarını gir')),
       );
       return;
     }
@@ -109,8 +115,8 @@ class _CreateSubRecipeScreenState
       final imageUrls = await _uploadImages(user.uid);
 
       final ingredients = <RecipeIngredient>[];
-      for (var i = 0; i < validRows.length; i++) {
-        final row = validRows[i];
+      for (var i = 0; i < _ingredientRows.length; i++) {
+        final row = _ingredientRows[i];
         ingredients.add(RecipeIngredient(
           ingredientId: row.ingredientId!,
           name: row.ingredientName!,
