@@ -3,10 +3,29 @@ rules_version = '2';
 service firebase.storage {
   match /b/{bucket}/o {
 
-    // Tarif görselleri — herkes okur, admin yazar
+    function isAdmin() {
+      return request.auth != null &&
+             request.auth.token.email != null &&
+             firestore.exists(/databases/(default)/documents/admins/$(request.auth.token.email.lower()));
+    }
+
+    // Resmi tarif görselleri — herkes okur, sadece admin yazar
     match /recipes/{allPaths=**} {
       allow read: if true;
-      allow write: if request.auth != null && request.auth.token.email != null;
+      allow write: if isAdmin();
+    }
+
+    // Topluluk tarif versiyonu görselleri (create_sub_recipe_screen.dart) —
+    // herkes okur, sadece kendi klasörüne kullanıcı yazar
+    match /recipe_images/{userId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Malzeme görselleri (admin panel) — herkes okur, sadece admin yazar
+    match /ingredients/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
     }
 
     // Bekleyen tarif görselleri — kullanıcı kendi klasörüne yazar
