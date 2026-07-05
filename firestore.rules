@@ -72,10 +72,13 @@ service cloud.firestore {
     // e-posta için bu istisna geçerli değil — yoksa herkes kendini admin yapabilir.
     match /admins/{email} {
       allow read: if isSignedIn();
-      allow write: if isAdmin() ||
+      allow create, update: if isAdmin() ||
                       (isSignedIn() &&
                        email == 'ogulcandnsvr@gmail.com' &&
                        !exists(/databases/$(database)/documents/admins/$(email)));
+      // Kurucunun admin belgesi hiçbir admin tarafından (kendisi dahil) silinemez —
+      // hesap kurtarma yolu olmadan yanlışlıkla ya da kötü niyetle kilitlenmeyi önler.
+      allow delete: if isAdmin() && email != 'ogulcandnsvr@gmail.com';
     }
   }
 }

@@ -57,7 +57,11 @@ class AdminService {
   }
 
   Future<void> removeAdmin(String email) async {
-    await _db.collection('admins').doc(email.toLowerCase()).delete();
+    final normalized = email.toLowerCase();
+    if (normalized == initialAdminEmail) {
+      throw Exception('Süper admin kaldırılamaz');
+    }
+    await _db.collection('admins').doc(normalized).delete();
   }
 
   // ── Resim yükleme ───────────────────────────────────────────────────────────
