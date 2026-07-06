@@ -15451,5 +15451,2414 @@
       "Ege"
     ],
     "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "İnce spagetti makarnanın yumurta, pastırma ve parmesan peyniriyle harmanlandığı krema kullanılmayan Roma usulü klasik.",
+    "duration": "25 dk",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🥓",
+        "ingredientId": "ing_169",
+        "name": "Pastırma"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Spaghetti Carbonara",
+    "officialLikeCount": 38200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Makarnayı tuzlu kaynar suda paketindeki süreye göre haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Pastırmayı küçük parçalara kesip tavada kendi yağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları parmesanla çırpın, bol karabiber ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Haşlanan makarnayı süzüp bir miktar haşlama suyunu ayırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak makarnayı kavrulmuş pastırmayla karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Ocağı kapatıp yumurta karışımını hızlıca ekleyip karıştırın."
+      },
+      {
+        "order": 7,
+        "text": "Gerekirse haşlama suyuyla kıvamını ayarlayın."
+      },
+      {
+        "order": 8,
+        "text": "Ekstra parmesan ve karabiberle servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Yumurtalı",
+      "Klasik"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Dana kıymanın domates, havuç, kereviz ve kırmızı şarapla saatlerce pişirildiği zengin Bolonya sosu.",
+    "duration": "2 saat",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 sap",
+        "emoji": "🥬",
+        "ingredientId": "ing_168",
+        "name": "Kereviz"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍷",
+        "ingredientId": "ing_181",
+        "name": "Kırmızı Şarap"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Spaghetti Bolognese",
+    "officialLikeCount": 45600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğan, havuç ve kereviyi ince doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Zeytinyağında sebzeleri yumuşayana kadar kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Kıymayı ekleyip rengi dönene kadar kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Kırmızı şarabı ekleyip alkolü uçurun."
+      },
+      {
+        "order": 5,
+        "text": "Doğranmış domatesleri ilave edin."
+      },
+      {
+        "order": 6,
+        "text": "Tuz ve karabiberi ekleyip kısık ateşte 1.5 saat pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Makarnayı ayrıca haşlayıp süzün."
+      },
+      {
+        "order": 8,
+        "text": "Sosu makarnayla harmanlayıp parmesanla servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Etli",
+      "Klasik"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Katman katman dizilen lazanya makarnasının kıymalı sos, beşamel ve mozzarellayla fırınlandığı doyurucu İtalyan yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍝",
+    "imageUrls": [
+      "https://images.unsplash.com/photo-1709429790175-b02bb1b19207"
+    ],
+    "ingredients": [
+      {
+        "amount": "12 yaprak",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_167",
+        "name": "Mozzarella"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Lasagna",
+    "officialLikeCount": 33400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı kavurup kıymayı ekleyin."
+      },
+      {
+        "order": 2,
+        "text": "Domatesleri ilave edip kıymalı sosu pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Tereyağını eritip unu kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Sütü azar azar ekleyerek beşamel sos hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Fırın kabına sırasıyla makarna, kıymalı sos ve beşamel katmanları serin."
+      },
+      {
+        "order": 6,
+        "text": "Bu işlemi tekrarlayıp en üste mozzarella serpin."
+      },
+      {
+        "order": 7,
+        "text": "200 derece fırında 35-40 dakika pişirin."
+      },
+      {
+        "order": 8,
+        "text": "Dilimleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Fırın",
+      "Etli"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "İnce hamurun domates sosu, mozzarella ve fesleğenle kaplanıp fırınlandığı klasik Napoli pizzası.",
+    "duration": "1 saat",
+    "emoji": "🍕",
+    "imageUrls": [
+      "https://images.unsplash.com/photo-1664309641932-0e03e0771b97"
+    ],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍞",
+        "ingredientId": "ing_68",
+        "name": "Maya"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_167",
+        "name": "Mozzarella"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Margherita Pizza",
+    "officialLikeCount": 58900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, maya, su ve tuzla yumuşak bir hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru 1 saat mayaya bırakın."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ezip zeytinyağıyla karıştırarak sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru yuvarlak açın."
+      },
+      {
+        "order": 5,
+        "text": "Domates sosunu hamurun üzerine yayın."
+      },
+      {
+        "order": 6,
+        "text": "Mozzarellayı dilimleyip üzerine dizin."
+      },
+      {
+        "order": 7,
+        "text": "250 derece fırında kenarları kızarana kadar 10-12 dakika pişirin."
+      },
+      {
+        "order": 8,
+        "text": "Fesleğen yapraklarıyla süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Pizza",
+      "İtalyan",
+      "Mozzarella",
+      "Klasik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Safranla tatlandırılan pirincin tereyağı ve parmesanla kremsi kıvamda pişirildiği Milano usulü risotto.",
+    "duration": "40 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌼",
+        "ingredientId": "ing_179",
+        "name": "Safran"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍷",
+        "ingredientId": "ing_11",
+        "name": "Beyaz şarap"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_176",
+        "name": "Sebze Suyu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Risotto alla Milanese",
+    "officialLikeCount": 15200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı tereyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Pirinci ekleyip yağla kaplanana kadar karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Beyaz şarabı ekleyip uçurun."
+      },
+      {
+        "order": 4,
+        "text": "Safranı sıcak sebze suyunda eritin."
+      },
+      {
+        "order": 5,
+        "text": "Sebze suyunu azar azar ekleyerek sürekli karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Pirinç al dente olana kadar bu işlemi tekrarlayın."
+      },
+      {
+        "order": 7,
+        "text": "Tereyağı ve parmesanı ekleyip karıştırın."
+      },
+      {
+        "order": 8,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "İtalyan",
+      "Safranlı",
+      "Kremsi"
+    ],
+    "type": "Pilav"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Mantarın pirinçle birlikte yavaşça kavrularak kremsi kıvamda pişirildiği İtalyan risotto çeşidi.",
+    "duration": "40 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "250 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍷",
+        "ingredientId": "ing_11",
+        "name": "Beyaz şarap"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_176",
+        "name": "Sebze Suyu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Risotto ai Funghi",
+    "officialLikeCount": 12800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mantarları dilimleyip tereyağında kavurup ayırın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı aynı tencerede kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci ekleyip karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Beyaz şarabı ekleyip uçurun."
+      },
+      {
+        "order": 5,
+        "text": "Sebze suyunu azar azar ekleyerek sürekli karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Mantarları geri ekleyin."
+      },
+      {
+        "order": 7,
+        "text": "Parmesan ve tuzu ekleyip karıştırın."
+      },
+      {
+        "order": 8,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "İtalyan",
+      "Mantarlı",
+      "Kremsi"
+    ],
+    "type": "Pilav"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kuru fasulye, sebze ve küçük makarnanın domates soslu suyla pişirildiği doyurucu İtalyan çorbası.",
+    "duration": "1 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 sap",
+        "emoji": "🥬",
+        "ingredientId": "ing_168",
+        "name": "Kereviz"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "6 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_176",
+        "name": "Sebze Suyu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Minestrone",
+    "officialLikeCount": 9700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğan, havuç ve kereviyi zeytinyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Doğranmış domatesleri ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Haşlanmış kuru fasulyeyi ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Sebze suyunu ekleyip kaynatın."
+      },
+      {
+        "order": 5,
+        "text": "Kısık ateşte 25 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Makarnayı ekleyip 10 dakika daha pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Tuzunu ekleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "İtalyan",
+      "Sebzeli",
+      "Doyurucu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kahveye batırılmış kedi dili bisküvilerin mascarpone kremasıyla katmanlanıp kakao serpildiği ünlü İtalyan tatlısı.",
+    "duration": "30 dk",
+    "emoji": "🍰",
+    "imageUrls": [
+      "https://images.unsplash.com/photo-1766232333746-b0a2697d6d0d"
+    ],
+    "ingredients": [
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_171",
+        "name": "Mascarpone"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "☕",
+        "ingredientId": "ing_172",
+        "name": "Kahve"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍫",
+        "ingredientId": "ing_170",
+        "name": "Kakao"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍪",
+        "ingredientId": "ing_183",
+        "name": "Kedi Dili Bisküvi"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_117",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tiramisu",
+    "officialLikeCount": 52300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurta sarılarını şekerle krema kıvamına gelene kadar çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Mascarponeyi ekleyip pürüzsüz hale getirin."
+      },
+      {
+        "order": 3,
+        "text": "Yumurta aklarını ayrı çırpıp karışıma katın."
+      },
+      {
+        "order": 4,
+        "text": "Kedi dili bisküvileri soğuk kahveye hızlıca batırın."
+      },
+      {
+        "order": 5,
+        "text": "Bir kaba bisküvileri dizin."
+      },
+      {
+        "order": 6,
+        "text": "Üzerine mascarpone kremasını yayın."
+      },
+      {
+        "order": 7,
+        "text": "Bu katmanları tekrarlayın."
+      },
+      {
+        "order": 8,
+        "text": "En üste kakao eleyip buzdolabında 4 saat dinlendirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İtalyan",
+      "Kahveli",
+      "Kremalı"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kremanın jelatinle dondurulup vanilyayla tatlandırıldığı hafif ve pürüzsüz İtalyan sütlü tatlısı.",
+    "duration": "20 dk",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_117",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 paket",
+        "emoji": "🍮",
+        "ingredientId": "ing_173",
+        "name": "Jelatin"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌸",
+        "ingredientId": "ing_120",
+        "name": "Vanilya"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Panna Cotta",
+    "officialLikeCount": 14600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Jelatini soğuk suda bekletip yumuşatın."
+      },
+      {
+        "order": 2,
+        "text": "Kremayı şeker ve vanilyayla ısıtın, kaynatmayın."
+      },
+      {
+        "order": 3,
+        "text": "Yumuşamış jelatini sıcak kremada eritin."
+      },
+      {
+        "order": 4,
+        "text": "Karışımı kalıplara paylaştırın."
+      },
+      {
+        "order": 5,
+        "text": "Buzdolabında en az 4 saat dondurun."
+      },
+      {
+        "order": 6,
+        "text": "Kalıptan çıkarıp servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İtalyan",
+      "Kremalı",
+      "Hafif"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kızarmış ekmek dilimlerinin domates, sarımsak ve fesleğenle üzerine yayılıp servis edildiği İtalyan mezesi.",
+    "duration": "15 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bruschetta",
+    "officialLikeCount": 11400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ekmeği dilimleyip kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Sıcak ekmeğin üzerini sarımsakla ovun."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri küçük küpler halinde doğrayın."
+      },
+      {
+        "order": 4,
+        "text": "Domatesleri zeytinyağı ve tuzla karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Karışımı ekmek dilimlerinin üzerine koyun."
+      },
+      {
+        "order": 6,
+        "text": "Fesleğen yapraklarıyla süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "İtalyan",
+      "Domates",
+      "Pratik"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Domates, mozzarella ve fesleğenin nöbetleşe dizilip zeytinyağıyla servis edildiği taze İtalyan salatası.",
+    "duration": "10 dk",
+    "emoji": "🥗",
+    "imageUrls": [
+      "https://images.unsplash.com/photo-1769458313860-3c8db667d990"
+    ],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_167",
+        "name": "Mozzarella"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Caprese Salatası",
+    "officialLikeCount": 19800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Domates ve mozzarellayı eşit kalınlıkta dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Dilimleri servis tabağına nöbetleşe dizin."
+      },
+      {
+        "order": 3,
+        "text": "Aralarına fesleğen yapraklarını yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Üzerine zeytinyağı gezdirin."
+      },
+      {
+        "order": 5,
+        "text": "Tuzunu serpip servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "İtalyan",
+      "Mozzarella",
+      "Taze"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Dana inciğin sebzeler ve beyaz şarapla saatlerce kısık ateşte pişirildiği Milano usulü klasik.",
+    "duration": "2 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🍖",
+        "ingredientId": "ing_180",
+        "name": "Dana İncik"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 sap",
+        "emoji": "🥬",
+        "ingredientId": "ing_168",
+        "name": "Kereviz"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍷",
+        "ingredientId": "ing_11",
+        "name": "Beyaz şarap"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Osso Buco",
+    "officialLikeCount": 8300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Dana inciği tuz ve karabiberle tatlandırın."
+      },
+      {
+        "order": 2,
+        "text": "Zeytinyağında her tarafını mühürleyin."
+      },
+      {
+        "order": 3,
+        "text": "Doğranmış soğan, havuç ve kereviyi ekleyip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Beyaz şarabı ekleyip uçurun."
+      },
+      {
+        "order": 5,
+        "text": "Domatesleri ilave edin."
+      },
+      {
+        "order": 6,
+        "text": "Kapağı kapatıp kısık ateşte 2 saat pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Et kemikten ayrılacak kıvama gelince servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "İtalyan",
+      "Dana",
+      "Yavaş Pişen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kızarmış patlıcan dilimlerinin domates sosu ve mozzarellayla katmanlanıp fırınlandığı İtalyan güveci.",
+    "duration": "1 saat",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_167",
+        "name": "Mozzarella"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Parmigiana di Melanzane",
+    "officialLikeCount": 10500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patlıcanları dilimleyip tuzlu suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Dilimleri zeytinyağında kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ezip sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Fırın kabına patlıcan, domates sosu ve mozzarellayı katman katman dizin."
+      },
+      {
+        "order": 5,
+        "text": "Üzerine parmesan serpin."
+      },
+      {
+        "order": 6,
+        "text": "200 derece fırında 30 dakika pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Fesleğenle süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "İtalyan",
+      "Patlıcan",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Fettuccine makarnanın tereyağı, krema ve bol parmesanla hazırlanan zengin sosla karıştırıldığı klasik.",
+    "duration": "20 dk",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fettuccine Alfredo",
+    "officialLikeCount": 22700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Makarnayı tuzlu suda haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Tereyağını tavada eritin."
+      },
+      {
+        "order": 3,
+        "text": "Kremayı ekleyip ısıtın."
+      },
+      {
+        "order": 4,
+        "text": "Parmesanı azar azar ekleyerek eritin."
+      },
+      {
+        "order": 5,
+        "text": "Haşlanmış makarnayı sosla karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Karabiber ekleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Kremalı",
+      "Peynirli"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Patates, un ve yumurtadan yapılan küçük hamur toplarının haşlanıp sosla servis edildiği İtalyan hamur işi.",
+    "duration": "1 saat",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gnocchi",
+    "officialLikeCount": 13900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayıp püre haline getirin."
+      },
+      {
+        "order": 2,
+        "text": "Yumurta ve tuzu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Unu azar azar katarak yumuşak bir hamur yoğurun."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru ince ruloya getirip küçük parçalara kesin."
+      },
+      {
+        "order": 5,
+        "text": "Parçaları çatalla hafifçe bastırıp şekil verin."
+      },
+      {
+        "order": 6,
+        "text": "Kaynar tuzlu suda su yüzüne çıkana kadar haşlayın."
+      },
+      {
+        "order": 7,
+        "text": "Süzüp parmesanla servis edin."
+      }
+    ],
+    "tags": [
+      "Hamur işi",
+      "İtalyan",
+      "Patates",
+      "Klasik"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "İnce hamurun ıspanaklı ricotta harcıyla doldurulup kapatıldığı, tereyağlı sosla servis edilen İtalyan mantısı.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_178",
+        "name": "Ricotta"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ravioli",
+    "officialLikeCount": 10200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve yumurtayla sert bir hamur yoğurun, dinlendirin."
+      },
+      {
+        "order": 2,
+        "text": "Ispanağı haşlayıp süzün ve doğrayın."
+      },
+      {
+        "order": 3,
+        "text": "Ricotta, ıspanak ve parmesanı karıştırıp harç hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru ince açın."
+      },
+      {
+        "order": 5,
+        "text": "Harçtan küçük parçalar koyup hamuru katlayarak kapatın."
+      },
+      {
+        "order": 6,
+        "text": "Kaynar suda 4-5 dakika haşlayın."
+      },
+      {
+        "order": 7,
+        "text": "Eritilmiş tereyağıyla servis edin."
+      }
+    ],
+    "tags": [
+      "Hamur işi",
+      "İtalyan",
+      "Peynirli",
+      "Ispanaklı"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Fesleğen, çam fıstığı, sarımsak ve parmesanın ezilerek hazırlandığı yeşil pestoyla karıştırılan makarna.",
+    "duration": "20 dk",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      },
+      {
+        "amount": "1/3 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_133",
+        "name": "Çam fıstığı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pasta al Pesto",
+    "officialLikeCount": 16400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Makarnayı tuzlu suda haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Fesleğen, çam fıstığı ve sarımsağı robotta çekin."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağını azar azar ekleyerek pesto sosunu hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Parmesanı ekleyip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Haşlanan makarnayı süzün."
+      },
+      {
+        "order": 6,
+        "text": "Makarnayı pesto sosuyla harmanlayın."
+      },
+      {
+        "order": 7,
+        "text": "Ekstra parmesanla servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Fesleğenli",
+      "Pratik"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Haşlanmış dana etinin soğutulup ton balıklı kapari sosuyla ince dilimler halinde servis edildiği Piyemonte mezesi.",
+    "duration": "1 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_145",
+        "name": "Dana Bonfile"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_175",
+        "name": "Ton Balığı"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_34",
+        "name": "Kapari"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Vitello Tonnato",
+    "officialLikeCount": 4800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Dana etini tuzlu suda haşlayıp soğutun."
+      },
+      {
+        "order": 2,
+        "text": "Haşlanmış yumurta, ton balığı ve kaparileri robotta çekin."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu ekleyerek pürüzsüz bir sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Soğuyan eti ince ince dilimleyin."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleri servis tabağına dizin."
+      },
+      {
+        "order": 6,
+        "text": "Ton balıklı sosu üzerine gezdirin."
+      },
+      {
+        "order": 7,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "İtalyan",
+      "Soğuk",
+      "Meze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "İnce dana etinin pastırma ve adaçayıyla sarılıp tereyağında pişirildiği Roma usulü lezzetli yemek.",
+    "duration": "30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_145",
+        "name": "Dana Bonfile"
+      },
+      {
+        "amount": "8 dilim",
+        "emoji": "🥓",
+        "ingredientId": "ing_169",
+        "name": "Pastırma"
+      },
+      {
+        "amount": "8 yaprak",
+        "emoji": "🌿",
+        "ingredientId": "ing_185",
+        "name": "Adaçayı"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍷",
+        "ingredientId": "ing_11",
+        "name": "Beyaz şarap"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Saltimbocca alla Romana",
+    "officialLikeCount": 5600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Dana etini ince dilimleyip düzleştirin."
+      },
+      {
+        "order": 2,
+        "text": "Her dilime bir yaprak adaçayı koyun."
+      },
+      {
+        "order": 3,
+        "text": "Üzerine pastırma dilimini sarın."
+      },
+      {
+        "order": 4,
+        "text": "Tereyağında pastırmalı taraftan başlayarak pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Beyaz şarabı ekleyip kısaca kaynatın."
+      },
+      {
+        "order": 6,
+        "text": "Sosu etin üzerine gezdirerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "İtalyan",
+      "Roma",
+      "Şaraplı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Sade makarnanın bol karabiber ve pecorino/parmesan peyniriyle karıştırıldığı minimalist Roma pastası.",
+    "duration": "15 dk",
+    "emoji": "🍝",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Cacio e Pepe",
+    "officialLikeCount": 17300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Makarnayı az tuzlu suda haşlayın, haşlama suyunu ayırın."
+      },
+      {
+        "order": 2,
+        "text": "Karabiberi kuru tavada kısaca kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Parmesana birkaç kaşık haşlama suyu ekleyerek krema kıvamına getirin."
+      },
+      {
+        "order": 4,
+        "text": "Haşlanan makarnayı karabiberli tavaya alın."
+      },
+      {
+        "order": 5,
+        "text": "Parmesan kremasını ekleyip hızlıca karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Gerekirse haşlama suyuyla kıvamını ayarlayın."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Makarna",
+      "İtalyan",
+      "Peynirli",
+      "Minimalist"
+    ],
+    "type": "Makarna"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Pişmiş pirincin mozzarella ile doldurulup galeta ununa bulanarak kızartıldığı Sicilya usulü atıştırmalık.",
+    "duration": "1 saat",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_167",
+        "name": "Mozzarella"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍞",
+        "ingredientId": "ing_162",
+        "name": "Ekmek İçi"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🧀",
+        "ingredientId": "ing_166",
+        "name": "Parmesan"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Arancini",
+    "officialLikeCount": 9100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp parmesanla karıştırın, soğutun."
+      },
+      {
+        "order": 2,
+        "text": "Avuç içi büyüklüğünde pirinç toplarını yassılatın."
+      },
+      {
+        "order": 3,
+        "text": "Ortasına mozzarella koyup yuvarlayın."
+      },
+      {
+        "order": 4,
+        "text": "Sırasıyla una, çırpılmış yumurtaya ve galeta ununa bulayın."
+      },
+      {
+        "order": 5,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 6,
+        "text": "Kağıt havluda fazla yağını alın."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "İtalyan",
+      "Pirinçli",
+      "Kızartma"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Zeytinyağı ve biberiyeyle tatlandırılan, gözenekli dokusuyla bilinen fırınlanmış İtalyan ekmeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍞",
+        "ingredientId": "ing_68",
+        "name": "Maya"
+      },
+      {
+        "amount": "5 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_186",
+        "name": "Biberiye"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Focaccia",
+    "officialLikeCount": 13600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, maya, su, tuz ve 2 yemek kaşığı zeytinyağıyla hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru 1 saat mayaya bırakın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru yağlanmış tepsiye yayın."
+      },
+      {
+        "order": 4,
+        "text": "Parmak uçlarıyla üzerine çukurlar açın."
+      },
+      {
+        "order": 5,
+        "text": "Kalan zeytinyağını gezdirip biberiye serpin."
+      },
+      {
+        "order": 6,
+        "text": "200 derece fırında altın rengi olana kadar 25 dakika pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Hamur İşi",
+      "İtalyan",
+      "Zeytinyağlı",
+      "Fırın"
+    ],
+    "type": "Hamur İşi"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Bayat ekmeğin domates, salatalık ve soğanla birlikte balsamik sirkeyle harmanlandığı Toskana salatası.",
+    "duration": "20 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_92",
+        "name": "Salatalık"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_182",
+        "name": "Balsamik Sirke"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_165",
+        "name": "Fesleğen"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Panzanella",
+    "officialLikeCount": 6900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bayat ekmeği küp küp doğrayıp hafifçe kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Domates, salatalık ve soğanı doğrayın."
+      },
+      {
+        "order": 3,
+        "text": "Ekmek küplerini sebzelerle karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Zeytinyağı ve balsamik sirkeyi ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Fesleğen yapraklarıyla süsleyin."
+      },
+      {
+        "order": 6,
+        "text": "10 dakika dinlendirip servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "İtalyan",
+      "Ekmekli",
+      "Yaz"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "İtalyan sosisi, patates ve ıspanağın kremalı sosla pişirildiği doyurucu Toskana çorbası.",
+    "duration": "45 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_187",
+        "name": "İtalyan Sosisi"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zuppa Toscana",
+    "officialLikeCount": 7800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sosisi tavada kavurup ayırın."
+      },
+      {
+        "order": 2,
+        "text": "Soğan ve sarımsağı aynı tencerede kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Patatesleri dilimleyip ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Tavuk suyunu ekleyip patatesler yumuşayana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sosisi geri ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Kremayı ve ıspanağı ilave edip 5 dakika daha pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Tuzunu ekleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "İtalyan",
+      "Kremalı",
+      "Doyurucu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İtalyan",
+    "description": "Kızarmış hamur kabuklarının ricotta kremasıyla doldurulup kakao ve fıstıkla süslendiği Sicilya tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_178",
+        "name": "Ricotta"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_117",
+        "name": "Şeker"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍫",
+        "ingredientId": "ing_170",
+        "name": "Kakao"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥜",
+        "ingredientId": "ing_1",
+        "name": "Antep fıstığı"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Cannoli",
+    "officialLikeCount": 15900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Unla sert bir hamur yoğurup dinlendirin."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru ince açıp dikdörtgenler kesin."
+      },
+      {
+        "order": 3,
+        "text": "Metal kalıplara sararak kenarlarını yumurta akıyla yapıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Ricotta ve şekeri çırpıp krema hazırlayın."
+      },
+      {
+        "order": 6,
+        "text": "Soğuyan kabukları kremayla doldurun."
+      },
+      {
+        "order": 7,
+        "text": "Uçlarına kakao ve fıstık batırarak servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İtalyan",
+      "Sicilya",
+      "Kızartma"
+    ],
+    "type": "Tatlı"
   }
 ]

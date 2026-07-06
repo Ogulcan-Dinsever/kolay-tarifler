@@ -976,5 +976,149 @@
     "emoji": "🫛",
     "imageUrl": "",
     "name": "Taze Bakla"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍝",
+    "imageUrl": "",
+    "name": "Makarna"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Fesleğen"
+  },
+  {
+    "category": "peynir",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Parmesan"
+  },
+  {
+    "category": "peynir",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Mozzarella"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Kereviz"
+  },
+  {
+    "category": "et",
+    "emoji": "🥓",
+    "imageUrl": "",
+    "name": "Pastırma"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍫",
+    "imageUrl": "",
+    "name": "Kakao"
+  },
+  {
+    "category": "peynir",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Mascarpone"
+  },
+  {
+    "category": "diger",
+    "emoji": "☕",
+    "imageUrl": "",
+    "name": "Kahve"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍮",
+    "imageUrl": "",
+    "name": "Jelatin"
+  },
+  {
+    "category": "sut",
+    "emoji": "🥛",
+    "imageUrl": "",
+    "name": "Krema"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Ton Balığı"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Sebze Suyu"
+  },
+  {
+    "category": "ekmek",
+    "emoji": "🍞",
+    "imageUrl": "",
+    "name": "Ekmek"
+  },
+  {
+    "category": "peynir",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Ricotta"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌼",
+    "imageUrl": "",
+    "name": "Safran"
+  },
+  {
+    "category": "et",
+    "emoji": "🍖",
+    "imageUrl": "",
+    "name": "Dana İncik"
+  },
+  {
+    "category": "sivi",
+    "emoji": "🍷",
+    "imageUrl": "",
+    "name": "Kırmızı Şarap"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Balsamik Sirke"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍪",
+    "imageUrl": "",
+    "name": "Kedi Dili Bisküvi"
+  },
+  {
+    "category": "yesillik",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Ispanak"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Adaçayı"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Biberiye"
+  },
+  {
+    "category": "et",
+    "emoji": "🌭",
+    "imageUrl": "",
+    "name": "İtalyan Sosisi"
   }
 ]
