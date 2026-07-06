@@ -20081,5 +20081,2104 @@
       "Toskana"
     ],
     "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Dashi suyuna miso ezmesi, tofu ve yeşil soğanın eklenmesiyle hazırlanan hafif Japon çorbası.",
+    "duration": "15 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍲",
+        "ingredientId": "ing_202",
+        "name": "Miso Ezmesi"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_206",
+        "name": "Tofu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Miso Çorbası",
+    "officialLikeCount": 21400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Dashi suyunu ısıtın, kaynatmayın."
+      },
+      {
+        "order": 2,
+        "text": "Miso ezmesini bir kepçe sıcak suda eritin."
+      },
+      {
+        "order": 3,
+        "text": "Eritilmiş misoyu tencereye ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Küp doğranmış tofuyu ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanı serperek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Japon",
+      "Tofu",
+      "Hafif"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Sirkeli pirincin üzerine somon, ton balığı, karides ve yumurdanın dilim dilim dizildiği dağınık sushi tabağı.",
+    "duration": "45 dk",
+    "emoji": "🍣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_204",
+        "name": "Somon"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_175",
+        "name": "Ton Balığı"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chirashi Sushi",
+    "officialLikeCount": 8700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp sirke ve şekerle harmanlayın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtayı ince omlet gibi pişirip şeritler halinde kesin."
+      },
+      {
+        "order": 3,
+        "text": "Somon ve ton balığını ince dilimleyin."
+      },
+      {
+        "order": 4,
+        "text": "Karidesleri haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Pirinci kaseye yayıp üzerine malzemeleri dizin."
+      },
+      {
+        "order": 6,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Sushi",
+      "Japon",
+      "Deniz Ürünü",
+      "Pirinç"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Sirkeli pirinç topunun üzerine ince dilimlenmiş çiğ somonun yerleştirildiği klasik sushi.",
+    "duration": "40 dk",
+    "emoji": "🍣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_204",
+        "name": "Somon"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟢",
+        "ingredientId": "ing_200",
+        "name": "Wasabi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Somon Nigiri",
+    "officialLikeCount": 12300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp sirke ve şekerle harmanlayın."
+      },
+      {
+        "order": 2,
+        "text": "Pirinci soğutun."
+      },
+      {
+        "order": 3,
+        "text": "Avuç içiyle küçük ovaller şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "Somonu ince dilimleyin."
+      },
+      {
+        "order": 5,
+        "text": "Her pirinç topunun üzerine az wasabi sürüp somonu yerleştirin."
+      },
+      {
+        "order": 6,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Sushi",
+      "Japon",
+      "Somon",
+      "Çiğ Balık"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Nori yaprağıyla sarılan pirincin karides, avokado ve salatalıkla doldurulup rulo şeklinde kesildiği füzyon sushi.",
+    "duration": "50 dk",
+    "emoji": "🍣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "4 yaprak",
+        "emoji": "🌿",
+        "ingredientId": "ing_201",
+        "name": "Nori"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥑",
+        "ingredientId": "ing_212",
+        "name": "Avokado"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_92",
+        "name": "Salatalık"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_211",
+        "name": "Mayonez"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "California Roll",
+    "officialLikeCount": 15800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp sirkeyle harmanlayın."
+      },
+      {
+        "order": 2,
+        "text": "Nori yaprağını bambu hasıra serin."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci yaprağın üzerine ince yayın."
+      },
+      {
+        "order": 4,
+        "text": "Karides, avokado ve salatalığı ortaya dizin."
+      },
+      {
+        "order": 5,
+        "text": "Sıkıca rulo yapın."
+      },
+      {
+        "order": 6,
+        "text": "Dilimleyip mayonezle servis edin."
+      }
+    ],
+    "tags": [
+      "Sushi",
+      "Japon",
+      "Füzyon",
+      "Avokado"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Soya sosu bazlı tavuk suyu içinde erişte, haşlanmış yumurta ve yeşil soğanla servis edilen klasik ramen.",
+    "duration": "40 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Shoyu Ramen",
+    "officialLikeCount": 19600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk suyuna soya sosunu ekleyip kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk etini haşlayıp didikleyin."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları haşlayıp ikiye bölün."
+      },
+      {
+        "order": 4,
+        "text": "Eriştenin ayrı bir tencerede haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Erişteyi kaseye alıp sıcak suyu üzerine dökün."
+      },
+      {
+        "order": 6,
+        "text": "Tavuk, yumurta ve yeşil soğanla süsleyin."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Ramen",
+      "Japon",
+      "Erişte",
+      "Çorba"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Tavuk kemiklerinin saatlerce kaynatılmasıyla elde edilen beyaz ve kremsi çorbaya eriştenin eklendiği doyurucu ramen çeşidi.",
+    "duration": "3 saat",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "6 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tori Paitan Ramen",
+    "officialLikeCount": 9400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk eti ve suyunu sarımsak, zencefille birlikte 2.5 saat kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Çorbayı süzüp kremsi kıvama gelene kadar kaynatmaya devam edin."
+      },
+      {
+        "order": 3,
+        "text": "Tuzunu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Erişteyi kaseye alıp çorbayı dökün."
+      },
+      {
+        "order": 6,
+        "text": "Yeşil soğanla süsleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Ramen",
+      "Japon",
+      "Tavuklu",
+      "Kremsi"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Karabuğday eriştesinin soğutulup soya sosu bazlı soslu bir daldırma sosuyla servis edildiği yaz yemeği.",
+    "duration": "20 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zaru Soba",
+    "officialLikeCount": 6300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayıp soğuk suda çalkalayın."
+      },
+      {
+        "order": 2,
+        "text": "Dashi, soya sosu ve mirini kaynatıp soğutun."
+      },
+      {
+        "order": 3,
+        "text": "Erişteyi bambu tabağa dizin."
+      },
+      {
+        "order": 4,
+        "text": "Sosu ayrı bir kasede sunun."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanla süsleyip soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Japon",
+      "Soğuk",
+      "Yaz"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Kalın buğday eriştesinin sıcak dashi bazlı çorba içinde servis edildiği basit ve doyurucu yemek.",
+    "duration": "20 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kake Udon",
+    "officialLikeCount": 5100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Udon eriştesini haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Dashi, soya sosu ve mirini kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Erişteyi kaseye alın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak çorbayı üzerine dökün."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanla süsleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Japon",
+      "Çorba",
+      "Basit"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Karides ve sebzelerin ince bir hamura bulanıp kızgın yağda çıtır çıtır kızartıldığı Japon usulü kızartma.",
+    "duration": "30 dk",
+    "emoji": "🍤",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_32",
+        "name": "Kabak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tempura",
+    "officialLikeCount": 13700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Buzlu su, yumurta ve unu hafifçe karıştırıp ince bir hamur yapın."
+      },
+      {
+        "order": 2,
+        "text": "Karides ve sebzeleri hamura bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Kağıt havluda fazla yağını alın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Kızartma",
+      "Japon",
+      "Karides",
+      "Sebzeli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Tavuk göğsünün una, yumurtaya ve panko galeta ununa bulanıp çıtır çıtır kızartıldığı Japon usulü şnitzel.",
+    "duration": "30 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍞",
+        "ingredientId": "ing_209",
+        "name": "Panko"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tori Katsu",
+    "officialLikeCount": 10200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu ince dövüp tuzlayın."
+      },
+      {
+        "order": 2,
+        "text": "Sırasıyla una, yumurtaya ve pankoya bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Kağıt havluda fazla yağını alın."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Japon",
+      "Kızartma",
+      "Panko"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Soya sosu, sarımsak ve zencefille marine edilen tavuk parçalarının una bulanıp kızartıldığı popüler Japon atıştırmalığı.",
+    "duration": "40 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tori Karaage",
+    "officialLikeCount": 11500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Soya sosu, zencefil ve sarımsakla marine edip 30 dakika bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Parçaları una bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Kağıt havluda fazla yağını alıp servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Japon",
+      "Kızartma",
+      "Atıştırmalık"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Şişe dizilen tavuk parçalarının soya sosu ve mirin bazlı tatlı sosla ızgarada pişirildiği sokak lezzeti.",
+    "duration": "30 dk",
+    "emoji": "🍢",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Yakitori",
+    "officialLikeCount": 14300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu küp küp doğrayıp şişlere dizin."
+      },
+      {
+        "order": 2,
+        "text": "Soya sosu, mirin ve şekeri kaynatıp sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Şişleri ızgarada pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Pişerken sosu birkaç kez fırçalayın."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanla süsleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Japon",
+      "Izgara",
+      "Sokak Lezzeti"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Somon filetosunun tatlı ve tuzlu teriyaki sosuyla tavada kısa sürede pişirildiği pratik Japon yemeği.",
+    "duration": "20 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_204",
+        "name": "Somon"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_199",
+        "name": "Sake"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Somon Teriyaki",
+    "officialLikeCount": 16900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soya sosu, mirin, şeker ve sakeyi karıştırıp sos hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Somonu tavada derili tarafından pişirmeye başlayın."
+      },
+      {
+        "order": 3,
+        "text": "Çevirip diğer tarafını da pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sosu ekleyip kısık ateşte koyulaşana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sosu balığın üzerine gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Japon",
+      "Somon",
+      "Teriyaki"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Tavuk kıyma, lahana ve zencefille hazırlanan harcın ince hamura sarılıp buharda pişirildiği veya kızartıldığı Japon mantısı.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gyoza",
+    "officialLikeCount": 12600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Unla ince bir hamur yoğurup daireler kesin."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk kıyma, doğranmış lahana, sarımsak, zencefil ve soya sosunu karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Harcı hamur dairelerinin ortasına koyup kenarlarını kıvırarak kapatın."
+      },
+      {
+        "order": 4,
+        "text": "Susam yağında tabanları kızarana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Biraz su ekleyip kapağı kapatarak buharda pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Mantı",
+      "Japon",
+      "Tavuklu",
+      "Buharda"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Lahana, un ve yumurtanın karıştırılıp tavada pişirildiği, üzeri mayonez ve soya sosuyla süslenen Osaka usulü krep.",
+    "duration": "30 dk",
+    "emoji": "🥞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_211",
+        "name": "Mayonez"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Okonomiyaki",
+    "officialLikeCount": 7800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, yumurta ve suyla bir hamur karışımı hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Doğranmış lahanayı karışıma ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "İnce doğranmış tavuğu ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Karışımı tavaya dökün."
+      },
+      {
+        "order": 5,
+        "text": "Her iki tarafını da altın rengi olana kadar pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Üzerine mayonez ve soya sosu gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Krep",
+      "Japon",
+      "Osaka",
+      "Lahana"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Ahtapot parçalarının un bazlı hamurla özel kalıpta top şeklinde pişirildiği Osaka sokak lezzeti.",
+    "duration": "40 dk",
+    "emoji": "🐙",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🐙",
+        "ingredientId": "ing_205",
+        "name": "Ahtapot"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_211",
+        "name": "Mayonez"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Takoyaki",
+    "officialLikeCount": 9300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, yumurta ve dashi ile akışkan bir hamur hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Ahtapotu küçük parçalara doğrayın."
+      },
+      {
+        "order": 3,
+        "text": "Özel takoyaki kalıbına hamuru dökün."
+      },
+      {
+        "order": 4,
+        "text": "Her göze bir parça ahtapot koyun."
+      },
+      {
+        "order": 5,
+        "text": "Toplar oluşana kadar çevirerek pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Mayonez ve yeşil soğanla süsleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sokak Lezzeti",
+      "Japon",
+      "Osaka",
+      "Ahtapot"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Çıtır tavuk şnitzelin Japon köri sosuyla pilavın yanında servis edildiği doyurucu ana yemek.",
+    "duration": "1 saat",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍞",
+        "ingredientId": "ing_209",
+        "name": "Panko"
+      },
+      {
+        "amount": "2 küp",
+        "emoji": "🍛",
+        "ingredientId": "ing_210",
+        "name": "Curry Küpü"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tori Katsu Curry",
+    "officialLikeCount": 10800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Havuç, patates ve soğanı haşlayıp curry küplerini eritin."
+      },
+      {
+        "order": 3,
+        "text": "Curry sosunu koyulaşana kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Tavuğu una, sonra pankoya bulayıp kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Kızarmış tavuğu dilimleyin."
+      },
+      {
+        "order": 6,
+        "text": "Pilavın yanına curry sosunu ve tavuğu dizerek servis edin."
+      }
+    ],
+    "tags": [
+      "Curry",
+      "Japon",
+      "Tavuklu",
+      "Pilav"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Pişmiş pirincin nori yaprağıyla sarılıp içine ton balığı doldurulduğu, elde şekillendirilen pratik atıştırmalık.",
+    "duration": "20 dk",
+    "emoji": "🍙",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "2 yaprak",
+        "emoji": "🌿",
+        "ingredientId": "ing_201",
+        "name": "Nori"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_175",
+        "name": "Ton Balığı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Onigiri",
+    "officialLikeCount": 8100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp ılık hale gelmesini bekleyin."
+      },
+      {
+        "order": 2,
+        "text": "Elinizi ıslatıp tuzlayın."
+      },
+      {
+        "order": 3,
+        "text": "Bir avuç pirinci üçgen şeklinde şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "Ortasına ton balığı yerleştirin."
+      },
+      {
+        "order": 5,
+        "text": "Etrafına nori şeridi sarın."
+      },
+      {
+        "order": 6,
+        "text": "Servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Japon",
+      "Pirinç",
+      "Pratik"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Çırpılmış yumurta, dashi ve tavuğun buharda pişirilerek jöle kıvamında bir puding haline getirildiği zarif Japon mezesi.",
+    "duration": "30 dk",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "50 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chawanmushi",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Dashi ve soya sosunu ekleyip karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Küçük kaselere tavuk ve mantarı paylaştırın."
+      },
+      {
+        "order": 4,
+        "text": "Yumurta karışımını üzerine süzerek dökün."
+      },
+      {
+        "order": 5,
+        "text": "Buharda 15 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Ilık servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Japon",
+      "Yumurta",
+      "Buharda"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "İnce dilimlenmiş dana etinin lahana, mantar ve tofuyla birlikte tatlı soya sosunda masada pişirilerek yendiği güveç.",
+    "duration": "45 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_206",
+        "name": "Tofu"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_199",
+        "name": "Sake"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sukiyaki",
+    "officialLikeCount": 6700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soya sosu, şeker ve sakeyi karıştırıp sos hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Geniş bir tavada eti kısa sürede pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Lahana ve mantarı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Sosu ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Tofuyu ekleyip kısık ateşte 10 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Japon",
+      "Güveç",
+      "Tofu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Izgarada pişirilen yılan balığının tatlı soya sosuyla kaplanıp pirinç üzerinde servis edildiği Japon klasiği.",
+    "duration": "30 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_214",
+        "name": "Yılan Balığı (Unagi)"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Unagi Don",
+    "officialLikeCount": 5900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soya sosu, mirin ve şekeri kaynatıp sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yılan balığını ızgarada pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Pişerken sosu birkaç kez fırçalayın."
+      },
+      {
+        "order": 5,
+        "text": "Pirincin üzerine balığı yerleştirin."
+      },
+      {
+        "order": 6,
+        "text": "Kalan sosu gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Japon",
+      "Pilav",
+      "Izgara"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Tavuk ve soğanın dashi bazlı tatlı sosla pişirilip yumurtayla bağlanarak pirinç üzerine döküldüğü ana-yavru usulü yemek.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_207",
+        "name": "Dashi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Oyakodon",
+    "officialLikeCount": 8600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Dashi ve soya sosunu kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Tavuk ve soğanı ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Çırpılmış yumurtayı üzerine dökün."
+      },
+      {
+        "order": 5,
+        "text": "Yumurta kıvamlanana kadar kapağı kapatın."
+      },
+      {
+        "order": 6,
+        "text": "Pirincin üzerine dökerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Japon",
+      "Pilav",
+      "Yumurtalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "İnce dilimlenmiş dana etinin soğanla birlikte tatlı soya soslu suda pişirilip pirinç üzerine döküldüğü hızlı Japon yemeği.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_198",
+        "name": "Mirin"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gyudon",
+    "officialLikeCount": 9800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soya sosu, mirin ve şekeri karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Soğanı sosla birlikte kaynatın."
+      },
+      {
+        "order": 4,
+        "text": "İnce et dilimlerini ekleyip kısa sürede pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Pirincin üzerine dökerek servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Japon",
+      "Pilav",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Eriştenin tavuk, lahana ve havuçla birlikte soya sosuyla tavada kavrulduğu Japon usulü kızartma erişte.",
+    "duration": "25 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Yakisoba",
+    "officialLikeCount": 11100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayıp süzün."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu susam yağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Lahana ve havucu ekleyip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Soya sosunu ekleyip iyice karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Japon",
+      "Kızartma",
+      "Tavuklu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Japon",
+    "description": "Kabuklu yeşil soya fasulyesinin tuzlu suda haşlanıp tuzla servis edildiği basit Japon atıştırmalığı.",
+    "duration": "10 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_215",
+        "name": "Edamame (Yeşil Soya Fasulyesi)"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Edamame",
+    "officialLikeCount": 7200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Suyu tuzla kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Edamameyi ekleyip 5 dakika haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Süzüp üzerine biraz daha tuz serpin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Japon",
+      "Vejetaryen",
+      "Pratik"
+    ],
+    "type": "Meze"
   }
 ]

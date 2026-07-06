@@ -1174,5 +1174,119 @@
     "emoji": "🍨",
     "imageUrl": "",
     "name": "Vanilyalı Dondurma"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Soya Sosu"
+  },
+  {
+    "category": "sivi",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Mirin"
+  },
+  {
+    "category": "sivi",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Sake"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🟢",
+    "imageUrl": "",
+    "name": "Wasabi"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Nori"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Miso Ezmesi"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🫚",
+    "imageUrl": "",
+    "name": "Zencefil"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Somon"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐙",
+    "imageUrl": "",
+    "name": "Ahtapot"
+  },
+  {
+    "category": "diger",
+    "emoji": "🧈",
+    "imageUrl": "",
+    "name": "Tofu"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Dashi"
+  },
+  {
+    "category": "yag",
+    "emoji": "🫙",
+    "imageUrl": "",
+    "name": "Susam Yağı"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍞",
+    "imageUrl": "",
+    "name": "Panko"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍛",
+    "imageUrl": "",
+    "name": "Curry Küpü"
+  },
+  {
+    "category": "sos",
+    "emoji": "🥫",
+    "imageUrl": "",
+    "name": "Mayonez"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🥑",
+    "imageUrl": "",
+    "name": "Avokado"
+  },
+  {
+    "category": "et",
+    "emoji": "🥩",
+    "imageUrl": "",
+    "name": "Dana Eti (İnce Dilim)"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Yılan Balığı (Unagi)"
+  },
+  {
+    "category": "baklagil",
+    "emoji": "🫛",
+    "imageUrl": "",
+    "name": "Edamame (Yeşil Soya Fasulyesi)"
   }
 ]
