@@ -1588,5 +1588,23 @@
     "emoji": "🍚",
     "imageUrl": "",
     "name": "Yapışkan Pirinç (Glutinous Rice)"
+  },
+  {
+    "category": "süt ürünleri",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Feta Peyniri"
+  },
+  {
+    "category": "kuruyemis",
+    "emoji": "🌰",
+    "imageUrl": "",
+    "name": "Ceviz"
+  },
+  {
+    "category": "deniz ürünleri",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Tarama (Balık Yumurtası Ezmesi)"
   }
 ]
