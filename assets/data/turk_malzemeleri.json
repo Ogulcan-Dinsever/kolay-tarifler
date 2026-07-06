@@ -1516,5 +1516,53 @@
     "emoji": "🥛",
     "imageUrl": "",
     "name": "Kondanse Süt"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Hoisin Sosu"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Sichuan Biberi"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Beş Baharat Tozu"
+  },
+  {
+    "category": "kuruyemis",
+    "emoji": "🥜",
+    "imageUrl": "",
+    "name": "Yer Fıstığı"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥦",
+    "imageUrl": "",
+    "name": "Brokoli"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Doubanjiang (Acı Fasulye Ezmesi)"
+  },
+  {
+    "category": "et",
+    "emoji": "🦆",
+    "imageUrl": "",
+    "name": "Ördek Eti"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍊",
+    "imageUrl": "",
+    "name": "Portakal"
   }
 ]
