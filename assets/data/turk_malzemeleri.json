@@ -1288,5 +1288,47 @@
     "emoji": "🫛",
     "imageUrl": "",
     "name": "Edamame (Yeşil Soya Fasulyesi)"
+  },
+  {
+    "category": "baklagil",
+    "emoji": "🫘",
+    "imageUrl": "",
+    "name": "Azuki Fasulyesi"
+  },
+  {
+    "category": "diger",
+    "emoji": "🌽",
+    "imageUrl": "",
+    "name": "Mısır Nişastası"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍅",
+    "imageUrl": "",
+    "name": "Ketçap"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍶",
+    "imageUrl": "",
+    "name": "Worcestershire Sosu"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍵",
+    "imageUrl": "",
+    "name": "Yeşil Çay"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍡",
+    "imageUrl": "",
+    "name": "Mochi (Pirinç Keki)"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Pirinç Unu"
   }
 ]
