@@ -1666,5 +1666,29 @@
     "emoji": "🌸",
     "imageUrl": "",
     "name": "Portakal Çiçeği Suyu"
+  },
+  {
+    "category": "diger",
+    "emoji": "🥒",
+    "imageUrl": "",
+    "name": "Turşu"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🫐",
+    "imageUrl": "",
+    "name": "Yaban Mersini"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍫",
+    "imageUrl": "",
+    "name": "Çikolata Parçaları"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍌",
+    "imageUrl": "",
+    "name": "Muz"
   }
 ]
