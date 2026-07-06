@@ -1330,5 +1330,95 @@
     "emoji": "🌾",
     "imageUrl": "",
     "name": "Pirinç Unu"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Gochujang"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Gochugaru"
+  },
+  {
+    "category": "sos",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Doenjang"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Turp"
+  },
+  {
+    "category": "et",
+    "emoji": "🍖",
+    "imageUrl": "",
+    "name": "Dana Kaburga (Kısa Kaburga)"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Ginseng"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Kuru Ançüez"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍜",
+    "imageUrl": "",
+    "name": "Cam Erişte (Dangmyeon)"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍡",
+    "imageUrl": "",
+    "name": "Tteok (Kore Pirinç Keki)"
+  },
+  {
+    "category": "sos",
+    "emoji": "⚫",
+    "imageUrl": "",
+    "name": "Chunjang (Kara Fasulye Ezmesi)"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Kimchi"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍎",
+    "imageUrl": "",
+    "name": "Elma"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍐",
+    "imageUrl": "",
+    "name": "Armut"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Kuru Deniz Yosunu (Miyeok)"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🌱",
+    "imageUrl": "",
+    "name": "Soya Fasulyesi Filizi (Kongnamul)"
   }
 ]
