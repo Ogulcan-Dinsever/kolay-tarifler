@@ -13126,5 +13126,2330 @@
       "Meze"
     ],
     "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kıymalı harcın ince açılan hamurun üzerine yayılıp fırınlandığı Konya'ya özgü doyurucu yemek.",
+    "duration": "1 saat",
+    "emoji": "🍕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_69",
+        "name": "Maydanoz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Etli Ekmek",
+    "officialLikeCount": 16400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, su ve tuzla yumuşak bir hamur yoğurun, 30 dakika dinlendirin."
+      },
+      {
+        "order": 2,
+        "text": "Kıyma, rendelenmiş soğan, doğranmış domates ve maydanozu karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Karabiberi ekleyip harcı hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru uzun ve ince şekilde açın."
+      },
+      {
+        "order": 5,
+        "text": "Harcı hamurun üzerine ince bir tabaka halinde yayın."
+      },
+      {
+        "order": 6,
+        "text": "Kenarlarını hafifçe kıvırın."
+      },
+      {
+        "order": 7,
+        "text": "230 derece fırında kenarları kızarana kadar 15 dakika pişirin."
+      },
+      {
+        "order": 8,
+        "text": "Dilimleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Hamur işi",
+      "Konya",
+      "Etli",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "İnce dövülmüş dana bonfilenin kızartma patates üzerinde yoğurtlu sosla servis edildiği Muğla yöresi kebabı.",
+    "duration": "40 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_145",
+        "name": "Dana Bonfile"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Çökertme Kebabı",
+    "officialLikeCount": 9800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bonfileyi ince ince döverek çökertin."
+      },
+      {
+        "order": 2,
+        "text": "Tuz ve karabiberle marine edin."
+      },
+      {
+        "order": 3,
+        "text": "Patatesleri ince çubuklar halinde kesip kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Kızarmış patatesleri servis tabağına yayın."
+      },
+      {
+        "order": 5,
+        "text": "Eti sıcak tavada tereyağıyla kısa sürede pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Etleri patateslerin üzerine dizin."
+      },
+      {
+        "order": 7,
+        "text": "Domates salçasını tereyağıyla kavurup üzerine gezdirin."
+      },
+      {
+        "order": 8,
+        "text": "Yanında yoğurdu ayrı servis edin."
+      }
+    ],
+    "tags": [
+      "Kebap",
+      "Muğla",
+      "Etli",
+      "Patatesli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuzu kuşbaşı, mantar ve sebzelerin toprak testi içinde kapatılıp fırınlandığı Kapadokya'ya özgü kebap.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_53",
+        "name": "Kuzu Kuşbaşı"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_96",
+        "name": "Sivri Biber"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Testi Kebabı",
+    "officialLikeCount": 11200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuşbaşı eti tereyağında mühürleyin."
+      },
+      {
+        "order": 2,
+        "text": "Doğranmış soğan, biber ve mantarı ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ilave edip birkaç dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Tuz ve karabiberi ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Karışımı toprak testiye aktarın."
+      },
+      {
+        "order": 6,
+        "text": "Testinin ağzını hamurla kapatın."
+      },
+      {
+        "order": 7,
+        "text": "180 derece fırında 1 saat pişirin."
+      },
+      {
+        "order": 8,
+        "text": "Servis anında testiyi kırarak açın."
+      }
+    ],
+    "tags": [
+      "Kebap",
+      "Kapadokya",
+      "Testi",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Dövülmüş buğdayın etle birlikte saatlerce pişirilip ezildiği doyurucu Anadolu yemeği.",
+    "duration": "3 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_147",
+        "name": "Dövme Buğday"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "8 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Keşkek",
+    "officialLikeCount": 8600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Dövme buğdayı bir gece önceden suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Eti su ile birlikte tencerede haşlamaya başlayın."
+      },
+      {
+        "order": 3,
+        "text": "Buğdayı ekleyip kaynatın."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 2-2.5 saat, malzemeler yumuşayana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Tahta kaşıkla karışımı iyice ezip pütürsüz hale getirin."
+      },
+      {
+        "order": 6,
+        "text": "Tuzu ekleyip karıştırın."
+      },
+      {
+        "order": 7,
+        "text": "Soğanı tereyağında kavurup pul biberle karıştırın."
+      },
+      {
+        "order": 8,
+        "text": "Keşkeği servis tabağına alıp üzerine soğanlı tereyağını gezdirin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Buğday",
+      "Geleneksel",
+      "Doyurucu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuzu paçasının uzun süre haşlanıp sarımsaklı sirke ile servis edildiği geleneksel çorba niteliğinde yemek.",
+    "duration": "2 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🦴",
+        "ingredientId": "ing_149",
+        "name": "Paça"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "8 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kelle Paça",
+    "officialLikeCount": 7100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Paçaları iyice yıkayıp bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Ertesi gün temiz suyla düdüklü tencerede 1.5 saat haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Et suyunu süzüp kaynatmaya devam edin."
+      },
+      {
+        "order": 4,
+        "text": "Tuz ve karabiberi ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Sarımsağı sirke ile ezip ayrı bir kasede hazırlayın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak paçayı servis edip yanında sarımsaklı sirke sunun."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Sakatat",
+      "Geleneksel",
+      "Doyurucu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Bayat ekmeğin et suyuna batırılıp üzerine kavrulmuş et konularak servis edildiği Güneydoğu yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_150",
+        "name": "Bayat Ekmek"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tirit",
+    "officialLikeCount": 6300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı ince kıyıp tereyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Kıymayı ekleyip rengi dönene kadar kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Tuz ve pul biberi ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Ekmek dilimlerini servis tabağına dizin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak tavuk suyunu ekmeklerin üzerine gezdirin."
+      },
+      {
+        "order": 6,
+        "text": "Kavrulmuş kıymayı üzerine dağıtın."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Ekmek",
+      "Geleneksel",
+      "Doyurucu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Taze peynir, irmik ve hindistan cevizinden yapılan, fırınlanmadan hazırlanan hafif tatlı.",
+    "duration": "30 dk",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_152",
+        "name": "Taze Peynir"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_138",
+        "name": "İrmik"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_117",
+        "name": "Toz Şeker"
+      },
+      {
+        "amount": "1/4 su bardağı",
+        "emoji": "🥥",
+        "ingredientId": "ing_30",
+        "name": "Hindistan Cevizi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Höşmerim",
+    "officialLikeCount": 4200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Peyniri bir kapta ezin."
+      },
+      {
+        "order": 2,
+        "text": "İrmiği ekleyip karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Şekeri ilave edip iyice yoğurun."
+      },
+      {
+        "order": 4,
+        "text": "Karışımı tepsiye yayıp düzeltin."
+      },
+      {
+        "order": 5,
+        "text": "Üzerine hindistan cevizi serpin."
+      },
+      {
+        "order": 6,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Peynirli",
+      "Geleneksel",
+      "Hafif"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "İnce açılan hamurun dudak şeklinde kıvrılıp kızartıldığı, şerbetle tatlandırılan Ege tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_117",
+        "name": "Toz Şeker"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍋",
+        "ingredientId": "ing_65",
+        "name": "Limon suyu"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Dilber Dudağı",
+    "officialLikeCount": 5400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, yumurta ve suyla sert bir hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru küçük bezelere ayırın."
+      },
+      {
+        "order": 3,
+        "text": "Her bezeyi oval açıp ortasını dudak şeklinde kıvırın."
+      },
+      {
+        "order": 4,
+        "text": "Şeker, su ve limon suyunu kaynatıp şerbet hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Hamurları kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak hamurları soğuk şerbete batırın."
+      },
+      {
+        "order": 7,
+        "text": "Servis tabağına dizip soğutun."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Şerbetli",
+      "Ege",
+      "Kızartma"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Semizotunun yoğurt ve sarımsakla ya da domates soğanla hazırlandığı ferahlatıcı yaz salatası.",
+    "duration": "15 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🌿",
+        "ingredientId": "ing_154",
+        "name": "Semizotu"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Semizotu Salatası",
+    "officialLikeCount": 6800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Semizotunu ayıklayıp yıkayın ve doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı ezip yoğurtla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Semizotunu yoğurt karışımıyla harmanlayın."
+      },
+      {
+        "order": 4,
+        "text": "Tuzu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Üzerine zeytinyağı gezdirip servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Yoğurtlu",
+      "Vejetaryen",
+      "Yaz"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Haşlanmış kuru fasulyenin soğan, maydanoz ve haşlanmış yumurtayla zeytinyağlı olarak hazırlandığı meyhane klasiği.",
+    "duration": "1 saat",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_69",
+        "name": "Maydanoz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Piyaz",
+    "officialLikeCount": 14700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuru fasulyeyi bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Ertesi gün yumuşayana kadar haşlayın ve süzün."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları haşlayıp dilimleyin."
+      },
+      {
+        "order": 4,
+        "text": "Soğanı ince yarım ay şeklinde doğrayın."
+      },
+      {
+        "order": 5,
+        "text": "Fasulye, soğan ve maydanozu karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Zeytinyağı, tuz ve limonu ekleyip karıştırın."
+      },
+      {
+        "order": 7,
+        "text": "Üzerine yumurta dilimlerini dizerek servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Baklagil",
+      "Zeytinyağlı",
+      "Meyhane"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kabak çiçeğinin pirinç, soğan ve baharatlarla hazırlanan iç harcıyla doldurulup pişirildiği zeytinyağlı meze.",
+    "duration": "1 saat",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "20 adet",
+        "emoji": "🌼",
+        "ingredientId": "ing_155",
+        "name": "Kabak Çiçeği"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_69",
+        "name": "Maydanoz"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kabak Çiçeği Dolması",
+    "officialLikeCount": 4900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kabak çiçeklerini nazikçe yıkayıp içini temizleyin."
+      },
+      {
+        "order": 2,
+        "text": "Pirinci yıkayıp süzün."
+      },
+      {
+        "order": 3,
+        "text": "Soğanı zeytinyağında kavurup pirinci ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Maydanoz ve tuzu ekleyip harcı hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Harcı çiçeklerin içine doldurun."
+      },
+      {
+        "order": 6,
+        "text": "Tencereye sıkıca dizin."
+      },
+      {
+        "order": 7,
+        "text": "Su ekleyip kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 8,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Zeytinyağlı",
+      "Vejetaryen",
+      "Dolma"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuzu kuşbaşının soğan ve marulla birlikte kısık ateşte kapama usulü pişirildiği hafif yemek.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_53",
+        "name": "Kuzu Kuşbaşı"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_67",
+        "name": "Marul"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kuzu Kapama",
+    "officialLikeCount": 7300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuşbaşı eti tereyağında mühürleyin."
+      },
+      {
+        "order": 2,
+        "text": "Doğranmış soğanı ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Tuz, karabiber ve suyu ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte kapağı kapalı 45 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Marulu iri doğrayıp son 10 dakikada ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Marul yumuşayınca ocaktan alıp servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Kuzu",
+      "Marul",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Temizlenen bağırsağın pirinçli iç harcıyla doldurulup haşlanarak pişirildiği geleneksel sakatat yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_156",
+        "name": "Mumbar (Bağırsak)"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Mumbar Dolması",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bağırsağı tuz ve limonla iyice temizleyip yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "Pirinç, kıyma ve rendelenmiş soğanı karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Pul biber ve tuzu ekleyip harcı hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Harcı bağırsağın içine gevşek şekilde doldurun."
+      },
+      {
+        "order": 5,
+        "text": "Uçlarını bağlayıp kaynar suda 40 dakika haşlayın."
+      },
+      {
+        "order": 6,
+        "text": "Süzüp dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Sakatat",
+      "Pirinçli",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Temizlenmiş kuzu bağırsağının şişe sarılıp mangalda kızartıldığı, ekmek arası servis edilen sokak lezzeti.",
+    "duration": "45 dk",
+    "emoji": "🥙",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_156",
+        "name": "Mumbar (Bağırsak)"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_157",
+        "name": "Kuzu İç Yağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kokoreç",
+    "officialLikeCount": 24300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bağırsakları tuzla ovup defalarca yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "İç yağını küçük parçalara kesin."
+      },
+      {
+        "order": 3,
+        "text": "Bağırsakları iç yağıyla birlikte şişe sarın."
+      },
+      {
+        "order": 4,
+        "text": "Mangalda dönerek altın rengi olana kadar közleyin."
+      },
+      {
+        "order": 5,
+        "text": "Pişen kokoreci ince ince kıyın."
+      },
+      {
+        "order": 6,
+        "text": "Pul biber, tuz ve karabiberle harmanlayın."
+      },
+      {
+        "order": 7,
+        "text": "Ekmek arası sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sokak Lezzeti",
+      "Sakatat",
+      "Mangal",
+      "Acılı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Midyenin baharatlı pirinç harcıyla doldurulup buharda pişirildiği, limonla servis edilen sahil mezesi.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🐚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "40 adet",
+        "emoji": "🐚",
+        "ingredientId": "ing_158",
+        "name": "Midye"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_76",
+        "name": "Nar Ekşisi"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Midye Dolma",
+    "officialLikeCount": 18900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Midyeleri iyice fırçalayıp yıkayın, dikkatlice açın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı zeytinyağında kavurup pirinci ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Nar ekşisi ve tuzu ilave edip harcı hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Harcı midyelerin içine doldurun."
+      },
+      {
+        "order": 5,
+        "text": "Midyeleri sıkıca dizip tencerede buğulayın."
+      },
+      {
+        "order": 6,
+        "text": "Kısık ateşte 40 dakika pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Soğutup limonla servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Deniz Ürünü",
+      "Pirinçli",
+      "Sahil"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Unlanmış midyenin kızgın yağda kızartılıp tarator sosuyla servis edildiği popüler sokak lezzeti.",
+    "duration": "40 dk",
+    "emoji": "🐚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🐚",
+        "ingredientId": "ing_158",
+        "name": "Midye"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Midye Tava",
+    "officialLikeCount": 15600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Midyeleri temizleyip kürdana dizin."
+      },
+      {
+        "order": 2,
+        "text": "Una bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Sarımsağı tarator sos için ayrı hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Kızarmış midyeleri kağıt havluda yağını alın."
+      },
+      {
+        "order": 6,
+        "text": "Tarator sosla sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sokak Lezzeti",
+      "Deniz Ürünü",
+      "Kızartma",
+      "Meze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Izgarada pişirilen uskumru balığının ekmek arasına soğan ve marulla konularak servis edildiği İstanbul sokak lezzeti.",
+    "duration": "25 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_84",
+        "name": "Pide Ekmeği"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_67",
+        "name": "Marul"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Balık Ekmek",
+    "officialLikeCount": 21500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balıkları temizleyip tuzlayın."
+      },
+      {
+        "order": 2,
+        "text": "Izgara veya tavada her iki tarafını da pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Ekmeği ortadan yarın."
+      },
+      {
+        "order": 4,
+        "text": "İçine marul ve ince doğranmış soğan yerleştirin."
+      },
+      {
+        "order": 5,
+        "text": "Pişen balığın kılçığını ayıklayın."
+      },
+      {
+        "order": 6,
+        "text": "Balığı ekmeğin içine yerleştirin."
+      },
+      {
+        "order": 7,
+        "text": "Üzerine limon sıkarak sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Sokak Lezzeti",
+      "İstanbul",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Haşlanmış tavuğun cevizli sosla harmanlanıp pul biberli yağla servis edildiği Osmanlı mezesi.",
+    "duration": "1 saat",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_161",
+        "name": "Ceviz İçi"
+      },
+      {
+        "amount": "2 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_162",
+        "name": "Ekmek İçi"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Çerkez Tavuğu",
+    "officialLikeCount": 8100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu su ile haşlayıp didikleyin."
+      },
+      {
+        "order": 2,
+        "text": "Haşlama suyunu ayırın."
+      },
+      {
+        "order": 3,
+        "text": "Ekmek içini haşlama suyunda ıslatın."
+      },
+      {
+        "order": 4,
+        "text": "Ceviz, sarımsak ve ıslak ekmeği robotta çekin."
+      },
+      {
+        "order": 5,
+        "text": "Gerekirse haşlama suyu ekleyip kıvamını ayarlayın, tuzu ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Didiklenmiş tavuğu cevizli sosla harmanlayın."
+      },
+      {
+        "order": 7,
+        "text": "Pul biberli yağı üzerine gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Tavuk",
+      "Cevizli",
+      "Osmanlı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Taze baklanın zeytinyağı ve taze soğanla birlikte kısık ateşte pişirildiği ilkbahar zeytinyağlısı.",
+    "duration": "45 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_163",
+        "name": "Taze Bakla"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_74",
+        "name": "Nane"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zeytinyağlı Taze Bakla",
+    "officialLikeCount": 5200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Baklaları ayıklayıp yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı zeytinyağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Baklaları ekleyip birkaç dakika kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Su ve tuzu ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Kısık ateşte 25 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Nane serperek soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Zeytinyağlı",
+      "Vejetaryen",
+      "İlkbahar"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Havucun ince dilimlenip kızartıldıktan sonra ceviz ve sarımsaklı yoğurtla servis edildiği meze.",
+    "duration": "30 dk",
+    "emoji": "🥕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_161",
+        "name": "Ceviz İçi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Havuç Dilimi",
+    "officialLikeCount": 4700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Havuçları ince yuvarlak dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın yağda hafifçe kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsağı ezip yoğurtla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Tuzu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Kızarmış havuçları servis tabağına dizin."
+      },
+      {
+        "order": 6,
+        "text": "Sarımsaklı yoğurdu üzerine gezdirip cevizle süsleyin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Havuç",
+      "Yoğurtlu",
+      "Kızartma"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "İçine peynir veya kıyma doldurulan hamurun katlanıp fırınlandığı Hatay yöresi hamur işi.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍞",
+        "ingredientId": "ing_68",
+        "name": "Maya"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_10",
+        "name": "Beyaz Peynir"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_69",
+        "name": "Maydanoz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Nokul",
+    "officialLikeCount": 3900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, maya, su ve tuzla yumuşak bir hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru 1 saat mayaya bırakın."
+      },
+      {
+        "order": 3,
+        "text": "Peyniri ufalayıp maydanozla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru bezelere ayırıp açın."
+      },
+      {
+        "order": 5,
+        "text": "Peynirli harcı koyup katlayın."
+      },
+      {
+        "order": 6,
+        "text": "Üzerine zeytinyağı sürün."
+      },
+      {
+        "order": 7,
+        "text": "200 derece fırında 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Hamur işi",
+      "Hatay",
+      "Peynirli",
+      "Mayalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuşbaşı etin sacda domates ve biberle birlikte kavrularak pişirildiği pratik yemek.",
+    "duration": "35 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_53",
+        "name": "Kuzu Kuşbaşı"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_96",
+        "name": "Sivri Biber"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sac Kavurma",
+    "officialLikeCount": 9500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sacı veya geniş tavayı iyice ısıtın."
+      },
+      {
+        "order": 2,
+        "text": "Kuşbaşı eti ekleyip suyunu salana kadar kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Doğranmış soğanı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Domates ve biberi ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Tuz ve karabiberi ekleyip karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Et yumuşayana kadar kavurmaya devam edin."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Sac",
+      "Pratik",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuzu kıyma ve sebzelerin yağlı kağıda sarılıp fırınlandığı, kendi buharında piştiği için sulu kalan yemek.",
+    "duration": "1 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_96",
+        "name": "Sivri Biber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kağıt Kebabı",
+    "officialLikeCount": 6200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sebzeleri ince dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Kıymayı tuz ve karabiberle karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Yağlı kağıdı açıp sebzeleri serin."
+      },
+      {
+        "order": 4,
+        "text": "Kıymayı sebzelerin üzerine yayın."
+      },
+      {
+        "order": 5,
+        "text": "Kağıdı sıkıca kapatıp paket haline getirin."
+      },
+      {
+        "order": 6,
+        "text": "200 derece fırında 40 dakika pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Kağıdı açarak sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Fırın",
+      "Sebzeli",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Kuzu kıyma ve patatesin tepside katman katman dizilip fırınlandığı doyurucu aile yemeği.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "1/2 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tepsi Kebabı",
+    "officialLikeCount": 8900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri dilimleyip tepsiye dizin."
+      },
+      {
+        "order": 2,
+        "text": "Kıyma, rendelenmiş soğan ve salçayı karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Tuz ve karabiberi ekleyip harcı hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Harcı patateslerin üzerine yayın."
+      },
+      {
+        "order": 5,
+        "text": "Domates dilimlerini üzerine dizin."
+      },
+      {
+        "order": 6,
+        "text": "200 derece fırında 35-40 dakika pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Fırın",
+      "Patatesli",
+      "Aile Yemeği"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Türk",
+    "description": "Bamyanın kuzu eti ve limonla birlikte hafif ekşimsi bir kıvamda pişirildiği Ege usulü çorba.",
+    "duration": "1 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_7",
+        "name": "Bamya"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bamya Çorbası",
+    "officialLikeCount": 4400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bamyaların saplarını temizleyip yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı kavurup salçayı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kıymayı ilave edip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Suyu ekleyip kaynatın."
+      },
+      {
+        "order": 5,
+        "text": "Bamyaları ekleyip kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Tuz ve limon suyunu ekleyip 5 dakika daha kaynatın."
+      },
+      {
+        "order": 7,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Bamya",
+      "Etli",
+      "Ege"
+    ],
+    "type": "Çorba"
   }
 ]

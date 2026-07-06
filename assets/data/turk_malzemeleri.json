@@ -856,5 +856,125 @@
     "emoji": "🌶️",
     "imageUrl": "https://images.unsplash.com/photo-1764312194474-5996b4c1a4ff?auto=format&fit=crop&w=600&q=80",
     "name": "Biber Salçası"
+  },
+  {
+    "category": "et",
+    "emoji": "🍖",
+    "imageUrl": "",
+    "name": "Dana kıyma"
+  },
+  {
+    "category": "diger",
+    "emoji": "🥩",
+    "imageUrl": "",
+    "name": "Dana Bonfile"
+  },
+  {
+    "category": "sos",
+    "emoji": "🥫",
+    "imageUrl": "",
+    "name": "Domates salçası"
+  },
+  {
+    "category": "diger",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Dövme Buğday"
+  },
+  {
+    "category": "et",
+    "emoji": "🍖",
+    "imageUrl": "",
+    "name": "Kuzu kıyma"
+  },
+  {
+    "category": "diger",
+    "emoji": "🦴",
+    "imageUrl": "",
+    "name": "Paça"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍞",
+    "imageUrl": "",
+    "name": "Bayat Ekmek"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Tavuk Suyu"
+  },
+  {
+    "category": "diger",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Taze Peynir"
+  },
+  {
+    "category": "diger",
+    "emoji": "🫗",
+    "imageUrl": "",
+    "name": "Kızartmalık Yağ"
+  },
+  {
+    "category": "diger",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Semizotu"
+  },
+  {
+    "category": "diger",
+    "emoji": "🌼",
+    "imageUrl": "",
+    "name": "Kabak Çiçeği"
+  },
+  {
+    "category": "diger",
+    "emoji": "🌭",
+    "imageUrl": "",
+    "name": "Mumbar (Bağırsak)"
+  },
+  {
+    "category": "diger",
+    "emoji": "🧈",
+    "imageUrl": "",
+    "name": "Kuzu İç Yağı"
+  },
+  {
+    "category": "diger",
+    "emoji": "🐚",
+    "imageUrl": "",
+    "name": "Midye"
+  },
+  {
+    "category": "diger",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Balık (Uskumru)"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍗",
+    "imageUrl": "",
+    "name": "Tavuk Eti"
+  },
+  {
+    "category": "kuruyemis",
+    "emoji": "🌰",
+    "imageUrl": "",
+    "name": "Ceviz İçi"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍞",
+    "imageUrl": "",
+    "name": "Ekmek İçi"
+  },
+  {
+    "category": "diger",
+    "emoji": "🫛",
+    "imageUrl": "",
+    "name": "Taze Bakla"
   }
 ]
