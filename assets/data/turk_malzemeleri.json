@@ -1498,5 +1498,23 @@
     "emoji": "🥭",
     "imageUrl": "",
     "name": "Mango"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍚",
+    "imageUrl": "",
+    "name": "Düz Pirinç (Poha)"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🟤",
+    "imageUrl": "",
+    "name": "Demirhindi (Tamarind)"
+  },
+  {
+    "category": "sut",
+    "emoji": "🥛",
+    "imageUrl": "",
+    "name": "Kondanse Süt"
   }
 ]
