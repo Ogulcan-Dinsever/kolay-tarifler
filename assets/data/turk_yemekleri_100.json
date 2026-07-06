@@ -44714,5 +44714,1728 @@
       "Limon"
     ],
     "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Bütün tavuğun sarımsak ve baharatlarla marine edilip ızgarada çevrilerek pişirildiği Lübnan usulü ızgara tavuk.",
+    "duration": "1 saat",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "6 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Farrouj Mashwi (Izgara Bütün Tavuk)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu sarımsak, limon ve zeytinyağıyla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "En az 2 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Izgarada çevirerek pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Lübnan",
+      "Izgara",
+      "Bütün"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Kızartılmış patates küplerinin sarımsak, kişniş ve acı biberle kavrulduğu popüler Lübnan mezesi.",
+    "duration": "30 dk",
+    "emoji": "🥔",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "5 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Batata Harra (Acılı Patates)",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsağı ayrıca kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Kızarmış patatesleri sarımsak ve karabiberle karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Patates",
+      "Lübnan",
+      "Acılı",
+      "Meze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Yeşil fasulyenin domates ve zeytinyağıyla kısık ateşte pişirildiği doyurucu Lübnan sebze yahnisi.",
+    "duration": "45 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_125",
+        "name": "Yeşil Fasulye"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Loubia (Yeşil Fasulye Yahnisi)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı zeytinyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Domatesi ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Fasulyeleri ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Ilık servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Lübnan",
+      "Fasulye",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Balığın baharatlı pirinç üzerine yerleştirilip kavrulmuş soğanla süslendiği kıyı bölgelerine özgü Lübnan balıklı pilavı.",
+    "duration": "1 saat",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sayadieh (Balıklı Pilav)",
+    "officialLikeCount": 1000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı fırında veya tavada pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Soğanları karamelize olana kadar kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci soğan suyunda tarçınla pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Balığı pilavın üzerine yerleştirin."
+      },
+      {
+        "order": 5,
+        "text": "Kavrulmuş soğanla süsleyip servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Lübnan",
+      "Pilav",
+      "Kıyı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Bamyanın domates sosunda tavukla birlikte kısık ateşte pişirildiği geleneksel Lübnan sebze yemeği.",
+    "duration": "45 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_7",
+        "name": "Bamya"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bamia (Bamya Yahnisi)",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsak ve domatesi ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Bamyaları ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Lübnan",
+      "Bamya",
+      "Tavuklu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Mayalı hamurun ıspanak harcıyla doldurulup üçgen şeklinde kapatılarak fırınlandığı geleneksel Lübnan böreği.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fatayer (Ispanaklı Börek)",
+    "officialLikeCount": 2200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ile hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Ispanak, soğan ve limon suyuyla harç hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru daireler halinde açın."
+      },
+      {
+        "order": 4,
+        "text": "Harcı koyup üçgen şeklinde kapatın."
+      },
+      {
+        "order": 5,
+        "text": "200 derece fırında 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Börek",
+      "Lübnan",
+      "Ispanak",
+      "Fırın"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Patlıcan ve mercimeğin nar ekşisiyle birlikte pişirildiği ekşimsi ve doyurucu Güney Lübnan yahnisi.",
+    "duration": "1 saat",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🟤",
+        "ingredientId": "ing_269",
+        "name": "Mercimek"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍇",
+        "ingredientId": "ing_76",
+        "name": "Nar Ekşisi"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Rummaniyeh (Mercimekli Patlıcan Yahnisi)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patlıcanları kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Mercimeği haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsak ve nar ekşisini ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Patlıcanla karıştırıp 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Ilık servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Lübnan",
+      "Patlıcan",
+      "Ekşili"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Patlıcan ve etin nohut ile birlikte domates soslu bir sosta pişirildiği doyurucu Lübnan güveci.",
+    "duration": "1 saat",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Maghmour (Etli Patlıcan Yahnisi)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patlıcanları kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Kıymayı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Nohut ve domates salçasını ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Patlıcanla karıştırıp 25 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Lübnan",
+      "Patlıcan",
+      "Güveç"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Sütün uzun süre kaynatılıp koyulaştırılarak elde edildiği yoğun kaymamsı Lübnan kreması.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ashta (Kaymak Kreması)",
+    "officialLikeCount": 2400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Süt ve kremayı kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Nişastayı biraz suyla karıştırıp ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte koyulaşana kadar karıştırarak pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "Krema",
+      "Soğuk"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Nişastalı sütün sıcak servis edilip üzerine tarçın ve fındık serpildiği geleneksel Ortadoğu içeceği.",
+    "duration": "20 dk",
+    "emoji": "🥛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sahlab (Sıcak Süt İçeceği)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nişastayı biraz sütle karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Kalan sütü kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Nişastalı karışımı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Koyulaşana kadar karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Tarçın serperek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Lübnan",
+      "Sıcak",
+      "Sütlü"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "İnce çekilmiş kahvenin cezvede köpüklü bir şekilde pişirildiği geleneksel Lübnan kahvesi.",
+    "duration": "10 dk",
+    "emoji": "☕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 tatlı kaşığı",
+        "emoji": "☕",
+        "ingredientId": "ing_172",
+        "name": "Kahve"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ahwe (Lübnan Kahvesi)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Cezveye su, kahve ve şekeri koyun."
+      },
+      {
+        "order": 2,
+        "text": "Kısık ateşte köpürene kadar pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Köpüğü fincanlara paylaştırın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Lübnan",
+      "Kahve",
+      "Geleneksel"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "İnce hamurun kaymak kremasıyla doldurulup rulo şeklinde kızartıldığı tatlı ve çıtır Lübnan tatlısı.",
+    "duration": "45 dk",
+    "emoji": "🍥",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Znoud El Sit (Kremalı Rulo)",
+    "officialLikeCount": 1200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ile ince yufka hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Krema ile doldurun."
+      },
+      {
+        "order": 3,
+        "text": "Rulo şeklinde sarın."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Bal şerbetine batırıp servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "Kremalı",
+      "Kızartma"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Susam ve antep fıstığıyla kaplanan hamurun fırınlandığı çıtır ve aromatik geleneksel Lübnan kurabiyesi.",
+    "duration": "40 dk",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_102",
+        "name": "Susam"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_1",
+        "name": "Antep Fıstığı"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Barazek (Susamlı Antep Fıstıklı Kurabiye)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tereyağı ve unla hamur hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "İnce açıp daireler kesin."
+      },
+      {
+        "order": 3,
+        "text": "Susam ve fıstığa bulayın."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında 15 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "Susamlı",
+      "Fıstıklı"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Tereyağlı hamurun ağızda dağılan bir dokuda fırınlandığı sade geleneksel Lübnan kurabiyesi.",
+    "duration": "40 dk",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ghraybeh (Tereyağlı Kurabiye)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tereyağı ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Unu ekleyip hamur yoğurun."
+      },
+      {
+        "order": 3,
+        "text": "Küçük şekiller verin."
+      },
+      {
+        "order": 4,
+        "text": "160 derece fırında 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "Kurabiye",
+      "Sade"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Kadayıfın kaymak kremasıyla doldurulup fırınlanarak şerbetlendiği zengin Lübnan tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍰",
+        "ingredientId": "ing_275",
+        "name": "Kadayıf"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Osmalieh (Kadayıflı Krema Tatlısı)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kadayıfı tereyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Yarısını kalıba serin."
+      },
+      {
+        "order": 3,
+        "text": "Krema ile doldurun."
+      },
+      {
+        "order": 4,
+        "text": "Kalan kadayıfla kapatın."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 25 dakika pişirip şerbetleyin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "Kadayıf",
+      "Kremalı"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Bütün tavuğun baharatlı pirinç iç harcıyla doldurulup fırınlandığı bayramlık Lübnan tavuk yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Djaj Mahshi (İç Pilavlı Tavuk)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci baharatlarla kavurup iç harcı hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğun içini harçla doldurun."
+      },
+      {
+        "order": 3,
+        "text": "Fırın tepsisine yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Lübnan",
+      "Pilav",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Nohutun kızarmış ekmek üzerine tahinli yoğurt sosuyla dökülerek servis edildiği doyurucu Lübnan kahvaltı yemeği.",
+    "duration": "30 dk",
+    "emoji": "🥣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_109",
+        "name": "Tahin"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fattet Hummus (Tahinli Nohut Fattesi)",
+    "officialLikeCount": 1700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ekmeği kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Nohutu haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yoğurt ve tahini karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Ekmek ve nohutu tabağa alıp sosu üzerine dökün."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Kahvaltı",
+      "Lübnan",
+      "Nohut",
+      "Tahinli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Kızartılmış patlıcanın nohut ve tahinli yoğurt sosuyla katmanlandığı doyurucu Lübnan usulü fatteh çeşidi.",
+    "duration": "40 dk",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_109",
+        "name": "Tahin"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fattet Betenjan (Patlıcanlı Fatteh)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patlıcanları kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Nohutu haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yoğurt ve tahini karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Patlıcan ve nohudu katmanlayıp sosu dökün."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Lübnan",
+      "Patlıcan",
+      "Fatteh"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Kabakların oyulup pirinçli kıyma harcıyla doldurularak domates soslu bir sosta pişirildiği geleneksel Lübnan dolması.",
+    "duration": "1 saat",
+    "emoji": "🥒",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "6 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_32",
+        "name": "Kabak"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kousa Mahshi (Dolma Kabak)",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kabakların içini oyun."
+      },
+      {
+        "order": 2,
+        "text": "Pirinç ve kıymayla harç hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Kabakları harçla doldurun."
+      },
+      {
+        "order": 4,
+        "text": "Domates soslu suda kısık ateşte 40 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Dolma",
+      "Lübnan",
+      "Kabak",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "İrmikli hamurun fırınlanıp portakal çiçeği suyu kokulu şerbete batırıldığı gözenekli ve sulu Lübnan keki.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_138",
+        "name": "İrmik"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌸",
+        "ingredientId": "ing_278",
+        "name": "Portakal Çiçeği Suyu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Namoura (İrmik Keki)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "İrmik, şeker ve sütü karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Fırın kabına dökün."
+      },
+      {
+        "order": 3,
+        "text": "180 derece fırında 30 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Portakal çiçeği suyu kokulu şerbeti üzerine dökün."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Lübnan",
+      "İrmik",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Tavuk kanatlarının sarımsak ve limonla marine edilip fırında pişirildiği baharatlı Lübnan atıştırmalığı.",
+    "duration": "45 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "800 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "6 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Jawaneh (Baharatlı Tavuk Kanadı)",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kanatlarını sarımsak, limon ve zeytinyağıyla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "En az 1 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "200 derece fırında 35 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Lübnan",
+      "Fırın",
+      "Atıştırmalık"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Balığın acı biber ve tahinli bir sosla kaplanıp fırında pişirildiği baharatlı Lübnan kıyı yemeği.",
+    "duration": "40 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_109",
+        "name": "Tahin"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Samke Harra (Acılı Fırın Balık)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı fırın tepsisine yerleştirin."
+      },
+      {
+        "order": 2,
+        "text": "Tahin, karabiber ve limon suyunu karıştırıp sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Sosu balığın üzerine dökün."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 25 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Lübnan",
+      "Acılı",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Etin sebzelerle birlikte kısık ateşte kaynatılıp doyurucu bir yahni haline getirildiği geleneksel Lübnan yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Yakhnet Lahme (Etli Sebze Yahnisi)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Sebzeleri ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Domates salçasını ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Su ekleyip kısık ateşte 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Lübnan",
+      "Yahni",
+      "Sebzeli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "İnce hamurun kıymalı harçla doldurulup yarım ay şeklinde kızartıldığı çıtır Lübnan mezesi.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sambousek (Kıymalı Mini Börek)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ile hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Kıyma ve soğanla harç hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru daireler halinde açın."
+      },
+      {
+        "order": 4,
+        "text": "Harcı koyup yarım ay şeklinde kapatın."
+      },
+      {
+        "order": 5,
+        "text": "Kızgın yağda kızartın."
+      }
+    ],
+    "tags": [
+      "Börek",
+      "Lübnan",
+      "Kıymalı",
+      "Kızartma"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Lübnan",
+    "description": "Nohutun kimyon ve limonla ılık servis edildiği sade ve besleyici Lübnan kahvaltı mezesi.",
+    "duration": "20 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Balila (Ilık Nohut Mezesi)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nohutu haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Limon suyu ve zeytinyağını ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Ilık servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Lübnan",
+      "Nohut",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
   }
 ]
