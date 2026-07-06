@@ -37758,5 +37758,1758 @@
       "Limon"
     ],
     "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "İrmikli kremanın ince yufka arasına dökülüp fırınlanarak çıtır ve kremalı bir tatlıya dönüştüğü Yunan kahvaltılık böreği.",
+    "duration": "1 saat",
+    "emoji": "🥧",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 paket",
+        "emoji": "🥟",
+        "ingredientId": "ing_129",
+        "name": "Yufka"
+      },
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_138",
+        "name": "İrmik"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bougatsa",
+    "officialLikeCount": 2200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Süt, irmik ve şekerle krema pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Yufkaları tereyağıyla katmanlayın."
+      },
+      {
+        "order": 3,
+        "text": "Kremayı üzerine dökün."
+      },
+      {
+        "order": 4,
+        "text": "Kalan yufkalarla kapatın."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 35 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Pudra şekeriyle servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Kahvaltı",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Mercimeğin domates salçası ve sebzelerle kaynatıldığı doyurucu ve besleyici Yunan çorbası.",
+    "duration": "45 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🟤",
+        "ingredientId": "ing_269",
+        "name": "Mercimek"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fakes (Yunan Mercimek Çorbası)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mercimeği yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "Havuç ve domates salçasıyla kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Zeytinyağı gezdirip servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Yunan",
+      "Mercimek",
+      "Vejetaryen"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Domates ve biberlerin pirinç ve otlarla doldurulup fırında pişirildiği geleneksel Yunan dolması.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🫑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "6 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gemista (Dolma Biber ve Domates)",
+    "officialLikeCount": 2400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Domates ve biberlerin içini oyun."
+      },
+      {
+        "order": 2,
+        "text": "Pirinç, soğan ve zeytinyağıyla harç hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Sebzeleri harçla doldurun."
+      },
+      {
+        "order": 4,
+        "text": "Fırın kabına dizin."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 45 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Dolma",
+      "Yunan",
+      "Vejetaryen",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Patlıcan, kabak, biber ve patatesin zeytinyağı ve domatesle fırında birlikte pişirildiği Yunan sebze güveci.",
+    "duration": "1 saat",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_32",
+        "name": "Kabak"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Briam (Fırında Yunan Sebzesi)",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sebzeleri dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Fırın kabına dizin."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağı gezdirin."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 45 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak veya ılık servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Yunan",
+      "Fırın",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Rendelenmiş kabağın un ve feta peyniriyle karıştırılıp köfte şeklinde kızartıldığı Yunan usulü kabak mücveri.",
+    "duration": "30 dk",
+    "emoji": "🥒",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_32",
+        "name": "Kabak"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_266",
+        "name": "Feta Peyniri"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kolokithokeftedes (Kabak Mücveri)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kabakları rendeleyip suyunu sıkın."
+      },
+      {
+        "order": 2,
+        "text": "Un, feta ve yumurtayla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Köfte şeklinde şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Kabak",
+      "Yunan",
+      "Kızartma",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Kıymanın feta peyniriyle doldurulup ızgarada pişirildiği doyurucu Yunan usulü köfte.",
+    "duration": "35 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_266",
+        "name": "Feta Peyniri"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_40",
+        "name": "Kekik"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bifteki (Peynirli Köfte)",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kıyma, soğan ve kekiği yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "İçine feta peyniri koyarak köfte şekillendirin."
+      },
+      {
+        "order": 3,
+        "text": "Izgarada veya tavada pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Köfte",
+      "Yunan",
+      "Peynirli",
+      "Izgara"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "İri kuru fasulyenin domates salçalı sosla fırında pişirildiği doyurucu Yunan vejetaryen yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🫘",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gigantes Plaki (Fırında Kuru Fasulye)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Fasulyeyi haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğan ve domates salçasıyla sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Fasulyeyi sosla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Fırın kabına alın."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 45 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Fasulye",
+      "Yunan",
+      "Fırın",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Sütlü pirincin şekerle kaynatılıp tarçınla süslenerek soğutulduğu klasik Yunan sütlacı.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Rizogalo (Yunan Sütlacı)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci sütle kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Şekeri ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte koyulaşana kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Kaselere paylaştırın."
+      },
+      {
+        "order": 5,
+        "text": "Tarçın serperek soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Sütlaç",
+      "Soğuk"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Bademli hamurun küçük toplar halinde şekillendirilip fırınlandıktan sonra pudra şekerine bulandığı Yunan bayram kurabiyesi.",
+    "duration": "1 saat",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_5",
+        "name": "Badem"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kourabiedes (Badem Kurabiyesi)",
+    "officialLikeCount": 3200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tereyağı ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Un ve bademi ekleyip hamur yoğurun."
+      },
+      {
+        "order": 3,
+        "text": "Küçük toplar şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Pudra şekerine bulayın."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Kurabiye",
+      "Bademli"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Bal şerbetine batırılmış baharatlı kurabiyelerin üzerine ceviz serpilerek servis edildiği geleneksel Yunan tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_267",
+        "name": "Ceviz"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Melomakarona (Ballı Kurabiye)",
+    "officialLikeCount": 2900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve tarçınla hamur hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Oval şekiller verip fırınlayın."
+      },
+      {
+        "order": 3,
+        "text": "180 derece fırında 25 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak kurabiyeleri bal şerbetine batırın."
+      },
+      {
+        "order": 5,
+        "text": "Üzerine ceviz serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Ballı",
+      "Cevizli"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Tavuğun sebzelerle birlikte kaynatılıp doyurucu bir çorba haline getirildiği sade Yunan tavuk çorbası.",
+    "duration": "1 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kotosoupa (Yunan Tavuk Çorbası)",
+    "officialLikeCount": 1700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Havuç ve pirinci ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Limon suyu sıkıp servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Yunan",
+      "Tavuk",
+      "Doyurucu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Taze fasulyenin domates ve zeytinyağıyla kısık ateşte pişirildiği hafif ve vejetaryen Yunan sebze yemeği.",
+    "duration": "45 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_125",
+        "name": "Yeşil Fasulye"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Fasolakia (Zeytinyağlı Taze Fasulye)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Fasulyeleri ayıklayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı zeytinyağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domates ve fasulyeyi ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Ilık servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Yunan",
+      "Zeytinyağlı",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Haşlanmış patatesin sarımsak ve zeytinyağıyla ezilerek pürüzsüz bir meze haline getirildiği Yunan usulü ezme.",
+    "duration": "30 dk",
+    "emoji": "🥔",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "5 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Skordalia (Sarımsaklı Patates Ezmesi)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsakla birlikte ezin."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağı ve limon suyunu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Pürüzsüz olana kadar karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Yunan",
+      "Patates",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Feta peynirinin kırmızı biber ve zeytinyağıyla karıştırılıp acılı bir meze haline getirildiği Yunan usulü ezme.",
+    "duration": "15 dk",
+    "emoji": "🧀",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_266",
+        "name": "Feta Peyniri"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_189",
+        "name": "Kırmızı Biber"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Htipiti (Acılı Feta Ezmesi)",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kırmızı biberleri közleyip soyun."
+      },
+      {
+        "order": 2,
+        "text": "Feta peyniriyle birlikte ezin."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağını ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Pürüzsüz olana kadar karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Yunan",
+      "Feta",
+      "Acılı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Feta peynirinin domates ve kekikle folyoya sarılıp fırında yumuşayana kadar pişirildiği sıcak Yunan mezesi.",
+    "duration": "25 dk",
+    "emoji": "🧀",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_266",
+        "name": "Feta Peyniri"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_40",
+        "name": "Kekik"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Feta Saganaki (Fırında Feta)",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Feta peynirini folyoya koyun."
+      },
+      {
+        "order": 2,
+        "text": "Domates ve kekikle üzerini kapatın."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağı gezdirin."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Peynir",
+      "Yunan",
+      "Fırın",
+      "Meze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Kimyonlu kıyma köftelerinin domates soslu bir sosta kısık ateşte pişirildiği aromatik Yunan yemeği.",
+    "duration": "50 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "2 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "400 gr",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Soutzoukakia (Domatesli Köfte)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ekmeği ıslatıp sıkın."
+      },
+      {
+        "order": 2,
+        "text": "Kıyma ve ekmekle köfte yoğurun."
+      },
+      {
+        "order": 3,
+        "text": "Köfteleri hafifçe kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Domates sosunu hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Köfteleri sosla 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Köfte",
+      "Yunan",
+      "Domates Soslu",
+      "Ana Yemek"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Nohutun zeytinyağı ve baharatlarla kaynatıldığı besleyici ve doyurucu Yunan vejetaryen çorbası.",
+    "duration": "1 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Revithosoupa (Yunan Nohut Çorbası)",
+    "officialLikeCount": 1000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nohutu bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Soğanla birlikte haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte 45 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Zeytinyağı ve limon suyu ekleyip servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Yunan",
+      "Nohut",
+      "Vejetaryen"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Lahana yapraklarının pirinç ve kıymayla doldurulup limonlu sosla pişirildiği geleneksel Yunan sarması.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Lahanodolmades (Lahana Sarması)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Lahana yapraklarını haşlayıp yumuşatın."
+      },
+      {
+        "order": 2,
+        "text": "Kıyma ve pirinçle harç hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yaprakları harçla doldurup sarın."
+      },
+      {
+        "order": 4,
+        "text": "Tencerede limonlu suyla pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sarma",
+      "Yunan",
+      "Lahana",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Haşlanmış patatesin zeytinyağı, limon ve otlarla karıştırıldığı taze ve hafif Yunan patates salatası.",
+    "duration": "30 dk",
+    "emoji": "🥔",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Greek Potato Salad (Yunan Patates Salatası)",
+    "officialLikeCount": 1200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayıp küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı ince doğrayın."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağı ve limon suyunu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "İyice karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Ilık veya soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Yunan",
+      "Patates",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Küçük arpa şehriyenin domates ve tavuk suyuyla pişirildiği pirinç benzeri Yunan makarna pilavı.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_270",
+        "name": "Arpa Şehriye (Kritharaki)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kritharaki (Arpa Şehriye Pilavı)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Domates salçasını kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk suyunu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Arpa şehriyeyi ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte suyunu çekene kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Yunan",
+      "Şehriye",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Bütün tavuğun patateslerle birlikte limon ve kekikle fırında pişirildiği doyurucu Yunan aile yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "5 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_40",
+        "name": "Kekik"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kotopoulo Fournou (Fırında Tavuk ve Patates)",
+    "officialLikeCount": 2700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu limon suyu ve kekikle marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Patatesleri iri doğrayıp tepsiye dizin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu patateslerin üzerine yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Yunan",
+      "Fırın",
+      "Patates"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Soğuk kahvenin köpüklü bir şekilde çırpılıp buzla servis edildiği serinletici Yunan içeceği.",
+    "duration": "10 dk",
+    "emoji": "☕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 tatlı kaşığı",
+        "emoji": "☕",
+        "ingredientId": "ing_172",
+        "name": "Kahve"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "2 tatlı kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Frappe (Yunan Soğuk Kahvesi)",
+    "officialLikeCount": 3500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kahve, şeker ve az suyu köpürtün."
+      },
+      {
+        "order": 2,
+        "text": "Köpüklü karışımı buzla dolu bardağa dökün."
+      },
+      {
+        "order": 3,
+        "text": "Üzerine soğuk su ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Karıştırıp servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Yunan",
+      "Kahve",
+      "Soğuk"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Cevizli hamurun fırınlanıp bal şerbetiyle ıslatıldığı sulu ve aromatik Yunan cevizli keki.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_267",
+        "name": "Ceviz"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Karydopita (Cevizli Kek)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Cevizleri kabaca çekin."
+      },
+      {
+        "order": 2,
+        "text": "Yumurta ve unla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Kek kalıbına dökün."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında 40 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk bal şerbetini üzerine dökün."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Cevizli",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "İnce hamurun kızartılıp bal şerbetine batırılarak ceviz serpildiği geleneksel Yunan bayram tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍯",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_267",
+        "name": "Ceviz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Diples (Ballı Kızarmış Hamur)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve yumurtayla sert bir hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "İnce açıp şeritler kesin."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Bal şerbetine batırın."
+      },
+      {
+        "order": 5,
+        "text": "Ceviz serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Ballı",
+      "Kızartma"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Yunan",
+    "description": "Yoğurtlu hamurun fırınlanıp hafif ve nemli bir kek haline geldiği sade Yunan tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Greek Yogurt Cake (Yoğurtlu Kek)",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurta ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Yoğurdu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Unu karıştırarak ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kek kalıbına dökün."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 40 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Yunan",
+      "Yoğurtlu",
+      "Fırın"
+    ],
+    "type": "Tatlı"
   }
 ]

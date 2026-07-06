@@ -1606,5 +1606,17 @@
     "emoji": "🐟",
     "imageUrl": "",
     "name": "Tarama (Balık Yumurtası Ezmesi)"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🟤",
+    "imageUrl": "",
+    "name": "Mercimek"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍚",
+    "imageUrl": "",
+    "name": "Arpa Şehriye (Kritharaki)"
   }
 ]
