@@ -1636,5 +1636,29 @@
     "emoji": "🧀",
     "imageUrl": "",
     "name": "Krem Peynir"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍇",
+    "imageUrl": "",
+    "name": "Hurma"
+  },
+  {
+    "category": "hamur işi",
+    "emoji": "🍰",
+    "imageUrl": "",
+    "name": "Kadayıf"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Yeşil Buğday (Freekeh)"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Nohut Unu"
   }
 ]
