@@ -28209,5 +28209,2022 @@
       "Yumurtalı"
     ],
     "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Marine edilmiş tavuğun domates, krema ve tereyağlı baharatlı bir sosla pişirildiği dünyaca ünlü Hint yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_244",
+        "name": "Sadeyağ (Ghee)"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Butter Chicken (Murgh Makhani)",
+    "officialLikeCount": 24700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu sarımsak ve zencefille marine edip ızgarada veya fırında pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Domatesleri haşlayıp püre haline getirin."
+      },
+      {
+        "order": 3,
+        "text": "Sadeyağda domates püresini garam masalayla kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Kremayı ekleyip sos kıvamına getirin."
+      },
+      {
+        "order": 5,
+        "text": "Pişmiş tavuğu sosa ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Kısık ateşte 10 dakika pişirip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Hint",
+      "Kremalı",
+      "Klasik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Yoğurtla marine edilip ızgarada pişirilen tavuğun domates-krema soslu masala sosuna eklendiği popüler Hint yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Tikka Masala",
+    "officialLikeCount": 19800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu yoğurt, zerdeçal ve garam masalayla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Izgarada veya fırında pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri haşlayıp püre haline getirin."
+      },
+      {
+        "order": 4,
+        "text": "Püreyi kavurup kremayı ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Tavuğu sosa ekleyip 10 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Hint",
+      "Kremalı",
+      "Baharatlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Yoğurt ve baharatlarla marine edilen tavuk parçalarının şişe dizilip ızgarada közlendiği Hint mezesi.",
+    "duration": "45 dk",
+    "emoji": "🍢",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Tikka",
+    "officialLikeCount": 13400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Yoğurt, zerdeçal, garam masala ve limon suyuyla marine edin."
+      },
+      {
+        "order": 3,
+        "text": "En az 2 saat buzdolabında bekletin."
+      },
+      {
+        "order": 4,
+        "text": "Şişlere dizin."
+      },
+      {
+        "order": 5,
+        "text": "Izgarada her tarafı kızarana kadar pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Hint",
+      "Izgara",
+      "Meze"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Yoğurt ve kırmızı baharatlarla marine edilen bütün tavuğun kil fırında veya normal fırında kızartılarak pişirildiği klasik Hint yemeği.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_189",
+        "name": "Kırmızı Biber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tandoori Chicken",
+    "officialLikeCount": 11200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğun derisine çizikler atın."
+      },
+      {
+        "order": 2,
+        "text": "Yoğurt ve baharatlarla iyice marine edin."
+      },
+      {
+        "order": 3,
+        "text": "En az 4 saat buzdolabında bekletin."
+      },
+      {
+        "order": 4,
+        "text": "220 derece fırında 45 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Ara sıra marinat sosuyla fırçalayın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Hint",
+      "Fırın",
+      "Baharatlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Ispanak püresinin taze peynir küpleriyle harmanlandığı kremsi ve besleyici vejetaryen Hint yemeği.",
+    "duration": "35 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "250 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_152",
+        "name": "Taze Peynir"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Palak Paneer",
+    "officialLikeCount": 9600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ispanağı haşlayıp blenderdan geçirin."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsak ve zencefili kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Ispanak püresini ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Peynir küplerini ilave edin."
+      },
+      {
+        "order": 6,
+        "text": "Kremayı ekleyip 5 dakika pişirip servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Ispanak",
+      "Peynirli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Taze peynirin domates-tereyağlı kremsi bir sosta pişirildiği zengin vejetaryen Hint yemeği.",
+    "duration": "35 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_152",
+        "name": "Taze Peynir"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Paneer Butter Masala",
+    "officialLikeCount": 8300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Domatesleri haşlayıp püre haline getirin."
+      },
+      {
+        "order": 2,
+        "text": "Tereyağında püreyi garam masalayla kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Kremayı ekleyip sos kıvamına getirin."
+      },
+      {
+        "order": 4,
+        "text": "Peynir küplerini ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "5 dakika pişirip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Peynirli",
+      "Kremalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Nohutun domates ve baharatlarla acılı bir sosta pişirildiği doyurucu vejetaryen Hint yemeği.",
+    "duration": "40 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chana Masala",
+    "officialLikeCount": 6700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nohutu bir gece önceden suda bekletip haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Zerdeçal ve garam masalayı ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Nohutu ilave edip 15 dakika kaynatın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Nohut",
+      "Baharatlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Kuru fasulyenin domates ve baharatlarla acılı bir sosta pişirildiği kuzey Hindistan usulü yemek.",
+    "duration": "45 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Rajma",
+    "officialLikeCount": 4800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuru fasulyeyi bir gece önceden suda bekletip haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğan ve sarımsağı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Garam masalayı ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Fasulyeyi ilave edip 15 dakika kaynatın."
+      },
+      {
+        "order": 6,
+        "text": "Pirinç eşliğinde servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Fasulye",
+      "Doyurucu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Mercimek ve fasulyenin krema ve tereyağıyla saatlerce kısık ateşte pişirildiği zengin Pencap usulü yemek.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_58",
+        "name": "Kırmızı Mercimek"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Dal Makhani",
+    "officialLikeCount": 7200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mercimek ve fasulyeyi haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Domatesleri tereyağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Haşlanan baklagilleri ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Kremayı ekleyip karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Mercimek",
+      "Kremalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Marine edilmiş tavuğun safranlı pirinçle katman katman dizilip buharda pişirildiği ünlü Hint pilavı.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌼",
+        "ingredientId": "ing_179",
+        "name": "Safran"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Biryani",
+    "officialLikeCount": 22100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu yoğurt ve garam masalayla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı çıtır olana kadar kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci yarı haşlayın."
+      },
+      {
+        "order": 4,
+        "text": "Tavuğu ayrı pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Tencereye pirinç ve tavuğu katman katman dizin."
+      },
+      {
+        "order": 6,
+        "text": "Safranlı suyu gezdirip kısık ateşte 20 dakika buharda pişirin."
+      },
+      {
+        "order": 7,
+        "text": "Kızarmış soğanla süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Hint",
+      "Tavuklu",
+      "Safranlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Havuç, bezelye ve patatesin safranlı pirinçle katman katman pişirildiği vejetaryen Hint pilavı.",
+    "duration": "1 saat",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_12",
+        "name": "Bezelye"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌼",
+        "ingredientId": "ing_179",
+        "name": "Safran"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Vegetable Biryani",
+    "officialLikeCount": 6400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci yarı haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Sebzeleri garam masalayla kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Tencereye pirinç ve sebzeleri katman katman dizin."
+      },
+      {
+        "order": 4,
+        "text": "Safranlı suyu gezdirin."
+      },
+      {
+        "order": 5,
+        "text": "Kısık ateşte 20 dakika buharda pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Hint",
+      "Vejetaryen",
+      "Safranlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Patates ve bezelyeden oluşan baharatlı harcın üçgen hamura sarılıp kızartıldığı popüler Hint atıştırmalığı.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_12",
+        "name": "Bezelye"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Samosa",
+    "officialLikeCount": 15300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayıp ezin."
+      },
+      {
+        "order": 2,
+        "text": "Bezelye ve kimyonu ekleyip harcı hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Un ile sert bir hamur yoğurun."
+      },
+      {
+        "order": 4,
+        "text": "Hamuru üçgen şekilde kesip harcı doldurun."
+      },
+      {
+        "order": 5,
+        "text": "Kenarlarını kapatın."
+      },
+      {
+        "order": 6,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Hint",
+      "Kızartma",
+      "Patatesli"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "İnce doğranmış soğanın baharatlı nohut unu hamuruna bulanıp kızartıldığı çıtır Hint mezesi.",
+    "duration": "25 dk",
+    "emoji": "🧅",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pakora",
+    "officialLikeCount": 5100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı ince dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Un, kimyon ve zerdeçalla hamur hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Soğanları hamura bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda küçük parçalar halinde kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Hint",
+      "Kızartma",
+      "Soğanlı"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Mayalı hamurun yoğurt ve sadeyağla yumuşatılıp taş fırında pişirildiği klasik Hint ekmeği.",
+    "duration": "1 saat",
+    "emoji": "🍞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍞",
+        "ingredientId": "ing_68",
+        "name": "Maya"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_244",
+        "name": "Sadeyağ (Ghee)"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Naan",
+    "officialLikeCount": 18900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, yoğurt ve mayayla yumuşak bir hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru 1 saat mayaya bırakın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru yassı ovaller halinde açın."
+      },
+      {
+        "order": 4,
+        "text": "Çok sıcak fırında veya tavada kabarana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Üzerine sadeyağ sürerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Ekmek",
+      "Hint",
+      "Mayalı",
+      "Klasik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Patates ve karnabaharın zerdeçal ve kimyonla birlikte kavrularak pişirildiği kuru vejetaryen Hint yemeği.",
+    "duration": "30 dk",
+    "emoji": "🥦",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥦",
+        "ingredientId": "ing_243",
+        "name": "Karnabahar"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Aloo Gobi",
+    "officialLikeCount": 4600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patates ve karnabaharı doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Zeytinyağında kimyonu kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Sebzeleri ekleyip zerdeçalla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Kapağı kapatıp kısık ateşte 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Patates",
+      "Kuru"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Ateşte közlenen patlıcanın ezilip domates ve soğanla kavrularak hazırlandığı dumanlı Hint mezesi.",
+    "duration": "40 dk",
+    "emoji": "🍆",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🍆",
+        "ingredientId": "ing_82",
+        "name": "Patlıcan"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Baingan Bharta",
+    "officialLikeCount": 3200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patlıcanları közleyip kabuklarını soyun."
+      },
+      {
+        "order": 2,
+        "text": "Etini çatalla ezin."
+      },
+      {
+        "order": 3,
+        "text": "Soğan ve sarımsağı kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Domatesleri ekleyip pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Ezilmiş patlıcanı ilave edin."
+      },
+      {
+        "order": 6,
+        "text": "5 dakika daha pişirip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Patlıcan",
+      "Dumanlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Tavuğun hindistan cevizi ve badem bazlı hafif tatlı bir sosla kavrularak pişirildiği yumuşak Hint yemeği.",
+    "duration": "45 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥥",
+        "ingredientId": "ing_30",
+        "name": "Hindistan Cevizi"
+      },
+      {
+        "amount": "1/3 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_5",
+        "name": "Badem"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Korma",
+    "officialLikeCount": 9800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu yoğurtla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Badem ve hindistan cevizini bir miktar suyla ezin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Badem karışımını ekleyip garam masalayla karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Kısık ateşte 20 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Hint",
+      "Hindistan Cevizi",
+      "Yumuşak"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Kuzu kuşbaşının yoğurt ve zerdeçalla marine edilip kırmızı baharatlı bir sosta yavaşça pişirildiği Keşmir usulü yemek.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_53",
+        "name": "Kuzu Kuşbaşı"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🟡",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_247",
+        "name": "Kişniş"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Rogan Josh",
+    "officialLikeCount": 6100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuşbaşı eti yoğurt ve zerdeçalla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Eti tavada mühürleyin."
+      },
+      {
+        "order": 3,
+        "text": "Garam masalayı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Su ekleyip kapağı kapatarak kısık ateşte 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Kişnişle süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Kuzu",
+      "Hint",
+      "Keşmir",
+      "Baharatlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Taze peynir ve patatesten yapılan köftelerin kremalı domates sosunda servis edildiği zengin vejetaryen Hint yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_152",
+        "name": "Taze Peynir"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_174",
+        "name": "Krema"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_245",
+        "name": "Garam Masala"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Malai Kofta",
+    "officialLikeCount": 4300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayıp ezin."
+      },
+      {
+        "order": 2,
+        "text": "Peynirle karıştırıp top şekli verin."
+      },
+      {
+        "order": 3,
+        "text": "Köfteleri kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Domatesleri püre haline getirip garam masalayla kavurun."
+      },
+      {
+        "order": 5,
+        "text": "Kremayı ekleyip sos hazırlayın."
+      },
+      {
+        "order": 6,
+        "text": "Köfteleri sosa ekleyip servis edin."
+      }
+    ],
+    "tags": [
+      "Vejetaryen",
+      "Hint",
+      "Peynirli",
+      "Kremalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Yoğurdun salatalık ve kimyonla karıştırılıp acılı yemeklerin yanında serinletici olarak sunulduğu Hint mezesi.",
+    "duration": "10 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_92",
+        "name": "Salatalık"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_247",
+        "name": "Kişniş"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Raita",
+    "officialLikeCount": 2900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Salatalığı rendeleyip suyunu sıkın."
+      },
+      {
+        "order": 2,
+        "text": "Yoğurtla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Kimyonu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kişnişle süsleyip soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Hint",
+      "Yoğurtlu",
+      "Serinletici"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Sütlü hamur toplarının şeker şerbetine batırılarak servis edildiği ünlü Hint tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_248",
+        "name": "Kakule"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gulab Jamun",
+    "officialLikeCount": 8700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sütü kaynatıp koyulaştırın."
+      },
+      {
+        "order": 2,
+        "text": "Un ekleyip hamur hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Küçük toplar şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Şeker ve kakuleyle şerbet hazırlayın."
+      },
+      {
+        "order": 6,
+        "text": "Kızarmış topları şerbete batırıp servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Hint",
+      "Şerbetli",
+      "Klasik"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Pirincin sütle uzun süre kaynatılıp kakule ve fıstıkla tatlandırıldığı geleneksel Hint sütlaçı.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_248",
+        "name": "Kakule"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🥜",
+        "ingredientId": "ing_1",
+        "name": "Antep fıstığı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kheer",
+    "officialLikeCount": 5600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci sütle birlikte kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Kısık ateşte sürekli karıştırarak 40 dakika pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Şeker ve kakuleyi ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Koyulaşınca ocaktan alın."
+      },
+      {
+        "order": 5,
+        "text": "Antep fıstığıyla süsleyip servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Hint",
+      "Sütlaç",
+      "Pirinçli"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Siyah çayın süt, zencefil ve kakuleyle birlikte kaynatılarak hazırlandığı baharatlı Hint çayı.",
+    "duration": "15 dk",
+    "emoji": "☕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 tatlı kaşığı",
+        "emoji": "🍵",
+        "ingredientId": "ing_249",
+        "name": "Çay Yaprağı (Siyah Çay)"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_248",
+        "name": "Kakule"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Masala Chai",
+    "officialLikeCount": 12400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Su, zencefil ve kakuleyi kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Çay yapraklarını ekleyip 3 dakika demleyin."
+      },
+      {
+        "order": 3,
+        "text": "Sütü ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kaynatıp şekerle tatlandırın."
+      },
+      {
+        "order": 5,
+        "text": "Süzüp sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Hint",
+      "Baharatlı",
+      "Sütlü"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Mercimek ve pirinç hamurunun ince açılıp tavada çıtır çıtır pişirildiği güney Hindistan usulü krep.",
+    "duration": "40 dk (+ fermantasyon)",
+    "emoji": "🥞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_58",
+        "name": "Kırmızı Mercimek"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Dosa",
+    "officialLikeCount": 7300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç ve mercimeği ayrı ayrı suda bir gece bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Birlikte blenderdan geçirip pürüzsüz bir hamur elde edin."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru oda sıcaklığında 8 saat mayalandırın."
+      },
+      {
+        "order": 4,
+        "text": "Tuzunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak tavaya ince bir tabaka yayın."
+      },
+      {
+        "order": 6,
+        "text": "Kenarları çıtır olana kadar pişirip servis edin."
+      }
+    ],
+    "tags": [
+      "Krep",
+      "Hint",
+      "Güney Hindistan",
+      "Mayalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Hint",
+    "description": "Mercimeğin sebzeler ve ekşimsi baharatlarla kaynatıldığı güney Hindistan usulü çorba niteliğinde yemek.",
+    "duration": "40 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_58",
+        "name": "Kırmızı Mercimek"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌿",
+        "ingredientId": "ing_247",
+        "name": "Kişniş"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sambar",
+    "officialLikeCount": 3800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mercimeği haşlayıp ezin."
+      },
+      {
+        "order": 2,
+        "text": "Patates ve havucu ayrı haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Domatesleri ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Haşlanan sebzeleri mercimeğe ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "15 dakika kaynatın."
+      },
+      {
+        "order": 6,
+        "text": "Kişnişle süsleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Hint",
+      "Güney Hindistan",
+      "Mercimekli"
+    ],
+    "type": "Çorba"
   }
 ]

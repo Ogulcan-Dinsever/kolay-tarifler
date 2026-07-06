@@ -1450,5 +1450,53 @@
     "emoji": "🟠",
     "imageUrl": "",
     "name": "Hurma (Trabzon Hurması)"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥦",
+    "imageUrl": "",
+    "name": "Karnabahar"
+  },
+  {
+    "category": "yag",
+    "emoji": "🧈",
+    "imageUrl": "",
+    "name": "Sadeyağ (Ghee)"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Garam Masala"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🟡",
+    "imageUrl": "",
+    "name": "Zerdeçal"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Kişniş"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌰",
+    "imageUrl": "",
+    "name": "Kakule"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍵",
+    "imageUrl": "",
+    "name": "Çay Yaprağı (Siyah Çay)"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🥭",
+    "imageUrl": "",
+    "name": "Mango"
   }
 ]
