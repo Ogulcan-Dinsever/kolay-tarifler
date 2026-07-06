@@ -850,5 +850,11 @@
     "emoji": "🍬",
     "imageUrl": "https://images.unsplash.com/photo-1581400151483-fa3b6c7e7b9d?auto=format&fit=crop&w=600&q=80",
     "name": "Şeker"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "https://images.unsplash.com/photo-1764312194474-5996b4c1a4ff?auto=format&fit=crop&w=600&q=80",
+    "name": "Biber Salçası"
   }
 ]
