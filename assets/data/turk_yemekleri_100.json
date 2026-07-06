@@ -41278,5 +41278,1712 @@
       "Pirinç"
     ],
     "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Nohut, tavuk ve sebzelerin uzun süre kaynatılıp katmanlı bir şekilde servis edildiği Madrid'in geleneksel doyurucu yahnisi.",
+    "duration": "2 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_79",
+        "name": "Nohut"
+      },
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Cocido Madrileño",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nohutu bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk ve nohutu birlikte haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Havuç ve lahanayı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 1.5 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Katmanlar halinde servis edin."
+      }
+    ],
+    "tags": [
+      "Yahni",
+      "İspanyol",
+      "Nohut",
+      "Madrid"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Karides, kalamar ve balığın safranlı bir sosta birlikte pişirildiği zengin İspanyol deniz ürünü güveci.",
+    "duration": "50 dk",
+    "emoji": "🦑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦑",
+        "ingredientId": "ing_190",
+        "name": "Kalamar"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "1 tutam",
+        "emoji": "🌼",
+        "ingredientId": "ing_179",
+        "name": "Safran"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zarzuela (Deniz Ürünü Güveci)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğan ve domatesle sos hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Safranı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Balık ve kalamarı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Karidesleri son olarak ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "15 dakika pişirip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Deniz Ürünü",
+      "İspanyol",
+      "Güveç",
+      "Safranlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Haşlanmış patates, havuç ve bezelyenin mayonezle karıştırıldığı serinletici İspanyol usulü salata.",
+    "duration": "30 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🫛",
+        "ingredientId": "ing_12",
+        "name": "Bezelye"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ensaladilla Rusa (İspanyol Rus Salatası)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patates ve havucu haşlayıp küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Bezelyeyi haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları haşlayıp doğrayın."
+      },
+      {
+        "order": 4,
+        "text": "Mayonezle karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "İspanyol",
+      "Patates",
+      "Soğuk"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Kuşkonmazın zeytinyağıyla ızgarada kısaca pişirilip üzerine parmesan gezdirildiği sade ve hafif İspanyol mezesi.",
+    "duration": "15 dk",
+    "emoji": "🥦",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥦",
+        "ingredientId": "ing_271",
+        "name": "Kuşkonmaz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Espárragos a la Plancha (Izgara Kuşkonmaz)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuşkonmazları zeytinyağına bulayın."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın tavada ızgara yapın."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu sıkın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "İspanyol",
+      "Izgara",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Küçük yeşil biberlerin zeytinyağında kızartılıp üzerine tuz serpilerek servis edildiği Galiçya usulü meze.",
+    "duration": "15 dk",
+    "emoji": "🫑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pimientos de Padrón (Kızarmış Yeşil Biberler)",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Biberleri yıkayıp kurulayın."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın zeytinyağında kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Kabarana kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Tuz serperek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Biber",
+      "İspanyol",
+      "Meze",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Dana etinin kırmızı şarap ve sebzelerle uzun süre kısık ateşte pişirildiği zengin İspanyol et yahnisi.",
+    "duration": "2 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Estofado de Ternera (Dana Yahnisi)",
+    "officialLikeCount": 1700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Soğan ve havucu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Domates salçasını ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Su ekleyip kısık ateşte 1.5 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "İspanyol",
+      "Yahni",
+      "Doyurucu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Sarımsağın ekmek ve tavuk suyuyla kaynatılıp üzerine yumurta kırılarak pişirildiği sade Kastilya usulü çorba.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "8 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "4 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sopa de Ajo (Sarımsak Çorbası)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı zeytinyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Ekmek parçalarını ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuk suyunu ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Yumurtayı kırıp pişirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "İspanyol",
+      "Sarımsaklı",
+      "Kastilya"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Baklanın tavuk parçalarıyla birlikte zeytinyağında kavrulup kısık ateşte pişirildiği İspanyol usulü sebze yemeği.",
+    "duration": "40 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_272",
+        "name": "Bakla"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Habas con Pollo (Baklalı Tavuk)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Baklayı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Su ekleyip kısık ateşte 25 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "İspanyol",
+      "Tavuklu",
+      "Bakla"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Balığın domates, biber ve sarımsaklı bir sosla birlikte pişirildiği Bask bölgesine özgü İspanyol balık yemeği.",
+    "duration": "40 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Merluza a la Vasca (Bask Usulü Balık)",
+    "officialLikeCount": 1200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı zeytinyağında kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Domates ve biberi ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Balığı sosun içine yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "İspanyol",
+      "Bask",
+      "Domates Soslu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Sarımsağın zeytinyağı ve yumurtayla çırpılarak kremamsı bir sos haline getirildiği klasik İspanyol sosu.",
+    "duration": "15 dk",
+    "emoji": "🥣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "6 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Alioli (Sarımsaklı Mayonez)",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı ezin."
+      },
+      {
+        "order": 2,
+        "text": "Yumurta ile çırpın."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağını yavaşça ekleyerek çırpmaya devam edin."
+      },
+      {
+        "order": 4,
+        "text": "Limon suyu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Sos",
+      "İspanyol",
+      "Sarımsaklı",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Hamsinin sirke ve zeytinyağında bir gece bekletilerek marine edildiği ekşimsi ve serinletici İspanyol mezesi.",
+    "duration": "20 dk (+ bekletme)",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_27",
+        "name": "Hamsi"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Boquerones en Vinagre (Sirkeli Hamsi)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Hamsileri temizleyip fileto çıkarın."
+      },
+      {
+        "order": 2,
+        "text": "Sirkeye yatırıp buzdolabında 4 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Süzüp zeytinyağı ve sarımsakla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "İspanyol",
+      "Sirkeli",
+      "Meze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Mantarın bol sarımsak ve zeytinyağıyla kavrulduğu hızlı ve lezzetli İspanyol usulü mantar mezesi.",
+    "duration": "15 dk",
+    "emoji": "🍄",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "5 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Setas al Ajillo (Sarımsaklı Mantar)",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mantarları dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı zeytinyağında kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Mantarları ekleyip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Mantar",
+      "İspanyol",
+      "Sarımsaklı",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "İnce mayalı hamurun üzerine sebzelerin dizilip fırınlandığı Katalan usulü yassı sebzeli ekmek.",
+    "duration": "1 saat",
+    "emoji": "🍕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍞",
+        "ingredientId": "ing_68",
+        "name": "Maya"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Coca de Verduras (Sebzeli Yassı Ekmek)",
+    "officialLikeCount": 1000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve mayayla hamur yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Yassı şekilde açın."
+      },
+      {
+        "order": 3,
+        "text": "Domates ve biberi üzerine dizin."
+      },
+      {
+        "order": 4,
+        "text": "200 derece fırında 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Ekmek",
+      "İspanyol",
+      "Katalan",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Un, tereyağı ve şekerle hazırlanan hamurun fırınlanıp pudra şekerine bulandığı geleneksel İspanyol kurabiyesi.",
+    "duration": "45 dk",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Mantecados (Un Kurabiyesi)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tereyağı ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Unu ekleyip hamur yoğurun."
+      },
+      {
+        "order": 3,
+        "text": "Küçük şekiller verin."
+      },
+      {
+        "order": 4,
+        "text": "170 derece fırında 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Pudra şekerine bulayın."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Kurabiye",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Badem unu ve şekerle hazırlanan hamurun dağılan bir dokuda fırınlandığı geleneksel İspanyol Noel kurabiyesi.",
+    "duration": "45 dk",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_5",
+        "name": "Badem"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Polvorones (Badem Polvoronu)",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bademleri öğütün."
+      },
+      {
+        "order": 2,
+        "text": "Tereyağı ve şekeri çırpın."
+      },
+      {
+        "order": 3,
+        "text": "Un ve bademi ekleyip yoğurun."
+      },
+      {
+        "order": 4,
+        "text": "Oval şekiller verin."
+      },
+      {
+        "order": 5,
+        "text": "170 derece fırında 20 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Bademli",
+      "Noel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Bal ve kavrulmuş bademin katılaşana kadar karıştırılıp kalıplarda dondurulduğu geleneksel İspanyol şekerlemesi.",
+    "duration": "1 saat",
+    "emoji": "🍬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_5",
+        "name": "Badem"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Turrón (Bademli Nugat)",
+    "officialLikeCount": 2300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bademleri kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Bal ve şekeri kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Bademleri ekleyip karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Kalıba dökün."
+      },
+      {
+        "order": 5,
+        "text": "Soğutup dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Bademli",
+      "Şekerleme"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Portakal ve elma dilimlerinin şekerli meyve suyunda demlendiği serinletici alkolsüz İspanyol içeceği.",
+    "duration": "20 dk",
+    "emoji": "🍹",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🍊",
+        "ingredientId": "ing_261",
+        "name": "Portakal"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sangria (Alkolsüz Meyveli Şerbet)",
+    "officialLikeCount": 2800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Portakal ve limonu dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Şekerli suyla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Buzdolabında 2 saat demlenmeye bırakın."
+      },
+      {
+        "order": 4,
+        "text": "Buzla servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "İspanyol",
+      "Meyveli",
+      "Soğuk"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Sütlü krem şekerin dilimlenip una ve yumurtaya bulanarak kızartıldığı çıtır dışı yumuşak içi İspanyol tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Leche Frita (Kızarmış Süt)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Süt, un ve şekerle krema pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Kremayı tepsiye dökün."
+      },
+      {
+        "order": 3,
+        "text": "Soğutup dilimleyin."
+      },
+      {
+        "order": 4,
+        "text": "Yumurta ve una bulayıp kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Şeker serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Kızartma",
+      "Sütlü"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Yumurta sarısı ve sütle hazırlanan kremanın soğutularak servis edildiği pürüzsüz İspanyol muhallebisi.",
+    "duration": "40 dk",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 litre",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3/4 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Natillas (İspanyol Muhallebisi)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Süt ve tarçını ısıtın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurta sarısı ve şekeri çırpın."
+      },
+      {
+        "order": 3,
+        "text": "Sütü yavaşça ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte koyulaşana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Muhallebi",
+      "Soğuk"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Küçük kalamarların una bulanıp kızartıldığı çıtır ve popüler İspanyol deniz ürünü mezesi.",
+    "duration": "30 dk",
+    "emoji": "🦑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🦑",
+        "ingredientId": "ing_190",
+        "name": "Kalamar"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chipirones Fritos (Kızarmış Kalamar)",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kalamarları halka halka doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Una bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Limon suyu sıkarak servis edin."
+      }
+    ],
+    "tags": [
+      "Kalamar",
+      "İspanyol",
+      "Kızartma",
+      "Deniz Ürünü"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "İri beyaz fasulyenin sebzelerle birlikte kısık ateşte pişirildiği doyurucu İspanyol fasulye yahnisi.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🫘",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_44",
+        "name": "Kuru Fasulye"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Judiones Estofados (Beyaz Fasulye Yahnisi)",
+    "officialLikeCount": 800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Fasulyeyi bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Havuç ve soğanla haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 1 saat pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Fasulye",
+      "İspanyol",
+      "Yahni",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Bademin ekmek ve sarımsakla birlikte blenderdan geçirilip soğuk servis edildiği Endülüs usulü beyaz çorba.",
+    "duration": "20 dk",
+    "emoji": "🥣",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_5",
+        "name": "Badem"
+      },
+      {
+        "amount": "3 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ajoblanco (Soğuk Badem Çorbası)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ekmeği suda ıslatın."
+      },
+      {
+        "order": 2,
+        "text": "Badem ve sarımsakla blenderdan geçirin."
+      },
+      {
+        "order": 3,
+        "text": "Zeytinyağını ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Buzdolabında soğutun."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "İspanyol",
+      "Bademli",
+      "Soğuk"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Kavrulmuş kırmızı biberlerin şeritler halinde kesilip zeytinyağıyla süslenerek servis edildiği Extremadura usulü salata.",
+    "duration": "30 dk",
+    "emoji": "🫑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_189",
+        "name": "Kırmızı Biber"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zorongollo (Kavrulmuş Biber Salatası)",
+    "officialLikeCount": 600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Biberleri fırında veya ateşte közleyin."
+      },
+      {
+        "order": 2,
+        "text": "Kabuklarını soyup şeritler halinde kesin."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsak ve zeytinyağıyla karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Biber",
+      "İspanyol",
+      "Salata",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Tavuk kanatlarının bol sarımsak ve zeytinyağıyla kavrularak pişirildiği doyurucu İspanyol atıştırmalığı.",
+    "duration": "35 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "800 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "8 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Alitas al Ajillo (Sarımsaklı Tavuk Kanadı)",
+    "officialLikeCount": 2400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kanatlarını kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Karabiber ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Kapağı kapatıp 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "İspanyol",
+      "Sarımsaklı",
+      "Atıştırmalık"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "İspanyol",
+    "description": "Krem peynirin fırında yüksek ısıda pişirilip üzeri yanık, içi akışkan bırakıldığı Bask usulü meşhur cheesecake.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_273",
+        "name": "Krem Peynir"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tarta de Queso (Bask Usulü Yanık Cheesecake)",
+    "officialLikeCount": 4700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Krem peynir ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtaları teker teker ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Sütü ilave edip karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Kalıba dökün."
+      },
+      {
+        "order": 5,
+        "text": "220 derece fırında üzeri yanana kadar 35 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "İspanyol",
+      "Bask",
+      "Cheesecake"
+    ],
+    "type": "Tatlı"
   }
 ]

@@ -1618,5 +1618,23 @@
     "emoji": "🍚",
     "imageUrl": "",
     "name": "Arpa Şehriye (Kritharaki)"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥦",
+    "imageUrl": "",
+    "name": "Kuşkonmaz"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🫛",
+    "imageUrl": "",
+    "name": "Bakla"
+  },
+  {
+    "category": "süt ürünleri",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Krem Peynir"
   }
 ]
