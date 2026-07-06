@@ -1420,5 +1420,35 @@
     "emoji": "🌱",
     "imageUrl": "",
     "name": "Soya Fasulyesi Filizi (Kongnamul)"
+  },
+  {
+    "category": "tatlandirici",
+    "emoji": "🍯",
+    "imageUrl": "",
+    "name": "Bal"
+  },
+  {
+    "category": "et",
+    "emoji": "🍖",
+    "imageUrl": "",
+    "name": "Sığır Kuyruğu"
+  },
+  {
+    "category": "et",
+    "emoji": "🦴",
+    "imageUrl": "",
+    "name": "Sığır Kemiği (İlik Kemiği)"
+  },
+  {
+    "category": "sut",
+    "emoji": "🥛",
+    "imageUrl": "",
+    "name": "Soya Sütü"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🟠",
+    "imageUrl": "",
+    "name": "Hurma (Trabzon Hurması)"
   }
 ]

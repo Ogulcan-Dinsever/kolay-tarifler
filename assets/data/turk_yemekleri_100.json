@@ -26290,5 +26290,1924 @@
       "Acılı"
     ],
     "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Karides, kalamar ve midyenin acılı kırmızı bir çorbada eriştenin üzerine döküldüğü deniz mahsullü Kore çorbası.",
+    "duration": "35 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🦑",
+        "ingredientId": "ing_190",
+        "name": "Kalamar"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🦪",
+        "ingredientId": "ing_158",
+        "name": "Midye"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_224",
+        "name": "Gochugaru"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Jjamppong",
+    "officialLikeCount": 6800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı kavurup gochugaruyu ekleyin."
+      },
+      {
+        "order": 2,
+        "text": "Suyu ekleyip kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Lahanayı ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Deniz mahsullerini ekleyip pişene kadar kaynatın."
+      },
+      {
+        "order": 5,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 6,
+        "text": "Erişteyi kaseye alıp çorbayı dökün."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Kore",
+      "Deniz Ürünü",
+      "Acılı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Sığır ilik kemiklerinin saatlerce kaynatılmasıyla elde edilen beyaz ve besleyici Kore kemik suyu çorbası.",
+    "duration": "4 saat",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 kg",
+        "emoji": "🦴",
+        "ingredientId": "ing_240",
+        "name": "Sığır Kemiği (İlik Kemiği)"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "8 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Seolleongtang",
+    "officialLikeCount": 4100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kemikleri soğuk suda birkaç saat bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Temiz suyla 3-4 saat kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Çorba beyazlaşana kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Pirinci ayrı haşlayıp kaseye koyun."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak çorbayı üzerine dökün."
+      },
+      {
+        "order": 6,
+        "text": "Yeşil soğan ve tuzla servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Kore",
+      "Kemik Suyu",
+      "Besleyici"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Sığır kuyruğunun saatlerce kaynatılarak elde edildiği koyu ve besleyici Kore kuyruk çorbası.",
+    "duration": "3 saat 30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 kg",
+        "emoji": "🍖",
+        "ingredientId": "ing_239",
+        "name": "Sığır Kuyruğu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      },
+      {
+        "amount": "8 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kkori Gomtang",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kuyruğu soğuk suda bekletip kanını çıkarın."
+      },
+      {
+        "order": 2,
+        "text": "Temiz suyla soğanla birlikte 3 saat kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Köpüğü ara ara alın."
+      },
+      {
+        "order": 4,
+        "text": "Çorba koyulaşınca tuzunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanla süsleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Kore",
+      "Kuyruk",
+      "Kemik Suyu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Dana etinin soya sosu bazlı tatlı bir sosla kaynatılıp haşlanmış yumurtayla birlikte servis edildiği Kore usulü konserve niteliğinde yemek.",
+    "duration": "1 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_145",
+        "name": "Dana Bonfile"
+      },
+      {
+        "amount": "5 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Jangjorim",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti su ile haşlayıp köpüğünü alın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtaları ayrı haşlayıp soyun."
+      },
+      {
+        "order": 3,
+        "text": "Soya sosu, şeker ve sarımsağı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Et yumuşayana kadar kısık ateşte pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Yumurtaları son 15 dakikada ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Soğutup dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Kore",
+      "Soya Soslu",
+      "Meze"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Kimchi, tofu ve sosisin acılı bir çorbada kaynatılıp erişteyle birlikte servis edildiği füzyon Kore askeri güveci.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥬",
+        "ingredientId": "ing_233",
+        "name": "Kimchi"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_187",
+        "name": "İtalyan Sosisi"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_206",
+        "name": "Tofu"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_223",
+        "name": "Gochujang"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Budae Jjigae (Tavuklu)",
+    "officialLikeCount": 5200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kimchi ve sosisi tencereye dizin."
+      },
+      {
+        "order": 2,
+        "text": "Tofu ve gochujangı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Suyu ilave edip kaynatın."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ekleyip pişene kadar kaynatın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Kore",
+      "Kimchi",
+      "Füzyon"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Haşlanmış tavuk parçalarının beyaz lahana yaprakları ve kimchiyle sarılarak yendiği hafif Kore yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥬",
+        "ingredientId": "ing_233",
+        "name": "Kimchi"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Dak Bossam",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu sarımsak ve zencefille birlikte haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Lahana yapraklarını yumuşayana kadar haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Haşlanan tavuğu dilimleyin."
+      },
+      {
+        "order": 4,
+        "text": "Lahana yaprağına tavuk ve kimchi koyup sarın."
+      },
+      {
+        "order": 5,
+        "text": "Soya sosuyla servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Kore",
+      "Lahana",
+      "Hafif"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Ekşimiş kimchinin un hamuruna karıştırılıp tavada çıtır çıtır pişirildiği Kore usulü acılı krep.",
+    "duration": "20 dk",
+    "emoji": "🥞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥬",
+        "ingredientId": "ing_233",
+        "name": "Kimchi"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kimchi Jeon",
+    "officialLikeCount": 7900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kimchiyi doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Un ve suyla karıştırıp hamur hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yeşil soğanı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Susam yağında her iki tarafı çıtır olana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Krep",
+      "Kore",
+      "Kimchi",
+      "Çıtır"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Rendelenmiş patatesin ince bir krep gibi tavada kızartıldığı sade ve doyurucu Kore atıştırmalığı.",
+    "duration": "20 dk",
+    "emoji": "🥔",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🫒",
+        "ingredientId": "ing_132",
+        "name": "Zeytinyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gamja Jeon",
+    "officialLikeCount": 3800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri rendeleyip suyunu süzün."
+      },
+      {
+        "order": 2,
+        "text": "Un, tuz ve yeşil soğanla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Tavada yağla ince bir tabaka halinde yayın."
+      },
+      {
+        "order": 4,
+        "text": "Her iki tarafı da altın rengi olana kadar pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleyerek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Krep",
+      "Kore",
+      "Patates",
+      "Basit"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Bol yeşil soğanın acılı soya soslu bir karışımla harmanlandığı, genellikle ızgara etin yanında sunulan Kore mezesi.",
+    "duration": "15 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "6 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_224",
+        "name": "Gochugaru"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_102",
+        "name": "Susam"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pa Muchim",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yeşil soğanları ince ince doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğuk suda 10 dakika bekletip süzün."
+      },
+      {
+        "order": 3,
+        "text": "Gochugaru, soya sosu ve şekeri karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Soğanla harmanlayın."
+      },
+      {
+        "order": 5,
+        "text": "Susam serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Kore",
+      "Yeşil Soğan",
+      "Meze"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "İnce şeritler halinde doğranan turpun gochugaru ve sirkeyle acı-ekşi bir salataya dönüştürüldüğü klasik Kore mezesi.",
+    "duration": "15 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_226",
+        "name": "Turp"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_224",
+        "name": "Gochugaru"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Musaengchae",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Turpu ince şeritler halinde doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Gochugaru, şeker, sirke ve sarımsağı karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Turpla harmanlayın."
+      },
+      {
+        "order": 4,
+        "text": "15 dakika dinlendirip servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Kore",
+      "Turp",
+      "Acı-Ekşi"
+    ],
+    "type": "Salata"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Haşlanmış ıspanağın sarımsak ve susam yağıyla harmanlandığı klasik Kore banchan mezesi.",
+    "duration": "10 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_102",
+        "name": "Susam"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sigeumchi Namul",
+    "officialLikeCount": 2300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ispanağı kaynar suda kısaca haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğuk suya alıp süzün."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsak, susam yağı ve tuzla harmanlayın."
+      },
+      {
+        "order": 4,
+        "text": "Susam serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Kore",
+      "Ispanak",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Tofunun acılı soya sosu bazlı bir sosla kısık ateşte kaynatılarak pişirildiği doyurucu Kore mezesi.",
+    "duration": "25 dk",
+    "emoji": "🧈",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_206",
+        "name": "Tofu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_224",
+        "name": "Gochugaru"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Dubu Jorim",
+    "officialLikeCount": 2700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tofuyu dilimleyip susam yağında hafifçe kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Soya sosu, gochugaru ve sarımsağı karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Sosu tofunun üzerine dökün."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 10 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tofu",
+      "Kore",
+      "Meze",
+      "Acılı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "İnce eriştenin soğuk soya sütü çorbasında servis edildiği serinletici yaz Kore yemeği.",
+    "duration": "20 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_241",
+        "name": "Soya Sütü"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_102",
+        "name": "Susam"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kongguksu",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayıp soğuk suda çalkalayın."
+      },
+      {
+        "order": 2,
+        "text": "Soya sütünü tuzla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Erişteyi kaseye alıp soya sütünü dökün."
+      },
+      {
+        "order": 4,
+        "text": "Susam serperek soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Kore",
+      "Soğuk",
+      "Soya Sütü"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Soğuk eriştenin gochujang bazlı acı-tatlı sosla karıştırılıp salatalık ve yumurtayla süslendiği baharatlı Kore yemeği.",
+    "duration": "20 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_223",
+        "name": "Gochujang"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_92",
+        "name": "Salatalık"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bibim Guksu",
+    "officialLikeCount": 5600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayıp soğuk suda çalkalayın."
+      },
+      {
+        "order": 2,
+        "text": "Gochujang, şeker ve sirkeyi karıştırıp sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları haşlayın."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi sosla harmanlayın."
+      },
+      {
+        "order": 5,
+        "text": "Salatalık ve yumurtayla süsleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Kore",
+      "Acılı",
+      "Soğuk"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Dilimlenmiş pirinç keklerinin tavuk suyunda haşlanıp yumurta ve norinin eklendiği, Kore'de yılbaşında yenen geleneksel çorba.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍡",
+        "ingredientId": "ing_231",
+        "name": "Tteok (Kore Pirinç Keki)"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 yaprak",
+        "emoji": "🌿",
+        "ingredientId": "ing_201",
+        "name": "Nori"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tteokguk",
+    "officialLikeCount": 4200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk suyunu kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Pirinç keklerini ekleyip yumuşayana kadar pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtaları çırpıp ince bir akışla ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Nori ve yeşil soğanla süsleyin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Kore",
+      "Yeni Yıl",
+      "Pirinç Keki"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Çırpılmış yumurtanın havuç ve yeşil soğanla birlikte katman katman sarılarak pişirildiği Kore usulü rulo omlet.",
+    "duration": "20 dk",
+    "emoji": "🍳",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gyeranmari",
+    "officialLikeCount": 3100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Havuç ve yeşil soğanı çok ince doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtaları tuzla çırpıp sebzelerle karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Kare tavaya ince bir tabaka dökün."
+      },
+      {
+        "order": 4,
+        "text": "Yarı pişince ruloyup tavanın kenarına itin."
+      },
+      {
+        "order": 5,
+        "text": "Bu işlemi tekrarlayarak rulo büyütün."
+      },
+      {
+        "order": 6,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Yumurta",
+      "Kore",
+      "Rulo",
+      "Sebzeli"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "İnce dilimlenen turpun sirke ve şekerle tatlı-ekşi bir turşuya dönüştürüldüğü, genellikle fast-food yanında sunulan Kore turşusu.",
+    "duration": "20 dk + bekletme",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_226",
+        "name": "Turp"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Danmuji",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Turpu ince dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Sirke, şeker ve tuzu karıştırıp turşu suyu hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Turp dilimlerini kavanoza dizin."
+      },
+      {
+        "order": 4,
+        "text": "Turşu suyunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "En az 1 gün buzdolabında bekletip servis edin."
+      }
+    ],
+    "tags": [
+      "Turşu",
+      "Kore",
+      "Turp",
+      "Ekşi-Tatlı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Haşlanmış pirincin şekerle mayalandırılıp soğuk olarak içildiği geleneksel Kore tatlı içeceği.",
+    "duration": "1 saat + fermantasyon",
+    "emoji": "🥤",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "6 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sikhye",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Su ve şekeri ekleyip kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Karışımı ılık ortamda birkaç saat mayalandırın."
+      },
+      {
+        "order": 4,
+        "text": "Süzüp soğutun."
+      },
+      {
+        "order": 5,
+        "text": "Buzla servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Kore",
+      "Tatlı",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Un ve susam yağının yoğrulup bal şerbetine batırılarak hazırlandığı geleneksel Kore bayram tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Yakgwa",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve susam yağını yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Hamuru küçük şekiller halinde kesin."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda altın rengi olana kadar kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Balı zencefille ısıtıp şerbet hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Kızarmış hamurları şerbete batırın."
+      },
+      {
+        "order": 6,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Kore",
+      "Bal",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Pirinç ununun azuki fasulyesi harcıyla doldurulup yarım ay şeklinde kapatılarak buharda pişirildiği Sonbahar bayramı tatlısı.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍡",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_87",
+        "name": "Pirinç unu"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_216",
+        "name": "Azuki Fasulyesi"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Songpyeon",
+    "officialLikeCount": 2200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç ununu sıcak suyla yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Azuki fasulyesini haşlayıp balla ezin."
+      },
+      {
+        "order": 3,
+        "text": "Hamurdan küçük bezeler alıp içine azuki harcı koyun."
+      },
+      {
+        "order": 4,
+        "text": "Yarım ay şeklinde kapatın."
+      },
+      {
+        "order": 5,
+        "text": "Buharda 20 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Kore",
+      "Sonbahar Bayramı",
+      "Pirinç"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Yapışkan pirincin dövülüp azuki fasulyesi tozuna bulanarak hazırlandığı yumuşak Kore pirinç keki.",
+    "duration": "1 saat",
+    "emoji": "🍡",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_216",
+        "name": "Azuki Fasulyesi"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Injeolmi",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci haşlayıp yapışkan hale gelene kadar dövün."
+      },
+      {
+        "order": 2,
+        "text": "Azuki fasulyesini kavurup toz haline getirin."
+      },
+      {
+        "order": 3,
+        "text": "Dövülmüş pirinci küçük parçalara kesin."
+      },
+      {
+        "order": 4,
+        "text": "Azuki tozuna bulayın."
+      },
+      {
+        "order": 5,
+        "text": "Şeker serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Kore",
+      "Pirinç",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Kurutulmuş hurmanın tarçın ve şekerle kaynatılıp soğutulduğu geleneksel Kore tatlı içeceği.",
+    "duration": "40 dk",
+    "emoji": "🥤",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "6 adet",
+        "emoji": "🟠",
+        "ingredientId": "ing_242",
+        "name": "Hurma (Trabzon Hurması)"
+      },
+      {
+        "amount": "2 çubuk",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "6 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sujeonggwa",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tarçını suyla kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Şekeri ekleyip 20 dakika kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Süzüp hurmaları ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Soğutup buzdolabında bekletin."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Kore",
+      "Tarçın",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Haşlanmış soya fasulyesi filizinin sarımsaklı bir suda kaynatılarak hazırlandığı hafif ve ferahlatıcı Kore çorbası.",
+    "duration": "20 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🌱",
+        "ingredientId": "ing_237",
+        "name": "Soya Fasulyesi Filizi (Kongnamul)"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kongnamul Guk",
+    "officialLikeCount": 1700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Suyu sarımsakla kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Soya fasulyesi filizlerini ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kapağı kapatıp 10 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Tuzunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Yeşil soğanla süsleyip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Kore",
+      "Hafif",
+      "Ferahlatıcı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Uskumru balığının turp dilimleri üzerinde soya sosu ve gochugaru ile kısık ateşte pişirildiği Kore usulü balık yemeği.",
+    "duration": "35 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_226",
+        "name": "Turp"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_224",
+        "name": "Gochugaru"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Godeungeo Jorim",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Turpu dilimleyip tencerenin tabanına dizin."
+      },
+      {
+        "order": 2,
+        "text": "Balığı turpların üzerine yerleştirin."
+      },
+      {
+        "order": 3,
+        "text": "Soya sosu, gochugaru ve şekeri karıştırıp üzerine dökün."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Kore",
+      "Turplu",
+      "Acılı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Kore",
+    "description": "Yumurtalı hamurun küçük kalıplarda pişirilip sıcak servis edildiği popüler Kore sokak ekmeği.",
+    "duration": "25 dk",
+    "emoji": "🍞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧁",
+        "ingredientId": "ing_33",
+        "name": "Kabartma Tozu"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Gyeranppang",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, şeker, süt ve kabartma tozunu karıştırıp hamur hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Kalıplara hamuru paylaştırın."
+      },
+      {
+        "order": 3,
+        "text": "Her birinin ortasına bir yumurta kırın."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında veya özel kalıpta 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Ekmek",
+      "Kore",
+      "Sokak Lezzeti",
+      "Yumurtalı"
+    ],
+    "type": "Tatlı"
   }
 ]
