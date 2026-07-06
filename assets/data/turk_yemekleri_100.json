@@ -34094,5 +34094,1894 @@
       "Bademli"
     ],
     "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Kavrulmuş kıymanın koyu fasulye sosuyla karıştırılıp erişte üzerine döküldüğü Pekin usulü Çin yemeği.",
+    "duration": "30 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "⚫",
+        "ingredientId": "ing_232",
+        "name": "Chunjang (Kara Fasulye Ezmesi)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zhajiangmian",
+    "officialLikeCount": 3200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kıymayı kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı ekleyip pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Fasulye ezmesini ilave edip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Lahanayı ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 6,
+        "text": "Sosu erişteyle harmanlayıp servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Çin",
+      "Pekin",
+      "Koyu Sos"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tavuğun yumurta, lahana ve mantarla kavrulup hoisin soslu ince krepe sarılarak yendiği kuzey Çin yemeği.",
+    "duration": "35 dk",
+    "emoji": "🥞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_254",
+        "name": "Hoisin Sosu"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Mu Shu Chicken",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ile ince krepler pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Yumurta, lahana ve mantarı ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Krebe hoisin sosu sürüp harcı koyun."
+      },
+      {
+        "order": 5,
+        "text": "Sararak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Çin",
+      "Krep",
+      "Kuzey Çin"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tavuğun kaju fıstığı ve yeşil biberle birlikte soya soslu bir sosta kavrulduğu popüler Çin yemeği.",
+    "duration": "25 dk",
+    "emoji": "🥜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_263",
+        "name": "Kaju"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Cashew Chicken",
+    "officialLikeCount": 7100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı kavurup tavuğu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Yeşil biberi ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Soya sosunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Kajuyu ekleyip karıştırın."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Çin",
+      "Kaju",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Haşlanıp dilimlenen tavuğun acı fasulye ezmesi ve lahanayla ikinci kez kavrularak pişirildiği Sichuan usulü yemek.",
+    "duration": "35 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_259",
+        "name": "Doubanjiang (Acı Fasulye Ezmesi)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Twice Cooked Chicken",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu haşlayıp dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Doubanjiangı ekleyip kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Tavuk ve lahanayı ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Soya sosunu ekleyip kavurun."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Çin",
+      "Sichuan",
+      "Acılı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Karidesin nişastaya bulanıp kızartıldıktan sonra sarımsak ve karabiberle tekrar kavrulduğu çıtır Çin mezesi.",
+    "duration": "25 dk",
+    "emoji": "🦐",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Salt and Pepper Shrimp",
+    "officialLikeCount": 5300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Karidesleri nişastaya bulayın."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsağı ayrı kavurun."
+      },
+      {
+        "order": 4,
+        "text": "Kızarmış karidesleri sarımsak ve karabiberle karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Karides",
+      "Çin",
+      "Kızartma",
+      "Meze"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tavuk, mantar ve lahananın acı fasulye ezmesi ve sichuan biberli kaynar bir suda pişirildiği sokak usulü Çin çorbası.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_259",
+        "name": "Doubanjiang (Acı Fasulye Ezmesi)"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_255",
+        "name": "Sichuan Biberi"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ma La Tang",
+    "officialLikeCount": 2900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Doubanjiangı yağda kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Su ekleyip kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Lahana ve mantarı ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Sichuan biberini ekleyip pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Çin",
+      "Sichuan",
+      "Acılı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "İri tavuk köftelerinin lahana yatağı üzerinde kısık ateşte pişirildiği Şangay usulü doyurucu Çin yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Lion's Head Meatballs",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kıyma, zencefil ve nişastayı yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Büyük köfteler şekillendirin."
+      },
+      {
+        "order": 3,
+        "text": "Köfteleri hafifçe kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Lahanayı tencereye serin."
+      },
+      {
+        "order": 5,
+        "text": "Köfteleri üzerine yerleştirip soya sosu ekleyin."
+      },
+      {
+        "order": 6,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Çin",
+      "Köfte",
+      "Şangay"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Dana etinin soya sosu ve şekerle karamelize olana kadar yavaşça pişirildiği kızıl renkli Çin usulü yemek.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_145",
+        "name": "Dana Bonfile"
+      },
+      {
+        "amount": "5 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_256",
+        "name": "Beş Baharat Tozu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Hong Shao Rou (Kızıl Pişmiş Dana Eti)",
+    "officialLikeCount": 2700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti küp küp doğrayıp haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Şekeri tavada eritip eti ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Soya sosu ve zencefili ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Beş baharatı ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Su ekleyip kısık ateşte 1 saat pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sos koyulaşınca servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Çin",
+      "Karamelize",
+      "Yavaş Pişen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "İnce nişastalı hamurun karides harcıyla doldurulup buharda pişirildiği şeffaf görünümlü Kanton usulü dim sum.",
+    "duration": "1 saat",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Har Gow (Karidesli Dim Sum)",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Nişastayı sıcak suyla yoğurup şeffaf bir hamur hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Karidesleri zencefil ve susam yağıyla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru ince açıp daireler kesin."
+      },
+      {
+        "order": 4,
+        "text": "Harcı koyup pilili şekilde kapatın."
+      },
+      {
+        "order": 5,
+        "text": "Buharda 8 dakika pişirin."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Dim Sum",
+      "Çin",
+      "Karides",
+      "Buharda"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Yassı pirinç eriştesinin karides, yumurta ve soya filizleriyle kızgın ateşte kavrulduğu Malezya-Çin usulü erişte yemeği.",
+    "duration": "25 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍝",
+        "ingredientId": "ing_164",
+        "name": "Makarna"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🌱",
+        "ingredientId": "ing_237",
+        "name": "Soya Fasulyesi Filizi (Kongnamul)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Char Kway Teow",
+    "officialLikeCount": 4100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayıp süzün."
+      },
+      {
+        "order": 2,
+        "text": "Karidesleri kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtayı ekleyip karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Erişte ve soya filizlerini ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Soya sosunu ilave edip kavurun."
+      },
+      {
+        "order": 6,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Çin",
+      "Karidesli",
+      "Kavurma"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Kızartılmış balığın domates soslu tatlı-ekşi bir sosla kaplandığı Kanton usulü balık yemeği.",
+    "duration": "40 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sweet and Sour Fish",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı nişastaya bulayıp kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Domates salçası, sirke ve şekeri kaynatıp sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızarmış balığı sosa bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Çin",
+      "Tatlı-Ekşi",
+      "Kızartma"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Karidesin yer fıstığı ve sichuan biberiyle acılı-tatlı bir sosta kavrulduğu Sichuan usulü Kung Pao çeşidi.",
+    "duration": "25 dk",
+    "emoji": "🦐",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_255",
+        "name": "Sichuan Biberi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kung Pao Shrimp",
+    "officialLikeCount": 3900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Karidesleri kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Sichuan biberini ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Soya sosu ve sirkeyi ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Yer fıstığını ekleyip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Karides",
+      "Çin",
+      "Sichuan",
+      "Fıstıklı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Cam eriştenin kıyma ve acı fasulye ezmesiyle kavrulup uzun görünümüyle 'ağaca tırmanan karınca' olarak bilindiği Sichuan yemeği.",
+    "duration": "30 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_230",
+        "name": "Cam Erişte (Dangmyeon)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_259",
+        "name": "Doubanjiang (Acı Fasulye Ezmesi)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ants Climbing a Tree",
+    "officialLikeCount": 1700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Cam erişteyi ılık suda yumuşatın."
+      },
+      {
+        "order": 2,
+        "text": "Kıymayı doubanjiangla kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Soya sosunu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ilave edip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Çin",
+      "Sichuan",
+      "Kıymalı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Yumurtanın çay yaprağı ve soya sosuyla haşlanıp kabuğunda mermer desenli hale geldiği geleneksel Çin atıştırmalığı.",
+    "duration": "2 saat",
+    "emoji": "🥚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "8 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍵",
+        "ingredientId": "ing_249",
+        "name": "Çay Yaprağı (Siyah Çay)"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_256",
+        "name": "Beş Baharat Tozu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tea Eggs (Çaylı Yumurta)",
+    "officialLikeCount": 2200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Kabuklarını hafifçe çatlatın."
+      },
+      {
+        "order": 3,
+        "text": "Çay, soya sosu ve beş baharatı kaynatın."
+      },
+      {
+        "order": 4,
+        "text": "Yumurtaları bu suda 1 saat haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuyunca kabuklarını soyup servis edin."
+      }
+    ],
+    "tags": [
+      "Yumurta",
+      "Çin",
+      "Çaylı",
+      "Geleneksel"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Yapışkan pirincin tavuk ve mantarla doldurulup bambu yaprağına sarılarak buharda pişirildiği Ejderha Teknesi Bayramı tatlısı.",
+    "duration": "2 saat",
+    "emoji": "🍙",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_265",
+        "name": "Yapışkan Pirinç (Glutinous Rice)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Zongzi",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yapışkan pirinci bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk ve mantarı soya sosuyla kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Bambu yaprağına pirinç ve harcı yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıkıca sarıp bağlayın."
+      },
+      {
+        "order": 5,
+        "text": "2 saat haşlayın."
+      },
+      {
+        "order": 6,
+        "text": "Yaprağı açarak servis edin."
+      }
+    ],
+    "tags": [
+      "Pirinç",
+      "Çin",
+      "Bayram",
+      "Buharda"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "İnce hamurun tatlı azuki fasulyesi ezmesiyle doldurulup kalıpta desenlendirilerek fırınlandığı Sonbahar Ortası Bayramı tatlısı.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🥮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_216",
+        "name": "Azuki Fasulyesi"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Moon Cake (Ay Keki)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Azuki fasulyesini haşlayıp şekerle ezin."
+      },
+      {
+        "order": 2,
+        "text": "Un ile hamur hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Hamuru açıp azuki ezmesini içine koyun."
+      },
+      {
+        "order": 4,
+        "text": "Kalıpta desen vererek şekillendirin."
+      },
+      {
+        "order": 5,
+        "text": "Yumurta sürüp 180 derece fırında 25 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Çin",
+      "Bayram",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Azuki fasulyesinin şekerle kaynatılıp sıcak veya soğuk servis edildiği geleneksel Çin tatlı çorbası.",
+    "duration": "1 saat",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_216",
+        "name": "Azuki Fasulyesi"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sweet Red Bean Soup (Tatlı Fasulye Çorbası)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Azuki fasulyesini bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Yumuşayana kadar haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Şekeri ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "10 dakika daha kaynatın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak veya soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Çin",
+      "Fasulye",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Yapışkan pirinç ununun toplar halinde şekillendirilip tatlı şerbette haşlandığı Çin Yeni Yıl tatlısı.",
+    "duration": "40 dk",
+    "emoji": "🍡",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_87",
+        "name": "Pirinç unu"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_102",
+        "name": "Susam"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "4 su bardağı",
+        "emoji": "💧",
+        "ingredientId": "ing_99",
+        "name": "Su"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tangyuan",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç ununu suyla yoğurun."
+      },
+      {
+        "order": 2,
+        "text": "Küçük toplar şekillendirin."
+      },
+      {
+        "order": 3,
+        "text": "Şekerli suyu kaynatın."
+      },
+      {
+        "order": 4,
+        "text": "Topları suda yüzene kadar haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Susam serperek sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Çin",
+      "Yeni Yıl",
+      "Pirinç"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Çırpılmış yumurtanın tavuk suyuyla karıştırılıp buharda pişirilerek pürüzsüz bir puding haline getirildiği hafif Çin yemeği.",
+    "duration": "25 dk",
+    "emoji": "🍮",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Steamed Egg Custard",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk suyunu ekleyip karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Süzerek kaseye dökün."
+      },
+      {
+        "order": 4,
+        "text": "Buharda 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Susam yağı ve yeşil soğanla süsleyin."
+      }
+    ],
+    "tags": [
+      "Yumurta",
+      "Çin",
+      "Buharda",
+      "Hafif"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Yeşil fasulyenin acı fasulye ezmesi ve sarımsakla çıtır olana kadar kavrulduğu Sichuan usulü sebze yemeği.",
+    "duration": "20 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_125",
+        "name": "Yeşil Fasulye"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_259",
+        "name": "Doubanjiang (Acı Fasulye Ezmesi)"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sichuan Green Beans",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yeşil fasulyeleri kızgın yağda kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Doubanjiangı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Fasulyeleri geri ekleyip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Çin",
+      "Sichuan",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Çin lahanasının haşlanıp üzerine istiridye sosu gezdirilerek servis edildiği sade Kanton usulü sebze yemeği.",
+    "duration": "15 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_264",
+        "name": "Yeşil Çin Lahanası (Gai Lan)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🦪",
+        "ingredientId": "ing_262",
+        "name": "İstiridye Sosu"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🫙",
+        "ingredientId": "ing_208",
+        "name": "Susam Yağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chinese Broccoli with Oyster Sauce",
+    "officialLikeCount": 1200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Lahanayı kaynar suda kısaca haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Süzüp servis tabağına dizin."
+      },
+      {
+        "order": 3,
+        "text": "Sarımsağı susam yağında kavurun."
+      },
+      {
+        "order": 4,
+        "text": "İstiridye sosunu ekleyin."
+      },
+      {
+        "order": 5,
+        "text": "Sosu lahananın üzerine gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Çin",
+      "Kanton",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tavuğun zencefilli suda haşlanıp suyuyla pişirilen pirinçle birlikte servis edildiği Hainan adası usulü Çin yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Hainanese Chicken Rice",
+    "officialLikeCount": 3700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu zencefil ve yeşil soğanla haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Haşlama suyunu ayırın."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci bu suda haşlayın."
+      },
+      {
+        "order": 4,
+        "text": "Tavuğu dilimleyin."
+      },
+      {
+        "order": 5,
+        "text": "Pirinç ve tavuğu birlikte tabağa alın."
+      },
+      {
+        "order": 6,
+        "text": "Soya sosuyla servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Çin",
+      "Pirinç",
+      "Hainan"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Pirinç ve tavuğun toprak veya çelik bir kapta katmanlanıp kısık ateşte pişirildiği geleneksel Kanton usulü güveç yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_187",
+        "name": "İtalyan Sosisi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Clay Pot Rice (Güveç Pilavı)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci yıkayıp güvece koyun."
+      },
+      {
+        "order": 2,
+        "text": "Su ekleyip kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Tavuk ve sosisi üzerine dizin."
+      },
+      {
+        "order": 4,
+        "text": "Kapağı kapatıp kısık ateşte 25 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Soya sosuyla gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Çin",
+      "Güveç",
+      "Kanton"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tofunun nişastaya bulanıp kızartıldıktan sonra tuz ve karabiberle karıştırıldığı çıtır vejetaryen Çin mezesi.",
+    "duration": "25 dk",
+    "emoji": "🧈",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_206",
+        "name": "Tofu"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_78",
+        "name": "Nişasta"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Salt and Pepper Tofu",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tofuyu küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Nişastaya bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Tuz ve karabiberle karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tofu",
+      "Çin",
+      "Kızartma",
+      "Vejetaryen"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Çin",
+    "description": "Tavuk kanatlarının beş baharat, soya sosu ve balla marine edilip fırında pişirildiği çıtır Çin usulü kanat yemeği.",
+    "duration": "1 saat",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "800 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_256",
+        "name": "Beş Baharat Tozu"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Five Spice Chicken Wings",
+    "officialLikeCount": 4600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kanatlarını beş baharat, soya sosu ve balla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "En az 1 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "200 derece fırında 35 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Ara sıra çevirip fırçalayın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Çin",
+      "Fırın",
+      "Beş Baharat"
+    ],
+    "type": "Ana Yemek"
   }
 ]

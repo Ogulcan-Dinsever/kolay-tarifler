@@ -1564,5 +1564,29 @@
     "emoji": "🍊",
     "imageUrl": "",
     "name": "Portakal"
+  },
+  {
+    "category": "sos",
+    "emoji": "🦪",
+    "imageUrl": "",
+    "name": "İstiridye Sosu"
+  },
+  {
+    "category": "kuruyemis",
+    "emoji": "🥜",
+    "imageUrl": "",
+    "name": "Kaju"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Yeşil Çin Lahanası (Gai Lan)"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍚",
+    "imageUrl": "",
+    "name": "Yapışkan Pirinç (Glutinous Rice)"
   }
 ]
