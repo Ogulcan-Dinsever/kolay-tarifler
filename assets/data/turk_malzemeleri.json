@@ -1120,5 +1120,59 @@
     "emoji": "🌭",
     "imageUrl": "",
     "name": "İtalyan Sosisi"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🫒",
+    "imageUrl": "",
+    "name": "Zeytin"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🫑",
+    "imageUrl": "",
+    "name": "Kırmızı Biber"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🦑",
+    "imageUrl": "",
+    "name": "Kalamar"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🦪",
+    "imageUrl": "",
+    "name": "Deniz Tarağı"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Kara Lahana"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Baccalà"
+  },
+  {
+    "category": "sivi",
+    "emoji": "🍷",
+    "imageUrl": "",
+    "name": "Marsala Şarabı"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍫",
+    "imageUrl": "",
+    "name": "Bitter Çikolata"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍨",
+    "imageUrl": "",
+    "name": "Vanilyalı Dondurma"
   }
 ]
