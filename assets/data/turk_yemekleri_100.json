@@ -49887,5 +49887,1734 @@
       "Kremamsı"
     ],
     "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Pirinç eriştesinin karides, yumurta ve fıstıkla birlikte ekşi-tatlı bir sosta kavrulduğu ünlü Tayland sokak yemeği.",
+    "duration": "30 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_294",
+        "name": "Yumurta Eriştesi"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pad Thai",
+    "officialLikeCount": 12400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi ılık suda yumuşatın."
+      },
+      {
+        "order": 2,
+        "text": "Karidesleri kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtayı ekleyip karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ve balık sosunu ilave edin."
+      },
+      {
+        "order": 5,
+        "text": "Fıstık serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Tayland",
+      "Karidesli",
+      "Sokak Yemeği"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Karidesin limon otu, kişniş ve acı biberle kaynatıldığı ekşi-acı ünlü Tayland çorbası.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 sap",
+        "emoji": "🌿",
+        "ingredientId": "ing_290",
+        "name": "Limon Otu (Sitronella)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tom Yum Goong (Karidesli Ekşi-Acı Çorba)",
+    "officialLikeCount": 8900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Suyu limon otuyla kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Karidesleri ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Balık sosu ve limon suyunu ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "5 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Tayland",
+      "Karidesli",
+      "Ekşi-Acı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun yeşil kari ezmesi ve hindistan cevizi sütüyle birlikte pişirildiği aromatik ve hafif acılı Tayland yemeği.",
+    "duration": "35 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_292",
+        "name": "Yeşil Kari Ezmesi"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1 avuç",
+        "emoji": "🌿",
+        "ingredientId": "ing_293",
+        "name": "Fesleğen (Reyhan)"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Green Curry (Yeşil Kari)",
+    "officialLikeCount": 7300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yeşil kari ezmesini kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Hindistan cevizi sütünü ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Fesleğenle süsleyip servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Kari",
+      "Hindistan Cevizi"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun kırmızı kari ezmesi ve hindistan cevizi sütüyle pişirildiği daha yoğun acılı Tayland kari çeşidi.",
+    "duration": "35 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Red Curry (Kırmızı Kari)",
+    "officialLikeCount": 6900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kırmızı kari ezmesini kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Hindistan cevizi sütünü ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Biberi ekleyip 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Kari",
+      "Acılı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun patates ve fıstıkla birlikte tatlımsı ve yoğun bir kari sosunda pişirildiği güney Tayland usulü kari.",
+    "duration": "1 saat",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Massaman Curry",
+    "officialLikeCount": 5100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütünü ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Patatesleri ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Kısık ateşte 30 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Fıstık serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Kari",
+      "Fıstıklı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun hindistan cevizi sütü, limon otu ve mantarla birlikte kaynatıldığı kremamsı ve ekşimsi Tayland çorbası.",
+    "duration": "30 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "2 sap",
+        "emoji": "🌿",
+        "ingredientId": "ing_290",
+        "name": "Limon Otu (Sitronella)"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🍄",
+        "ingredientId": "ing_66",
+        "name": "Mantar"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tom Kha Gai (Hindistan Cevizi Sütlü Tavuk Çorbası)",
+    "officialLikeCount": 4600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Hindistan cevizi sütü ve limon otunu kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Mantarı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "10 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Tayland",
+      "Hindistan Cevizi",
+      "Tavuklu"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Rendelenmiş havucun fıstık, limon ve balık sosuyla karıştırıldığı ekşi-tatlı-acılı Tayland salatası.",
+    "duration": "20 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Som Tam (Havuçlu Papaya Salatası)",
+    "officialLikeCount": 3200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Havucu ince şeritler halinde rendeleyin."
+      },
+      {
+        "order": 2,
+        "text": "Fıstıkları ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu ve balık sosuyla sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Karıştırıp soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Tayland",
+      "Ekşi-Tatlı",
+      "Fıstıklı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Kıymanın fesleğen ve acı biberle hızlıca kavrulup pirinç eşliğinde servis edildiği hızlı Tayland sokak yemeği.",
+    "duration": "20 dk",
+    "emoji": "🌿",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "1 avuç",
+        "emoji": "🌿",
+        "ingredientId": "ing_293",
+        "name": "Fesleğen (Reyhan)"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pad Krapow (Fesleğenli Kıyma)",
+    "officialLikeCount": 5800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Kıymayı ekleyip kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Balık sosunu ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Fesleğeni ekleyip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Pirinç eşliğinde servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Tayland",
+      "Fesleğenli",
+      "Hızlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Geniş pirinç eriştesinin tavuk ve yumurtayla birlikte koyu soya sosunda kavrulduğu Tayland usulü erişte yemeği.",
+    "duration": "25 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_294",
+        "name": "Yumurta Eriştesi"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pad See Ew",
+    "officialLikeCount": 4100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Erişteyi ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Yumurtayı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Soya sosunu ekleyip karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Tayland",
+      "Tavuklu",
+      "Soya Sosu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Pirincin yumurta, tavuk ve sebzelerle birlikte balık sosuyla kavrulduğu klasik Tayland kavurma pilavı.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Khao Pad (Tayland Usulü Kavurma Pilav)",
+    "officialLikeCount": 3900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtayı ekleyip karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Balık sosunu ekleyip kavurun."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Tayland",
+      "Tavuklu",
+      "Kavurma"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Baharatlı tavuk parçalarının şişe dizilip ızgarada pişirildiği ve fıstık sosuyla servis edildiği ünlü Tayland mezesi.",
+    "duration": "40 dk",
+    "emoji": "🍢",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_285",
+        "name": "Fıstık Ezmesi"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Satay (Tavuk Şiş)",
+    "officialLikeCount": 6200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu şeritler halinde kesin."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütü ve kari ezmesiyle marine edin."
+      },
+      {
+        "order": 3,
+        "text": "Şişlere dizip ızgarada pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Fıstık ezmesiyle sos hazırlayın."
+      },
+      {
+        "order": 5,
+        "text": "Sosla birlikte servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Şiş",
+      "Fıstıklı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Kıymalı tavuğun limon suyu, balık sosu ve pirinç unuyla karıştırıldığı baharatlı kuzey doğu Tayland salatası.",
+    "duration": "25 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Larb Gai (Baharatlı Tavuk Salatası)",
+    "officialLikeCount": 2700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kıymayı kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Limon suyu ve balık sosunu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "İnce doğranmış soğanı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Marul yapraklarıyla servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Tayland",
+      "Tavuklu",
+      "Baharatlı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Yapışkan pirincin hindistan cevizi sütüyle tatlandırılıp taze mango dilimleriyle servis edildiği klasik Tayland tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🥭",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_265",
+        "name": "Yapışkan Pirinç (Glutinous Rice)"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥭",
+        "ingredientId": "ing_250",
+        "name": "Mango"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Mango Sticky Rice (Mangolu Yapışkan Pirinç)",
+    "officialLikeCount": 7100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yapışkan pirinci buharda pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütü ve şekeri ısıtın."
+      },
+      {
+        "order": 3,
+        "text": "Pirincin üzerine dökün."
+      },
+      {
+        "order": 4,
+        "text": "Mango dilimleriyle servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Tayland",
+      "Mango",
+      "Hindistan Cevizi"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Balık etinin kari ezmesi ve fesleğenle karıştırılıp köfte şeklinde kızartıldığı çıtır Tayland mezesi.",
+    "duration": "30 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      },
+      {
+        "amount": "1 avuç",
+        "emoji": "🌿",
+        "ingredientId": "ing_293",
+        "name": "Fesleğen (Reyhan)"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tod Mun Pla (Balık Köftesi)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı doğrayıp robotta çekin."
+      },
+      {
+        "order": 2,
+        "text": "Kari ezmesi ve fesleğeni ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Küçük köfteler şekillendirin."
+      },
+      {
+        "order": 4,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Tayland",
+      "Köfte",
+      "Kızartma"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun hindistan cevizi sütlü kari çorbasında pişirilip erişte üzerine dökülerek servis edildiği kuzey Tayland yemeği.",
+    "duration": "45 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_294",
+        "name": "Yumurta Eriştesi"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Khao Soi",
+    "officialLikeCount": 2400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kari ezmesini kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütünü ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu ilave edip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Sosu erişte üzerine dökerek servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Tayland",
+      "Kari",
+      "Kuzey Tayland"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun fıstıklı ve hindistan cevizi sütlü yoğun bir kari sosunda pişirildiği Malezya etkili Tayland kari çeşidi.",
+    "duration": "40 dk",
+    "emoji": "🍛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Panang Curry",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kari ezmesini kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Hindistan cevizi sütünü ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Fıstık ekleyip 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Kari",
+      "Fıstıklı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "İnce yufkanın tavuk ve sebze harcıyla doldurulup kızartıldığı çıtır Tayland usulü yazlık rulo.",
+    "duration": "40 dk",
+    "emoji": "🥟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 paket",
+        "emoji": "🥟",
+        "ingredientId": "ing_129",
+        "name": "Yufka"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Thai Spring Rolls (Tayland Usulü Yazlık Rulo)",
+    "officialLikeCount": 4300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk ve lahanayı kavurup harç hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Yufkaya sarın."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Tayland",
+      "Kızartma",
+      "Çıtır"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuğun taze fasulye ve kırmızı kari ezmesiyle birlikte kavrulduğu baharatlı ve kuru bir Tayland kari çeşidi.",
+    "duration": "25 dk",
+    "emoji": "🫛",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🫛",
+        "ingredientId": "ing_125",
+        "name": "Yeşil Fasulye"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_291",
+        "name": "Kırmızı Kari Ezmesi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pad Prik King",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kari ezmesini kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Tavuğu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Fasulyeleri ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Balık sosunu ekleyip kavurun."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Fasulye",
+      "Kuru Kari"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Demlenmiş çayın süt ve şekerle tatlandırılıp buzla servis edildiği turuncu renkli serinletici Tayland içeceği.",
+    "duration": "15 dk",
+    "emoji": "🧋",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 tatlı kaşığı",
+        "emoji": "🍵",
+        "ingredientId": "ing_249",
+        "name": "Çay Yaprağı (Siyah Çay)"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Thai Iced Tea (Tayland Buzlu Çayı)",
+    "officialLikeCount": 5200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Çayı demleyin."
+      },
+      {
+        "order": 2,
+        "text": "Şekeri ekleyip karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Buzla dolu bardağa dökün."
+      },
+      {
+        "order": 4,
+        "text": "Üzerine süt gezdirin."
+      },
+      {
+        "order": 5,
+        "text": "Karıştırıp servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Tayland",
+      "Çay",
+      "Soğuk"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Pirincin hindistan cevizi sütüyle pişirildiği aromatik ve hafif tatlı Tayland usulü pilav.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Coconut Rice (Hindistan Cevizli Pirinç)",
+    "officialLikeCount": 2900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci yıkayın."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütüyle kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte suyunu çekene kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Tayland",
+      "Hindistan Cevizi",
+      "Vejetaryen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Cam eriştenin karides ve limon suyuyla karıştırıldığı ekşi-acılı serinletici Tayland salatası.",
+    "duration": "25 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_230",
+        "name": "Cam Erişte (Dangmyeon)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Yum Woon Sen (Cam Erişte Salatası)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Erişteyi haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Karidesleri haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu ve balık sosuyla sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Hepsini karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Tayland",
+      "Erişte",
+      "Karidesli"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Hindistan cevizi sütlü hamurun özel yuvarlak kalıplarda pişirildiği çıtır dışı yumuşak içi geleneksel Tayland atıştırmalığı.",
+    "duration": "30 dk",
+    "emoji": "🥥",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_87",
+        "name": "Pirinç unu"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kanom Krok (Hindistan Cevizli Mini Pankek)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç unu, hindistan cevizi sütü ve şekeri karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Özel kalıba dökün."
+      },
+      {
+        "order": 3,
+        "text": "Kısık ateşte pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Tayland",
+      "Hindistan Cevizi",
+      "Geleneksel"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Tavuk kanatlarının balık sosu ve sarımsakla marine edilip kızartıldığı baharatlı Tayland usulü kanat.",
+    "duration": "40 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "800 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Thai Chicken Wings",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kanatlarını sarımsak ve balık sosuyla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "1 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Tayland",
+      "Kızartma",
+      "Baharatlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Çırpılmış yumurtanın balık sosuyla tatlandırılıp kızgın yağda kabararak pişirildiği sade ve hızlı Tayland omleti.",
+    "duration": "10 dk",
+    "emoji": "🍳",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Kai Jeow (Tayland Usulü Omlet)",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları balık sosuyla çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın yağa dökün."
+      },
+      {
+        "order": 3,
+        "text": "Her iki tarafı kabarana kadar pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Pirinç eşliğinde servis edin."
+      }
+    ],
+    "tags": [
+      "Yumurta",
+      "Tayland",
+      "Omlet",
+      "Hızlı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Tayland",
+    "description": "Balığın limon otu, kişniş ve acı biberli buharlı bir sosla fırında pişirildiği aromatik Tayland balık yemeği.",
+    "duration": "35 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "2 sap",
+        "emoji": "🌿",
+        "ingredientId": "ing_290",
+        "name": "Limon Otu (Sitronella)"
+      },
+      {
+        "amount": "1 demet",
+        "emoji": "🌿",
+        "ingredientId": "ing_247",
+        "name": "Kişniş"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Pla Neung Manao (Limonlu Buharda Balık)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı temizleyip fırın tepsisine yerleştirin."
+      },
+      {
+        "order": 2,
+        "text": "Limon otu ve kişniş serpin."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu gezdirin."
+      },
+      {
+        "order": 4,
+        "text": "Buharda veya fırında 20 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Tayland",
+      "Buharda",
+      "Ekşimsi"
+    ],
+    "type": "Ana Yemek"
   }
 ]

@@ -1720,5 +1720,47 @@
     "emoji": "🍠",
     "imageUrl": "",
     "name": "Tatlı Patates"
+  },
+  {
+    "category": "diger",
+    "emoji": "🥥",
+    "imageUrl": "",
+    "name": "Hindistan Cevizi Sütü"
+  },
+  {
+    "category": "sos",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Balık Sosu"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Limon Otu (Sitronella)"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Kırmızı Kari Ezmesi"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Yeşil Kari Ezmesi"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Fesleğen (Reyhan)"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍜",
+    "imageUrl": "",
+    "name": "Yumurta Eriştesi"
   }
 ]
