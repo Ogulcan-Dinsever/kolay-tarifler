@@ -48172,5 +48172,1720 @@
       "Doyurucu"
     ],
     "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Fıstık ezmesi ve reçelin ekmek arasına sürüldüğü basit ve klasik Amerikan çocuk sandviçi.",
+    "duration": "10 dk",
+    "emoji": "🥪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🥜",
+        "ingredientId": "ing_285",
+        "name": "Fıstık Ezmesi"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "PB&J Sandwich (Fıstık Ezmeli Sandviç)",
+    "officialLikeCount": 4300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ekmek dilimlerinden birine fıstık ezmesi sürün."
+      },
+      {
+        "order": 2,
+        "text": "Diğerine bal sürün."
+      },
+      {
+        "order": 3,
+        "text": "İki dilimi birleştirin."
+      },
+      {
+        "order": 4,
+        "text": "İkiye kesip servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Fıstık Ezmesi",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Balığın patates ve süt ile birlikte kremamsı bir çorba haline getirildiği New England usulü Amerikan çorbası.",
+    "duration": "45 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "New England Balık Çorbası",
+    "officialLikeCount": 1800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Soğanı kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Patatesleri ekleyip haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Balığı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Sütü ilave edip kısık ateşte 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Amerikan",
+      "Balık",
+      "Kremamsı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Ton balığının mayonez ve sebzelerle karıştırılıp ekmek arasında servis edildiği hızlı Amerikan sandviçi.",
+    "duration": "15 dk",
+    "emoji": "🥪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "200 gr",
+        "emoji": "🐟",
+        "ingredientId": "ing_175",
+        "name": "Ton Balığı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_92",
+        "name": "Salatalık"
+      },
+      {
+        "amount": "4 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_67",
+        "name": "Marul"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tuna Salad Sandwich (Ton Balıklı Sandviç)",
+    "officialLikeCount": 2900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ton balığını mayonezle karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Salatalığı küçük doğrayıp ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Ekmeğe marul ve karışımı yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Ton Balığı",
+      "Pratik"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Marulun kaşar peyniri, kruton ve sezar sosuyla karıştırıldığı popüler Amerikan restoran salatası.",
+    "duration": "20 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_67",
+        "name": "Marul"
+      },
+      {
+        "amount": "2 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_39",
+        "name": "Kaşar Peyniri"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Caesar Salad",
+    "officialLikeCount": 6100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Marulu doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Ekmeği küp küp kesip kızartıp kruton hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu ızgarada pişirip dilimleyin."
+      },
+      {
+        "order": 4,
+        "text": "Hepsini peynir ve sosla karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Amerikan",
+      "Tavuklu",
+      "Peynirli"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Izgara köftelerin domates soslu bir sosla uzun ekmeğe doldurulup peynirle kaplandığı doyurucu Amerikan sandviçi.",
+    "duration": "40 dk",
+    "emoji": "🥖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_39",
+        "name": "Kaşar Peyniri"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Meatball Sub (Köfteli Sandviç)",
+    "officialLikeCount": 3600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Köfteleri şekillendirip pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Domates sosunda 15 dakika pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Ekmeğe köfteleri doldurun."
+      },
+      {
+        "order": 4,
+        "text": "Peyniri üzerine ekleyip fırında eritin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Köfte",
+      "Peynirli"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Kırmızı fasulyenin tatlı ve tuzlu bir sosla fırında kısık ateşte pişirildiği geleneksel Amerikan yan yemeği.",
+    "duration": "1 saat",
+    "emoji": "🫘",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🫘",
+        "ingredientId": "ing_284",
+        "name": "Kırmızı Fasulye"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Baked Beans (Fırında Fasulye)",
+    "officialLikeCount": 2400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Fasulyeleri haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Domates salçası ve balı ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Fasulyeyle karıştırıp fırın kabına alın."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 30 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Fasulye",
+      "Amerikan",
+      "Fırın",
+      "Yan Yemek"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Haşlanmış patatesin mayonez, hardal ve turşuyla karıştırıldığı klasik Amerikan piknik salatası.",
+    "duration": "30 dk",
+    "emoji": "🥔",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_279",
+        "name": "Turşu"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "American Potato Salad (Amerikan Patates Salatası)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Patatesleri haşlayıp küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtaları haşlayıp doğrayın."
+      },
+      {
+        "order": 3,
+        "text": "Turşu ve soğanı ince doğrayın."
+      },
+      {
+        "order": 4,
+        "text": "Mayonezle karıştırın."
+      },
+      {
+        "order": 5,
+        "text": "Soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Amerikan",
+      "Patates",
+      "Piknik"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Tavuk ve sebzelerin kremamsı bir sosla katmanlandıktan sonra üzeri hamurla kapatılıp fırınlandığı Amerikan turtası.",
+    "duration": "1 saat",
+    "emoji": "🥧",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken Pot Pie (Tavuklu Turta)",
+    "officialLikeCount": 5200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk ve havucu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Un ve sütle sos hazırlayıp ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Fırın kabına dökün."
+      },
+      {
+        "order": 4,
+        "text": "Hamurla kaplayın."
+      },
+      {
+        "order": 5,
+        "text": "200 derece fırında 30 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Amerikan",
+      "Turta",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Yulaf ve tarçının hamura karıştırılıp fırınlandığı besleyici ve doyurucu Amerikan kurabiyesi.",
+    "duration": "35 dk",
+    "emoji": "🍪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_283",
+        "name": "Yulaf"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Oatmeal Cookies (Yulaflı Kurabiye)",
+    "officialLikeCount": 3800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tereyağı ve şekeri çırpın."
+      },
+      {
+        "order": 2,
+        "text": "Yulaf ve unu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Tarçın serpin."
+      },
+      {
+        "order": 4,
+        "text": "Kaşıkla tepsiye dizin."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 15 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Amerikan",
+      "Yulaflı",
+      "Kurabiye"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Mısır unlu hamurun küçük toplar halinde kızartıldığı çıtır güney Amerikan atıştırmalığı.",
+    "duration": "25 dk",
+    "emoji": "🌽",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌽",
+        "ingredientId": "ing_72",
+        "name": "Mısır"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Hush Puppies (Mısır Topları)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Mısır, un ve yumurtayı karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Kaşıkla küçük toplar oluşturun."
+      },
+      {
+        "order": 3,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Atıştırmalık",
+      "Amerikan",
+      "Mısır",
+      "Kızartma"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Kızarmış karidesin marul ve turşuyla birlikte uzun ekmeğe doldurulduğu Louisiana usulü Amerikan sandviçi.",
+    "duration": "30 dk",
+    "emoji": "🥖",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥒",
+        "ingredientId": "ing_279",
+        "name": "Turşu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Shrimp Po' Boy (Karidesli Sandviç)",
+    "officialLikeCount": 2000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Karidesleri una bulayıp kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Ekmeğe marul ve turşu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Kızarmış karidesleri yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Karides",
+      "Louisiana"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "İnce dilimlenmiş etin sirkeli bir sosla marine edilip ekmek arasında peynirle servis edildiği Amerikan sandviçi.",
+    "duration": "30 dk",
+    "emoji": "🥪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_95",
+        "name": "Sirke"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_39",
+        "name": "Kaşar Peyniri"
+      },
+      {
+        "amount": "4 dilim",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Reuben Sandwich (Dana Etli Sandviç)",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti sirkeyle marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Tavada kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Ekmeğe et ve peyniri yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Tavada her iki tarafı kızartın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Peynirli",
+      "Et"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Dana göğsünün baharatlarla marine edilip saatlerce yavaş pişirilerek yumuşak bir dokuya kavuştuğu Teksas usulü ızgara eti.",
+    "duration": "3 saat",
+    "emoji": "🥩",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 kg",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Texas Brisket (Teksas Usulü Dana Göğsü)",
+    "officialLikeCount": 3300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti baharatlarla ovun."
+      },
+      {
+        "order": 2,
+        "text": "Bir gece buzdolabında bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Düşük ısıda fırında 2.5 saat pişirin."
+      },
+      {
+        "order": 4,
+        "text": "BBQ sosuyla fırçalayın."
+      },
+      {
+        "order": 5,
+        "text": "Dinlendirip dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Et",
+      "Amerikan",
+      "Teksas",
+      "Yavaş Pişen"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Kızarmış tavuğun acı biberli yağlı bir sosla kaplandığı Nashville şehrine özgü baharatlı Amerikan tavuğu.",
+    "duration": "50 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_189",
+        "name": "Kırmızı Biber"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Nashville Hot Chicken (Acılı Kızarmış Tavuk)",
+    "officialLikeCount": 4700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu una bulayıp kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Kırmızı biberli baharatlı yağ hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Kızarmış tavuğu yağa bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Amerikan",
+      "Acılı",
+      "Kızartma"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Acılı tavuğun ekmek arasına marul ve mayonezle yerleştirildiği popüler Amerikan restoran sandviçi.",
+    "duration": "35 dk",
+    "emoji": "🥪",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_67",
+        "name": "Marul"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Buffalo Chicken Sandwich",
+    "officialLikeCount": 3900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Acı sosa bulayın."
+      },
+      {
+        "order": 3,
+        "text": "Ekmeğe marul ve tavuğu yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sandviç",
+      "Amerikan",
+      "Tavuklu",
+      "Acılı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Kızarmış tavuğun kabarık waffle üzerine yerleştirilip şurupla servis edildiği tatlı-tuzlu Amerikan kahvaltı klasiği.",
+    "duration": "45 dk",
+    "emoji": "🧇",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Chicken and Waffles",
+    "officialLikeCount": 3100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu una bulayıp kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Waffle hamurunu hazırlayıp pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuğu waffle üzerine yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Bal veya şurup gezdirerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Amerikan",
+      "Waffle",
+      "Kahvaltı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Rendelenmiş havucun cevizle karıştırılıp fırınlandığı ve üzerine krem peynirli kremayla kaplandığı nemli Amerikan keki.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_267",
+        "name": "Ceviz"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_273",
+        "name": "Krem Peynir"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Carrot Cake (Havuçlu Kek)",
+    "officialLikeCount": 5800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Havucu rendeleyin."
+      },
+      {
+        "order": 2,
+        "text": "Un, yumurta ve şekerle karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Ceviz ekleyip kek kalıbına dökün."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında 45 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Krem peynirli kremayla kaplayın."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Amerikan",
+      "Havuçlu",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Kakaolu kırmızı hamurun katmanlar halinde pişirilip aralarına krem peynirli krema sürüldüğü gösterişli Amerikan keki.",
+    "duration": "1 saat 15 dk",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍫",
+        "ingredientId": "ing_281",
+        "name": "Çikolata Parçaları"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_273",
+        "name": "Krem Peynir"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Red Velvet Cake",
+    "officialLikeCount": 6700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un, kakao ve yumurtayı karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "İki kek kalıbına dökün."
+      },
+      {
+        "order": 3,
+        "text": "180 derece fırında 30 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Krem peynirli kremayı aralarına ve üzerine sürün."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Amerikan",
+      "Kek",
+      "Krem Peynir"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Krem peynirli kremanın bisküvi tabanı üzerine dökülüp fırınlanarak yoğun ve kadifemsi bir dokuya kavuştuğu New York usulü cheesecake.",
+    "duration": "1 saat 30 dk",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_273",
+        "name": "Krem Peynir"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍪",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "New York Cheesecake",
+    "officialLikeCount": 9200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bisküvi tabanını hazırlayın."
+      },
+      {
+        "order": 2,
+        "text": "Krem peynir, şeker ve yumurtayı çırpın."
+      },
+      {
+        "order": 3,
+        "text": "Tabana dökün."
+      },
+      {
+        "order": 4,
+        "text": "160 derece fırında benmari usulü 50 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Soğutup servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Amerikan",
+      "Cheesecake",
+      "Krem Peynir"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Şeftali dilimlerinin tarçınlı hamur kırıntılarıyla kaplanıp fırınlandığı sıcak ve meyveli güney Amerikan tatlısı.",
+    "duration": "1 saat",
+    "emoji": "🍑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🍑",
+        "ingredientId": "ing_286",
+        "name": "Şeftali"
+      },
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌰",
+        "ingredientId": "ing_111",
+        "name": "Tarçın"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Peach Cobbler (Şeftalili Turta)",
+    "officialLikeCount": 3400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Şeftalileri dilimleyip tarçınla karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Fırın kabına dökün."
+      },
+      {
+        "order": 3,
+        "text": "Un ve tereyağıyla kırıntı hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Şeftalilerin üzerine serpin."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 35 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Amerikan",
+      "Şeftali",
+      "Fırın"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Tereyağlı hamurun küçük yuvarlaklar halinde şekillendirilip fırınlandığı yumuşak Amerikan usulü poğaça.",
+    "duration": "30 dk",
+    "emoji": "🥐",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_119",
+        "name": "Un"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_103",
+        "name": "Süt"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🧁",
+        "ingredientId": "ing_33",
+        "name": "Kabartma Tozu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Biscuits (Amerikan Poğaçası)",
+    "officialLikeCount": 2600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Un ve tereyağını ovarak karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Kabartma tozu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Süt ekleyip hamur yoğurun."
+      },
+      {
+        "order": 4,
+        "text": "Yuvarlaklar kesin."
+      },
+      {
+        "order": 5,
+        "text": "220 derece fırında 15 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Ekmek",
+      "Amerikan",
+      "Poğaça",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Poşe yumurtanın İngiliz muffini üzerine yerleştirilip üzerine hollandaise sosu dökülerek servis edildiği zarif Amerikan kahvaltısı.",
+    "duration": "30 dk",
+    "emoji": "🍳",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🍞",
+        "ingredientId": "ing_177",
+        "name": "Ekmek"
+      },
+      {
+        "amount": "100 gr",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Eggs Benedict",
+    "officialLikeCount": 4100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları poşe yapın."
+      },
+      {
+        "order": 2,
+        "text": "Ekmeği kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Tereyağı ve limonla hollandaise sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Ekmeğe yumurtayı yerleştirip sos dökün."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Kahvaltı",
+      "Amerikan",
+      "Yumurta",
+      "Zarif"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Yumurta, tavuk sosisi ve kızarmış patatesin bir tabakta bir araya getirildiği doyurucu Amerikan kahvaltı tabağı.",
+    "duration": "25 dk",
+    "emoji": "🍳",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🌭",
+        "ingredientId": "ing_187",
+        "name": "İtalyan Sosisi"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🥔",
+        "ingredientId": "ing_81",
+        "name": "Patates"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "American Breakfast Platter (Amerikan Kahvaltı Tabağı)",
+    "officialLikeCount": 2800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Yumurtaları sahanda pişirin."
+      },
+      {
+        "order": 2,
+        "text": "Sosisi kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Patatesleri kızartın."
+      },
+      {
+        "order": 4,
+        "text": "Hepsini bir tabakta servis edin."
+      }
+    ],
+    "tags": [
+      "Kahvaltı",
+      "Amerikan",
+      "Yumurta",
+      "Doyurucu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Tatlı patatesin ezilip üzerine cevizli kırıntı ve bal serpilerek fırınlandığı Şükran Günü'nün klasik Amerikan güveci.",
+    "duration": "1 saat",
+    "emoji": "🍠",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "4 adet",
+        "emoji": "🍠",
+        "ingredientId": "ing_287",
+        "name": "Tatlı Patates"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🌰",
+        "ingredientId": "ing_267",
+        "name": "Ceviz"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍯",
+        "ingredientId": "ing_238",
+        "name": "Bal"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🧈",
+        "ingredientId": "ing_116",
+        "name": "Tereyağı"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sweet Potato Casserole (Tatlı Patates Güveci)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tatlı patatesleri haşlayıp ezin."
+      },
+      {
+        "order": 2,
+        "text": "Tereyağı ve balla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Fırın kabına dökün."
+      },
+      {
+        "order": 4,
+        "text": "Üzerine ceviz serpin."
+      },
+      {
+        "order": 5,
+        "text": "180 derece fırında 25 dakika pişirin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Amerikan",
+      "Tatlı Patates",
+      "Fırın"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Amerikan",
+    "description": "Ispanağın krem peynir ve baharatlarla karıştırılıp fırınlandığı sıcak ve kremamsı Amerikan mezesi.",
+    "duration": "30 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🧀",
+        "ingredientId": "ing_273",
+        "name": "Krem Peynir"
+      },
+      {
+        "amount": "1 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Spinach Dip (Ispanaklı Sos)",
+    "officialLikeCount": 2300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Ispanağı haşlayıp süzün."
+      },
+      {
+        "order": 2,
+        "text": "Krem peynir ve sarımsakla karıştırın."
+      },
+      {
+        "order": 3,
+        "text": "Fırın kabına alın."
+      },
+      {
+        "order": 4,
+        "text": "180 derece fırında 15 dakika pişirin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Amerikan",
+      "Ispanak",
+      "Kremamsı"
+    ],
+    "type": "Meze"
   }
 ]

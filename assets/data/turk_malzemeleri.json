@@ -1690,5 +1690,35 @@
     "emoji": "🍌",
     "imageUrl": "",
     "name": "Muz"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Yulaf"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🫘",
+    "imageUrl": "",
+    "name": "Kırmızı Fasulye"
+  },
+  {
+    "category": "diger",
+    "emoji": "🥜",
+    "imageUrl": "",
+    "name": "Fıstık Ezmesi"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍑",
+    "imageUrl": "",
+    "name": "Şeftali"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🍠",
+    "imageUrl": "",
+    "name": "Tatlı Patates"
   }
 ]
