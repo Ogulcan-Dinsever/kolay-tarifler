@@ -1768,5 +1768,17 @@
     "emoji": "🍍",
     "imageUrl": "",
     "name": "Ananas"
+  },
+  {
+    "category": "tahil",
+    "emoji": "⚪",
+    "imageUrl": "",
+    "name": "Pirinç Kağıdı"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍜",
+    "imageUrl": "",
+    "name": "İnce Erişte (Vermicelli)"
   }
 ]
