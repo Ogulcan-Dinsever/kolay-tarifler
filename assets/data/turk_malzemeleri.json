@@ -1762,5 +1762,11 @@
     "emoji": "🍜",
     "imageUrl": "",
     "name": "Yumurta Eriştesi"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍍",
+    "imageUrl": "",
+    "name": "Ananas"
   }
 ]
