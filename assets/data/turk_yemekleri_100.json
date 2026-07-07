@@ -54990,5 +54990,1662 @@
       "Sokak Yemeği"
     ],
     "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Tavuk köftelerinin domates soslu bir et suyunda erişteyle birlikte servis edildiği güney Vietnam çorbası.",
+    "duration": "50 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "3 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_297",
+        "name": "İnce Erişte (Vermicelli)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bun Rieu Ga (Tavuklu Köfteli Erişte Çorbası)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Köfteleri şekillendirin."
+      },
+      {
+        "order": 2,
+        "text": "Domatesli et suyunu kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Köfteleri ekleyip pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Kaseye erişte ve çorbayı dökün."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Vietnam",
+      "Köfteli",
+      "Erişte"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Rendelenmiş turpun fıstık ve balık sosuyla karıştırıldığı ekşi-tatlı serinletici Vietnam salatası.",
+    "duration": "20 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_226",
+        "name": "Turp"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Nom Du Du (Turp Salatası)",
+    "officialLikeCount": 1100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Turpu ince şeritler halinde rendeleyin."
+      },
+      {
+        "order": 2,
+        "text": "Fıstıkları ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Limon suyu ve balık sosuyla sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Karıştırıp soğuk servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Vietnam",
+      "Turp",
+      "Ekşi-Tatlı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Pirinç kağıdının tatlı hindistan cevizi ve fıstıkla doldurularak sarıldığı hafif ve tatlı Vietnam mezesi.",
+    "duration": "25 dk",
+    "emoji": "🌯",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "10 adet",
+        "emoji": "⚪",
+        "ingredientId": "ing_296",
+        "name": "Pirinç Kağıdı"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bo Bia (Tatlı Turp Rulosu)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Fıstık ve hindistan cevizi sütünü şekerle karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Pirinç kağıdını ıslatın."
+      },
+      {
+        "order": 3,
+        "text": "Harcı koyup sarın."
+      },
+      {
+        "order": 4,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Meze",
+      "Vietnam",
+      "Tatlı",
+      "Fıstıklı"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Yapışkan pirincin sarı zerdeçal rengiyle boyanıp mercimekle servis edildiği kuzey Vietnam kahvaltı pilavı.",
+    "duration": "1 saat",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_265",
+        "name": "Yapışkan Pirinç (Glutinous Rice)"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌕",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🟤",
+        "ingredientId": "ing_269",
+        "name": "Mercimek"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Xoi Xeo (Sarı Yapışkan Pirinç)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci zerdeçalla karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Buharda pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Mercimeği haşlayıp ezin."
+      },
+      {
+        "order": 4,
+        "text": "Pirincin üzerine serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Vietnam",
+      "Zerdeçallı",
+      "Kahvaltı"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Tavuğun limon otu ve acı biberle marine edilip ızgarada pişirildiği aromatik Vietnam tavuk yemeği.",
+    "duration": "45 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 sap",
+        "emoji": "🌿",
+        "ingredientId": "ing_290",
+        "name": "Limon Otu (Sitronella)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ga Nuong Sa (Limon Otlu Izgara Tavuk)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu limon otu, balık sosu ve sarımsakla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "En az 1 saat bekletin."
+      },
+      {
+        "order": 3,
+        "text": "Izgarada pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Vietnam",
+      "Izgara",
+      "Limon Otlu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Kalın sarı eriştenin tavuk ve fıstıkla birlikte az sulu bir sosla karıştırıldığı orta Vietnam usulü erişte yemeği.",
+    "duration": "35 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_294",
+        "name": "Yumurta Eriştesi"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 demet",
+        "emoji": "🌿",
+        "ingredientId": "ing_247",
+        "name": "Kişniş"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Mi Quang (Orta Vietnam Erişte Yemeği)",
+    "officialLikeCount": 1200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Erişteyi haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Az miktarda su ile karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Fıstık ve kişnişle süsleyin."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Erişte",
+      "Vietnam",
+      "Tavuklu",
+      "Orta Vietnam"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Pirinç eriştesinin domuzsuz karides ve tavukla birlikte hafif bir et suyunda servis edildiği güney Vietnam çorbası.",
+    "duration": "45 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_297",
+        "name": "İnce Erişte (Vermicelli)"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Hu Tieu (Güney Vietnam Erişte Çorbası)",
+    "officialLikeCount": 1500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk suyunu kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk ve karidesleri haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 4,
+        "text": "Kaseye koyup sıcak suyu dökün."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Vietnam",
+      "Karidesli",
+      "Erişte"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Pirinç unlu hamurun mini kalıplarda karidesle birlikte pişirildiği çıtır güney Vietnam atıştırmalığı.",
+    "duration": "30 dk",
+    "emoji": "🥞",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1.5 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_87",
+        "name": "Pirinç unu"
+      },
+      {
+        "amount": "200 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌕",
+        "ingredientId": "ing_246",
+        "name": "Zerdeçal"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Banh Khot (Mini Krep)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç unu, hindistan cevizi sütü ve zerdeçalı karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "Mini kalıplara dökün."
+      },
+      {
+        "order": 3,
+        "text": "Karidesleri üzerine yerleştirin."
+      },
+      {
+        "order": 4,
+        "text": "Çıtır olana kadar pişirin."
+      }
+    ],
+    "tags": [
+      "Krep",
+      "Vietnam",
+      "Karidesli",
+      "Çıtır"
+    ],
+    "type": "Atıştırmalık"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Balığın balık sosu ve sarımsakla marine edilip kızgın yağda kızartıldığı sade ve lezzetli Vietnam balık yemeği.",
+    "duration": "25 dk",
+    "emoji": "🐟",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🐟",
+        "ingredientId": "ing_159",
+        "name": "Balık (Uskumru)"
+      },
+      {
+        "amount": "3 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🫗",
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ca Chien (Kızarmış Balık)",
+    "officialLikeCount": 1000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Balığı sarımsak ve balık sosuyla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Kızgın yağda kızartın."
+      },
+      {
+        "order": 3,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Balık",
+      "Vietnam",
+      "Kızartma",
+      "Sade"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Ispanağın sarımsakla hızlıca kavrulduğu sade ve hafif Vietnam sebze yemeği.",
+    "duration": "15 dk",
+    "emoji": "🥬",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Rau Xao Toi (Sarımsaklı Ispanak)",
+    "officialLikeCount": 600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Sarımsağı kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Ispanağı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Balık sosuyla tatlandırın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Sebze",
+      "Vietnam",
+      "Ispanak",
+      "Vejetaryen"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Çırpılmış yumurta sarısının kahveyle karıştırılıp köpüklü bir krema haline getirildiği eşsiz Vietnam kahvesi.",
+    "duration": "15 dk",
+    "emoji": "☕",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 tatlı kaşığı",
+        "emoji": "☕",
+        "ingredientId": "ing_172",
+        "name": "Kahve"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥛",
+        "ingredientId": "ing_253",
+        "name": "Kondanse Süt"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ca Phe Trung (Vietnam Usulü Yumurtalı Kahve)",
+    "officialLikeCount": 3200,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kahveyi demleyin."
+      },
+      {
+        "order": 2,
+        "text": "Yumurta sarısı ve kondanse sütü köpürene kadar çırpın."
+      },
+      {
+        "order": 3,
+        "text": "Kahveyi bardağa koyun."
+      },
+      {
+        "order": 4,
+        "text": "Yumurta kremasını üzerine dökün."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "İçecek",
+      "Vietnam",
+      "Kahve",
+      "Yumurtalı"
+    ],
+    "type": "İçecek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Pirinç ve maş unundan hazırlanan hamurun hindistan cevizi sütüyle katman katman buharda pişirildiği renkli Vietnam keki.",
+    "duration": "1 saat",
+    "emoji": "🍰",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🌾",
+        "ingredientId": "ing_87",
+        "name": "Pirinç unu"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Banh Da Lon (Katmanlı Hindistan Cevizli Kek)",
+    "officialLikeCount": 800,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinç unu, hindistan cevizi sütü ve şekeri karıştırın."
+      },
+      {
+        "order": 2,
+        "text": "İnce bir katman buharda pişirin."
+      },
+      {
+        "order": 3,
+        "text": "Katman katman tekrarlayın."
+      },
+      {
+        "order": 4,
+        "text": "Soğutup dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Vietnam",
+      "Hindistan Cevizi",
+      "Buharda"
+    ],
+    "type": "Tatlı"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Küçük köftelerin kalın erişteyle birlikte hafif bir et suyunda servis edildiği kuzey Vietnam çorbası.",
+    "duration": "50 dk",
+    "emoji": "🍜",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_294",
+        "name": "Yumurta Eriştesi"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌿",
+        "ingredientId": "ing_127",
+        "name": "Yeşil Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bun Moc (Köfteli Erişte Çorbası)",
+    "officialLikeCount": 900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Köfteleri şekillendirin."
+      },
+      {
+        "order": 2,
+        "text": "Tavuk suyunu kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Köfteleri haşlayın."
+      },
+      {
+        "order": 4,
+        "text": "Erişteyi ayrı haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Kaseye koyup çorbayı dökün."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Vietnam",
+      "Köfteli",
+      "Kuzey Vietnam"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Tavuğun limon otu ve acı biberle birlikte hızlıca kavrulduğu baharatlı Vietnam tavuk yemeği.",
+    "duration": "25 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "2 sap",
+        "emoji": "🌿",
+        "ingredientId": "ing_290",
+        "name": "Limon Otu (Sitronella)"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🌶️",
+        "ingredientId": "ing_189",
+        "name": "Kırmızı Biber"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ga Xao Sa Ot (Acı Limon Otlu Tavuk)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu küp küp doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Limon otu ve biberle kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Balık sosunu ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Pirinç eşliğinde servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Vietnam",
+      "Acılı",
+      "Limon Otlu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Yapışkan pirinç ve mercimeğin muz yaprağında kare şeklinde sarılıp saatlerce haşlandığı Vietnam Yeni Yıl keki.",
+    "duration": "3 saat",
+    "emoji": "🍙",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "3 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_265",
+        "name": "Yapışkan Pirinç (Glutinous Rice)"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🟤",
+        "ingredientId": "ing_269",
+        "name": "Mercimek"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍖",
+        "ingredientId": "ing_144",
+        "name": "Dana kıyma"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Banh Chung (Kare Yapışkan Pirinç Keki)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Pirinci bir gece suda bekletin."
+      },
+      {
+        "order": 2,
+        "text": "Mercimeği haşlayıp ezin."
+      },
+      {
+        "order": 3,
+        "text": "Pirinç, mercimek ve kıymayı kare şeklinde sarın."
+      },
+      {
+        "order": 4,
+        "text": "3 saat haşlayın."
+      },
+      {
+        "order": 5,
+        "text": "Dilimleyerek servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Vietnam",
+      "Yeni Yıl",
+      "Geleneksel"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Kalamarın sarımsak ve biberle yüksek ateşte hızlıca kavrulduğu çıtır ve lezzetli Vietnam deniz ürünü yemeği.",
+    "duration": "20 dk",
+    "emoji": "🦑",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🦑",
+        "ingredientId": "ing_190",
+        "name": "Kalamar"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Muc Xao (Kalamar Kavurma)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Kalamarı halka halka doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Sarımsağı kavurun."
+      },
+      {
+        "order": 3,
+        "text": "Kalamar ve biberi ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "Balık sosuyla tatlandırıp servis edin."
+      }
+    ],
+    "tags": [
+      "Kalamar",
+      "Vietnam",
+      "Kavurma",
+      "Deniz Ürünü"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Sebzelerin hafif bir et suyunda kaynatıldığı sade ve besleyici günlük Vietnam çorbası.",
+    "duration": "25 dk",
+    "emoji": "🍲",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_184",
+        "name": "Ispanak"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Canh Rau (Sebze Çorbası)",
+    "officialLikeCount": 500,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk suyunu kaynatın."
+      },
+      {
+        "order": 2,
+        "text": "Havucu ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Ispanağı ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Balık sosuyla tatlandırın."
+      },
+      {
+        "order": 5,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Vietnam",
+      "Sebzeli",
+      "Sade"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Karidesin demirhindi ve şekerle karamelize olana kadar kavrulduğu ekşi-tatlı Vietnam usulü karides yemeği.",
+    "duration": "25 dk",
+    "emoji": "🦐",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍇",
+        "ingredientId": "ing_252",
+        "name": "Demirhindi (Tamarind)"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Tom Rang Me (Demirhindili Karides)",
+    "officialLikeCount": 1900,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Karidesleri kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Demirhindi ve şekeri kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Karidesleri sosa bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Balık sosuyla tatlandırıp servis edin."
+      }
+    ],
+    "tags": [
+      "Karides",
+      "Vietnam",
+      "Ekşi-Tatlı",
+      "Demirhindi"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Izgara dana etinin erişte, taze sebze ve fıstıkla karıştırıldığı doyurucu ve taze Vietnam erişte salatası.",
+    "duration": "30 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "400 gr",
+        "emoji": "🥩",
+        "ingredientId": "ing_213",
+        "name": "Dana Eti (İnce Dilim)"
+      },
+      {
+        "amount": "300 gr",
+        "emoji": "🍜",
+        "ingredientId": "ing_297",
+        "name": "İnce Erişte (Vermicelli)"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Bun Bo Xao (Dana Etli Erişte Salatası)",
+    "officialLikeCount": 1600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Eti ızgarada pişirip dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Erişteyi haşlayın."
+      },
+      {
+        "order": 3,
+        "text": "Balık sosuyla sos hazırlayın."
+      },
+      {
+        "order": 4,
+        "text": "Hepsini karıştırıp fıstık serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Vietnam",
+      "Etli",
+      "Erişte"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "İnce doğranmış lahananın havuç, fıstık ve ekşi-tatlı bir sosla karıştırıldığı taze Vietnam salatası.",
+    "duration": "20 dk",
+    "emoji": "🥗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "1/2 adet",
+        "emoji": "🥬",
+        "ingredientId": "ing_9",
+        "name": "Beyaz Lahana"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥕",
+        "ingredientId": "ing_28",
+        "name": "Havuç"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🥜",
+        "ingredientId": "ing_257",
+        "name": "Yer Fıstığı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Goi Bap Cai (Lahana Salatası)",
+    "officialLikeCount": 1000,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Lahana ve havucu ince doğrayın."
+      },
+      {
+        "order": 2,
+        "text": "Limon suyuyla sos hazırlayın."
+      },
+      {
+        "order": 3,
+        "text": "Karıştırın."
+      },
+      {
+        "order": 4,
+        "text": "Fıstık serperek servis edin."
+      }
+    ],
+    "tags": [
+      "Salata",
+      "Vietnam",
+      "Lahana",
+      "Taze"
+    ],
+    "type": "Meze"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Bal kabağının hafif bir et suyunda haşlanıp kremamsı bir çorba haline getirildiği besleyici Vietnam çorbası.",
+    "duration": "30 dk",
+    "emoji": "🎃",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "500 gr",
+        "emoji": "🎃",
+        "ingredientId": "ing_6",
+        "name": "Bal Kabağı"
+      },
+      {
+        "amount": "5 su bardağı",
+        "emoji": "🍲",
+        "ingredientId": "ing_151",
+        "name": "Tavuk Suyu"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Sup Bi Do (Bal Kabağı Çorbası)",
+    "officialLikeCount": 700,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Bal kabağını haşlayın."
+      },
+      {
+        "order": 2,
+        "text": "Soğanla birlikte blenderdan geçirin."
+      },
+      {
+        "order": 3,
+        "text": "Tavuk suyuyla inceltip ısıtın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Çorba",
+      "Vietnam",
+      "Bal Kabağı",
+      "Kremamsı"
+    ],
+    "type": "Çorba"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Tavuğun limon yaprağı ve zencefille birlikte buharda pişirildiği hafif ve aromatik Vietnam tavuk yemeği.",
+    "duration": "40 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "600 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "1 parça",
+        "emoji": "🫚",
+        "ingredientId": "ing_203",
+        "name": "Zencefil"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🍋",
+        "ingredientId": "ing_64",
+        "name": "Limon"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Ga Hap La Chanh (Limon Yapraklı Buharda Tavuk)",
+    "officialLikeCount": 600,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuğu zencefil ve balık sosuyla marine edin."
+      },
+      {
+        "order": 2,
+        "text": "Limon dilimleriyle birlikte buharda pişirin."
+      },
+      {
+        "order": 3,
+        "text": "40 dakika pişirin."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Vietnam",
+      "Buharda",
+      "Hafif"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Pirincin karides, sosis ve yumurtayla birlikte soya sosunda kavrulduğu Vietnam usulü kavurma pilavı.",
+    "duration": "25 dk",
+    "emoji": "🍚",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "2 su bardağı",
+        "emoji": "🍚",
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "150 gr",
+        "emoji": "🦐",
+        "ingredientId": "ing_37",
+        "name": "Karides"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_130",
+        "name": "Yumurta"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍶",
+        "ingredientId": "ing_197",
+        "name": "Soya Sosu"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Com Chien Duong Chau (Vietnam Usulü Kavurma Pilav)",
+    "officialLikeCount": 1300,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Karidesleri kavurun."
+      },
+      {
+        "order": 2,
+        "text": "Yumurtayı ekleyin."
+      },
+      {
+        "order": 3,
+        "text": "Pirinci ilave edin."
+      },
+      {
+        "order": 4,
+        "text": "Soya sosuyla karıştırıp servis edin."
+      }
+    ],
+    "tags": [
+      "Pilav",
+      "Vietnam",
+      "Karidesli",
+      "Kavurma"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Tavuk kanatlarının balık sosu ve sarımsakla kızartılıp glaze edildiği tatlı-tuzlu Vietnam atıştırmalığı.",
+    "duration": "40 dk",
+    "emoji": "🍗",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "800 gr",
+        "emoji": "🍗",
+        "ingredientId": "ing_160",
+        "name": "Tavuk Eti"
+      },
+      {
+        "amount": "4 yemek kaşığı",
+        "emoji": "🐟",
+        "ingredientId": "ing_289",
+        "name": "Balık Sosu"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      },
+      {
+        "amount": "4 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Canh Ga Chien Nuoc Mam (Balık Soslu Kanat)",
+    "officialLikeCount": 2100,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Tavuk kanatlarını kızartın."
+      },
+      {
+        "order": 2,
+        "text": "Balık sosu, şeker ve sarımsağı kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Kanatları sosa bulayın."
+      },
+      {
+        "order": 4,
+        "text": "Sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tavuk",
+      "Vietnam",
+      "Kızartma",
+      "Tatlı-Tuzlu"
+    ],
+    "type": "Ana Yemek"
+  },
+  {
+    "authorId": "system",
+    "authorName": "",
+    "commentCount": 0,
+    "communityLikeCount": 0,
+    "createdAt": "2026-05-06T14:30:53+03:00",
+    "cuisine": "Vietnam",
+    "description": "Muz dilimlerinin hindistan cevizi sütü ve sagoyla tatlı bir çorba haline getirildiği sıcak Vietnam tatlısı.",
+    "duration": "25 dk",
+    "emoji": "🍌",
+    "imageUrls": [],
+    "ingredients": [
+      {
+        "amount": "5 adet",
+        "emoji": "🍌",
+        "ingredientId": "ing_282",
+        "name": "Muz"
+      },
+      {
+        "amount": "1 kutu",
+        "emoji": "🥥",
+        "ingredientId": "ing_288",
+        "name": "Hindistan Cevizi Sütü"
+      },
+      {
+        "amount": "1/2 su bardağı",
+        "emoji": "🍬",
+        "ingredientId": "ing_142",
+        "name": "Şeker"
+      }
+    ],
+    "isOfficial": true,
+    "likeCount": 0,
+    "name": "Che Chuoi (Muzlu Tatlı Çorba)",
+    "officialLikeCount": 1400,
+    "steps": [
+      {
+        "order": 1,
+        "text": "Muzları dilimleyin."
+      },
+      {
+        "order": 2,
+        "text": "Hindistan cevizi sütü ve şekeri kaynatın."
+      },
+      {
+        "order": 3,
+        "text": "Muzları ekleyin."
+      },
+      {
+        "order": 4,
+        "text": "10 dakika pişirip sıcak servis edin."
+      }
+    ],
+    "tags": [
+      "Tatlı",
+      "Vietnam",
+      "Muzlu",
+      "Hindistan Cevizi"
+    ],
+    "type": "Tatlı"
   }
 ]
