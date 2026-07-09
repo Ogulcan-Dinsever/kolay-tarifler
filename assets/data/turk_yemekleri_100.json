@@ -1422,7 +1422,7 @@
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
     "description": "Kuzu eti ve yoğurt terbiyesiyle hazırlanan zengin Anadolu çorbası",
-    "duration": "1 sa 30 dk",
+    "duration": "1 sa 15 dk",
     "emoji": "🥣",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2015/09/dugun-corbasi-yemekcom.jpg",
@@ -1430,57 +1430,69 @@
     ],
     "ingredients": [
       {
-        "amount": "300 gr",
+        "amount": "350 gr (kemikli)",
         "emoji": "🥩",
-        "ingredientId": "ing_80",
-        "name": "Kuzu eti (kemikli)"
+        "ingredientId": "ing_52",
+        "name": "Kuzu eti"
       },
       {
         "amount": "8 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_81",
+        "ingredientId": "ing_99",
         "name": "Su"
       },
       {
-        "amount": "2 yemek kaşığı",
+        "amount": "3 yemek kaşığı",
         "emoji": "🌾",
-        "ingredientId": "ing_82",
+        "ingredientId": "ing_119",
         "name": "Un"
-      },
-      {
-        "amount": "2 adet",
-        "emoji": "🥚",
-        "ingredientId": "ing_83",
-        "name": "Yumurta sarısı"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🥛",
-        "ingredientId": "ing_84",
+        "ingredientId": "ing_128",
         "name": "Yoğurt"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🥚",
+        "ingredientId": "ing_131",
+        "name": "Yumurta sarısı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_85",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_86",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_87",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_59",
+        "name": "Kırmızı toz biber"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_74",
+        "name": "Nane"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_88",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       }
     ],
@@ -1491,43 +1503,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuzu etini yıkayıp tencereye alın, üzerini örtecek kadar su koyun."
+        "text": "Kuzu etini soğuk suyla iyice yıkayın."
       },
       {
         "order": 2,
-        "text": "Eti yumuşayana kadar yaklaşık 1 saat haşlayın, oluşan köpüğü alın."
+        "text": "Eti derin bir tencereye alıp üzerini geçecek kadar su ekleyin."
       },
       {
         "order": 3,
-        "text": "Etleri süzüp küçük parçalara ayırın, suyunu ayrı kaba alın."
+        "text": "Kısık ateşte yaklaşık 45-50 dakika, et yumuşayana kadar haşlayıp yüzeyde oluşan köpüğü kaşıkla alın."
       },
       {
         "order": 4,
-        "text": "Yoğurt, yumurta sarısı, un ve limon suyunu derin bir kapta pürüzsüz olana kadar çırpın."
+        "text": "Pişen eti süzüp kemiğinden ayırın, küçük parçalara doğrayıp et suyunu ayrı bir kapta bekletin."
       },
       {
         "order": 5,
-        "text": "Karışıma azar azar ılık et suyu ekleyerek temperleyin."
+        "text": "Derin bir kapta un, yoğurt, yumurta sarısı ve limon suyunu pürüzsüz olana kadar çırpın."
       },
       {
         "order": 6,
-        "text": "Temperlenmiş karışımı tencereye dökün, sürekli aynı yönde karıştırarak orta ateşte kaynatın."
+        "text": "Bu karışıma bir kepçe ılık et suyunu yavaşça ekleyip hızla karıştırarak terbiyeyi ısıtın."
       },
       {
         "order": 7,
-        "text": "Etleri ekleyip karıştırın."
+        "text": "Temperlenen terbiyeyi kaynayan et suyunun bulunduğu tencereye ince bir sırayla dökerek aynı yönde karıştırmaya devam edin."
       },
       {
         "order": 8,
-        "text": "Tuzu ilave edin ve 5-10 dakika daha pişirin."
+        "text": "Doğranmış etleri ve tuzu ekleyip çorbayı kısık ateşte 5-10 dakika daha pişirin."
       },
       {
         "order": 9,
-        "text": "Tereyağını ayrı bir tavada eritip pul biberi ekleyin."
+        "text": "Küçük bir tavada tereyağını eritin, pul biber, kırmızı toz biber ve naneyi ekleyip hemen ocaktan alın."
       },
       {
         "order": 10,
-        "text": "Hazırlanan baharatlı yağı çorbanın üzerine gezdirip sıcak servis edin."
+        "text": "Baharatlı tereyağını çorbanın üzerine gezdirip sıcak servis edin."
       }
     ],
     "tags": [
@@ -1536,7 +1548,33 @@
       "Yoğurtlu",
       "Geleneksel"
     ],
-    "type": "Çorba"
+    "type": "Çorba",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Düğün Çorbası Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/dugun-corbasi/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Düğün Çorbası Nasıl Yapılır?",
+        "url": "https://www.nefisyemektarifleri.com/dugun-corbasi/",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Tereyağlı sosta eksik olan nane ve kırmızı toz biber eklendi, yumurta sarısı miktarı gerçekçi hale getirildi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -1545,8 +1583,8 @@
     "communityLikeCount": 0,
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
-    "description": "Bulgur ve mercimekle hazırlanan, içli köfteli Adıyaman yöresinin meşhur çorbası",
-    "duration": "1 sa 15 dk",
+    "description": "Bulgur köftelerinin nohutlu et suyunda pişirildiği, Adıyaman yöresinin meşhur çorbası",
+    "duration": "1 sa 20 dk",
     "emoji": "🍲",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2023/03/anali-kizli-yemekcom.jpg",
@@ -1554,76 +1592,82 @@
     ],
     "ingredients": [
       {
-        "amount": "1 su bardağı",
+        "amount": "1.5 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_89",
+        "ingredientId": "ing_56",
         "name": "Köftelik bulgur"
       },
       {
-        "amount": "2 yemek kaşığı",
+        "amount": "3 yemek kaşığı",
         "emoji": "🌾",
-        "ingredientId": "ing_90",
+        "ingredientId": "ing_138",
         "name": "İrmik"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🌾",
-        "ingredientId": "ing_91",
+        "ingredientId": "ing_119",
         "name": "Un"
+      },
+      {
+        "amount": "3 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_93",
+        "name": "Salça"
       },
       {
         "amount": "150 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_92",
+        "ingredientId": "ing_60",
         "name": "Kıyma"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_93",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
-        "amount": "1 su bardağı",
+        "amount": "1.5 su bardağı (haşlanmış)",
         "emoji": "🫘",
-        "ingredientId": "ing_94",
-        "name": "Yeşil mercimek"
+        "ingredientId": "ing_79",
+        "name": "Nohut"
       },
       {
-        "amount": "2 yemek kaşığı",
-        "emoji": "🥫",
-        "ingredientId": "ing_95",
-        "name": "Salça"
-      },
-      {
-        "amount": "1 tatlı kaşığı",
-        "emoji": "🌿",
-        "ingredientId": "ing_96",
-        "name": "Nane"
-      },
-      {
-        "amount": "3 yemek kaşığı",
+        "amount": "4 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_97",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
-        "amount": "8 su bardağı",
+        "amount": "7 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_98",
+        "ingredientId": "ing_99",
         "name": "Su"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_99",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_100",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_74",
+        "name": "Nane"
       }
     ],
     "isOfficial": true,
@@ -1633,43 +1677,51 @@
     "steps": [
       {
         "order": 1,
-        "text": "Bulguru sıcak suda 15 dakika ıslatın, irmik ve unla yoğurun."
+        "text": "Kıymayı ince doğranmış bir soğanla tavada kavurup tuz ve karabiberle harmanlayın, iç harcı hazırlayıp soğumaya bırakın."
       },
       {
         "order": 2,
-        "text": "Kıymayı 1 soğanla kavurup tuz, karabiberle baharatlayıp iç harcı hazırlayın."
+        "text": "Köftelik bulguru derin bir kaba alıp ılık suyla ıslatarak 10 dakika dinlendirin."
       },
       {
         "order": 3,
-        "text": "Bulgur hamurundan ceviz büyüklüğünde parçalar koparın, içine kıyma harcı koyup yuvarlayarak içli köfteler hazırlayın."
+        "text": "Üzerine irmik, un, 1 yemek kaşığı salça ve bir tutam tuz ekleyip elinizle uzun süre yoğurarak pürüzsüz bir hamur elde edin."
       },
       {
         "order": 4,
-        "text": "Hazırlanan içli köftelerin yarısını içsiz olarak nohut büyüklüğünde küçük yuvarlaklar yapın (kızlar)."
+        "text": "Hamurdan ceviz büyüklüğünde parçalar koparıp avucunuzda yassıltın, ortasına iç harçtan koyup kapatarak yuvarlayın (analar)."
       },
       {
         "order": 5,
-        "text": "Yeşil mercimeği yıkayıp 6 su bardağı suda yumuşayana kadar haşlayın."
+        "text": "Kalan hamurdan nohut büyüklüğünde, içi boş küçük yuvarlaklar şekillendirin (kızlar)."
       },
       {
         "order": 6,
-        "text": "Tencereye tereyağı koyup kalan soğanı kavurun, salçayı ekleyip 2 dakika daha pişirin."
+        "text": "Geniş bir tencerede tereyağının yarısını eritip kalan soğanı kavurun."
       },
       {
         "order": 7,
-        "text": "Haşlanmış mercimeği suyuyla birlikte tencereye dökün."
+        "text": "Kalan salçayı ekleyip kısık ateşte 2 dakika daha kavurun."
       },
       {
         "order": 8,
-        "text": "Çorba kaynamaya başlayınca büyük içli köfteleri (analar) atın, 10 dakika sonra küçük olanları (kızlar) ekleyin."
+        "text": "Üzerine suyu ve haşlanmış nohudu ekleyip kaynatın."
       },
       {
         "order": 9,
-        "text": "Köfteler suyun yüzeyine çıkıp piştiğinde tuz ve naneyi ekleyin."
+        "text": "Kaynayan çorbaya önce büyük köfteleri (analar), birkaç dakika sonra küçük köfteleri (kızlar) ekleyin."
       },
       {
         "order": 10,
-        "text": "Tereyağını eritip pul biberle çorbanın üzerine gezdirip sıcak servis edin."
+        "text": "Köfteler pişip yüzeye çıkınca tuzunu kontrol edip 2-3 dakika daha pişirin."
+      },
+      {
+        "order": 11,
+        "text": "Kalan tereyağını ayrı bir tavada eritip pul biber ve naneyi ilave edin."
+      },
+      {
+        "order": 12,
+        "text": "Baharatlı tereyağını çorbanın üzerine gezdirip sıcak servis edin."
       }
     ],
     "tags": [
@@ -1678,7 +1730,40 @@
       "Anadolu",
       "Geleneksel"
     ],
-    "type": "Çorba"
+    "type": "Çorba",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Analı Kızlı Çorbası Nasıl Yapılır?",
+        "url": "https://www.nefisyemektarifleri.com/anali-kizli-corbasi-nasil-yapilir/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Analı Kızlı Nasıl Yapılır: Analı Kızlı Tarifi",
+        "url": "https://www.lezzet.com.tr/yemek-tarifleri/corbalar/corba-tarifleri/anali-kizli-corbasi",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      },
+      {
+        "title": "Analı Kızlı Çorbası Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/anali-kizli-corbasi/",
+        "usedFor": [
+          "ingredients"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Çorbanın asıl malzemesi yeşil mercimek değil nohuttur; tarif ve açıklama buna göre düzeltildi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -1696,57 +1781,57 @@
     ],
     "ingredients": [
       {
-        "amount": "500 gr",
+        "amount": "500 gr (kuzu)",
         "emoji": "🥩",
-        "ingredientId": "ing_101",
-        "name": "Döner eti (kuzu)"
+        "ingredientId": "ing_23",
+        "name": "Döner eti"
       },
       {
         "amount": "2 adet",
         "emoji": "🍞",
-        "ingredientId": "ing_102",
+        "ingredientId": "ing_84",
         "name": "Pide ekmeği"
-      },
-      {
-        "amount": "2 su bardağı",
-        "emoji": "🥛",
-        "ingredientId": "ing_103",
-        "name": "Yoğurt"
       },
       {
         "amount": "3 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_104",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_105",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "100 gr",
         "emoji": "🧈",
-        "ingredientId": "ing_106",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "4 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_107",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
+      },
+      {
+        "amount": "1 su bardağı",
+        "emoji": "🥛",
+        "ingredientId": "ing_128",
+        "name": "Yoğurt"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_108",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_109",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -1757,43 +1842,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Pide ekmeklerini küçük baklava dilimleri şeklinde doğrayıp servis tabağına yerleştirin."
+        "text": "Pide ekmeklerini küçük küpler halinde doğrayıp servis tabağının tabanına yayın."
       },
       {
         "order": 2,
-        "text": "Döner etini ızgarada veya tavada hafif yağda kızartın."
+        "text": "Domatesleri rendeleyip bir tencereye alın."
       },
       {
         "order": 3,
-        "text": "Domatesleri rendeleyin, ayrı bir tencereye alın."
+        "text": "Salçayı ekleyip kısa süre kavurun, suyunu ilave edip kaynatın, tuzunu ayarlayın."
       },
       {
         "order": 4,
-        "text": "Salçayı ekleyip 1 su bardağı suyla pişirin, kaynayınca tuzunu ayarlayın."
+        "text": "Yeşil biberleri ayrı bir tavada az yağda hafifçe kızartın."
       },
       {
         "order": 5,
-        "text": "Yeşil biberleri ayrı bir tavada kızartın."
+        "text": "Döner etini sıcak bir tavada az yağla çevirerek kızartın."
       },
       {
         "order": 6,
-        "text": "Pide parçalarının üzerine kızarmış döner etlerini yerleştirin."
+        "text": "Pide küplerinin üzerine domates sosundan birkaç kaşık gezdirip nemlendirin."
       },
       {
         "order": 7,
-        "text": "Üzerine hazırladığınız domates sosunu gezdirin."
+        "text": "Isıtılan pidelerin üzerine kızarmış döner etini yerleştirin."
       },
       {
         "order": 8,
-        "text": "Yan tarafına yoğurdu koyun, kızarmış biberlerle süsleyin."
+        "text": "Etin üzerine kalan domates sosunu dökün."
       },
       {
         "order": 9,
-        "text": "Tereyağını köpürene kadar eritip kızgın haldeyken iskenderin üzerine gezdirin."
+        "text": "Tereyağını tavada köpürene kadar eritip kızgın haliyle iskenderin üzerine gezdirin."
       },
       {
         "order": 10,
-        "text": "Hemen sıcak servis edin."
+        "text": "Yoğurdu tabağın kenarına ayrı koyup kızarmış yeşil biberlerle süsleyerek hemen servis edin."
       }
     ],
     "tags": [
@@ -1802,7 +1887,33 @@
       "Etli",
       "Yoğurtlu"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Ev Yapımı İskender Döner Tarifi",
+        "url": "https://yemek.com/tarif/iskender/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "İskender Kebap Tarifi",
+        "url": "https://www.kevserinmutfagi.com/iskender-kebap-tarifi.html",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Pidenin altına konmadan önce ısıtılıp nemlendirilmesi adımı eklendi, yoğurt miktarı gerçekçi hale getirildi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -1812,7 +1923,7 @@
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
     "description": "Acılı kuzu kıyması ve kuyruk yağıyla şişlerde pişen Adana'nın meşhur kebabı",
-    "duration": "1 sa",
+    "duration": "1 sa 10 dk",
     "emoji": "🍢",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2016/05/adana-kebap-one-cikan.jpg",
@@ -1820,64 +1931,70 @@
     ],
     "ingredients": [
       {
-        "amount": "500 gr",
+        "amount": "500 gr (yağlı)",
         "emoji": "🥩",
-        "ingredientId": "ing_110",
-        "name": "Kuzu kıyması (yağlı)"
+        "ingredientId": "ing_54",
+        "name": "Kuzu kıyması"
       },
       {
         "amount": "100 gr",
         "emoji": "🥓",
-        "ingredientId": "ing_111",
+        "ingredientId": "ing_50",
         "name": "Kuyruk yağı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_112",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_113",
+        "ingredientId": "ing_59",
         "name": "Kırmızı toz biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_114",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
-        "amount": "3 diş",
-        "emoji": "🧄",
-        "ingredientId": "ing_115",
-        "name": "Sarımsak"
+        "amount": "2 adet",
+        "emoji": "🍅",
+        "ingredientId": "ing_22",
+        "name": "Domates"
+      },
+      {
+        "amount": "4 adet",
+        "emoji": "🫑",
+        "ingredientId": "ing_123",
+        "name": "Yeşil biber"
       },
       {
         "amount": "2 adet",
         "emoji": "🥙",
-        "ingredientId": "ing_116",
+        "ingredientId": "ing_62",
         "name": "Lavaş ekmeği"
-      },
-      {
-        "amount": "1 demet",
-        "emoji": "🌿",
-        "ingredientId": "ing_117",
-        "name": "Maydanoz"
-      },
-      {
-        "amount": "1 yemek kaşığı",
-        "emoji": "🌶️",
-        "ingredientId": "ing_118",
-        "name": "Sumak"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_119",
+        "ingredientId": "ing_97",
         "name": "Soğan"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_101",
+        "name": "Sumak"
+      },
+      {
+        "amount": "1 demet",
+        "emoji": "🌿",
+        "ingredientId": "ing_69",
+        "name": "Maydanoz"
       }
     ],
     "isOfficial": true,
@@ -1887,43 +2004,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kıyma ile kuyruk yağını birlikte zırh veya satırla iyice çekin (mümkünse 2 kez geçirin)."
+        "text": "Kuzu kıymasını kuyruk yağıyla birlikte zırh veya satırla iyice çekin, mümkünse iki kez geçirin."
       },
       {
         "order": 2,
-        "text": "Sarımsakları rendeleyip kıymaya ekleyin."
+        "text": "Pul biber, kırmızı toz biber ve tuzu ekleyin."
       },
       {
         "order": 3,
-        "text": "Pul biber, kırmızı toz biber ve tuzu ilave edin."
+        "text": "Karışımı ıslak elle 10-15 dakika sıkıca yoğurup macun kıvamına getirin."
       },
       {
         "order": 4,
-        "text": "Kıymayı 10-15 dakika eliniz ıslakken sıkı sıkı yoğurarak macun kıvamına getirin."
+        "text": "Hazırlanan kıymayı buzdolabında en az 30 dakika dinlendirin."
       },
       {
         "order": 5,
-        "text": "Hazırlanan kıymayı buzdolabında 30 dakika dinlendirin."
+        "text": "Kıymayı geniş şişlere parmak kalınlığında, uzun ve yassı şekilde yapıştırın."
       },
       {
         "order": 6,
-        "text": "Kıymayı parmak kalınlığında, geniş şişlere uzunca yapıştırın."
+        "text": "Domates ve yeşil biberleri ayrı şişlere dizin."
       },
       {
         "order": 7,
-        "text": "Mangalda kor olmuş ateşte sürekli çevirerek 8-10 dakika pişirin."
+        "text": "Kor haline gelmiş mangalda kebabı sürekli çevirerek 8-10 dakika közleyin, sebzeleri aynı anda kızartın."
       },
       {
         "order": 8,
-        "text": "Pişen kebapları lavaş ekmeği üzerine yerleştirin."
+        "text": "Soğanı ince halka doğrayıp hafifçe tuzlayın, sumak ve kıyılmış maydanozla karıştırarak salatasını hazırlayın."
       },
       {
         "order": 9,
-        "text": "Soğanı halka doğrayıp sumak ve kıyılmış maydanozla harmanlayın."
+        "text": "Lavaşı sıcak kebabın üzerine kısaca değdirip yumuşatın, servis tabağına serin."
       },
       {
         "order": 10,
-        "text": "Soğan salatasıyla birlikte sıcak servis edin."
+        "text": "Kebabı lavaşın üzerine alın, közlenmiş domates ve biberlerle, soğan salatasıyla sıcak servis edin."
       }
     ],
     "tags": [
@@ -1932,7 +2049,40 @@
       "Acılı",
       "Mangal"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Adana Kebap: Orijinal Lezzet Ev Yapımı Püf Noktaları",
+        "url": "https://yemek.com/tarif/adana-kebap/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Adana Kebap Tarifi",
+        "url": "https://www.lezzet.com.tr/yemek-tarifleri/et-yemekleri/kirmizi-et-tarifleri/adana-kebap",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      },
+      {
+        "title": "Adana Kebabı İçine Ne Konur",
+        "url": "https://deltahomes.com.tr/adana-kebabi-icine-ne-konur/",
+        "usedFor": [
+          "ingredients"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Geleneksel Adana kebapta sarımsak kullanılmadığından tarifteki sarımsak çıkarıldı."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -1950,63 +2100,81 @@
     ],
     "ingredients": [
       {
-        "amount": "500 gr",
+        "amount": "500 gr (yağlı)",
         "emoji": "🥩",
-        "ingredientId": "ing_120",
-        "name": "Kuzu kıyması (yağlı)"
+        "ingredientId": "ing_54",
+        "name": "Kuzu kıyması"
       },
       {
         "amount": "100 gr",
         "emoji": "🥓",
-        "ingredientId": "ing_121",
+        "ingredientId": "ing_50",
         "name": "Kuyruk yağı"
       },
       {
-        "amount": "1 adet",
+        "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_122",
+        "ingredientId": "ing_97",
         "name": "Soğan"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_93",
+        "name": "Salça"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_123",
-        "name": "Karabiber"
+        "ingredientId": "ing_59",
+        "name": "Kırmızı toz biber"
       },
       {
-        "amount": "1 çay kaşığı",
-        "emoji": "🌿",
-        "ingredientId": "ing_124",
-        "name": "Kimyon"
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_89",
+        "name": "Pul biber"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
+        "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_125",
+        "ingredientId": "ing_118",
         "name": "Tuz"
+      },
+      {
+        "amount": "1 yemek kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_101",
+        "name": "Sumak"
       },
       {
         "amount": "2 adet",
         "emoji": "🥙",
-        "ingredientId": "ing_126",
+        "ingredientId": "ing_61",
         "name": "Lavaş"
       },
       {
         "amount": "1 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_127",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
       },
       {
         "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_128",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "4 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_129",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
       }
     ],
@@ -2017,43 +2185,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kıyma ve kuyruk yağını zırh veya satırla iyice çekin."
+        "text": "Kuzu kıymasını ve kuyruk yağını zırh veya satırla birlikte iyice çekin."
       },
       {
         "order": 2,
-        "text": "Soğanı rendeleyip suyunu sıkın, kıymaya ekleyin."
+        "text": "Bir adet soğanı rendeleyip suyunu sıkarak kıymaya ekleyin."
       },
       {
         "order": 3,
-        "text": "Karabiber, kimyon ve tuzu ilave edin."
+        "text": "Salça, kırmızı toz biber, pul biber, karabiber ve tuzu ilave edin."
       },
       {
         "order": 4,
-        "text": "Kıymayı en az 15 dakika ıslak elle iyice yoğurun."
+        "text": "Kıymayı en az 10-15 dakika ıslak elinizle sıkı sıkı yoğurun."
       },
       {
         "order": 5,
-        "text": "Karışımı buzdolabında 30 dakika dinlendirin."
+        "text": "Harcı buzdolabında 30 dakika dinlendirin."
       },
       {
         "order": 6,
-        "text": "Geniş şişlere parmak kalınlığında yapıştırın."
+        "text": "Dinlenen kıymayı geniş şişlere parmak kalınlığında yapıştırın."
       },
       {
         "order": 7,
-        "text": "Domates ve biberleri başka şişlere geçirin."
+        "text": "Domates ve yeşil biberleri ayrı şişlere dizin."
       },
       {
         "order": 8,
-        "text": "Mangalda 10 dakika kadar her tarafı kızarana kadar pişirin."
+        "text": "Şişleri korlaşmış mangalda sık sık çevirerek 8-10 dakika pişirin."
       },
       {
         "order": 9,
-        "text": "Pişen kebapları lavaş üzerine alın."
+        "text": "Kalan soğanı ince halka doğrayıp sumakla harmanlayarak salatasını hazırlayın."
       },
       {
         "order": 10,
-        "text": "Közlenmiş domates, biber ve maydanozla servis edin."
+        "text": "Pişen kebapları lavaş üzerine alın, közlenmiş sebzeler ve sumaklı soğan salatasıyla sıcak servis edin."
       }
     ],
     "tags": [
@@ -2062,7 +2230,33 @@
       "Acısız",
       "Mangal"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Evde Urfa Kebabı Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/urfa-kebabi/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Urfa Kebabı",
+        "url": "https://www.lezzet.com.tr/yemek-tarifleri/et-yemekleri/kirmizi-et-tarifleri/urfa-kebabi",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Kimyon geleneksel Urfa kebap tarifinde yer almaz; yerine salça, pul biber ve kırmızı toz biberden oluşan otantik harç kullanıldı."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2082,56 +2276,68 @@
       {
         "amount": "600 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_130",
+        "ingredientId": "ing_53",
         "name": "Kuzu kuşbaşı"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_131",
+        "ingredientId": "ing_97",
         "name": "Soğan"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🥛",
-        "ingredientId": "ing_132",
+        "ingredientId": "ing_103",
         "name": "Süt"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🫒",
-        "ingredientId": "ing_133",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_134",
+        "ingredientId": "ing_40",
         "name": "Kekik"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_135",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_136",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_137",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "5 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_138",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
+      },
+      {
+        "amount": "2 adet",
+        "emoji": "🥙",
+        "ingredientId": "ing_61",
+        "name": "Lavaş"
       }
     ],
     "isOfficial": true,
@@ -2141,39 +2347,39 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuzu kuşbaşı etleri yıkayıp süzdürün."
+        "text": "Kuzu kuşbaşı etlerini yıkayıp süzgeçte suyunu iyice akıtın."
       },
       {
         "order": 2,
-        "text": "Soğanı rendeleyip suyunu sıkın, etin üzerine ekleyin."
+        "text": "Soğanı rendeleyip suyunu etin üzerine sıkın."
       },
       {
         "order": 3,
-        "text": "Süt, zeytinyağı, kekik, karabiberi etin üzerine dökün ve karıştırın."
+        "text": "Sarımsakları ezip süt, zeytinyağı, kekik ve karabiberle birlikte ete ekleyip iyice harmanlayın."
       },
       {
         "order": 4,
-        "text": "Eti en az 2 saat (tercihen bir gece) buzdolabında dinlendirin."
+        "text": "Kabı örtüp eti en az 2-3 saat, mümkünse bir gece buzdolabında marine edin."
       },
       {
         "order": 5,
-        "text": "Mangalı yakıp kor haline getirin."
+        "text": "Marine ettiğiniz etleri şişlere dizerken aralarına domates ve biber parçaları yerleştirin."
       },
       {
         "order": 6,
-        "text": "Marine edilmiş etleri şişlere geçirin, aralarına biber ve domates parçaları yerleştirin."
+        "text": "Şişleri mangala almadan hemen önce tuzlayın."
       },
       {
         "order": 7,
-        "text": "Servisten hemen önce tuzunu ekleyin."
+        "text": "Mangalı yakıp korlaştırın."
       },
       {
         "order": 8,
-        "text": "Şişleri sürekli çevirerek mangalda 10-12 dakika pişirin."
+        "text": "Şişleri sık sık çevirerek 10-12 dakika pişirin."
       },
       {
         "order": 9,
-        "text": "Pişen şişleri lavaş üzerine alın, közlenmiş sebzelerle birlikte servis edin."
+        "text": "Pişen şişleri lavaş üzerine alın, közlenmiş sebzelerle birlikte sıcak servis edin."
       }
     ],
     "tags": [
@@ -2182,7 +2388,33 @@
       "Mangal",
       "Kuzu"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Şiş Kebap Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/sis-kebap-2/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Şiş Kebap Tarifi",
+        "url": "https://www.gundemturkiye.com/kultur_ve_sanat/yemek/kebaplar/sis-kebap-tarifi.html",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Malzeme listesinde eksik olan sarımsak ve servis için lavaş eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2202,61 +2434,67 @@
       {
         "amount": "600 gr",
         "emoji": "🍗",
-        "ingredientId": "ing_139",
+        "ingredientId": "ing_113",
         "name": "Tavuk göğsü"
       },
       {
-        "amount": "1/2 su bardağı",
+        "amount": "3 yemek kaşığı",
         "emoji": "🥛",
-        "ingredientId": "ing_140",
+        "ingredientId": "ing_128",
         "name": "Yoğurt"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_141",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🫒",
-        "ingredientId": "ing_142",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
+      },
+      {
+        "amount": "1 adet",
+        "emoji": "🧅",
+        "ingredientId": "ing_97",
+        "name": "Soğan"
       },
       {
         "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_143",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_144",
+        "ingredientId": "ing_40",
         "name": "Kekik"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_145",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_146",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_147",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_148",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       }
     ],
@@ -2267,35 +2505,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Tavuk göğsünü orta boy küpler halinde doğrayın."
+        "text": "Tavuk göğsünü 2-3 cm büyüklüğünde küpler halinde doğrayın."
       },
       {
         "order": 2,
-        "text": "Geniş bir kapta yoğurt, salça, zeytinyağı, ezilmiş sarımsak ve baharatları karıştırın."
+        "text": "Soğanı rendeleyip suyunu küçük bir kaba süzün."
       },
       {
         "order": 3,
-        "text": "Tavuk küplerini bu marinasyona ekleyip iyice harmanlayın."
+        "text": "Derin bir kapta yoğurt, salça, zeytinyağı, soğan suyu, ezilmiş sarımsak, kekik, karabiber, pul biber ve tuzu pürüzsüz olana kadar karıştırın."
       },
       {
         "order": 4,
-        "text": "Üzerini streçle kapatıp en az 1-2 saat buzdolabında dinlendirin."
+        "text": "Doğranmış tavuk küplerini marinaya ekleyip her parçayı kaplayacak şekilde harmanlayın."
       },
       {
         "order": 5,
-        "text": "Marine edilmiş tavukları şişlere geçirin."
+        "text": "Kabın üzerini streç filmle örtüp buzdolabında en az 1-2 saat, mümkünse bir gece dinlendirin."
       },
       {
         "order": 6,
-        "text": "Mangalda veya ızgarada her tarafı kızarana kadar 8-10 dakika pişirin."
+        "text": "Marine olmuş tavukları şişlere sıkıca dizin."
       },
       {
         "order": 7,
-        "text": "Limon suyunu üzerine sıkın."
+        "text": "Mangalı veya ızgarayı orta ateşte iyice kızdırın."
       },
       {
         "order": 8,
-        "text": "Pirinç pilavı ve közlenmiş sebzelerle servis edin."
+        "text": "Şişleri sık sık çevirerek 10-12 dakika, her tarafı altın rengi kızarana kadar pişirin."
+      },
+      {
+        "order": 9,
+        "text": "Pişirme bitmeden hemen önce üzerine limon suyu gezdirin."
+      },
+      {
+        "order": 10,
+        "text": "Pirinç pilavı ve közlenmiş sebzelerle sıcak servis edin."
       }
     ],
     "tags": [
@@ -2304,7 +2550,33 @@
       "Mangal",
       "Marine"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Fırında Tavuk Şiş Tarifi",
+        "url": "https://yemek.com/tarif/firinda-tavuk-sis/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "Marineli Nefis Tavuk Şiş (Yumuşacık)",
+        "url": "https://www.nefisyemektarifleri.com/marineli-nefis-tavuk-sis-yumusacik/",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Marinasyonda eksik olan soğan suyu eklendi; tavuğu daha yumuşak hale getirir."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2314,7 +2586,7 @@
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
     "description": "Bursa İnegöl yöresine özgü, yumuşak dokulu, baharatlı dana köftesi",
-    "duration": "1 sa",
+    "duration": "1 sa 30 dk",
     "emoji": "🥩",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2015/06/inegol-kofte-yemekcom.jpg",
@@ -2322,51 +2594,45 @@
     ],
     "ingredients": [
       {
-        "amount": "500 gr",
+        "amount": "400 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_149",
+        "ingredientId": "ing_19",
         "name": "Dana kıyması"
       },
       {
-        "amount": "200 gr",
+        "amount": "100 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_150",
+        "ingredientId": "ing_54",
         "name": "Kuzu kıyması"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_151",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
-        "amount": "1 dilim",
-        "emoji": "🍞",
-        "ingredientId": "ing_152",
-        "name": "Bayat ekmek içi"
-      },
-      {
-        "amount": "1/4 su bardağı",
-        "emoji": "🥛",
-        "ingredientId": "ing_153",
-        "name": "Süt"
+        "amount": "1 çay kaşığı",
+        "emoji": "🥄",
+        "ingredientId": "ing_33",
+        "name": "Kabartma tozu"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_154",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_155",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
-        "amount": "2 yemek kaşığı",
+        "amount": "1 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_156",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       }
     ],
@@ -2377,39 +2643,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Bayat ekmek içini sütle ıslatıp ezin."
+        "text": "Soğanı rendeleyip suyuyla birlikte geniş bir kaba alın."
       },
       {
         "order": 2,
-        "text": "Soğanı rendeleyip suyunu sıkın."
+        "text": "Dana ve kuzu kıymasını kabın içine ekleyin."
       },
       {
         "order": 3,
-        "text": "Geniş bir kaba dana ve kuzu kıymasını alın, soğan ve ekmek içini ekleyin."
+        "text": "Kabartma tozu, karabiber ve tuzu ilave edin."
       },
       {
         "order": 4,
-        "text": "Karabiber ve tuzu ilave edin."
+        "text": "Karışımı elinizle en az 10-15 dakika sıkıca yoğurup dövün, macun kıvamına getirin."
       },
       {
         "order": 5,
-        "text": "Karışımı en az 15 dakika ıslak elle yoğurun, dövün."
+        "text": "Harcı streç filmle örtüp buzdolabında en az 1 saat dinlendirin."
       },
       {
         "order": 6,
-        "text": "Köfte harcını buzdolabında 30 dakika dinlendirin."
+        "text": "Dinlenen harçtan yumurta büyüklüğünde parçalar koparın."
       },
       {
         "order": 7,
-        "text": "Köfteleri ovucuğunuzda yassı ve uzunca şekillendirin (parmak kalınlığında)."
+        "text": "Parçaları avucunuzda bastırarak parmak kalınlığında, uzun ve yassı köfteler halinde şekillendirin."
       },
       {
         "order": 8,
-        "text": "Önceden ısıtılmış mangalda veya tavada her iki tarafını da kızartın."
+        "text": "Izgarayı veya tavayı iyice kızdırıp hafifçe yağlayın."
       },
       {
         "order": 9,
-        "text": "Pişen köfteleri kuru fasulye, pilav veya közlenmiş biberlerle servis edin."
+        "text": "Köfteleri her iki tarafı da kızarana kadar 8-10 dakika pişirin."
+      },
+      {
+        "order": 10,
+        "text": "Kuru fasulye, pilav veya közlenmiş biberlerle sıcak servis edin."
       }
     ],
     "tags": [
@@ -2418,7 +2688,40 @@
       "İnegöl",
       "Mangal"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "İnegöl Köfte Tarifi",
+        "url": "https://yemek.com/tarif/inegol-kofte/",
+        "usedFor": [
+          "ingredients",
+          "steps",
+          "duration",
+          "servings"
+        ]
+      },
+      {
+        "title": "İnegöl köfte tarifi",
+        "url": "https://www.hurriyet.com.tr/lezizz/inegol-kofte-tarifi-41567030",
+        "usedFor": [
+          "ingredients",
+          "steps"
+        ]
+      },
+      {
+        "title": "İnegöl Köfte Tarifi",
+        "url": "https://www.kevserinmutfagi.com/inegol-kofte.html",
+        "usedFor": [
+          "ingredients"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Otantik tarifte olmayan bayat ekmek içi ve süt çıkarıldı, yerine köfteye karakteristik havadar dokuyu veren kabartma tozu eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2438,79 +2741,79 @@
       {
         "amount": "3 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_157",
+        "ingredientId": "ing_56",
         "name": "Köftelik bulgur"
       },
       {
-        "amount": "1 yemek kaşığı",
+        "amount": "1/2 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_158",
+        "ingredientId": "ing_138",
         "name": "İrmik"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_159",
+        "ingredientId": "ing_119",
         "name": "Un"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🥫",
+        "ingredientId": "ing_93",
+        "name": "Salça"
+      },
+      {
+        "amount": "1,5 tatlı kaşığı",
+        "emoji": "🧂",
+        "ingredientId": "ing_118",
+        "name": "Tuz"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_160",
+        "ingredientId": "ing_60",
         "name": "Kıyma"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_161",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🌰",
-        "ingredientId": "ing_162",
+        "ingredientId": "ing_16",
         "name": "Ceviz içi"
-      },
-      {
-        "amount": "1 yemek kaşığı",
-        "emoji": "🥫",
-        "ingredientId": "ing_163",
-        "name": "Salça"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_164",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_165",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_166",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
-      },
-      {
-        "amount": "1 tatlı kaşığı",
-        "emoji": "🧂",
-        "ingredientId": "ing_167",
-        "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_168",
-        "name": "Sıvı yağ (kızartma için)"
+        "ingredientId": "ing_108",
+        "name": "Sıvı yağ"
       },
       {
         "amount": "1,5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_169",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -2521,43 +2824,47 @@
     "steps": [
       {
         "order": 1,
-        "text": "Bulguru ılık suda 15 dakika ıslatın."
+        "text": "Köftelik bulguru geniş bir kaba alın, sıcak suyu ve irmiği ekleyip karıştırın, kabın ağzını kapatıp 30 dakika dinlendirin."
       },
       {
         "order": 2,
-        "text": "İçine irmik, un ve tuz ekleyip yoğurun, hamur kıvamına gelene kadar yoğurmaya devam edin."
+        "text": "Bulgur suyunu çekip yumuşadığında 1 yemek kaşığı salça, tuzun yarısı ve unu ekleyip hamur kıvamına gelene kadar 10 dakika yoğurun."
       },
       {
         "order": 3,
-        "text": "İç harç için tavada tereyağını eritip soğanları kavurun."
+        "text": "Üzerini örtüp hamuru 15 dakika daha dinlendirin."
       },
       {
         "order": 4,
-        "text": "Kıymayı ekleyip suyunu salıp çekene kadar pişirin."
+        "text": "İç harç için tavada tereyağını eritin, ince kıyılmış soğanları ekleyip yumuşayana kadar kavurun."
       },
       {
         "order": 5,
-        "text": "Salça, ezilmiş ceviz, baharatlar ve tuzu ekleyin, 5 dakika daha kavurun ve soğumaya bırakın."
+        "text": "Kıymayı ekleyip suyunu salıp çekene kadar pişirin."
       },
       {
         "order": 6,
-        "text": "Bulgur hamurundan ceviz büyüklüğünde parçalar koparın."
+        "text": "Kalan salçayı, dövülmüş ceviz içini, kalan tuzu, karabiber ve pul biberi ekleyin, 5 dakika daha kavurup ocaktan alarak soğumaya bırakın."
       },
       {
         "order": 7,
-        "text": "Parmağınızla içini oyup duvarlarını inceltin."
+        "text": "Dinlenen bulgur hamurundan ceviz büyüklüğünde parçalar koparıp avucunuzda yuvarlayın."
       },
       {
         "order": 8,
-        "text": "İçine bir kaşık iç harcı koyup ağzını kapatın ve oval şekil verin."
+        "text": "Parmağınızla ortasını oyarak ince duvarlı bir kap haline getirin."
       },
       {
         "order": 9,
-        "text": "Sıvı yağı kızdırın, içli köfteleri altın rengini alana kadar kızartın."
+        "text": "İçine bir tatlı kaşığı iç harç koyup kenarlarını birleştirerek kapatın ve oval şekil verin."
       },
       {
         "order": 10,
-        "text": "Kağıt havluya alıp fazla yağı süzdürün, sıcak servis edin."
+        "text": "Geniş bir tencerede sıvı yağı kızdırın, köfteleri altın rengini alıp gevrekleşene kadar kızartın."
+      },
+      {
+        "order": 11,
+        "text": "Kağıt havluya alıp fazla yağını süzdürün, sıcak servis edin."
       }
     ],
     "tags": [
@@ -2566,7 +2873,32 @@
       "Geleneksel",
       "Bulgurlu"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik (yaklaşık 25 adet)",
+    "contentSources": [
+      {
+        "title": "Videolu Tam Kıvamında İçli Köfte Tarifi",
+        "url": "https://yemek.com/tarif/tam-kivaminda-icli-kofte/",
+        "usedFor": [
+          "dış hamur oranları",
+          "iç harç malzemeleri",
+          "yapılış adımları"
+        ]
+      },
+      {
+        "title": "Haşlama İçli Köfte (Acemiler İçin)",
+        "url": "https://www.nefisyemektarifleri.com/haslama-icli-kofte-acemiler-icin/",
+        "usedFor": [
+          "hamur dinlendirme adımı",
+          "kıvam kontrolü"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Dış hamurdaki irmik miktarı gerçek kıvam için artırıldı, hamura salça ve dinlendirme adımları eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2586,85 +2918,97 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_170",
+        "ingredientId": "ing_137",
         "name": "İnce köftelik bulgur"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_171",
-        "name": "Salça (acı biber)"
+        "ingredientId": "ing_143",
+        "name": "Biber Salçası"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_172",
-        "name": "Salça (domates)"
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_173",
+        "ingredientId": "ing_139",
         "name": "İsot biberi"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍋",
+        "ingredientId": "ing_101",
+        "name": "Sumak"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_174",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_175",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "1 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_176",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
       },
       {
         "amount": "3 dal",
         "emoji": "🌱",
-        "ingredientId": "ing_177",
+        "ingredientId": "ing_127",
         "name": "Yeşil soğan"
       },
       {
         "amount": "1/4 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_178",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🍷",
-        "ingredientId": "ing_179",
+        "ingredientId": "ing_76",
         "name": "Nar ekşisi"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_180",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1,5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_181",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       },
       {
         "amount": "1 baş",
         "emoji": "🥬",
-        "ingredientId": "ing_182",
+        "ingredientId": "ing_67",
         "name": "Marul"
       },
       {
         "amount": "1 adet",
         "emoji": "🍋",
-        "ingredientId": "ing_183",
+        "ingredientId": "ing_64",
         "name": "Limon"
       }
     ],
@@ -2675,27 +3019,27 @@
     "steps": [
       {
         "order": 1,
-        "text": "Bulguru geniş bir kaba alın, salçaları ve isot biberi ekleyin."
+        "text": "Bulguru geniş bir kaba alın, biber salçası, domates salçası ve isot biberini ekleyip iyice karıştırın."
       },
       {
         "order": 2,
-        "text": "Sıcak suyu üzerine dökün, üzerini kapatıp 20 dakika ıslanmaya bırakın."
+        "text": "Üzerine sıcak suyu gezdirin, kabın ağzını kapatıp 20 dakika bulgurun suyu çekmesini bekleyin."
       },
       {
         "order": 3,
-        "text": "Soğan ve sarımsağı rendeleyin, yeşillikleri ince ince doğrayın."
+        "text": "Soğan ve sarımsağı rendeleyip bir süzgeçte fazla suyunu iyice sıkın."
       },
       {
         "order": 4,
-        "text": "Bulgur şişip yumuşadığında elinizle yoğurmaya başlayın."
+        "text": "Maydanoz ve yeşil soğanı ince ince kıyın."
       },
       {
         "order": 5,
-        "text": "Tuzu ekleyip 15-20 dakika boyunca eliniz ıslakken yoğurun."
+        "text": "Bulgur yumuşayıp şiştiğinde kimyon, sumak ve tuzu ekleyip ellerinizle 15-20 dakika yoğurun."
       },
       {
         "order": 6,
-        "text": "Soğan, sarımsak ve maydanozu ekleyip yoğurmaya devam edin."
+        "text": "Sıkılmış soğan-sarımsağı ve kıyılmış yeşillikleri ekleyip yoğurmaya devam edin."
       },
       {
         "order": 7,
@@ -2703,11 +3047,11 @@
       },
       {
         "order": 8,
-        "text": "Avucunuzla parmak izi şeklinde köfteler hazırlayın."
+        "text": "Avucunuzla bastırarak parmak izi şeklinde köfteler hazırlayın."
       },
       {
         "order": 9,
-        "text": "Marul yapraklarına sarın, limon dilimleriyle servis edin."
+        "text": "Marul yapraklarına sarıp limon dilimleriyle servis edin."
       }
     ],
     "tags": [
@@ -2716,7 +3060,31 @@
       "Acılı",
       "Güneydoğu"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Ev Yapımı Etsiz Çiğ Köfte Tarifi",
+        "url": "https://www.hataydanal.com/blog/etsiz-cig-kofte-tarifi",
+        "usedFor": [
+          "malzeme ölçüleri",
+          "yoğurma süresi"
+        ]
+      },
+      {
+        "title": "Tam Ölçülü Etsiz Çiğ Köfte Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/tam-olculu-etsiz-cigkofte-tarifi-hazir-almaya-son/",
+        "usedFor": [
+          "baharat listesi (kimyon, sumak)",
+          "soğan suyu sıkma tekniği"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Baharat listesinde eksik olan kimyon ve sumak eklendi, soğan suyunun sıkılması adımı netleştirildi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2736,85 +3104,91 @@
       {
         "amount": "500 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_184",
+        "ingredientId": "ing_53",
         "name": "Kuzu kuşbaşı"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_185",
+        "ingredientId": "ing_97",
         "name": "Soğan"
+      },
+      {
+        "amount": "2 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
       },
       {
         "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_186",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_187",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_188",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
         "amount": "5 adet",
         "emoji": "🍆",
-        "ingredientId": "ing_189",
+        "ingredientId": "ing_82",
         "name": "Patlıcan"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_190",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🌾",
-        "ingredientId": "ing_191",
+        "ingredientId": "ing_119",
         "name": "Un"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "🥛",
-        "ingredientId": "ing_192",
+        "ingredientId": "ing_103",
         "name": "Süt"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🧀",
-        "ingredientId": "ing_193",
+        "ingredientId": "ing_39",
         "name": "Kaşar peyniri"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_194",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_195",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_196",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_197",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -2825,43 +3199,47 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuzu etini sıvı yağda kavurun, suyunu salıp çekene kadar pişirin."
+        "text": "Kuzu etini sıvı yağda yüksek ateşte kavurup suyunu salıp çekmesini bekleyin."
       },
       {
         "order": 2,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "İnce doğranmış soğan ve sarımsağı ekleyip pembeleşene kadar kavurmaya devam edin."
       },
       {
         "order": 3,
-        "text": "Salça ve doğranmış domatesi ekleyin, 5 dakika daha kavurun."
+        "text": "Salça ve rendelenmiş domatesi ilave edip 5 dakika daha kavurun."
       },
       {
         "order": 4,
-        "text": "Üzerine 2 su bardağı sıcak su ekleyip et yumuşayana kadar 1 saat pişirin."
+        "text": "Üzerine 2 su bardağı sıcak su ekleyin, kapağını kapatıp et yumuşayana kadar yaklaşık 1 saat kısık ateşte pişirin."
       },
       {
         "order": 5,
-        "text": "Patlıcanları ocakta veya fırında közleyin."
+        "text": "Bu sırada patlıcanları ocak alevinde veya fırında kabukları kararana kadar közleyin."
       },
       {
         "order": 6,
-        "text": "Közlenmiş patlıcanların kabuklarını soyun, içlerini limon suyu sıktığınız suya alın."
+        "text": "Sıcakken kabuklarını soyup içini limon suyu katılmış suya atın."
       },
       {
         "order": 7,
-        "text": "Patlıcanları sudan çıkarıp ezerek püre haline getirin."
+        "text": "Patlıcanları sudan çıkarıp iyice süzün, bıçakla veya çatalla ezerek pürüzsüz hale getirin."
       },
       {
         "order": 8,
-        "text": "Tencerede tereyağını eritip unu kavurun, sütü yavaş yavaş ekleyip püre kıvamına getirin."
+        "text": "Ayrı bir tencerede tereyağını eritip unu hafif kokusu çıkana kadar kavurun."
       },
       {
         "order": 9,
-        "text": "Patlıcan püresini ekleyip karıştırın, rendelenmiş kaşarı ilave edin."
+        "text": "Sütü azar azar ekleyerek pürüzsüz bir kıvama gelene kadar karıştırın."
       },
       {
         "order": 10,
-        "text": "Tuz ve karabiberi ekleyin, beğendi püresini servis tabağına alıp üzerine kuzu yahnisini dökerek servis edin."
+        "text": "Patlıcan püresini ve rendelenmiş kaşarı ekleyip karıştırın, tuz ve karabiberle tatlandırın."
+      },
+      {
+        "order": 11,
+        "text": "Beğendiyi servis tabağına yayıp üzerine kuzu yahnisini dökerek servis edin."
       }
     ],
     "tags": [
@@ -2870,7 +3248,31 @@
       "Saray",
       "Geleneksel"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4-6 kişilik",
+    "contentSources": [
+      {
+        "title": "Kusursuz Hünkar Beğendi Tarifi",
+        "url": "https://yemek.com/tarif/kusursuz-hunkar-begendi/",
+        "usedFor": [
+          "et ve beğendi malzeme oranları",
+          "yapılış sırası"
+        ]
+      },
+      {
+        "title": "Lezzetli Tarifler: Hünkar Beğendi",
+        "url": "https://www.lezzet.com.tr/yemek-tarifleri/et-yemekleri/kirmizi-et-tarifleri/hunkar-begendi-tarifi",
+        "usedFor": [
+          "sarımsak kullanımı",
+          "beğendi kıvamı kontrolü"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Kuzu yahnisinde eksik olan sarımsak eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -2890,49 +3292,49 @@
       {
         "amount": "1.5 kg",
         "emoji": "🥩",
-        "ingredientId": "ing_198",
+        "ingredientId": "ing_51",
         "name": "Kuzu but"
       },
       {
         "amount": "1 baş",
         "emoji": "🧄",
-        "ingredientId": "ing_199",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "100 gr",
         "emoji": "🧈",
-        "ingredientId": "ing_200",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_201",
+        "ingredientId": "ing_40",
         "name": "Kekik"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_202",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_203",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 adet",
         "emoji": "🌿",
-        "ingredientId": "ing_204",
+        "ingredientId": "ing_20",
         "name": "Defne yaprağı"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_205",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -2943,39 +3345,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuzu butunu yıkayıp kurulayın."
+        "text": "Kuzu butu yıkayıp kağıt havluyla kurulayın, oda sıcaklığına gelmesi için 20 dakika bekletin."
       },
       {
         "order": 2,
-        "text": "Sarımsakları soyup et üzerinde açtığınız çentiklere yerleştirin."
+        "text": "Sarımsak dişlerini soyup et üzerinde açtığınız küçük çentiklere yerleştirin."
       },
       {
         "order": 3,
-        "text": "Tereyağını eritip kekik, karabiber ve tuzla karıştırın."
+        "text": "Tereyağını yumuşatıp kekik, karabiber ve tuzla karıştırarak bir sürme harcı hazırlayın."
       },
       {
         "order": 4,
-        "text": "Eti bu karışımla ovun."
+        "text": "Eti bu karışımla her tarafından ovarak marine edin."
       },
       {
         "order": 5,
-        "text": "Geniş bir fırın tepsisine alın, etrafına defne yapraklarını koyun."
+        "text": "Geniş bir fırın tepsisine yerleştirip etrafına defne yapraklarını dizin."
       },
       {
         "order": 6,
-        "text": "Tabanına 2 su bardağı su ekleyip alüminyum folyo ile sıkıca kapatın."
+        "text": "Tepsinin tabanına 2 su bardağı su ekleyip tepsiyi alüminyum folyoyla sıkıca kapatın."
       },
       {
         "order": 7,
-        "text": "Önceden 160°C'ye ısıtılmış fırında 3-3.5 saat pişirin."
+        "text": "Önceden 160°C'ye ısıtılmış fırının orta rafında 3-3,5 saat pişirin."
       },
       {
         "order": 8,
-        "text": "Son 20 dakika folyoyu açıp etin üzerini kızartın."
+        "text": "Pişirmenin son 20 dakikasında folyoyu açıp etin üzerini kızartın."
       },
       {
         "order": 9,
-        "text": "Pişen eti dinlendirip dilimleyin, pirinç pilavı veya közlenmiş sebzelerle servis edin."
+        "text": "Fırından çıkan eti folyoyla örtüp 10 dakika dinlendirin, sonra dilimleyin."
+      },
+      {
+        "order": 10,
+        "text": "Pirinç pilavı veya közlenmiş sebzelerle sıcak servis edin."
       }
     ],
     "tags": [
@@ -2984,7 +3390,30 @@
       "Fırın",
       "Geleneksel"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6-8 kişilik",
+    "contentSources": [
+      {
+        "title": "Fırında Kuzu Tandır Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/firinda-kuzu-tandir-tarifi/",
+        "usedFor": [
+          "marine harcı",
+          "fırın süresi ve derecesi"
+        ]
+      },
+      {
+        "title": "Kuzu Tandır Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/kuzu-tandir/",
+        "usedFor": [
+          "fırın derece/süre çapraz kontrolü"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Ete dinlendirme ve oda sıcaklığına getirme adımları eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -3353,67 +3782,67 @@
       {
         "amount": "4 adet",
         "emoji": "🍆",
-        "ingredientId": "ing_229",
+        "ingredientId": "ing_82",
         "name": "Patlıcan"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "🥛",
-        "ingredientId": "ing_230",
-        "name": "Yoğurt (süzme)"
+        "ingredientId": "ing_104",
+        "name": "Süzme yoğurt"
       },
       {
         "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_231",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_232",
-        "name": "Kuzu kıyması"
+        "ingredientId": "ing_148",
+        "name": "Kuzu kıyma"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_233",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_234",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "2 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_235",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_236",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_237",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_238",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_239",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       }
     ],
@@ -3424,39 +3853,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Patlıcanları doğrudan ocakta veya fırında közleyip kabuklarını soyun."
+        "text": "Patlıcanları ocak alevinde veya fırında kabukları iyice kararana kadar közleyin."
       },
       {
         "order": 2,
-        "text": "Közlenmiş patlıcanları zırh veya bıçakla iyice kıyın."
+        "text": "Sıcakken kabuklarını soyup bir süzgeçte fazla suyunu akıtın."
       },
       {
         "order": 3,
-        "text": "Yoğurda ezilmiş sarımsak ve tuz ekleyip karıştırın."
+        "text": "Patlıcanları bıçakla kıyıp ezerek pürüzsüz bir püre haline getirin."
       },
       {
         "order": 4,
-        "text": "Patlıcan ve yoğurdu birleştirip karıştırın, servis tabağına yayın."
+        "text": "Sarımsağı ezip tuzla birlikte süzme yoğurda karıştırın."
       },
       {
         "order": 5,
-        "text": "Tavada tereyağını eritip kıymayı suyunu çekene kadar kavurun."
+        "text": "Yoğurtlu sarımsağı patlıcan püresiyle birleştirip yayvan bir servis tabağına yayın."
       },
       {
         "order": 6,
-        "text": "Doğranmış biber ve domatesi ekleyin."
+        "text": "Ayrı bir tavada 1 yemek kaşığı tereyağını eritip kıymayı suyunu salıp çekene kadar kavurun."
       },
       {
         "order": 7,
-        "text": "Salça ve baharatları ilave edip 5 dakika daha pişirin."
+        "text": "İnce doğranmış domates ve yeşil biberi ekleyip birkaç dakika daha pişirin."
       },
       {
         "order": 8,
-        "text": "Hazırladığınız kıymalı harcı patlıcan püresinin üzerine dökün."
+        "text": "Salça, karabiber ve tuzu ilave edip 5 dakika daha kavurun."
       },
       {
         "order": 9,
-        "text": "Üzerine pul biberli tereyağı gezdirip sıcak servis edin."
+        "text": "Kıymalı harcı patlıcan-yoğurt tabanının ortasına kaşıkla yerleştirin."
+      },
+      {
+        "order": 10,
+        "text": "Kalan tereyağını pul biberle eritip üzerine gezdirerek sıcak servis edin."
       }
     ],
     "tags": [
@@ -3465,7 +3898,28 @@
       "Yoğurtlu",
       "Gaziantep"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Videolu Alinazik Tarifi",
+        "url": "https://yemek.com/tarif/alinazik/",
+        "usedFor": [
+          "malzeme oranları",
+          "yapılış adımları"
+        ]
+      },
+      {
+        "title": "Kıymalı Ali Nazik",
+        "url": "https://www.ardaninmutfagi.com/yemek-tarifleri/et-yemekleri/kiymali-ali-nazik-2",
+        "usedFor": [
+          "kıyma harcı çapraz kontrolü"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -3485,37 +3939,37 @@
       {
         "amount": "1 kg",
         "emoji": "🥩",
-        "ingredientId": "ing_240",
-        "name": "Dana kuşbaşı (yağlı)"
+        "ingredientId": "ing_18",
+        "name": "Dana kuşbaşı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_241",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "100 gr",
         "emoji": "🥓",
-        "ingredientId": "ing_242",
+        "ingredientId": "ing_50",
         "name": "Kuyruk yağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_243",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_244",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_245",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -3526,35 +3980,35 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuyruk yağını ince ince doğrayıp tencereye alın, ateşe koyup yağı çıkana kadar eritin."
+        "text": "Kuyruk yağını küçük küpler halinde doğrayıp geniş bir tencereye alın, kısık ateşte yağını salıp kavrulana kadar eritin."
       },
       {
         "order": 2,
-        "text": "Eti tencereye ekleyin ve yüksek ateşte mühürleyin."
+        "text": "Yağını süzüp kavrulan parçaları tencereden çıkarın."
       },
       {
         "order": 3,
-        "text": "Et suyunu salmaya başlayınca ateşi orta-kısığa alın."
+        "text": "Dana kuşbaşı etleri tek kat halinde tencereye yayın, yüksek ateşte her tarafı renk alana kadar mühürleyin."
       },
       {
         "order": 4,
-        "text": "Tencerenin kapağını kapatıp etin kendi suyunda 1 saat pişmesini sağlayın."
+        "text": "Tencerenin kapağını kapatıp ateşi kısın, etin kendi suyunda 1-1,5 saat pişmesini sağlayın, arada karıştırın."
       },
       {
         "order": 5,
-        "text": "Suyunu çektiğinde 1 su bardağı su ekleyip et yumuşayana kadar pişirmeye devam edin."
+        "text": "Et suyunu tamamen çekip kavrulmaya başladığında gerekirse 1 su bardağı sıcak su ekleyip et iyice yumuşayana kadar pişirmeye devam edin."
       },
       {
         "order": 6,
-        "text": "Yumuşayan etler iyice suyunu çekene kadar pişirin."
+        "text": "Etler yumuşayıp suyunu tekrar çektiğinde tereyağı, tuz ve karabiberi ekleyin."
       },
       {
         "order": 7,
-        "text": "Tereyağı, tuz ve karabiberi ekleyin, 10 dakika daha kavurun."
+        "text": "Kısık ateşte 10 dakika daha kavurup kendi yağında parlayana kadar pişirin."
       },
       {
         "order": 8,
-        "text": "Pirinç pilavı veya yumurtayla servis edin."
+        "text": "Pirinç pilavı veya sahanda yumurtayla sıcak servis edin."
       }
     ],
     "tags": [
@@ -3563,7 +4017,30 @@
       "Klasik",
       "Geleneksel"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4-6 kişilik",
+    "contentSources": [
+      {
+        "title": "Lokum Gibi Kavurma Tarifi: Et Kavurma Nasıl Yapılır?",
+        "url": "https://www.hisar.com.tr/et-kavurma-nasil-yapilir",
+        "usedFor": [
+          "pişirme süresi",
+          "yağ eritme tekniği"
+        ]
+      },
+      {
+        "title": "Kavurma (Yumuşacık)",
+        "url": "https://www.nefisyemektarifleri.com/kavurma-yumusacik/",
+        "usedFor": [
+          "et-yağ oranı çapraz kontrolü"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Pişirme süresi et yumuşayana kadar gerçekçi aralığa (1-1,5 saat + gerekirse ek süre) güncellendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -4986,61 +5463,61 @@
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_347",
+        "ingredientId": "ing_18",
         "name": "Dana kuşbaşı"
       },
       {
         "amount": "500 gr",
         "emoji": "🟢",
-        "ingredientId": "ing_348",
-        "name": "Bezelye (taze veya dondurulmuş)"
+        "ingredientId": "ing_12",
+        "name": "Bezelye"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_349",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "2 adet",
         "emoji": "🥕",
-        "ingredientId": "ing_350",
+        "ingredientId": "ing_28",
         "name": "Havuç"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_351",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_352",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_353",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_354",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_355",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_356",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5051,39 +5528,39 @@
     "steps": [
       {
         "order": 1,
-        "text": "Tencerede sıvı yağ ve tereyağını ısıtıp eti ekleyin, suyunu çekene kadar kavurun."
+        "text": "Tencereye tereyağı ve sıvı yağı alıp ısıtın, kuşbaşı eti ekleyip suyunu salıp çekene kadar orta ateşte kavurun."
       },
       {
         "order": 2,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "İnce doğranmış soğanı ilave edip hafifçe pembeleşene kadar kavurmaya devam edin."
       },
       {
         "order": 3,
-        "text": "Salçayı ilave edip 1-2 dakika karıştırın."
+        "text": "Salçayı ekleyip yağıyla kavuşana kadar 1-2 dakika karıştırın."
       },
       {
         "order": 4,
-        "text": "Küp doğranmış havuçları ekleyip 3 dakika kavurun."
+        "text": "Küp doğranmış havuçları ekleyip 3 dakika daha kavurun."
       },
       {
         "order": 5,
-        "text": "Sıcak suyu ilave edip kapağını kapatın, et yumuşayana kadar 40 dakika pişirin."
+        "text": "Sıcak suyu ilave edin, kapağını kapatıp et yumuşayana kadar kısık ateşte yaklaşık 40 dakika pişirin."
       },
       {
         "order": 6,
-        "text": "Bezelyeleri ekleyin."
+        "text": "Bezelyeleri tencereye ekleyin."
       },
       {
         "order": 7,
-        "text": "Tuz ve karabiberi ilave edin."
+        "text": "Tuz ve karabiberi serpin."
       },
       {
         "order": 8,
-        "text": "20 dakika daha pişirip suyunu çektirmeden ocaktan alın."
+        "text": "Bezelyeler yumuşayıp suyunu biraz çekene kadar 15-20 dakika daha pişirin."
       },
       {
         "order": 9,
-        "text": "Pirinç pilavı ile sıcak servis edin."
+        "text": "Sıcakken pirinç pilavı eşliğinde servis edin."
       }
     ],
     "tags": [
@@ -5092,7 +5569,29 @@
       "Bezelye",
       "Tencere"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Etli Bezelye Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/etli-bezelye-tarifi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Etli Bezelye Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/etli-bezelye/",
+        "usedFor": [
+          "amounts",
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5112,67 +5611,67 @@
       {
         "amount": "1 kg",
         "emoji": "🥒",
-        "ingredientId": "ing_357",
+        "ingredientId": "ing_91",
         "name": "Sakız kabağı"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_358",
+        "ingredientId": "ing_53",
         "name": "Kuzu kuşbaşı"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_359",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_360",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_361",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "2 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_362",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
       },
       {
         "amount": "2 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_363",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_364",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_365",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_366",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_367",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5183,27 +5682,27 @@
     "steps": [
       {
         "order": 1,
-        "text": "Tencereye tereyağını koyup eti suyunu çekene kadar kavurun."
+        "text": "Tencereye tereyağını alıp eritin, kuşbaşı kuzu etini ekleyip suyunu salıp çekene kadar kavurun."
       },
       {
         "order": 2,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "Doğranmış soğanı ilave edip hafifçe pembeleşene kadar kavurun."
       },
       {
         "order": 3,
-        "text": "Ezilmiş sarımsak ve salçayı ekleyip 2 dakika kavurun."
+        "text": "Ezilmiş sarımsak ve salçayı ekleyip 2 dakika daha kavurun."
       },
       {
         "order": 4,
-        "text": "Doğranmış biber ve domatesi ilave edin."
+        "text": "Doğranmış yeşil biber ve domatesi ekleyip birkaç dakika karıştırarak pişirin."
       },
       {
         "order": 5,
-        "text": "2 su bardağı sıcak suyu ekleyip et yumuşayana kadar 30 dakika pişirin."
+        "text": "Sıcak suyu ilave edin, kapağını kapatıp et yumuşayana kadar kısık ateşte yaklaşık 30 dakika pişirin."
       },
       {
         "order": 6,
-        "text": "Kabakları soyup küp küp doğrayıp tencereye ekleyin."
+        "text": "Kabuklarını soyduğunuz kabakları küp küp doğrayıp tencereye ekleyin."
       },
       {
         "order": 7,
@@ -5211,11 +5710,11 @@
       },
       {
         "order": 8,
-        "text": "Kabaklar yumuşayana kadar 20 dakika daha pişirin."
+        "text": "Kabaklar yumuşayana kadar 15-20 dakika daha pişirin."
       },
       {
         "order": 9,
-        "text": "Pirinç pilavı veya yoğurtla servis edin."
+        "text": "Pirinç pilavı veya yoğurtla sıcak servis edin."
       }
     ],
     "tags": [
@@ -5224,7 +5723,28 @@
       "Kabak",
       "Tencere"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Etli Kabak Yemeği Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/etli-kabak-yemegi/",
+        "usedFor": [
+          "amounts",
+          "method"
+        ]
+      },
+      {
+        "title": "Etli Kabak Yemeği",
+        "url": "https://www.sofra.com.tr/tarif/et-yemekleri/etli-kabak-yemegi",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5244,91 +5764,91 @@
       {
         "amount": "400 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_368",
+        "ingredientId": "ing_53",
         "name": "Kuzu kuşbaşı"
       },
       {
         "amount": "2 adet",
         "emoji": "🍆",
-        "ingredientId": "ing_369",
+        "ingredientId": "ing_82",
         "name": "Patlıcan"
       },
       {
         "amount": "2 adet",
         "emoji": "🥒",
-        "ingredientId": "ing_370",
+        "ingredientId": "ing_32",
         "name": "Kabak"
       },
       {
         "amount": "3 adet",
         "emoji": "🥔",
-        "ingredientId": "ing_371",
+        "ingredientId": "ing_81",
         "name": "Patates"
       },
       {
         "amount": "200 gr",
         "emoji": "🟢",
-        "ingredientId": "ing_372",
+        "ingredientId": "ing_7",
         "name": "Bamya"
       },
       {
         "amount": "200 gr",
         "emoji": "🫛",
-        "ingredientId": "ing_373",
+        "ingredientId": "ing_125",
         "name": "Yeşil fasulye"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_374",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "4 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_375",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "3 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_376",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "3 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_377",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_378",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_379",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_380",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_381",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_382",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5339,11 +5859,11 @@
     "steps": [
       {
         "order": 1,
-        "text": "Tencerede yağı kızdırıp eti suyunu çekene kadar kavurun."
+        "text": "Geniş bir tencerede sıvı yağı kızdırıp kuşbaşı eti suyunu salıp çekene kadar kavurun."
       },
       {
         "order": 2,
-        "text": "Doğranmış soğan ve sarımsağı ekleyip pembeleşene kadar kavurun."
+        "text": "Doğranmış soğan ve sarımsağı ekleyip hafifçe pembeleşene kadar kavurun."
       },
       {
         "order": 3,
@@ -5351,27 +5871,27 @@
       },
       {
         "order": 4,
-        "text": "Tüm sebzeleri yıkayıp orta boy parçalar halinde doğrayın."
+        "text": "Patlıcan, kabak ve patatesleri orta boy parçalar halinde doğrayıp kararmamaları için tuzlu suda 10 dakika bekletin, sonra süzün."
       },
       {
         "order": 5,
-        "text": "Patlıcan, kabak ve patatesleri tuzlu suda 10 dakika bekletip süzün."
+        "text": "Bamya ve yeşil fasulyeyi ayıklayıp yıkayın."
       },
       {
         "order": 6,
-        "text": "Doğranmış domates ve biberleri ekleyip karıştırın."
+        "text": "Domates ve biberleri iri doğrayın."
       },
       {
         "order": 7,
-        "text": "Tüm sebzeleri kavrulan etin üzerine yerleştirip baharatları ekleyin."
+        "text": "Hazırladığınız tüm sebzeleri kavrulan etin üzerine yerleştirip tuz ve karabiberi serpin."
       },
       {
         "order": 8,
-        "text": "Sıcak suyu ekleyip kapağını kapatın."
+        "text": "Sıcak suyu ilave edip kapağını kapatın."
       },
       {
         "order": 9,
-        "text": "150°C fırında 1.5 saat pişirin veya kısık ateşte 1 saat pişirin."
+        "text": "150°C fırında yaklaşık 1.5 saat veya ocak üstünde kısık ateşte 1 saat pişirin."
       },
       {
         "order": 10,
@@ -5384,7 +5904,28 @@
       "Karışık",
       "Fırın"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Etli Türlü Tarifi",
+        "url": "https://yemek.com/tarif/etli-turlu/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Türlü Yemeği Tarifi - Türlü Nasıl Yapılır?",
+        "url": "https://www.karaca.com/blog/renk-cumbusu-sofralarin-vazgecilmezi-turlu-yemegi-tarifi",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5394,7 +5935,7 @@
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
     "description": "Rendelenmiş kabak, peynir ve yumurtayla hazırlanan kızartma",
-    "duration": "30 dk",
+    "duration": "40 dk",
     "emoji": "🥒",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2026/06/kabak-mucver-tarifi-1.jpg",
@@ -5404,62 +5945,68 @@
       {
         "amount": "3 adet",
         "emoji": "🥒",
-        "ingredientId": "ing_383",
+        "ingredientId": "ing_91",
         "name": "Sakız kabağı"
       },
       {
         "amount": "3 adet",
         "emoji": "🥚",
-        "ingredientId": "ing_384",
+        "ingredientId": "ing_130",
         "name": "Yumurta"
       },
       {
         "amount": "150 gr",
         "emoji": "🧀",
-        "ingredientId": "ing_385",
+        "ingredientId": "ing_10",
         "name": "Beyaz peynir"
       },
       {
         "amount": "5 yemek kaşığı",
         "emoji": "🌾",
-        "ingredientId": "ing_386",
+        "ingredientId": "ing_119",
         "name": "Un"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🧁",
+        "ingredientId": "ing_33",
+        "name": "Kabartma tozu"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_387",
+        "ingredientId": "ing_21",
         "name": "Dereotu"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_388",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
       },
       {
         "amount": "3 dal",
         "emoji": "🌱",
-        "ingredientId": "ing_389",
+        "ingredientId": "ing_127",
         "name": "Yeşil soğan"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_390",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_391",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_392",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       }
     ],
     "isOfficial": true,
@@ -5469,15 +6016,15 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kabakları yıkayıp rendeleyin, üzerine biraz tuz serpip 10 dakika bekletin."
+        "text": "Kabakları yıkayıp rendeleyin, üzerine biraz tuz serpip 10 dakika dinlendirin."
       },
       {
         "order": 2,
-        "text": "Bekleyen kabakların suyunu sıkıp ayrı bir kaba alın."
+        "text": "Suyunu iyice sıkıp süzdüğünüz kabakları geniş bir kaba alın."
       },
       {
         "order": 3,
-        "text": "İçine ufalanmış beyaz peyniri ekleyin."
+        "text": "Ufalanmış beyaz peyniri ekleyin."
       },
       {
         "order": 4,
@@ -5485,23 +6032,23 @@
       },
       {
         "order": 5,
-        "text": "Unu yavaş yavaş ekleyip karıştırın."
+        "text": "Un ve kabartma tozunu yavaş yavaş ekleyip karıştırın."
       },
       {
         "order": 6,
-        "text": "Karabiberi ve gerekirse az tuz ekleyip karışımı homojenleştirin."
+        "text": "Karabiber ve gerekirse az tuz ilave edip karışımı pürüzsüz hale getirin."
       },
       {
         "order": 7,
-        "text": "Tavada bol yağ kızdırın."
+        "text": "Geniş bir tavada bol yağı kızdırın."
       },
       {
         "order": 8,
-        "text": "Kaşıkla yağa parça parça döküp her iki tarafını kızartın."
+        "text": "Kaşıkla harçtan parçalar alıp yağa dökün, her iki tarafını altın rengi alana kadar kızartın."
       },
       {
         "order": 9,
-        "text": "Pişen mücverleri kağıt havluya alıp fazla yağı süzdürün."
+        "text": "Pişen mücverleri kağıt havluya alıp fazla yağını süzdürün."
       },
       {
         "order": 10,
@@ -5514,7 +6061,30 @@
       "Vejetaryen",
       "Kızartma"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "4-5 kişilik",
+    "contentSources": [
+      {
+        "title": "Kabak Mücveri Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/kabak-mucver-5/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Kabak Mücveri Nasıl Yapılır?",
+        "url": "https://www.nefisyemektarifleri.com/kabak-mucveri-nasil-yapilir/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Kıvamı ve dokusunu doğru vermek için tariflerde standart olan kabartma tozu eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5534,55 +6104,55 @@
       {
         "amount": "1 kg",
         "emoji": "🥬",
-        "ingredientId": "ing_393",
+        "ingredientId": "ing_90",
         "name": "Pırasa"
       },
       {
         "amount": "2 adet",
         "emoji": "🥕",
-        "ingredientId": "ing_394",
+        "ingredientId": "ing_28",
         "name": "Havuç"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🍚",
-        "ingredientId": "ing_395",
+        "ingredientId": "ing_86",
         "name": "Pirinç"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_396",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🍬",
-        "ingredientId": "ing_397",
+        "ingredientId": "ing_142",
         "name": "Şeker"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_398",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_399",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_400",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1.5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_401",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5593,7 +6163,7 @@
     "steps": [
       {
         "order": 1,
-        "text": "Pırasaları yıkayıp 2 cm'lik halkalar halinde doğrayın."
+        "text": "Pırasaları ayıklayıp yıkayın, yaklaşık 2 cm'lik halkalar halinde doğrayın."
       },
       {
         "order": 2,
@@ -5605,7 +6175,7 @@
       },
       {
         "order": 4,
-        "text": "Tencereye zeytinyağı koyup soğanı pembeleşene kadar kavurun."
+        "text": "Tencereye zeytinyağını alıp soğanı hafifçe pembeleşene kadar kavurun."
       },
       {
         "order": 5,
@@ -5613,7 +6183,7 @@
       },
       {
         "order": 6,
-        "text": "Pırasaları ve pirinci ilave edin, hafifçe karıştırın."
+        "text": "Pırasa ve pirinci ilave edip hafifçe karıştırın."
       },
       {
         "order": 7,
@@ -5625,11 +6195,11 @@
       },
       {
         "order": 9,
-        "text": "Kısık ateşte 30 dakika pişirip soğumaya bırakın."
+        "text": "Pirinç ve sebzeler yumuşayana kadar kısık ateşte yaklaşık 30 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Soğuk olarak servis edin."
+        "text": "Tamamen soğuduktan sonra soğuk olarak servis edin."
       }
     ],
     "tags": [
@@ -5638,7 +6208,28 @@
       "Pırasa",
       "Soğuk"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Zeytinyağlı Pırasa Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/zeytinyagli-pirasa-tarifi/",
+        "usedFor": [
+          "method"
+        ]
+      },
+      {
+        "title": "Zeytinyağlı Pırasa",
+        "url": "https://yemek.com/tarif/zeytinyagli-pirasa/",
+        "usedFor": [
+          "amounts",
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5658,67 +6249,67 @@
       {
         "amount": "6 adet",
         "emoji": "🌿",
-        "ingredientId": "ing_402",
+        "ingredientId": "ing_24",
         "name": "Enginar"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🟢",
-        "ingredientId": "ing_403",
+        "ingredientId": "ing_12",
         "name": "Bezelye"
       },
       {
         "amount": "2 adet",
         "emoji": "🥕",
-        "ingredientId": "ing_404",
+        "ingredientId": "ing_28",
         "name": "Havuç"
       },
       {
         "amount": "2 adet",
         "emoji": "🥔",
-        "ingredientId": "ing_405",
+        "ingredientId": "ing_81",
         "name": "Patates"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_406",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_407",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🍬",
-        "ingredientId": "ing_408",
+        "ingredientId": "ing_142",
         "name": "Şeker"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_409",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_410",
+        "ingredientId": "ing_21",
         "name": "Dereotu"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_411",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "2 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_412",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -5729,15 +6320,15 @@
     "steps": [
       {
         "order": 1,
-        "text": "Enginarları temizleyip limonlu suya atın (kararmasını önler)."
+        "text": "Enginarları temizleyip limon sıkılmış suya atın, böylece kararmaları önlenir."
       },
       {
         "order": 2,
-        "text": "Soğanı yarım ay, havuç ve patatesi küp küp doğrayın."
+        "text": "Soğanı ince ince, havuç ve patatesi küp küp doğrayın."
       },
       {
         "order": 3,
-        "text": "Tencereye zeytinyağı koyup soğanları kavurun."
+        "text": "Tencereye zeytinyağını alıp soğanı hafifçe pembeleşene kadar kavurun."
       },
       {
         "order": 4,
@@ -5745,27 +6336,27 @@
       },
       {
         "order": 5,
-        "text": "Enginarları yerleştirip aralarına bezelyeleri serpin."
+        "text": "Bezelyeleri ilave edip birkaç dakika karıştırın."
       },
       {
         "order": 6,
-        "text": "Limon suyu, şeker ve tuzu ilave edin."
+        "text": "Enginarları tencereye yerleştirip aralarına ve içlerine hazırladığınız sebze karışımını paylaştırın."
       },
       {
         "order": 7,
-        "text": "Sebzeleri kaplayacak kadar sıcak su ekleyip kapağını kapatın."
+        "text": "Limon suyu, şeker ve tuzu ekleyin."
       },
       {
         "order": 8,
-        "text": "Kısık ateşte 35-40 dakika pişirin."
+        "text": "Sebzeleri kaplayacak kadar su ilave edip kapağını kapatın."
       },
       {
         "order": 9,
-        "text": "Ocaktan alıp tamamen soğutun."
+        "text": "Enginarlar yumuşayana kadar kısık ateşte 35-40 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Üzerine kıyılmış dereotu serpip soğuk servis edin."
+        "text": "Ocaktan alıp tamamen soğutun, üzerine kıyılmış dereotu serperek servis edin."
       }
     ],
     "tags": [
@@ -5774,7 +6365,28 @@
       "Enginar",
       "Soğuk"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Zeytinyağlı Enginar Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/zeytinyagli-enginar-tarifi-199273/",
+        "usedFor": [
+          "method"
+        ]
+      },
+      {
+        "title": "Zeytinyağlı Enginar",
+        "url": "https://yemek.com/tarif/enginar/",
+        "usedFor": [
+          "amounts",
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5783,7 +6395,7 @@
     "communityLikeCount": 0,
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
-    "description": "Lahana yapraklarına kıymalı pirinç harcı sarılarak pişirilen Karadeniz lezzeti",
+    "description": "Lahana yapraklarına kıymalı pirinç harcı sarılarak hazırlanan klasik bir Türk mutfağı yemeği",
     "duration": "2 sa",
     "emoji": "🥬",
     "imageUrls": [
@@ -5794,67 +6406,73 @@
       {
         "amount": "1 adet (orta)",
         "emoji": "🥬",
-        "ingredientId": "ing_413",
+        "ingredientId": "ing_9",
         "name": "Beyaz lahana"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_414",
+        "ingredientId": "ing_54",
         "name": "Kuzu kıyması"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🍚",
-        "ingredientId": "ing_415",
+        "ingredientId": "ing_86",
         "name": "Pirinç"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_416",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_417",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_418",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
+      },
+      {
+        "amount": "1 tatlı kaşığı",
+        "emoji": "🍃",
+        "ingredientId": "ing_74",
+        "name": "Nane"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_419",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_420",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_421",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_422",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_423",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5865,31 +6483,31 @@
     "steps": [
       {
         "order": 1,
-        "text": "Lahananın göbeğini kesip kaynar suya atın, yapraklar yumuşayınca tek tek alın."
+        "text": "Lahananın göbeğini oyup kaynar tuzlu suya atın, yapraklar yumuşayınca tek tek ayırıp süzün."
       },
       {
         "order": 2,
-        "text": "Yaprakların kalın damarlarını kesin."
+        "text": "Yaprakların kalın orta damarlarını inceltin."
       },
       {
         "order": 3,
-        "text": "Pirinci ılık suda 15 dakika bekletip süzün."
+        "text": "Pirinci yıkayıp süzün."
       },
       {
         "order": 4,
-        "text": "Kıymayı, doğranmış soğan, pirinç, salça ve baharatlarla yoğurun."
+        "text": "Kıymayı rendelenmiş soğan, pirinç, salça, nane, karabiber, pul biber ve tuzla güzelce yoğurun."
       },
       {
         "order": 5,
-        "text": "Maydanozu kıyıp ekleyin."
+        "text": "Kıyılmış maydanozu harca ekleyin."
       },
       {
         "order": 6,
-        "text": "Lahana yapraklarına bir parmak büyüklüğünde harç koyup sıkıca sarın."
+        "text": "Her yaprağa bir parmak büyüklüğünde harç koyup sıkıca sarın."
       },
       {
         "order": 7,
-        "text": "Tencerenin tabanına lahana artıklarını serip sarmaları sıkıca dizin."
+        "text": "Tencerenin tabanına kullanılmayan lahana yapraklarını serip sarmaları sıkıca dizin."
       },
       {
         "order": 8,
@@ -5897,11 +6515,11 @@
       },
       {
         "order": 9,
-        "text": "Sıcak suyu kaplayacak şekilde ekleyip ters tabakla bastırın."
+        "text": "Sarmaları kaplayacak kadar sıcak su ekleyip ters bir tabakla bastırın."
       },
       {
         "order": 10,
-        "text": "Kısık ateşte 1 saat pişirip yoğurtla servis edin."
+        "text": "Kısık ateşte yaklaşık 1 saat pişirip yoğurtla servis edin."
       }
     ],
     "tags": [
@@ -5910,7 +6528,30 @@
       "Lahana",
       "Karadeniz"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Lahana Sarması Tarifi, Nasıl Yapılır?",
+        "url": "https://yemek.com/tarif/lahana-sarmasi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Kıymalı Lahana Sarması",
+        "url": "https://www.nefisyemektarifleri.com/kiymali-lahana-sarmasi/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Açıklamadaki isabetsiz \"Karadeniz\" niteliği kaldırıldı (beyaz lahana ile yapılan bu sarma bölgesel değil, ülke geneline ait bir yemektir) ve harca geleneksel nane eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -5930,55 +6571,55 @@
       {
         "amount": "750 gr",
         "emoji": "🫛",
-        "ingredientId": "ing_424",
+        "ingredientId": "ing_125",
         "name": "Yeşil fasulye"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_425",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_426",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_427",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_428",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_429",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🍬",
-        "ingredientId": "ing_430",
+        "ingredientId": "ing_142",
         "name": "Şeker"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_431",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "1.5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_432",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -5989,7 +6630,7 @@
     "steps": [
       {
         "order": 1,
-        "text": "Fasulyeleri ayıklayıp uçlarını kırın, ortadan ikiye bölün."
+        "text": "Fasulyelerin iplerini ve uç kısımlarını ayıklayıp ortadan ikiye bölün."
       },
       {
         "order": 2,
@@ -6001,7 +6642,7 @@
       },
       {
         "order": 4,
-        "text": "Tencerede zeytinyağı kızdırıp soğanı pembeleşene kadar kavurun."
+        "text": "Tencerede zeytinyağını ısıtıp soğanı hafifçe pembeleşene kadar kavurun."
       },
       {
         "order": 5,
@@ -6009,23 +6650,23 @@
       },
       {
         "order": 6,
-        "text": "Domatesi ekleyip 3 dakika kavurun."
+        "text": "Domatesi ilave edip 3 dakika kavurun."
       },
       {
         "order": 7,
-        "text": "Fasulyeleri ilave edip 5 dakika hafifçe karıştırarak pişirin."
+        "text": "Fasulyeleri ekleyip 5 dakika hafifçe karıştırarak kavurun."
       },
       {
         "order": 8,
-        "text": "Şeker, tuz ve sıcak suyu ekleyin."
+        "text": "Şeker, tuz ve sıcak suyu ilave edin."
       },
       {
         "order": 9,
-        "text": "Kapağını kapatıp kısık ateşte 30 dakika pişirin."
+        "text": "Kapağını kapatıp kısık ateşte fasulyeler yumuşayana kadar yaklaşık 30 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Soğuk veya ılık olarak servis edin."
+        "text": "Soğutup oda sıcaklığında veya soğuk servis edin."
       }
     ],
     "tags": [
@@ -6034,7 +6675,28 @@
       "Fasulye",
       "Soğuk"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "4 kişilik",
+    "contentSources": [
+      {
+        "title": "Zeytinyağlı Taze Fasulye Tarifi",
+        "url": "https://www.nefisyemektarifleri.com/zeytinyagli-taze-fasulye-tarifi-196168/",
+        "usedFor": [
+          "method"
+        ]
+      },
+      {
+        "title": "Zeytinyağlı Taze Fasulye",
+        "url": "https://yemek.com/tarif/zeytinyagli-taze-fasulye/",
+        "usedFor": [
+          "amounts",
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6054,67 +6716,67 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🫘",
-        "ingredientId": "ing_433",
+        "ingredientId": "ing_44",
         "name": "Kuru fasulye"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_434",
+        "ingredientId": "ing_18",
         "name": "Dana kuşbaşı"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_435",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_436",
-        "name": "Salça (domates)"
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_437",
-        "name": "Salça (biber)"
+        "ingredientId": "ing_143",
+        "name": "Biber Salçası"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_438",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_439",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
-        "amount": "1 tatlı kaşığı",
+        "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_440",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_441",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_442",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_443",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -6125,19 +6787,19 @@
     "steps": [
       {
         "order": 1,
-        "text": "Kuru fasulyeleri akşamdan ılık suda ıslatın (en az 8 saat)."
+        "text": "Kuru fasulyeleri iyice yıkayıp bol ılık suda en az 8 saat, tercihen bir gece ıslatın."
       },
       {
         "order": 2,
-        "text": "Ertesi gün suyunu süzüp temiz suyla 10 dakika kaynatın, suyunu dökün."
+        "text": "Ertesi gün suyunu süzüp temiz suyla 10 dakika kaynatın, bu suyu da dökün."
       },
       {
         "order": 3,
-        "text": "Tencereye sıvı yağı koyup eti suyunu çekene kadar kavurun."
+        "text": "Geniş bir tencerede sıvı yağı kızdırıp dana kuşbaşını suyunu salıp çekene kadar kavurun."
       },
       {
         "order": 4,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "Doğranmış soğanları ekleyip hafif pembeleşene kadar kavurmaya devam edin."
       },
       {
         "order": 5,
@@ -6145,23 +6807,23 @@
       },
       {
         "order": 6,
-        "text": "Fasulyeleri ekleyip karıştırın."
+        "text": "Ön haşlanmış fasulyeleri tencereye ekleyip birkaç dakika karıştırın."
       },
       {
         "order": 7,
-        "text": "Üzerine 5 su bardağı sıcak su ekleyin."
+        "text": "Üzerine 5 su bardağı sıcak suyu ekleyip kaynamaya bırakın."
       },
       {
         "order": 8,
-        "text": "Kaynamaya başlayınca ateşi kısıp kapağını kapatın, 1.5 saat pişirin."
+        "text": "Kaynayınca ateşi kısıp kapağını kapatın, et ve fasulye yumuşayana kadar yaklaşık 1,5 saat pişirin."
       },
       {
         "order": 9,
-        "text": "Tuz, karabiber ve tereyağını ekleyip 15 dakika daha kaynatın."
+        "text": "Tuz, karabiber, pul biber ve tereyağını ekleyip 15 dakika daha kaynatın."
       },
       {
         "order": 10,
-        "text": "Pirinç pilavı ve turşu ile sıcak servis edin."
+        "text": "Pirinç pilavı ve turşuyla sıcak servis edin."
       }
     ],
     "tags": [
@@ -6170,7 +6832,31 @@
       "Klasik",
       "Fasulye"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Etli Kuru Fasulye - Nefis Yemek Tarifleri",
+        "url": "https://www.nefisyemektarifleri.com/etli-kuru-fasulye/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Kuru Fasulye Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/kuru-fasulye/",
+        "usedFor": [
+          "method",
+          "amounts"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Karabiber miktarı fazla keskin olmaması için tatlı kaşığından çay kaşığına düşürüldü."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6190,55 +6876,61 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🫛",
-        "ingredientId": "ing_444",
+        "ingredientId": "ing_79",
         "name": "Nohut"
       },
       {
         "amount": "300 gr",
         "emoji": "🥩",
-        "ingredientId": "ing_445",
+        "ingredientId": "ing_18",
         "name": "Dana kuşbaşı"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_446",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
-        "amount": "1 yemek kaşığı",
+        "amount": "1,5 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_447",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_448",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
-        "amount": "1 tatlı kaşığı",
+        "amount": "1 çay kaşığı",
+        "emoji": "🌿",
+        "ingredientId": "ing_41",
+        "name": "Kimyon"
+      },
+      {
+        "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_449",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_450",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_451",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_452",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -6249,27 +6941,27 @@
     "steps": [
       {
         "order": 1,
-        "text": "Nohutları akşamdan suda ıslatın."
+        "text": "Nohutları akşamdan bol suda ıslatın."
       },
       {
         "order": 2,
-        "text": "Ertesi gün suyunu süzüp tencereye alın, üzerini örtecek kadar suyla 30 dakika haşlayın."
+        "text": "Ertesi gün suyunu süzüp temiz suyla üzerini geçecek kadar suda 30 dakika haşlayın, suyunu ayrı bir kapta saklayın."
       },
       {
         "order": 3,
-        "text": "Suyunu süzüp ayrı bir kaba alın."
+        "text": "Yağ koymadan tencereye dana kuşbaşını alıp kendi suyunu salıp çekene kadar kavurun."
       },
       {
         "order": 4,
-        "text": "Tencerede sıvı yağı kızdırıp eti kavurun, suyunu çekene kadar pişirin."
+        "text": "Sıvı yağı ekleyip eti birkaç dakika daha kavurun."
       },
       {
         "order": 5,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "Doğranmış soğanı ilave edip pembeleşene kadar kavurun."
       },
       {
         "order": 6,
-        "text": "Salçayı ilave edip 2 dakika daha pişirin."
+        "text": "Salçayı ekleyip kokusu çıkana kadar 2 dakika kavurun."
       },
       {
         "order": 7,
@@ -6277,15 +6969,15 @@
       },
       {
         "order": 8,
-        "text": "Üzerine sıcak suyu ilave edip kapağını kapatın."
+        "text": "Sıcak suyu ilave edip kapağını kapatın."
       },
       {
         "order": 9,
-        "text": "Et ve nohutlar yumuşayana kadar 1 saat pişirin."
+        "text": "Et ve nohutlar iyice yumuşayana kadar kısık ateşte yaklaşık 1 saat pişirin."
       },
       {
         "order": 10,
-        "text": "Tuz ve baharatları ekleyip 10 dakika daha kaynatın, pirinç pilavı ile servis edin."
+        "text": "Tuz, karabiber, pul biber ve kimyonu ekleyip 10 dakika daha kaynatın; pirinç pilavıyla servis edin."
       }
     ],
     "tags": [
@@ -6294,7 +6986,30 @@
       "Nohut",
       "Klasik"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Etli Nohut Yemeği Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/etli-nohut-yemegi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Etli Nohut Yemeği Nasıl Yapılır? - Nefis Yemek Tarifleri",
+        "url": "https://www.nefisyemektarifleri.com/etli-nohut-yemegi-nasil-yapilir/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Geleneksel tarifte yer alan kimyon eksikti, eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6314,79 +7029,79 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🫘",
-        "ingredientId": "ing_453",
+        "ingredientId": "ing_43",
         "name": "Kuru barbunya"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_454",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
-        "amount": "2 adet",
+        "amount": "1 adet",
         "emoji": "🥕",
-        "ingredientId": "ing_455",
+        "ingredientId": "ing_28",
         "name": "Havuç"
       },
       {
         "amount": "1 adet",
         "emoji": "🥔",
-        "ingredientId": "ing_456",
+        "ingredientId": "ing_81",
         "name": "Patates"
       },
       {
-        "amount": "4 diş",
+        "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_457",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
-        "amount": "1 adet",
+        "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_458",
+        "ingredientId": "ing_22",
         "name": "Domates"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_459",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🍬",
-        "ingredientId": "ing_460",
+        "ingredientId": "ing_142",
         "name": "Şeker"
       },
       {
         "amount": "1/2 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_461",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🍋",
-        "ingredientId": "ing_462",
+        "ingredientId": "ing_65",
         "name": "Limon suyu"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_463",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_464",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "4 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_465",
+        "ingredientId": "ing_99",
         "name": "Su"
       }
     ],
@@ -6397,15 +7112,15 @@
     "steps": [
       {
         "order": 1,
-        "text": "Barbunyaları akşamdan suda ıslatın."
+        "text": "Kuru barbunyaları akşamdan bol suda ıslatın."
       },
       {
         "order": 2,
-        "text": "Ertesi gün suyunu dökün, temiz su koyup 30 dakika haşlayın."
+        "text": "Ertesi gün suyunu döküp temiz suyla 30 dakika haşlayın, sonra suyunu süzün."
       },
       {
         "order": 3,
-        "text": "Tencerede zeytinyağı kızdırıp doğranmış soğanı kavurun."
+        "text": "Geniş bir tencerede zeytinyağını ısıtıp doğranmış soğanı kavurun."
       },
       {
         "order": 4,
@@ -6413,27 +7128,27 @@
       },
       {
         "order": 5,
-        "text": "Sarımsak ve salçayı ilave edip 2 dakika kavurun."
+        "text": "Ezilmiş sarımsak ve salçayı ilave edip 2 dakika kavurun."
       },
       {
         "order": 6,
-        "text": "Doğranmış domatesi ekleyin."
+        "text": "Doğranmış domatesi ekleyip karıştırın."
       },
       {
         "order": 7,
-        "text": "Haşlanmış barbunyaları ekleyip karıştırın."
+        "text": "Haşlanmış barbunyaları tencereye ekleyin."
       },
       {
         "order": 8,
-        "text": "Şeker, tuz, limon suyu ve sıcak suyu ekleyin."
+        "text": "Şeker, tuz ve sıcak suyu ilave edin."
       },
       {
         "order": 9,
-        "text": "Kısık ateşte 30 dakika pişirin."
+        "text": "Kapağını kapatıp kısık ateşte sebzeler ve barbunya iyice yumuşayana kadar 30 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Soğutup üzerine maydanoz serpip soğuk servis edin."
+        "text": "Ocaktan alıp oda sıcaklığında soğutun, üzerine limon suyu gezdirip maydanoz serperek soğuk servis edin."
       }
     ],
     "tags": [
@@ -6442,7 +7157,30 @@
       "Vejetaryen",
       "Soğuk"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Zeytinyağlı Barbunya Pilaki Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/barbunya-pilaki/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Barbunya Pilaki - Arda'nın Mutfağı",
+        "url": "https://www.ardaninmutfagi.com/yemek-tarifleri/sebze-yemekleri/barbunya-pilaki-2",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Domates miktarı 2 adede çıkarıldı, sebzelerin yumuşaması için pişirme süresi netleştirildi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6462,85 +7200,85 @@
       {
         "amount": "1 su bardağı",
         "emoji": "🫘",
-        "ingredientId": "ing_466",
+        "ingredientId": "ing_58",
         "name": "Kırmızı mercimek"
       },
       {
         "amount": "1 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_467",
+        "ingredientId": "ing_136",
         "name": "İnce bulgur"
       },
       {
         "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_468",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_469",
-        "name": "Salça (biber)"
+        "ingredientId": "ing_143",
+        "name": "Biber Salçası"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_470",
-        "name": "Salça (domates)"
+        "ingredientId": "ing_146",
+        "name": "Domates salçası"
       },
       {
         "amount": "4 dal",
         "emoji": "🌱",
-        "ingredientId": "ing_471",
+        "ingredientId": "ing_127",
         "name": "Yeşil soğan"
       },
       {
         "amount": "1/2 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_472",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
       },
       {
-        "amount": "1/4 su bardağı",
+        "amount": "1/3 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_473",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_474",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_475",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1/2 çay kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_476",
+        "ingredientId": "ing_41",
         "name": "Kimyon"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_477",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
-        "amount": "3 su bardağı",
+        "amount": "2,5 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_478",
+        "ingredientId": "ing_99",
         "name": "Su"
       },
       {
         "amount": "1 baş",
         "emoji": "🥬",
-        "ingredientId": "ing_479",
+        "ingredientId": "ing_67",
         "name": "Marul"
       }
     ],
@@ -6551,43 +7289,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Mercimeği yıkayıp 3 su bardağı suda yumuşayana kadar haşlayın (15-20 dk)."
+        "text": "Kırmızı mercimeği yıkayıp 2,5 su bardağı suyla tencereye alın."
       },
       {
         "order": 2,
-        "text": "Bulguru sıcak mercimek karışımının üzerine ekleyip karıştırın, kapağını kapatın."
+        "text": "Mercimek yumuşayıp suyunu çekene kadar kısık ateşte 15-20 dakika pişirin."
       },
       {
         "order": 3,
-        "text": "Bulgur şişene kadar 15 dakika dinlendirin."
+        "text": "Ocaktan alıp sıcak mercimeğin üzerine ince bulguru serpin, karıştırıp kapağını kapatın."
       },
       {
         "order": 4,
-        "text": "Soğanı ince doğrayıp zeytinyağında pembeleşene kadar kavurun."
+        "text": "Bulgur suyunu çekip şişene kadar 15-20 dakika dinlendirin."
       },
       {
         "order": 5,
-        "text": "Salçaları ekleyip 2 dakika daha kavurun."
+        "text": "Ayrı bir tavada soğanı ince doğrayıp zeytinyağında pembeleşene kadar kavurun."
       },
       {
         "order": 6,
-        "text": "Soğuyan mercimek karışımına soğanlı harç, baharatlar ve tuzu ekleyin."
+        "text": "Biber salçası ve domates salçasını ekleyip 2 dakika daha kavurun."
       },
       {
         "order": 7,
-        "text": "İnce kıyılmış maydanoz ve yeşil soğanı ilave edin."
+        "text": "Soğuyan mercimek-bulgur karışımına soğanlı salçalı harcı, tuz ve baharatları ekleyin."
       },
       {
         "order": 8,
-        "text": "Karışımı 10 dakika eliniz ıslakken yoğurun."
+        "text": "İnce kıyılmış yeşil soğan ve maydanozu ilave edin."
       },
       {
         "order": 9,
-        "text": "Avucunuzla parmak izi şeklinde köfteler şekillendirin."
+        "text": "Karışımı elleriniz hafif ıslakken 8-10 dakika yoğurup avucunuzda köfte şekli verin."
       },
       {
         "order": 10,
-        "text": "Marul yapraklarına sararak servis edin."
+        "text": "Marul yapraklarına sararak, isterseniz limonla servis edin."
       }
     ],
     "tags": [
@@ -6596,7 +7334,30 @@
       "Vejetaryen",
       "Meze"
     ],
-    "type": "Meze"
+    "type": "Meze",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Videolu Mercimek Köftesi Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/mercimek-koftesi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Mercimek Köftesi Nasıl Yapılır? - Nefis Yemek Tarifleri",
+        "url": "https://www.nefisyemektarifleri.com/kolay-mercimek-koftesi/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Mercimeğin suyunu tam çekmesi için su miktarı 3 su bardağından 2,5 su bardağına düşürüldü."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6616,67 +7377,67 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🫛",
-        "ingredientId": "ing_480",
+        "ingredientId": "ing_79",
         "name": "Nohut"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_481",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_482",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "3 diş",
         "emoji": "🧄",
-        "ingredientId": "ing_483",
+        "ingredientId": "ing_94",
         "name": "Sarımsak"
       },
       {
         "amount": "1/4 su bardağı",
         "emoji": "🫒",
-        "ingredientId": "ing_484",
+        "ingredientId": "ing_132",
         "name": "Zeytinyağı"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_485",
+        "ingredientId": "ing_41",
         "name": "Kimyon"
       },
       {
-        "amount": "1 tatlı kaşığı",
+        "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_486",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_487",
+        "ingredientId": "ing_89",
         "name": "Pul biber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_488",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "4 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_489",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       },
       {
         "amount": "1 adet",
         "emoji": "🍋",
-        "ingredientId": "ing_490",
+        "ingredientId": "ing_64",
         "name": "Limon"
       }
     ],
@@ -6687,23 +7448,23 @@
     "steps": [
       {
         "order": 1,
-        "text": "Nohutları akşamdan suda ıslatın."
+        "text": "Nohutları akşamdan bol suda ıslatın."
       },
       {
         "order": 2,
-        "text": "Suyunu dökün, temiz su ile yumuşayana kadar haşlayın."
+        "text": "Ertesi gün suyunu süzüp temiz suyla üzerini geçecek şekilde yumuşayana kadar haşlayın, sonra süzün."
       },
       {
         "order": 3,
-        "text": "Tencerede zeytinyağı kızdırıp doğranmış soğanı kavurun."
+        "text": "Tencerede zeytinyağını ısıtıp doğranmış soğanı pembeleşene kadar kavurun."
       },
       {
         "order": 4,
-        "text": "Ezilmiş sarımsakları ekleyip 1 dakika kavurun."
+        "text": "Ezilmiş sarımsağı ekleyip 1 dakika daha kavurun."
       },
       {
         "order": 5,
-        "text": "Salçayı ilave edip 2 dakika daha pişirin."
+        "text": "Salçayı ilave edip kokusu çıkana kadar 2 dakika kavurun."
       },
       {
         "order": 6,
@@ -6715,11 +7476,11 @@
       },
       {
         "order": 8,
-        "text": "Tuz ve baharatları ilave edin."
+        "text": "Tuz, kimyon, karabiber ve pul biberi ilave edin."
       },
       {
         "order": 9,
-        "text": "Kısık ateşte 30 dakika pişirin."
+        "text": "Kapağını kapatıp kısık ateşte sos koyulaşana kadar 25-30 dakika pişirin."
       },
       {
         "order": 10,
@@ -6732,7 +7493,28 @@
       "Nohut",
       "Zeytinyağlı"
     ],
-    "type": "Ana Yemek"
+    "type": "Ana Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Etsiz Nohut Yemeği Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/etsiz-nohut-yemegi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Nohut Yemeği - Lezzet.com.tr",
+        "url": "https://www.lezzet.com.tr/yemek-tarifleri/diger-tarifler/baklagil-ve-tahilli-yemekler/nohut-yemegi",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6752,31 +7534,37 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🍚",
-        "ingredientId": "ing_491",
-        "name": "Pirinç (baldo)"
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
+      },
+      {
+        "amount": "2 yemek kaşığı",
+        "emoji": "🍝",
+        "ingredientId": "ing_115",
+        "name": "Tel şehriye"
       },
       {
         "amount": "3 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_492",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_493",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_494",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_495",
+        "ingredientId": "ing_106",
         "name": "Sıcak su veya tavuk suyu"
       }
     ],
@@ -6787,38 +7575,42 @@
     "steps": [
       {
         "order": 1,
-        "text": "Pirinci ılık tuzlu suda 20 dakika bekletip durulayıp süzün."
+        "text": "Pirinci birkaç kez durulayıp suyu berraklaşana kadar yıkayın, ılık tuzlu suda 20 dakika bekletip tekrar süzün."
       },
       {
         "order": 2,
-        "text": "Tencereye tereyağı ve sıvı yağı koyup eritin."
+        "text": "Tencerede tereyağı ve sıvı yağı eritin."
       },
       {
         "order": 3,
-        "text": "Pirinci ekleyip orta ateşte camlaşana kadar 5 dakika kavurun."
+        "text": "Tel şehriyeyi ekleyip hafif altın rengi alana kadar kavurun."
       },
       {
         "order": 4,
-        "text": "Üzerine sıcak su veya tavuk suyunu ekleyin."
+        "text": "Süzülmüş pirinci ilave edip camlaşana kadar 5 dakika kavurun."
       },
       {
         "order": 5,
-        "text": "Tuzu ilave edip karıştırın."
+        "text": "Üzerine sıcak su veya tavuk suyunu ekleyin."
       },
       {
         "order": 6,
-        "text": "Kaynamaya başlayınca ateşi kısın, kapağını kapatın."
+        "text": "Tuzu ilave edip karıştırın."
       },
       {
         "order": 7,
-        "text": "Suyunu çekene kadar 15 dakika kısık ateşte pişirin."
+        "text": "Kaynamaya başlayınca ateşi kısıp kapağını kapatın."
       },
       {
         "order": 8,
-        "text": "Ocaktan alıp temiz bir bezle kapağını kapatın, 10 dakika dinlendirin."
+        "text": "Suyunu çekene kadar kısık ateşte 15 dakika pişirin."
       },
       {
         "order": 9,
+        "text": "Ocaktan alıp kapağın altına temiz bir bez koyarak 10 dakika demlendirin."
+      },
+      {
+        "order": 10,
         "text": "Tahta kaşıkla nazikçe karıştırıp tane tane servis edin."
       }
     ],
@@ -6828,7 +7620,30 @@
       "Klasik",
       "Yan Yemek"
     ],
-    "type": "Yan Yemek"
+    "type": "Yan Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Tane Tane Pirinç Pilavı Nasıl Yapılır? - Yemek.com",
+        "url": "https://yemek.com/tarif/tane-tane-pirinc-pilavi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Pirinç Pilavı Tarifi - Karaca Blog",
+        "url": "https://www.karaca.com/blog/tane-tane-pirinc-pilavinin-sirri-nedir",
+        "usedFor": [
+          "technique"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Tane tane pilav geleneğine uygun olarak tarife tel şehriye eklendi."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6838,7 +7653,7 @@
     "createdAt": "2026-05-06T14:30:53+03:00",
     "cuisine": "Türk",
     "description": "Domates, biber ve baharatlarla pişirilen klasik bulgur pilavı",
-    "duration": "35 dk",
+    "duration": "40 dk",
     "emoji": "🌾",
     "imageUrls": [
       "https://cdn.yemek.com/mncrop/600/315/uploads/2015/05/bulgur-pilavi-yemekcom.jpg",
@@ -6848,61 +7663,73 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🌾",
-        "ingredientId": "ing_496",
+        "ingredientId": "ing_85",
         "name": "Pilavlık bulgur"
       },
       {
         "amount": "1 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_497",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "2 adet",
         "emoji": "🫑",
-        "ingredientId": "ing_498",
+        "ingredientId": "ing_123",
         "name": "Yeşil biber"
       },
       {
-        "amount": "1 adet",
+        "amount": "2 adet",
         "emoji": "🍅",
-        "ingredientId": "ing_499",
+        "ingredientId": "ing_22",
         "name": "Domates"
+      },
+      {
+        "amount": "1 diş",
+        "emoji": "🧄",
+        "ingredientId": "ing_94",
+        "name": "Sarımsak"
       },
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🥫",
-        "ingredientId": "ing_500",
+        "ingredientId": "ing_93",
         "name": "Salça"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_501",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "2 yemek kaşığı",
         "emoji": "🛢️",
-        "ingredientId": "ing_502",
+        "ingredientId": "ing_108",
         "name": "Sıvı yağ"
       },
       {
         "amount": "1 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_503",
+        "ingredientId": "ing_59",
+        "name": "Kırmızı toz biber"
+      },
+      {
+        "amount": "1 çay kaşığı",
+        "emoji": "🌶️",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_504",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_505",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -6917,39 +7744,39 @@
       },
       {
         "order": 2,
-        "text": "Doğranmış biberleri ekleyip 2 dakika daha kavurun."
+        "text": "Doğranmış yeşil biberleri ekleyip 2 dakika daha kavurun."
       },
       {
         "order": 3,
-        "text": "Salça ve doğranmış domatesi ilave edip 3 dakika pişirin."
+        "text": "Ezilmiş sarımsağı ilave edip kısa süre kavurun."
       },
       {
         "order": 4,
-        "text": "Bulguru tencereye ekleyip 2-3 dakika kavurun."
+        "text": "Salçayı ekleyip kokusu çıkana kadar kavurun."
       },
       {
         "order": 5,
-        "text": "Sıcak su ve tuzu ekleyin."
+        "text": "Küp doğranmış domatesi ilave edip 3 dakika pişirin."
       },
       {
         "order": 6,
-        "text": "Karıştırıp kapağını kapatın."
+        "text": "Bulguru tencereye ekleyip 2-3 dakika birlikte kavurun."
       },
       {
         "order": 7,
-        "text": "Kaynayınca ateşi kısın, suyunu çekene kadar 15-20 dakika pişirin."
+        "text": "Sıcak su, tuz, kırmızı toz biber ve karabiberi ekleyin."
       },
       {
         "order": 8,
-        "text": "Karabiberi ekleyin."
+        "text": "Karıştırıp kapağını kapatın, kaynayınca ateşi kısın."
       },
       {
         "order": 9,
-        "text": "Ocaktan alıp temiz bezle kapağını kapatıp 10 dakika dinlendirin."
+        "text": "Suyunu çekene kadar kısık ateşte 15-20 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Karıştırıp servis edin."
+        "text": "Ocaktan alıp temiz bir bezle kapağını örterek 10 dakika dinlendirin, karıştırıp servis edin."
       }
     ],
     "tags": [
@@ -6958,7 +7785,30 @@
       "Klasik",
       "Yan Yemek"
     ],
-    "type": "Yan Yemek"
+    "type": "Yan Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "Domatesli Biberli Bulgur Pilavı Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/domatesli-bulgur-pilavi/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Domatesli Biberli Bulgur Pilavı - Nefis Yemek Tarifleri",
+        "url": "https://www.nefisyemektarifleri.com/domatesli-biberli-bulgur-pilavi/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Tarife sarımsak ve kırmızı toz biber eklenerek lezzet dengesi tamamlandı."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -6978,73 +7828,79 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🍚",
-        "ingredientId": "ing_506",
-        "name": "Pirinç (baldo)"
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
       },
       {
         "amount": "200 gr",
         "emoji": "🍗",
-        "ingredientId": "ing_507",
-        "name": "Tavuk ciğeri (isteğe bağlı)"
+        "ingredientId": "ing_112",
+        "name": "Tavuk ciğeri"
       },
       {
-        "amount": "1 adet",
+        "amount": "2 adet",
         "emoji": "🧅",
-        "ingredientId": "ing_508",
+        "ingredientId": "ing_97",
         "name": "Soğan"
       },
       {
         "amount": "1/4 su bardağı",
         "emoji": "🌰",
-        "ingredientId": "ing_509",
+        "ingredientId": "ing_133",
         "name": "Çam fıstığı"
       },
       {
         "amount": "1/4 su bardağı",
         "emoji": "🍇",
-        "ingredientId": "ing_510",
+        "ingredientId": "ing_55",
         "name": "Kuş üzümü"
       },
       {
         "amount": "4 yemek kaşığı",
         "emoji": "🧈",
-        "ingredientId": "ing_511",
+        "ingredientId": "ing_116",
         "name": "Tereyağı"
       },
       {
         "amount": "1/2 çay kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_512",
+        "ingredientId": "ing_111",
         "name": "Tarçın"
       },
       {
         "amount": "1/2 çay kaşığı",
         "emoji": "🌿",
-        "ingredientId": "ing_513",
+        "ingredientId": "ing_122",
         "name": "Yenibahar"
       },
       {
         "amount": "1/2 çay kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_514",
+        "ingredientId": "ing_35",
         "name": "Karabiber"
       },
       {
         "amount": "1/4 demet",
         "emoji": "🌿",
-        "ingredientId": "ing_515",
+        "ingredientId": "ing_69",
         "name": "Maydanoz"
+      },
+      {
+        "amount": "1/4 demet",
+        "emoji": "🌿",
+        "ingredientId": "ing_21",
+        "name": "Dereotu"
       },
       {
         "amount": "1 tatlı kaşığı",
         "emoji": "🧂",
-        "ingredientId": "ing_516",
+        "ingredientId": "ing_118",
         "name": "Tuz"
       },
       {
         "amount": "3 su bardağı",
         "emoji": "💧",
-        "ingredientId": "ing_517",
+        "ingredientId": "ing_105",
         "name": "Sıcak su"
       }
     ],
@@ -7055,43 +7911,43 @@
     "steps": [
       {
         "order": 1,
-        "text": "Pirinci ılık tuzlu suda 15 dakika bekletip durulayın."
+        "text": "Pirinci ılık tuzlu suda 15-20 dakika bekletip durulayın."
       },
       {
         "order": 2,
-        "text": "Tencerede tereyağını eritip çam fıstığını altın rengini alana kadar kavurun."
+        "text": "Kuş üzümünü ayrı bir kapta ılık suda bekletip yumuşamasını sağlayın."
       },
       {
         "order": 3,
-        "text": "Doğranmış soğanı ekleyip pembeleşene kadar kavurun."
+        "text": "Tencerede tereyağını eritip çam fıstığını altın rengini alana kadar kavurun."
       },
       {
         "order": 4,
-        "text": "İsteğe göre küçük doğranmış tavuk ciğerini ekleyip kavurun."
+        "text": "Doğranmış soğanı ekleyip hafif pembeleşene kadar kavurun."
       },
       {
         "order": 5,
-        "text": "Pirinci ilave edip 5 dakika kavurun."
+        "text": "İsterseniz küçük doğranmış tavuk ciğerini ilave edip birlikte kavurun."
       },
       {
         "order": 6,
-        "text": "Kuş üzümü, baharatları ve tuzu ekleyin."
+        "text": "Süzülmüş pirinci ekleyip yarı saydamlaşana kadar 5 dakika kavurun."
       },
       {
         "order": 7,
-        "text": "Sıcak suyu ilave edip karıştırın."
+        "text": "Süzülmüş kuş üzümü, tarçın, yenibahar, karabiber ve tuzu ekleyin."
       },
       {
         "order": 8,
-        "text": "Kaynayınca kapağını kapatıp kısık ateşte suyunu çekene kadar 15 dakika pişirin."
+        "text": "Sıcak suyu ilave edip karıştırın."
       },
       {
         "order": 9,
-        "text": "Ocaktan alıp temiz bezle kapağını kapatıp 10 dakika dinlendirin."
+        "text": "Kaynayınca kapağını kapatıp kısık ateşte suyunu çekene kadar 15 dakika pişirin."
       },
       {
         "order": 10,
-        "text": "Üzerine ince kıyılmış maydanoz serpip servis edin."
+        "text": "Ocaktan alıp bezle örterek 10 dakika dinlendirin, ince kıyılmış maydanoz ve dereotu serpiştirip servis edin."
       }
     ],
     "tags": [
@@ -7100,7 +7956,30 @@
       "Osmanlı",
       "Geleneksel"
     ],
-    "type": "Yan Yemek"
+    "type": "Yan Yemek",
+    "servings": "6 kişilik",
+    "contentSources": [
+      {
+        "title": "İç Pilav Tarifi - Yemek.com",
+        "url": "https://yemek.com/tarif/ic-pilav/",
+        "usedFor": [
+          "ingredients",
+          "method"
+        ]
+      },
+      {
+        "title": "Fıstıklı Kuş Üzümlü Pilav Tarifi - Nefis Yemek Tarifleri",
+        "url": "https://www.nefisyemektarifleri.com/fistikli-kus-uzumlu-pilav-tarifi/",
+        "usedFor": [
+          "cross-check"
+        ]
+      }
+    ],
+    "contentQualityNotes": [
+      "Geleneksel tarife dereotu eklendi, soğan miktarı 2 adede çıkarıldı."
+    ],
+    "contentUpdatedAt": "2026-07-09T10:00:44.055Z",
+    "modifiedAt": "2026-07-09T10:00:44.055Z"
   },
   {
     "authorId": "system",
@@ -7274,8 +8153,8 @@
       {
         "amount": "1.5 su bardağı",
         "emoji": "🍚",
-        "ingredientId": "ing_532",
-        "name": "Pirinç (baldo)"
+        "ingredientId": "ing_86",
+        "name": "Pirinç"
       },
       {
         "amount": "1/2 su bardağı",
@@ -7584,8 +8463,8 @@
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_561",
-        "name": "Salça (biber)"
+        "ingredientId": "ing_143",
+        "name": "Biber Salçası"
       },
       {
         "amount": "1/2 demet",
@@ -8004,8 +8883,8 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_596",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       },
       {
         "amount": "1/2 çay kaşığı",
@@ -8406,8 +9285,8 @@
       {
         "amount": "3 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_628",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       }
     ],
     "isOfficial": true,
@@ -9044,8 +9923,8 @@
       {
         "amount": "3 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_676",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       }
     ],
     "isOfficial": true,
@@ -9388,8 +10267,8 @@
       {
         "amount": "2 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_699",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       },
       {
         "amount": "2 adet",
@@ -10990,8 +11869,8 @@
       {
         "amount": "3 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_826",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       }
     ],
     "isOfficial": true,
@@ -11132,8 +12011,8 @@
       {
         "amount": "3 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_838",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       }
     ],
     "isOfficial": true,
@@ -12270,8 +13149,8 @@
       {
         "amount": "1 yemek kaşığı",
         "emoji": "🌶️",
-        "ingredientId": "ing_911",
-        "name": "Salça (biber)"
+        "ingredientId": "ing_143",
+        "name": "Biber Salçası"
       },
       {
         "amount": "2 yemek kaşığı",
@@ -12666,8 +13545,8 @@
       {
         "amount": "1.5 su bardağı",
         "emoji": "🛢️",
-        "ingredientId": "ing_942",
-        "name": "Sıvı yağ (kızartma)"
+        "ingredientId": "ing_153",
+        "name": "Kızartmalık Yağ"
       },
       {
         "amount": "1 çay kaşığı",
