@@ -49,6 +49,8 @@ class Recipe {
   final DateTime createdAt;
   @HiveField(20)
   final DateTime? modifiedAt;
+  @HiveField(21)
+  final String servings;
 
   const Recipe({
     required this.id,
@@ -72,6 +74,7 @@ class Recipe {
     this.commentCount = 0,
     required this.createdAt,
     this.modifiedAt,
+    this.servings = '',
   });
 
   bool get communityLeads =>
@@ -91,6 +94,7 @@ class Recipe {
       cuisine: data['cuisine'] as String,
       type: data['type'] as String,
       duration: data['duration'] as String,
+      servings: data['servings'] as String? ?? '',
       emoji: data['emoji'] as String? ?? '🍽️',
       imageUrls: List<String>.from(data['imageUrls'] ?? []),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
@@ -109,7 +113,8 @@ class Recipe {
       parentRecipeId: data['parentRecipeId'] as String?,
       commentCount: data['commentCount'] as int? ?? 0,
       createdAt:
-          DateTime.tryParse(data['createdAt']?.toString() ?? '') ?? DateTime.now(),
+          DateTime.tryParse(data['createdAt']?.toString() ?? '') ??
+          DateTime.now(),
       modifiedAt: data['modifiedAt'] != null
           ? DateTime.tryParse(data['modifiedAt'].toString())
           : null,
@@ -117,28 +122,29 @@ class Recipe {
   }
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-        'description': description,
-        'cuisine': cuisine,
-        'type': type,
-        'duration': duration,
-        'emoji': emoji,
-        'imageUrls': imageUrls,
-        'ingredients': ingredients.map((e) => e.toMap()).toList(),
-        'steps': steps.map((e) => e.toMap()).toList(),
-        'tags': tags,
-        'officialLikeCount': officialLikeCount,
-        'communityLikeCount': communityLikeCount,
-        'likeCount': likeCount,
-        'authorId': authorId,
-        'authorName': authorName,
-        'isOfficial': isOfficial,
-        if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
-        'commentCount': commentCount,
-        'createdAt': createdAt.toIso8601String(),
-        if (modifiedAt != null) 'modifiedAt': modifiedAt!.toIso8601String(),
-      };
+    'id': id,
+    'name': name,
+    'description': description,
+    'cuisine': cuisine,
+    'type': type,
+    'duration': duration,
+    'servings': servings,
+    'emoji': emoji,
+    'imageUrls': imageUrls,
+    'ingredients': ingredients.map((e) => e.toMap()).toList(),
+    'steps': steps.map((e) => e.toMap()).toList(),
+    'tags': tags,
+    'officialLikeCount': officialLikeCount,
+    'communityLikeCount': communityLikeCount,
+    'likeCount': likeCount,
+    'authorId': authorId,
+    'authorName': authorName,
+    'isOfficial': isOfficial,
+    if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
+    'commentCount': commentCount,
+    'createdAt': createdAt.toIso8601String(),
+    if (modifiedAt != null) 'modifiedAt': modifiedAt!.toIso8601String(),
+  };
 
   // ─── Firestore ───────────────────────────────────────────────────────────────
 
@@ -151,6 +157,7 @@ class Recipe {
       cuisine: data['cuisine'] as String? ?? 'Türk',
       type: data['type'] as String? ?? 'Ana Yemek',
       duration: data['duration'] as String? ?? '',
+      servings: data['servings'] as String? ?? '',
       emoji: data['emoji'] as String? ?? '🍽️',
       imageUrls: List<String>.from(data['imageUrls'] ?? []),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
@@ -171,37 +178,38 @@ class Recipe {
       createdAt: data['createdAt'] is Timestamp
           ? (data['createdAt'] as Timestamp).toDate()
           : DateTime.tryParse(data['createdAt']?.toString() ?? '') ??
-              DateTime.now(),
+                DateTime.now(),
       modifiedAt: data['modifiedAt'] is Timestamp
           ? (data['modifiedAt'] as Timestamp).toDate()
           : data['modifiedAt'] != null
-              ? DateTime.tryParse(data['modifiedAt'].toString())
-              : null,
+          ? DateTime.tryParse(data['modifiedAt'].toString())
+          : null,
     );
   }
 
   Map<String, dynamic> toFirestore() => {
-        'name': name,
-        'description': description,
-        'cuisine': cuisine,
-        'type': type,
-        'duration': duration,
-        'emoji': emoji,
-        'imageUrls': imageUrls,
-        'ingredients': ingredients.map((e) => e.toMap()).toList(),
-        'steps': steps.map((e) => e.toMap()).toList(),
-        'tags': tags,
-        'officialLikeCount': officialLikeCount,
-        'communityLikeCount': communityLikeCount,
-        'likeCount': likeCount,
-        'authorId': authorId,
-        'authorName': authorName,
-        'isOfficial': isOfficial,
-        if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
-        'commentCount': commentCount,
-        'createdAt': Timestamp.fromDate(createdAt),
-        if (modifiedAt != null) 'modifiedAt': Timestamp.fromDate(modifiedAt!),
-      };
+    'name': name,
+    'description': description,
+    'cuisine': cuisine,
+    'type': type,
+    'duration': duration,
+    'servings': servings,
+    'emoji': emoji,
+    'imageUrls': imageUrls,
+    'ingredients': ingredients.map((e) => e.toMap()).toList(),
+    'steps': steps.map((e) => e.toMap()).toList(),
+    'tags': tags,
+    'officialLikeCount': officialLikeCount,
+    'communityLikeCount': communityLikeCount,
+    'likeCount': likeCount,
+    'authorId': authorId,
+    'authorName': authorName,
+    'isOfficial': isOfficial,
+    if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
+    'commentCount': commentCount,
+    'createdAt': Timestamp.fromDate(createdAt),
+    if (modifiedAt != null) 'modifiedAt': Timestamp.fromDate(modifiedAt!),
+  };
 }
 
 class MockCuisines {

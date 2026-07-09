@@ -38,13 +38,14 @@ class RecipeAdapter extends TypeAdapter<Recipe> {
       commentCount: fields[18] as int,
       createdAt: fields[19] as DateTime,
       modifiedAt: fields[20] as DateTime?,
+      servings: fields[21] as String? ?? '',
     );
   }
 
   @override
   void write(BinaryWriter writer, Recipe obj) {
     writer
-      ..writeByte(21)
+      ..writeByte(22)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -86,7 +87,9 @@ class RecipeAdapter extends TypeAdapter<Recipe> {
       ..writeByte(19)
       ..write(obj.createdAt)
       ..writeByte(20)
-      ..write(obj.modifiedAt);
+      ..write(obj.modifiedAt)
+      ..writeByte(21)
+      ..write(obj.servings);
   }
 
   @override

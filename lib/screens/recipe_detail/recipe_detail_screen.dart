@@ -26,17 +26,12 @@ class RecipeDetailScreen extends ConsumerWidget {
     final recipeAsync = ref.watch(cachedRecipeStreamProvider(recipeId));
 
     return recipeAsync.when(
-      loading: () => const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
-      ),
-      error: (e, _) => Scaffold(
-        body: Center(child: Text('Hata: $e')),
-      ),
+      loading: () =>
+          const Scaffold(body: Center(child: CircularProgressIndicator())),
+      error: (e, _) => Scaffold(body: Center(child: Text('Hata: $e'))),
       data: (recipe) {
         if (recipe == null) {
-          return const Scaffold(
-            body: Center(child: Text('Tarif bulunamadı')),
-          );
+          return const Scaffold(body: Center(child: Text('Tarif bulunamadı')));
         }
         return _RecipeDetailView(recipe: recipe);
       },
@@ -60,7 +55,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   int _currentPage = 0;
 
   // Tutorial GlobalKey'leri
-  final _likeKey   = GlobalKey();
+  final _likeKey = GlobalKey();
   final _tabBarKey = GlobalKey();
   OverlayEntry? _tutorialEntry;
 
@@ -69,10 +64,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   @override
   void initState() {
     super.initState();
-    _tabs = TabController(
-      length: recipe.isOfficial ? 5 : 4,
-      vsync: this,
-    );
+    _tabs = TabController(length: recipe.isOfficial ? 5 : 4, vsync: this);
     _pageCtrl = PageController();
     WidgetsBinding.instance.addPostFrameCallback((_) => _checkTutorial());
   }
@@ -141,8 +133,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
     final topPadding = MediaQuery.of(context).padding.top;
     final screenHeight = MediaQuery.of(context).size.height;
     final keyboardHeight = MediaQuery.of(context).viewInsets.bottom;
-    final maxHeroHeight = screenHeight < 600 ? 180.0
-        : screenHeight < 700 ? 220.0
+    final maxHeroHeight = screenHeight < 600
+        ? 180.0
+        : screenHeight < 700
+        ? 220.0
         : 280.0;
     final targetHeroHeight = keyboardHeight > 0 ? 70.0 : maxHeroHeight;
 
@@ -212,8 +206,11 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                   color: Colors.black.withValues(alpha: 0.28),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const Icon(Icons.arrow_back_ios_new,
-                    size: 16, color: Colors.white),
+                child: const Icon(
+                  Icons.arrow_back_ios_new,
+                  size: 16,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
@@ -223,7 +220,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   }
 
   Widget _buildHero(
-      BuildContext context, double topPadding, double heroHeight) {
+    BuildContext context,
+    double topPadding,
+    double heroHeight,
+  ) {
     final userAsync = ref.watch(firebaseUserProvider);
     final user = userAsync.valueOrNull;
     final isAuth = user != null && !user.isAnonymous;
@@ -231,10 +231,11 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
 
     final isLiked = isAuth
         ? ref
-                .watch(isLikedProvider(
-                    (recipeId: recipe.id, userId: user.uid)))
-                .valueOrNull ??
-            false
+                  .watch(
+                    isLikedProvider((recipeId: recipe.id, userId: user.uid)),
+                  )
+                  .valueOrNull ??
+              false
         : false;
 
     return GestureDetector(
@@ -271,7 +272,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                     end: Alignment.topCenter,
                     colors: [
                       Colors.black.withValues(alpha: 0.55),
-                      Colors.transparent
+                      Colors.transparent,
                     ],
                   ),
                 ),
@@ -311,8 +312,11 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                   color: Colors.black.withValues(alpha: 0.28),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.zoom_out_map,
-                    color: Colors.white, size: 16),
+                child: const Icon(
+                  Icons.zoom_out_map,
+                  color: Colors.white,
+                  size: 16,
+                ),
               ),
             ),
             if (isAdmin)
@@ -320,18 +324,19 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                 top: topPadding + 46,
                 right: 12,
                 child: GestureDetector(
-                  onTap: () => context.push(
-                    '/recipe/${recipe.id}/edit',
-                    extra: recipe,
-                  ),
+                  onTap: () =>
+                      context.push('/recipe/${recipe.id}/edit', extra: recipe),
                   child: Container(
                     padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
                       color: Colors.black.withValues(alpha: 0.55),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Icon(Icons.edit_outlined,
-                        color: Colors.white, size: 16),
+                    child: const Icon(
+                      Icons.edit_outlined,
+                      color: Colors.white,
+                      size: 16,
+                    ),
                   ),
                 ),
               ),
@@ -351,7 +356,9 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                           Container(
                             margin: const EdgeInsets.only(bottom: 4),
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 8, vertical: 3),
+                              horizontal: 8,
+                              vertical: 3,
+                            ),
                             decoration: BoxDecoration(
                               color: Colors.orange.withValues(alpha: 0.85),
                               borderRadius: BorderRadius.circular(6),
@@ -372,7 +379,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                             fontWeight: FontWeight.w800,
                             color: Colors.white,
                             shadows: [
-                              Shadow(color: Colors.black45, blurRadius: 6)
+                              Shadow(color: Colors.black45, blurRadius: 6),
                             ],
                           ),
                         ),
@@ -382,6 +389,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                   const SizedBox(width: 8),
                   _metaChip('⏱ ${recipe.duration}'),
                   const SizedBox(width: 6),
+                  if (recipe.servings.isNotEmpty) ...[
+                    _metaChip('👥 ${recipe.servings}'),
+                    const SizedBox(width: 6),
+                  ],
                   GestureDetector(
                     key: _likeKey,
                     onTap: () async {
@@ -449,17 +460,22 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                     imageUrl: recipe.imageUrls[index],
                     fit: BoxFit.contain,
                     placeholder: (_, url) => const Center(
-                        child: CircularProgressIndicator(color: Colors.white)),
+                      child: CircularProgressIndicator(color: Colors.white),
+                    ),
                     errorWidget: (_, url, err) => Center(
-                      child: Text(recipe.emoji,
-                          style: const TextStyle(fontSize: 120)),
+                      child: Text(
+                        recipe.emoji,
+                        style: const TextStyle(fontSize: 120),
+                      ),
                     ),
                   ),
                 )
               else
                 Center(
-                  child: Text(recipe.emoji,
-                      style: const TextStyle(fontSize: 200)),
+                  child: Text(
+                    recipe.emoji,
+                    style: const TextStyle(fontSize: 200),
+                  ),
                 ),
               Positioned(
                 top: 48,
@@ -472,8 +488,11 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                       color: Colors.black54,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Icon(Icons.close,
-                        color: Colors.white, size: 22),
+                    child: const Icon(
+                      Icons.close,
+                      color: Colors.white,
+                      size: 22,
+                    ),
                   ),
                 ),
               ),
@@ -507,7 +526,8 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
             foregroundColor: AppColors.primaryText,
             padding: const EdgeInsets.symmetric(vertical: 13),
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12)),
+              borderRadius: BorderRadius.circular(12),
+            ),
             elevation: 0,
           ),
         ),
@@ -525,7 +545,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
       child: Text(
         label,
         style: const TextStyle(
-            fontSize: 11, fontWeight: FontWeight.w700, color: Colors.white),
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+          color: Colors.white,
+        ),
       ),
     );
   }
@@ -552,7 +575,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
             Text(
               _fmt(count),
               style: const TextStyle(
-                  fontSize: 11, fontWeight: FontWeight.w700, color: Colors.white),
+                fontSize: 11,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
             ),
           ],
         ],
@@ -586,8 +612,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
           indicatorSize: TabBarIndicatorSize.tab,
           labelColor: Colors.white,
           unselectedLabelColor: Colors.white54,
-          labelStyle:
-              const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
+          labelStyle: const TextStyle(
+            fontSize: 13,
+            fontWeight: FontWeight.w700,
+          ),
           tabs: [
             const Tab(text: 'Malzemeler'),
             const Tab(text: 'Tarif'),
@@ -612,7 +640,11 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
       builder: (ctx) => StatefulBuilder(
         builder: (ctx, setModalState) => Padding(
           padding: EdgeInsets.fromLTRB(
-              24, 24, 24, MediaQuery.of(ctx).viewInsets.bottom + 24),
+            24,
+            24,
+            24,
+            MediaQuery.of(ctx).viewInsets.bottom + 24,
+          ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -629,15 +661,16 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
               Text(
                 'Gün seç:',
                 style: TextStyle(
-                    fontSize: 13, color: context.palette.textTertiary),
+                  fontSize: 13,
+                  color: context.palette.textTertiary,
+                ),
               ),
               const SizedBox(height: 8),
               CalendarDatePicker(
                 initialDate: selectedDay,
                 firstDate: DateTime.now(),
                 lastDate: DateTime.now().add(const Duration(days: 90)),
-                onDateChanged: (d) =>
-                    setModalState(() => selectedDay = d),
+                onDateChanged: (d) => setModalState(() => selectedDay = d),
               ),
               const SizedBox(height: 12),
               SizedBox(
@@ -647,7 +680,8 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                     backgroundColor: AppColors.primary,
                     foregroundColor: AppColors.primaryText,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12)),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     elevation: 0,
                   ),
@@ -657,12 +691,14 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                     try {
                       await ref
                           .read(calendarEntriesProvider.notifier)
-                          .add(CalendarEntry(
-                            date: dateStr,
-                            recipeId: recipe.id,
-                            recipeName: recipe.name,
-                            recipeEmoji: recipe.emoji,
-                          ));
+                          .add(
+                            CalendarEntry(
+                              date: dateStr,
+                              recipeId: recipe.id,
+                              recipeName: recipe.name,
+                              recipeEmoji: recipe.emoji,
+                            ),
+                          );
                       if (ctx.mounted) Navigator.of(ctx).pop();
                       if (context.mounted) {
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -684,8 +720,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                       }
                     }
                   },
-                  child: const Text('Ekle',
-                      style: TextStyle(fontWeight: FontWeight.w700)),
+                  child: const Text(
+                    'Ekle',
+                    style: TextStyle(fontWeight: FontWeight.w700),
+                  ),
                 ),
               ),
             ],

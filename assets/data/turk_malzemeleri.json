@@ -1780,5 +1780,269 @@
     "emoji": "🍜",
     "imageUrl": "",
     "name": "İnce Erişte (Vermicelli)"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍓",
+    "imageUrl": "",
+    "name": "Çilek Reçeli"
+  },
+  {
+    "category": "yesillik",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Pandan Yaprağı"
+  },
+  {
+    "category": "sebze",
+    "emoji": "🌱",
+    "imageUrl": "",
+    "name": "Fasulye Filizi"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🫚",
+    "imageUrl": "",
+    "name": "Galangal"
+  },
+  {
+    "category": "et",
+    "emoji": "🐖",
+    "imageUrl": "",
+    "name": "Domuz Kıyması"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🫘",
+    "imageUrl": "",
+    "name": "Maş Fasulyesi"
+  },
+  {
+    "category": "diger",
+    "emoji": "⚪",
+    "imageUrl": "",
+    "name": "Agar Agar"
+  },
+  {
+    "category": "yesillik",
+    "emoji": "🥬",
+    "imageUrl": "",
+    "name": "Su Ispanağı"
+  },
+  {
+    "category": "tahil",
+    "emoji": "⚪",
+    "imageUrl": "",
+    "name": "Tapyoka Nişastası"
+  },
+  {
+    "category": "et",
+    "emoji": "🌭",
+    "imageUrl": "",
+    "name": "Çin Sosisi (Lap Cheong)"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🫘",
+    "imageUrl": "",
+    "name": "Soya Fasulyesi"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌰",
+    "imageUrl": "",
+    "name": "Mahlep"
+  },
+  {
+    "category": "sos",
+    "emoji": "🌶️",
+    "imageUrl": "",
+    "name": "Acı Sos"
+  },
+  {
+    "category": "tatlandirici",
+    "emoji": "🍁",
+    "imageUrl": "",
+    "name": "Akçaağaç Şurubu"
+  },
+  {
+    "category": "tatlandirici",
+    "emoji": "🍭",
+    "imageUrl": "",
+    "name": "Şeker Pamuğu"
+  },
+  {
+    "category": "sebze",
+    "emoji": "⚪",
+    "imageUrl": "",
+    "name": "Meksika Turpu (Jicama)"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🦐",
+    "imageUrl": "",
+    "name": "Kuru Karides"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🍃",
+    "imageUrl": "",
+    "name": "Kaffir Lime Yaprağı"
+  },
+  {
+    "category": "tahil",
+    "emoji": "⚪",
+    "imageUrl": "",
+    "name": "Tapyoka İncisi"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Kombu"
+  },
+  {
+    "category": "sos",
+    "emoji": "🥣",
+    "imageUrl": "",
+    "name": "Ponzu Sosu"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Arpa Maltı Tozu"
+  },
+  {
+    "category": "un",
+    "emoji": "🌾",
+    "imageUrl": "",
+    "name": "Tam Buğday Unu"
+  },
+  {
+    "category": "bakliyat",
+    "emoji": "🫘",
+    "imageUrl": "",
+    "name": "Urad Dal"
+  },
+  {
+    "category": "peynir",
+    "emoji": "🧀",
+    "imageUrl": "",
+    "name": "Paneer Peyniri"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🥟",
+    "imageUrl": "",
+    "name": "Wonton Hamuru"
+  },
+  {
+    "category": "baharat",
+    "emoji": "⭐",
+    "imageUrl": "",
+    "name": "Çin Beş Baharatı"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍃",
+    "imageUrl": "",
+    "name": "Bambu Yaprağı"
+  },
+  {
+    "category": "et",
+    "emoji": "🐖",
+    "imageUrl": "",
+    "name": "Domuz Eti"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌰",
+    "imageUrl": "",
+    "name": "Muskat"
+  },
+  {
+    "category": "tahil",
+    "emoji": "🍞",
+    "imageUrl": "",
+    "name": "Galeta Unu"
+  },
+  {
+    "category": "et",
+    "emoji": "🥓",
+    "imageUrl": "",
+    "name": "Serrano Jambonu"
+  },
+  {
+    "category": "et",
+    "emoji": "🌭",
+    "imageUrl": "",
+    "name": "İspanyol Chorizo"
+  },
+  {
+    "category": "et",
+    "emoji": "🌭",
+    "imageUrl": "",
+    "name": "Morcilla"
+  },
+  {
+    "category": "et",
+    "emoji": "🥓",
+    "imageUrl": "",
+    "name": "Pancetta"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🍲",
+    "imageUrl": "",
+    "name": "Balık Suyu"
+  },
+  {
+    "category": "deniz",
+    "emoji": "🐟",
+    "imageUrl": "",
+    "name": "Mezgit"
+  },
+  {
+    "category": "yag",
+    "emoji": "🥓",
+    "imageUrl": "",
+    "name": "Domuz Yağı"
+  },
+  {
+    "category": "meyve",
+    "emoji": "🍇",
+    "imageUrl": "",
+    "name": "Üzüm"
+  },
+  {
+    "category": "baharat",
+    "emoji": "🌿",
+    "imageUrl": "",
+    "name": "Zaatar"
+  },
+  {
+    "category": "baharat",
+    "emoji": "⭐",
+    "imageUrl": "",
+    "name": "Yıldız Anason"
+  },
+  {
+    "category": "sivi",
+    "emoji": "🥥",
+    "imageUrl": "",
+    "name": "Hindistan Cevizi Suyu"
+  },
+  {
+    "category": "tavuk",
+    "emoji": "🍗",
+    "imageUrl": "",
+    "name": "Tavuk Kıyması"
+  },
+  {
+    "category": "diger",
+    "emoji": "🍃",
+    "imageUrl": "",
+    "name": "Muz Yaprağı"
   }
 ]

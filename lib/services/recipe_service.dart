@@ -11,7 +11,6 @@ import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
 import 'recipe_cache_service.dart';
 
-
 class RecipeService {
   final _db = FirebaseFirestore.instance;
 
@@ -30,15 +29,16 @@ class RecipeService {
     if (oldSnap.docs.isNotEmpty) await deleteBatch.commit();
 
     await _seedRecipesFromJson();
-    await _db
-        .collection('_meta')
-        .doc('seed')
-        .set({'version': 'json_v1', 'seededAt': FieldValue.serverTimestamp()});
+    await _db.collection('_meta').doc('seed').set({
+      'version': 'json_v1',
+      'seededAt': FieldValue.serverTimestamp(),
+    });
   }
 
   Future<void> _seedRecipesFromJson() async {
-    final jsonStr =
-        await rootBundle.loadString('assets/data/turk_yemekleri_100.json');
+    final jsonStr = await rootBundle.loadString(
+      'assets/data/turk_yemekleri_100.json',
+    );
     final List<dynamic> data = json.decode(jsonStr) as List<dynamic>;
 
     // Malzeme adı → ID haritası (ingredientId eşleştirme için)
@@ -57,31 +57,27 @@ class RecipeService {
           ? DateTime.tryParse(raw['createdAt'] as String) ?? DateTime.now()
           : DateTime.now();
 
-      final ingredients = (raw['ingredients'] as List<dynamic>? ?? [])
-          .map((e) {
-            final ing = e as Map<String, dynamic>;
-            final nameKey =
-                (ing['name'] as String? ?? '').toLowerCase().trim();
-            return RecipeIngredient(
-              ingredientId: nameToId[nameKey] ??
-                  (ing['ingredientId'] as String? ?? 'ing_unknown'),
-              name: ing['name'] as String? ?? '',
-              amount: ing['amount'] as String? ?? '',
-              emoji: ing['emoji'] as String?,
-            );
-          })
-          .toList();
+      final ingredients = (raw['ingredients'] as List<dynamic>? ?? []).map((e) {
+        final ing = e as Map<String, dynamic>;
+        final nameKey = (ing['name'] as String? ?? '').toLowerCase().trim();
+        return RecipeIngredient(
+          ingredientId:
+              nameToId[nameKey] ??
+              (ing['ingredientId'] as String? ?? 'ing_unknown'),
+          name: ing['name'] as String? ?? '',
+          amount: ing['amount'] as String? ?? '',
+          emoji: ing['emoji'] as String?,
+        );
+      }).toList();
 
-      final steps = (raw['steps'] as List<dynamic>? ?? [])
-          .map((e) {
-            final s = e as Map<String, dynamic>;
-            return RecipeStep(
-              order: (s['order'] as num?)?.toInt() ?? 0,
-              text: s['text'] as String? ?? '',
-              imageUrl: s['imageUrl'] as String?,
-            );
-          })
-          .toList();
+      final steps = (raw['steps'] as List<dynamic>? ?? []).map((e) {
+        final s = e as Map<String, dynamic>;
+        return RecipeStep(
+          order: (s['order'] as num?)?.toInt() ?? 0,
+          text: s['text'] as String? ?? '',
+          imageUrl: s['imageUrl'] as String?,
+        );
+      }).toList();
 
       final type = _mapRecipeType(raw['type'] as String? ?? 'Ana Yemek');
       final docId = raw['id'] as String? ?? 'recipe_${i + 1}';
@@ -93,6 +89,7 @@ class RecipeService {
         cuisine: raw['cuisine'] as String? ?? 'Türk',
         type: type,
         duration: raw['duration'] as String? ?? '30 dk',
+        servings: raw['servings'] as String? ?? '',
         emoji: _safeEmoji(raw['emoji'] as String?),
         imageUrls: List<String>.from(raw['imageUrls'] ?? []),
         ingredients: ingredients,
@@ -130,13 +127,16 @@ class RecipeService {
     if (oldSnap.docs.isNotEmpty) await deleteBatch.commit();
 
     await _seedIngredientsFromJson();
-    await _db.collection('_meta').doc('seed_ingredients').set(
-        {'version': 'json_v1', 'seededAt': FieldValue.serverTimestamp()});
+    await _db.collection('_meta').doc('seed_ingredients').set({
+      'version': 'json_v1',
+      'seededAt': FieldValue.serverTimestamp(),
+    });
   }
 
   Future<void> _seedIngredientsFromJson() async {
-    final jsonStr =
-        await rootBundle.loadString('assets/data/turk_malzemeleri.json');
+    final jsonStr = await rootBundle.loadString(
+      'assets/data/turk_malzemeleri.json',
+    );
     final List<dynamic> data = json.decode(jsonStr) as List<dynamic>;
 
     final batch = _db.batch();
@@ -151,7 +151,9 @@ class RecipeService {
         category: _mapIngredientCategory(raw['category'] as String? ?? ''),
       );
       batch.set(
-          _db.collection('ingredients').doc(docId), ingredient.toFirestore());
+        _db.collection('ingredients').doc(docId),
+        ingredient.toFirestore(),
+      );
     }
     await batch.commit();
   }
@@ -245,10 +247,8 @@ class RecipeService {
     final cached = cache.loadIngredients();
     if (cached.isNotEmpty) yield cached;
 
-    await for (final snap in _db
-        .collection('ingredients')
-        .orderBy('name')
-        .snapshots()) {
+    await for (final snap
+        in _db.collection('ingredients').orderBy('name').snapshots()) {
       final list = snap.docs
           .map((d) => Ingredient.fromFirestore(d.data(), d.id))
           .toList();
@@ -265,22 +265,24 @@ class RecipeService {
         .orderBy('officialLikeCount', descending: true)
         .limit(1)
         .snapshots()
-        .map((snap) =>
-            snap.docs.isEmpty ? null : Recipe.fromFirestore(snap.docs.first));
+        .map(
+          (snap) =>
+              snap.docs.isEmpty ? null : Recipe.fromFirestore(snap.docs.first),
+        );
   }
 
   Stream<List<Recipe>> recipesStream(String cuisine) async* {
     final cache = RecipeCacheService();
-    final cached = cache.loadRecipes()
-        .where((r) => r.cuisine == cuisine)
-        .toList()
-      ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
+    final cached =
+        cache.loadRecipes().where((r) => r.cuisine == cuisine).toList()
+          ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
     if (cached.isNotEmpty) yield cached;
 
-    await for (final snap in _db
-        .collection('recipes')
-        .where('cuisine', isEqualTo: cuisine)
-        .snapshots()) {
+    await for (final snap
+        in _db
+            .collection('recipes')
+            .where('cuisine', isEqualTo: cuisine)
+            .snapshots()) {
       final list = snap.docs.map(Recipe.fromFirestore).toList()
         ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
       unawaited(cache.saveRecipes(list));
@@ -327,7 +329,8 @@ class RecipeService {
       }
 
       final fresh = Recipe.fromFirestore(snap);
-      final bool contentSame = current != null &&
+      final bool contentSame =
+          current != null &&
           current.modifiedAt != null &&
           fresh.modifiedAt != null &&
           current.modifiedAt == fresh.modifiedAt;
@@ -355,9 +358,11 @@ class RecipeService {
   }
 
   Stream<Recipe?> recipeStream(String id) {
-    return _db.collection('recipes').doc(id).snapshots().map(
-          (doc) => doc.exists ? Recipe.fromFirestore(doc) : null,
-        );
+    return _db
+        .collection('recipes')
+        .doc(id)
+        .snapshots()
+        .map((doc) => doc.exists ? Recipe.fromFirestore(doc) : null);
   }
 
   // ─── LIKES ──────────────────────────────────────────────────────────────────
@@ -369,10 +374,12 @@ class RecipeService {
         .collectionGroup('likes')
         .where(FieldPath.documentId, isEqualTo: userId)
         .snapshots()
-        .map((snap) => snap.docs
-            .map((d) => d.reference.parent.parent?.id)
-            .whereType<String>()
-            .toSet());
+        .map(
+          (snap) => snap.docs
+              .map((d) => d.reference.parent.parent?.id)
+              .whereType<String>()
+              .toSet(),
+        );
   }
 
   Stream<bool> isLikedStream(String recipeId, String userId) {
@@ -412,14 +419,15 @@ class RecipeService {
     final cached = RecipeCacheService().loadRecipes();
     final source = cached.isNotEmpty
         ? cached
-        : (await _db.collection('recipes').get())
-            .docs
-            .map(Recipe.fromFirestore)
-            .toList();
+        : (await _db.collection('recipes').get()).docs
+              .map(Recipe.fromFirestore)
+              .toList();
     return source
-        .where((r) =>
-            r.name.toLowerCase().contains(lower) ||
-            r.description.toLowerCase().contains(lower))
+        .where(
+          (r) =>
+              r.name.toLowerCase().contains(lower) ||
+              r.description.toLowerCase().contains(lower),
+        )
         .toList();
   }
 
@@ -429,26 +437,22 @@ class RecipeService {
     final cached = RecipeCacheService().loadRecipes();
     final source = cached.isNotEmpty
         ? cached
-        : (await _db.collection('recipes').get())
-            .docs
-            .map(Recipe.fromFirestore)
-            .toList();
+        : (await _db.collection('recipes').get()).docs
+              .map(Recipe.fromFirestore)
+              .toList();
     final idSet = ingredientIds.toSet();
-    return source
-        .where((recipe) {
-          final ids = recipe.ingredients.map((i) => i.ingredientId).toSet();
-          return ids.intersection(idSet).isNotEmpty;
-        })
-        .toList()
-      ..sort((a, b) {
-        final aMatch = a.ingredients
-            .where((i) => idSet.contains(i.ingredientId))
-            .length;
-        final bMatch = b.ingredients
-            .where((i) => idSet.contains(i.ingredientId))
-            .length;
-        return bMatch.compareTo(aMatch);
-      });
+    return source.where((recipe) {
+      final ids = recipe.ingredients.map((i) => i.ingredientId).toSet();
+      return ids.intersection(idSet).isNotEmpty;
+    }).toList()..sort((a, b) {
+      final aMatch = a.ingredients
+          .where((i) => idSet.contains(i.ingredientId))
+          .length;
+      final bMatch = b.ingredients
+          .where((i) => idSet.contains(i.ingredientId))
+          .length;
+      return bMatch.compareTo(aMatch);
+    });
   }
 
   // ─── COMMUNITY RECIPES ──────────────────────────────────────────────────────
@@ -459,13 +463,15 @@ class RecipeService {
         .where('parentRecipeId', isEqualTo: parentRecipeId)
         .snapshots()
         .map((snap) {
-      final list = snap.docs.map(Recipe.fromFirestore).toList();
-      // Beğeni + yorum toplamına göre sırala
-      list.sort((a, b) =>
-          (b.likeCount + b.commentCount)
-              .compareTo(a.likeCount + a.commentCount));
-      return list;
-    });
+          final list = snap.docs.map(Recipe.fromFirestore).toList();
+          // Beğeni + yorum toplamına göre sırala
+          list.sort(
+            (a, b) => (b.likeCount + b.commentCount).compareTo(
+              a.likeCount + a.commentCount,
+            ),
+          );
+          return list;
+        });
   }
 
   Future<String> createSubRecipe({
@@ -536,8 +542,9 @@ class RecipeService {
   Future<String> uploadRecipeImage(String recipeId, XFile file) async {
     final bytes = await file.readAsBytes();
     final ext = file.name.split('.').last.toLowerCase();
-    final ref = FirebaseStorage.instance
-        .ref('recipes/$recipeId/${DateTime.now().millisecondsSinceEpoch}.$ext');
+    final ref = FirebaseStorage.instance.ref(
+      'recipes/$recipeId/${DateTime.now().millisecondsSinceEpoch}.$ext',
+    );
     await ref.putData(bytes, SettableMetadata(contentType: 'image/$ext'));
     return await ref.getDownloadURL();
   }
@@ -552,10 +559,9 @@ class RecipeService {
         .collection('comments')
         .doc();
     batch.set(commentRef, comment.toFirestore());
-    batch.update(
-      _db.collection('recipes').doc(comment.recipeId),
-      {'commentCount': FieldValue.increment(1)},
-    );
+    batch.update(_db.collection('recipes').doc(comment.recipeId), {
+      'commentCount': FieldValue.increment(1),
+    });
     await batch.commit();
   }
 
