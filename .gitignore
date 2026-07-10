@@ -1,3 +1,8 @@
+# Firebase admin credentials — NEVER commit
+scripts/serviceAccountKey.json
+scripts/*firebase-adminsdk*.json
+scripts/node_modules/
+
 # Miscellaneous
 *.class
 *.log
@@ -54,3 +59,4 @@ node_modules/
 
 # Local gstack tooling output (QA reports etc. — also persisted to ~/.gstack/projects/)
 .gstack/
+scripts/backup_recipes_*.json

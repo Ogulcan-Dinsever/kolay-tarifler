@@ -1,0 +1,162 @@
+[
+  {
+    "docId": "byName", "name": "Havuç Dilimi", "description": "Kızarmış havuç dilimlerinin sarımsaklı yoğurt ve cevizle sunulduğu klasik meze. Yumuşacık havuçlar taze sarımsaklı yoğurtla buluşur.", "duration": "30 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Havuç", "amount": "5 adet", "emoji": "🥕"},
+      {"name": "Yoğurt", "amount": "1 su bardağı", "emoji": "🥛"},
+      {"name": "Sarımsak", "amount": "2 diş", "emoji": "🧄"},
+      {"name": "Ceviz İçi", "amount": "2 yemek kaşığı", "emoji": "🌰"},
+      {"name": "Kızartmalık Yağ", "amount": "3 yemek kaşığı", "emoji": "🫗"},
+      {"name": "Tuz", "amount": "1 tatlı kaşığı", "emoji": "🧂"}
+    ],
+    "steps": [
+      "Havuçları ince yuvarlak dilimler halinde doğrayın.",
+      "Kızartmalık yağı kızdırıp havuç dilimlerini iki tarafı da altın rengi ve yumuşayana kadar kızartın.",
+      "Kızarmış havuçları kağıt havlu üzerine alıp fazla yağını süzdürün.",
+      "Sarımsağı ezip yoğurtla ve bir tutam tuzla karıştırıp sarımsaklı yoğurdu hazırlayın.",
+      "Ceviz içlerini iri iri kıyın.",
+      "Kızarmış havuçları servis tabağına tek sıra dizin.",
+      "Sarımsaklı yoğurdu havuçların üzerine gezdirip ceviz serperek servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Höşmerim", "description": "Taze peynir ve irmikle pişirilen geleneksel Türk tatlısı. Uzayan peynir ve kavrulmuş irmik, tatlımsı bir kıvamla hindistan ceviziyle sunulur.", "duration": "30 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Taze Peynir", "amount": "250 gr", "emoji": "🧀"},
+      {"name": "İrmik", "amount": "1/2 su bardağı", "emoji": "🌾"},
+      {"name": "Toz Şeker", "amount": "1/2 su bardağı", "emoji": "🍬"},
+      {"name": "Hindistan Cevizi", "amount": "1/4 su bardağı", "emoji": "🥥"}
+    ],
+    "steps": [
+      "Taze (tuzsuz) peyniri bir tencerede kısık ateşte, erimeye başlayana kadar ezerek karıştırın.",
+      "İrmiği ekleyip peynirle birlikte, hafifçe kavrulup kokusu çıkana kadar karıştırın.",
+      "Toz şekeri ekleyip peynir uzayıp karışım homojen olana kadar pişirin.",
+      "Gerekirse birkaç kaşık sıcak su ekleyip pürüzsüz, akışkan bir kıvam verin.",
+      "Karışımı servis tabağına ya da tepsiye yayıp düzeltin.",
+      "Üzerine hindistan cevizi serpin.",
+      "Ilık ya da soğuk, dilimleyerek servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Kuzu Kapama", "description": "Kuzu eti, soğan ve marulun kendi buharında piştiği ilkbahar yemeği. Tereyağında mühürlenen et, marulla birlikte yumuşacık pişer.", "duration": "1 saat 15 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Kuzu Kuşbaşı", "amount": "500 gr", "emoji": "🍖"},
+      {"name": "Soğan", "amount": "2 adet", "emoji": "🧅"},
+      {"name": "Marul", "amount": "1 adet", "emoji": "🥬"},
+      {"name": "Tereyağı", "amount": "3 yemek kaşığı", "emoji": "🧈"},
+      {"name": "Tuz", "amount": "1 tatlı kaşığı", "emoji": "🧂"},
+      {"name": "Karabiber", "amount": "1/2 çay kaşığı", "emoji": "🌶️"},
+      {"name": "Su", "amount": "1/2 su bardağı", "emoji": "💧"}
+    ],
+    "steps": [
+      "Kuzu kuşbaşı eti tereyağında, her tarafı renk değiştirip mühürlenene kadar yüksek ateşte kavurun.",
+      "İnce yarım ay doğranmış soğanı ekleyip pembeleşene kadar kavurun.",
+      "Tuz, karabiber ve yarım su bardağı sıcak suyu ilave edin.",
+      "Kapağı sıkıca kapatıp kısık ateşte 45 dakika, et yumuşayana kadar pişirin.",
+      "Marulu iri parçalar halinde doğrayın.",
+      "Marulu son 10 dakikada tencereye ekleyip etin üzerine yerleştirin.",
+      "Marul yumuşayıp suyunu salınca ocaktan alıp sıcak servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Midye Tava", "description": "Una bulanıp çıtır çıtır kızartılan midyeler, sarımsaklı tarator sosuyla sunulan klasik sokak lezzeti.", "duration": "40 dk", "servings": 3,
+    "ingredients": [
+      {"name": "Midye", "amount": "500 gr", "emoji": "🐚"},
+      {"name": "Un", "amount": "1 su bardağı", "emoji": "🌾"},
+      {"name": "Sarımsak", "amount": "2 diş", "emoji": "🧄"},
+      {"name": "Kızartmalık Yağ", "amount": "3 yemek kaşığı", "emoji": "🫗"},
+      {"name": "Tuz", "amount": "1 tatlı kaşığı", "emoji": "🧂"}
+    ],
+    "steps": [
+      "Midyeleri kabuklarından çıkarıp temizleyin ve kürdanlara dizin.",
+      "Unu az tuz ve suyla akışkan bir bulama hamuru olacak şekilde karıştırın.",
+      "Midyeleri bu hamura batırıp fazlasını süzün.",
+      "Kızartmalık yağı iyice kızdırıp midyeleri altın rengi ve çıtır olana kadar kızartın.",
+      "Ezilmiş sarımsakla, koyu bir tarator sosu hazırlayın.",
+      "Kızarmış midyeleri kağıt havlu üzerine alıp fazla yağını süzdürün.",
+      "Sıcak midyeleri tarator sosla servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Zeytinyağlı Taze Bakla", "description": "Taze baklanın soğan ve naneyle zeytinyağında pişirildiği klasik meze. Yumuşacık baklalar soğuk, naneli haliyle sunulur.", "duration": "45 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Taze Bakla", "amount": "500 gr", "emoji": "🫛"},
+      {"name": "Soğan", "amount": "1 adet", "emoji": "🧅"},
+      {"name": "Nane", "amount": "1 tutam", "emoji": "🌿"},
+      {"name": "Zeytinyağı", "amount": "3 yemek kaşığı", "emoji": "🫒"},
+      {"name": "Tuz", "amount": "1 tatlı kaşığı", "emoji": "🧂"},
+      {"name": "Su", "amount": "1/2 su bardağı", "emoji": "💧"}
+    ],
+    "steps": [
+      "Baklaların uçlarını ve kılçıklı kenarını ayıklayıp yıkayın, iri parçalara bölün.",
+      "Soğanı ince yarım ay doğrayıp zeytinyağında pembeleşene kadar kavurun.",
+      "Baklaları ekleyip birkaç dakika birlikte çevirin.",
+      "Yarım su bardağı sıcak su ve tuzu ilave edin.",
+      "Kapağı örtüp kısık ateşte 25-30 dakika, baklalar tamamen yumuşayana kadar pişirin.",
+      "Ocaktan alıp oda sıcaklığına gelene kadar soğutun.",
+      "Bol taze naneyle süsleyip zeytinyağlı olarak soğuk servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Bougatsa", "description": "Yunan usulü irmik kremalı yufka tatlısı. Tereyağlı çıtır yufka katmanları arasında irmikli krema fırınlanıp pudra şekeriyle sunulur.", "duration": "1 saat", "servings": 4,
+    "ingredients": [
+      {"name": "Yufka", "amount": "1 paket", "emoji": "🫓"},
+      {"name": "Süt", "amount": "1 litre", "emoji": "🥛"},
+      {"name": "İrmik", "amount": "1 su bardağı", "emoji": "🌾"},
+      {"name": "Şeker", "amount": "3/4 su bardağı", "emoji": "🍬"},
+      {"name": "Tereyağı", "amount": "100 gr", "emoji": "🧈"},
+      {"name": "Pudra Şekeri", "amount": "2 yemek kaşığı", "emoji": "🍥"}
+    ],
+    "steps": [
+      "Süt, irmik ve şekeri kısık ateşte, sürekli karıştırarak koyu bir muhallebi kıvamı alana kadar pişirin ve ılıtın.",
+      "Yufkaları açıp her katın arasına eritilmiş tereyağı sürerek fırın kabının tabanına katman katman dizin.",
+      "Yufka katmanının üzerine hazırladığınız irmikli kremayı yayın.",
+      "Kalan yufkaları yine tereyağı sürerek üzerine kapatın.",
+      "Üstüne biraz daha tereyağı gezdirip yufkayı bıçakla porsiyonlara çizin.",
+      "Önceden ısıtılmış 180 derece fırında 35 dakika, üzeri altın rengi ve çıtır olana kadar pişirin.",
+      "Ilıyınca pudra şekeri serpip servis edin."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Moussaka", "description": "Yunan usulü fırında patlıcanlı kıymalı yemek. Kızarmış patlıcan ve kıyma katmanları beşamel ve peynirle taçlanıp fırınlanır.", "duration": "1 saat 30 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Patlıcan", "amount": "2 adet", "emoji": "🍆"},
+      {"name": "Dana kıyma", "amount": "400 gr", "emoji": "🥩"},
+      {"name": "Süt", "amount": "2 su bardağı", "emoji": "🥛"},
+      {"name": "Un", "amount": "3 yemek kaşığı", "emoji": "🌾"},
+      {"name": "Kaşar Peyniri", "amount": "150 gr", "emoji": "🧀"},
+      {"name": "Soğan", "amount": "1 adet", "emoji": "🧅"},
+      {"name": "Tereyağı", "amount": "3 yemek kaşığı", "emoji": "🧈"}
+    ],
+    "steps": [
+      "Patlıcanları boyuna dilimleyip tuzlayın, 15 dakika bekletip suyunu alın, sonra az yağda ya da fırında iki tarafını kızartın.",
+      "Dana kıymayı ince doğranmış soğanla birlikte suyunu çekene kadar kavurun, tuz ve karabiberle tatlandırın.",
+      "Tereyağını eritip unu ekleyip kavurun, üzerine sütü azar azar ekleyerek topaksız, koyu bir beşamel sos pişirin.",
+      "Fırın kabına önce bir kat patlıcan, üzerine kıymalı harcı, tekrar patlıcan olacak şekilde katman katman dizin.",
+      "Üzerine beşamel sosu yayıp rendelenmiş kaşar peynirini serpin.",
+      "Önceden ısıtılmış 200 derece fırında 40 dakika, üzeri altın rengi olana kadar pişirin.",
+      "Fırından alıp 10-15 dakika dinlendirip dilimleyerek servis edin; dinlenince düzgün kesilir."
+    ]
+  },
+  {
+    "docId": "byName", "name": "Pastitsio", "description": "Yunan usulü fırında kıymalı makarna. Makarna ve baharatlı kıyma katmanları beşamel ve peynirle kaplanıp fırınlanır.", "duration": "1 saat 15 dk", "servings": 4,
+    "ingredients": [
+      {"name": "Makarna", "amount": "400 gr", "emoji": "🍝"},
+      {"name": "Dana kıyma", "amount": "400 gr", "emoji": "🥩"},
+      {"name": "Süt", "amount": "2 su bardağı", "emoji": "🥛"},
+      {"name": "Un", "amount": "3 yemek kaşığı", "emoji": "🌾"},
+      {"name": "Kaşar Peyniri", "amount": "150 gr", "emoji": "🧀"},
+      {"name": "Soğan", "amount": "1 adet", "emoji": "🧅"},
+      {"name": "Tereyağı", "amount": "3 yemek kaşığı", "emoji": "🧈"}
+    ],
+    "steps": [
+      "Makarnayı bol tuzlu suda al dente haşlayıp süzün.",
+      "Dana kıymayı ince doğranmış soğanla birlikte suyunu çekene kadar kavurun, tuz ve karabiberle tatlandırın.",
+      "Tereyağını eritip unu kavurun, sütü azar azar ekleyerek topaksız, koyu bir beşamel sos hazırlayın.",
+      "Fırın kabına haşlanmış makarnanın yarısını yayıp üzerine kıymalı harcı, ardından kalan makarnayı dizin.",
+      "Üzerine beşamel sosu yayıp rendelenmiş kaşar peynirini serpin.",
+      "Önceden ısıtılmış 200 derece fırında 30-35 dakika, üzeri kızarana kadar pişirin.",
+      "Fırından alıp 10 dakika dinlendirip dilimleyerek servis edin."
+    ]
+  }
+]
