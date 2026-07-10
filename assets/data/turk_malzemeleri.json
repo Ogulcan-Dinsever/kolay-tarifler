@@ -2104,5 +2104,65 @@
   "emoji": "🥛",
   "imageUrl": "",
   "name": "Süt Tozu"
+ },
+ {
+  "category": "et",
+  "emoji": "🍗",
+  "imageUrl": "",
+  "name": "Tavuk but"
+ },
+ {
+  "category": "et",
+  "emoji": "🍖",
+  "imageUrl": "",
+  "name": "Kuzu incik"
+ },
+ {
+  "category": "kuruyemis",
+  "emoji": "🌰",
+  "imageUrl": "",
+  "name": "Kestane"
+ },
+ {
+  "category": "meyve",
+  "emoji": "🍐",
+  "imageUrl": "",
+  "name": "Ayva"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🫓",
+  "imageUrl": "",
+  "name": "Baklavalık yufka"
+ },
+ {
+  "category": "baharat",
+  "emoji": "🌿",
+  "imageUrl": "",
+  "name": "Kuru nane"
+ },
+ {
+  "category": "balik",
+  "emoji": "🐟",
+  "imageUrl": "",
+  "name": "Çipura"
+ },
+ {
+  "category": "balik",
+  "emoji": "🐟",
+  "imageUrl": "",
+  "name": "Uskumru"
+ },
+ {
+  "category": "balik",
+  "emoji": "🐟",
+  "imageUrl": "",
+  "name": "Sardalya"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🍜",
+  "imageUrl": "",
+  "name": "Erişte"
  }
 ]

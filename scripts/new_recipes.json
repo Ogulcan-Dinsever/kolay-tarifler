@@ -1,0 +1,6322 @@
+[
+ {
+  "name": "Şehriye Çorbası",
+  "description": "Tereyağında kavrulmuş tel şehriyeyle yapılan, salçalı ve doyurucu geleneksel Türk çorbası.",
+  "type": "Çorba",
+  "emoji": "🍜",
+  "duration": "30 dk",
+  "servings": "4 kişilik",
+  "likes": 1840,
+  "tags": [
+   "Çorba",
+   "Klasik",
+   "Ekonomik",
+   "Vejetaryen"
+  ],
+  "ingredients": [
+   {
+    "name": "Tel şehriye",
+    "amount": "1 su bardağı",
+    "emoji": "🍝",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Un",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "6 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Nane",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tencereyi ocağa alın; tereyağı ile sıvı yağı birlikte eritin. İki yağı karıştırmak, tereyağının çabuk yanmasını önler ve çorbaya hem lezzet hem parlaklık verir.",
+   "Tel şehriyeyi yağın içine dökün ve orta ateşte, sürekli karıştırarak kavurun. Şehriyeler koyu bal rengini alana kadar (yaklaşık 4-5 dakika) sabırla kavurmaya devam edin; bu kavurma çorbanın karakteristik kokusunu ve rengini oluşturur.",
+   "Şehriyeler kavrulunca 1 yemek kaşığı unu ekleyin ve 1 dakika daha çevirerek unun hamsi kokusunu alın.",
+   "Salçayı ilave edip 1-2 dakika kavurun; salçanın ekşiliği uçsun ve rengi açılsın.",
+   "Şehriyelerin üzerine sıcak suyu azar azar, karıştırarak ekleyin. Suyu sıcak eklemek topaklanmayı önler ve pişme süresini kısaltır.",
+   "Tuzu ekleyin, kapağı kapatın ve kısık ateşte şehriyeler tamamen yumuşayana kadar 12-15 dakika pişirin. Ara ara karıştırıp dibe yapışmasını engelleyin.",
+   "Çorba kıvamını kontrol edin; fazla koyulaştıysa biraz sıcak su ekleyerek ayarlayın.",
+   "Ayrı küçük bir tavada 1 tatlı kaşığı tereyağını eritip içine naneyi atın ve birkaç saniye ısıtarak nane yağını hazırlayın.",
+   "Nane yağını çorbanın üzerine gezdirin, karabiberi serpin.",
+   "Sıcak servis edin; yanında limon dilimleriyle sunabilirsiniz."
+  ]
+ },
+ {
+  "name": "Mantar Çorbası",
+  "description": "Kremalı, kadifemsi dokusuyla mantarın aromasını öne çıkaran sıcacık bir çorba.",
+  "type": "Çorba",
+  "emoji": "🍄",
+  "duration": "35 dk",
+  "servings": "4 kişilik",
+  "likes": 1520,
+  "tags": [
+   "Çorba",
+   "Kremalı",
+   "Vejetaryen",
+   "Mantar"
+  ],
+  "ingredients": [
+   {
+    "name": "Mantar",
+    "amount": "400 gr",
+    "emoji": "🍄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Un",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Süt",
+    "amount": "2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Krema",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Mantarları nemli bir bezle silerek temizleyin; yıkamak yerine silmek mantarın su çekip lezzetsizleşmesini önler. Ince ince dilimleyin.",
+   "Soğanı yemeklik doğrayın.",
+   "Tencerede 2 yemek kaşığı tereyağını eritin, soğanları ekleyip pembeleşene kadar kavurun.",
+   "Dilimlenmiş mantarları ekleyin ve kısık-orta ateşte kavurun. Mantarlar önce su salacak; salıverdikleri suyu tamamen çekene ve hafifçe kızarmaya başlayana kadar (yaklaşık 8 dakika) pişirin. Bu adım çorbanın aromasının anahtarıdır.",
+   "Süsleme için birkaç dilim mantarı kenara ayırın.",
+   "Tencerenin bir kenarını açıp kalan 1 yemek kaşığı tereyağını eritin, unu ekleyip 1-2 dakika kokusu çıkana kadar kavurun, ardından tüm malzemeyi harmanlayın.",
+   "Sıcak suyu azar azar, sürekli çırparak ekleyin ki un topak yapmasın.",
+   "Sütü ilave edin, tuz ve karabiberi ekleyip kaynamaya bırakın; kısık ateşte 10 dakika pişirin.",
+   "İsterseniz el blenderıyla çorbayı pürüzsüz hale getirin; dokulu sevenler bu adımı atlayabilir.",
+   "Kremayı ekleyip bir taşım kaynatın, ocaktan alın.",
+   "Ayırdığınız mantar dilimlerini tereyağında soteleyip çorbanın üzerine koyarak servis edin."
+  ]
+ },
+ {
+  "name": "Brokoli Çorbası",
+  "description": "Brokolinin C vitamini deposu yeşilliğini kremamsı bir dokuyla buluşturan hafif ve besleyici çorba.",
+  "type": "Çorba",
+  "emoji": "🥦",
+  "duration": "30 dk",
+  "servings": "4 kişilik",
+  "likes": 1290,
+  "tags": [
+   "Çorba",
+   "Sağlıklı",
+   "Vejetaryen",
+   "Sebze"
+  ],
+  "ingredients": [
+   {
+    "name": "Brokoli",
+    "amount": "1 baş (500 gr)",
+    "emoji": "🥦",
+    "category": "vegetable"
+   },
+   {
+    "name": "Patates",
+    "amount": "1 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Un",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "4 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Brokoliyi çiçeklerine ayırın; sapını da soyup küçük parçalara bölün, sap kısmı çorbaya kıvam ve lezzet katar.",
+   "Brokolileri bol suda birkaç dakika bekletip durulayın.",
+   "Soğanı ince doğrayın, patatesi soyup küp küp kesin.",
+   "Tencerede tereyağını eritin, soğanı ekleyip yumuşayana kadar kavurun.",
+   "Unu ekleyip 1 dakika kavurarak un kokusunu alın.",
+   "Sıcak suyu karıştırarak ekleyin, patatesleri ilave edin ve 10 dakika pişirin.",
+   "Brokolileri ekleyin; parlak yeşil rengini korumak için fazla haşlamamaya dikkat edin, 8-10 dakika kadar yumuşayınca ocaktan alın.",
+   "Süt ve tuzu ekleyin, el blenderıyla pürüzsüz kıvama gelene kadar çekin.",
+   "Tekrar ocağa alıp karabiberi ekleyin ve bir taşım kaynatın; koyu ise sıcak suyla açın.",
+   "Servis tabağına alıp üzerine bir tutam rendelenmiş kaşar veya kızarmış ekmek kırıntısı serperek sıcak sunun."
+  ]
+ },
+ {
+  "name": "Balık Çorbası",
+  "description": "Beyaz etli balıkla hazırlanan, terbiyesiyle hafif ekşimsi ve zengin lezzetli Ege usulü çorba.",
+  "type": "Çorba",
+  "emoji": "🐟",
+  "duration": "45 dk",
+  "servings": "4 kişilik",
+  "likes": 980,
+  "tags": [
+   "Çorba",
+   "Deniz Ürünleri",
+   "Balık",
+   "Ege"
+  ],
+  "ingredients": [
+   {
+    "name": "Mezgit",
+    "amount": "500 gr",
+    "emoji": "🐟",
+    "category": "seafood"
+   },
+   {
+    "name": "Havuç",
+    "amount": "1 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Patates",
+    "amount": "1 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kereviz sapı",
+    "amount": "1 dal",
+    "emoji": "🥬",
+    "category": "vegetable"
+   },
+   {
+    "name": "Un",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta sarısı",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Balıkları temizleyip yıkayın. Bir tencereye alıp üzerini geçecek kadar su, yarım soğan ve tuz ekleyip 15 dakika haşlayın.",
+   "Balıkları haşlama suyundan çıkarın; suyu bir süzgeçten geçirerek berrak bir balık suyu elde edin ve kenarda tutun.",
+   "Balık soğuyunca etlerini kılçıklarından dikkatlice ayıklayın ve iri parçalar halinde bölün.",
+   "Havuç, patates ve kerevizi küçük küpler halinde doğrayın, kalan soğanı ince kıyın.",
+   "Tencerede tereyağını eritip soğan ve havucu 3-4 dakika kavurun.",
+   "Unu ekleyip 1 dakika çevirin, ardından süzdüğünüz balık suyunu azar azar karıştırarak ekleyin.",
+   "Patates ve kereviz küplerini ilave edip sebzeler yumuşayana kadar 15 dakika pişirin.",
+   "Ayıkladığınız balık etlerini tencereye ekleyip 5 dakika daha kaynatın; tuz ve karabiberle tatlandırın.",
+   "Terbiye için küçük bir kapta yumurta sarısı ile limon suyunu çırpın, üzerine çorbadan 2-3 kaşık sıcak su ekleyip sıcaklığını dengeleyin. Bu adım yumurtanın pıhtılaşmasını önler.",
+   "Terbiyeyi ocağı kısarak çorbaya yavaşça ekleyin ve sürekli karıştırın; kaynatmadan 1-2 dakika ısıtıp ocaktan alın.",
+   "Sıcak servis edin, üstüne kıyılmış dereotu serpin."
+  ]
+ },
+ {
+  "name": "Toyga Çorbası",
+  "description": "Yoğurt ve buğdayla yapılan, nane yağıyla tatlandırılan geleneksel Anadolu yoğurt çorbası.",
+  "type": "Çorba",
+  "emoji": "🥣",
+  "duration": "40 dk",
+  "servings": "5 kişilik",
+  "likes": 760,
+  "tags": [
+   "Çorba",
+   "Yoğurtlu",
+   "Anadolu",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Yoğurt",
+    "amount": "500 gr",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Aşurelik buğday",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Nohut",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫘",
+    "category": "grain"
+   },
+   {
+    "name": "Un",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Nane",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Aşurelik buğday ve nohudu ayrı ayrı bir gece önceden bol suda ıslatın; bu, pişme süresini kısaltır ve sindirimi kolaylaştırır.",
+   "Nohutları ve buğdayı ayrı tencerelerde yumuşayana kadar haşlayın, süzün. Dilerseniz haşlanmış hazır nohut da kullanabilirsiniz.",
+   "Geniş bir kâsede yoğurt, un ve yumurtayı topak kalmayacak şekilde çırpın; bu terbiye çorbanın kesilmeden pişmesini sağlar.",
+   "Terbiyenin üzerine 2 su bardağı ılık su ekleyip iyice karıştırın.",
+   "Terbiyeyi tencereye alın ve orta ateşte, tahta kaşıkla tek yönde sürekli karıştırarak kaynatmaya başlayın. Karıştırmayı bırakmayın; yoğurt aksi halde kesilir.",
+   "Çorba kaynayıp kıvam almaya başlayınca haşlanmış buğday ve nohutları ekleyin.",
+   "Tuzunu atın, kısık ateşte 10 dakika daha pişirip malzemelerin tadını birleştirin.",
+   "Küçük bir tavada tereyağını eritip nane ekleyin, birkaç saniye kavurup nane yağını hazırlayın.",
+   "Nane yağını çorbanın üzerine gezdirin.",
+   "Sıcak servis edin; kışın gövdeyi ısıtan doyurucu bir çorbadır."
+  ]
+ },
+ {
+  "name": "Arabaşı Çorbası",
+  "description": "Yozgat yöresine özgü, acılı tavuklu çorba ve yanında yenen jelatinimsi hamurdan oluşan geleneksel ikili.",
+  "type": "Çorba",
+  "emoji": "🍲",
+  "duration": "1 sa",
+  "servings": "6 kişilik",
+  "likes": 640,
+  "tags": [
+   "Çorba",
+   "Yöresel",
+   "Yozgat",
+   "Tavuklu"
+  ],
+  "ingredients": [
+   {
+    "name": "Tavuk but",
+    "amount": "2 adet",
+    "emoji": "🍗",
+    "category": "meat"
+   },
+   {
+    "name": "Un",
+    "amount": "1,5 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Salça",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Kırmızı toz biber",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sirke",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍶",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Tavuk butlarını 6-7 su bardağı suyla, tuz ekleyerek yumuşayana kadar haşlayın. Tavuk suyunu süzüp ayırın, etleri didikleyin.",
+   "Hamur için ayrı bir tencerede 1 su bardağı unu, nişastayı ve 3 su bardağı suyu topak kalmayacak şekilde çırparak karıştırın.",
+   "Bu karışımı kısık ateşte, sürekli karıştırarak koyu ve parlak bir kıvam alana kadar pişirin; iyice koyulaşınca hafifçe yağlanmış bir tepsiye dökün ve düzleştirin.",
+   "Hamurun üzerine sirke ve limon suyunu gezdirip soğumaya bırakın; soğuyunca jelatinimsi, dilimlenebilen bir kıvam alır.",
+   "Çorba için tencerede tereyağını eritin, salçayı ve kırmızı toz biberi ekleyip yakmadan kavurun.",
+   "Kalan yarım su bardağı unu ekleyip 1-2 dakika kavurun.",
+   "Ayırdığınız sıcak tavuk suyunu azar azar, çırparak ekleyin ve topak kalmamasına dikkat edin.",
+   "Didiklenmiş tavuk etlerini ekleyip 10 dakika kaynatın, tuzunu ayarlayın; çorba akıcı ama dolgun olmalı.",
+   "Servis ederken çorbayı derin kâseye koyun, soğumuş hamuru bıçakla küçük küpler halinde kesin.",
+   "Geleneğe göre kaşıkla hamurdan bir parça alınıp çorbaya batırılarak konuşmadan yenir; çorbayı ve hamuru ayrı kaplarda birlikte sunun."
+  ]
+ },
+ {
+  "name": "Beyran",
+  "description": "Gaziantep'in meşhur kahvaltı çorbası; pirinç, kuzu eti ve bol sarımsakla demlenen acılı et suyu.",
+  "type": "Çorba",
+  "emoji": "🌶️",
+  "duration": "2 sa",
+  "servings": "4 kişilik",
+  "likes": 1120,
+  "tags": [
+   "Çorba",
+   "Gaziantep",
+   "Etli",
+   "Acılı"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuzu incik",
+    "amount": "700 gr",
+    "emoji": "🍖",
+    "category": "meat"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "1 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "1 baş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kuyruk yağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥩",
+    "category": "oil"
+   },
+   {
+    "name": "Kırmızı toz biber",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "İsot biberi",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Limon",
+    "amount": "1 adet",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kuzu inciği geniş bir tencerede bol suyla, kemikleriyle birlikte kısık ateşte 2-3 saat, et kemikten ayrılacak kıvama gelene kadar haşlayın. Yavaş pişirme, beyranın koyu et suyunun sırrıdır.",
+   "Oluşan et suyunu süzüp berraklaştırın, etleri didikleyin ve kemiklerinden ayırın.",
+   "Pirinci yıkayıp ayrı bir kapta bol suda haşlayarak yumuşatın, süzün.",
+   "Servis için toprak veya çelik bir kâseye önce bir avuç haşlanmış pirinç, üzerine didiklenmiş kuzu eti koyun.",
+   "Bir dövme kabında sarımsak dişlerini tuzla ezerek macun kıvamına getirin, kâseye ekleyin.",
+   "Küçük bir tavada kuyruk yağını eritin, kırmızı toz biber ve isot biberini ekleyip yakmadan kavurarak acılı yağ hazırlayın.",
+   "Acılı yağı kâsedeki malzemenin üzerine gezdirin.",
+   "Kaynar et suyunu kâsenin üzerine dökün; malzemeler suyla buluşunca sarımsak ve biberin aroması açığa çıkar.",
+   "Kâseyi birkaç dakika demlenmeye bırakın ki tatlar birbirine geçsin.",
+   "Bol limon sıkarak, taze ekmekle sıcak sıcak servis edin; geleneksel olarak sabah kahvaltısında tüketilir."
+  ]
+ },
+ {
+  "name": "Un Çorbası",
+  "description": "Kavrulmuş unla yapılan, birkaç malzemeyle hazırlanan sade ve doyurucu Anadolu çorbası.",
+  "type": "Çorba",
+  "emoji": "🥣",
+  "duration": "25 dk",
+  "servings": "4 kişilik",
+  "likes": 540,
+  "tags": [
+   "Çorba",
+   "Ekonomik",
+   "Anadolu",
+   "Vejetaryen"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Kırmızı toz biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Nane",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Tencerede tereyağını eritin; köpürmesi geçince unu ekleyin.",
+   "Unu orta-kısık ateşte, sürekli karıştırarak açık kahverengi olana ve fındıksı bir koku yayana kadar kavurun. Bu kavurma çorbanın tüm lezzetini belirler, acele etmeyin.",
+   "Salçayı ekleyip 1 dakika daha kavurun.",
+   "Kırmızı toz biberi ilave edip hemen üzerine sıcak suyu azar azar, çırparak ekleyin; suyu birden değil azar azar eklemek topaklanmayı önler.",
+   "Tuzu atın ve çorba koyulaşana kadar kısık ateşte, ara sıra karıştırarak 10-12 dakika pişirin.",
+   "Kıvamı damak zevkinize göre ayarlayın; koyu isterseniz biraz daha pişirin, açık isterseniz sıcak su ekleyin.",
+   "Naneyi serpin ve 1 dakika daha kaynatın.",
+   "İsteğe bağlı olarak küçük bir tavada eritilmiş tereyağı ve kırmızı biberle hazırlanan sosu üzerine gezdirin.",
+   "Sıcak sıcak, taze ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Cağ Kebabı",
+  "description": "Erzurum'a özgü, odun ateşinde yatay şişte pişirilen marine kuzu kebabı.",
+  "type": "Ana Yemek",
+  "emoji": "🍢",
+  "duration": "1 sa (+ marine)",
+  "servings": "4 kişilik",
+  "likes": 2210,
+  "tags": [
+   "Kebap",
+   "Erzurum",
+   "Kuzu",
+   "Izgara"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuzu but",
+    "amount": "1 kg",
+    "emoji": "🍖",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "2 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Kuyruk yağı",
+    "amount": "150 gr",
+    "emoji": "🥩",
+    "category": "oil"
+   },
+   {
+    "name": "Lavaş",
+    "amount": "4 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   }
+  ],
+  "steps": [
+   "Kuzu budunu yaklaşık yarım santim kalınlığında geniş dilimler halinde kesin; cağ kebabında et ince açılmış geniş parçalar halinde olmalıdır.",
+   "Soğanları rendeleyip suyunu bir kâseye sıkın; soğanın kendisini de ete katabilirsiniz, enzimi eti yumuşatır.",
+   "Etleri geniş bir kaba alın, soğan suyu, karabiber ve pul biberi ekleyin. Tuzu bu aşamada eklemeyin; tuz suyu çeker ve eti kurutur.",
+   "Eti iyice yoğurarak baharatları her parçaya yedirin, üzerini kapatıp buzdolabında en az 6 saat, tercihen bir gece marine edin.",
+   "Pişirmeden yaklaşık yarım saat önce eti oda sıcaklığına çıkarın ve tuzunu ekleyip karıştırın.",
+   "Marine dilimleri ve aralarına ince kestiğiniz kuyruk yağı parçalarını yatay şişe, üst üste bindirerek dizin.",
+   "Odun közü veya güçlü bir ızgara üzerinde şişi yatay konumda, sürekli çevirerek pişirin; dış yüzey kızardıkça o kısmı ince ince keserek servis edin.",
+   "Kesilen ince et dilimlerini küçük çöp şişlere geçirin; geleneksel sunum böyledir.",
+   "Isıtılmış lavaşın içine et dilimlerini koyun.",
+   "Yanında soğan piyazı, domates ve yeşil biberle sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Orman Kebabı",
+  "description": "Kuşbaşı et, havuç, patates ve bezelyeyle pişen, sulu ve doyurucu klasik tencere yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🥘",
+  "duration": "1 sa 15 dk",
+  "servings": "5 kişilik",
+  "likes": 1680,
+  "tags": [
+   "Etli",
+   "Sulu Yemek",
+   "Klasik",
+   "Sebzeli"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuzu kuşbaşı",
+    "amount": "600 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Patates",
+    "amount": "3 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Bezelye",
+    "amount": "1 su bardağı",
+    "emoji": "🫛",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Kuşbaşı etleri yıkayıp süzün. Tencerede sıvı yağı kızdırıp etleri ekleyin ve suyunu salıp çekene kadar yüksek ateşte kavurun.",
+   "Etler suyunu çekip kendi yağında kızarmaya başlayınca ince doğranmış soğanı ekleyip pembeleşene kadar kavurmaya devam edin.",
+   "Salçayı ilave edip 1-2 dakika kavurun ki ham kokusu geçsin.",
+   "Üzerine 2 su bardağı sıcak su ekleyin, kapağı kapatıp et neredeyse yumuşayana kadar kısık ateşte 40 dakika pişirin.",
+   "Bu sırada patates ve havuçları iri küpler halinde doğrayın.",
+   "Et yumuşayınca havuçları ekleyip 5 dakika pişirin, ardından patatesleri ilave edin.",
+   "Bezelyeyi ekleyin, tuz ve karabiberi atın; gerekirse 1 su bardağı daha sıcak su ilave edin.",
+   "Kapağı kapatıp sebzeler yumuşayana ve suyu kıvamını bulana kadar 20 dakika pişirin.",
+   "Ateşten almadan tadına bakıp tuzunu ayarlayın; yemek sulu ama koyu kıvamlı olmalı.",
+   "Sıcak sıcak, pirinç pilavı veya taze ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Kuzu İncik",
+  "description": "Fırında saatlerce ağır ateşte pişerek kemiğinden ayrılan, yumuşacık kuzu incik.",
+  "type": "Ana Yemek",
+  "emoji": "🍖",
+  "duration": "3 sa",
+  "servings": "4 kişilik",
+  "likes": 2540,
+  "tags": [
+   "Etli",
+   "Fırın",
+   "Kuzu",
+   "Özel Gün"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuzu incik",
+    "amount": "4 adet",
+    "emoji": "🍖",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "2 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "1 baş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Defne yaprağı",
+    "amount": "2 adet",
+    "emoji": "🍃",
+    "category": "spice"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "İncikleri yıkayıp kâğıt havluyla iyice kurulayın; kuru et daha iyi mühürlenir.",
+   "Geniş bir tavada sıvı yağı iyice kızdırın, incikleri her tarafı kızarana kadar mühürleyin. Bu adım etin suyunu içinde tutar ve derin bir lezzet katar.",
+   "Mühürlenen incikleri derin bir fırın kabına alın.",
+   "Aynı tavada iri doğranmış soğan ve havuçları 3-4 dakika soteleyin, salçayı ekleyip 1 dakika kavurun.",
+   "Sebzeli sosu inciklerin üzerine dökün, ezilmemiş sarımsak dişlerini, defne yaprağını ve kekiği ekleyin.",
+   "Tuz, karabiber ve sıcak suyu ilave edin; su inciklerin yarısına kadar gelmeli.",
+   "Fırın kabının üzerini alüminyum folyoyla sıkıca kapatın; buhar içeride kalırsa et buğulanarak yumuşar.",
+   "Önceden 160°C'ye ısıtılmış fırında 2,5 saat pişirin.",
+   "Süre sonunda folyoyu açın, etin üzerini oluşan sosla birkaç kez yağlayın ve üstü kızarsın diye 200°C'de 20 dakika daha pişirin.",
+   "İncikler kemikten kolayca ayrılacak kıvama geldiğinde fırından alın.",
+   "Tabakta oluşan sosuyla birlikte, yanında pirinç pilavı veya patates püresiyle servis edin."
+  ]
+ },
+ {
+  "name": "Kadınbudu Köfte",
+  "description": "Kıyma ve pirinçle yoğrulup yumurtaya bulanarak kızartılan, dışı çıtır içi yumuşacık klasik köfte.",
+  "type": "Ana Yemek",
+  "emoji": "🍡",
+  "duration": "1 sa",
+  "servings": "5 kişilik",
+  "likes": 1970,
+  "tags": [
+   "Köfte",
+   "Kızartma",
+   "Klasik",
+   "Pirinçli"
+  ],
+  "ingredients": [
+   {
+    "name": "Kıyma",
+    "amount": "500 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "1/2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "3 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Maydanoz",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Kimyon",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Pirinci yarım su bardağı suyla, suyunu çekene kadar haşlayıp lapamsı kıvama getirin ve soğumaya bırakın.",
+   "Kıymanın yarısını (250 gr) ince doğranmış soğanla birlikte tavada kavurun; suyunu çekip kızarınca ocaktan alıp soğutun.",
+   "Geniş bir kaba çiğ kalan kıymayı, kavrulmuş kıymayı, haşlanmış pirinci, 1 yumurtayı, kıyılmış maydanozu, tuz, karabiber ve kimyonu koyun.",
+   "Malzemeyi en az 5 dakika yoğurun; iyi yoğrulmuş harç dağılmayan köfteler verir.",
+   "Harçtan ceviz büyüklüğünde parçalar alıp avucunuzda oval, yassıca kadınbudu şekli verin.",
+   "İki tabağa unu ve çırpılmış 2 yumurtayı ayrı ayrı hazırlayın.",
+   "Köfteleri önce una bulayın, fazlasını silkeleyin, sonra çırpılmış yumurtaya batırın.",
+   "Geniş tavada sıvı yağı orta ateşte kızdırın; köfteleri koyup her iki yüzü altın sarısı olana kadar kızartın.",
+   "Kızaran köfteleri kâğıt havlu serili tabağa alarak fazla yağını süzdürün.",
+   "Sıcak servis edin; yanında pilav ve cacık çok yakışır."
+  ]
+ },
+ {
+  "name": "İzmir Köfte",
+  "description": "Fırında patates ve biberle domates sosunda pişen, yumuşacık ve sulu ev köftesi.",
+  "type": "Ana Yemek",
+  "emoji": "🍲",
+  "duration": "1 sa 10 dk",
+  "servings": "5 kişilik",
+  "likes": 1810,
+  "tags": [
+   "Köfte",
+   "Fırın",
+   "Sulu Yemek",
+   "Patatesli"
+  ],
+  "ingredients": [
+   {
+    "name": "Kıyma",
+    "amount": "500 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Bayat ekmek içi",
+    "amount": "1 dilim",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Patates",
+    "amount": "3 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "3 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "3 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Kimyon",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Bayat ekmek içini biraz suda ıslatıp sıkın. Kıymayı, rendelenmiş soğanı, ekmek içini, yumurtayı, tuz ve kimyonu geniş bir kapta iyice yoğurun.",
+   "Harcı 10 dakika dinlendirin; dinlenmiş harç daha kolay şekil alır.",
+   "Avucunuzda parmak boyunda, ince uzun köfteler şekillendirin.",
+   "Tavada sıvı yağı kızdırıp köfteleri sadece dış yüzleri renk alacak şekilde hızlıca mühürleyin, fırın tepsisine dizin. İçleri fırında pişecek.",
+   "Aynı yağda parmak kalınlığında dilimlenmiş patatesleri hafifçe kızartıp köftelerin arasına yerleştirin.",
+   "Yeşil biberleri de kısa süre soteleyip tepsiye ekleyin.",
+   "Sos için rendelenmiş domatesleri, salçayı, ezilmiş sarımsağı ve 1,5 su bardağı sıcak suyu karıştırın, tuzunu ayarlayın.",
+   "Sosu tepsideki köfte ve patateslerin üzerine eşit şekilde gezdirin.",
+   "Önceden 200°C'ye ısıtılmış fırında, patatesler yumuşayıp üzeri kızarana kadar 35-40 dakika pişirin.",
+   "Sıcak servis edin; sulu sosu ekmekle sıyırmak bu yemeğin keyfidir."
+  ]
+ },
+ {
+  "name": "Akçaabat Köftesi",
+  "description": "Trabzon Akçaabat'a özgü, bol sarımsaklı ve baharatlı, ızgarada pişen sulu dana köftesi.",
+  "type": "Ana Yemek",
+  "emoji": "🍢",
+  "duration": "45 dk (+ dinlenme)",
+  "servings": "4 kişilik",
+  "likes": 1730,
+  "tags": [
+   "Köfte",
+   "Trabzon",
+   "Izgara",
+   "Sarımsaklı"
+  ],
+  "ingredients": [
+   {
+    "name": "Dana kıyma",
+    "amount": "600 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Bayat ekmek içi",
+    "amount": "2 dilim",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "1 baş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kimyon",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Akçaabat köftesinde et biraz yağlı olmalı; dana kıymayı tercihen bir kez daha kıydırın ki dokusu inceleşsin.",
+   "Bayat ekmek içlerini suda ıslatıp iyice sıkın ve ufalayın.",
+   "Sarımsak başını dişlerine ayırıp havanda tuzla ezerek macun yapın; bol sarımsak bu köftenin imzasıdır.",
+   "Rendelenmiş soğanın suyunu sıkıp posasını kullanın, aksi halde köfte dağılır.",
+   "Kıymayı, ekmek içini, sarımsak macununu, soğanı, kimyon, karabiber, pul biber ve tuzu geniş bir kapta 8-10 dakika, harç yapışkan bir kıvam alana kadar yoğurun.",
+   "Harcı streçleyip buzdolabında en az 2 saat, tercihen bir gece dinlendirin; dinlenme baharatların ete işlemesini sağlar.",
+   "Dinlenen harçtan parçalar alıp avuç içinde bastırarak yassı, parmak uzunluğunda köfteler şekillendirin.",
+   "Izgarayı veya döküm tavayı iyice kızdırın.",
+   "Köfteleri her iki yüzü güzelce kızarana ve içi pişene kadar, çevirerek yaklaşık 8-10 dakika pişirin.",
+   "Sıcak servis edin; yanında ızgara domates-biber, soğan piyazı ve taze ekmekle sunun."
+  ]
+ },
+ {
+  "name": "Sulu Köfte",
+  "description": "Küçük köftelerin domates soslu, bol sulu bir şekilde piştiği, ekmek banarak yenen ev yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🍲",
+  "duration": "50 dk",
+  "servings": "5 kişilik",
+  "likes": 1440,
+  "tags": [
+   "Köfte",
+   "Sulu Yemek",
+   "Klasik",
+   "Ekonomik"
+  ],
+  "ingredients": [
+   {
+    "name": "Kıyma",
+    "amount": "400 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Soğan",
+    "amount": "2 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Un",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Salça",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Köfte harcı için kıymayı, rendelenmiş 1 soğanı, çiğ pirinci, tuz ve karabiberi yoğurun.",
+   "Harçtan nohut büyüklüğünde küçük yuvarlak köfteler yapın; küçük olmaları çabuk pişmelerini sağlar.",
+   "Köfteleri hafifçe una bulayın; un hem dağılmalarını önler hem de suya kıvam verir.",
+   "Tencerede sıvı yağı kızdırıp ince doğranmış diğer soğanı kavurun.",
+   "Salçayı ekleyip 2 dakika kavurun, üzerine pul biberi atın.",
+   "Sıcak suyu ekleyip kaynamaya bırakın.",
+   "Su kaynayınca unlanmış köfteleri tek tek suya bırakın; hepsini birden dökmeyin ki birbirine yapışmasın.",
+   "Kısık ateşte, köftelerin içindeki pirinç pişip suyu kıvam alana kadar 25-30 dakika pişirin.",
+   "Tuzunu kontrol edin; yemek bolca sulu kalmalı, koyulaşırsa sıcak su ekleyin.",
+   "İsteğe göre servis öncesi üzerine tereyağı-pul biber sosu gezdirin, sıcak sıcak ekmekle sunun."
+  ]
+ },
+ {
+  "name": "Ekşili Köfte",
+  "description": "Limon ve salçayla ekşimsi bir sosta pişen, terbiyesiyle iştah açan geleneksel sulu köfte.",
+  "type": "Ana Yemek",
+  "emoji": "🍋",
+  "duration": "55 dk",
+  "servings": "5 kişilik",
+  "likes": 1080,
+  "tags": [
+   "Köfte",
+   "Sulu Yemek",
+   "Ekşili",
+   "Terbiyeli"
+  ],
+  "ingredients": [
+   {
+    "name": "Kıyma",
+    "amount": "400 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Un",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kıymayı, çiğ pirinci, rendelenmiş soğanı ve tuzu yoğurup küçük yuvarlak köfteler hazırlayın.",
+   "Köfteleri hafifçe una bulayın.",
+   "Tencerede sıvı yağı kızdırın, salçayı ekleyip 1-2 dakika kavurun.",
+   "Sıcak suyu ekleyip kaynatın, ardından köfteleri suya bırakın.",
+   "Kısık ateşte köfteler ve içindeki pirinç pişene kadar 25 dakika pişirin.",
+   "Terbiye için bir kâsede yumurta ve limon suyunu çırpın.",
+   "Terbiyenin üzerine tencereden 3-4 kaşık sıcak suyu azar azar ekleyip karıştırarak sıcaklığını yükseltin; bu işlem yumurtanın kesilmesini önler.",
+   "Ocağı iyice kısın, terbiyeyi köftelerin üzerine yavaşça dökün ve sürekli karıştırın.",
+   "Kaynatmadan 2 dakika ısıtıp ocaktan alın; kaynatırsanız terbiye kesilir.",
+   "Tuzunu ayarlayıp sıcak servis edin; ekşi-tatlı dengesiyle sofralara yakışır."
+  ]
+ },
+ {
+  "name": "Kuru Köfte",
+  "description": "Sade baharatlarla yoğrulup tavada kızartılan, her sofraya yakışan klasik Türk köftesi.",
+  "type": "Ana Yemek",
+  "emoji": "🍢",
+  "duration": "40 dk (+ dinlenme)",
+  "servings": "4 kişilik",
+  "likes": 2380,
+  "tags": [
+   "Köfte",
+   "Klasik",
+   "Tava",
+   "Pratik"
+  ],
+  "ingredients": [
+   {
+    "name": "Kıyma",
+    "amount": "500 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Bayat ekmek içi",
+    "amount": "1 dilim",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kimyon",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Bayat ekmek içini az suda ıslatıp iyice sıkın.",
+   "Geniş bir kaba kıymayı, rendelenmiş soğanı, ezilmiş sarımsağı, ıslak ekmek içini, kimyon, karabiber, pul biber ve tuzu koyun.",
+   "Malzemeyi en az 10 dakika, harç yapışkan ve homojen olana kadar avuç içiyle yoğurun; iyi yoğurma köftenin bağını kuvvetlendirir.",
+   "Kabın üzerini kapatıp buzdolabında en az 1 saat dinlendirin.",
+   "Dinlenen harçtan ceviz büyüklüğünde parçalar koparıp yuvarlayın, sonra hafifçe bastırarak yassı köfteler yapın.",
+   "Döküm veya yapışmaz bir tavayı orta-yüksek ateşte iyice kızdırın; köfteler yağsız da pişer ama isterseniz tavaya ince bir kat yağ sürün.",
+   "Köfteleri tavaya dizin; ilk yüzü kızarıp kendiliğinden tavadan ayrılana kadar erken çevirmeyin.",
+   "Çevirip diğer yüzünü de kızartın, içi pişene kadar toplam 8-10 dakika pişirin.",
+   "Köfteleri sıcak tutmak için üzerini folyoyla örtün.",
+   "Piyaz, közlenmiş biber ve pilavla sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Arnavut Ciğeri",
+  "description": "Küp doğranıp una bulanarak kızartılan dana ciğeri; üzerine soğan piyazı ve sumakla servis edilir.",
+  "type": "Meze",
+  "emoji": "🫘",
+  "duration": "30 dk",
+  "servings": "4 kişilik",
+  "likes": 1260,
+  "tags": [
+   "Meze",
+   "Ciğer",
+   "Kızartma",
+   "Rakı Sofrası"
+  ],
+  "ingredients": [
+   {
+    "name": "Tavuk ciğeri",
+    "amount": "500 gr",
+    "emoji": "🫘",
+    "category": "meat"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Kırmızı toz biber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Maydanoz",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sumak",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ciğerin zarını ve varsa damarlarını temizleyip yaklaşık 2 cm'lik küpler halinde doğrayın.",
+   "Ciğerleri kâğıt havluyla iyice kurulayın; ıslak ciğer kızarken yağ sıçratır ve un tutmaz.",
+   "Bir kâsede unu ve kırmızı toz biberi karıştırın. Tuzu una eklemeyin; tuz ciğerin suyunu çeker ve sertleştirir, en son eklenir.",
+   "Kızartmadan hemen önce ciğerleri unlu karışıma bulayın, fazla unu silkeleyin.",
+   "Geniş bir tavada sıvı yağı iyice kızdırın; yağ kızgın olmalı ki ciğer emmeden, çıtır kızarsın.",
+   "Ciğerleri azar azar, tavayı kalabalık etmeden kızartın; her parti 2-3 dakikada dış yüzü çıtır olunca alın.",
+   "Kızaran ciğerleri kâğıt havlu serili tabağa alıp fazla yağını süzdürün ve hemen tuzunu serpin.",
+   "Soğanı ince yarım ay doğrayın, tuz ve sumakla ovup piyaz hazırlayın, kıyılmış maydanozla karıştırın.",
+   "Ciğerleri servis tabağına alın, üzerine soğan piyazını yerleştirin.",
+   "Üstüne biraz daha sumak serpip, sıcakken servis edin."
+  ]
+ },
+ {
+  "name": "Külbastı",
+  "description": "İnce dövülmüş etin kısık ateşte kendi suyuyla pişirildiği, sade ve lezzetli geleneksel et yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🥩",
+  "duration": "40 dk",
+  "servings": "4 kişilik",
+  "likes": 1150,
+  "tags": [
+   "Etli",
+   "Izgara",
+   "Klasik",
+   "Sade"
+  ],
+  "ingredients": [
+   {
+    "name": "Dana bonfile",
+    "amount": "600 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Bonfileyi yaklaşık 1 cm kalınlığında dilimleyin, aralarına streç film koyup et tokmağıyla hafifçe döverek inceltin. İnceltme etin çabuk ve eşit pişmesini sağlar.",
+   "Etleri bir kaba alın; rendelenmiş soğan, ezilmiş sarımsak, kekik, karabiber ve zeytinyağıyla harmanlayın. Tuzu şimdi eklemeyin.",
+   "Etleri en az 30 dakika, tercihen 2 saat marine edin.",
+   "Döküm tava veya ızgarayı çok iyi kızdırın; yüksek ısı etin dışını mühürler.",
+   "Etin tuzunu pişirmeden hemen önce serpin.",
+   "Etleri kızgın tavaya tek sıra dizin; kalabalık etmeyin, aksi halde et haşlanır.",
+   "Her yüzünü 2-3 dakika, dışı kızarıp içi pembemsi kalacak şekilde pişirin; fazla pişirmek eti kurutur.",
+   "Pişen etleri tabağa alıp üzerini folyoyla örterek 5 dakika dinlendirin; dinlenme etin suyunu içine çeker.",
+   "Dinlenen etleri servis tabağına alın.",
+   "Yanında ızgara sebze, soğan piyazı veya pilavla sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Papaz Yahnisi",
+  "description": "Bol soğanla ağır ateşte pişen, sirkeli ve baharatlı sosuyla meşhur Osmanlı mutfağı et yahnisi.",
+  "type": "Ana Yemek",
+  "emoji": "🥘",
+  "duration": "1 sa 30 dk",
+  "servings": "5 kişilik",
+  "likes": 1340,
+  "tags": [
+   "Etli",
+   "Yahni",
+   "Osmanlı",
+   "Soğanlı"
+  ],
+  "ingredients": [
+   {
+    "name": "Dana kuşbaşı",
+    "amount": "700 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "5 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "4 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sirke",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍶",
+    "category": "oil"
+   },
+   {
+    "name": "Defne yaprağı",
+    "amount": "2 adet",
+    "emoji": "🍃",
+    "category": "spice"
+   },
+   {
+    "name": "Yenibahar",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kuşbaşı etleri yıkayıp iyice süzün.",
+   "Tencerede sıvı yağı kızdırın, etleri ekleyip suyunu salıp çekene ve hafifçe kızarana kadar kavurun.",
+   "Soğanları yarım ay şeklinde iri doğrayın; papaz yahnisi bol soğanlı olmalı, soğan pişince sosun kıvamını verir.",
+   "Etlerin üzerine soğanları ekleyip, soğanlar suyunu salıp yumuşayana kadar 8-10 dakika kavurun.",
+   "Bütün sarımsak dişlerini ve salçayı ekleyip 2 dakika daha kavurun.",
+   "Defne yaprağı, yenibahar, sirke ve sıcak suyu ilave edin; sirke etin yumuşamasına ve karakteristik ekşi lezzete katkı sağlar.",
+   "Kapağı kapatıp kısık ateşte et iyice yumuşayana ve sos koyulaşana kadar 1 saat pişirin.",
+   "Ara ara kontrol edip suyu azaldıkça azar azar sıcak su ekleyin.",
+   "Son 10 dakikada tuzunu ekleyip tadını dengeleyin.",
+   "Sıcak sıcak, pirinç pilavıyla servis edin."
+  ]
+ },
+ {
+  "name": "Et Sote",
+  "description": "Kuşbaşı etin biber, domates ve sarımsakla harlı ateşte soteleneceği, iştah açıcı klasik bir tava yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🍳",
+  "duration": "50 dk",
+  "servings": "4 kişilik",
+  "likes": 1420,
+  "tags": [
+   "Etli",
+   "Sote",
+   "Tava",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Dana kuşbaşı",
+    "amount": "600 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Domates",
+    "amount": "3 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "3 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Kuşbaşı etleri yıkayıp süzün, mümkünse biraz küçük doğrayın ki çabuk pişsin.",
+   "Tencerede sıvı yağı kızdırıp etleri ekleyin ve suyunu salana kadar kavurun.",
+   "Etin suyunu çekip kendi yağında kavrulmaya başlaması için orta ateşte sabırla pişirin; bu et yumuşamazsa üzerine yarım bardak sıcak su ekleyip yumuşayana kadar pişirin.",
+   "Et yumuşayınca ince doğranmış soğanı ekleyip pembeleşene kadar kavurun.",
+   "Ezilmiş sarımsağı ve salçayı ekleyip 2 dakika kavurun.",
+   "Küp doğranmış domatesleri ilave edin, suyunu bırakıp çekene kadar pişirin.",
+   "Halka veya iri doğranmış yeşil biberleri ekleyin.",
+   "Tuz, karabiber ve pul biberi serpip biberler diri kalacak şekilde 5-7 dakika daha soteleyin.",
+   "Suyunu tamamen çektirmeyin; hafif soslu kalması lezzetini artırır.",
+   "Sıcak sıcak, pilav veya ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Tavuk Sote",
+  "description": "Kuşbaşı tavuğun rengarenk biberler ve domatesle sotelendiği pratik, hafif ve doyurucu yemek.",
+  "type": "Ana Yemek",
+  "emoji": "🍗",
+  "duration": "35 dk",
+  "servings": "4 kişilik",
+  "likes": 1560,
+  "tags": [
+   "Tavuk",
+   "Sote",
+   "Pratik",
+   "Hafif"
+  ],
+  "ingredients": [
+   {
+    "name": "Tavuk göğsü",
+    "amount": "500 gr",
+    "emoji": "🍗",
+    "category": "meat"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "2 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kırmızı biber",
+    "amount": "1 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tavuk göğsünü kuşbaşı büyüklüğünde küpler halinde doğrayın.",
+   "Tavada sıvı yağı kızdırın, tavukları ekleyip yüksek ateşte suyunu salıp çekene kadar soteleyin.",
+   "Tavuklar rengini alınca ince doğranmış soğanı ekleyip 3-4 dakika kavurun.",
+   "Ezilmiş sarımsağı ve salçayı ekleyip 1-2 dakika kavurun.",
+   "İri doğranmış renkli biberleri ekleyip 3 dakika soteleyin.",
+   "Küp doğranmış domatesleri ilave edin.",
+   "Tuz, karabiber ve kekiği ekleyin.",
+   "Kapağı kapatıp kısık ateşte biberler hafif yumuşayana ve tatlar birleşene kadar 8-10 dakika pişirin.",
+   "Suyunu ayarlayın; kuru sevenler suyunu çektirir, soslu sevenler yarım bardak sıcak su ekleyebilir.",
+   "Sıcak sıcak, pilav veya bulgur pilavıyla servis edin."
+  ]
+ },
+ {
+  "name": "Piliç Izgara",
+  "description": "Yoğurtlu baharatlı sosla marine edilip ızgarada pişen, dışı kızarmış içi sulu tavuk.",
+  "type": "Ana Yemek",
+  "emoji": "🍗",
+  "duration": "40 dk (+ marine)",
+  "servings": "4 kişilik",
+  "likes": 1650,
+  "tags": [
+   "Tavuk",
+   "Izgara",
+   "Marine",
+   "Pratik"
+  ],
+  "ingredients": [
+   {
+    "name": "Tavuk but",
+    "amount": "6 adet",
+    "emoji": "🍗",
+    "category": "meat"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "3 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Tavuk butlarını yıkayıp kurulayın; kalın kısımlarını bıçakla çizin, böylece marine daha iyi işler ve et eşit pişer.",
+   "Geniş bir kâsede yoğurt, salça, ezilmiş sarımsak, limon suyu, zeytinyağı, pul biber, kekik, karabiber ve tuzu karıştırıp sos hazırlayın.",
+   "Tavukları sosun içinde her tarafı kaplanacak şekilde yoğurun.",
+   "Üzerini kapatıp buzdolabında en az 2 saat, tercihen bir gece marine edin; yoğurt hem yumuşatır hem de kızarırken güzel bir kabuk oluşturur.",
+   "Izgara veya döküm tavayı orta ateşte iyice ısıtın.",
+   "Tavukları önce derili/kalın yüzü alta gelecek şekilde koyun; acele edip erken çevirmeyin ki güzel kızarsın.",
+   "Her yüzünü 6-7 dakika, iç sıcaklığı pişecek ve dışı karamelize olacak şekilde çevirerek pişirin.",
+   "Etin en kalın yerini kontrol edin; kesildiğinde berrak su çıkıyorsa pişmiştir.",
+   "Pişen tavukları 5 dakika dinlendirin.",
+   "Yanında ızgara sebze, soğan piyazı ve pilavla sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Dana Rosto",
+  "description": "Bütün dana etinin sebzelerle ağır ateşte pişirilip dilimlenerek sosuyla sunulduğu şık bir yemek.",
+  "type": "Ana Yemek",
+  "emoji": "🥩",
+  "duration": "2 sa 30 dk",
+  "servings": "6 kişilik",
+  "likes": 1490,
+  "tags": [
+   "Etli",
+   "Fırın",
+   "Özel Gün",
+   "Dilimli"
+  ],
+  "ingredients": [
+   {
+    "name": "Dana eti",
+    "amount": "1,2 kg",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "2 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "5 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Defne yaprağı",
+    "amount": "2 adet",
+    "emoji": "🍃",
+    "category": "spice"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Dana etini (biftek veya kol) tuz ve karabiberle her tarafından ovun; bütün parça halinde kalsın.",
+   "Geniş bir tencerede zeytinyağını iyice kızdırıp eti her yüzü koyu kahverengi olana kadar mühürleyin. Bu mühürleme etin suyunu hapseder.",
+   "Mühürlenen eti çıkarın; aynı tencerede iri doğranmış soğan, havuç ve sarımsak dişlerini 5 dakika soteleyin.",
+   "Salçayı ekleyip 1 dakika kavurun.",
+   "Eti tekrar tencereye koyun, defne yaprağı, kekik ve sıcak suyu ekleyin.",
+   "Kapağı kapatıp kısık ateşte veya 160°C fırında, eti çevirerek 2 saat pişirin; et çatalla kolayca delinecek kıvama gelmeli.",
+   "Eti dikkatlice çıkarıp folyoya sarın ve 15 dakika dinlendirin; sıcakken dilimlerseniz dağılır.",
+   "Tencerede kalan sebzeli suyu blenderdan geçirip koyu bir sos elde edin, tuzunu ayarlayın.",
+   "Dinlenmiş eti keskin bıçakla ince dilimleyin.",
+   "Dilimleri servis tabağına dizip üzerine sıcak sosu gezdirin, patates püresi veya sote sebzeyle sunun."
+  ]
+ },
+ {
+  "name": "Zeytinyağlı Kereviz",
+  "description": "Kereviz, havuç ve bezelyenin zeytinyağı ve portakal-limonla pişip soğuk servis edildiği hafif Ege yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🥬",
+  "duration": "45 dk",
+  "servings": "4 kişilik",
+  "likes": 890,
+  "tags": [
+   "Zeytinyağlı",
+   "Sebze",
+   "Vegan",
+   "Ege"
+  ],
+  "ingredients": [
+   {
+    "name": "Kereviz",
+    "amount": "2 adet",
+    "emoji": "🥬",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Bezelye",
+    "amount": "1 su bardağı",
+    "emoji": "🫛",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Patates",
+    "amount": "1 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Portakal",
+    "amount": "1 adet",
+    "emoji": "🍊",
+    "category": "fruit"
+   },
+   {
+    "name": "Şeker",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kerevizleri soyup iri küpler halinde doğrayın. Kararmamaları için limonlu suda bekletin; kereviz havayla temas edince çabuk kararır.",
+   "Havuç ve patatesi de küp doğrayın, soğanı ince kıyın.",
+   "Tencerede zeytinyağını ısıtıp soğanı ekleyin ve yumuşayana kadar, renk almadan kavurun.",
+   "Havuçları ekleyip 3-4 dakika soteleyin.",
+   "Süzülmüş kereviz ve patatesleri ilave edin, 2 dakika karıştırın.",
+   "Bezelyeyi ekleyin; üzerini geçmeyecek kadar sıcak su, tuz ve şekeri koyun. Şeker sebzelerin doğal tatlılığını öne çıkarır.",
+   "Portakalın suyunu sıkın ve limon suyuyla birlikte ekleyin.",
+   "Kapağı kapatıp kısık ateşte kereviz ve patates yumuşayana kadar 25-30 dakika pişirin.",
+   "Ocaktan alıp tencerede soğumaya bırakın; zeytinyağlılar soğudukça lezzetlenir.",
+   "Oda sıcaklığında veya soğuk, üzerine kıyılmış dereotu serperek servis edin."
+  ]
+ },
+ {
+  "name": "Zeytinyağlı Barbunya",
+  "description": "Taze ya da kuru barbunyanın zeytinyağı, domates ve havuçla pişip soğuk yendiği klasik zeytinyağlı.",
+  "type": "Ana Yemek",
+  "emoji": "🫘",
+  "duration": "1 sa",
+  "servings": "5 kişilik",
+  "likes": 1020,
+  "tags": [
+   "Zeytinyağlı",
+   "Baklagil",
+   "Vegan",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuru barbunya",
+    "amount": "2 su bardağı",
+    "emoji": "🫘",
+    "category": "grain"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "1 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Patates",
+    "amount": "1 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "1 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Şeker",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kuru barbunyayı bir gece önceden bol suda ıslatın; sabah suyunu değiştirip yarı yumuşayana kadar haşlayıp süzün. Taze barbunya kullanıyorsanız bu adıma gerek yok.",
+   "Tencerede zeytinyağını ısıtın, ince doğranmış soğanı yumuşayana kadar kavurun.",
+   "Rendelenmiş havucu ekleyip 3 dakika soteleyin.",
+   "Salçayı ilave edip 1 dakika kavurun.",
+   "Rendelenmiş domatesi ekleyip suyunu çekene kadar pişirin.",
+   "Yarı haşlanmış barbunyaları ve küp doğranmış patatesi ekleyin.",
+   "Üzerini geçecek kadar sıcak su, tuz ve şekeri ekleyin.",
+   "Kapağı kapatıp kısık ateşte barbunyalar tamamen yumuşayana ve suyu azalıp yağ üstüne çıkana kadar 40 dakika pişirin.",
+   "Ocaktan alıp tencerede soğutun.",
+   "Soğuk olarak, üzerine limon dilimi ve maydanozla servis edin."
+  ]
+ },
+ {
+  "name": "Zeytinyağlı Kabak",
+  "description": "Dilimlenen sakız kabaklarının soğan ve dereotuyla zeytinyağında pişip soğuk sunulduğu hafif yemek.",
+  "type": "Ana Yemek",
+  "emoji": "🥒",
+  "duration": "40 dk",
+  "servings": "4 kişilik",
+  "likes": 760,
+  "tags": [
+   "Zeytinyağlı",
+   "Sebze",
+   "Vegan",
+   "Hafif"
+  ],
+  "ingredients": [
+   {
+    "name": "Sakız kabağı",
+    "amount": "4 adet",
+    "emoji": "🥒",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "1 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Domates",
+    "amount": "1 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Dereotu",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Şeker",
+    "amount": "1 çay kaşığı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kabakları yıkayıp yarım ay şeklinde ya da iri küpler halinde doğrayın.",
+   "Soğanı ince doğrayın, havucu rendeleyin.",
+   "Tencerede zeytinyağını ısıtın, soğanı yumuşayana kadar kavurun.",
+   "Havucu ekleyip 2-3 dakika soteleyin.",
+   "Yıkanmış pirinci ekleyip 1 dakika çevirin; pirinç yemeği hafifçe bağlar.",
+   "Rendelenmiş domatesi ekleyip suyunu çektirin.",
+   "Kabakları ilave edin, tuz, şeker ve yarım su bardağı sıcak su ekleyin. Kabak kendi suyunu salacağı için az su yeterli.",
+   "Kapağı kapatıp kısık ateşte kabaklar dağılmadan yumuşayana kadar 20 dakika pişirin.",
+   "Son 5 dakikada kıyılmış dereotunun yarısını ekleyip karıştırın.",
+   "Ocaktan alıp soğutun; servis ederken kalan taze dereotunu serpin."
+  ]
+ },
+ {
+  "name": "Zeytinyağlı Bamya",
+  "description": "Küçük taze bamyaların limonlu, domatesli zeytinyağı sosunda pişip soğuk yendiği yaz yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🌿",
+  "duration": "45 dk",
+  "servings": "4 kişilik",
+  "likes": 680,
+  "tags": [
+   "Zeytinyağlı",
+   "Sebze",
+   "Vegan",
+   "Yaz"
+  ],
+  "ingredients": [
+   {
+    "name": "Bamya",
+    "amount": "500 gr",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Şeker",
+    "amount": "1 çay kaşığı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Bamyaların sap kısmındaki sert konik başlığı bıçakla ince ince yontarak temizleyin; deşmemeye özen gösterin, aksi halde pişerken sümüksü olur.",
+   "Temizlenen bamyaları sirkeli suda 15 dakika bekletip durulayın; bu işlem yapışkanlığını azaltır.",
+   "Tencerede zeytinyağını ısıtıp ince doğranmış soğanı kavurun.",
+   "Salçayı ekleyip 1 dakika çevirin, rendelenmiş domatesleri ilave edip suyunu çektirin.",
+   "Bamyaları tencereye ekleyip nazikçe karıştırın; bamyaları fazla karıştırmak dağılmalarına yol açar.",
+   "Tuz, şeker ve bamyaların yarısına gelecek kadar sıcak su ekleyin.",
+   "Limon suyunu ekleyin; asit bamyanın dik durmasına ve rengini korumasına yardımcı olur.",
+   "Kapağı kapatıp kısık ateşte bamyalar yumuşayana kadar 25 dakika pişirin, mümkünse hiç karıştırmadan tencereyi çalkalayın.",
+   "Ocaktan alıp tencerede soğumaya bırakın.",
+   "Soğuk olarak, limon dilimleriyle servis edin."
+  ]
+ },
+ {
+  "name": "Etli Kereviz",
+  "description": "Kuşbaşı etle pişen, portakal ve limonla tatlandırılmış, kışın sofralara yakışan sulu kereviz yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🥬",
+  "duration": "1 sa",
+  "servings": "5 kişilik",
+  "likes": 720,
+  "tags": [
+   "Etli",
+   "Sebze",
+   "Sulu Yemek",
+   "Kış"
+  ],
+  "ingredients": [
+   {
+    "name": "Kereviz",
+    "amount": "2 adet",
+    "emoji": "🥬",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kuzu kuşbaşı",
+    "amount": "400 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kuşbaşı etleri tencerede sıvı yağla kavurun; suyunu salıp çektikten sonra kızarmaya başlasın.",
+   "İnce doğranmış soğanı ekleyip pembeleşene kadar kavurun.",
+   "Salçayı ekleyip 1-2 dakika kavurun.",
+   "Sıcak suyu ekleyip kapağı kapatın, et neredeyse yumuşayana kadar 35 dakika pişirin.",
+   "Bu sırada kerevizleri soyup iri küp doğrayın ve kararmamaları için limonlu suda bekletin.",
+   "Havuçları da iri doğrayın.",
+   "Et yumuşayınca havuç ve süzülmüş kerevizleri tencereye ekleyin.",
+   "Tuz ve limon suyunu ilave edin; gerekirse biraz daha sıcak su ekleyip sebzelerin üzerini örtün.",
+   "Kapağı kapatıp kereviz ve havuç yumuşayana kadar 20-25 dakika pişirin.",
+   "Sıcak sıcak, pilavla servis edin."
+  ]
+ },
+ {
+  "name": "Etli Pırasa",
+  "description": "Pırasanın kuşbaşı et ve pirinçle pişip limon eklenerek servis edildiği doyurucu kış yemeği.",
+  "type": "Ana Yemek",
+  "emoji": "🥬",
+  "duration": "50 dk",
+  "servings": "5 kişilik",
+  "likes": 640,
+  "tags": [
+   "Etli",
+   "Sebze",
+   "Sulu Yemek",
+   "Kış"
+  ],
+  "ingredients": [
+   {
+    "name": "Pırasa",
+    "amount": "1 kg",
+    "emoji": "🥬",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kuzu kuşbaşı",
+    "amount": "300 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Havuç",
+    "amount": "1 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Pirinç",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Pırasaları soyup yıkayın ve yaklaşık 2 cm kalınlığında halkalar halinde doğrayın; içine toprak kaçmışsa dilimledikten sonra tekrar durulayın.",
+   "Tencerede sıvı yağla kuşbaşı eti suyunu çekip kızarana kadar kavurun.",
+   "İnce doğranmış soğanı ekleyip kavurun, ardından rendelenmiş havucu ilave edin.",
+   "Salçayı ekleyip 1 dakika çevirin.",
+   "Doğranmış pırasaları ekleyin ve hacmi azalıp yumuşamaya başlayana kadar 5-6 dakika kavurun.",
+   "Yıkanmış pirinci ekleyin; pirinç yemeğe hoş bir kıvam verir.",
+   "Sıcak su ve tuzu ekleyip kapağı kapatın.",
+   "Kısık ateşte et ve pırasa iyice yumuşayana, pirinç pişene kadar 25 dakika pişirin.",
+   "Servis öncesi limon suyunu ekleyip karıştırın; limon pırasanın tatlımsı tadını dengeler.",
+   "Sıcak sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Sebzeli Güveç",
+  "description": "Rengarenk mevsim sebzelerinin etle birlikte güveçte, fırında ağır ağır piştiği bereketli yemek.",
+  "type": "Ana Yemek",
+  "emoji": "🥘",
+  "duration": "1 sa 30 dk",
+  "servings": "6 kişilik",
+  "likes": 1180,
+  "tags": [
+   "Etli",
+   "Fırın",
+   "Sebze",
+   "Güveç"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuzu kuşbaşı",
+    "amount": "500 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Patlıcan",
+    "amount": "2 adet",
+    "emoji": "🍆",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kabak",
+    "amount": "2 adet",
+    "emoji": "🥒",
+    "category": "vegetable"
+   },
+   {
+    "name": "Patates",
+    "amount": "2 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "3 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "3 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "3 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "2 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Patlıcanları alacalı soyup küp doğrayın, tuzlu suda 15 dakika bekletip acısını alın ve süzün.",
+   "Tencerede sıvı yağla kuşbaşı eti suyunu çekip kızarana kadar kavurun.",
+   "İnce doğranmış soğan ve ezilmiş sarımsağı ekleyip kavurun, salçayı ilave edip 1 dakika çevirin.",
+   "Kabak, patates, biber ve süzülmüş patlıcanları iri küpler halinde doğrayın.",
+   "Kavrulmuş eti bir güveç veya fırın kabına alın, üzerine tüm sebzeleri ekleyip karıştırın.",
+   "Rendelenmiş 2 domatesi ve tuzu ekleyin, sıcak suyu dökün.",
+   "Kalan 1 domatesi halka doğrayıp en üste dizin; güzel görünsün ve sebzeleri korusun.",
+   "Güvecin üzerini kapak veya folyoyla kapatın.",
+   "Önceden 190°C'ye ısıtılmış fırında 1 saat, sebzeler yumuşayana kadar pişirin.",
+   "Son 15 dakikada folyoyu açıp üstünün hafif kızarmasını sağlayın.",
+   "Sıcak sıcak, pilav veya ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Kabak Musakka",
+  "description": "Kızarmış kabak dilimleriyle kıymalı harcın katmanlanıp domates sosunda piştiği pratik musakka.",
+  "type": "Ana Yemek",
+  "emoji": "🥒",
+  "duration": "1 sa",
+  "servings": "5 kişilik",
+  "likes": 830,
+  "tags": [
+   "Etli",
+   "Sebze",
+   "Fırın",
+   "Kabak"
+  ],
+  "ingredients": [
+   {
+    "name": "Kabak",
+    "amount": "4 adet",
+    "emoji": "🥒",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kıyma",
+    "amount": "300 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "2 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Kabakları uzunlamasına veya yuvarlak, parmak kalınlığında dilimleyin.",
+   "Tavada sıvı yağı kızdırıp kabak dilimlerini iki yüzü hafif kızarana kadar kızartın, kâğıt havluya alın.",
+   "Aynı tavada ince doğranmış soğanı kavurun, kıymayı ekleyip suyunu salıp çekene kadar pişirin.",
+   "Ezilmiş sarımsak ve salçayı ekleyip 2 dakika kavurun, tuz ve karabiberi atın.",
+   "Fırın kabına kızarmış kabakların yarısını dizin.",
+   "Üzerine kıymalı harcı eşit şekilde yayın.",
+   "Kalan kabakları en üste dizin.",
+   "Sos için rendelenmiş domatesleri 1 su bardağı sıcak suyla karıştırıp tuzlayın, kabakların üzerine dökün.",
+   "Halka doğranmış biberleri en üste yerleştirin.",
+   "Önceden 190°C'ye ısıtılmış fırında suyunu çekip üzeri kızarana kadar 30 dakika pişirin.",
+   "Sıcak sıcak, yanında pilav veya cacıkla servis edin."
+  ]
+ },
+ {
+  "name": "Nohutlu Pilav",
+  "description": "Tereyağıyla kavrulan pirincin nohutla birlikte tane tane piştiği, tavuk suyuyla zenginleşen klasik pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍚",
+  "duration": "40 dk",
+  "servings": "4 kişilik",
+  "likes": 1370,
+  "tags": [
+   "Pilav",
+   "Klasik",
+   "Nohutlu",
+   "Garnitür"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Nohut",
+    "amount": "1 su bardağı",
+    "emoji": "🫘",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tavuk Suyu",
+    "amount": "3 su bardağı",
+    "emoji": "🍲",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Nohudu bir gece ıslatıp yumuşayana kadar haşlayın veya haşlanmış hazır nohut kullanın, süzün.",
+   "Pirinci geniş bir kaba alın, üzerine ılık su ve bir tutam tuz ekleyip 20 dakika bekletin; sonra berrak su gelene kadar durulayın. Bu işlem nişastayı alıp taneleri ayrık tutar.",
+   "Tencerede tereyağı ve sıvı yağı birlikte eritin; sıvı yağ tereyağının yanmasını engeller.",
+   "Süzülmüş pirinci yağa ekleyip orta ateşte, taneler şeffaflaşıp yağı çekene kadar 3-4 dakika kavurun.",
+   "Haşlanmış nohutları ekleyip 1 dakika karıştırın.",
+   "Sıcak tavuk suyunu ve tuzu ekleyin; su sıcak olmalı ki pilav kavrulmuş halini korusun.",
+   "Kaynamaya başlayınca ateşi kısın, kapağı kapatıp suyunu çekene kadar 12-15 dakika pişirin. Bu sırada kapağı açıp karıştırmayın.",
+   "Su çekilince ocaktan alın, tencerenin kapağı ile arasına temiz bir bez koyup kapağı kapatın.",
+   "Pilavı 15 dakika demlendirin; bez, oluşan buharı emerek pilavın tane tane olmasını sağlar.",
+   "Demlenen pilavı nazikçe karıştırıp kabartın ve sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Tavuklu Pilav",
+  "description": "Haşlanmış tavuk parçalarıyla zenginleşen, tavuk suyunda pişmiş doyurucu tane pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍚",
+  "duration": "50 dk",
+  "servings": "5 kişilik",
+  "likes": 1250,
+  "tags": [
+   "Pilav",
+   "Tavuk",
+   "Doyurucu",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Tavuk göğsü",
+    "amount": "2 adet",
+    "emoji": "🍗",
+    "category": "meat"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Nohut",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫘",
+    "category": "grain"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tavuk göğüslerini bir soğan ve tuzla birlikte yumuşayana kadar haşlayın. Tavuk suyunu süzüp ayırın; pilavı bu suyla pişireceğiz.",
+   "Haşlanan tavukları elle iri parçalar halinde didikleyin.",
+   "Nohudu önceden haşlayıp süzün.",
+   "Pirinci tuzlu ılık suda 20 dakika bekletip berrak su gelene kadar yıkayın.",
+   "Tencerede tereyağını eritin, süzülmüş pirinci ekleyip taneler yağı çekene kadar 3-4 dakika kavurun.",
+   "Didiklenmiş tavuk ve nohudu ekleyip 1 dakika karıştırın.",
+   "3 su bardağı sıcak tavuk suyunu, tuz ve karabiberi ekleyin.",
+   "Kaynayınca ateşi kısıp kapağı kapatın, su çekilene kadar 15 dakika pişirin.",
+   "Ocaktan alıp bez örterek 15 dakika demlendirin.",
+   "Karıştırıp kabartın ve sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Etli Pilav",
+  "description": "Küçük kuşbaşı etlerle pişen, et suyunun lezzetini emmiş bereketli tane pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍚",
+  "duration": "1 sa",
+  "servings": "5 kişilik",
+  "likes": 1310,
+  "tags": [
+   "Pilav",
+   "Etli",
+   "Doyurucu",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Kuzu kuşbaşı",
+    "amount": "400 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3,5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Kuşbaşı etleri küçük parçalar halinde doğrayın; küçük olmaları pilavla uyumlu pişmelerini sağlar.",
+   "Tencerede 1 yemek kaşığı tereyağıyla etleri suyunu çekip kızarana kadar kavurun.",
+   "İnce doğranmış soğanı ekleyip pembeleşene kadar kavurun.",
+   "1,5 su bardağı sıcak su ekleyip kapağı kapatın, et yumuşayana kadar 30 dakika pişirin; suyu tamamen çekmesin.",
+   "Pirinci tuzlu ılık suda 20 dakika bekletip yıkayın, süzün.",
+   "Etin üzerine kalan tereyağını ve süzülmüş pirinci ekleyip 3-4 dakika kavurun.",
+   "2 su bardağı sıcak su, tuz ve karabiberi ekleyin.",
+   "Kaynayınca ateşi kısıp kapağı kapatın, su çekilene kadar 15 dakika pişirin.",
+   "Ocaktan alıp bez örterek 15 dakika demlendirin.",
+   "Karıştırıp kabartın ve sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Patlıcanlı Pilav",
+  "description": "Kızarmış patlıcan küpleriyle harmanlanmış, patlıcanın aromasını taşıyan nefis tane pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍆",
+  "duration": "45 dk",
+  "servings": "4 kişilik",
+  "likes": 940,
+  "tags": [
+   "Pilav",
+   "Patlıcan",
+   "Sebze",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Patlıcan",
+    "amount": "2 adet",
+    "emoji": "🍆",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Patlıcanları alacalı soyup küçük küpler halinde doğrayın, tuzlu suda 15 dakika bekletip acısını alın ve iyice sıkarak süzün.",
+   "Tavada sıvı yağı kızdırıp patlıcan küplerini altın rengi olana kadar kızartın, kâğıt havluya alın.",
+   "Pirinci tuzlu ılık suda 20 dakika bekletip berrak su gelene kadar yıkayın, süzün.",
+   "Tencerede tereyağını eritip pirinci ekleyin, taneler yağı çekene kadar 3-4 dakika kavurun.",
+   "Kızarmış patlıcanların yarısını pirince ekleyip nazikçe karıştırın.",
+   "Sıcak su ve tuzu ekleyin.",
+   "Kaynayınca ateşi kısıp kapağı kapatın, su çekilene kadar 15 dakika pişirin.",
+   "Ocaktan alıp bez örterek 15 dakika demlendirin.",
+   "Demlenince kalan kızarmış patlıcanları da ekleyip nazikçe karıştırın.",
+   "Sıcak servis edin; yanında cacık çok yakışır."
+  ]
+ },
+ {
+  "name": "Meyhane Pilavı",
+  "description": "Bulgurun biber salçası, rengarenk biber ve sarımsakla meyhane usulü piştiği, etsiz ve iştah açıcı pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍚",
+  "duration": "40 dk",
+  "servings": "4 kişilik",
+  "likes": 710,
+  "tags": [
+   "Pilav",
+   "İç Pilav",
+   "Baharatlı",
+   "Özel"
+  ],
+  "ingredients": [
+   {
+    "name": "Pilavlık bulgur",
+    "amount": "2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kırmızı Biber",
+    "amount": "1 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "2 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Biber Salçası",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Tavuk Suyu",
+    "amount": "3 su bardağı",
+    "emoji": "🍲",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Geniş tabanlı bir tencerede tereyağı ve zeytinyağını birlikte kızdırın; iki yağın karışımı meyhane pilavına karakteristik lezzetini verir.",
+   "İnce doğranmış soğanı ekleyip hafif renk alana kadar orta ateşte kavurun.",
+   "Küçük doğranmış kırmızı ve yeşil biberleri ekleyip 3-4 dakika soteleyin.",
+   "İnce doğranmış sarımsağı ekleyip kokusu çıkana kadar 1 dakika kavurun.",
+   "Domates salçası ve biber salçasını ekleyip ham kokusu geçene kadar 2 dakika kavurun.",
+   "Küp doğranmış domatesleri ilave edip suyunu salıp çekene kadar pişirin.",
+   "Pilavlık bulguru ekleyip 3-4 dakika kavurun; kavurmak bulgurun tane tane olmasını sağlar.",
+   "Sıcak tavuk suyunu, tuz, karabiber ve pul biberi ekleyin.",
+   "Kaynamaya başlayınca ateşi kısın, kapağı kapatıp bulgur suyunu çekene kadar 12-15 dakika pişirin.",
+   "Ocaktan alıp kapağın altına temiz bir bez koyup 15 dakika demlendirin.",
+   "Bulguru çatalla nazikçe kabartıp sıcak servis edin; yanında cacık çok yakışır."
+  ]
+ },
+ {
+  "name": "Kestaneli Pilav",
+  "description": "Közlenmiş kestane taneleriyle zenginleşen, tatlımsı ve bayramlık sofralara yakışan pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🌰",
+  "duration": "50 dk",
+  "servings": "5 kişilik",
+  "likes": 680,
+  "tags": [
+   "Pilav",
+   "Kestane",
+   "Özel Gün",
+   "Kış"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "2 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Kestane",
+    "amount": "250 gr",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Kuş üzümü",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍇",
+    "category": "fruit"
+   },
+   {
+    "name": "Tarçın",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Kestanelerin kabuğunu çizip haşlayın veya közleyin, sıcakken kabuklarını soyup iri parçalara bölün. Hazır haşlanmış kestane de kullanabilirsiniz.",
+   "Pirinci tuzlu ılık suda 20 dakika bekletip yıkayın, süzün.",
+   "Tencerede tereyağını eritin, ince doğranmış soğanı yumuşayana kadar kavurun.",
+   "Süzülmüş pirinci ekleyip taneler yağı çekene kadar 3-4 dakika kavurun.",
+   "Kestane parçalarını ve kuş üzümünü ekleyip nazikçe karıştırın; kestaneleri dağıtmamaya özen gösterin.",
+   "Tarçını ekleyip 1 dakika çevirin.",
+   "Sıcak su ve tuzu ekleyin, kaynayınca ateşi kısıp kapağı kapatın.",
+   "Su çekilene kadar 15 dakika pişirin.",
+   "Ocaktan alıp bez örterek 15 dakika demlendirin.",
+   "Kestaneleri kırmadan nazikçe karıştırıp kabartın ve sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Domatesli Bulgur Pilavı",
+  "description": "Kavrulmuş bulgurun domates ve biberle pişip tane tane kabardığı, sağlıklı ve pratik pilav.",
+  "type": "Ana Yemek",
+  "emoji": "🍚",
+  "duration": "35 dk",
+  "servings": "4 kişilik",
+  "likes": 1120,
+  "tags": [
+   "Pilav",
+   "Bulgur",
+   "Sağlıklı",
+   "Ekonomik"
+  ],
+  "ingredients": [
+   {
+    "name": "Pilavlık bulgur",
+    "amount": "2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "2 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tencerede tereyağı ve sıvı yağı eritin, ince doğranmış soğanı yumuşayana kadar kavurun.",
+   "Küçük doğranmış yeşil biberleri ekleyip 2-3 dakika soteleyin.",
+   "Salçayı ekleyip 1 dakika kavurun.",
+   "Küp doğranmış domatesleri ilave edip suyunu çekene kadar pişirin.",
+   "Bulguru ekleyip 2-3 dakika kavurun; kavurmak bulgurun tane tane olmasını sağlar.",
+   "Sıcak su, tuz ve pul biberi ekleyin.",
+   "Kaynayınca ateşi kısıp kapağı kapatın, suyunu çekene kadar 12-15 dakika pişirin.",
+   "Ocaktan alıp kapağın altına bez koyarak 15 dakika demlendirin.",
+   "Bulguru çatalla nazikçe kabartın.",
+   "Sıcak sıcak, yanında cacık veya ayranla servis edin."
+  ]
+ },
+ {
+  "name": "Ispanaklı Börek",
+  "description": "Yufkaların ıspanaklı iç harçla katlanıp süt-yumurta sosuyla fırınlandığı çıtır çıtır tepsi böreği.",
+  "type": "Hamur İşi",
+  "emoji": "🥧",
+  "duration": "1 sa",
+  "servings": "6 kişilik",
+  "likes": 1240,
+  "tags": [
+   "Börek",
+   "Ispanak",
+   "Fırın",
+   "Çıtır"
+  ],
+  "ingredients": [
+   {
+    "name": "Yufka",
+    "amount": "4 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   },
+   {
+    "name": "Ispanak",
+    "amount": "500 gr",
+    "emoji": "🥬",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Beyaz peynir",
+    "amount": "150 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "2 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Ispanakları ayıklayıp iyice yıkayın ve ince ince doğrayın; sapları sertse ayırın.",
+   "Tavada 2 kaşık sıvı yağla ince doğranmış soğanı kavurun, ıspanakları ekleyin ve suyunu salıp çekene kadar soteleyin.",
+   "Ispanaklı harcı ocaktan alıp soğutun, ardından ufalanmış beyaz peynir, tuz ve karabiberi ekleyip karıştırın.",
+   "Harç suluysa böreği ıslatır; iyice süzülmüş olmasına dikkat edin.",
+   "Sos için bir kâsede yumurta, süt ve kalan sıvı yağı çırpın.",
+   "Fırın tepsisini yağlayın; bir yufkayı serip üzerine sostan sürün.",
+   "İkinci yufkayı üzerine koyup yine sos sürün, ıspanaklı harcın bir kısmını yayın.",
+   "Yufkaları harçla katmanlayarak devam edin; en üst kata yufkayı serip bolca sos sürün.",
+   "Böreği bıçakla dilimlere bölün, üzerine çırpılmış yumurta sarısı sürüp susam serpebilirsiniz.",
+   "Önceden 180°C'ye ısıtılmış fırında üzeri altın sarısı ve çıtır olana kadar 35-40 dakika pişirin.",
+   "Ilıyınca dilimleyip servis edin; sıcak da güzel olur."
+  ]
+ },
+ {
+  "name": "Muska Böreği",
+  "description": "Yufkanın üçgen katlanıp peynirli harçla üçgen muskalar haline getirilip kızartıldığı çıtır börek.",
+  "type": "Hamur İşi",
+  "emoji": "🔺",
+  "duration": "45 dk",
+  "servings": "5 kişilik",
+  "likes": 980,
+  "tags": [
+   "Börek",
+   "Peynirli",
+   "Kızartma",
+   "Çıtır"
+  ],
+  "ingredients": [
+   {
+    "name": "Yufka",
+    "amount": "3 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   },
+   {
+    "name": "Beyaz peynir",
+    "amount": "250 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Maydanoz",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Süt",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1,5 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Beyaz peyniri bir kaba alıp çatalla ezin, kıyılmış maydanoz ve karabiberi ekleyip harcı hazırlayın.",
+   "Yufkaları önce dörde bölün, sonra her parçayı uzun şeritler halinde kesin.",
+   "Bir kâsede yumurta ve sütü çırpın; bu karışım şeritleri yumuşatıp yapıştırmayı kolaylaştırır.",
+   "Her şeridin bir yüzüne süt-yumurta karışımından fırçalayın.",
+   "Şeridin ucuna bir tatlı kaşığı peynirli harç koyun.",
+   "Şeridi üçgen olacak şekilde, bayrak katlar gibi çaprazlayarak katlayın; her katta muska şeklini koruyun.",
+   "Muskanın açık ucunu süt-yumurta karışımıyla yapıştırın ki kızarırken açılmasın.",
+   "Tavada sıvı yağı orta ateşte kızdırın; yağ çok kızgın olmasın, yoksa dış çıtır olurken içi çiğ kalır.",
+   "Muskaları iki yüzü altın sarısı olana kadar kızartın.",
+   "Kâğıt havluya alıp fazla yağını süzdürün ve sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Puf Böreği",
+  "description": "Yumuşacık hamurun kıymalı veya peynirli harçla kızartıldığında pofuduk kabaran nefis böreği.",
+  "type": "Hamur İşi",
+  "emoji": "🥟",
+  "duration": "1 sa",
+  "servings": "6 kişilik",
+  "likes": 1150,
+  "tags": [
+   "Börek",
+   "Kızartma",
+   "Kıymalı",
+   "Çıtır"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Kıyma",
+    "amount": "250 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Maydanoz",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Su",
+    "amount": "1/2 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "İç harç için tavada ince doğranmış soğanı 1 kaşık yağla kavurun, kıymayı ekleyip suyunu çekene kadar pişirin, tuz ve kıyılmış maydanozla tatlandırıp soğutun.",
+   "Geniş bir kaba unu eleyin; ortasını havuz gibi açın.",
+   "Yumurta, yoğurt, 2 kaşık sıvı yağ, tuz ve suyu ekleyip ele yapışmayan, yumuşak bir hamur yoğurun.",
+   "Hamurun üzerini örtüp 30 dakika dinlendirin; dinlenen hamur daha kolay açılır ve puf olur.",
+   "Hamuru bezelere bölün, her bezeyi ince yuvarlak açın.",
+   "Her hamurun yarısına iç harçtan koyup diğer yarısını kapatın, kenarlarını çatalla bastırarak yapıştırın.",
+   "Tavada sıvı yağı orta ateşte kızdırın; doğru sıcaklıkta böreğin içi pofuduk kabarır.",
+   "Börekleri yağa atıp kızarırken üzerine kaşıkla sıcak yağ gezdirin; bu, kabarmayı hızlandırır.",
+   "İki yüzü altın sarısı olunca kâğıt havluya alın.",
+   "Sıcak sıcak servis edin; kıyma yerine peynirli harçla da yapabilirsiniz."
+  ]
+ },
+ {
+  "name": "Kaşarlı Pide",
+  "description": "Bol kaşar peynirli iç harcın açılmış pide hamuruna doldurulup fırınlandığı klasik kayıkçı pide.",
+  "type": "Hamur İşi",
+  "emoji": "🫓",
+  "duration": "1 sa 30 dk",
+  "servings": "4 kişilik",
+  "likes": 1420,
+  "tags": [
+   "Pide",
+   "Peynirli",
+   "Fırın",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Su",
+    "amount": "1 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Kaşar peyniri",
+    "amount": "300 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık suya mayayı ve bir tutam şekeri ekleyip birkaç dakika bekletip aktive edin.",
+   "Unu geniş kaba eleyin, tuz ekleyin, mayalı suyu azar azar ilave ederek yumuşak bir hamur yoğurun.",
+   "Hamurun üzerini nemli bezle örtüp ılık ortamda iki katına çıkana kadar yaklaşık 1 saat mayalandırın.",
+   "Kaşarları irice rendeleyin.",
+   "Mayalanan hamuru ikiye bölün, unlanmış tezgahta uzun oval şekilde açın.",
+   "Hamurların ortasına rendelenmiş kaşarı boydan boya dizin, kenarlarda boşluk bırakın.",
+   "Kenarları içe doğru kıvırıp iki ucu birleştirerek kayık şekli verin; uçları iyice sıkıştırın.",
+   "Yüzeye çırpılmış yumurta sürün; kenarları güzel kızarsın.",
+   "Önceden 220°C'ye ısıtılmış fırında kenarları kızarıp peynir eriyene kadar 15-18 dakika pişirin.",
+   "Fırından çıkınca üzerine tereyağı sürün ve sıcak sıcak, dilimleyerek servis edin."
+  ]
+ },
+ {
+  "name": "Sucuklu Pide",
+  "description": "Kaşar ve dilim sucukla harmanlanan, fırında kızaran mis kokulu Türk pidesi.",
+  "type": "Hamur İşi",
+  "emoji": "🫓",
+  "duration": "1 sa 30 dk",
+  "servings": "4 kişilik",
+  "likes": 1560,
+  "tags": [
+   "Pide",
+   "Sucuklu",
+   "Fırın",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Su",
+    "amount": "1 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Sucuk",
+    "amount": "150 gr",
+    "emoji": "🌭",
+    "category": "meat"
+   },
+   {
+    "name": "Kaşar peyniri",
+    "amount": "200 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık suya maya ve bir tutam şeker ekleyip aktive olması için bekletin.",
+   "Unu tuzla eleyip mayalı suyla yumuşak hamur yoğurun, üzerini örtüp 1 saat mayalandırın.",
+   "Sucukları ince halkalar halinde dilimleyin, kaşarı rendeleyin.",
+   "Mayalanan hamuru ikiye bölüp unlu tezgahta uzun oval açın.",
+   "Hamurların ortasına önce rendelenmiş kaşarı dizin, üzerine sucuk halkalarını yerleştirin.",
+   "Kenarları içe kıvırıp uçları birleştirerek kayık şekli verin.",
+   "Kenarlara çırpılmış yumurta sürün.",
+   "İsteğe göre ortasına bir yumurta kırıp fırınlayabilirsiniz.",
+   "Önceden 220°C'ye ısıtılmış fırında kenarları kızarıp peynir eriyene kadar 15-18 dakika pişirin.",
+   "Sıcak sıcak, dilimleyerek servis edin."
+  ]
+ },
+ {
+  "name": "Yumurtalı Pide",
+  "description": "Kaşarlı pide hamurunun ortasına yumurta kırılarak fırınlanan, kahvaltıya da yakışan klasik pide.",
+  "type": "Hamur İşi",
+  "emoji": "🍳",
+  "duration": "1 sa 30 dk",
+  "servings": "4 kişilik",
+  "likes": 1080,
+  "tags": [
+   "Pide",
+   "Yumurtalı",
+   "Fırın",
+   "Kahvaltı"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Su",
+    "amount": "1 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Kaşar peyniri",
+    "amount": "200 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "3 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık suya maya ve bir tutam şeker ekleyip aktive edin.",
+   "Unu tuzla eleyip yumuşak hamur yoğurun, 1 saat mayalandırın.",
+   "Mayalanan hamuru ikiye bölüp uzun oval açın.",
+   "Ortasına rendelenmiş kaşarı boydan boya dizin.",
+   "Kenarları kıvırıp kayık şekli verin, uçları birleştirin.",
+   "Pideleri 220°C fırında 8-10 dakika, hamur yarı pişene kadar ön pişirin.",
+   "Fırından çıkarıp her pidenin ortasına birer yumurta kırın; yumurtayı önceden kırarsanız hamur pişmeden akar.",
+   "Kenarlarına biraz tereyağı koyup fırına geri verin.",
+   "Yumurtanın beyazı pişip sarısı kıvamlı kalana kadar 6-8 dakika daha pişirin.",
+   "Üzerine karabiber serpip sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Ramazan Pidesi",
+  "description": "Üzeri çörek otu ve susamla bezenmiş, yumuşacık içiyle iftar sofralarının vazgeçilmezi geleneksel pide.",
+  "type": "Hamur İşi",
+  "emoji": "🫓",
+  "duration": "2 sa",
+  "servings": "6 kişilik",
+  "likes": 1690,
+  "tags": [
+   "Pide",
+   "Ramazan",
+   "Fırın",
+   "Ekmek"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "4 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Su",
+    "amount": "1,5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta sarısı",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Susam",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Çörek otu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık suya maya ve bir tutam şeker ekleyip birkaç dakika köpürene kadar bekletin.",
+   "Unu tuzla eleyin, mayalı su ve 1 kaşık yoğurdu ekleyip yumuşak, hafif yapışkan bir hamur yoğurun; ramazan pidesi hamuru cıvık olmalı.",
+   "Hamurun üzerini örtüp ılık ortamda iki katına çıkana kadar 1 saat mayalandırın.",
+   "Mayalanan hamuru elinizi yağlayarak yağlanmış tepsiye alın, bastırarak yuvarlak-yassı bir forma yayın.",
+   "Üzerini örtüp 30 dakika daha mayalandırın.",
+   "Sos için yumurta sarısını kalan 1 kaşık yoğurtla çırpın.",
+   "Elinizi bu sosa batırıp hamurun üzerine bastırarak pidenin karakteristik kare desenlerini oluşturun; kenardan kabarık orta bölümler ayırın.",
+   "Yüzeye kalan sosu sürün, çörek otu ve susam serpin.",
+   "Önceden 250°C'ye (en yüksek dereceye) ısıtılmış fırında üzeri kızarana kadar 12-15 dakika pişirin.",
+   "Fırından çıkınca üzerine nemli bir bez örtün; bu, kabuğun yumuşacık kalmasını sağlar.",
+   "Ilıkken dilimleyip servis edin."
+  ]
+ },
+ {
+  "name": "Bazlama",
+  "description": "Sacda ya da tavada pişen, yumuşacık ve kabarık, kahvaltıların vazgeçilmezi geleneksel köy ekmeği.",
+  "type": "Hamur İşi",
+  "emoji": "🫓",
+  "duration": "1 sa 30 dk",
+  "servings": "6 kişilik",
+  "likes": 1310,
+  "tags": [
+   "Ekmek",
+   "Sac",
+   "Kahvaltı",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "4 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Ilık su",
+    "amount": "1 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Şeker",
+    "amount": "1 çay kaşığı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık suya maya ve şekeri ekleyip birkaç dakika köpürene kadar bekletin.",
+   "Geniş bir kaba unu eleyin, tuz ekleyin.",
+   "Mayalı su ve yoğurdu ekleyip ele yapışmayan yumuşak bir hamur yoğurun.",
+   "Hamurun üzerini nemli bezle örtüp ılık yerde iki katına çıkana kadar 1 saat mayalandırın.",
+   "Mayalanan hamuru yumruk büyüklüğünde bezelere ayırın, her bezeyi yuvarlayıp tekrar 15 dakika dinlendirin.",
+   "Her bezeyi unlanmış tezgahta yaklaşık 1 cm kalınlığında yuvarlak açın.",
+   "Sac veya kalın tabanlı tavayı orta ateşte iyice ısıtın; yağ sürmeyin.",
+   "Bazlamayı sıcak saca koyun; alt yüzü kabarcıklanıp kızarınca çevirin.",
+   "Diğer yüzü de kızarınca, piştiğini anlamak için kenarına bastırın; geri kabarıyorsa hazırdır.",
+   "Pişen bazlamaları üst üste koyup temiz bezle örtün; birbirlerinin buharıyla yumuşacık kalırlar.",
+   "Sıcakken tereyağı, peynir veya reçelle servis edin."
+  ]
+ },
+ {
+  "name": "Kete",
+  "description": "Kavrulmuş unlu iç harçla hazırlanan, Anadolu'nun yöresel çay saati hamur işi.",
+  "type": "Hamur İşi",
+  "emoji": "🥮",
+  "duration": "1 sa 15 dk",
+  "servings": "6 kişilik",
+  "likes": 720,
+  "tags": [
+   "Hamur İşi",
+   "Yöresel",
+   "Çay Saati",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "4 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "150 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "2 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Kabartma tozu",
+    "amount": "1 paket",
+    "emoji": "🧁",
+    "category": "other"
+   },
+   {
+    "name": "Ilık su",
+    "amount": "1/2 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "İç harç için bir tavada 100 gr tereyağını eritin, 1,5 su bardağı unu ekleyip kısık ateşte sürekli karıştırarak kavurun.",
+   "Un fındıksı bir renk ve koku alınca ocaktan alıp soğumaya bırakın; bu kavrulmuş iç ketenin lezzet sırrıdır.",
+   "Hamur için kalan unu, 1 yumurtayı, yoğurdu, eritilmiş kalan tereyağını, kabartma tozunu, tuzu ve ılık suyu yoğurup yumuşak bir hamur elde edin.",
+   "Hamurun üzerini örtüp 20 dakika dinlendirin.",
+   "Hamuru bezelere ayırın, her bezeyi elinizle veya oklavayla açın.",
+   "Açılan hamurun ortasına kavrulmuş iç harçtan koyun.",
+   "Hamurun kenarlarını ortaya katlayarak harcı kapatın ve hafifçe bastırıp yuvarlak veya kare şekil verin.",
+   "Keteleri yağlı tepsiye dizin, üzerlerine çırpılmış yumurta sarısı sürün.",
+   "Önceden 180°C'ye ısıtılmış fırında üzeri altın sarısı olana kadar 30-35 dakika pişirin.",
+   "Ilıyınca çayla servis edin."
+  ]
+ },
+ {
+  "name": "Tahinli Çörek",
+  "description": "Tahin ve şekerle rulolanıp burularak hazırlanan, çay yanına birebir yumuşacık çörek.",
+  "type": "Hamur İşi",
+  "emoji": "🌀",
+  "duration": "2 sa",
+  "servings": "8 kişilik",
+  "likes": 890,
+  "tags": [
+   "Hamur İşi",
+   "Tahinli",
+   "Çay Saati",
+   "Tatlımsı"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "4 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yaş maya",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍞",
+    "category": "grain"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Tahin",
+    "amount": "1 su bardağı",
+    "emoji": "🥣",
+    "category": "oil"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Yumurta sarısı",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Ilık süte mayayı ve 1 kaşık şekeri ekleyip birkaç dakika köpürene kadar bekletin.",
+   "Unu tuzla eleyin, mayalı süt ve sıvı yağı ekleyip yumuşak bir hamur yoğurun.",
+   "Üzerini örtüp iki katına çıkana kadar 1 saat mayalandırın.",
+   "İç harç için tahin ve toz şekeri ayrı bir kâsede karıştırıp akışkan bir macun yapın.",
+   "Mayalanan hamuru bezelere bölün, her bezeyi ince açın.",
+   "Açılan hamurun üzerine tahin-şeker karışımını ince bir tabaka halinde sürün.",
+   "Hamuru rulo yapıp uzun bir şerit oluşturacak şekilde sarın.",
+   "Ruloyu kendi etrafında burup salyangoz gibi kıvırarak çörek şekli verin.",
+   "Çörekleri yağlı tepsiye dizip 20 dakika dinlendirin, üzerlerine yumurta sarısı sürün.",
+   "Önceden 180°C'ye ısıtılmış fırında üzeri kızarana kadar 25-30 dakika pişirin.",
+   "Ilıyınca servis edin; yumuşacık dokusuyla çayın yanına yakışır."
+  ]
+ },
+ {
+  "name": "Tel Kadayıf",
+  "description": "Tereyağıyla kızaran tel kadayıfın cevizle katmanlanıp şerbetlendiği çıtır çıtır geleneksel tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍮",
+  "duration": "1 sa",
+  "servings": "8 kişilik",
+  "likes": 1580,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Cevizli",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Tel kadayıf",
+    "amount": "500 gr",
+    "emoji": "🍜",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "200 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1,5 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Şerbeti önce hazırlayın: şeker ve suyu tencerede kaynatın, kaynadıktan sonra kısık ateşte 12-15 dakika pişirin, en son limon suyunu ekleyip ocaktan alın ve soğumaya bırakın. Sıcak tatlıya soğuk şerbet dökülür.",
+   "Tel kadayıfı geniş bir kaba alıp elinizle didikleyerek açın; topak kalmasın.",
+   "Tereyağını eritip kadayıfın üzerine gezdirin ve her teline yağ değecek şekilde ovarak karıştırın.",
+   "Kadayıfın yarısını yağlı bir tepsiye elinizle bastırarak yayın.",
+   "Üzerine dövülmüş cevizi eşit şekilde serpin.",
+   "Kalan kadayıfı cevizin üzerine kapatıp elinizle iyice bastırın; sıkı bastırmak tatlının dağılmamasını sağlar.",
+   "Önceden 180°C'ye ısıtılmış fırında alt-üst kızarana kadar 30-35 dakika pişirin.",
+   "Alt kısmın da kızardığından emin olmak için tatlıyı isterseniz ters çevirip birkaç dakika daha pişirebilirsiniz.",
+   "Fırından çıkar çıkmaz soğumuş şerbeti kızgın tatlının üzerine eşit şekilde gezdirin; sıcak-soğuk farkı çıtırlığı sağlar.",
+   "Şerbeti çekmesi için 30 dakika bekletin.",
+   "Dilimleyip üzerine ceviz veya Antep fıstığı serperek servis edin."
+  ]
+ },
+ {
+  "name": "Muhallebi",
+  "description": "Süt, şeker ve nişastayla pişen, gül suyuyla kokulandırılan hafif ve kadifemsi klasik sütlü tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍮",
+  "duration": "30 dk (+ soğutma)",
+  "servings": "5 kişilik",
+  "likes": 1240,
+  "tags": [
+   "Tatlı",
+   "Sütlü",
+   "Hafif",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Süt",
+    "amount": "1 litre",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3/4 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Un",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Gül suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌹",
+    "category": "other"
+   },
+   {
+    "name": "Antep fıstığı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌰",
+    "category": "nut"
+   }
+  ],
+  "steps": [
+   "Bir bardak sütü ayırın; içine nişasta ve unu ekleyip topak kalmayacak şekilde çırpın.",
+   "Kalan sütü ve şekeri tencereye alıp orta ateşte ısıtın.",
+   "Süt ısınınca nişastalı karışımı azar azar, sürekli çırparak ekleyin; birden dökmek topak yapar.",
+   "Karışımı tahta kaşıkla, tencerenin dibini sıyırarak sürekli karıştırın.",
+   "Muhallebi koyulaşıp kaşığı kaplayan kıvama gelene kadar kısık ateşte pişirin; kıvam almadan ocaktan almayın.",
+   "Ocaktan almadan 1-2 dakika önce gül suyunu ekleyip karıştırın.",
+   "Muhallebiyi servis kâselerine paylaştırın.",
+   "Üzerinde kaymak tutmaması için ılıyana kadar ara ara karıştırabilir veya streç filmi yüzeye değdirebilirsiniz.",
+   "Buzdolabında en az 2 saat soğutun.",
+   "Servis ederken üzerine dövülmüş Antep fıstığı serpin."
+  ]
+ },
+ {
+  "name": "Keşkül",
+  "description": "Bademle zenginleştirilen, hindistan cevizi ve fıstıkla süslenen kadifemsi Osmanlı sütlü tatlısı.",
+  "type": "Tatlı",
+  "emoji": "🥥",
+  "duration": "40 dk (+ soğutma)",
+  "servings": "5 kişilik",
+  "likes": 940,
+  "tags": [
+   "Tatlı",
+   "Sütlü",
+   "Bademli",
+   "Osmanlı"
+  ],
+  "ingredients": [
+   {
+    "name": "Süt",
+    "amount": "1 litre",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Badem",
+    "amount": "1 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Pirinç unu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta sarısı",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Hindistan cevizi",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥥",
+    "category": "nut"
+   }
+  ],
+  "steps": [
+   "Bademleri kaynar suda birkaç dakika bekletip kabuklarını soyun, sonra biraz sütle blenderdan geçirerek badem sütü elde edin. Keşkülün lezzeti bademden gelir.",
+   "Bir bardak sütü ayırıp nişasta ve pirinç ununu içinde çırpın.",
+   "Kalan süt, badem püresi ve şekeri tencereye alıp ısıtın.",
+   "Nişastalı karışımı sürekli çırparak azar azar ekleyin.",
+   "Tahta kaşıkla karıştırarak koyulaşana kadar kısık ateşte pişirin.",
+   "Bir kâsede yumurta sarısını çırpıp üzerine tatlıdan birkaç kaşık ekleyerek sıcaklığını dengeleyin, sonra tencereye ekleyin; yumurta tatlıya parlaklık ve kıvam katar.",
+   "1-2 dakika daha pişirip ocaktan alın.",
+   "Servis kâselerine paylaştırın.",
+   "Buzdolabında en az 2 saat soğutun.",
+   "Üzerine hindistan cevizi ve dövülmüş fıstık serperek servis edin."
+  ]
+ },
+ {
+  "name": "Tavuk Göğsü",
+  "description": "İnce didiklenmiş tavuk lifleriyle hazırlanan, dokusuyla şaşırtan ünlü Osmanlı saray tatlısı.",
+  "type": "Tatlı",
+  "emoji": "🍮",
+  "duration": "1 sa (+ soğutma)",
+  "servings": "6 kişilik",
+  "likes": 860,
+  "tags": [
+   "Tatlı",
+   "Sütlü",
+   "Osmanlı",
+   "Saray"
+  ],
+  "ingredients": [
+   {
+    "name": "Tavuk göğsü",
+    "amount": "1 adet",
+    "emoji": "🍗",
+    "category": "meat"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 litre",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Pirinç unu",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Tarçın",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tavuk göğsünü tuzsuz suda haşlayın; kılçıksız, sinirsiz olmasına dikkat edin.",
+   "Haşlanan tavuğu soğuk suda birkaç kez yıkayın, sonra iyice sıkıp tel tel didikleyin ve mümkünse tekrar yıkayarak koku ve tadını iyice giderin. Bu işlem tatlıda tavuk tadı kalmamasını sağlar.",
+   "Didiklenmiş lifleri az sütle biraz bekletip iyice yumuşatın, sonra parmak uçlarınızla lif lif ovarak inceltin.",
+   "Bir bardak sütte pirinç unu ve nişastayı çırpın.",
+   "Kalan süt ve şekeri tencerede ısıtın, nişastalı karışımı azar azar ekleyip karıştırın.",
+   "Yumuşamış tavuk liflerini ekleyip sürekli karıştırarak koyulaşana kadar pişirin.",
+   "Kıvam alınca 2-3 dakika daha pişirip ocaktan alın.",
+   "Yağlanmış bir tepsiye dökün ve üzerini düzleştirin.",
+   "Buzdolabında en az 3 saat soğutup kıvam almasını bekleyin.",
+   "Kare veya dikdörtgen dilimleyip, isterseniz rulo yaparak üzerine tarçın serpip servis edin."
+  ]
+ },
+ {
+  "name": "Supangle",
+  "description": "Çikolatalı, yoğun ve kremamsı dokusuyla sevilen, üzeri fındık veya bisküviyle süslenen modern klasik.",
+  "type": "Tatlı",
+  "emoji": "🍫",
+  "duration": "30 dk (+ soğutma)",
+  "servings": "6 kişilik",
+  "likes": 1720,
+  "tags": [
+   "Tatlı",
+   "Çikolatalı",
+   "Sütlü",
+   "Soğuk"
+  ],
+  "ingredients": [
+   {
+    "name": "Süt",
+    "amount": "1 litre",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Un",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Kakao",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🍫",
+    "category": "other"
+   },
+   {
+    "name": "Bitter çikolata",
+    "amount": "100 gr",
+    "emoji": "🍫",
+    "category": "other"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Bisküvi",
+    "amount": "8 adet",
+    "emoji": "🍪",
+    "category": "grain"
+   }
+  ],
+  "steps": [
+   "Servis kaselerinin dibine birer bisküvi yerleştirin; supangle geleneksel olarak bisküvi üzerine dökülür.",
+   "Bir kâsede un, nişasta ve kakaoyu bir miktar sütle topak kalmayacak şekilde çırpın.",
+   "Kalan süt ve şekeri tencereye alıp ısıtın.",
+   "Kakaolu karışımı azar azar, sürekli çırparak sıcak süte ekleyin.",
+   "Tahta kaşıkla karıştırarak koyu, puding kıvamına gelene kadar kısık ateşte pişirin.",
+   "Ocaktan almadan kırılmış bitter çikolata ve tereyağını ekleyip pürüzsüz olana kadar karıştırın; çikolata tatlıya yoğunluk katar.",
+   "Sıcak karışımı bisküvilerin üzerine paylaştırın.",
+   "Üzerinde kaymak tutmaması için streç filmi yüzeye değdirin.",
+   "Buzdolabında en az 3 saat soğutun.",
+   "Servis ederken üzerine rendelenmiş çikolata veya dövülmüş fındık serpin."
+  ]
+ },
+ {
+  "name": "Zerde",
+  "description": "Safranla sarıya boyanan, pirinçle pişip kuruyemişle süslenen düğün sofralarının geleneksel şerbetli tatlısı.",
+  "type": "Tatlı",
+  "emoji": "🍚",
+  "duration": "50 dk (+ soğutma)",
+  "servings": "6 kişilik",
+  "likes": 640,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Safranlı",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Pirinç",
+    "amount": "1 su bardağı",
+    "emoji": "🍚",
+    "category": "grain"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "2 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "6 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Safran",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌼",
+    "category": "spice"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Kuş üzümü",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍇",
+    "category": "fruit"
+   },
+   {
+    "name": "Gül suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌹",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Safranı birkaç kaşık ılık suda ezip 15 dakika bekletin; suyu canlı sarı rengini alsın. Zerdenin rengi ve kokusu safrandan gelir.",
+   "Pirinci yıkayıp tencereye alın, 6 su bardağı su ekleyip taneler iyice yumuşayana, hatta hafif dağılana kadar pişirin.",
+   "Şekeri ekleyip eriyene kadar karıştırın.",
+   "Safranlı suyu ekleyin; zerde canlı sarıya döner.",
+   "Nişastayı biraz soğuk suda ezip azar azar ekleyin ve karıştırarak hafifçe kıvam almasını sağlayın; zerde muhallebiden daha akışkan olmalı.",
+   "Kuş üzümünü ekleyip 5 dakika daha kaynatın.",
+   "Ocaktan almadan gül suyunu ekleyin.",
+   "Zerdeyi servis kâselerine paylaştırın.",
+   "Buzdolabında en az 3 saat iyice soğutun; zerde soğuk servis edilir.",
+   "Üzerine ceviz, fıstık ve nar taneleriyle süsleyip servis edin."
+  ]
+ },
+ {
+  "name": "Ayva Tatlısı",
+  "description": "Ayvanın şekerli suda pembeleşene kadar pişip kaymakla sunulduğu, kışın vazgeçilmez tatlısı.",
+  "type": "Tatlı",
+  "emoji": "🍐",
+  "duration": "1 sa 30 dk",
+  "servings": "6 kişilik",
+  "likes": 1080,
+  "tags": [
+   "Tatlı",
+   "Meyveli",
+   "Kış",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Ayva",
+    "amount": "3 adet",
+    "emoji": "🍐",
+    "category": "fruit"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "2 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "2 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Karanfil",
+    "amount": "6 adet",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Kaymak",
+    "amount": "150 gr",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   }
+  ],
+  "steps": [
+   "Ayvaları yıkayıp ikiye bölün, kaşıkla çekirdek yuvasını oyun. Kabuklarını ve çekirdeklerini atmayın.",
+   "Ayvaların içini oyduğunuz kısma ve kesik yüzlere limon sürün; ayva havayla temas edince kararır.",
+   "Ayvaları kesik yüzü yukarı gelecek şekilde geniş bir tencereye dizin.",
+   "Ayrılan kabuk ve çekirdekleri tülbente sarıp ayvaların arasına yerleştirin; çekirdekteki doğal pektin tatlıya kıvam ve pembe renk verir.",
+   "Her ayvanın oyuğuna karanfil ve şeker koyun, kalan şekeri tencereye serpin.",
+   "2 su bardağı suyu kenardan ekleyip kapağı kapatın.",
+   "Kısık ateşte ayvalar iyice yumuşayana ve rengi koyu pembe-kırmızıya dönene kadar 1-1,5 saat pişirin; renk için sabır gerekir.",
+   "Şerbet koyulaşıp ayvalar pişince ocaktan alıp tenceresinde soğutun.",
+   "Servis ederken ayvaların oyuğuna kaymak koyun.",
+   "Üzerine dövülmüş ceviz serpip şerbetiyle sunun."
+  ]
+ },
+ {
+  "name": "İncir Tatlısı",
+  "description": "Kuru incirlerin sütlü şerbette şişip cevizle doldurulduğu, kaymakla sunulan yöresel tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍯",
+  "duration": "50 dk (+ soğutma)",
+  "servings": "6 kişilik",
+  "likes": 720,
+  "tags": [
+   "Tatlı",
+   "Kuru İncir",
+   "Cevizli",
+   "Kış"
+  ],
+  "ingredients": [
+   {
+    "name": "Kuru incir",
+    "amount": "12 adet",
+    "emoji": "🍈",
+    "category": "fruit"
+   },
+   {
+    "name": "Süt",
+    "amount": "3 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Su",
+    "amount": "1 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Kaymak",
+    "amount": "100 gr",
+    "emoji": "🥛",
+    "category": "dairy"
+   }
+  ],
+  "steps": [
+   "Kuru incirlerin sert sap kısmını çıkarın, ılık suda 15 dakika bekletip yumuşamaya başlamasını sağlayın.",
+   "İncirleri süzün; her incirin alt kısmından parmakla bastırarak küçük bir cep açın.",
+   "Açtığınız cebe birer parça ceviz yerleştirin.",
+   "Geniş bir tencereye süt, su ve şekeri koyup ısıtın.",
+   "Cevizli incirleri şerbetin içine dik olarak dizin.",
+   "Kısık ateşte incirler iyice şişip yumuşayana ve şerbet koyulaşana kadar 30-35 dakika pişirin.",
+   "İncirler pişince ocaktan alıp tenceresinde soğumaya bırakın; soğudukça şerbeti daha iyi emerler.",
+   "Buzdolabında en az 2 saat dinlendirin.",
+   "Servis ederken her incirin üzerine bir parça kaymak koyun.",
+   "Kalan şerbetle birlikte, üzerine biraz daha ceviz serperek sunun."
+  ]
+ },
+ {
+  "name": "Trileçe",
+  "description": "Üç sütle ıslatılan pandispanyanın karamelli sosla kaplandığı Balkan kökenli ıslak süt tatlısı.",
+  "type": "Tatlı",
+  "emoji": "🍰",
+  "duration": "1 sa (+ soğutma)",
+  "servings": "8 kişilik",
+  "likes": 1650,
+  "tags": [
+   "Tatlı",
+   "Sütlü",
+   "Karamelli",
+   "Islak Kek"
+  ],
+  "ingredients": [
+   {
+    "name": "Yumurta",
+    "amount": "4 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "1,5 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Süt",
+    "amount": "2,5 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Krema",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Kondanse süt",
+    "amount": "1 kutu",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   }
+  ],
+  "steps": [
+   "Kek için yumurta ve 1 su bardağı şekeri, hacmi artıp rengi açılana kadar mikserle uzun süre çırpın; bu köpük keke hafiflik verir.",
+   "Elenmiş unu spatula ile nazikçe, köpüğü söndürmeden karıştırın.",
+   "Harcı yağlanmış tepsiye döküp önceden 180°C'ye ısıtılmış fırında 20-25 dakika pişirin, üzeri kızarınca çıkarın.",
+   "Islatma sosu için 1,5 su bardağı süt, kremanın yarısı ve kondanse sütü karıştırın.",
+   "Kek ılıyınca çatalla her yerine delikler açın; delikler sosun içe işlemesini sağlar.",
+   "Süt karışımını kekin üzerine yavaş yavaş, tamamı emilene kadar dökün.",
+   "Keki buzdolabında en az 3 saat, tercihen bir gece dinlendirin ki sütü tam çeksin.",
+   "Karamel için kalan 1/2 su bardağı şekeri tavada eritin, altın rengi olunca tereyağı ve kalan sütü/kremayı dikkatle ekleyip karıştırın; sıçrayabilir, dikkatli olun.",
+   "Karamel ılıyınca kekin üzerine eşit şekilde dökün.",
+   "Tekrar 1 saat soğutup dilimleyerek servis edin."
+  ]
+ },
+ {
+  "name": "Sütlü Nuriye",
+  "description": "Baklava katlarının cevizle hazırlanıp şerbet yerine sıcak sütle ıslatıldığı hafif ve sütlü baklava.",
+  "type": "Tatlı",
+  "emoji": "🥛",
+  "duration": "1 sa 15 dk",
+  "servings": "10 kişilik",
+  "likes": 980,
+  "tags": [
+   "Tatlı",
+   "Sütlü",
+   "Cevizli",
+   "Baklava"
+  ],
+  "ingredients": [
+   {
+    "name": "Baklavalık yufka",
+    "amount": "10 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "200 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 litre",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "2 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Tereyağını eritin; yufkaları yağlamak için hazır tutun.",
+   "Yağlı tepsiye 5 yufkayı, her katın arasına eritilmiş tereyağı sürerek dizin.",
+   "Üzerine dövülmüş cevizi eşit şekilde serpin.",
+   "Kalan 5 yufkayı yine aralarına yağ sürerek üzerine kapatın.",
+   "En üst yufkaya da bolca tereyağı sürün.",
+   "Keskin bıçakla baklava dilimleri şeklinde kesin; kesim, sütün içe işlemesini kolaylaştırır.",
+   "Önceden 180°C'ye ısıtılmış fırında üzeri altın sarısı ve çıtır olana kadar 35-40 dakika pişirin.",
+   "Süt ve şekeri ayrı bir tencerede kaynatın; şeker eriyince ocaktan alın.",
+   "Fırından yeni çıkmış kızgın tatlının üzerine sıcak sütü yavaş yavaş gezdirin; sütlü nuriyede hem tatlı hem süt sıcak olur.",
+   "Sütü çekmesi için 1 saat bekletin.",
+   "Dilimleyip üzerine hindistan cevizi veya fıstık serperek servis edin."
+  ]
+ },
+ {
+  "name": "Şöbiyet",
+  "description": "İnce yufka katlarının kaymaklı ve fıstıklı harçla üçgen katlanıp şerbetlendiği zarif baklava çeşidi.",
+  "type": "Tatlı",
+  "emoji": "🔺",
+  "duration": "1 sa 30 dk",
+  "servings": "10 kişilik",
+  "likes": 1120,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Fıstıklı",
+   "Baklava"
+  ],
+  "ingredients": [
+   {
+    "name": "Baklavalık yufka",
+    "amount": "10 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   },
+   {
+    "name": "Antep fıstığı",
+    "amount": "1,5 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Kaymak",
+    "amount": "250 gr",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "İrmik",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Süt",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "200 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Şerbeti önce yapın: şeker ve suyu 15 dakika kaynatıp limon suyunu ekleyin, soğumaya bırakın.",
+   "İç harç için süt ve irmiği kısık ateşte koyulaşana kadar pişirip muhallebimsi bir kıvam elde edin, soğuyunca kaymakla karıştırın.",
+   "Tereyağını eritin.",
+   "İki yufkayı üst üste koyup aralarına tereyağı sürün, kareler halinde kesin.",
+   "Her karenin ortasına bir tatlı kaşığı kaymaklı harç ve dövülmüş fıstık koyun.",
+   "Karenin köşelerini ortada birleştirerek üçgen veya zarf şeklinde katlayın; birleşim yerini iyice bastırın.",
+   "Şöbiyetleri yağlı tepsiye ekleme yeri altta kalacak şekilde dizin, üzerlerine tereyağı gezdirin.",
+   "Önceden 180°C'ye ısıtılmış fırında altın sarısı olana kadar 30-35 dakika pişirin.",
+   "Fırından çıkar çıkmaz soğuk şerbeti kızgın tatlının üzerine gezdirin.",
+   "Şerbeti çekmesi için 30 dakika bekletin.",
+   "Üzerine fıstık serpip servis edin."
+  ]
+ },
+ {
+  "name": "Sarığı Burma",
+  "description": "Yufkanın oklavaya sarılıp büzülerek sarık şekli verilip cevizle şerbetlendiği kıvrımlı baklava.",
+  "type": "Tatlı",
+  "emoji": "🌀",
+  "duration": "1 sa 15 dk",
+  "servings": "10 kişilik",
+  "likes": 890,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Cevizli",
+   "Baklava"
+  ],
+  "ingredients": [
+   {
+    "name": "Baklavalık yufka",
+    "amount": "8 adet",
+    "emoji": "🫓",
+    "category": "grain"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "200 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Şerbeti önceden hazırlayın: şeker-suyu 15 dakika kaynatıp limon ekleyin, soğutun.",
+   "Cevizleri iri iri dövün.",
+   "Bir yufkayı tezgaha serin, üzerine eritilmiş tereyağı sürün.",
+   "Yufkanın bir kenarına boydan boya dövülmüş ceviz serpin.",
+   "Oklavayı ceviz olan kenara koyup yufkayı oklava üzerine sararak rulo yapın.",
+   "Rulo oklavanın üzerindeyken iki elinizle ortaya doğru büzüştürün; bu büzüşme sarık deseni oluşturur.",
+   "Oklavayı nazikçe çekip çıkarın, büzülmüş ruloyu tepsiye yuvarlak veya U şeklinde yerleştirin.",
+   "Tüm yufkalarla aynısını yapıp tepsiyi doldurun, üzerlerine kalan tereyağını gezdirin.",
+   "Önceden 170°C'ye ısıtılmış fırında altın sarısı olana kadar 35-40 dakika pişirin.",
+   "Fırından çıkınca soğuk şerbeti kızgın tatlının üzerine dökün.",
+   "Şerbeti çektikten sonra dilimleyip servis edin."
+  ]
+ },
+ {
+  "name": "Kalburabastı",
+  "description": "Kalbur deseni verilen irmikli hamurun cevizle doldurulup kızartılıp şerbetlendiği geleneksel tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍯",
+  "duration": "1 sa 15 dk",
+  "servings": "8 kişilik",
+  "likes": 940,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Cevizli",
+   "İrmikli"
+  ],
+  "ingredients": [
+   {
+    "name": "Un",
+    "amount": "3 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "İrmik",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "125 gr",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Kabartma tozu",
+    "amount": "1 paket",
+    "emoji": "🧁",
+    "category": "other"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "3 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Şerbeti önceden hazırlayın: şeker ve suyu 15 dakika kaynatıp limon suyunu ekleyin, soğumaya bırakın.",
+   "Bir kaba oda sıcaklığındaki tereyağı, yoğurt, yumurta ve irmiği koyup karıştırın, 15 dakika bekletin ki irmik şişsin.",
+   "Kabartma tozu ve unu ekleyip yumuşak, ele yapışmayan bir hamur yoğurun; fazla yoğurmayın, sertleşir.",
+   "Hamurdan ceviz büyüklüğünde parçalar alın, ortasına birer ceviz koyup kapatarak oval şekil verin.",
+   "Her parçayı kalbur, rende veya çatal arkasına bastırarak desen verin; bu desen şerbeti daha iyi tutar.",
+   "Desenli tatlıları yağlı tepsiye dizin.",
+   "Önceden 180°C'ye ısıtılmış fırında üzerleri altın sarısı olana kadar 25-30 dakika pişirin.",
+   "Fırından çıkar çıkmaz soğuk şerbeti sıcak tatlıların üzerine dökün.",
+   "Şerbeti emmeleri için en az 30 dakika bekletin.",
+   "Şerbetini çekince servis edin."
+  ]
+ },
+ {
+  "name": "Hanım Göbeği",
+  "description": "Ortası çukur şekillendirilmiş hafif hamurun kızartılıp şerbete atıldığı, lokmayı andıran şerbetli tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍩",
+  "duration": "1 sa",
+  "servings": "8 kişilik",
+  "likes": 860,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Kızartma",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Su",
+    "amount": "1,5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "İrmik",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "3 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   }
+  ],
+  "steps": [
+   "Şerbet için 3 su bardağı şeker ile 3 su bardağı suyu 15 dakika kaynatıp limon ekleyin ve soğutun; hamur sıcak, şerbet soğuk olacak.",
+   "Bir tencerede 1,5 su bardağı su ve tereyağını kaynatın.",
+   "Kaynayan suya un ve irmiği ekleyip topak kalmayacak şekilde hızla karıştırın, tencerenin dibini bırakan bir hamur olana kadar kısık ateşte pişirin.",
+   "Hamuru geniş bir kaba alıp ılıması için bekletin; sıcak hamura yumurta eklerseniz pişer.",
+   "Ilıyan hamura yumurtaları teker teker ekleyip her seferinde iyice çırparak pürüzsüz, parlak bir kıvam elde edin.",
+   "Elinizi ıslatıp hamurdan ceviz büyüklüğünde parçalar alın, yuvarlayıp ortasına parmağınızla çukur açın; bu çukur hanım göbeğinin imzasıdır.",
+   "Sıvı yağı bir tavada ILIK olacak şekilde ısıtın; tatlıyı ılık yağa atıp yavaş yavaş kızdırmak içinin de pişmesini sağlar.",
+   "Tatlıları ılık yağa dizip ateşi yavaşça artırarak, çevirerek altın sarısı olana kadar kızartın.",
+   "Kızaran tatlıları kevgirle alıp doğrudan soğuk şerbete atın.",
+   "5 dakika şerbette bekletip servis tabağına alın, üzerine kaymak veya fıstıkla sunun."
+  ]
+ },
+ {
+  "name": "Kemalpaşa Tatlısı",
+  "description": "Peynirli küçük topların fırınlanıp şerbette şişerek yumuşadığı, Bursa yöresine özgü şerbetli tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍮",
+  "duration": "1 sa",
+  "servings": "8 kişilik",
+  "likes": 780,
+  "tags": [
+   "Tatlı",
+   "Şerbetli",
+   "Peynirli",
+   "Bursa"
+  ],
+  "ingredients": [
+   {
+    "name": "Taze peynir",
+    "amount": "250 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "İrmik",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Un",
+    "amount": "1,5 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Kabartma tozu",
+    "amount": "1 paket",
+    "emoji": "🧁",
+    "category": "other"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "3 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "4 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Şerbeti önce hazırlayın: şeker ve suyu 15 dakika kaynatıp limon suyunu ekleyin, ocaktan alın. Kemalpaşa'da şerbet sıcak kullanılır.",
+   "Rendelenmiş taze peyniri bir kaba alın, irmik, yumurta ve kabartma tozunu ekleyin.",
+   "Unu azar azar ekleyerek yumuşak, hafif nemli bir hamur yoğurun; sertleştirmeyin, aksi halde şerbeti çekmez.",
+   "Hamuru 15 dakika dinlendirin.",
+   "Hamurdan küçük cevizden ufak parçalar alıp avucunuzda pürüzsüz toplar yapın, hafifçe bastırın.",
+   "Topları yağlı tepsiye aralıklı dizin; fırında ve şerbette şişeceklerdir.",
+   "Önceden 180°C'ye ısıtılmış fırında üzerleri altın sarısı olana kadar 20-25 dakika pişirin.",
+   "Sıcak tatlıları geniş bir tencereye alın.",
+   "Üzerlerine sıcak şerbeti dökün ve kısık ateşte, şerbeti çekip şişene kadar 8-10 dakika kaynatın.",
+   "Ocaktan alıp biraz dinlendirin, üzerine ceviz veya fıstık serperek servis edin."
+  ]
+ },
+ {
+  "name": "Lokum",
+  "description": "Nişasta ve şekerle uzun uzun pişirilip pudra şekerine bulanan, Türk mutfağının dünyaca ünlü kesme şekerlemesi.",
+  "type": "Tatlı",
+  "emoji": "🍬",
+  "duration": "1 sa 30 dk (+ dinlenme)",
+  "servings": "10 kişilik",
+  "likes": 1340,
+  "tags": [
+   "Tatlı",
+   "Şekerleme",
+   "Geleneksel",
+   "İkramlık"
+  ],
+  "ingredients": [
+   {
+    "name": "Toz şeker",
+    "amount": "4 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Su",
+    "amount": "5 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Nişasta",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Gül suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🌹",
+    "category": "other"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Pudra şekeri",
+    "amount": "1/2 su bardağı",
+    "emoji": "🍥",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Şeker ve 2 su bardağı suyu tencerede kaynatıp şeker şurubu hazırlayın, limon suyunu ekleyin; limon şekerin kristalleşmesini önler.",
+   "Ayrı bir tencerede nişastayı 3 su bardağı suyla topak kalmayacak şekilde çırpın.",
+   "Nişastalı karışımı orta ateşte, sürekli karıştırarak koyulaşmaya başlayana kadar pişirin.",
+   "Şeker şurubunu nişastalı karışıma azar azar, karıştırarak ekleyin.",
+   "Karışımı kısık ateşte, tahta kaşıkla sürekli karıştırarak uzun süre (yaklaşık 45-60 dakika) pişirin; lokum cam gibi şeffaf, esnek ve amber renginde olana kadar sabırla karıştırın. Bu adımın sırrı sabırdır.",
+   "Kıvam gelince gül suyu ve dövülmüş cevizi ekleyip karıştırın.",
+   "Nişasta serpilmiş veya yağlı kağıt serili bir tepsiye karışımı döküp düzleştirin.",
+   "Oda sıcaklığında en az 4-5 saat, tercihen bir gece dinlendirip donmasını sağlayın.",
+   "Bıçağı hafif yağlayıp lokumu kare parçalar halinde kesin.",
+   "Parçaları pudra şekeri ve nişasta karışımına bulayıp servis edin; birbirine yapışmasını bu toz önler."
+  ]
+ },
+ {
+  "name": "Sahanda Yumurta",
+  "description": "Tereyağında kenarları çıtırlaşana kadar pişen, sarısı akışkan kalan klasik kahvaltı yumurtası.",
+  "type": "Kahvaltılık",
+  "emoji": "🍳",
+  "duration": "10 dk",
+  "servings": "2 kişilik",
+  "likes": 1180,
+  "tags": [
+   "Kahvaltı",
+   "Yumurta",
+   "Pratik",
+   "Klasik"
+  ],
+  "ingredients": [
+   {
+    "name": "Yumurta",
+    "amount": "4 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Küçük bir sahan veya yapışmaz tavayı orta ateşte ısıtın.",
+   "Tereyağını tavaya ekleyip eritin; köpürmesi geçip hafif renk almaya başlayınca yumurtaları kırın.",
+   "Yumurtaları teker teker, sarısını dağıtmadan tavaya kırın.",
+   "Ateşi kısın; sarının akışkan kalması için yumurtayı yüksek ateşte pişirmeyin.",
+   "Kenarları kızarıp beyazı tamamen donana kadar 3-4 dakika pişirin.",
+   "İsterseniz tavaya birkaç damla su ekleyip kapağı kapatarak üstünün de buğuda pişmesini sağlayın.",
+   "Tuzu yumurtanın beyazına serpin; sarıya tuz koymak beneklenmeye yol açar.",
+   "Ocaktan alıp üzerine karabiber ve pul biber serpin.",
+   "Tavası veya sahanıyla sıcak sıcak, taze ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Bal Kaymak",
+  "description": "Yöresel kaymağın süzme balla buluştuğu, kahvaltı sofralarının en sade ama en makbul ikilisi.",
+  "type": "Kahvaltılık",
+  "emoji": "🍯",
+  "duration": "5 dk",
+  "servings": "4 kişilik",
+  "likes": 1420,
+  "tags": [
+   "Kahvaltı",
+   "Tatlımsı",
+   "Pratik",
+   "Geleneksel"
+  ],
+  "ingredients": [
+   {
+    "name": "Kaymak",
+    "amount": "250 gr",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Bal",
+    "amount": "150 gr",
+    "emoji": "🍯",
+    "category": "other"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/4 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   }
+  ],
+  "steps": [
+   "Kaymağı servisten yaklaşık 15 dakika önce buzdolabından çıkarın; oda sıcaklığındaki kaymak daha kolay dağılır ve aroması açılır.",
+   "Kaymağı düz bir servis tabağına dilimleyerek veya olduğu gibi ortaya yerleştirin.",
+   "Balı bir kâseye alın; katı balsa hafifçe ısıtıp akışkanlaştırabilirsiniz.",
+   "Balı kaymağın yanına veya üzerine gezdirin; kaymağın içine karıştırmayın, ikisi tabakta yan yana dursun.",
+   "İsterseniz üzerine iri dövülmüş ceviz serpin.",
+   "Taze, sıcak ekmek veya bazlama ile servis edin.",
+   "Kahvaltıda çayla birlikte, ekmeğe kaymak sürüp üzerine bal gezdirerek tüketin."
+  ]
+ },
+ {
+  "name": "Pastırmalı Yumurta",
+  "description": "Çemenli pastırma dilimlerinin tereyağında soteleşip üzerine yumurta kırılan meşhur Kayseri kahvaltısı.",
+  "type": "Kahvaltılık",
+  "emoji": "🍳",
+  "duration": "15 dk",
+  "servings": "2 kişilik",
+  "likes": 1260,
+  "tags": [
+   "Kahvaltı",
+   "Pastırma",
+   "Yumurta",
+   "Kayseri"
+  ],
+  "ingredients": [
+   {
+    "name": "Pastırma",
+    "amount": "100 gr",
+    "emoji": "🥓",
+    "category": "meat"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "4 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Pastırmaların çemenini bırakın; çemen pişerken çözülüp yemeğe kokusunu verir. Dilimleri ikiye bölün.",
+   "Sahan veya yapışmaz tavada tereyağını eritin.",
+   "Pastırma dilimlerini tavaya dizip kısık ateşte her iki yüzünü 1-2 dakika soteleyin; pastırma kuruyup sertleşmesin diye fazla pişirmeyin.",
+   "Pastırmalar kıvrılıp yağı çıkmaya başlayınca aralarına yumurtaları kırın.",
+   "Ateşi kısın, yumurtaların sarısını akışkan bırakmak için yüksek ateşte pişirmeyin.",
+   "Beyazları donana kadar 3-4 dakika pişirin.",
+   "Yumurtaların beyazına hafifçe tuz serpin.",
+   "Üzerine karabiber ekleyip ocaktan alın.",
+   "Sıcak sıcak, tavasıyla birlikte taze ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Köpoğlu",
+  "description": "Kızarmış patlıcan ve biberlerin sarımsaklı yoğurtla buluştuğu, meze tabaklarının serinletici lezzeti.",
+  "type": "Meze",
+  "emoji": "🍆",
+  "duration": "30 dk",
+  "servings": "4 kişilik",
+  "likes": 720,
+  "tags": [
+   "Meze",
+   "Patlıcan",
+   "Yoğurtlu",
+   "Rakı Sofrası"
+  ],
+  "ingredients": [
+   {
+    "name": "Patlıcan",
+    "amount": "3 adet",
+    "emoji": "🍆",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "3 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Süzme yoğurt",
+    "amount": "1 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1/2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Patlıcanları alacalı soyup küp doğrayın, tuzlu suda 15 dakika bekletip acısını alın ve iyice süzün.",
+   "Biberleri ve domatesleri de küçük küpler halinde doğrayın.",
+   "Tavada sıvı yağı kızdırıp patlıcanları altın rengi olana kadar kızartın, kâğıt havluya alın.",
+   "Aynı yağda biberleri soteleyip alın.",
+   "Yağın bir kısmını dökün, kalan yağda salçayı 1 dakika kavurup domatesleri ekleyin ve suyunu çektirin.",
+   "Kızarmış patlıcan ve biberleri domatesli sosla harmanlayıp tuzlayın, ocaktan alıp ılıtın.",
+   "Süzme yoğurdu ezilmiş sarımsak ve tuzla çırpın.",
+   "Servis tabağına önce sarımsaklı yoğurdu yayın.",
+   "Üzerine ılıtılmış patlıcanlı karışımı yerleştirin.",
+   "İsteğe göre üzerine tereyağı-pul biber sosu gezdirip servis edin; ekmekle harika gider."
+  ]
+ },
+ {
+  "name": "Girit Ezmesi",
+  "description": "Beyaz peynir, ceviz ve otların dövülerek harmanlandığı, Ege'nin meşhur yeşil mezesi.",
+  "type": "Meze",
+  "emoji": "🧀",
+  "duration": "15 dk",
+  "servings": "4 kişilik",
+  "likes": 810,
+  "tags": [
+   "Meze",
+   "Peynirli",
+   "Ege",
+   "Rakı Sofrası"
+  ],
+  "ingredients": [
+   {
+    "name": "Beyaz peynir",
+    "amount": "200 gr",
+    "emoji": "🧀",
+    "category": "dairy"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Dereotu",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil soğan",
+    "amount": "3 dal",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Beyaz peyniri bir kaba alıp çatalla iyice ezin; taş havanda döverseniz daha kremamsı olur.",
+   "Cevizleri bıçakla iri iri kıyın; toz haline getirmeyin, hafif çıtırlık kalsın.",
+   "Dereotu ve yeşil soğanı ince ince kıyın.",
+   "Ezilmiş peynire cevizleri ekleyin.",
+   "Kıyılmış dereotu ve yeşil soğanı ilave edin.",
+   "Zeytinyağı ve limon suyunu ekleyip tüm malzemeyi karıştırın; peynir tuzlu olduğu için ekstra tuza genelde gerek kalmaz.",
+   "Kıvamı sevmediyseniz biraz daha zeytinyağıyla yumuşatın.",
+   "Üzerine pul biber serpin.",
+   "Servis tabağına alıp zeytinyağı gezdirerek, taze ekmek veya lavaşla soğuk servis edin."
+  ]
+ },
+ {
+  "name": "Atom",
+  "description": "Süzme yoğurdun közlenmiş acı biber ve kızgın tereyağıyla buluştuğu, adı gibi bir meze klasiği.",
+  "type": "Meze",
+  "emoji": "🌶️",
+  "duration": "20 dk",
+  "servings": "4 kişilik",
+  "likes": 690,
+  "tags": [
+   "Meze",
+   "Yoğurtlu",
+   "Acılı",
+   "Rakı Sofrası"
+  ],
+  "ingredients": [
+   {
+    "name": "Süzme yoğurt",
+    "amount": "2 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sivri biber",
+    "amount": "4 adet",
+    "emoji": "🌶️",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Kuru nane",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Sivri biberleri ocak közünde veya tavada kabukları kararıp yumuşayana kadar közleyin.",
+   "Közlenen biberlerin kabuklarını soyup küçük parçalar halinde doğrayın; çekirdeklerini isteğe göre çıkarabilirsiniz.",
+   "Süzme yoğurdu ezilmiş sarımsak ve tuzla çırpın.",
+   "Sarımsaklı yoğurdu servis tabağına yayın.",
+   "Közlenmiş biberleri yoğurdun üzerine dağıtın.",
+   "Küçük bir tavada tereyağını eritin, köpürmeye başlayınca pul biberi ekleyin ve birkaç saniye kavurup acılı yağı hazırlayın; yakmamaya dikkat edin.",
+   "Kızgın tereyağını yoğurdun ve biberlerin üzerine gezdirin.",
+   "Üzerine kuru nane serpin.",
+   "Soğuk olarak, ekmek veya lavaşla servis edin."
+  ]
+ },
+ {
+  "name": "Havuç Tarator",
+  "description": "Rendelenip sotelenen havucun sarımsaklı yoğurtla karıştığı, tabak süsleyen tatlımsı meze.",
+  "type": "Meze",
+  "emoji": "🥕",
+  "duration": "25 dk",
+  "servings": "4 kişilik",
+  "likes": 640,
+  "tags": [
+   "Meze",
+   "Havuçlu",
+   "Yoğurtlu",
+   "Rakı Sofrası"
+  ],
+  "ingredients": [
+   {
+    "name": "Havuç",
+    "amount": "4 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Süzme yoğurt",
+    "amount": "1,5 su bardağı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/4 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Havuçları soyup iri delikli rende ile rendeleyin.",
+   "Tavada zeytinyağını ısıtın, rendelenmiş havuçları ekleyin.",
+   "Havuçları kısık ateşte, ara sıra karıştırarak yumuşayıp suyunu çekene kadar 10 dakika soteleyin; havuç piştikçe tatlanır.",
+   "Sotelenen havuçları ocaktan alıp tamamen soğumaya bırakın; sıcak havuç yoğurdu keser.",
+   "Süzme yoğurdu ezilmiş sarımsak ve tuzla çırpın.",
+   "Soğumuş havuçları sarımsaklı yoğurda ekleyip karıştırın.",
+   "İri kıyılmış cevizin çoğunu içine katın.",
+   "Servis tabağına alıp üzerine kalan ceviz ve biraz zeytinyağı gezdirin.",
+   "Soğuk olarak, ekmekle servis edin."
+  ]
+ },
+ {
+  "name": "Rus Salatası",
+  "description": "Haşlanmış sebzeler, turşu ve bezelyenin mayonezle harmanlandığı, davet sofralarının klasik salatası.",
+  "type": "Salata",
+  "emoji": "🥗",
+  "duration": "40 dk",
+  "servings": "6 kişilik",
+  "likes": 890,
+  "tags": [
+   "Salata",
+   "Mayonezli",
+   "Davet",
+   "Soğuk"
+  ],
+  "ingredients": [
+   {
+    "name": "Patates",
+    "amount": "3 adet",
+    "emoji": "🥔",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "2 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Bezelye",
+    "amount": "1 su bardağı",
+    "emoji": "🫛",
+    "category": "vegetable"
+   },
+   {
+    "name": "Turşu",
+    "amount": "1 su bardağı",
+    "emoji": "🥒",
+    "category": "vegetable"
+   },
+   {
+    "name": "Mayonez",
+    "amount": "1 su bardağı",
+    "emoji": "🥣",
+    "category": "oil"
+   },
+   {
+    "name": "Yoğurt",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🥛",
+    "category": "dairy"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Patates ve havuçları kabuklarıyla haşlayın; kabukla haşlamak su almalarını engeller ve lezzetlerini korur.",
+   "Bezelyeyi ayrıca haşlayıp süzün.",
+   "Haşlanan patates ve havuçları soyup küçük küpler halinde doğrayın, tamamen soğutun.",
+   "Turşuları da küçük küpler halinde doğrayıp suyunu iyice sıkın; sulu turşu salatayı sulandırır.",
+   "Geniş bir kapta patates, havuç, bezelye ve turşuyu karıştırın.",
+   "Ayrı bir kâsede mayonez, yoğurt, limon suyu ve tuzu çırparak sos hazırlayın.",
+   "Sosu sebzelere ekleyip nazikçe karıştırın; sebzeleri ezmemeye özen gösterin.",
+   "Tuzunu kontrol edip buzdolabında en az 1 saat soğutun.",
+   "Servis tabağına alıp üzerini zeytin, haşlanmış yumurta veya bezelyeyle süsleyin.",
+   "Soğuk olarak servis edin."
+  ]
+ },
+ {
+  "name": "Fellah Köftesi",
+  "description": "Küçük bulgur köftelerinin salçalı sıcak sosla harmanlandığı, Adana-Hatay yöresinin etsiz lezzeti.",
+  "type": "Meze",
+  "emoji": "🔴",
+  "duration": "50 dk",
+  "servings": "5 kişilik",
+  "likes": 760,
+  "tags": [
+   "Meze",
+   "Bulgur",
+   "Vegan",
+   "Yöresel"
+  ],
+  "ingredients": [
+   {
+    "name": "İnce bulgur",
+    "amount": "2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Un",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Salça",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "3 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Nane",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Pul biber",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "2 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "İnce bulguru bir kaba alın, üzerine 2 su bardağı kaynar su döküp üzerini kapatın ve şişmesi için 20 dakika bekletin.",
+   "Bulgur suyunu çekip yumuşayınca un, 1 kaşık salça, tuz ve bir miktar pul biber ekleyin.",
+   "Karışımı en az 10 dakika, hamur bağ yapıp yoğrulabilir kıvama gelene kadar yoğurun.",
+   "Harçtan nohuttan küçük parçalar koparıp avuç içinde ince uzun, işaret parmağıyla bastırılmış minik köfteler yapın; bu geleneksel şekil sosu daha iyi tutar.",
+   "Köfteleri kaynayan tuzlu suda birkaç dakika, suyun yüzüne çıkana kadar haşlayıp kevgirle alın.",
+   "Sos için tavada zeytinyağını ısıtın, ezilmiş sarımsağı ve kalan salçayı 1-2 dakika kavurun.",
+   "Üzerine yarım bardak sıcak su ekleyip sosu biraz açın, tuz ve pul biberi ilave edin.",
+   "Haşlanmış köfteleri sosun içine ekleyip nazikçe harmanlayın.",
+   "Naneyi serpip 1-2 dakika daha ısıtın.",
+   "Ilık veya soğuk, limon dilimleriyle servis edin."
+  ]
+ },
+ {
+  "name": "Çipura Izgara",
+  "description": "Taze çipuranın zeytinyağı ve limonla marine edilip ızgarada pişirildiği, Ege'nin sade deniz lezzeti.",
+  "type": "Ana Yemek",
+  "emoji": "🐟",
+  "duration": "30 dk (+ marine)",
+  "servings": "2 kişilik",
+  "likes": 1080,
+  "tags": [
+   "Deniz Ürünleri",
+   "Balık",
+   "Izgara",
+   "Ege"
+  ],
+  "ingredients": [
+   {
+    "name": "Çipura",
+    "amount": "2 adet",
+    "emoji": "🐟",
+    "category": "seafood"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "3 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Limon",
+    "amount": "1 adet",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Kekik",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🌿",
+    "category": "spice"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Çipuraların pullarını kazıyıp iç organlarını temizleyin, iyice yıkayıp kurulayın.",
+   "Balığın iki yüzüne de bıçakla çapraz kesikler atın; kesikler marinenin ete işlemesini ve eşit pişmeyi sağlar.",
+   "Bir kâsede zeytinyağı, yarım limonun suyu, ezilmiş sarımsak, kekik, tuz ve karabiberi karıştırın.",
+   "Bu marineyi balığın içine ve dışına, kesiklere de girecek şekilde sürün.",
+   "Balıkları 20-30 dakika buzdolabında marine edin.",
+   "Izgara veya döküm tavayı iyice kızdırın; balığın yapışmaması için ızgarayı yağlı kâğıtla silin.",
+   "Çipuraları koyup her yüzünü 5-6 dakika, derisi çıtırlaşıp eti pişene kadar çevirerek pişirin.",
+   "Balığı çok oynatmayın; erken çevirmek derinin ızgaraya yapışıp dağılmasına yol açar.",
+   "Pişen balıkları servis tabağına alın.",
+   "Üzerine taze limon sıkıp, yanında roka ve soğan salatasıyla sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Kalamar Tava",
+  "description": "Halka kesilmiş kalamarların çıtır bir kaplamayla kızartılıp sarımsaklı sosla sunulduğu meşhur meze.",
+  "type": "Meze",
+  "emoji": "🦑",
+  "duration": "30 dk",
+  "servings": "4 kişilik",
+  "likes": 1150,
+  "tags": [
+   "Deniz Ürünleri",
+   "Kalamar",
+   "Kızartma",
+   "Meze"
+  ],
+  "ingredients": [
+   {
+    "name": "Kalamar",
+    "amount": "500 gr",
+    "emoji": "🦑",
+    "category": "seafood"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Mısır unu",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌽",
+    "category": "grain"
+   },
+   {
+    "name": "Soda",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥤",
+    "category": "other"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "2 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Mayonez",
+    "amount": "1/2 su bardağı",
+    "emoji": "🥣",
+    "category": "oil"
+   },
+   {
+    "name": "Limon",
+    "amount": "1 adet",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 çay kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Temizlenmiş kalamarları yaklaşık 1 cm kalınlığında halkalar halinde kesin, kâğıt havluyla iyice kurulayın.",
+   "Kalamarları isteğe bağlı olarak yarım saat sütte bekletebilirsiniz; süt kalamarı yumuşatır.",
+   "Kaplama için un, mısır unu ve tuzu karıştırın; mısır unu ekstra çıtırlık verir.",
+   "Sodayı kuru karışıma ekleyip akışkan bir bulamaç hazırlayın; sodanın gazı kaplamayı hafif ve çıtır yapar.",
+   "Sıvı yağı derin bir tavada iyice kızdırın; kalamar kızgın yağda hızlı pişmelidir, yoksa lastikleşir.",
+   "Kalamar halkalarını bulamaca batırıp fazlasını süzün.",
+   "Halkaları kızgın yağa azar azar atıp altın sarısı olana kadar sadece 2-3 dakika kızartın; fazla pişirmek kalamarı sertleştirir.",
+   "Kızaran kalamarları kâğyıt havluya alıp tuz serpin.",
+   "Sos için mayonez, ezilmiş sarımsak ve birkaç damla limon suyunu karıştırın.",
+   "Kalamarları sarımsaklı sos ve limon dilimleriyle sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Balık Buğulama",
+  "description": "Beyaz etli balığın sebzelerle, kendi buharında hafifçe piştiği, zeytinyağlı ve limonlu sağlıklı yemek.",
+  "type": "Ana Yemek",
+  "emoji": "🐟",
+  "duration": "40 dk",
+  "servings": "3 kişilik",
+  "likes": 940,
+  "tags": [
+   "Deniz Ürünleri",
+   "Balık",
+   "Buğulama",
+   "Sağlıklı"
+  ],
+  "ingredients": [
+   {
+    "name": "Levrek",
+    "amount": "600 gr",
+    "emoji": "🐟",
+    "category": "seafood"
+   },
+   {
+    "name": "Domates",
+    "amount": "2 adet",
+    "emoji": "🍅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Yeşil biber",
+    "amount": "2 adet",
+    "emoji": "🫑",
+    "category": "vegetable"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Sarımsak",
+    "amount": "3 diş",
+    "emoji": "🧄",
+    "category": "vegetable"
+   },
+   {
+    "name": "Havuç",
+    "amount": "1 adet",
+    "emoji": "🥕",
+    "category": "vegetable"
+   },
+   {
+    "name": "Zeytinyağı",
+    "amount": "4 yemek kaşığı",
+    "emoji": "🫒",
+    "category": "oil"
+   },
+   {
+    "name": "Limon",
+    "amount": "1 adet",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Maydanoz",
+    "amount": "1/2 demet",
+    "emoji": "🌿",
+    "category": "vegetable"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Balığı temizleyip fileto ya da kalın dilimler halinde hazırlayın, yıkayıp süzün.",
+   "Soğanı yarım ay, havucu ince, biberleri halka, domatesin birini rende, diğerini dilim doğrayın.",
+   "Geniş bir tavada zeytinyağını ısıtıp soğan, havuç ve ezilmiş sarımsağı 5 dakika soteleyin.",
+   "Rendelenmiş domatesi ekleyip suyunu çektirin, tuzlayın.",
+   "Sotelenmiş sebzelerin yarısını tencerenin dibine yayın.",
+   "Balık parçalarını sebzelerin üzerine dizin.",
+   "Kalan sebzeleri, dilim domates ve halka biberleri balığın üzerine yerleştirin.",
+   "Yarım limonun suyunu ve yarım bardak sıcak suyu kenardan ekleyin; buğulamada az su yeterli, balık kendi suyunu salar.",
+   "Kapağı kapatıp kısık ateşte balık dağılmadan pişene kadar 15-18 dakika buğulayın.",
+   "Kıyılmış maydanozu serpin, kalan limon dilimleriyle sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Uskumru Dolması",
+  "description": "Uskumrunun derisi çıkarılıp içi kuruyemişli harçla doldurularak kızartıldığı, ustalık isteyen İstanbul lezzeti.",
+  "type": "Ana Yemek",
+  "emoji": "🐟",
+  "duration": "1 sa 30 dk",
+  "servings": "3 kişilik",
+  "likes": 620,
+  "tags": [
+   "Deniz Ürünleri",
+   "Balık",
+   "Dolma",
+   "İstanbul"
+  ],
+  "ingredients": [
+   {
+    "name": "Uskumru",
+    "amount": "3 adet",
+    "emoji": "🐟",
+    "category": "seafood"
+   },
+   {
+    "name": "Soğan",
+    "amount": "2 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Ceviz içi",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Kuş üzümü",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🍇",
+    "category": "fruit"
+   },
+   {
+    "name": "Çam fıstığı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌰",
+    "category": "nut"
+   },
+   {
+    "name": "Tarçın",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Yenibahar",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌰",
+    "category": "spice"
+   },
+   {
+    "name": "Un",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Yumurta",
+    "amount": "1 adet",
+    "emoji": "🥚",
+    "category": "egg"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Uskumruların boyun kısmını kırıp iç organlarını çıkarın, kılçığını kopararak baş kısmın derisini gövdeden ayırmaya başlayın.",
+   "Balığın etini deriyi yırtmadan içeriden ezip kılçıktan sıyırın; derinin çorap gibi bütün kalması bu yemeğin ustalık kısmıdır. Kılçığı kuyruğa yakın kesip çıkarın, deriyi boş bir kese gibi bir kenara koyun.",
+   "Çıkardığınız balık etini kılçıklardan ayıklayın.",
+   "Tavada 2 kaşık yağla ince doğranmış soğanı kavurun, çam fıstığını ekleyip pembeleştirin.",
+   "Balık etini ekleyip 5 dakika soteleyin.",
+   "Ceviz, kuş üzümü, tarçın, yenibahar ve tuzu ekleyip harmanlayın, ocaktan alıp soğutun.",
+   "Soğuyan harcı balık derisinin içine, boşlukları dolduracak şekilde tıkın ve eski formuna getirin.",
+   "Doldurulmuş balıkları önce una, sonra çırpılmış yumurtaya bulayın.",
+   "Tavada kalan yağı kızdırıp balıkları her yüzü altın sarısı olana kadar kızartın.",
+   "Kâğıt havluya alıp fazla yağını süzdürün.",
+   "Dilimleyerek, limon dilimleriyle servis edin."
+  ]
+ },
+ {
+  "name": "Sardalya Tava",
+  "description": "Küçük sardalyaların una bulanıp çıtır çıtır kızartıldığı, yaz sofralarının ekonomik deniz lezzeti.",
+  "type": "Ana Yemek",
+  "emoji": "🐟",
+  "duration": "25 dk",
+  "servings": "3 kişilik",
+  "likes": 680,
+  "tags": [
+   "Deniz Ürünleri",
+   "Balık",
+   "Kızartma",
+   "Yaz"
+  ],
+  "ingredients": [
+   {
+    "name": "Sardalya",
+    "amount": "500 gr",
+    "emoji": "🐟",
+    "category": "seafood"
+   },
+   {
+    "name": "Un",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Mısır unu",
+    "amount": "1/2 su bardağı",
+    "emoji": "🌽",
+    "category": "grain"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "1,5 su bardağı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Limon",
+    "amount": "1 adet",
+    "emoji": "🍋",
+    "category": "fruit"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   }
+  ],
+  "steps": [
+   "Sardalyaların pullarını sıyırın, iç organlarını çıkarıp iyice yıkayın.",
+   "Balıkları süzgece alıp kâğıt havluyla iyice kurulayın; ıslak balık yağ sıçratır ve un tutmaz.",
+   "Kızartmadan hemen önce sardalyalara tuz serpin; erken tuzlamak balığın suyunu çeker.",
+   "Un ve mısır ununu bir tabakta karıştırın; mısır unu ekstra çıtırlık sağlar.",
+   "Sardalyaları unlu karışıma bulayıp fazla unu silkeleyin.",
+   "Geniş bir tavada sıvı yağı iyice kızdırın.",
+   "Balıkları kızgın yağa tek sıra dizin; kalabalık etmeyin ki yağın sıcaklığı düşmesin.",
+   "Her yüzünü 3-4 dakika, altın sarısı ve çıtır olana kadar kızartın.",
+   "Kızaran balıkları kâğıt havluya alıp fazla yağını süzdürün.",
+   "Bol limon sıkıp roka ve soğan salatasıyla sıcak servis edin."
+  ]
+ },
+ {
+  "name": "Kıymalı Erişte",
+  "description": "Ev usulü kuru erişteyle kıymanın harmanlandığı, tereyağı kokulu doyurucu makarna alternatifi.",
+  "type": "Ana Yemek",
+  "emoji": "🍝",
+  "duration": "35 dk",
+  "servings": "4 kişilik",
+  "likes": 1040,
+  "tags": [
+   "Erişte",
+   "Kıymalı",
+   "Doyurucu",
+   "Ev Yemeği"
+  ],
+  "ingredients": [
+   {
+    "name": "Erişte",
+    "amount": "3 su bardağı",
+    "emoji": "🍜",
+    "category": "grain"
+   },
+   {
+    "name": "Kıyma",
+    "amount": "300 gr",
+    "emoji": "🥩",
+    "category": "meat"
+   },
+   {
+    "name": "Soğan",
+    "amount": "1 adet",
+    "emoji": "🧅",
+    "category": "vegetable"
+   },
+   {
+    "name": "Salça",
+    "amount": "1 yemek kaşığı",
+    "emoji": "🥫",
+    "category": "oil"
+   },
+   {
+    "name": "Tereyağı",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🧈",
+    "category": "dairy"
+   },
+   {
+    "name": "Sıvı yağ",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🫗",
+    "category": "oil"
+   },
+   {
+    "name": "Sıcak su",
+    "amount": "4 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Tuz",
+    "amount": "1 tatlı kaşığı",
+    "emoji": "🧂",
+    "category": "other"
+   },
+   {
+    "name": "Karabiber",
+    "amount": "1 çay kaşığı",
+    "emoji": "🌶️",
+    "category": "spice"
+   }
+  ],
+  "steps": [
+   "Tencerede sıvı yağı ısıtıp ince doğranmış soğanı kavurun.",
+   "Kıymayı ekleyip suyunu salıp çekene ve hafif kızarana kadar pişirin.",
+   "Salçayı ekleyip 1-2 dakika kavurun, karabiberi atın.",
+   "Kuru erişteyi tencereye ekleyip tereyağıyla birlikte 2-3 dakika kavurun; kavurmak erişteye kokusunu ve rengini verir.",
+   "Sıcak su ve tuzu ekleyin; su erişteyi 1-2 parmak geçmeli.",
+   "Kapağı kapatıp kısık ateşte erişteler suyunu çekip yumuşayana kadar 12-15 dakika pişirin.",
+   "Ara sıra karıştırıp dibe yapışmasını önleyin; suyu azaldıysa biraz sıcak su ekleyin.",
+   "Erişteler pişip su çekilince ocaktan alın.",
+   "Kapağı kapalı 5 dakika demlendirin.",
+   "İsteğe göre üzerine eritilmiş tereyağı gezdirip sıcak servis edin; yanında yoğurt çok yakışır."
+  ]
+ },
+ {
+  "name": "Su Muhallebisi",
+  "description": "Sütsüz, sadece nişasta ve suyla yapılan, gül şerbetiyle sunulan serinletici hafif tatlı.",
+  "type": "Tatlı",
+  "emoji": "🍧",
+  "duration": "30 dk (+ soğutma)",
+  "servings": "5 kişilik",
+  "likes": 560,
+  "tags": [
+   "Tatlı",
+   "Serinletici",
+   "Yaz",
+   "Hafif"
+  ],
+  "ingredients": [
+   {
+    "name": "Nişasta",
+    "amount": "1 su bardağı",
+    "emoji": "🌾",
+    "category": "grain"
+   },
+   {
+    "name": "Su",
+    "amount": "6 su bardağı",
+    "emoji": "💧",
+    "category": "other"
+   },
+   {
+    "name": "Toz şeker",
+    "amount": "2 su bardağı",
+    "emoji": "🍬",
+    "category": "other"
+   },
+   {
+    "name": "Gül suyu",
+    "amount": "2 yemek kaşığı",
+    "emoji": "🌹",
+    "category": "other"
+   },
+   {
+    "name": "Limon suyu",
+    "amount": "1 çay kaşığı",
+    "emoji": "🍋",
+    "category": "fruit"
+   }
+  ],
+  "steps": [
+   "Muhallebi için nişastayı 3 su bardağı soğuk suda topak kalmayacak şekilde çırpın.",
+   "Nişastalı suyu orta ateşe alıp sürekli karıştırarak koyulaşana ve şeffaflaşana kadar pişirin; su muhallebisi süt içermediği için berrak ve titrek olur.",
+   "Kıvam alınca ateşten alıp ıslatılmış küçük kâselere paylaştırın.",
+   "Muhallebileri buzdolabında en az 2 saat, iyice donana kadar soğutun.",
+   "Şerbet için kalan 3 su bardağı su ve şekeri kaynatın, 10 dakika pişirip limon suyunu ekleyin.",
+   "Şerbet ılıyınca gül suyunu ekleyip soğutun; gül suyu bu tatlının imza kokusudur.",
+   "Donmuş muhallebileri kalıptan ters çevirerek servis tabağına çıkarın.",
+   "Üzerlerine soğuk gül şerbetini gezdirin.",
+   "İsteğe göre üzerine bir tutam hindistan cevizi serpip buz gibi servis edin."
+  ]
+ }
+]
