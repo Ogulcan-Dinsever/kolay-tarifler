@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../services/admin_service.dart';
+import '../../services/notification_service.dart';
 import '../../services/recipe_cache_service.dart';
 import '../../services/recipe_service.dart';
 
@@ -46,6 +47,16 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     try {
       if (FirebaseAuth.instance.currentUser == null) {
         await FirebaseAuth.instance.signInAnonymously();
+      }
+    } catch (_) {}
+
+    // Kalıcı oturumla açılan gerçek kullanıcıda FCM token'ını yeniden kaydet ve
+    // onTokenRefresh dinleyicisini aktifleştir. Aksi halde token rotasyonu
+    // Firestore'a yansımaz, kullanıcıya bildirim sessizce durur.
+    try {
+      final u = FirebaseAuth.instance.currentUser;
+      if (u != null && !u.isAnonymous) {
+        await NotificationService.saveToken(u.uid);
       }
     } catch (_) {}
 

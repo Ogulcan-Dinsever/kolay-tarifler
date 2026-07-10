@@ -131,7 +131,11 @@ class _AddRecipeTabState extends ConsumerState<AddRecipeTab> {
         emoji: _emojiCtrl.text.trim().isEmpty ? '🍽️' : _emojiCtrl.text.trim(),
         imageUrls: imageUrls,
         ingredients: _ingredients
-            .map((e) => {'name': e.name!, 'amount': e.amountCtrl.text.trim()})
+            .map((e) => {
+                  'ingredientId': e.id!,
+                  'name': e.name!,
+                  'amount': e.amountCtrl.text.trim(),
+                })
             .toList(),
         steps: _steps.map((e) => e.text.trim()).toList(),
       );

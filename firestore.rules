@@ -20,10 +20,10 @@ service cloud.firestore {
       allow update: if isSignedIn() &&
                        (isAdmin() ||
                         request.auth.uid == resource.data.authorId ||
-                        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount']));
+                        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount', 'commentCount']));
       allow delete: if isAdmin();
 
-      // Beğeniler — kullanıcı sadece kendi beğeni dokümanını okur/yazar
+      // Beğeniler — kullanıcı sadece kendi beğeni dokümanını okur/yazar (belge yolu ile)
       match /likes/{userId} {
         allow read, write: if isSignedIn() && request.auth.uid == userId;
       }
@@ -35,6 +35,13 @@ service cloud.firestore {
         allow update, delete: if isSignedIn() &&
                                   (isAdmin() || request.auth.uid == resource.data.userId);
       }
+    }
+
+    // ── Beğeni collectionGroup sorgusu ───────────────────────────────────────────
+    // userLikedIdsStream tüm 'likes' alt koleksiyonlarını tek sorguda tarar.
+    // Kullanıcı yalnızca userId alanı kendi uid'i olan beğenileri listeleyebilir.
+    match /{path=**}/likes/{likeId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
     }
 
     // ── Malzemeler ───────────────────────────────────────────────────────────────

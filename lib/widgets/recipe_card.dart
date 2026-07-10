@@ -110,7 +110,10 @@ class RecipeCard extends ConsumerWidget {
             ),
             Column(
               children: [
-                GestureDetector(
+                Semantics(
+                  button: true,
+                  label: isLiked ? 'Beğeniyi kaldır' : 'Beğen',
+                  child: GestureDetector(
                   behavior: HitTestBehavior.opaque,
                   onTap: () async {
                     if (!isAuth) {
@@ -146,6 +149,7 @@ class RecipeCard extends ConsumerWidget {
                       color: isLiked ? AppColors.accent : Colors.grey,
                     ),
                   ),
+                ),
                 ),
                 if (recipe.likeCount > 0) ...[
                   const SizedBox(height: 2),

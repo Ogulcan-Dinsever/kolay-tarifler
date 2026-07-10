@@ -117,7 +117,7 @@ class AdminService {
       'imageUrls': imageUrls,
       'ingredients': ingredients
           .map((e) => {
-                'ingredientId': '',
+                'ingredientId': e['ingredientId'] ?? '',
                 'name': e['name'] ?? '',
                 'amount': e['amount'] ?? '',
               })

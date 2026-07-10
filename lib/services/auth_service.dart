@@ -45,10 +45,30 @@ class AuthService {
       email: email,
       password: password,
     );
-    final uid = cred.user?.uid;
-    if (uid == null) return;
-    await CrashService.setUser(uid);
-    await NotificationService.saveToken(uid);
+    final user = cred.user;
+    if (user == null) return;
+    await CrashService.setUser(user.uid);
+    await NotificationService.saveToken(user.uid);
+    // Profil belgesi yoksa oluştur — eski/dış hesaplarda users/{uid} eksik
+    // olabilir; bu durumda yorum/etkileşim akışları kırılmasın.
+    await _ensureUserDoc(user);
+  }
+
+  /// users/{uid} belgesi yoksa auth bilgisinden minimal bir profil oluşturur.
+  Future<void> _ensureUserDoc(User user) async {
+    final ref = _db.collection('users').doc(user.uid);
+    final doc = await ref.get();
+    if (doc.exists) return;
+    final appUser = AppUser(
+      id: user.uid,
+      displayName: (user.displayName?.isNotEmpty == true)
+          ? user.displayName!
+          : (user.email?.split('@').first ?? 'Kullanıcı'),
+      username: user.email?.split('@').first ?? '',
+      avatarUrl: user.photoURL,
+      createdAt: DateTime.now(),
+    );
+    await ref.set(appUser.toFirestore());
   }
 
   Future<AppUser?> signInWithGoogle() async {
@@ -99,10 +119,20 @@ class AuthService {
   }
 
   Future<AppUser?> fetchCurrentUser() async {
-    final uid = currentUser?.uid;
-    if (uid == null || currentUser!.isAnonymous) return null;
-    final doc = await _db.collection('users').doc(uid).get();
-    if (!doc.exists) return null;
-    return AppUser.fromFirestore(doc);
+    final user = currentUser;
+    if (user == null || user.isAnonymous) return null;
+    final doc = await _db.collection('users').doc(user.uid).get();
+    if (doc.exists) return AppUser.fromFirestore(doc);
+    // Firestore profili yoksa auth bilgisinden minimal profil döndür —
+    // böylece yorum vb. akışlar user==null yüzünden kırılmaz.
+    return AppUser(
+      id: user.uid,
+      displayName: (user.displayName?.isNotEmpty == true)
+          ? user.displayName!
+          : (user.email?.split('@').first ?? 'Kullanıcı'),
+      username: user.email?.split('@').first ?? '',
+      avatarUrl: user.photoURL,
+      createdAt: DateTime.now(),
+    );
   }
 }

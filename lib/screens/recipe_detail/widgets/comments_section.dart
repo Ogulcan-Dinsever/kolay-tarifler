@@ -169,24 +169,29 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
             ),
           ),
           const SizedBox(width: 8),
-          GestureDetector(
-            onTap: _sending ? null : _send,
-            child: Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: AppColors.primary,
-                borderRadius: BorderRadius.circular(12),
+          Semantics(
+            button: true,
+            enabled: !_sending,
+            label: 'Yorum gönder',
+            child: GestureDetector(
+              onTap: _sending ? null : _send,
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: AppColors.primary,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: _sending
+                    ? const Padding(
+                        padding: EdgeInsets.all(10),
+                        child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: AppColors.primaryText),
+                      )
+                    : const Icon(Icons.send,
+                        size: 18, color: AppColors.primaryText),
               ),
-              child: _sending
-                  ? const Padding(
-                      padding: EdgeInsets.all(10),
-                      child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          color: AppColors.primaryText),
-                    )
-                  : const Icon(Icons.send,
-                      size: 18, color: AppColors.primaryText),
             ),
           ),
         ],

@@ -15,17 +15,32 @@ async function sendToUser(userId, { title, body }, data = {}) {
     Object.entries(data).map(([k, v]) => [k, String(v)])
   );
 
-  return admin.messaging().send({
-    token,
-    notification: { title, body },
-    android: {
-      notification: { channelId: 'kt_main', sound: 'default' },
-    },
-    apns: {
-      payload: { aps: { sound: 'default' } },
-    },
-    data: stringData,
-  });
+  try {
+    return await admin.messaging().send({
+      token,
+      notification: { title, body },
+      android: {
+        notification: { channelId: 'kt_main', sound: 'default' },
+      },
+      apns: {
+        payload: { aps: { sound: 'default' } },
+      },
+      data: stringData,
+    });
+  } catch (err) {
+    // Geçersiz/kaldırılmış token → users belgesinden temizle, birikmesin.
+    if (
+      err.code === 'messaging/registration-token-not-registered' ||
+      err.code === 'messaging/invalid-registration-token'
+    ) {
+      await db
+        .collection('users')
+        .doc(userId)
+        .update({ fcmToken: admin.firestore.FieldValue.delete() })
+        .catch(() => {});
+    }
+    return null;
+  }
 }
 
 // ── 1. Tarif onay / red bildirimi ────────────────────────────────────────────
@@ -106,7 +121,7 @@ exports.onCommentAdded = functions
       return null;
     }
 
-    const authorName = comment.userName || 'Biri';
+    const authorName = comment.userDisplayName || 'Biri';
     const preview = comment.text?.length > 60
       ? comment.text.substring(0, 60) + '…'
       : comment.text;
