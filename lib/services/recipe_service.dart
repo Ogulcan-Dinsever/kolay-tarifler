@@ -191,9 +191,11 @@ class RecipeService {
       'un': IngredientCategory.grain,
       'ekmek': IngredientCategory.grain,
       'yufka': IngredientCategory.grain,
+      'hamur işi': IngredientCategory.grain,
+      'hamur isi': IngredientCategory.grain,
       'baharat': IngredientCategory.spice,
-      'yeşillik': IngredientCategory.spice,
-      'yesillik': IngredientCategory.spice,
+      'yeşillik': IngredientCategory.vegetable,
+      'yesillik': IngredientCategory.vegetable,
       'ot': IngredientCategory.spice,
       'taze ot': IngredientCategory.spice,
       'yağ': IngredientCategory.oil,
@@ -372,7 +374,7 @@ class RecipeService {
   Stream<Set<String>> userLikedIdsStream(String userId) {
     return _db
         .collectionGroup('likes')
-        .where(FieldPath.documentId, isEqualTo: userId)
+        .where('userId', isEqualTo: userId)
         .snapshots()
         .map(
           (snap) => snap.docs
@@ -406,7 +408,11 @@ class RecipeService {
         tx.delete(likeRef);
         tx.update(recipeRef, {'likeCount': FieldValue.increment(-1)});
       } else {
-        tx.set(likeRef, {'createdAt': FieldValue.serverTimestamp()});
+        // userId alanı collectionGroup sorgusu için gerekli (userLikedIdsStream).
+        tx.set(likeRef, {
+          'userId': userId,
+          'createdAt': FieldValue.serverTimestamp(),
+        });
         tx.update(recipeRef, {'likeCount': FieldValue.increment(1)});
       }
     });

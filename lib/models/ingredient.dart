@@ -85,12 +85,66 @@ class Ingredient {
       name: data['name'] as String,
       emoji: data['emoji'] as String,
       imageUrl: data['imageUrl'] as String? ?? '',
-      category: IngredientCategory.values.firstWhere(
-        (e) => e.name == data['category'],
-        orElse: () => IngredientCategory.other,
-      ),
+      category: parseCategory(data['category'] as String?),
     );
   }
+
+  /// Kategori değerini enum'a çevirir. Önce doğrudan enum adı (vegetable, meat…),
+  /// tutmazsa Türkçe serbest metin karşılıkları (baharat, et, sos…) denenir.
+  /// Böylece eski/elle yazılmış Türkçe kategoriler "Diğer"e düşmez.
+  static IngredientCategory parseCategory(String? raw) {
+    final key = (raw ?? '').trim().toLowerCase();
+    if (key.isEmpty) return IngredientCategory.other;
+    for (final e in IngredientCategory.values) {
+      if (e.name == key) return e;
+    }
+    return _trMap[key] ?? IngredientCategory.other;
+  }
+
+  static const Map<String, IngredientCategory> _trMap = {
+    'sebze': IngredientCategory.vegetable,
+    'yeşillik': IngredientCategory.vegetable,
+    'yesillik': IngredientCategory.vegetable,
+    'meyve': IngredientCategory.fruit,
+    'et': IngredientCategory.meat,
+    'tavuk': IngredientCategory.meat,
+    'kırmızı et': IngredientCategory.meat,
+    'kirmizi et': IngredientCategory.meat,
+    'deniz': IngredientCategory.seafood,
+    'deniz ürünleri': IngredientCategory.seafood,
+    'deniz urunleri': IngredientCategory.seafood,
+    'balık': IngredientCategory.seafood,
+    'balik': IngredientCategory.seafood,
+    'süt': IngredientCategory.dairy,
+    'sut': IngredientCategory.dairy,
+    'süt ürünleri': IngredientCategory.dairy,
+    'sut urunleri': IngredientCategory.dairy,
+    'peynir': IngredientCategory.dairy,
+    'tahıl': IngredientCategory.grain,
+    'tahil': IngredientCategory.grain,
+    'bakliyat': IngredientCategory.grain,
+    'baklagil': IngredientCategory.grain,
+    'un': IngredientCategory.grain,
+    'ekmek': IngredientCategory.grain,
+    'yufka': IngredientCategory.grain,
+    'hamur işi': IngredientCategory.grain,
+    'hamur isi': IngredientCategory.grain,
+    'baharat': IngredientCategory.spice,
+    'ot': IngredientCategory.spice,
+    'taze ot': IngredientCategory.spice,
+    'yağ': IngredientCategory.oil,
+    'yag': IngredientCategory.oil,
+    'sos': IngredientCategory.oil,
+    'kuruyemiş': IngredientCategory.nut,
+    'kuruyemis': IngredientCategory.nut,
+    'yumurta': IngredientCategory.egg,
+    'sıvı': IngredientCategory.other,
+    'sivi': IngredientCategory.other,
+    'tatlandırıcı': IngredientCategory.other,
+    'tatlandirici': IngredientCategory.other,
+    'diğer': IngredientCategory.other,
+    'diger': IngredientCategory.other,
+  };
 
   Map<String, dynamic> toFirestore() => {
         'name': name,
