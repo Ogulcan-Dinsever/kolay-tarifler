@@ -1,8 +1,11 @@
+import 'dart:io' show Platform;
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show PlatformException;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../providers/auth_provider.dart';
@@ -114,6 +117,26 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     }
   }
 
+  Future<void> _signInWithApple() async {
+    setState(() => _loading = true);
+    try {
+      final user = await ref.read(authServiceProvider).signInWithApple();
+      if (user != null && mounted) context.go('/');
+    } on SignInWithAppleAuthorizationException catch (e) {
+      if (!mounted) return;
+      // Kullanıcı iptal ettiyse sessiz geç.
+      if (e.code != AuthorizationErrorCode.canceled) {
+        _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');
+      }
+    } on FirebaseAuthException catch (e) {
+      if (mounted) _showError(_firebaseError(e.code));
+    } on Exception catch (_) {
+      if (mounted) _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
   Future<void> _continueAsGuest() async {
     setState(() => _loading = true);
     try {
@@ -180,6 +203,12 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
               const SizedBox(height: 16),
               _buildDivider(),
               const SizedBox(height: 16),
+              // App Store Guideline 4.8: Google girişi sunulduğu için Apple
+              // ile Giriş iOS/macOS'ta zorunlu olarak gösterilir.
+              if (!kIsWeb && (Platform.isIOS || Platform.isMacOS)) ...[
+                _buildAppleButton(),
+                const SizedBox(height: 10),
+              ],
               _buildGoogleButton(),
               const SizedBox(height: 10),
               _buildGuestButton(),
@@ -345,6 +374,38 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         ),
         Expanded(child: Divider(color: context.palette.border)),
       ],
+    );
+  }
+
+  Widget _buildAppleButton() {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final bg = isDark ? Colors.white : Colors.black;
+    final fg = isDark ? Colors.black : Colors.white;
+    return GestureDetector(
+      onTap: _loading ? null : _signInWithApple,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 14),
+        decoration: BoxDecoration(
+          color: bg,
+          borderRadius: BorderRadius.circular(14),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.apple, size: 22, color: fg),
+            const SizedBox(width: 8),
+            Text(
+              'Apple ile Giriş Yap',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: fg,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 

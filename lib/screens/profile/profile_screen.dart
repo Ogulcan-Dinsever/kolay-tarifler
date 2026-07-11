@@ -6,6 +6,7 @@ import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_colors.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/theme_provider.dart';
+import '../../services/auth_service.dart';
 import '../../widgets/app_header.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -99,6 +100,12 @@ class ProfileScreen extends ConsumerWidget {
               label: 'Çıkış Yap',
               isDanger: true,
               onTap: () => _showLogoutConfirm(context, ref),
+            ),
+            _SettingItem(
+              icon: Icons.delete_forever_outlined,
+              label: 'Hesabımı Sil',
+              isDanger: true,
+              onTap: () => _showDeleteAccountConfirm(context, ref),
             ),
           ],
         ),
@@ -410,6 +417,75 @@ class ProfileScreen extends ConsumerWidget {
         ],
       ),
     );
+  }
+
+  void _showDeleteAccountConfirm(BuildContext context, WidgetRef ref) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Hesabımı Sil'),
+        content: const Text(
+          'Hesabın ve tüm verilerin (beğeniler, profil) kalıcı olarak '
+          'silinecek. Bu işlem geri alınamaz. Devam etmek istiyor musun?',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('İptal'),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              await _deleteAccount(context, ref);
+            },
+            child: const Text(
+              'Hesabımı Sil',
+              style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _deleteAccount(BuildContext context, WidgetRef ref) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final router = GoRouter.of(context);
+    // Silme sırasında dokunmayı engelleyen basit bir yükleniyor göstergesi.
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (_) => const Center(
+        child: CircularProgressIndicator(color: AppColors.primary),
+      ),
+    );
+    try {
+      await ref.read(authServiceProvider).deleteAccount();
+      if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
+      messenger.showSnackBar(
+        const SnackBar(content: Text('Hesabın silindi.')),
+      );
+      router.go('/');
+    } on AccountDeletionException catch (_) {
+      if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
+      // Firebase yakın zamanda giriş ister — kullanıcıyı çıkışa/girişe yönlendir.
+      messenger.showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Güvenlik için hesabını silmeden önce tekrar giriş yapman gerekiyor. '
+            'Lütfen çıkış yapıp yeniden giriş yaptıktan sonra tekrar dene.',
+          ),
+          duration: Duration(seconds: 5),
+        ),
+      );
+      await ref.read(authServiceProvider).signOut();
+      router.go('/auth');
+    } catch (e) {
+      if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
+      messenger.showSnackBar(
+        SnackBar(content: Text('Hesap silinemedi: $e')),
+      );
+    }
   }
 }
 

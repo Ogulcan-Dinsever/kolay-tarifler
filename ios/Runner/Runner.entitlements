@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- FCM push bildirimleri. Yayın (App Store) build'inde Xcode bunu
+	     otomatik "production" yapar; development'ta "development" olur. -->
+	<key>aps-environment</key>
+	<string>development</string>
+	<!-- Apple ile Giriş (App Store Guideline 4.8). Apple Developer portalında
+	     App ID için "Sign In with Apple" capability'si de açılmalıdır. -->
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+</dict>
+</plist>

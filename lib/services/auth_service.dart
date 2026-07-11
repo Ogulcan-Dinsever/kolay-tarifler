@@ -1,9 +1,16 @@
+import 'dart:convert';
+import 'dart:math';
+import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import '../models/app_user.dart';
 import 'crash_service.dart';
 import 'notification_service.dart';
+
+/// Hesap silme akışında kullanıcının yeniden giriş yapması gerektiğini bildirir.
+enum AccountDeletionException { requiresRecentLogin }
 
 class AuthService {
   final _auth = FirebaseAuth.instance;
@@ -105,6 +112,75 @@ class AuthService {
     return AppUser.fromFirestore(doc);
   }
 
+  // ── Apple ile Giriş ──────────────────────────────────────────────────────
+  // App Store Guideline 4.8 gereği Google girişi sunulduğu için zorunlu.
+
+  String _randomNonce([int length = 32]) {
+    const charset =
+        '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._';
+    final random = Random.secure();
+    return List.generate(
+      length,
+      (_) => charset[random.nextInt(charset.length)],
+    ).join();
+  }
+
+  String _sha256(String input) =>
+      sha256.convert(utf8.encode(input)).toString();
+
+  Future<AppUser?> signInWithApple() async {
+    // Firebase, id token'ın ham nonce'un SHA256'sını taşımasını bekler.
+    final rawNonce = _randomNonce();
+    final appleCredential = await SignInWithApple.getAppleIDCredential(
+      scopes: [
+        AppleIDAuthorizationScopes.email,
+        AppleIDAuthorizationScopes.fullName,
+      ],
+      nonce: _sha256(rawNonce),
+    );
+
+    final oauthCredential = OAuthProvider('apple.com').credential(
+      idToken: appleCredential.identityToken,
+      rawNonce: rawNonce,
+    );
+
+    final cred = await _auth.signInWithCredential(oauthCredential);
+    final user = cred.user;
+    if (user == null) throw Exception('Apple girişi başarısız');
+
+    await CrashService.setUser(user.uid);
+    await NotificationService.saveToken(user.uid);
+
+    // Apple adı yalnızca İLK girişte döner — varsa hemen kaydet.
+    final appleName = [
+      appleCredential.givenName,
+      appleCredential.familyName,
+    ].where((e) => e != null && e.isNotEmpty).join(' ').trim();
+
+    final ref = _db.collection('users').doc(user.uid);
+    final doc = await ref.get();
+    if (!doc.exists) {
+      final displayName = appleName.isNotEmpty
+          ? appleName
+          : (user.displayName?.isNotEmpty == true
+              ? user.displayName!
+              : (user.email?.split('@').first ?? 'Kullanıcı'));
+      if (user.displayName == null || user.displayName!.isEmpty) {
+        await user.updateDisplayName(displayName);
+      }
+      final appUser = AppUser(
+        id: user.uid,
+        displayName: displayName,
+        username: user.email?.split('@').first ?? '',
+        avatarUrl: user.photoURL,
+        createdAt: DateTime.now(),
+      );
+      await ref.set(appUser.toFirestore());
+      return appUser;
+    }
+    return AppUser.fromFirestore(doc);
+  }
+
   Future<void> continueAsGuest() async {
     await _auth.signInAnonymously();
   }
@@ -116,6 +192,55 @@ class AuthService {
     }
     await CrashService.clearUser();
     await _auth.signOut();
+  }
+
+  // ── Hesap silme ────────────────────────────────────────────────────────────
+  // App Store Guideline 5.1.1(v) gereği hesap oluşturan uygulamalar için zorunlu.
+  //
+  // [AccountDeletionException.requiresRecentLogin] fırlatırsa, çağıran taraf
+  // kullanıcıyı yeniden giriş yapmaya yönlendirip tekrar denemeli — Firebase
+  // hesap silme için yakın zamanda kimlik doğrulaması ister.
+
+  Future<void> deleteAccount() async {
+    final user = _auth.currentUser;
+    if (user == null || user.isAnonymous) {
+      throw Exception('Silinecek bir hesap yok');
+    }
+    final uid = user.uid;
+
+    // FCM token'ını temizle ki silinen kullanıcıya bildirim gönderilmeye
+    // çalışılmasın.
+    await NotificationService.clearToken(uid);
+
+    // Kullanıcının beğeni alt-belgelerini temizle (collectionGroup sorgusu).
+    try {
+      final likes = await _db
+          .collectionGroup('likes')
+          .where('userId', isEqualTo: uid)
+          .get();
+      for (final doc in likes.docs) {
+        await doc.reference.delete();
+      }
+    } catch (_) {
+      // Beğeni temizliği başarısız olsa da hesap silmeyi engelleme.
+    }
+
+    // Kullanıcı profil belgesini sil.
+    try {
+      await _db.collection('users').doc(uid).delete();
+    } catch (_) {}
+
+    // Son adım: Firebase Auth hesabını sil.
+    try {
+      await user.delete();
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'requires-recent-login') {
+        throw AccountDeletionException.requiresRecentLogin;
+      }
+      rethrow;
+    }
+
+    await CrashService.clearUser();
   }
 
   Future<AppUser?> fetchCurrentUser() async {

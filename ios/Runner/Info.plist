@@ -6,6 +6,22 @@
 	<string>Tarifinize fotoğraf eklemek için galeri erişimi gerekiyor</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Tarifinize fotoğraf çekmek için kamera erişimi gerekiyor</string>
+	<!-- Google Sign-In için gerekli URL scheme.
+	     REVERSED_CLIENT_ID, GoogleService-Info.plist içindeki değerdir;
+	     GoogleService-Info.plist'i ios/Runner/ altına ekledikten sonra
+	     aşağıdaki YOUR_REVERSED_CLIENT_ID'yi o dosyadaki gerçek değerle
+	     değiştirin (biçim: com.googleusercontent.apps.XXXXX). -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>YOUR_REVERSED_CLIENT_ID</string>
+			</array>
+		</dict>
+	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -70,5 +86,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- FCM push bildirimlerinin uygulama arka plandayken işlenmesi için -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+		<string>fetch</string>
+	</array>
+	<!-- Push token'ının sistem tarafından otomatik kaydı; FirebaseMessaging
+	     yönetir -->
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<true/>
 </dict>
 </plist>
