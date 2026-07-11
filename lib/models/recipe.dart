@@ -150,30 +150,37 @@ class Recipe {
 
   factory Recipe.fromFirestore(DocumentSnapshot doc) {
     final data = (doc.data() as Map<String, dynamic>?) ?? {};
+    // Alan tipleri Firestore'da garanti değil (script/admin düzenlemeleri sayı
+    // yazmış olabilir) — String alanları toString ile oku ki tek bozuk belge
+    // tüm stream'i düşürmesin.
     return Recipe(
       id: doc.id,
-      name: data['name'] as String? ?? '',
-      description: data['description'] as String? ?? '',
-      cuisine: data['cuisine'] as String? ?? 'Türk',
-      type: data['type'] as String? ?? 'Ana Yemek',
-      duration: data['duration'] as String? ?? '',
-      servings: data['servings'] as String? ?? '',
-      emoji: data['emoji'] as String? ?? '🍽️',
-      imageUrls: List<String>.from(data['imageUrls'] ?? []),
+      name: data['name']?.toString() ?? '',
+      description: data['description']?.toString() ?? '',
+      cuisine: data['cuisine']?.toString() ?? 'Türk',
+      type: data['type']?.toString() ?? 'Ana Yemek',
+      duration: data['duration']?.toString() ?? '',
+      servings: data['servings']?.toString() ?? '',
+      emoji: data['emoji']?.toString() ?? '🍽️',
+      imageUrls: ((data['imageUrls'] as List<dynamic>?) ?? [])
+          .map((e) => e.toString())
+          .toList(),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
           .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
           .toList(),
       steps: (data['steps'] as List<dynamic>? ?? [])
           .map((e) => RecipeStep.fromMap(e as Map<String, dynamic>))
           .toList(),
-      tags: List<String>.from(data['tags'] ?? []),
+      tags: ((data['tags'] as List<dynamic>?) ?? [])
+          .map((e) => e.toString())
+          .toList(),
       officialLikeCount: (data['officialLikeCount'] as num?)?.toInt() ?? 0,
       communityLikeCount: (data['communityLikeCount'] as num?)?.toInt() ?? 0,
       likeCount: (data['likeCount'] as num?)?.toInt() ?? 0,
-      authorId: data['authorId'] as String? ?? '',
-      authorName: data['authorName'] as String? ?? '',
+      authorId: data['authorId']?.toString() ?? '',
+      authorName: data['authorName']?.toString() ?? '',
       isOfficial: data['isOfficial'] as bool? ?? true,
-      parentRecipeId: data['parentRecipeId'] as String?,
+      parentRecipeId: data['parentRecipeId']?.toString(),
       commentCount: (data['commentCount'] as num?)?.toInt() ?? 0,
       createdAt: data['createdAt'] is Timestamp
           ? (data['createdAt'] as Timestamp).toDate()

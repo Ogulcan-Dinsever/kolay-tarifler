@@ -418,9 +418,28 @@ class RecipeService {
     });
   }
 
+  /// Türkçe diakritikleri katlayarak küçük harfe çevirir (ç→c, ş→s, ı→i…).
+  /// Kullanıcılar sıklıkla "corba" gibi aksansız yazar; "Çorba" ile eşleşmeli.
+  static String foldTurkish(String input) {
+    const map = {
+      'ç': 'c', 'Ç': 'c',
+      'ğ': 'g', 'Ğ': 'g',
+      'ı': 'i', 'I': 'i', 'İ': 'i',
+      'ö': 'o', 'Ö': 'o',
+      'ş': 's', 'Ş': 's',
+      'ü': 'u', 'Ü': 'u',
+    };
+    final sb = StringBuffer();
+    for (final rune in input.runes) {
+      final ch = String.fromCharCode(rune);
+      sb.write(map[ch] ?? ch.toLowerCase());
+    }
+    return sb.toString();
+  }
+
   Future<List<Recipe>> searchRecipes(String query) async {
     if (query.isEmpty) return [];
-    final lower = query.toLowerCase();
+    final folded = foldTurkish(query);
     // Önce yerel cache'den ara — Firestore'dan tüm koleksiyonu indirmekten kaçın
     final cached = RecipeCacheService().loadRecipes();
     final source = cached.isNotEmpty
@@ -431,8 +450,8 @@ class RecipeService {
     return source
         .where(
           (r) =>
-              r.name.toLowerCase().contains(lower) ||
-              r.description.toLowerCase().contains(lower),
+              foldTurkish(r.name).contains(folded) ||
+              foldTurkish(r.description).contains(folded),
         )
         .toList();
   }

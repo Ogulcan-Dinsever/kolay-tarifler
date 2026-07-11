@@ -22,11 +22,13 @@ class RecipeIngredient {
   });
 
   factory RecipeIngredient.fromMap(Map<String, dynamic> data) {
+    // Firestore'da alanlar script/admin düzenlemesiyle sayı olarak yazılmış
+    // olabilir — tek bozuk belge tüm listeyi düşürmesin diye toString ile oku.
     return RecipeIngredient(
-      ingredientId: data['ingredientId'] as String,
-      name: data['name'] as String,
-      amount: data['amount'] as String,
-      emoji: data['emoji'] as String?,
+      ingredientId: data['ingredientId']?.toString() ?? '',
+      name: data['name']?.toString() ?? '',
+      amount: data['amount']?.toString() ?? '',
+      emoji: data['emoji']?.toString(),
     );
   }
 

@@ -5,6 +5,7 @@ import '../../core/tutorial/tutorial_overlay.dart';
 import '../../core/utils/format.dart';
 import '../../models/recipe.dart';
 import '../../providers/recipe_provider.dart';
+import '../../services/recipe_service.dart';
 import '../../widgets/app_header.dart';
 import '../../widgets/cuisine_chip.dart';
 import '../../widgets/featured_card.dart';
@@ -119,11 +120,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   List<Recipe> _filterRecipes(List<Recipe> all) {
     if (_searchQuery.isEmpty) return all;
-    final lower = _searchQuery.toLowerCase();
+    final q = RecipeService.foldTurkish(_searchQuery);
     return all
         .where((r) =>
-            r.name.toLowerCase().contains(lower) ||
-            r.type.toLowerCase().contains(lower))
+            RecipeService.foldTurkish(r.name).contains(q) ||
+            RecipeService.foldTurkish(r.type).contains(q))
         .toList();
   }
 

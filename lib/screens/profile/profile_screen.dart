@@ -17,14 +17,14 @@ class ProfileScreen extends ConsumerWidget {
 
     return Column(
       children: [
-        const AppHeader(
+        AppHeader(
           showProfileAvatar: false,
           titleWidget: Text(
             'Profilim',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF063B16),
+              color: context.palette.textPrimary,
             ),
           ),
         ),
@@ -244,7 +244,7 @@ class ProfileScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'Tarifleri göz atabilir, takvime ekleyebilirsin.',
+          'Tariflere göz atabilir, takvime ekleyebilirsin.',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 14, color: context.palette.textTertiary),
         ),

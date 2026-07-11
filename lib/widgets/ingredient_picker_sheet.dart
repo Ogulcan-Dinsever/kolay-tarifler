@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../core/theme/app_colors.dart';
 import '../models/ingredient.dart';
+import '../services/recipe_service.dart';
 
 class IngredientPickerSheet extends StatefulWidget {
   final List<Ingredient> ingredients;
@@ -44,10 +45,10 @@ class _IngredientPickerSheetState extends State<IngredientPickerSheet> {
   }
 
   void _filter() {
-    final q = _searchCtrl.text.toLowerCase();
+    final q = RecipeService.foldTurkish(_searchCtrl.text);
     setState(() {
       _filtered = widget.ingredients
-          .where((i) => i.name.toLowerCase().contains(q))
+          .where((i) => RecipeService.foldTurkish(i.name).contains(q))
           .toList();
     });
   }

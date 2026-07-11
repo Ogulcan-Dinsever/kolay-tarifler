@@ -141,11 +141,21 @@ class PendingRecipeService {
 
   // ── Admin: reddet ──────────────────────────────────────────────────────────
 
-  Future<void> rejectRecipe(String pendingId, String comment) async {
+  Future<void> rejectRecipe(
+    String pendingId,
+    String comment, {
+    List<String> imageUrls = const [],
+  }) async {
     await _db.collection('pending_recipes').doc(pendingId).update({
       'status': 'rejected',
       'rejectionComment': comment.trim(),
       'reviewedAt': FieldValue.serverTimestamp(),
     });
+    // Reddedilen başvurunun fotoğrafları Storage'da sonsuza dek birikmesin.
+    // Firestore güncellemesi başarılı olduktan sonra sil; silme hatası
+    // (deleteImages içinde yutulur) red işlemini geri almaz.
+    if (imageUrls.isNotEmpty) {
+      await deleteImages(imageUrls);
+    }
   }
 }

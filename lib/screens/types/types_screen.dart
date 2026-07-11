@@ -28,13 +28,13 @@ class _TypesScreenState extends ConsumerState<TypesScreen> {
 
     return Column(
       children: [
-        const AppHeader(
+        AppHeader(
           titleWidget: Text(
             'Türe Göre Tarif',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF063B16),
+              color: context.palette.textPrimary,
             ),
           ),
         ),

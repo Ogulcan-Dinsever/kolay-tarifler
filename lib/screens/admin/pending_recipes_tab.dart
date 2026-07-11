@@ -145,7 +145,11 @@ class _PendingCardState extends ConsumerState<_PendingCard> {
               try {
                 await ref
                     .read(pendingRecipeServiceProvider)
-                    .rejectRecipe(widget.recipe.id, comment);
+                    .rejectRecipe(
+                      widget.recipe.id,
+                      comment,
+                      imageUrls: widget.recipe.imageUrls,
+                    );
                 if (mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(

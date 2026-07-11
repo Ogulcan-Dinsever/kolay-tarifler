@@ -53,13 +53,13 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
 
     return Column(
       children: [
-        const AppHeader(
+        AppHeader(
           titleWidget: Text(
             'Malzemeye Göre Tarif',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF063B16),
+              color: context.palette.textPrimary,
             ),
           ),
         ),

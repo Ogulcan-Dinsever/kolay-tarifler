@@ -13,6 +13,16 @@ service cloud.firestore {
              exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower()));
     }
 
+    // Sayaç alanı en fazla ±1 değişebilir (beğeni/yorum toggle'ı).
+    // İstemcinin likeCount'u keyfi bir değere (örn. 999999) yazmasını engeller.
+    function isCounterNudge(field) {
+      return !request.resource.data.diff(resource.data).affectedKeys().hasAny([field]) ||
+             (request.resource.data[field] is int &&
+              resource.data[field] is int &&
+              request.resource.data[field] >= resource.data[field] - 1 &&
+              request.resource.data[field] <= resource.data[field] + 1);
+    }
+
     // ── Tarifler ────────────────────────────────────────────────────────────────
     match /recipes/{recipeId} {
       allow read: if true;
@@ -20,7 +30,9 @@ service cloud.firestore {
       allow update: if isSignedIn() &&
                        (isAdmin() ||
                         request.auth.uid == resource.data.authorId ||
-                        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount', 'commentCount']));
+                        (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount', 'commentCount']) &&
+                         isCounterNudge('likeCount') &&
+                         isCounterNudge('commentCount')));
       allow delete: if isAdmin();
 
       // Beğeniler — kullanıcı sadece kendi beğeni dokümanını okur/yazar (belge yolu ile)
@@ -50,10 +62,13 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // ── Meta (seed kontrolü) — giriş yapan yazabilir ─────────────────────────────
+    // ── Meta (seed kontrolü) — sadece admin yazabilir ────────────────────────────
+    // Not: Bu belge açık yazılabilir olursa herhangi bir kullanıcı seed
+    // sürümünü bozup bir sonraki admin açılışında TÜM recipes koleksiyonunun
+    // silinip yeniden tohumlanmasını tetikleyebilir.
     match /_meta/{docId} {
       allow read: if true;
-      allow write: if isSignedIn();
+      allow write: if isAdmin();
     }
 
     // ── Kullanıcı profilleri ─────────────────────────────────────────────────────
@@ -78,7 +93,10 @@ service cloud.firestore {
     // giriş yapan herhangi bir kullanıcı yazabilir (bootstrap). Başka hiçbir
     // e-posta için bu istisna geçerli değil — yoksa herkes kendini admin yapabilir.
     match /admins/{email} {
-      allow read: if isSignedIn();
+      // get: herkes kendi admin durumunu tek belgeyle kontrol edebilir.
+      // list: e-posta adreslerinin toplu sızmasını önlemek için sadece admin.
+      allow get: if isSignedIn();
+      allow list: if isAdmin();
       allow create, update: if isAdmin() ||
                       (isSignedIn() &&
                        email == 'ogulcandnsvr@gmail.com' &&

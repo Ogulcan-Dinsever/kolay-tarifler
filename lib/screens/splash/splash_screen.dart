@@ -36,8 +36,10 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   }
 
   Future<void> _init() async {
+    // Minimum bekleme = logo animasyonunun süresi. Hazırlık daha uzun sürerse
+    // onu bekler; yapay ekstra gecikme yok.
     await Future.wait([
-      Future.delayed(const Duration(milliseconds: 2200)),
+      Future.delayed(const Duration(milliseconds: 900)),
       _prepareApp(),
     ]);
     if (mounted) context.go('/');

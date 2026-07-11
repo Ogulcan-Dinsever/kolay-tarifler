@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../core/theme/app_colors.dart';
+import '../core/theme/app_theme.dart';
 import '../core/utils/responsive.dart';
 import '../providers/auth_provider.dart';
 
@@ -46,10 +47,11 @@ class AppHeader extends ConsumerWidget {
                       Expanded(
                         child: Text(
                           title!,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w700,
-                            color: AppColors.primaryText,
+                            // Koyu temada okunabilirlik için temaya duyarlı renk
+                            color: context.palette.textPrimary,
                           ),
                         ),
                       ),

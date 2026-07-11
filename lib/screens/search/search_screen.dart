@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/theme/app_theme.dart';
 import '../../models/recipe.dart';
 import '../../providers/recipe_provider.dart';
+import '../../services/recipe_service.dart';
 import '../../widgets/app_header.dart';
 import '../../widgets/recipe_card.dart';
 
@@ -30,21 +31,21 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final results = _query.isEmpty
         ? <Recipe>[]
         : all.where((r) {
-            final q = _query.toLowerCase();
-            return r.name.toLowerCase().contains(q) ||
-                r.description.toLowerCase().contains(q) ||
-                r.type.toLowerCase().contains(q);
+            final q = RecipeService.foldTurkish(_query);
+            return RecipeService.foldTurkish(r.name).contains(q) ||
+                RecipeService.foldTurkish(r.description).contains(q) ||
+                RecipeService.foldTurkish(r.type).contains(q);
           }).toList();
 
     return Column(
       children: [
-        const AppHeader(
+        AppHeader(
           titleWidget: Text(
             'Ara',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: Color(0xFF063B16),
+              color: context.palette.textPrimary,
             ),
           ),
         ),

@@ -8,6 +8,7 @@ import '../../models/calendar_entry.dart';
 import '../../models/recipe.dart';
 import '../../providers/calendar_provider.dart';
 import '../../providers/recipe_provider.dart';
+import '../../services/recipe_service.dart';
 import '../../widgets/app_header.dart';
 
 class CalendarScreen extends ConsumerStatefulWidget {
@@ -57,7 +58,7 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w700,
-              color: AppColors.primaryText,
+              color: context.palette.textPrimary,
             ),
           ),
           actions: [
@@ -155,6 +156,7 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
         border: Border.all(color: context.palette.border, width: 1.5),
       ),
       child: TableCalendar(
+        locale: 'tr_TR',
         firstDay: DateTime.now().subtract(const Duration(days: 365)),
         lastDay: DateTime.now().add(const Duration(days: 365)),
         focusedDay: _focusedDay,
@@ -333,10 +335,10 @@ class _AddMealSheetState extends ConsumerState<_AddMealSheet> {
     final all = ref.watch(allRecipesProvider).valueOrNull ?? [];
     final filtered = all.where((r) {
       if (_query.isEmpty) return true;
-      final q = _query.toLowerCase();
-      return r.name.toLowerCase().contains(q) ||
-          r.cuisine.toLowerCase().contains(q) ||
-          r.type.toLowerCase().contains(q);
+      final q = RecipeService.foldTurkish(_query);
+      return RecipeService.foldTurkish(r.name).contains(q) ||
+          RecipeService.foldTurkish(r.cuisine).contains(q) ||
+          RecipeService.foldTurkish(r.type).contains(q);
     }).toList();
 
     return Padding(

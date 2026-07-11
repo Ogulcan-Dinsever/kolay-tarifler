@@ -80,12 +80,13 @@ class Ingredient {
   });
 
   factory Ingredient.fromFirestore(Map<String, dynamic> data, String id) {
+    // Alan tipleri Firestore'da garanti değil — tek bozuk belge listeyi düşürmesin.
     return Ingredient(
       id: id,
-      name: data['name'] as String,
-      emoji: data['emoji'] as String,
-      imageUrl: data['imageUrl'] as String? ?? '',
-      category: parseCategory(data['category'] as String?),
+      name: data['name']?.toString() ?? '',
+      emoji: data['emoji']?.toString() ?? '',
+      imageUrl: data['imageUrl']?.toString() ?? '',
+      category: parseCategory(data['category']?.toString()),
     );
   }
 

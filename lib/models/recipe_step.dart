@@ -18,10 +18,11 @@ class RecipeStep {
   });
 
   factory RecipeStep.fromMap(Map<String, dynamic> data) {
+    // Firestore'daki tip tutarsızlıklarına dayanıklı oku (bkz. RecipeIngredient.fromMap).
     return RecipeStep(
-      order: data['order'] as int,
-      text: data['text'] as String,
-      imageUrl: data['imageUrl'] as String?,
+      order: (data['order'] as num?)?.toInt() ?? 0,
+      text: data['text']?.toString() ?? '',
+      imageUrl: data['imageUrl']?.toString(),
     );
   }
 
