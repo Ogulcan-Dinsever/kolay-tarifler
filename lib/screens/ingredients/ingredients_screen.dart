@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/tutorial/tutorial_overlay.dart';
 import '../../core/utils/responsive.dart';
 import '../../models/ingredient.dart';
 import '../../models/recipe.dart';
@@ -21,6 +22,61 @@ class IngredientsScreen extends ConsumerStatefulWidget {
 
 class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
   final Set<String> _selectedIngredients = {};
+
+  // Tutorial
+  final _selectKey = GlobalKey();
+  OverlayEntry? _tutorialEntry;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkTutorial());
+  }
+
+  Future<void> _checkTutorial() async {
+    final should = await TutorialService.shouldShow('tutorial_ingredients_v1');
+    if (!should || !mounted) return;
+    // Malzeme listesinin yüklenmesini bekle
+    await Future.delayed(const Duration(milliseconds: 600));
+    if (mounted) _insertTutorial();
+  }
+
+  void _insertTutorial() {
+    _tutorialEntry = OverlayEntry(
+      builder: (_) => TutorialOverlay(
+        storageKey: 'tutorial_ingredients_v1',
+        steps: [
+          TutorialStep(
+            emoji: '🥕',
+            title: 'Dolabında Ne Varsa',
+            description:
+                'Evdeki malzemeleri kategorilerden işaretle — istediğin kadar seçebilirsin. "Ne pişirsem?" derdine son.',
+            targetKey: _selectKey,
+            spotlightPadding: 8,
+          ),
+          TutorialStep(
+            emoji: '🎯',
+            title: 'Eşleşen Tarifler En Altta',
+            description:
+                'Seçim yaptıkça sayfanın EN ALTINDA "Eşleşen Tarifler" listelenir — en çok malzemesi uyan tarif en üstte. Aşağı kaydırmayı unutma!',
+            targetKey: _selectKey,
+            spotlightPadding: 8,
+          ),
+        ],
+        onDone: () {
+          _tutorialEntry?.remove();
+          _tutorialEntry = null;
+        },
+      ),
+    );
+    Overlay.of(context).insert(_tutorialEntry!);
+  }
+
+  @override
+  void dispose() {
+    _tutorialEntry?.remove();
+    super.dispose();
+  }
 
   List<Recipe> _matchingRecipes(List<Recipe> all) {
     if (_selectedIngredients.isEmpty) return [];
@@ -69,11 +125,14 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 16),
-                SectionHeader(
-                  title: 'Malzemeleri Seç',
-                  action: _selectedIngredients.isNotEmpty
-                      ? '${_selectedIngredients.length} seçili'
-                      : null,
+                KeyedSubtree(
+                  key: _selectKey,
+                  child: SectionHeader(
+                    title: 'Malzemeleri Seç',
+                    action: _selectedIngredients.isNotEmpty
+                        ? '${_selectedIngredients.length} seçili'
+                        : null,
+                  ),
                 ),
                 ..._buildCategoryGroups(context, grouped),
                 if (_selectedIngredients.isNotEmpty) ...[

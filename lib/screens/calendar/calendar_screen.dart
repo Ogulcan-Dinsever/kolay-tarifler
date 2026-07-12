@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:table_calendar/table_calendar.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
+import '../../core/tutorial/tutorial_overlay.dart';
 import '../../models/calendar_entry.dart';
 import '../../models/recipe.dart';
 import '../../providers/calendar_provider.dart';
@@ -22,12 +23,71 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
   late DateTime _focusedDay;
   late DateTime _selectedDay;
 
+  // Tutorial
+  final _calKey = GlobalKey();
+  final _addKey = GlobalKey();
+  final _cartKey = GlobalKey();
+  OverlayEntry? _tutorialEntry;
+
   @override
   void initState() {
     super.initState();
     final today = DateTime.now();
     _focusedDay = today;
     _selectedDay = today;
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkTutorial());
+  }
+
+  Future<void> _checkTutorial() async {
+    final should = await TutorialService.shouldShow('tutorial_calendar_v1');
+    if (!should || !mounted) return;
+    await Future.delayed(const Duration(milliseconds: 500));
+    if (mounted) _insertTutorial();
+  }
+
+  void _insertTutorial() {
+    _tutorialEntry = OverlayEntry(
+      builder: (_) => TutorialOverlay(
+        storageKey: 'tutorial_calendar_v1',
+        steps: [
+          TutorialStep(
+            emoji: '📅',
+            title: 'Haftanı Planla',
+            description:
+                'Bir güne dokun, o günün yemeklerini gör. Yeşil noktalı günlerde plan var demektir.',
+            targetKey: _calKey,
+            spotlightPadding: 6,
+          ),
+          TutorialStep(
+            emoji: '➕',
+            title: 'Güne Yemek Ekle',
+            description:
+                'Seçili güne buradan tarif ekle. Tarif detayındaki "Takvime Ekle" butonu da aynı işi görür.',
+            targetKey: _addKey,
+            spotlightPadding: 8,
+          ),
+          TutorialStep(
+            emoji: '🛒',
+            title: 'Alışveriş Listen Hazır',
+            description:
+                'Sepete dokun: bu ay planladığın tüm yemeklerin malzemeleri tek listede. Markette işaretleye işaretleye ilerle.',
+            targetKey: _cartKey,
+            spotlightPadding: 8,
+          ),
+        ],
+        onDone: () {
+          _tutorialEntry?.remove();
+          _tutorialEntry = null;
+        },
+      ),
+    );
+    Overlay.of(context).insert(_tutorialEntry!);
+  }
+
+  @override
+  void dispose() {
+    _tutorialEntry?.remove();
+    super.dispose();
   }
 
   String _dateStr(DateTime d) =>
@@ -63,6 +123,7 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
           ),
           actions: [
             HeaderIconButton(
+              key: _cartKey,
               icon: Icons.shopping_cart_outlined,
               onTap: () => context.push('/shopping'),
             ),
@@ -73,7 +134,8 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _buildCalendar(context, entries),
+                KeyedSubtree(
+                    key: _calKey, child: _buildCalendar(context, entries)),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                   child: Row(
@@ -89,6 +151,7 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
                         ),
                       ),
                       GestureDetector(
+                        key: _addKey,
                         onTap: () => _showAddMealModal(context),
                         child: Container(
                           padding: const EdgeInsets.symmetric(

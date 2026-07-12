@@ -4,16 +4,79 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_colors.dart';
+import '../../core/tutorial/tutorial_overlay.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/theme_provider.dart';
 import '../../services/auth_service.dart';
 import '../../widgets/app_header.dart';
 
-class ProfileScreen extends ConsumerWidget {
+class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends ConsumerState<ProfileScreen> {
+  // Tutorial
+  final _themeKey = GlobalKey();
+  final _recipesKey = GlobalKey();
+  OverlayEntry? _tutorialEntry;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkTutorial());
+  }
+
+  Future<void> _checkTutorial() async {
+    // Misafir görünümünde TARİFLER grubu yok — turu yalnız üyeye göster
+    if (!ref.read(isAuthenticatedProvider)) return;
+    final should = await TutorialService.shouldShow('tutorial_profile_v1');
+    if (!should || !mounted) return;
+    await Future.delayed(const Duration(milliseconds: 400));
+    if (mounted) _insertTutorial();
+  }
+
+  void _insertTutorial() {
+    _tutorialEntry = OverlayEntry(
+      builder: (_) => TutorialOverlay(
+        storageKey: 'tutorial_profile_v1',
+        steps: [
+          TutorialStep(
+            emoji: '🎨',
+            title: 'Koyu / Açık Tema',
+            description:
+                'Gözünü yormayan koyu temaya buradan geç. Tercihin cihazında saklanır.',
+            targetKey: _themeKey,
+            spotlightPadding: 6,
+          ),
+          TutorialStep(
+            emoji: '👨‍🍳',
+            title: 'Kendi Tarifini Yayınla',
+            description:
+                'Tarif Gönder ile başvur; onaylanınca yayına girer ve sana bildirim gelir. Başvurularım\'dan durumu takip et.',
+            targetKey: _recipesKey,
+            spotlightPadding: 6,
+          ),
+        ],
+        onDone: () {
+          _tutorialEntry?.remove();
+          _tutorialEntry = null;
+        },
+      ),
+    );
+    Overlay.of(context).insert(_tutorialEntry!);
+  }
+
+  @override
+  void dispose() {
+    _tutorialEntry?.remove();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final isAuth = ref.watch(isAuthenticatedProvider);
 
     return Column(
@@ -49,39 +112,59 @@ class ProfileScreen extends ConsumerWidget {
       children: [
         _buildUserCard(context, ref),
         const SizedBox(height: 20),
-        _buildSettingsGroup(
-          context,
-          ref,
-          title: 'GÖRÜNÜM',
-          items: [
-            _SettingItem(
-              icon: Icons.palette_outlined,
-              label: 'Tema',
-              onTap: () => ref.read(themeModeProvider.notifier).toggle(),
-              trailing: Switch.adaptive(
-                value: ref.watch(themeModeProvider) == ThemeMode.dark,
-                onChanged: (_) => ref.read(themeModeProvider.notifier).toggle(),
-                activeTrackColor: AppColors.primary,
-                activeThumbColor: AppColors.primaryText,
+        KeyedSubtree(
+          key: _themeKey,
+          child: _buildSettingsGroup(
+            context,
+            ref,
+            title: 'GÖRÜNÜM',
+            items: [
+              _SettingItem(
+                icon: Icons.palette_outlined,
+                label: 'Tema',
+                onTap: () => ref.read(themeModeProvider.notifier).toggle(),
+                trailing: Switch.adaptive(
+                  value: ref.watch(themeModeProvider) == ThemeMode.dark,
+                  onChanged: (_) =>
+                      ref.read(themeModeProvider.notifier).toggle(),
+                  activeTrackColor: AppColors.primary,
+                  activeThumbColor: AppColors.primaryText,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
+        ),
+        const SizedBox(height: 12),
+        KeyedSubtree(
+          key: _recipesKey,
+          child: _buildSettingsGroup(
+            context,
+            ref,
+            title: 'TARİFLER',
+            items: [
+              _SettingItem(
+                icon: Icons.add_circle_outline_rounded,
+                label: 'Tarif Gönder',
+                onTap: () => context.push('/submit-recipe'),
+              ),
+              _SettingItem(
+                icon: Icons.pending_actions_rounded,
+                label: 'Başvurularım',
+                onTap: () => context.push('/my-submissions'),
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 12),
         _buildSettingsGroup(
           context,
           ref,
-          title: 'TARİFLER',
+          title: 'YARDIM',
           items: [
             _SettingItem(
-              icon: Icons.add_circle_outline_rounded,
-              label: 'Tarif Gönder',
-              onTap: () => context.push('/submit-recipe'),
-            ),
-            _SettingItem(
-              icon: Icons.pending_actions_rounded,
-              label: 'Başvurularım',
-              onTap: () => context.push('/my-submissions'),
+              icon: Icons.replay_rounded,
+              label: 'Tanıtım Turunu Sıfırla',
+              onTap: () => _resetTutorials(context),
             ),
           ],
         ),
@@ -91,10 +174,6 @@ class ProfileScreen extends ConsumerWidget {
           ref,
           title: 'HESAP',
           items: [
-            const _SettingItem(
-              icon: Icons.notifications_outlined,
-              label: 'Bildirimler',
-            ),
             _SettingItem(
               icon: Icons.logout,
               label: 'Çıkış Yap',
@@ -303,8 +382,33 @@ class ProfileScreen extends ConsumerWidget {
             ),
           ],
         ),
+        const SizedBox(height: 12),
+        _buildSettingsGroup(
+          context,
+          ref,
+          title: 'YARDIM',
+          items: [
+            _SettingItem(
+              icon: Icons.replay_rounded,
+              label: 'Tanıtım Turunu Sıfırla',
+              onTap: () => _resetTutorials(context),
+            ),
+          ],
+        ),
       ],
     );
+  }
+
+  Future<void> _resetTutorials(BuildContext context) async {
+    await TutorialService.resetAll();
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+              'Tanıtım turları sıfırlandı — ekranları gezdikçe yeniden gösterilecek. 🧭'),
+        ),
+      );
+    }
   }
 
   // ─── ORTAK BİLEŞENLER ──────────────────────────────────────────────────────

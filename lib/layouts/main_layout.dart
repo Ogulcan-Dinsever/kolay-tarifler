@@ -10,6 +10,9 @@ class MainShell extends ConsumerWidget {
   final Widget child;
   const MainShell({super.key, required this.child});
 
+  /// Ana ekran turunun alt menüyü spotlight'layabilmesi için (tek shell instance'ı var).
+  static final GlobalKey navBarKey = GlobalKey(debugLabel: 'mainNavBar');
+
   static const _baseNavItems = [
     _NavItem(path: '/', icon: Icons.home_rounded, label: 'Mutfaklar'),
     _NavItem(path: '/ingredients', icon: Icons.shopping_bag_rounded, label: 'Malzeme'),
@@ -55,6 +58,7 @@ class MainShell extends ConsumerWidget {
   Widget _buildBottomNav(
       BuildContext context, int activeIndex, List<_NavItem> navItems) {
     return Container(
+      key: navBarKey,
       decoration: BoxDecoration(
         color: context.palette.card,
         border: Border(

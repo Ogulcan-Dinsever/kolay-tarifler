@@ -23,6 +23,15 @@ class TutorialStep {
 // ─── Servis ─────────────────────────────────────────────────────────────────
 
 class TutorialService {
+  /// Uygulamadaki tüm tur anahtarları — "Tanıtım Turunu Sıfırla" bunları siler.
+  static const allKeys = [
+    'tutorial_home_v2',
+    'tutorial_ingredients_v1',
+    'tutorial_detail_v2',
+    'tutorial_calendar_v1',
+    'tutorial_profile_v1',
+  ];
+
   static Future<bool> shouldShow(String key) async {
     final prefs = await SharedPreferences.getInstance();
     return !(prefs.getBool(key) ?? false);
@@ -31,6 +40,14 @@ class TutorialService {
   static Future<void> markShown(String key) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(key, true);
+  }
+
+  /// Tüm turları sıfırla — ekranlar bir sonraki açılışta turu yeniden gösterir.
+  static Future<void> resetAll() async {
+    final prefs = await SharedPreferences.getInstance();
+    for (final k in allKeys) {
+      await prefs.remove(k);
+    }
   }
 }
 

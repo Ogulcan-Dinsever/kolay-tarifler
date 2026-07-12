@@ -57,6 +57,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   // Tutorial GlobalKey'leri
   final _likeKey = GlobalKey();
   final _tabBarKey = GlobalKey();
+  final _calendarBtnKey = GlobalKey();
   OverlayEntry? _tutorialEntry;
 
   Recipe get recipe => widget.recipe;
@@ -70,29 +71,45 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   }
 
   Future<void> _checkTutorial() async {
-    final should = await TutorialService.shouldShow('tutorial_detail_v1');
+    final should = await TutorialService.shouldShow('tutorial_detail_v2');
     if (should && mounted) _insertTutorial();
   }
 
   void _insertTutorial() {
     _tutorialEntry = OverlayEntry(
       builder: (_) => TutorialOverlay(
-        storageKey: 'tutorial_detail_v1',
+        storageKey: 'tutorial_detail_v2',
         steps: [
           TutorialStep(
             emoji: '❤️',
             title: 'Tarifi Beğen',
             description:
-                'Kalp ikonuna tıklayarak bu tarifi beğen. Beğeniler topluluk sıralamasını şekillendirir!',
+                'Kalbe tıkla — beğeniler topluluk sıralamasını şekillendirir, tarif sahibine de bildirim gider.',
             targetKey: _likeKey,
             spotlightPadding: 10,
           ),
           TutorialStep(
             emoji: '💬',
-            title: 'Yorum Ekle',
+            title: 'Yorumlar ve Notlarım',
             description:
-                '"Yorumlar" sekmesine geçerek tarifi denedin mi? Deneyimini toplulukla paylaş.',
+                'Yorumlar herkese açık; deneyimini paylaş. Notlarım ise sadece sana özel: "tuzu az koy" gibi mutfak notlarını buraya yaz.',
             targetKey: _tabBarKey,
+            spotlightPadding: 6,
+          ),
+          TutorialStep(
+            emoji: '👥',
+            title: 'Topluluk Sürümleri',
+            description:
+                'Topluluk sekmesinde üyelerin bu tarife kendi yorumunu kattığı sürümler var. Sen de kendi sürümünü yayınlayabilirsin!',
+            targetKey: _tabBarKey,
+            spotlightPadding: 6,
+          ),
+          TutorialStep(
+            emoji: '📅',
+            title: 'Takvimine Ekle',
+            description:
+                'Bu tarifi bir güne planla. Takvimindeki yemeklerin malzemeleri otomatik alışveriş listene dönüşür.',
+            targetKey: _calendarBtnKey,
             spotlightPadding: 6,
           ),
         ],
@@ -505,6 +522,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
 
   Widget _buildCalendarButton(BuildContext context) {
     return Container(
+      key: _calendarBtnKey,
       padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
       decoration: BoxDecoration(
         color: context.palette.card,

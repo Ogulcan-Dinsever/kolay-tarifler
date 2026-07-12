@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/tutorial/tutorial_overlay.dart';
+import '../../layouts/main_layout.dart';
 import '../../core/utils/format.dart';
 import '../../models/recipe.dart';
 import '../../providers/notifications_provider.dart';
@@ -34,6 +35,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   final _searchKey    = GlobalKey();
   final _cuisineKey   = GlobalKey();
   final _recipeKey    = GlobalKey();
+  final _featuredKey  = GlobalKey();
+  final _bellKey      = GlobalKey();
 
   OverlayEntry? _tutorialEntry;
 
@@ -44,7 +47,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   }
 
   Future<void> _checkTutorial() async {
-    final should = await TutorialService.shouldShow('tutorial_home_v1');
+    final should = await TutorialService.shouldShow('tutorial_home_v2');
     if (!should || !mounted) return;
     // Tarif listesinin yüklenmesi için bekle (recipeKey henüz render edilmedi)
     await Future.delayed(const Duration(milliseconds: 800));
@@ -54,31 +57,55 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   void _insertTutorial() {
     _tutorialEntry = OverlayEntry(
       builder: (_) => TutorialOverlay(
-        storageKey: 'tutorial_home_v1',
+        storageKey: 'tutorial_home_v2',
         steps: [
           TutorialStep(
             emoji: '🔍',
             title: 'Tarif Ara',
             description:
-                'Aradığın yemeği buraya yaz — ad, tür veya mutfağa göre anında filtrele.',
+                'Aradığın yemeği buraya yaz. Türkçe karakter takılmaz: "kofte" yazsan da İçli Köfte\'yi bulur.',
             targetKey: _searchKey,
             spotlightPadding: 8,
           ),
           TutorialStep(
             emoji: '🌍',
-            title: 'Mutfak Seç',
+            title: '10 Dünya Mutfağı',
             description:
-                'Türk, İtalyan, Japon… Chip\'lere tıklayarak farklı mutfakları keşfet.',
+                'Türk, İtalyan, Japon, Meksika… Chip\'lere tıklayarak mutfak değiştir; liste her seferinde farklı tariflerle karışır.',
             targetKey: _cuisineKey,
             spotlightPadding: 8,
           ),
           TutorialStep(
-            emoji: '🍽️',
-            title: 'Tariflere Göz At',
+            emoji: '⭐',
+            title: 'Haftanın Tarifi',
             description:
-                'Bir tarif kartına tıklayarak malzemeleri, adımları ve yorumları gör. Beğendiğin tarifleri kalp ikonuyla işaretle!',
+                'Her hafta öne çıkan seçki burada. Tek dokunuşla detayına git.',
+            targetKey: _featuredKey,
+            spotlightPadding: 8,
+          ),
+          TutorialStep(
+            emoji: '🍽️',
+            title: 'Tarif Kartları',
+            description:
+                'Karta tıkla: malzemeler, adımlar, yorumlar, kişisel notların ve topluluk sürümleri tek ekranda. Kalple beğenmeyi unutma!',
             targetKey: _recipeKey,
             spotlightPadding: 12,
+          ),
+          TutorialStep(
+            emoji: '🔔',
+            title: 'Bildirimlerin',
+            description:
+                'Tariflerine gelen beğeni ve yorumlar ile başvuru sonuçların zile düşer. Kırmızı nokta = okunmamış var.',
+            targetKey: _bellKey,
+            spotlightPadding: 8,
+          ),
+          TutorialStep(
+            emoji: '🧭',
+            title: 'Alt Menüyü Keşfet',
+            description:
+                'Malzeme: dolabındakileri seç, sana uygun tarifleri bulsun. Takvim: haftanı planla, alışveriş listen kendiliğinden oluşsun.',
+            targetKey: MainShell.navBarKey,
+            spotlightPadding: 6,
           ),
         ],
         onDone: () {
@@ -138,6 +165,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         AppHeader(
           actions: [
             HeaderIconButton(
+              key: _bellKey,
               icon: Icons.notifications_outlined,
               // Rozet yalnızca gerçekten okunmamış bildirim varken görünür
               showBadge: ref.watch(unreadNotificationCountProvider) > 0,
@@ -180,7 +208,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 const SectionHeader(
                   title: 'Öne Çıkan Tarif',
                 ),
-                _buildFeatured(ref),
+                KeyedSubtree(key: _featuredKey, child: _buildFeatured(ref)),
                 recipesAsync.when(
                   loading: () => const Padding(
                     padding: EdgeInsets.symmetric(vertical: 48),
@@ -226,14 +254,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
-                              key: _recipeKey,
-                              children: recipes
-                                  .map((recipe) => RecipeCard(
-                                        recipe: recipe,
-                                        onTap: () => context
-                                            .push('/recipe/${recipe.id}'),
-                                      ))
-                                  .toList(),
+                              children: [
+                                // Spotlight yalnız ilk kartı hedefler
+                                for (var i = 0; i < recipes.length; i++)
+                                  KeyedSubtree(
+                                    key: i == 0 ? _recipeKey : null,
+                                    child: RecipeCard(
+                                      recipe: recipes[i],
+                                      onTap: () => context
+                                          .push('/recipe/${recipes[i].id}'),
+                                    ),
+                                  ),
+                              ],
                             ),
                           ),
                       ],
