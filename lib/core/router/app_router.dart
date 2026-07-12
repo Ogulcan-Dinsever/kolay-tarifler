@@ -19,6 +19,7 @@ import '../../screens/admin/admin_screen.dart';
 import '../../screens/admin/edit_recipe_screen.dart';
 import '../../screens/submit_recipe/submit_recipe_screen.dart';
 import '../../screens/submit_recipe/my_submissions_screen.dart';
+import '../../screens/notifications/notifications_screen.dart';
 
 // Auth state değişince router'ı yenile
 class _AuthNotifier extends ChangeNotifier {
@@ -96,6 +97,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: '/my-submissions',
             builder: (context, state) => const MySubmissionsScreen(),
+          ),
+          // Bildirim merkezi — alt menüde sekmesi yok; yalnızca ana
+          // ekrandaki zil butonundan açılır.
+          GoRoute(
+            path: '/notifications',
+            builder: (context, state) => const NotificationsScreen(),
           ),
         ],
       ),

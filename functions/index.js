@@ -43,6 +43,30 @@ async function sendToUser(userId, { title, body }, data = {}) {
   }
 }
 
+// Uygulama içi bildirim: users/{uid}/notifications altına kayıt.
+// Zil ekranı bu koleksiyonu dinler; FCM gitmese bile (token yok/izin kapalı)
+// bildirim uygulama içinde görünür.
+async function addInApp(userId, { title, body }, data = {}) {
+  try {
+    await db.collection('users').doc(userId).collection('notifications').add({
+      title,
+      body,
+      type: data.type || null,
+      targetId: data.recipeId || data.id || null,
+      read: false,
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+  } catch (err) {
+    console.error('addInApp yazılamadı:', userId, err.message);
+  }
+}
+
+// Hem uygulama içi kayıt hem FCM push — tüm event'ler bunu kullanır.
+async function notifyUser(userId, message, data = {}) {
+  await addInApp(userId, message, data);
+  return sendToUser(userId, message, data);
+}
+
 // ── 1. Tarif onay / red bildirimi ────────────────────────────────────────────
 
 exports.onPendingRecipeStatusChange = functions
@@ -68,7 +92,7 @@ exports.onPendingRecipeStatusChange = functions
       return null;
     }
 
-    return sendToUser(
+    return notifyUser(
       after.authorId,
       { title, body },
       { type: 'pending_recipe', id: context.params.docId },
@@ -94,7 +118,7 @@ exports.onRecipeLiked = functions
     const likerSnap = await db.collection('users').doc(likerId).get();
     const likerName = likerSnap.data()?.displayName || 'Biri';
 
-    return sendToUser(
+    return notifyUser(
       recipe.authorId,
       {
         title: '❤️ Yeni Beğeni',
@@ -126,7 +150,7 @@ exports.onCommentAdded = functions
       ? comment.text.substring(0, 60) + '…'
       : comment.text;
 
-    return sendToUser(
+    return notifyUser(
       recipe.authorId,
       {
         title: '💬 Yeni Yorum',

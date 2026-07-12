@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/tutorial/tutorial_overlay.dart';
 import '../../core/utils/format.dart';
 import '../../models/recipe.dart';
+import '../../providers/notifications_provider.dart';
 import '../../providers/recipe_provider.dart';
 import '../../services/recipe_service.dart';
 import '../../widgets/app_header.dart';
@@ -138,8 +139,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           actions: [
             HeaderIconButton(
               icon: Icons.notifications_outlined,
-              showBadge: true,
-              onTap: () {},
+              // Rozet yalnızca gerçekten okunmamış bildirim varken görünür
+              showBadge: ref.watch(unreadNotificationCountProvider) > 0,
+              onTap: () => context.push('/notifications'),
             ),
           ],
         ),

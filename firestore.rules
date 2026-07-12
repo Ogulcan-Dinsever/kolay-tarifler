@@ -74,6 +74,17 @@ service cloud.firestore {
     // ── Kullanıcı profilleri ─────────────────────────────────────────────────────
     match /users/{userId} {
       allow read, write: if isSignedIn() && request.auth.uid == userId;
+
+      // Uygulama içi bildirimler — SADECE Cloud Functions (Admin SDK) oluşturur.
+      // Sahibi okur/siler; güncelleme yalnız 'read' bayrağıyla sınırlı, böylece
+      // istemci başlık/gövde/type alanlarını değiştiremez.
+      match /notifications/{notifId} {
+        allow read, delete: if isSignedIn() && request.auth.uid == userId;
+        allow update: if isSignedIn() && request.auth.uid == userId &&
+                         request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read']) &&
+                         request.resource.data.read is bool;
+        allow create: if false;
+      }
     }
 
     // ── Bekleyen tarifler ────────────────────────────────────────────────────────
