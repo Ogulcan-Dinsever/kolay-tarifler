@@ -13,10 +13,14 @@ class RecipeCard extends ConsumerWidget {
   final Recipe recipe;
   final VoidCallback? onTap;
 
+  /// Kart başlığının üstünde turuncu bilgi rozeti (ör. "1 Malzeme Eksik").
+  final String? badgeText;
+
   const RecipeCard({
     super.key,
     required this.recipe,
     this.onTap,
+    this.badgeText,
   });
 
   @override
@@ -62,6 +66,26 @@ class RecipeCard extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  if (badgeText != null) ...[
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFF3E0),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: const Color(0xFFFFCC80)),
+                      ),
+                      child: Text(
+                        badgeText!,
+                        style: const TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w800,
+                          color: Color(0xFFE65100),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                  ],
                   Text(
                     recipe.name,
                     style: TextStyle(
