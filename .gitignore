@@ -60,3 +60,8 @@ node_modules/
 # Local gstack tooling output (QA reports etc. — also persisted to ~/.gstack/projects/)
 .gstack/
 scripts/backup_recipes_*.json
+scripts/ingredient_state_before.json
+scripts/ingredient_image_candidates.json
+scripts/ingredient_image_work/
+scripts/ingredient_contact_sheets/
+scripts/ingredient_repair_backups/
