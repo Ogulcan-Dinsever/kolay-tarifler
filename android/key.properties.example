@@ -1,6 +1,6 @@
 # Copy this file to android/key.properties. Never commit the copied file.
 # Environment variables with the same values override this file in CI.
-storeFile=app/keystore/kolay-tarifler-upload.jks
+storeFile=keystore/kolay-tarifler-upload.jks
 storePassword=CHANGE_ME
 keyAlias=kolay-tarifler
 keyPassword=CHANGE_ME

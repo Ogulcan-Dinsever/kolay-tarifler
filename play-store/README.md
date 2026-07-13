@@ -16,6 +16,11 @@ Bu klasör Play Console alanlarını doldururken kullanılacak doğrulanmış me
 - Uygulama içi satın alma: **Hayır**
 - Hedef kitle önerisi: **18 yaş ve üzeri**
 
+Reklam bannerı tarif, arama, takvim, profil ve bildirim gibi kullanıcı
+içeriği bulunan ekranlarda gösterilir. Giriş/kayıt ve yönetim ekranları,
+AdMob'un yayıncı içeriği olmayan ekran politikasına uyum için reklam dışında
+tutulur.
+
 ## Sıra
 
 1. Play Console'da uygulamayı `Kolay Tarifler` adı ve `com.kolaytarifler.app` paket kimliğiyle oluştur.
