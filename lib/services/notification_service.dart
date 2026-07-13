@@ -28,11 +28,11 @@ class NotificationService {
     FirebaseMessaging.onBackgroundMessage(_onBackgroundMessage);
 
     // İzin iste
-    await _fcm.requestPermission(alert: true, badge: true, sound: true);
-
     // iOS ön plan bildirim gösterimi
     await _fcm.setForegroundNotificationPresentationOptions(
-      alert: true, badge: true, sound: true,
+      alert: true,
+      badge: true,
+      sound: true,
     );
 
     // Yerel bildirim init
@@ -48,20 +48,24 @@ class NotificationService {
     if (Platform.isAndroid) {
       await _local
           .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin>()
-          ?.createNotificationChannel(const AndroidNotificationChannel(
-            _channelId,
-            _channelName,
-            importance: Importance.high,
-          ));
+            AndroidFlutterLocalNotificationsPlugin
+          >()
+          ?.createNotificationChannel(
+            const AndroidNotificationChannel(
+              _channelId,
+              _channelName,
+              importance: Importance.high,
+            ),
+          );
     }
 
     // Uygulama açıkken gelen FCM → yerel bildirim olarak göster
     FirebaseMessaging.onMessage.listen(_showLocal);
 
     // Arka planda bildirime tıklandı
-    FirebaseMessaging.onMessageOpenedApp
-        .listen((m) => _emit(_routeFromData(m.data)));
+    FirebaseMessaging.onMessageOpenedApp.listen(
+      (m) => _emit(_routeFromData(m.data)),
+    );
 
     // Uygulama kapalıyken bildirime tıklanmış → rota beklesin
     final initial = await _fcm.getInitialMessage();
@@ -71,6 +75,17 @@ class NotificationService {
   }
 
   // Giriş yaptıktan sonra çağır
+  /// Requests permission only after an explicit user action.
+  static Future<bool> requestPermission() async {
+    final settings = await _fcm.requestPermission(
+      alert: true,
+      badge: true,
+      sound: true,
+    );
+    return settings.authorizationStatus == AuthorizationStatus.authorized ||
+        settings.authorizationStatus == AuthorizationStatus.provisional;
+  }
+
   static Future<void> saveToken(String userId) async {
     await _tokenRefreshSub?.cancel();
     final token = await _fcm.getToken();
@@ -84,21 +99,20 @@ class NotificationService {
     await _tokenRefreshSub?.cancel();
     _tokenRefreshSub = null;
     try {
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(userId)
-          .update({'fcmToken': FieldValue.delete()});
+      await FirebaseFirestore.instance.collection('users').doc(userId).update({
+        'fcmToken': FieldValue.delete(),
+      });
     } catch (_) {}
     await _fcm.deleteToken();
   }
 
   // ── Dahili ──────────────────────────────────────────────────────────────────
 
-  static Future<void> _upsert(String userId, String token) =>
-      FirebaseFirestore.instance
-          .collection('users')
-          .doc(userId)
-          .set({'fcmToken': token}, SetOptions(merge: true));
+  static Future<void> _upsert(String userId, String token) => FirebaseFirestore
+      .instance
+      .collection('users')
+      .doc(userId)
+      .set({'fcmToken': token}, SetOptions(merge: true));
 
   static void _showLocal(RemoteMessage message) {
     final n = message.notification;
@@ -138,11 +152,11 @@ class NotificationService {
       _routeFromPayload(_payloadFromData(data));
 
   static String? _toRoute(String type, String? id) => switch (type) {
-        'recipe_liked' when id != null => '/recipe/$id',
-        'comment' when id != null => '/recipe/$id',
-        'pending_recipe' => '/my-submissions',
-        _ => null,
-      };
+    'recipe_liked' when id != null => '/recipe/$id',
+    'comment' when id != null => '/recipe/$id',
+    'pending_recipe' => '/my-submissions',
+    _ => null,
+  };
 
   static void _emit(String? route) {
     if (route != null) _routeCtrl.add(route);

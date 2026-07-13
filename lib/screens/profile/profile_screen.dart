@@ -8,6 +8,7 @@ import '../../core/tutorial/tutorial_overlay.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/theme_provider.dart';
 import '../../services/auth_service.dart';
+import '../../services/notification_service.dart';
 import '../../widgets/app_header.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
@@ -166,6 +167,11 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               label: 'Tanıtım Turunu Sıfırla',
               onTap: () => _resetTutorials(context),
             ),
+            _SettingItem(
+              icon: Icons.notifications_outlined,
+              label: 'Bildirimleri Aç',
+              onTap: () => _requestNotificationPermission(context),
+            ),
           ],
         ),
         const SizedBox(height: 12),
@@ -198,11 +204,16 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final displayName = firebaseUser?.displayName ?? 'Kullanıcı';
     final email = firebaseUser?.email ?? '';
     final photoUrl = firebaseUser?.photoURL;
-    final isGoogleUser = firebaseUser?.providerData
-            .any((p) => p.providerId == 'google.com') ??
+    final isGoogleUser =
+        firebaseUser?.providerData.any((p) => p.providerId == 'google.com') ??
         false;
 
-    final initials = displayName.trim().split(' ').take(2).map((w) => w.isNotEmpty ? w[0].toUpperCase() : '').join();
+    final initials = displayName
+        .trim()
+        .split(' ')
+        .take(2)
+        .map((w) => w.isNotEmpty ? w[0].toUpperCase() : '')
+        .join();
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -258,7 +269,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         'https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg',
                         height: 12,
                         width: 12,
-                        errorBuilder: (context, url, error) => const SizedBox.shrink(),
+                        errorBuilder: (context, url, error) =>
+                            const SizedBox.shrink(),
                       ),
                       const SizedBox(width: 4),
                       Text(
@@ -405,7 +417,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
-              'Tanıtım turları sıfırlandı — ekranları gezdikçe yeniden gösterilecek. 🧭'),
+            'Tanıtım turları sıfırlandı — ekranları gezdikçe yeniden gösterilecek. 🧭',
+          ),
         ),
       );
     }
@@ -444,7 +457,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             children: [
               for (int i = 0; i < items.length; i++) ...[
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 12,
+                  ),
                   child: GestureDetector(
                     onTap: items[i].onTap,
                     behavior: HitTestBehavior.opaque,
@@ -491,7 +507,11 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   ),
                 ),
                 if (i < items.length - 1)
-                  Divider(height: 1, thickness: 1, color: context.palette.border),
+                  Divider(
+                    height: 1,
+                    thickness: 1,
+                    color: context.palette.border,
+                  ),
               ],
             ],
           ),
@@ -519,6 +539,20 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             child: const Text('Çıkış Yap', style: TextStyle(color: Colors.red)),
           ),
         ],
+      ),
+    );
+  }
+
+  Future<void> _requestNotificationPermission(BuildContext context) async {
+    final granted = await NotificationService.requestPermission();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          granted
+              ? 'Bildirimler açıldı.'
+              : 'Bildirim izni verilmedi. Ayarlardan daha sonra açabilirsin.',
+        ),
       ),
     );
   }
@@ -566,9 +600,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     try {
       await ref.read(authServiceProvider).deleteAccount();
       if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
-      messenger.showSnackBar(
-        const SnackBar(content: Text('Hesabın silindi.')),
-      );
+      messenger.showSnackBar(const SnackBar(content: Text('Hesabın silindi.')));
       router.go('/');
     } on AccountDeletionException catch (_) {
       if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
@@ -586,9 +618,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       router.go('/auth');
     } catch (e) {
       if (context.mounted) Navigator.of(context, rootNavigator: true).pop();
-      messenger.showSnackBar(
-        SnackBar(content: Text('Hesap silinemedi: $e')),
-      );
+      messenger.showSnackBar(SnackBar(content: Text('Hesap silinemedi: $e')));
     }
   }
 }
