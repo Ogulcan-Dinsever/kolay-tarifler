@@ -56,13 +56,9 @@ class MainShell extends ConsumerWidget {
         ? [..._baseNavItems, _adminNavItem]
         : _baseNavItems;
     final activeIndex = _activeIndex(location, isAdmin);
-    final showsBannerAd =
-        !isAdmin &&
-        (location == '/' ||
-            location.startsWith('/ingredients') ||
-            location.startsWith('/types') ||
-            location.startsWith('/search') ||
-            location.startsWith('/recipe/'));
+    // Reklam, uygulamanın tüm kullanıcıya yönelik Shell ekranlarında sabit
+    // kalır. Yönetim ekranı ayrı tutulur; orada işlem odaklı kontroller vardır.
+    final showsBannerAd = !location.startsWith('/admin');
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
