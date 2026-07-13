@@ -34,7 +34,12 @@ class TutorialService {
 
   static Future<bool> shouldShow(String key) async {
     final prefs = await SharedPreferences.getInstance();
-    return !(prefs.getBool(key) ?? false);
+    if (prefs.getBool(key) ?? false) return false;
+
+    // Turu gösterme hakkını ekrana eklemeden önce tüket. Kullanıcı tur
+    // sırasında uygulamayı kapatsa bile her açılışta yeniden başlamaz.
+    await prefs.setBool(key, true);
+    return true;
   }
 
   static Future<void> markShown(String key) async {
@@ -89,17 +94,19 @@ class _TutorialOverlayState extends State<TutorialOverlay>
       vsync: this,
       duration: const Duration(milliseconds: 700),
     )..repeat(reverse: true);
-    _bounceAnim = Tween<double>(begin: 0, end: 8).animate(
-      CurvedAnimation(parent: _bounceCtrl, curve: Curves.easeInOut),
-    );
+    _bounceAnim = Tween<double>(
+      begin: 0,
+      end: 8,
+    ).animate(CurvedAnimation(parent: _bounceCtrl, curve: Curves.easeInOut));
 
     _pulseCtrl = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1100),
     )..repeat(reverse: true);
-    _pulseAnim = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(parent: _pulseCtrl, curve: Curves.easeInOut),
-    );
+    _pulseAnim = Tween<double>(
+      begin: 0.0,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _pulseCtrl, curve: Curves.easeInOut));
 
     _fadeCtrl = AnimationController(
       vsync: this,
@@ -158,7 +165,6 @@ class _TutorialOverlayState extends State<TutorialOverlay>
   }
 
   Future<void> _done() async {
-    await TutorialService.markShown(widget.storageKey);
     widget.onDone();
   }
 
@@ -202,13 +208,17 @@ class _TutorialOverlayState extends State<TutorialOverlay>
               child: GestureDetector(
                 onTap: _done,
                 child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 8,
+                  ),
                   decoration: BoxDecoration(
                     color: Colors.white.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                        color: Colors.white.withValues(alpha: 0.35), width: 1),
+                      color: Colors.white.withValues(alpha: 0.35),
+                      width: 1,
+                    ),
                   ),
                   child: const Text(
                     'Geç',
@@ -269,8 +279,10 @@ class _TutorialOverlayState extends State<TutorialOverlay>
     const arrowSize = 36.0;
     const gap = 10.0;
 
-    final cardLeft =
-        ((screenSize.width - cardW) / 2).clamp(12.0, screenSize.width - cardW - 12);
+    final cardLeft = ((screenSize.width - cardW) / 2).clamp(
+      12.0,
+      screenSize.width - cardW - 12,
+    );
 
     double arrowTop;
     double cardTop;
@@ -300,8 +312,8 @@ class _TutorialOverlayState extends State<TutorialOverlay>
         AnimatedBuilder(
           animation: _bounceAnim,
           builder: (_, _) => Positioned(
-            top: arrowTop +
-                (cardBelow ? _bounceAnim.value : -_bounceAnim.value),
+            top:
+                arrowTop + (cardBelow ? _bounceAnim.value : -_bounceAnim.value),
             left: spotlight.center.dx - arrowSize / 2,
             child: Container(
               width: arrowSize,
@@ -379,8 +391,7 @@ class _TooltipCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text(step.emoji,
-                    style: const TextStyle(fontSize: 22)),
+                Text(step.emoji, style: const TextStyle(fontSize: 22)),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Text(
@@ -408,8 +419,10 @@ class _TooltipCard extends StatelessWidget {
               children: [
                 // Adım numarası
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 4,
+                  ),
                   decoration: BoxDecoration(
                     color: AppColors.primary.withValues(alpha: 0.12),
                     borderRadius: BorderRadius.circular(20),
@@ -429,7 +442,9 @@ class _TooltipCard extends StatelessWidget {
                   onTap: onNext,
                   child: Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
+                      horizontal: 20,
+                      vertical: 10,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.primary,
                       borderRadius: BorderRadius.circular(12),
@@ -454,8 +469,11 @@ class _TooltipCard extends StatelessWidget {
                         ),
                         if (!isLast) ...[
                           const SizedBox(width: 4),
-                          const Icon(Icons.arrow_forward_rounded,
-                              size: 14, color: AppColors.primaryText),
+                          const Icon(
+                            Icons.arrow_forward_rounded,
+                            size: 14,
+                            color: AppColors.primaryText,
+                          ),
                         ],
                       ],
                     ),
@@ -485,8 +503,12 @@ class _SpotlightPainter extends CustomPainter {
     final fullPath = Path()
       ..fillType = PathFillType.evenOdd
       ..addRect(Rect.fromLTWH(0, 0, size.width, size.height))
-      ..addRRect(RRect.fromRectAndRadius(
-          spotlight.inflate(4), const Radius.circular(18)));
+      ..addRRect(
+        RRect.fromRectAndRadius(
+          spotlight.inflate(4),
+          const Radius.circular(18),
+        ),
+      );
     canvas.drawPath(fullPath, bgPaint);
 
     // Pulse halkası
@@ -498,7 +520,9 @@ class _SpotlightPainter extends CustomPainter {
       ..strokeWidth = 2.0;
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-          spotlight.inflate(ringInflate), const Radius.circular(20)),
+        spotlight.inflate(ringInflate),
+        const Radius.circular(20),
+      ),
       ringPaint,
     );
 
@@ -508,8 +532,7 @@ class _SpotlightPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2.5;
     canvas.drawRRect(
-      RRect.fromRectAndRadius(
-          spotlight.inflate(4), const Radius.circular(18)),
+      RRect.fromRectAndRadius(spotlight.inflate(4), const Radius.circular(18)),
       borderPaint,
     );
   }
