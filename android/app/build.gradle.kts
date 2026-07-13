@@ -27,6 +27,8 @@ val releaseStoreFile = signingValue("KEYSTORE_PATH", "storeFile")
 val releaseStorePassword = signingValue("KEYSTORE_PASSWORD", "storePassword")
 val releaseKeyAlias = signingValue("KEY_ALIAS", "keyAlias")
 val releaseKeyPassword = signingValue("KEY_PASSWORD", "keyPassword")
+val debugAdMobAppId = "ca-app-pub-3940256099942544~3347511713"
+val releaseAdMobAppId = System.getenv("ADMOB_ANDROID_APP_ID") ?: ""
 
 android {
     namespace = "com.nepisirsem.app"
@@ -67,6 +69,7 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("release")
+            manifestPlaceholders["adMobAppId"] = releaseAdMobAppId
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
@@ -76,6 +79,7 @@ android {
         }
         debug {
             signingConfig = signingConfigs.getByName("debug")
+            manifestPlaceholders["adMobAppId"] = debugAdMobAppId
         }
     }
 }
@@ -92,6 +96,12 @@ gradle.taskGraph.whenReady {
             "Release signing is not configured. Set KEYSTORE_PATH, KEYSTORE_PASSWORD, " +
                 "KEY_ALIAS and KEY_PASSWORD, or create android/key.properties from " +
                 "android/key.properties.example."
+        )
+    }
+    if (needsReleaseSigning && releaseAdMobAppId.isBlank()) {
+        throw GradleException(
+            "AdMob Android app ID is not configured. Set ADMOB_ANDROID_APP_ID " +
+                "before building a release bundle."
         )
     }
 }

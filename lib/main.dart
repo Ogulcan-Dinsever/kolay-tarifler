@@ -19,10 +19,12 @@ import 'models/recipe_step.dart';
 import 'providers/theme_provider.dart';
 import 'services/notification_service.dart';
 import 'services/recipe_cache_service.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await MobileAds.instance.initialize();
 
   // table_calendar'ın Türkçe ay/gün adları için tarih sembollerini yükle
   await initializeDateFormatting('tr_TR');
@@ -66,8 +68,10 @@ void main() async {
       prefs.containsKey('cache_ingredients_v1')) {
     await prefs.remove('cache_recipes_v1');
     await prefs.remove('cache_ingredients_v1');
-    final oldKeys =
-        prefs.getKeys().where((k) => k.startsWith('cache_recipe_')).toList();
+    final oldKeys = prefs
+        .getKeys()
+        .where((k) => k.startsWith('cache_recipe_'))
+        .toList();
     for (final key in oldKeys) {
       await prefs.remove(key);
     }

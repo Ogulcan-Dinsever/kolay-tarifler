@@ -44,6 +44,7 @@ dependencies:
   hive_flutter: ^1.1.0
   google_fonts: ^8.0.2
   image_picker: ^1.1.2
+  google_mobile_ads: ^9.0.0
 
 dev_dependencies:
   flutter_test:

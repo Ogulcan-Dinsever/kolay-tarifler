@@ -1,1 +1,3 @@
 #include "Generated.xcconfig"
+// Supplied by CI or Xcode build settings for App Store archives.
+ADMOB_APP_ID=

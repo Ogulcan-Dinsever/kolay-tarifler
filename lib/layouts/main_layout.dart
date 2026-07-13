@@ -5,6 +5,7 @@ import '../core/theme/app_theme.dart';
 import '../core/theme/app_colors.dart';
 import '../core/utils/responsive.dart';
 import '../providers/admin_provider.dart';
+import '../widgets/anchored_banner_ad.dart';
 
 class MainShell extends ConsumerWidget {
   final Widget child;
@@ -15,10 +16,18 @@ class MainShell extends ConsumerWidget {
 
   static const _baseNavItems = [
     _NavItem(path: '/', icon: Icons.home_rounded, label: 'Mutfaklar'),
-    _NavItem(path: '/ingredients', icon: Icons.shopping_bag_rounded, label: 'Malzeme'),
+    _NavItem(
+      path: '/ingredients',
+      icon: Icons.shopping_bag_rounded,
+      label: 'Malzeme',
+    ),
     _NavItem(path: '/types', icon: Icons.restaurant_menu_rounded, label: 'Tür'),
     _NavItem(path: '/search', icon: Icons.search_rounded, label: 'Ara'),
-    _NavItem(path: '/calendar', icon: Icons.calendar_month_rounded, label: 'Takvim'),
+    _NavItem(
+      path: '/calendar',
+      icon: Icons.calendar_month_rounded,
+      label: 'Takvim',
+    ),
     _NavItem(path: '/profile', icon: Icons.person_rounded, label: 'Profil'),
   ];
 
@@ -47,16 +56,32 @@ class MainShell extends ConsumerWidget {
         ? [..._baseNavItems, _adminNavItem]
         : _baseNavItems;
     final activeIndex = _activeIndex(location, isAdmin);
+    final showsBannerAd =
+        !isAdmin &&
+        (location == '/' ||
+            location.startsWith('/ingredients') ||
+            location.startsWith('/types') ||
+            location.startsWith('/search') ||
+            location.startsWith('/recipe/'));
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: child,
-      bottomNavigationBar: _buildBottomNav(context, activeIndex, navItems),
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (showsBannerAd) const AnchoredBannerAd(),
+          _buildBottomNav(context, activeIndex, navItems),
+        ],
+      ),
     );
   }
 
   Widget _buildBottomNav(
-      BuildContext context, int activeIndex, List<_NavItem> navItems) {
+    BuildContext context,
+    int activeIndex,
+    List<_NavItem> navItems,
+  ) {
     return Container(
       key: navBarKey,
       decoration: BoxDecoration(
