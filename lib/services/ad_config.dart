@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
+import 'ad_consent_service.dart';
 
 class AdConfig {
   const AdConfig._();
@@ -26,6 +27,7 @@ class AdConfig {
           ? _iosTestBannerId
           : null;
     }
+    if (!AdConsentService.canRequestAds) return null;
     return Platform.isAndroid
         ? _androidReleaseBannerId.isEmpty
               ? null

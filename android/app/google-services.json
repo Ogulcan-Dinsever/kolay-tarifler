@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:129219992136:android:699603a851034e702c967d",
+        "mobilesdk_app_id": "1:129219992136:android:8dd48b2448206af42c967d",
         "android_client_info": {
-          "package_name": "com.example.nepisirsem"
+          "package_name": "com.kolaytarifler.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "129219992136-2d81mihuab1oqqe3bu29g9p9i1iu6r96.apps.googleusercontent.com",
+          "client_id": "129219992136-6p7uc4mats76c4r5san9q500379d9lih.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.nepisirsem",
+            "package_name": "com.kolaytarifler.app",
             "certificate_hash": "4b6db25a84113543cc1799ed24f3d76e23f778e1"
           }
         },
@@ -39,54 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "129219992136-3ujhbo0t37uja2bnmdv8nqbf57csmk5b.apps.googleusercontent.com",
+              "client_id": "129219992136-knrtegd77404mvd82380fn0bu2hvfhlc.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.nepisirsem"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:129219992136:android:36960e1186700c5f2c967d",
-        "android_client_info": {
-          "package_name": "com.nepisirsem.app"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "129219992136-kjj5ke39dspqlnai7o54la2si8d56i77.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.nepisirsem.app",
-            "certificate_hash": "4b6db25a84113543cc1799ed24f3d76e23f778e1"
-          }
-        },
-        {
-          "client_id": "129219992136-qm06g0kikal0f8c9akfhl9lofu2i7h7q.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCXNV7RqM5Kk3D6y3SpwN4fE7VRBvpSH04"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "129219992136-qm06g0kikal0f8c9akfhl9lofu2i7h7q.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "129219992136-3ujhbo0t37uja2bnmdv8nqbf57csmk5b.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.nepisirsem"
+                "bundle_id": "com.kolaytarifler.app"
               }
             }
           ]

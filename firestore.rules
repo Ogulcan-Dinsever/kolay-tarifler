@@ -13,6 +13,11 @@ service cloud.firestore {
              exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower()));
     }
 
+    function acceptedCommunityTerms() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.communityTermsVersion == '2026-07-13';
+    }
+
     // Sayaç alanı en fazla ±1 değişebilir (beğeni/yorum toggle'ı).
     // İstemcinin likeCount'u keyfi bir değere (örn. 999999) yazmasını engeller.
     function isCounterNudge(field) {
@@ -26,7 +31,10 @@ service cloud.firestore {
     // ── Tarifler ────────────────────────────────────────────────────────────────
     match /recipes/{recipeId} {
       allow read: if true;
-      allow create: if isSignedIn();
+      allow create: if isAdmin() ||
+                       (acceptedCommunityTerms() &&
+                        request.resource.data.authorId == request.auth.uid &&
+                        request.resource.data.isOfficial == false);
       allow update: if isSignedIn() &&
                        (isAdmin() ||
                         request.auth.uid == resource.data.authorId ||
@@ -43,7 +51,9 @@ service cloud.firestore {
       // Yorumlar — herkes okur, giriş yapan yazar
       match /comments/{commentId} {
         allow read: if true;
-        allow create: if isSignedIn();
+        allow create: if acceptedCommunityTerms() &&
+                         request.resource.data.userId == request.auth.uid &&
+                         request.resource.data.recipeId == recipeId;
         allow update, delete: if isSignedIn() &&
                                   (isAdmin() || request.auth.uid == resource.data.userId);
       }
@@ -75,6 +85,12 @@ service cloud.firestore {
     match /users/{userId} {
       allow read, write: if isSignedIn() && request.auth.uid == userId;
 
+      // Engelleme listesi yalnızca hesap sahibi tarafından yönetilir.
+      match /blockedUsers/{blockedUserId} {
+        allow read, create, delete: if isSignedIn() && request.auth.uid == userId;
+        allow update: if false;
+      }
+
       // Uygulama içi bildirimler — SADECE Cloud Functions (Admin SDK) oluşturur.
       // Sahibi okur/siler; güncelleme yalnız 'read' bayrağıyla sınırlı, böylece
       // istemci başlık/gövde/type alanlarını değiştiremez.
@@ -87,13 +103,34 @@ service cloud.firestore {
       }
     }
 
+    // Kullanıcı raporlarını yalnız raporlayan kişi oluşturabilir; raporları
+    // inceleme ve durum güncelleme yetkisi yalnız yöneticidedir.
+    match /reports/{reportId} {
+      allow create: if isSignedIn() &&
+                       request.resource.data.reporterId == request.auth.uid &&
+                       request.resource.data.keys().hasOnly([
+                         'reporterId', 'targetType', 'targetId', 'targetUserId',
+                         'reason', 'recipeId', 'status', 'createdAt'
+                       ]) &&
+                       request.resource.data.targetType in ['comment', 'recipe', 'user'] &&
+                       request.resource.data.targetId is string &&
+                       request.resource.data.targetUserId is string &&
+                       request.resource.data.reason is string &&
+                       request.resource.data.reason.size() > 0 &&
+                       request.resource.data.reason.size() <= 500 &&
+                       request.resource.data.status == 'open';
+      allow read, update, delete: if isAdmin();
+    }
+
     // ── Bekleyen tarifler ────────────────────────────────────────────────────────
     // Giriş yapan kullanıcı kendi başvurusunu oluşturabilir ve okuyabilir.
     // Admin tüm bekleyenleri okuyabilir ve status güncelleyebilir.
     match /pending_recipes/{docId} {
       allow read: if isSignedIn() &&
                      (request.auth.uid == resource.data.authorId || isAdmin());
-      allow create: if isSignedIn() && !request.auth.token.firebase.sign_in_provider.matches('anonymous');
+      allow create: if acceptedCommunityTerms() &&
+                       request.resource.data.authorId == request.auth.uid &&
+                       !request.auth.token.firebase.sign_in_provider.matches('anonymous');
       allow update: if isAdmin();
       allow delete: if isAdmin();
     }

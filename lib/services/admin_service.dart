@@ -21,20 +21,18 @@ class AdminService {
   }
 
   Stream<List<Map<String, dynamic>>> adminsStream() {
-    return _db.collection('admins').snapshots().map(
-          (snap) => snap.docs
-              .map((d) => {'email': d.id, ...d.data()})
-              .toList(),
+    return _db
+        .collection('admins')
+        .snapshots()
+        .map(
+          (snap) => snap.docs.map((d) => {'email': d.id, ...d.data()}).toList(),
         );
   }
 
   // ── İlk admin tohumu ────────────────────────────────────────────────────────
 
   Future<void> seedInitialAdmin() async {
-    final doc = await _db
-        .collection('admins')
-        .doc(initialAdminEmail)
-        .get();
+    final doc = await _db.collection('admins').doc(initialAdminEmail).get();
     if (!doc.exists) {
       await _db.collection('admins').doc(initialAdminEmail).set({
         'email': initialAdminEmail,
@@ -62,6 +60,64 @@ class AdminService {
       throw Exception('Süper admin kaldırılamaz');
     }
     await _db.collection('admins').doc(normalized).delete();
+  }
+
+  // ── Topluluk moderasyonu ──────────────────────────────────────────────────
+
+  Stream<List<Map<String, dynamic>>> openReportsStream() {
+    return _db
+        .collection('reports')
+        .where('status', isEqualTo: 'open')
+        .snapshots()
+        .map((snapshot) {
+          final reports = snapshot.docs
+              .map((doc) => {'id': doc.id, ...doc.data()})
+              .toList();
+          reports.sort((a, b) {
+            final aTime = a['createdAt'] as Timestamp?;
+            final bTime = b['createdAt'] as Timestamp?;
+            return (bTime?.millisecondsSinceEpoch ?? 0).compareTo(
+              aTime?.millisecondsSinceEpoch ?? 0,
+            );
+          });
+          return reports;
+        });
+  }
+
+  Future<void> resolveReport(String reportId, {bool contentRemoved = false}) {
+    return _db.collection('reports').doc(reportId).update({
+      'status': 'resolved',
+      'contentRemoved': contentRemoved,
+      'resolvedAt': FieldValue.serverTimestamp(),
+      'resolvedBy': _auth.currentUser?.email ?? 'admin',
+    });
+  }
+
+  Future<void> removeReportedContent(Map<String, dynamic> report) async {
+    final type = report['targetType'] as String?;
+    final targetId = report['targetId'] as String?;
+    if (targetId == null) throw Exception('Hedef içerik bulunamadı');
+
+    if (type == 'comment') {
+      final recipeId = report['recipeId'] as String?;
+      if (recipeId == null) throw Exception('Tarif bilgisi bulunamadı');
+      final recipeRef = _db.collection('recipes').doc(recipeId);
+      final commentRef = recipeRef.collection('comments').doc(targetId);
+      await _db.runTransaction((transaction) async {
+        final comment = await transaction.get(commentRef);
+        if (!comment.exists) return;
+        transaction.delete(commentRef);
+        transaction.update(recipeRef, {
+          'commentCount': FieldValue.increment(-1),
+        });
+      });
+    } else if (type == 'recipe') {
+      await _db.collection('recipes').doc(targetId).delete();
+    } else {
+      throw Exception('Bu rapor türünde silinecek tekil içerik yok');
+    }
+
+    await resolveReport(report['id'] as String, contentRemoved: true);
   }
 
   // ── Resim yükleme ───────────────────────────────────────────────────────────
@@ -116,19 +172,18 @@ class AdminService {
       'emoji': emoji,
       'imageUrls': imageUrls,
       'ingredients': ingredients
-          .map((e) => {
-                'ingredientId': e['ingredientId'] ?? '',
-                'name': e['name'] ?? '',
-                'amount': e['amount'] ?? '',
-              })
+          .map(
+            (e) => {
+              'ingredientId': e['ingredientId'] ?? '',
+              'name': e['name'] ?? '',
+              'amount': e['amount'] ?? '',
+            },
+          )
           .toList(),
       'steps': steps
           .asMap()
           .entries
-          .map((e) => {
-                'order': e.key + 1,
-                'text': e.value,
-              })
+          .map((e) => {'order': e.key + 1, 'text': e.value})
           .toList(),
       'tags': tags,
       'isOfficial': true,

@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCXNV7RqM5Kk3D6y3SpwN4fE7VRBvpSH04',
-    appId: '1:129219992136:android:699603a851034e702c967d',
+    appId: '1:129219992136:android:8dd48b2448206af42c967d',
     messagingSenderId: '129219992136',
     projectId: 'kolaytarifler-37c45',
     storageBucket: 'kolaytarifler-37c45.firebasestorage.app',
@@ -60,20 +60,20 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBQQp0-dhZHTCI3V-l8kmz-kL5T-vJmqJw',
-    appId: '1:129219992136:ios:f77105392c98d7c92c967d',
+    appId: '1:129219992136:ios:7655112eddbe532d2c967d',
     messagingSenderId: '129219992136',
     projectId: 'kolaytarifler-37c45',
     storageBucket: 'kolaytarifler-37c45.firebasestorage.app',
-    iosBundleId: 'com.example.nepisirsem',
+    iosBundleId: 'com.kolaytarifler.app',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyBQQp0-dhZHTCI3V-l8kmz-kL5T-vJmqJw',
-    appId: '1:129219992136:ios:f77105392c98d7c92c967d',
+    appId: '1:129219992136:ios:abed589ff31e3aa92c967d',
     messagingSenderId: '129219992136',
     projectId: 'kolaytarifler-37c45',
     storageBucket: 'kolaytarifler-37c45.firebasestorage.app',
-    iosBundleId: 'com.example.nepisirsem',
+    iosBundleId: 'com.kolaytarifler.app.macos',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

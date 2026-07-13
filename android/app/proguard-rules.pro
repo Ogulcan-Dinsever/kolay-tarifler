@@ -1,5 +1,5 @@
 # App
--keep class com.nepisirsem.app.** { *; }
+-keep class com.kolaytarifler.app.** { *; }
 
 # Flutter
 -keep class io.flutter.** { *; }

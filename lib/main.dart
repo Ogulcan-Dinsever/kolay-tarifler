@@ -18,19 +18,32 @@ import 'models/recipe_ingredient.dart';
 import 'models/recipe_step.dart';
 import 'providers/theme_provider.dart';
 import 'services/notification_service.dart';
+import 'services/ad_consent_service.dart';
 import 'services/recipe_cache_service.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await MobileAds.instance.initialize();
+  if (kDebugMode) {
+    try {
+      await MobileAds.instance.initialize().timeout(const Duration(seconds: 4));
+    } catch (_) {}
+  } else {
+    await AdConsentService.initialize();
+  }
 
   // table_calendar'ın Türkçe ay/gün adları için tarih sembollerini yükle
   await initializeDateFormatting('tr_TR');
 
   // Fontu önceden indir — sonraki açılışlarda disk cache'ten anında yükler.
-  await GoogleFonts.pendingFonts([GoogleFonts.nunito()]);
+  try {
+    await GoogleFonts.pendingFonts([
+      GoogleFonts.nunito(),
+    ]).timeout(const Duration(seconds: 4));
+  } catch (_) {
+    // İlk açılış çevrimdışıyken sistem fontuyla devam et.
+  }
 
   if (!kDebugMode) {
     FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
@@ -78,7 +91,11 @@ void main() async {
   }
 
   // FCM + yerel bildirimler
-  await NotificationService.init();
+  try {
+    await NotificationService.init().timeout(const Duration(seconds: 4));
+  } catch (_) {
+    // Bildirim hazırlığı uygulamanın açılmasını engellememeli.
+  }
 
   final savedTheme = prefs.getString('theme_mode') == 'dark'
       ? ThemeMode.dark
@@ -92,6 +109,8 @@ void main() async {
       child: const TarifliApp(),
     ),
   );
+  // İzin ağı yavaşsa splash ekranını bekletme; izin tamamlanmadan reklam
+  // istenmez ve hazır olduğunda banner kendiliğinden yüklenir.
 }
 
 class TarifliApp extends ConsumerStatefulWidget {

@@ -1,5 +1,5 @@
 /**
- * Yeni tarif oluşturma scripti — NePisirsem
+ * Yeni tarif oluşturma scripti — Kolay Tarifler
  *
  * new_recipes.json içindeki her tarif için:
  *   1. İsim Firestore'da zaten varsa ATLA (duplicate yazma yok).

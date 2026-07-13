@@ -1,5 +1,5 @@
 /**
- * Firebase Import Script — NePisirsem
+ * Firebase Import Script — Kolay Tarifler
  * Kullanım: node scripts/import_to_firebase.js
  *
  * Gereksinimler:

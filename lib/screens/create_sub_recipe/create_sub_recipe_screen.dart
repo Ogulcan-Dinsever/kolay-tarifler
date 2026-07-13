@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../core/community/community_terms.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../models/ingredient.dart';
@@ -31,8 +32,7 @@ class CreateSubRecipeScreen extends ConsumerStatefulWidget {
       _CreateSubRecipeScreenState();
 }
 
-class _CreateSubRecipeScreenState
-    extends ConsumerState<CreateSubRecipeScreen> {
+class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
   final _formKey = GlobalKey<FormState>();
   final _descCtrl = TextEditingController();
   final _durationCtrl = TextEditingController();
@@ -72,10 +72,9 @@ class _CreateSubRecipeScreenState
     final urls = <String>[];
     for (var i = 0; i < _selectedImages.length; i++) {
       final file = File(_selectedImages[i].path);
-      final ref = storage
-          .ref()
-          .child(
-              'recipe_images/$userId/${DateTime.now().millisecondsSinceEpoch}_$i.jpg');
+      final ref = storage.ref().child(
+        'recipe_images/$userId/${DateTime.now().millisecondsSinceEpoch}_$i.jpg',
+      );
       await ref.putFile(file);
       urls.add(await ref.getDownloadURL());
     }
@@ -92,6 +91,8 @@ class _CreateSubRecipeScreenState
       );
       return;
     }
+    if (!await ensureCommunityTermsAccepted(context, ref, user.uid)) return;
+    if (!mounted) return;
 
     // Tüm satırlar tamamlanmış olmalı — bir satır malzeme seçilmeden veya
     // miktar girilmeden bırakılırsa artık sessizce atılmıyor, kullanıcı uyarılıyor.
@@ -117,11 +118,13 @@ class _CreateSubRecipeScreenState
       final ingredients = <RecipeIngredient>[];
       for (var i = 0; i < _ingredientRows.length; i++) {
         final row = _ingredientRows[i];
-        ingredients.add(RecipeIngredient(
-          ingredientId: row.ingredientId!,
-          name: row.ingredientName!,
-          amount: row.amountCtrl.text.trim(),
-        ));
+        ingredients.add(
+          RecipeIngredient(
+            ingredientId: row.ingredientId!,
+            name: row.ingredientName!,
+            amount: row.amountCtrl.text.trim(),
+          ),
+        );
       }
 
       final steps = <RecipeStep>[];
@@ -133,14 +136,17 @@ class _CreateSubRecipeScreenState
         }
       }
 
-      final parent =
-          await ref.read(recipeByIdProvider(widget.parentRecipeId).future);
+      final parent = await ref.read(
+        recipeByIdProvider(widget.parentRecipeId).future,
+      );
 
       final authorName = user.displayName?.isNotEmpty == true
           ? user.displayName!
           : user.email?.split('@').first ?? 'Kullanıcı';
 
-      await ref.read(recipeServiceProvider).createSubRecipe(
+      await ref
+          .read(recipeServiceProvider)
+          .createSubRecipe(
             parentRecipeId: widget.parentRecipeId,
             authorId: user.uid,
             authorName: authorName,
@@ -165,9 +171,9 @@ class _CreateSubRecipeScreenState
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Hata: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Hata: $e')));
       }
     } finally {
       if (mounted) setState(() => _saving = false);
@@ -178,8 +184,7 @@ class _CreateSubRecipeScreenState
   Widget build(BuildContext context) {
     final parentAsync = ref.watch(recipeByIdProvider(widget.parentRecipeId));
     final parentName = parentAsync.valueOrNull?.name ?? '...';
-    final allIngredients =
-        ref.watch(ingredientsProvider).valueOrNull ?? [];
+    final allIngredients = ref.watch(ingredientsProvider).valueOrNull ?? [];
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -202,13 +207,16 @@ class _CreateSubRecipeScreenState
               // ─── Tarif adı ─────────────────────────────────────────────────
               Container(
                 width: double.infinity,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 12,
+                ),
                 decoration: BoxDecoration(
                   color: AppColors.primary.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
-                      color: AppColors.primary.withValues(alpha: 0.35)),
+                    color: AppColors.primary.withValues(alpha: 0.35),
+                  ),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -216,17 +224,19 @@ class _CreateSubRecipeScreenState
                     Text(
                       'Tarif',
                       style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.primary),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.primary,
+                      ),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       parentName,
                       style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w800,
-                          color: context.palette.textPrimary),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                        color: context.palette.textPrimary,
+                      ),
                     ),
                   ],
                 ),
@@ -247,8 +257,7 @@ class _CreateSubRecipeScreenState
                 controller: _durationCtrl,
                 hint: 'örn. 45 dk',
                 label: 'Süre',
-                validator: (v) =>
-                    v!.trim().isEmpty ? 'Süre boş olamaz' : null,
+                validator: (v) => v!.trim().isEmpty ? 'Süre boş olamaz' : null,
               ),
               const SizedBox(height: 20),
 
@@ -257,8 +266,10 @@ class _CreateSubRecipeScreenState
               const SizedBox(height: 4),
               Text(
                 'En fazla 6 fotoğraf ekleyebilirsiniz',
-                style:
-                    TextStyle(fontSize: 11, color: context.palette.textTertiary),
+                style: TextStyle(
+                  fontSize: 11,
+                  color: context.palette.textTertiary,
+                ),
               ),
               const SizedBox(height: 10),
               _buildPhotoRow(context),
@@ -279,7 +290,9 @@ class _CreateSubRecipeScreenState
                   child: Text(
                     'Sisteme henüz malzeme eklenmemiş.',
                     style: TextStyle(
-                        fontSize: 12, color: context.palette.textTertiary),
+                      fontSize: 12,
+                      color: context.palette.textTertiary,
+                    ),
                   ),
                 ),
               const SizedBox(height: 6),
@@ -291,8 +304,7 @@ class _CreateSubRecipeScreenState
                   row: row,
                   allIngredients: allIngredients,
                   canDelete: _ingredientRows.length > 1,
-                  onDelete: () =>
-                      setState(() => _ingredientRows.removeAt(i)),
+                  onDelete: () => setState(() => _ingredientRows.removeAt(i)),
                   onChanged: () => setState(() {}),
                 );
               }),
@@ -336,7 +348,8 @@ class _CreateSubRecipeScreenState
                     foregroundColor: AppColors.primaryText,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12)),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                     elevation: 0,
                   ),
                   child: _saving
@@ -344,12 +357,16 @@ class _CreateSubRecipeScreenState
                           height: 20,
                           width: 20,
                           child: CircularProgressIndicator(
-                              strokeWidth: 2, color: Colors.white),
+                            strokeWidth: 2,
+                            color: Colors.white,
+                          ),
                         )
                       : const Text(
                           'Tarifi Kaydet',
                           style: TextStyle(
-                              fontWeight: FontWeight.w700, fontSize: 15),
+                            fontWeight: FontWeight.w700,
+                            fontSize: 15,
+                          ),
                         ),
                 ),
               ),
@@ -388,15 +405,19 @@ class _CreateSubRecipeScreenState
                   top: 4,
                   right: 12,
                   child: GestureDetector(
-                    onTap: () =>
-                        setState(() => _selectedImages.removeAt(i)),
+                    onTap: () => setState(() => _selectedImages.removeAt(i)),
                     child: Container(
                       width: 22,
                       height: 22,
                       decoration: const BoxDecoration(
-                          color: Colors.black87, shape: BoxShape.circle),
-                      child: const Icon(Icons.close,
-                          size: 12, color: Colors.white),
+                        color: Colors.black87,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.close,
+                        size: 12,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
@@ -412,19 +433,24 @@ class _CreateSubRecipeScreenState
                 decoration: BoxDecoration(
                   color: context.palette.card,
                   borderRadius: BorderRadius.circular(12),
-                  border:
-                      Border.all(color: context.palette.border, width: 1.5),
+                  border: Border.all(color: context.palette.border, width: 1.5),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.add_photo_alternate_outlined,
-                        size: 28, color: context.palette.textTertiary),
+                    Icon(
+                      Icons.add_photo_alternate_outlined,
+                      size: 28,
+                      color: context.palette.textTertiary,
+                    ),
                     const SizedBox(height: 4),
-                    Text('Ekle',
-                        style: TextStyle(
-                            fontSize: 11,
-                            color: context.palette.textTertiary)),
+                    Text(
+                      'Ekle',
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: context.palette.textTertiary,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -435,13 +461,13 @@ class _CreateSubRecipeScreenState
   }
 
   Widget _sectionTitle(String title) => Text(
-        title,
-        style: TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.w800,
-          color: context.palette.textPrimary,
-        ),
-      );
+    title,
+    style: TextStyle(
+      fontSize: 15,
+      fontWeight: FontWeight.w800,
+      color: context.palette.textPrimary,
+    ),
+  );
 
   Widget _field({
     required TextEditingController controller,
@@ -459,8 +485,10 @@ class _CreateSubRecipeScreenState
         hintText: hint,
         filled: true,
         fillColor: context.palette.card,
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 14,
+          vertical: 12,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: context.palette.border),
@@ -471,8 +499,7 @@ class _CreateSubRecipeScreenState
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide:
-              const BorderSide(color: AppColors.primary, width: 1.5),
+          borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -480,8 +507,7 @@ class _CreateSubRecipeScreenState
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide:
-              const BorderSide(color: Colors.red, width: 1.5),
+          borderSide: const BorderSide(color: Colors.red, width: 1.5),
         ),
       ),
     );
@@ -544,8 +570,10 @@ class _IngredientRowWidgetState extends State<_IngredientRowWidget> {
             child: GestureDetector(
               onTap: widget.allIngredients.isEmpty ? null : _openPicker,
               child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 12,
+                ),
                 decoration: BoxDecoration(
                   color: context.palette.card,
                   borderRadius: BorderRadius.circular(10),
@@ -569,8 +597,11 @@ class _IngredientRowWidgetState extends State<_IngredientRowWidget> {
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
-                    Icon(Icons.arrow_drop_down_rounded,
-                        size: 18, color: context.palette.textTertiary),
+                    Icon(
+                      Icons.arrow_drop_down_rounded,
+                      size: 18,
+                      color: context.palette.textTertiary,
+                    ),
                   ],
                 ),
               ),
@@ -583,12 +614,16 @@ class _IngredientRowWidgetState extends State<_IngredientRowWidget> {
               controller: widget.row.amountCtrl,
               decoration: InputDecoration(
                 hintText: 'Miktar',
-                hintStyle:
-                    TextStyle(fontSize: 13, color: context.palette.textTertiary),
+                hintStyle: TextStyle(
+                  fontSize: 13,
+                  color: context.palette.textTertiary,
+                ),
                 filled: true,
                 fillColor: context.palette.card,
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 10,
+                ),
                 border: border,
                 enabledBorder: border,
                 focusedBorder: focusedBorder,
@@ -602,8 +637,11 @@ class _IngredientRowWidgetState extends State<_IngredientRowWidget> {
                 ? IconButton(
                     padding: EdgeInsets.zero,
                     onPressed: widget.onDelete,
-                    icon: const Icon(Icons.remove_circle_outline,
-                        color: Colors.red, size: 20),
+                    icon: const Icon(
+                      Icons.remove_circle_outline,
+                      color: Colors.red,
+                      size: 20,
+                    ),
                   )
                 : const SizedBox.shrink(),
           ),
@@ -641,14 +679,17 @@ class _StepWidget extends StatelessWidget {
             height: 28,
             margin: const EdgeInsets.only(top: 11),
             decoration: const BoxDecoration(
-                color: AppColors.primary, shape: BoxShape.circle),
+              color: AppColors.primary,
+              shape: BoxShape.circle,
+            ),
             child: Center(
               child: Text(
                 '$number',
                 style: const TextStyle(
-                    fontWeight: FontWeight.w800,
-                    fontSize: 12,
-                    color: AppColors.primaryText),
+                  fontWeight: FontWeight.w800,
+                  fontSize: 12,
+                  color: AppColors.primaryText,
+                ),
               ),
             ),
           ),
@@ -662,8 +703,10 @@ class _StepWidget extends StatelessWidget {
                 hintText: 'Bu adımı açıklayın...',
                 filled: true,
                 fillColor: context.palette.card,
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
                   borderSide: BorderSide(color: context.palette.border),
@@ -674,8 +717,10 @@ class _StepWidget extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide:
-                      const BorderSide(color: AppColors.primary, width: 1.5),
+                  borderSide: const BorderSide(
+                    color: AppColors.primary,
+                    width: 1.5,
+                  ),
                 ),
               ),
             ),
@@ -688,8 +733,11 @@ class _StepWidget extends StatelessWidget {
                     child: IconButton(
                       padding: EdgeInsets.zero,
                       onPressed: onDelete,
-                      icon: const Icon(Icons.remove_circle_outline,
-                          color: Colors.red, size: 20),
+                      icon: const Icon(
+                        Icons.remove_circle_outline,
+                        color: Colors.red,
+                        size: 20,
+                      ),
                     ),
                   )
                 : const SizedBox.shrink(),

@@ -171,6 +171,8 @@ class _TutorialOverlayState extends State<TutorialOverlay>
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    // Uyarlanabilir reklam ve alt gezinme çubuğu tooltip'i kapatmasın.
+    final safeBottom = MediaQuery.of(context).padding.bottom + 196.0;
     final step = widget.steps[_step];
     final spotlight = _spotlight;
 
@@ -234,11 +236,18 @@ class _TutorialOverlayState extends State<TutorialOverlay>
 
             // ── Ok + Tooltip ──
             if (spotlight != null)
-              _buildCallout(context, size, spotlight, step, cardBelow),
+              _buildCallout(
+                context,
+                size,
+                spotlight,
+                step,
+                cardBelow,
+                safeBottom,
+              ),
 
             // ── Adım göstergesi ──
             Positioned(
-              bottom: MediaQuery.of(context).padding.bottom + 28,
+              bottom: safeBottom,
               left: 0,
               right: 0,
               child: Row(
@@ -273,6 +282,7 @@ class _TutorialOverlayState extends State<TutorialOverlay>
     Rect spotlight,
     TutorialStep step,
     bool cardBelow,
+    double safeBottom,
   ) {
     const cardW = 296.0;
     const cardH = 148.0;
@@ -303,7 +313,7 @@ class _TutorialOverlayState extends State<TutorialOverlay>
     // Ekran dışına taşmasın
     cardTop = cardTop.clamp(
       MediaQuery.of(context).padding.top + 60.0,
-      screenSize.height - cardH - 80.0,
+      screenSize.height - cardH - safeBottom,
     );
 
     return Stack(

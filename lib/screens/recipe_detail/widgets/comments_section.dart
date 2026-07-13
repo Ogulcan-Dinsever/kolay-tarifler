@@ -1,10 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../core/community/community_terms.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../models/comment.dart';
 import '../../../providers/auth_provider.dart';
+import '../../../providers/community_safety_provider.dart';
 import '../../../providers/recipe_provider.dart';
 
 class CommentsSection extends ConsumerStatefulWidget {
@@ -40,16 +42,23 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Kullanıcı bilgisi yüklenemedi, lütfen tekrar deneyin'),
+            content: Text(
+              'Kullanıcı bilgisi yüklenemedi, lütfen tekrar deneyin',
+            ),
           ),
         );
       }
       return;
     }
 
+    if (!await ensureCommunityTermsAccepted(context, ref, user.id)) return;
+    if (!mounted) return;
+
     setState(() => _sending = true);
     try {
-      await ref.read(recipeServiceProvider).addComment(
+      await ref
+          .read(recipeServiceProvider)
+          .addComment(
             Comment(
               id: '',
               recipeId: widget.recipeId,
@@ -63,9 +72,9 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
       if (mounted) _ctrl.clear();
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Yorum gönderilemedi: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Yorum gönderilemedi: $e')));
       }
     } finally {
       if (mounted) setState(() => _sending = false);
@@ -75,28 +84,33 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
   @override
   Widget build(BuildContext context) {
     final commentsAsync = ref.watch(commentsProvider(widget.recipeId));
+    final blockedIds =
+        ref.watch(blockedUserIdsProvider).valueOrNull ?? const {};
+    final currentUserId = ref.watch(firebaseUserProvider).valueOrNull?.uid;
 
     return Column(
       children: [
         Expanded(
           child: commentsAsync.when(
-            loading: () =>
-                const Center(child: CircularProgressIndicator()),
+            loading: () => const Center(child: CircularProgressIndicator()),
             error: (e, _) => Center(child: Text('Hata: $e')),
             data: (comments) {
-              if (comments.isEmpty) {
+              final visibleComments = comments
+                  .where((comment) => !blockedIds.contains(comment.userId))
+                  .toList();
+              if (visibleComments.isEmpty) {
                 return Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('💬',
-                          style: TextStyle(fontSize: 40)),
+                      const Text('💬', style: TextStyle(fontSize: 40)),
                       const SizedBox(height: 8),
                       Text(
                         'Henüz yorum yok. İlk yorumu sen yaz!',
                         style: TextStyle(
-                            color: context.palette.textTertiary,
-                            fontSize: 13),
+                          color: context.palette.textTertiary,
+                          fontSize: 13,
+                        ),
                       ),
                     ],
                   ),
@@ -104,10 +118,15 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
               }
               return ListView.separated(
                 padding: const EdgeInsets.all(16),
-                itemCount: comments.length,
+                itemCount: visibleComments.length,
                 separatorBuilder: (_, _) =>
                     Divider(height: 1, color: context.palette.border),
-                itemBuilder: (_, i) => _CommentTile(comment: comments[i]),
+                itemBuilder: (_, i) => _CommentTile(
+                  comment: visibleComments[i],
+                  currentUserId: currentUserId,
+                  onReport: () => _reportComment(visibleComments[i]),
+                  onBlock: () => _blockUser(visibleComments[i]),
+                ),
               );
             },
           ),
@@ -119,7 +138,9 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
             child: Text(
               'Yorum yapmak için giriş yapmalısın',
               style: TextStyle(
-                  fontSize: 13, color: context.palette.textTertiary),
+                fontSize: 13,
+                color: context.palette.textTertiary,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
@@ -133,7 +154,8 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
       decoration: BoxDecoration(
         color: context.palette.card,
         border: Border(
-            top: BorderSide(color: context.palette.border, width: 1)),
+          top: BorderSide(color: context.palette.border, width: 1),
+        ),
       ),
       child: Row(
         children: [
@@ -141,29 +163,41 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
             child: TextField(
               controller: _ctrl,
               style: TextStyle(
-                  fontSize: 13, color: context.palette.textPrimary),
+                fontSize: 13,
+                color: context.palette.textPrimary,
+              ),
               decoration: InputDecoration(
                 hintText: 'Yorum yaz...',
                 hintStyle: TextStyle(
-                    fontSize: 13, color: context.palette.textTertiary),
+                  fontSize: 13,
+                  color: context.palette.textTertiary,
+                ),
                 filled: true,
                 fillColor: context.palette.g50,
                 contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 14, vertical: 10),
+                  horizontal: 14,
+                  vertical: 10,
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: context.palette.border, width: 1.5),
+                    color: context.palette.border,
+                    width: 1.5,
+                  ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: context.palette.border, width: 1.5),
+                    color: context.palette.border,
+                    width: 1.5,
+                  ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: const BorderSide(
-                      color: AppColors.primary, width: 2),
+                    color: AppColors.primary,
+                    width: 2,
+                  ),
                 ),
               ),
             ),
@@ -186,11 +220,15 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
                     ? const Padding(
                         padding: EdgeInsets.all(10),
                         child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.primaryText),
+                          strokeWidth: 2,
+                          color: AppColors.primaryText,
+                        ),
                       )
-                    : const Icon(Icons.send,
-                        size: 18, color: AppColors.primaryText),
+                    : const Icon(
+                        Icons.send,
+                        size: 18,
+                        color: AppColors.primaryText,
+                      ),
               ),
             ),
           ),
@@ -198,11 +236,71 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
       ),
     );
   }
+
+  Future<void> _reportComment(Comment comment) async {
+    final currentUser = ref.read(firebaseUserProvider).valueOrNull;
+    if (currentUser == null || currentUser.uid == comment.userId) return;
+    final reason = await showReportReasonDialog(context);
+    if (reason == null || !mounted) return;
+    await ref
+        .read(communitySafetyServiceProvider)
+        .report(
+          reporterId: currentUser.uid,
+          targetType: 'comment',
+          targetId: comment.id,
+          targetUserId: comment.userId,
+          reason: reason,
+          recipeId: widget.recipeId,
+        );
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Bildirim alındı. Teşekkür ederiz.')),
+      );
+    }
+  }
+
+  Future<void> _blockUser(Comment comment) async {
+    final currentUser = ref.read(firebaseUserProvider).valueOrNull;
+    if (currentUser == null || currentUser.uid == comment.userId) return;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Kullanıcıyı engelle'),
+        content: Text(
+          '${comment.userDisplayName} adlı kullanıcının yorum ve tarifleri '
+          'artık sana gösterilmeyecek.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: const Text('Vazgeç'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: const Text('Engelle'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    await ref
+        .read(communitySafetyServiceProvider)
+        .blockUser(userId: currentUser.uid, blockedUserId: comment.userId);
+  }
 }
 
 class _CommentTile extends StatelessWidget {
   final Comment comment;
-  const _CommentTile({required this.comment});
+  final String? currentUserId;
+  final VoidCallback onReport;
+  final VoidCallback onBlock;
+
+  const _CommentTile({
+    required this.comment,
+    required this.currentUserId,
+    required this.onReport,
+    required this.onBlock,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -223,9 +321,10 @@ class _CommentTile extends StatelessWidget {
                         ? comment.userDisplayName[0].toUpperCase()
                         : '?',
                     style: const TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                        color: AppColors.primaryText),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.primaryText,
+                    ),
                   )
                 : null,
           ),
@@ -236,30 +335,55 @@ class _CommentTile extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(
-                      comment.userDisplayName,
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700,
-                        color: context.palette.textPrimary,
+                    Expanded(
+                      child: Text(
+                        comment.userDisplayName,
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: context.palette.textPrimary,
+                        ),
                       ),
                     ),
                     const SizedBox(width: 8),
                     Text(
                       _timeAgo(comment.createdAt),
                       style: TextStyle(
-                          fontSize: 11,
-                          color: context.palette.textTertiary),
+                        fontSize: 11,
+                        color: context.palette.textTertiary,
+                      ),
                     ),
+                    if (currentUserId != null &&
+                        currentUserId != comment.userId)
+                      PopupMenuButton<String>(
+                        tooltip: 'Yorum seçenekleri',
+                        padding: EdgeInsets.zero,
+                        iconSize: 19,
+                        onSelected: (value) {
+                          if (value == 'report') onReport();
+                          if (value == 'block') onBlock();
+                        },
+                        itemBuilder: (_) => const [
+                          PopupMenuItem(
+                            value: 'report',
+                            child: Text('Yorumu bildir'),
+                          ),
+                          PopupMenuItem(
+                            value: 'block',
+                            child: Text('Kullanıcıyı engelle'),
+                          ),
+                        ],
+                      ),
                   ],
                 ),
                 const SizedBox(height: 3),
                 Text(
                   comment.text,
                   style: TextStyle(
-                      fontSize: 13,
-                      height: 1.4,
-                      color: context.palette.textPrimary),
+                    fontSize: 13,
+                    height: 1.4,
+                    color: context.palette.textPrimary,
+                  ),
                 ),
               ],
             ),

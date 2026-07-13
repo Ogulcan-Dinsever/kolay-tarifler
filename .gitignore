@@ -52,6 +52,7 @@ app.*.map.json
 /android/app/keystore/
 
 # Firebase Cloud Functions
+.firebase/
 functions/node_modules/
 functions/.runtimeconfig.json
 node_modules/

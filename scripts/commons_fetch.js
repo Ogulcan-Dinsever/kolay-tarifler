@@ -10,7 +10,7 @@
 const fs = require('fs');
 const OUT = 'C:/Users/ogulc/AppData/Local/Temp/claude/C--Users-ogulc-Downloads-Yeni-klas-r/28f292cc-44e5-45e9-a85a-02aada20f8bf/scratchpad';
 const META = '_cand_meta.json';
-const UA = 'nepisirsem-image-audit/1.0 (recipe image sourcing; contact ogulcandnsvr@gmail.com)';
+const UA = 'kolay-tarifler-image-audit/1.0 (recipe image sourcing; contact ogulcandnsvr@gmail.com)';
 
 const stripTags = s => (s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 

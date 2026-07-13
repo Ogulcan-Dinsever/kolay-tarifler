@@ -9,7 +9,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const sa = require('./serviceAccountKey.json');
 const META = '_cand_meta.json';
-const UA = 'nepisirsem-image-audit/1.0 (contact ogulcandnsvr@gmail.com)';
+const UA = 'kolay-tarifler-image-audit/1.0 (contact ogulcandnsvr@gmail.com)';
 
 const BUCKET = `${sa.project_id}.firebasestorage.app`;
 admin.initializeApp({ credential: admin.credential.cert(sa), storageBucket: BUCKET });

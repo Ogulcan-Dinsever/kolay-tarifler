@@ -2,12 +2,14 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/tutorial/tutorial_overlay.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/theme_provider.dart';
 import '../../services/auth_service.dart';
+import '../../services/ad_consent_service.dart';
 import '../../services/notification_service.dart';
 import '../../widgets/app_header.dart';
 
@@ -19,6 +21,17 @@ class ProfileScreen extends ConsumerStatefulWidget {
 }
 
 class _ProfileScreenState extends ConsumerState<ProfileScreen> {
+  static final _privacyUrl = Uri.parse(
+    'https://kolaytarifler-37c45.web.app/privacy',
+  );
+  static final _termsUrl = Uri.parse(
+    'https://kolaytarifler-37c45.web.app/terms',
+  );
+  static final _supportUrl = Uri(
+    scheme: 'mailto',
+    path: 'ogulcandnsvr@gmail.com',
+    queryParameters: {'subject': 'Kolay Tarifler Destek'},
+  );
   // Tutorial
   final _themeKey = GlobalKey();
   final _recipesKey = GlobalKey();
@@ -172,6 +185,27 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               label: 'Bildirimleri Aç',
               onTap: () => _requestNotificationPermission(context),
             ),
+            _SettingItem(
+              icon: Icons.privacy_tip_outlined,
+              label: 'Gizlilik Politikası',
+              onTap: () => _openExternal(context, _privacyUrl),
+            ),
+            _SettingItem(
+              icon: Icons.gavel_outlined,
+              label: 'Kullanım ve Topluluk Koşulları',
+              onTap: () => _openExternal(context, _termsUrl),
+            ),
+            _SettingItem(
+              icon: Icons.support_agent_rounded,
+              label: 'Destek: ogulcandnsvr@gmail.com',
+              onTap: () => _openExternal(context, _supportUrl),
+            ),
+            if (AdConsentService.privacyOptionsRequired)
+              _SettingItem(
+                icon: Icons.ads_click_outlined,
+                label: 'Reklam Gizlilik Tercihleri',
+                onTap: () => _openAdPrivacyOptions(context),
+              ),
           ],
         ),
         const SizedBox(height: 12),
@@ -405,6 +439,27 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               label: 'Tanıtım Turunu Sıfırla',
               onTap: () => _resetTutorials(context),
             ),
+            _SettingItem(
+              icon: Icons.privacy_tip_outlined,
+              label: 'Gizlilik Politikası',
+              onTap: () => _openExternal(context, _privacyUrl),
+            ),
+            _SettingItem(
+              icon: Icons.gavel_outlined,
+              label: 'Kullanım ve Topluluk Koşulları',
+              onTap: () => _openExternal(context, _termsUrl),
+            ),
+            _SettingItem(
+              icon: Icons.support_agent_rounded,
+              label: 'Destek: ogulcandnsvr@gmail.com',
+              onTap: () => _openExternal(context, _supportUrl),
+            ),
+            if (AdConsentService.privacyOptionsRequired)
+              _SettingItem(
+                icon: Icons.ads_click_outlined,
+                label: 'Reklam Gizlilik Tercihleri',
+                onTap: () => _openAdPrivacyOptions(context),
+              ),
           ],
         ),
       ],
@@ -419,6 +474,28 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
           content: Text(
             'Tanıtım turları sıfırlandı — ekranları gezdikçe yeniden gösterilecek. 🧭',
           ),
+        ),
+      );
+    }
+  }
+
+  Future<void> _openExternal(BuildContext context, Uri uri) async {
+    final opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
+    if (!opened && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Bağlantı açılamadı. Lütfen daha sonra tekrar dene.'),
+        ),
+      );
+    }
+  }
+
+  Future<void> _openAdPrivacyOptions(BuildContext context) async {
+    final error = await AdConsentService.showPrivacyOptions();
+    if (error != null && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Reklam tercihleri açılamadı: ${error.message}'),
         ),
       );
     }

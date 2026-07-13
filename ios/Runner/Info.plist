@@ -8,11 +8,7 @@
 	<string>Tarifinize fotoğraf eklemek için galeri erişimi gerekiyor</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Tarifinize fotoğraf çekmek için kamera erişimi gerekiyor</string>
-	<!-- Google Sign-In için gerekli URL scheme.
-	     REVERSED_CLIENT_ID, GoogleService-Info.plist içindeki değerdir;
-	     GoogleService-Info.plist'i ios/Runner/ altına ekledikten sonra
-	     aşağıdaki YOUR_REVERSED_CLIENT_ID'yi o dosyadaki gerçek değerle
-	     değiştirin (biçim: com.googleusercontent.apps.XXXXX). -->
+	<!-- Google Sign-In URL scheme -->
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -20,7 +16,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>YOUR_REVERSED_CLIENT_ID</string>
+				<string>com.googleusercontent.apps.129219992136-knrtegd77404mvd82380fn0bu2hvfhlc</string>
 			</array>
 		</dict>
 	</array>

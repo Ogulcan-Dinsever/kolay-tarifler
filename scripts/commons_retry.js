@@ -5,7 +5,7 @@
  */
 const fs = require('fs');
 const OUT = 'C:/Users/ogulc/AppData/Local/Temp/claude/C--Windows-system32/d7db2b79-12ea-4261-bc79-4db96c569ea1/scratchpad';
-const UA = 'nepisirsem-image-audit/1.0 (recipe image sourcing; contact ogulcandnsvr@gmail.com)';
+const UA = 'kolay-tarifler-image-audit/1.0 (recipe image sourcing; contact ogulcandnsvr@gmail.com)';
 const IDS = JSON.parse(fs.readFileSync('_retry_ids.json', 'utf8'));
 
 // geliştirilmiş sorgular (yerel + açıklayıcı)

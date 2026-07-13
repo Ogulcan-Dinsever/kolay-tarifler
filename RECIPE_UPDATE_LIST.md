@@ -1,4 +1,4 @@
-# NePişirsem — Güncellenmesi Gereken Tarifler
+# Kolay Tarifler — Güncellenmesi Gereken Tarifler
 
 Tarih: 2026-07-09 · Toplam tarif: **676** · Güncelleme gereken: **65**
 

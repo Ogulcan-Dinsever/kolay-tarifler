@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "nepisirsem" "\0"
+            VALUE "FileDescription", "Kolay Tarifler" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "nepisirsem" "\0"
+            VALUE "InternalName", "kolay_tarifler" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "nepisirsem.exe" "\0"
-            VALUE "ProductName", "nepisirsem" "\0"
+            VALUE "OriginalFilename", "kolay_tarifler.exe" "\0"
+            VALUE "ProductName", "Kolay Tarifler" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

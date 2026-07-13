@@ -1,5 +1,5 @@
 /**
- * Recipe Update Script — NePisirsem  (v2, isim-eşleşmeli)
+ * Recipe Update Script — Kolay Tarifler (v2, isim-eşleşmeli)
  *
  * Firestore GERÇEK durumu:
  *   - recipes: rastgele auto-docId. Eşleşme İSİM ile yapılır (24 hedef isim benzersiz doğrulandı).

@@ -1,8 +1,10 @@
 import 'dart:typed_data';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
+import '../../core/community/community_terms.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/utils/responsive.dart';
@@ -50,8 +52,12 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
     _descCtrl.dispose();
     _durationCtrl.dispose();
     _emojiCtrl.dispose();
-    for (final e in _ingredients) { e.dispose(); }
-    for (final s in _steps) { s.dispose(); }
+    for (final e in _ingredients) {
+      e.dispose();
+    }
+    for (final s in _steps) {
+      s.dispose();
+    }
     super.dispose();
   }
 
@@ -61,7 +67,10 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
       return;
     }
     final picker = ImagePicker();
-    final picked = await picker.pickMultiImage(maxWidth: 1200, imageQuality: 85);
+    final picked = await picker.pickMultiImage(
+      maxWidth: 1200,
+      imageQuality: 85,
+    );
     for (final xf in picked) {
       if (_photoBytes.length >= 5) break;
       final bytes = await xf.readAsBytes();
@@ -70,26 +79,49 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
   }
 
   void _openIngredientPicker(
-      BuildContext context, List<Ingredient> allIngredients, _IngredientEntry entry) {
+    BuildContext context,
+    List<Ingredient> allIngredients,
+    _IngredientEntry entry,
+  ) {
     IngredientPickerSheet.show(
       context: context,
       ingredients: allIngredients,
       onSelected: (ing) {
-        if (mounted) setState(() { entry.id = ing.id; entry.name = ing.name; });
+        if (mounted) {
+          setState(() {
+            entry.id = ing.id;
+            entry.name = ing.name;
+          });
+        }
       },
     );
   }
 
   Future<void> _submit() async {
     if (!_formKey.currentState!.validate()) return;
-    if (_photoBytes.isEmpty) { _showSnack('En az bir fotoğraf ekle'); return; }
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null || user.isAnonymous) {
+      _showSnack('Tarif göndermek için giriş yap');
+      return;
+    }
+    if (!await ensureCommunityTermsAccepted(context, ref, user.uid)) return;
+    if (!mounted) return;
+    if (_photoBytes.isEmpty) {
+      _showSnack('En az bir fotoğraf ekle');
+      return;
+    }
     if (_ingredients.isEmpty || _ingredients.any((e) => e.id == null)) {
-      _showSnack('Tüm malzemeleri listeden seç'); return;
+      _showSnack('Tüm malzemeleri listeden seç');
+      return;
     }
     if (_ingredients.any((e) => e.amountCtrl.text.trim().isEmpty)) {
-      _showSnack('Tüm malzemelerin miktarını gir'); return;
+      _showSnack('Tüm malzemelerin miktarını gir');
+      return;
     }
-    if (_steps.isEmpty) { _showSnack('En az bir yapılış adımı ekle'); return; }
+    if (_steps.isEmpty) {
+      _showSnack('En az bir yapılış adımı ekle');
+      return;
+    }
 
     setState(() => _loading = true);
     final service = ref.read(pendingRecipeServiceProvider);
@@ -158,8 +190,11 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
                 color: Color(0xFFE8F5E9),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(Icons.check_circle_rounded,
-                  color: AppColors.primary, size: 36),
+              child: const Icon(
+                Icons.check_circle_rounded,
+                color: AppColors.primary,
+                size: 36,
+              ),
             ),
             const SizedBox(height: 16),
             const Text(
@@ -174,7 +209,11 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
             Text(
               'Tarifin inceleme kuyruğuna alındı. Admin onayladıktan sonra yayına girecek. Durumu "Başvurularım" ekranından takip edebilirsin.',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 13, color: context.palette.textSecondary, height: 1.5),
+              style: TextStyle(
+                fontSize: 13,
+                color: context.palette.textSecondary,
+                height: 1.5,
+              ),
             ),
           ],
         ),
@@ -185,13 +224,18 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primary,
                 foregroundColor: AppColors.primaryText,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
               onPressed: () {
                 Navigator.pop(ctx);
                 context.pop();
               },
-              child: const Text('Tamam', style: TextStyle(fontWeight: FontWeight.w700)),
+              child: const Text(
+                'Tamam',
+                style: TextStyle(fontWeight: FontWeight.w700),
+              ),
             ),
           ),
         ],
@@ -200,10 +244,12 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
   }
 
   void _showSnack(String msg, {bool success = false}) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(msg),
-      backgroundColor: success ? AppColors.primary : Colors.red[700],
-    ));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(msg),
+        backgroundColor: success ? AppColors.primary : Colors.red[700],
+      ),
+    );
   }
 
   @override
@@ -217,8 +263,11 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
         backgroundColor: context.palette.card,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_rounded,
-              size: 18, color: context.palette.textPrimary),
+          icon: Icon(
+            Icons.arrow_back_ios_new_rounded,
+            size: 18,
+            color: context.palette.textPrimary,
+          ),
           onPressed: () => context.pop(),
         ),
         title: Text(
@@ -250,8 +299,11 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
                 child: const Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(Icons.info_outline_rounded,
-                        size: 18, color: AppColors.primaryDark),
+                    Icon(
+                      Icons.info_outline_rounded,
+                      size: 18,
+                      color: AppColors.primaryDark,
+                    ),
                     SizedBox(width: 10),
                     Expanded(
                       child: Text(
@@ -270,9 +322,18 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
 
               _buildField(_nameCtrl, 'Yemek Adı', validator: _required),
               const SizedBox(height: 12),
-              _buildField(_descCtrl, 'Açıklama', maxLines: 3, validator: _required),
+              _buildField(
+                _descCtrl,
+                'Açıklama',
+                maxLines: 3,
+                validator: _required,
+              ),
               const SizedBox(height: 12),
-              _buildField(_durationCtrl, 'Süre (örn: 30 dk)', validator: _required),
+              _buildField(
+                _durationCtrl,
+                'Süre (örn: 30 dk)',
+                validator: _required,
+              ),
               const SizedBox(height: 12),
               _buildField(_emojiCtrl, 'Emoji (örn: 🍲)'),
               const SizedBox(height: 16),
@@ -287,21 +348,25 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
               _sectionTitle('Malzemeler', ''),
               const SizedBox(height: 10),
               if (ingredientsAsync.isLoading)
-                const Center(child: CircularProgressIndicator(color: AppColors.primary))
+                const Center(
+                  child: CircularProgressIndicator(color: AppColors.primary),
+                )
               else
                 _buildIngredientsList(context, allIngredients),
               if (allIngredients.isNotEmpty)
                 _buildAddButton(
-                    '+ Malzeme Ekle',
-                    () => setState(() => _ingredients.add(_IngredientEntry()))),
+                  '+ Malzeme Ekle',
+                  () => setState(() => _ingredients.add(_IngredientEntry())),
+                ),
               const SizedBox(height: 24),
 
               _sectionTitle('Yapılış Adımları', ''),
               const SizedBox(height: 10),
               _buildStepsList(),
               _buildAddButton(
-                  '+ Adım Ekle',
-                  () => setState(() => _steps.add(TextEditingController()))),
+                '+ Adım Ekle',
+                () => setState(() => _steps.add(TextEditingController())),
+              ),
               const SizedBox(height: 32),
 
               SizedBox(
@@ -313,7 +378,8 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
                     foregroundColor: AppColors.primaryText,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14)),
+                      borderRadius: BorderRadius.circular(14),
+                    ),
                     elevation: 0,
                   ),
                   child: _loading
@@ -321,10 +387,17 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
                           width: 20,
                           height: 20,
                           child: CircularProgressIndicator(
-                              strokeWidth: 2, color: AppColors.primaryText))
-                      : const Text('Onaya Gönder',
+                            strokeWidth: 2,
+                            color: AppColors.primaryText,
+                          ),
+                        )
+                      : const Text(
+                          'Onaya Gönder',
                           style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.w700)),
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
                 ),
               ),
               const SizedBox(height: 32),
@@ -338,41 +411,59 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
   // ── Yardımcı widget'lar ──────────────────────────────────────────────────────
 
   Widget _sectionTitle(String title, String subtitle) {
-    return Row(children: [
-      Text(title,
+    return Row(
+      children: [
+        Text(
+          title,
           style: TextStyle(
-              fontSize: context.sp(16),
-              fontWeight: FontWeight.w700,
-              color: context.palette.textPrimary)),
-      if (subtitle.isNotEmpty) ...[
-        SizedBox(width: context.rs(6)),
-        Text(subtitle,
+            fontSize: context.sp(16),
+            fontWeight: FontWeight.w700,
+            color: context.palette.textPrimary,
+          ),
+        ),
+        if (subtitle.isNotEmpty) ...[
+          SizedBox(width: context.rs(6)),
+          Text(
+            subtitle,
             style: TextStyle(
-                fontSize: context.sp(12),
-                color: context.palette.textTertiary)),
+              fontSize: context.sp(12),
+              color: context.palette.textTertiary,
+            ),
+          ),
+        ],
       ],
-    ]);
+    );
   }
 
   Widget _buildDropdownRow() {
-    return Row(children: [
-      Expanded(child: _buildDropdown(
-        label: 'Mutfak', value: _cuisine,
-        items: MockCuisines.all.map((e) => e['name']!).toList(),
-        onChanged: (v) => setState(() => _cuisine = v!),
-      )),
-      const SizedBox(width: 12),
-      Expanded(child: _buildDropdown(
-        label: 'Tür', value: _type,
-        items: RecipeTypes.all.map((e) => e['name']!).toList(),
-        onChanged: (v) => setState(() => _type = v!),
-      )),
-    ]);
+    return Row(
+      children: [
+        Expanded(
+          child: _buildDropdown(
+            label: 'Mutfak',
+            value: _cuisine,
+            items: MockCuisines.all.map((e) => e['name']!).toList(),
+            onChanged: (v) => setState(() => _cuisine = v!),
+          ),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: _buildDropdown(
+            label: 'Tür',
+            value: _type,
+            items: RecipeTypes.all.map((e) => e['name']!).toList(),
+            onChanged: (v) => setState(() => _type = v!),
+          ),
+        ),
+      ],
+    );
   }
 
   Widget _buildDropdown({
-    required String label, required String value,
-    required List<String> items, required void Function(String?) onChanged,
+    required String label,
+    required String value,
+    required List<String> items,
+    required void Function(String?) onChanged,
   }) {
     final palette = context.palette;
     final isDark = context.isDark;
@@ -381,13 +472,25 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
       decoration: _inputDecoration(label),
       dropdownColor: isDark ? AppColors.darkSurface : Colors.white,
       style: TextStyle(fontSize: context.sp(13), color: palette.textPrimary),
-      icon: Icon(Icons.keyboard_arrow_down_rounded,
-          color: palette.textTertiary, size: context.rs(20)),
-      items: items.map((e) => DropdownMenuItem(
-            value: e,
-            child: Text(e, style: TextStyle(
-                fontSize: context.sp(13), color: palette.textPrimary)),
-          )).toList(),
+      icon: Icon(
+        Icons.keyboard_arrow_down_rounded,
+        color: palette.textTertiary,
+        size: context.rs(20),
+      ),
+      items: items
+          .map(
+            (e) => DropdownMenuItem(
+              value: e,
+              child: Text(
+                e,
+                style: TextStyle(
+                  fontSize: context.sp(13),
+                  color: palette.textPrimary,
+                ),
+              ),
+            ),
+          )
+          .toList(),
       onChanged: onChanged,
     );
   }
@@ -398,51 +501,75 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
-          ..._photoBytes.asMap().entries.map((e) => Stack(children: [
-            Container(
-              width: 100, height: 100,
-              margin: const EdgeInsets.only(right: 10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: context.palette.border),
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(11),
-                child: Image.memory(e.value, fit: BoxFit.cover),
-              ),
-            ),
-            Positioned(
-              top: 4, right: 14,
-              child: GestureDetector(
-                onTap: () => setState(() => _photoBytes.removeAt(e.key)),
-                child: Container(
-                  padding: const EdgeInsets.all(3),
-                  decoration: const BoxDecoration(color: Colors.red, shape: BoxShape.circle),
-                  child: const Icon(Icons.close, size: 12, color: Colors.white),
+          ..._photoBytes.asMap().entries.map(
+            (e) => Stack(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  margin: const EdgeInsets.only(right: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: context.palette.border),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(11),
+                    child: Image.memory(e.value, fit: BoxFit.cover),
+                  ),
                 ),
-              ),
+                Positioned(
+                  top: 4,
+                  right: 14,
+                  child: GestureDetector(
+                    onTap: () => setState(() => _photoBytes.removeAt(e.key)),
+                    child: Container(
+                      padding: const EdgeInsets.all(3),
+                      decoration: const BoxDecoration(
+                        color: Colors.red,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.close,
+                        size: 12,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ])),
+          ),
           if (_photoBytes.length < 5)
             GestureDetector(
               onTap: _loading ? null : _pickPhotos,
               child: Container(
-                width: context.rs(100), height: context.rs(100),
+                width: context.rs(100),
+                height: context.rs(100),
                 decoration: BoxDecoration(
                   color: context.palette.g50,
                   borderRadius: BorderRadius.circular(context.rs(12)),
-                  border: Border.all(color: AppColors.primary.withValues(alpha: 0.4), width: 2),
+                  border: Border.all(
+                    color: AppColors.primary.withValues(alpha: 0.4),
+                    width: 2,
+                  ),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.add_photo_alternate_rounded,
-                        size: context.rs(28), color: AppColors.primary),
+                    Icon(
+                      Icons.add_photo_alternate_rounded,
+                      size: context.rs(28),
+                      color: AppColors.primary,
+                    ),
                     SizedBox(height: context.rs(4)),
-                    Text('Ekle', style: TextStyle(
+                    Text(
+                      'Ekle',
+                      style: TextStyle(
                         fontSize: context.sp(11),
                         fontWeight: FontWeight.w600,
-                        color: AppColors.primaryDark)),
+                        color: AppColors.primaryDark,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -452,68 +579,89 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
     );
   }
 
-  Widget _buildIngredientsList(BuildContext context, List<Ingredient> allIngredients) {
+  Widget _buildIngredientsList(
+    BuildContext context,
+    List<Ingredient> allIngredients,
+  ) {
     return Column(
       children: _ingredients.asMap().entries.map((e) {
         final i = e.key;
         final entry = e.value;
         return Padding(
           padding: const EdgeInsets.only(bottom: 10),
-          child: Row(children: [
-            Expanded(
-              flex: 3,
-              child: GestureDetector(
-                onTap: () => _openIngredientPicker(context, allIngredients, entry),
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: context.rs(12), vertical: context.rs(13)),
-                  decoration: BoxDecoration(
-                    color: context.palette.g50,
-                    borderRadius: BorderRadius.circular(context.rs(12)),
-                    border: Border.all(
-                      color: entry.id != null
-                          ? AppColors.primary.withValues(alpha: 0.5)
-                          : context.palette.border,
-                      width: 1.5,
+          child: Row(
+            children: [
+              Expanded(
+                flex: 3,
+                child: GestureDetector(
+                  onTap: () =>
+                      _openIngredientPicker(context, allIngredients, entry),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: context.rs(12),
+                      vertical: context.rs(13),
                     ),
-                  ),
-                  child: Row(children: [
-                    Expanded(
-                      child: Text(
-                        entry.name ?? 'Malzeme seç...',
-                        style: TextStyle(
-                          fontSize: context.sp(13),
-                          color: entry.name != null
-                              ? context.palette.textPrimary
-                              : context.palette.textTertiary,
-                        ),
-                        overflow: TextOverflow.ellipsis,
+                    decoration: BoxDecoration(
+                      color: context.palette.g50,
+                      borderRadius: BorderRadius.circular(context.rs(12)),
+                      border: Border.all(
+                        color: entry.id != null
+                            ? AppColors.primary.withValues(alpha: 0.5)
+                            : context.palette.border,
+                        width: 1.5,
                       ),
                     ),
-                    Icon(Icons.arrow_drop_down_rounded,
-                        size: context.rs(18), color: context.palette.textTertiary),
-                  ]),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            entry.name ?? 'Malzeme seç...',
+                            style: TextStyle(
+                              fontSize: context.sp(13),
+                              color: entry.name != null
+                                  ? context.palette.textPrimary
+                                  : context.palette.textTertiary,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_drop_down_rounded,
+                          size: context.rs(18),
+                          color: context.palette.textTertiary,
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-            ),
-            SizedBox(width: context.rs(8)),
-            Expanded(
-              flex: 2,
-              child: TextFormField(
-                controller: entry.amountCtrl,
-                style: TextStyle(
+              SizedBox(width: context.rs(8)),
+              Expanded(
+                flex: 2,
+                child: TextFormField(
+                  controller: entry.amountCtrl,
+                  style: TextStyle(
                     fontSize: context.sp(13),
-                    color: context.palette.textPrimary),
-                decoration: _inputDecoration('Miktar'),
+                    color: context.palette.textPrimary,
+                  ),
+                  decoration: _inputDecoration('Miktar'),
+                ),
               ),
-            ),
-            const SizedBox(width: 4),
-            IconButton(
-              onPressed: () { entry.dispose(); setState(() => _ingredients.removeAt(i)); },
-              icon: const Icon(Icons.remove_circle_outline_rounded, color: Colors.red, size: 22),
-              padding: EdgeInsets.zero,
-            ),
-          ]),
+              const SizedBox(width: 4),
+              IconButton(
+                onPressed: () {
+                  entry.dispose();
+                  setState(() => _ingredients.removeAt(i));
+                },
+                icon: const Icon(
+                  Icons.remove_circle_outline_rounded,
+                  color: Colors.red,
+                  size: 22,
+                ),
+                padding: EdgeInsets.zero,
+              ),
+            ],
+          ),
         );
       }).toList(),
     );
@@ -529,11 +677,22 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 28, height: 28,
+                width: 28,
+                height: 28,
                 margin: const EdgeInsets.only(top: 10, right: 8),
-                decoration: const BoxDecoration(color: AppColors.primary, shape: BoxShape.circle),
+                decoration: const BoxDecoration(
+                  color: AppColors.primary,
+                  shape: BoxShape.circle,
+                ),
                 child: Center(
-                  child: Text('${i + 1}', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: AppColors.primaryText)),
+                  child: Text(
+                    '${i + 1}',
+                    style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.primaryText,
+                    ),
+                  ),
                 ),
               ),
               Expanded(
@@ -542,15 +701,23 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
                   maxLines: 2,
                   validator: _required,
                   style: TextStyle(
-                      fontSize: context.sp(13),
-                      color: context.palette.textPrimary),
+                    fontSize: context.sp(13),
+                    color: context.palette.textPrimary,
+                  ),
                   decoration: _inputDecoration('Adım ${i + 1} açıklaması'),
                 ),
               ),
               const SizedBox(width: 4),
               IconButton(
-                onPressed: () { e.value.dispose(); setState(() => _steps.removeAt(i)); },
-                icon: const Icon(Icons.remove_circle_outline_rounded, color: Colors.red, size: 22),
+                onPressed: () {
+                  e.value.dispose();
+                  setState(() => _steps.removeAt(i));
+                },
+                icon: const Icon(
+                  Icons.remove_circle_outline_rounded,
+                  color: Colors.red,
+                  size: 22,
+                ),
                 padding: EdgeInsets.zero,
               ),
             ],
@@ -563,18 +730,36 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
   Widget _buildAddButton(String label, VoidCallback onTap) {
     return TextButton.icon(
       onPressed: onTap,
-      icon: const Icon(Icons.add_circle_outline_rounded, size: 18, color: AppColors.primary),
-      label: Text(label, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.primaryDark)),
+      icon: const Icon(
+        Icons.add_circle_outline_rounded,
+        size: 18,
+        color: AppColors.primary,
+      ),
+      label: Text(
+        label,
+        style: const TextStyle(
+          fontSize: 13,
+          fontWeight: FontWeight.w600,
+          color: AppColors.primaryDark,
+        ),
+      ),
     );
   }
 
-  Widget _buildField(TextEditingController ctrl, String label,
-      {int maxLines = 1, String? Function(String?)? validator}) {
+  Widget _buildField(
+    TextEditingController ctrl,
+    String label, {
+    int maxLines = 1,
+    String? Function(String?)? validator,
+  }) {
     return TextFormField(
       controller: ctrl,
       maxLines: maxLines,
       validator: validator,
-      style: TextStyle(fontSize: context.sp(14), color: context.palette.textPrimary),
+      style: TextStyle(
+        fontSize: context.sp(14),
+        color: context.palette.textPrimary,
+      ),
       decoration: _inputDecoration(label),
     );
   }
@@ -584,21 +769,35 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
     final r = BorderRadius.circular(context.rs(12));
     return InputDecoration(
       labelText: label,
-      labelStyle: TextStyle(fontSize: context.sp(13), color: palette.textTertiary),
+      labelStyle: TextStyle(
+        fontSize: context.sp(13),
+        color: palette.textTertiary,
+      ),
       filled: true,
       fillColor: palette.g50,
       contentPadding: EdgeInsets.symmetric(
-          horizontal: context.rs(14), vertical: context.rs(12)),
-      border: OutlineInputBorder(borderRadius: r,
-          borderSide: BorderSide(color: palette.border, width: 1.5)),
-      enabledBorder: OutlineInputBorder(borderRadius: r,
-          borderSide: BorderSide(color: palette.border, width: 1.5)),
-      focusedBorder: OutlineInputBorder(borderRadius: r,
-          borderSide: const BorderSide(color: AppColors.primary, width: 2)),
-      errorBorder: OutlineInputBorder(borderRadius: r,
-          borderSide: BorderSide(color: Colors.red[400]!, width: 1.5)),
+        horizontal: context.rs(14),
+        vertical: context.rs(12),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: r,
+        borderSide: BorderSide(color: palette.border, width: 1.5),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: r,
+        borderSide: BorderSide(color: palette.border, width: 1.5),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: r,
+        borderSide: const BorderSide(color: AppColors.primary, width: 2),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: r,
+        borderSide: BorderSide(color: Colors.red[400]!, width: 1.5),
+      ),
     );
   }
 
-  String? _required(String? v) => (v == null || v.trim().isEmpty) ? 'Bu alan zorunlu' : null;
+  String? _required(String? v) =>
+      (v == null || v.trim().isEmpty) ? 'Bu alan zorunlu' : null;
 }

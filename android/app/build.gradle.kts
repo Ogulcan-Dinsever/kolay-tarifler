@@ -31,7 +31,7 @@ val debugAdMobAppId = "ca-app-pub-3940256099942544~3347511713"
 val releaseAdMobAppId = System.getenv("ADMOB_ANDROID_APP_ID") ?: ""
 
 android {
-    namespace = "com.nepisirsem.app"
+    namespace = "com.kolaytarifler.app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -48,7 +48,7 @@ android {
     signingConfigs {
         create("release") {
             // Keystore bilgileri — aşağıdaki adımları takip edin:
-            // 1. Terminal: keytool -genkey -v -keystore ~/nepisirsem.jks -keyalg RSA -keysize 2048 -validity 10000 -alias nepisirsem
+            // 1. Terminal: keytool -genkey -v -keystore ~/kolay-tarifler-upload.jks -keyalg RSA -keysize 2048 -validity 10000 -alias kolay-tarifler
             // 2. key.properties dosyasını android/ altına oluşturun (aşağıda açıklanmıştır)
             // 3. Bu bloğu key.properties'ten okuyacak şekilde güncelleyin
             if (releaseStoreFile.isNotEmpty()) storeFile = file(releaseStoreFile)
@@ -59,7 +59,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.nepisirsem.app"
+        applicationId = "com.kolaytarifler.app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

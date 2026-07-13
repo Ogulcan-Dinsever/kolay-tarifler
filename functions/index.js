@@ -159,3 +159,77 @@ exports.onCommentAdded = functions
       { type: 'comment', recipeId },
     );
   });
+
+// Hesap silindiğinde kullanıcıya bağlı Firestore ve Storage verilerini temizle.
+// İstemci hesabı sildikten sonra Admin SDK ile çalıştığı için alt koleksiyonlar
+// ve kullanıcının doğrudan silemeyeceği yayımlanmış içerikler de kapsanır.
+async function deleteQuery(query, beforeDelete) {
+  while (true) {
+    const snapshot = await query.limit(300).get();
+    if (snapshot.empty) return;
+
+    const batch = db.batch();
+    for (const doc of snapshot.docs) {
+      if (beforeDelete) await beforeDelete(doc, batch);
+      batch.delete(doc.ref);
+    }
+    await batch.commit();
+    if (snapshot.size < 300) return;
+  }
+}
+
+exports.onAuthUserDeleted = functions
+  .region('europe-west1')
+  .auth.user()
+  .onDelete(async (user) => {
+    const uid = user.uid;
+
+    await deleteQuery(
+      db.collectionGroup('likes').where('userId', '==', uid),
+      async (doc, batch) => {
+        const recipeRef = doc.ref.parent.parent;
+        if (recipeRef) {
+          batch.update(recipeRef, {
+            likeCount: admin.firestore.FieldValue.increment(-1),
+          });
+        }
+      },
+    );
+
+    await deleteQuery(
+      db.collectionGroup('comments').where('userId', '==', uid),
+      async (doc, batch) => {
+        const recipeRef = doc.ref.parent.parent;
+        if (recipeRef) {
+          batch.update(recipeRef, {
+            commentCount: admin.firestore.FieldValue.increment(-1),
+          });
+        }
+      },
+    );
+
+    const authoredRecipes = await db
+      .collection('recipes')
+      .where('authorId', '==', uid)
+      .get();
+    for (const recipe of authoredRecipes.docs) {
+      await db.recursiveDelete(recipe.ref);
+    }
+
+    await deleteQuery(
+      db.collection('pending_recipes').where('authorId', '==', uid),
+    );
+    await deleteQuery(db.collection('reports').where('reporterId', '==', uid));
+    await deleteQuery(db.collection('reports').where('targetUserId', '==', uid));
+
+    await db.recursiveDelete(db.collection('users').doc(uid));
+
+    const bucket = admin.storage().bucket();
+    await Promise.all([
+      bucket.deleteFiles({ prefix: `recipe_images/${uid}/` }),
+      bucket.deleteFiles({ prefix: `pending_recipes/${uid}/` }),
+      bucket.deleteFiles({ prefix: `avatars/${uid}/` }),
+    ]);
+
+    console.log(`Kullanıcı verileri temizlendi: ${uid}`);
+  });

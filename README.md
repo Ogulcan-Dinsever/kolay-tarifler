@@ -1,6 +1,6 @@
-# Ne Pişirsem (Kolay Tarifler)
+# Kolay Tarifler
 
-"Bu akşam ne pişirsem?" sorusuna cevap olsun diye başladım. Türkçe ve dünya mutfaklarından tarifleri bir araya getiren, evdeki malzemeye göre tarif önerebilen, haftalık yemek planlaması yapıp ordan otomatik alışveriş listesi çıkaran bir Flutter uygulaması. Firebase üzerinde çalışıyor, şu an aktif geliştirme aşamasında — henüz App Store/Play Store'da değil, henüz gerçek kullanıcısı yok, ama iskelet epey oturdu.
+Türkçe ve dünya mutfaklarından tarifleri bir araya getiren, evdeki malzemeye göre tarif önerebilen, haftalık yemek planlaması yapıp otomatik alışveriş listesi çıkaran bir Flutter uygulaması. Firebase üzerinde çalışıyor ve Google Play yayın hazırlığı aşamasında.
 
 Bu README'yi hem "bir kullanıcı gibi uygulamayı gezersem ne görürüm" hem de "kod tabanına ilk kez bakan bir geliştirici olsam neyi fark ederim" diye iki gözle yazdım. Aşağısı kısa bir tanıtım değil, dürüst bir döküm — neyin iyi oturduğu, neyin yarım kaldığı, neyin borç olarak biriktiği dahil.
 
