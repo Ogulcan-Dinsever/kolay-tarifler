@@ -56,10 +56,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     if (!_loginFormKey.currentState!.validate()) return;
     setState(() => _loading = true);
     try {
-      await ref.read(authServiceProvider).signIn(
-            email: _emailCtrl.text.trim(),
-            password: _passwordCtrl.text,
-          );
+      await ref
+          .read(authServiceProvider)
+          .signIn(email: _emailCtrl.text.trim(), password: _passwordCtrl.text);
       if (mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       if (mounted) _showError(_firebaseError(e.code));
@@ -74,7 +73,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     if (!_registerFormKey.currentState!.validate()) return;
     setState(() => _loading = true);
     try {
-      await ref.read(authServiceProvider).signUp(
+      await ref
+          .read(authServiceProvider)
+          .signUp(
             email: _regEmailCtrl.text.trim(),
             password: _regPasswordCtrl.text,
             displayName: _nameCtrl.text.trim(),
@@ -100,9 +101,13 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     } on PlatformException catch (e) {
       if (!mounted) return;
       if (e.code == 'network_error') {
-        _showError('İnternet bağlantısı yok. Lütfen bağlantını kontrol edip tekrar dene.');
+        _showError(
+          'İnternet bağlantısı yok. Lütfen bağlantını kontrol edip tekrar dene.',
+        );
       } else {
-        _showError('Google ile giriş yapılamadı (${e.code}). Lütfen tekrar dene.');
+        _showError(
+          'Google ile giriş yapılamadı (${e.code}). Lütfen tekrar dene.',
+        );
       }
     } on Exception catch (e) {
       if (!mounted) return;
@@ -131,7 +136,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     } on FirebaseAuthException catch (e) {
       if (mounted) _showError(_firebaseError(e.code));
     } on Exception catch (_) {
-      if (mounted) _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');
+      if (mounted) {
+        _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');
+      }
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -194,7 +201,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
               _buildTabBar(),
               const SizedBox(height: 24),
               SizedBox(
-                height: 360,
+                height: 400,
                 child: TabBarView(
                   controller: _tabs,
                   children: [_buildLoginForm(), _buildRegisterForm()],
@@ -269,9 +276,11 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         indicatorSize: TabBarIndicatorSize.tab,
         labelColor: AppColors.primaryText,
         unselectedLabelColor: context.palette.textTertiary,
-        labelStyle:
-            const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
-        tabs: const [Tab(text: 'Giriş Yap'), Tab(text: 'Kayıt Ol')],
+        labelStyle: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
+        tabs: const [
+          Tab(text: 'Giriş Yap'),
+          Tab(text: 'Kayıt Ol'),
+        ],
       ),
     );
   }
@@ -285,8 +294,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
             controller: _emailCtrl,
             label: 'E-posta',
             keyboardType: TextInputType.emailAddress,
-            validator: (v) =>
-                (v == null || !v.contains('@')) ? 'Geçerli e-posta girin' : null,
+            validator: (v) => (v == null || !v.contains('@'))
+                ? 'Geçerli e-posta girin'
+                : null,
           ),
           const SizedBox(height: 12),
           _field(
@@ -334,8 +344,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
             controller: _regEmailCtrl,
             label: 'E-posta',
             keyboardType: TextInputType.emailAddress,
-            validator: (v) =>
-                (v == null || !v.contains('@')) ? 'Geçerli e-posta girin' : null,
+            validator: (v) => (v == null || !v.contains('@'))
+                ? 'Geçerli e-posta girin'
+                : null,
           ),
           const SizedBox(height: 10),
           _field(
@@ -368,8 +379,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Text(
             'veya',
-            style: TextStyle(
-                fontSize: 12, color: context.palette.textTertiary),
+            style: TextStyle(fontSize: 12, color: context.palette.textTertiary),
           ),
         ),
         Expanded(child: Divider(color: context.palette.border)),
@@ -434,8 +444,14 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
               'https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg',
               height: 20,
               width: 20,
-              errorBuilder: (context, error, stackTrace) =>
-                  const Text('G', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Color(0xFF4285F4))),
+              errorBuilder: (context, error, stackTrace) => const Text(
+                'G',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xFF4285F4),
+                ),
+              ),
             ),
             const SizedBox(width: 10),
             Text(
@@ -494,12 +510,16 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       decoration: InputDecoration(
         labelText: label,
         labelStyle: TextStyle(
-            fontSize: 13, color: context.palette.textTertiary),
+          fontSize: 13,
+          color: context.palette.textTertiary,
+        ),
         suffixIcon: suffixIcon,
         filled: true,
         fillColor: context.palette.g50,
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 14,
+          vertical: 12,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: context.palette.border, width: 1.5),
@@ -510,8 +530,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide:
-              const BorderSide(color: AppColors.primary, width: 2),
+          borderSide: const BorderSide(color: AppColors.primary, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -521,10 +540,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     );
   }
 
-  Widget _primaryButton({
-    required String label,
-    VoidCallback? onTap,
-  }) {
+  Widget _primaryButton({required String label, VoidCallback? onTap}) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
