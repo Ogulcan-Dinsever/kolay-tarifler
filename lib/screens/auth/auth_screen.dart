@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show PlatformException;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../providers/auth_provider.dart';
@@ -127,14 +126,16 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     try {
       final user = await ref.read(authServiceProvider).signInWithApple();
       if (user != null && mounted) context.go('/');
-    } on SignInWithAppleAuthorizationException catch (e) {
-      if (!mounted) return;
-      // Kullanıcı iptal ettiyse sessiz geç.
-      if (e.code != AuthorizationErrorCode.canceled) {
-        _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');
-      }
     } on FirebaseAuthException catch (e) {
-      if (mounted) _showError(_firebaseError(e.code));
+      if (!mounted) return;
+      const cancelledCodes = {
+        'web-context-cancelled',
+        'popup-closed-by-user',
+        'cancelled-popup-request',
+      };
+      if (!cancelledCodes.contains(e.code)) {
+        _showError(_firebaseError(e.code));
+      }
     } on Exception catch (_) {
       if (mounted) {
         _showError('Apple ile giriş yapılamadı. Lütfen tekrar dene.');

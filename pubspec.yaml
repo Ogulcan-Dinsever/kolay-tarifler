@@ -21,8 +21,7 @@ dependencies:
   firebase_crashlytics: ^4.3.0
   firebase_messaging: ^15.2.5
   google_sign_in: ^6.2.2
-  sign_in_with_apple: ^6.1.4 # App Store Guideline 4.8 — Google girişi varsa zorunlu
-  crypto: ^3.0.3 # Apple girişi nonce hash'i için
+  # Apple girişi Firebase Auth'un yerel AppleAuthProvider akışıyla sağlanır.
 
   # --- Notifications ---
   flutter_local_notifications: ^18.0.1
