@@ -6,6 +6,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/tutorial/tutorial_overlay.dart';
 import '../../core/utils/responsive.dart';
+import '../../core/utils/recipe_ingredient_ids.dart';
 import '../../models/ingredient.dart';
 import '../../models/recipe.dart';
 import '../../providers/ingredient_selection_provider.dart';
@@ -131,14 +132,16 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
   /// Yakın eşleşme: 1-3 malzemesi eksik (ve en az bir seçili malzeme içeriyor).
   /// Her iki listede Türk mutfağı önce gelir.
   ({List<Recipe> exact, List<(Recipe, int)> near}) _matchRecipes(
-      List<Recipe> all) {
+    List<Recipe> all,
+    List<Ingredient> ingredients,
+  ) {
     if (_selectedIngredients.isEmpty) {
       return (exact: <Recipe>[], near: <(Recipe, int)>[]);
     }
     final exact = <Recipe>[];
     final near = <(Recipe, int)>[];
     for (final recipe in all) {
-      final ids = recipe.ingredients.map((i) => i.ingredientId).toSet();
+      final ids = resolvedRecipeIngredientIds(recipe, ingredients);
       if (ids.isEmpty) continue;
       final missing = ids.difference(_selectedIngredients).length;
       if (missing == 0) {
@@ -169,17 +172,16 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
 
   void _toggleIngredient(String id) {
     final current = ref.read(selectedIngredientsProvider);
-    ref.read(selectedIngredientsProvider.notifier).state =
-        current.contains(id)
-            ? ({...current}..remove(id))
-            : {...current, id};
+    ref.read(selectedIngredientsProvider.notifier).state = current.contains(id)
+        ? ({...current}..remove(id))
+        : {...current, id};
   }
 
   @override
   Widget build(BuildContext context) {
     final ingredients = ref.watch(ingredientsProvider).valueOrNull ?? [];
     final allRecipes = ref.watch(allRecipesProvider).valueOrNull ?? [];
-    final matches = _matchRecipes(allRecipes);
+    final matches = _matchRecipes(allRecipes, ingredients);
 
     final grouped = <IngredientCategory, List<Ingredient>>{};
     for (final ing in ingredients) {
@@ -189,8 +191,9 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
       list.sort((a, b) => _trCompare(a.name, b.name));
     }
     // Kullanım sıklığı sırasına göre, yalnız dolu kategoriler
-    final orderedCategories =
-        _categoryOrder.where((c) => grouped.containsKey(c)).toList();
+    final orderedCategories = _categoryOrder
+        .where((c) => grouped.containsKey(c))
+        .toList();
 
     final byId = {for (final ing in ingredients) ing.id: ing};
     final searching = _searchQuery.trim().isNotEmpty;
@@ -238,7 +241,8 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                   _buildSearchResults(context, ingredients)
                 else
                   ...orderedCategories.map(
-                      (c) => _buildCategorySection(context, c, grouped[c]!)),
+                    (c) => _buildCategorySection(context, c, grouped[c]!),
+                  ),
                 if (_selectedIngredients.isNotEmpty) ...[
                   const SizedBox(height: 24),
                   SectionHeader(
@@ -248,15 +252,16 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                   if (matches.exact.isEmpty)
                     Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 24, vertical: 20),
+                        horizontal: 24,
+                        vertical: 20,
+                      ),
                       child: Center(
                         child: Text(
                           matches.near.isEmpty
                               ? 'Bu malzemelerle yapılabilecek tarif yok'
                               : 'Seçtiklerinle birebir yapılabilecek tarif yok — aşağıdaki önerilere göz at 👇',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: context.palette.textTertiary),
+                          style: TextStyle(color: context.palette.textTertiary),
                         ),
                       ),
                     )
@@ -265,11 +270,13 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: matches.exact
-                            .map((recipe) => RecipeCard(
-                                  recipe: recipe,
-                                  onTap: () =>
-                                      context.push('/recipe/${recipe.id}'),
-                                ))
+                            .map(
+                              (recipe) => RecipeCard(
+                                recipe: recipe,
+                                onTap: () =>
+                                    context.push('/recipe/${recipe.id}'),
+                              ),
+                            )
                             .toList(),
                       ),
                     ),
@@ -283,12 +290,14 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: matches.near
-                            .map((entry) => RecipeCard(
-                                  recipe: entry.$1,
-                                  badgeText: '${entry.$2} Malzeme Eksik',
-                                  onTap: () => context
-                                      .push('/recipe/${entry.$1.id}'),
-                                ))
+                            .map(
+                              (entry) => RecipeCard(
+                                recipe: entry.$1,
+                                badgeText: '${entry.$2} Malzeme Eksik',
+                                onTap: () =>
+                                    context.push('/recipe/${entry.$1.id}'),
+                              ),
+                            )
                             .toList(),
                       ),
                     ),
@@ -305,12 +314,15 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
 
   /// Seçilen malzemeler — yatay kayan şerit, dokununca kaldırır.
   Widget _buildSelectedStrip(
-      BuildContext context, Map<String, Ingredient> byId) {
-    final selected = _selectedIngredients
-        .map((id) => byId[id])
-        .whereType<Ingredient>()
-        .toList()
-      ..sort((a, b) => _trCompare(a.name, b.name));
+    BuildContext context,
+    Map<String, Ingredient> byId,
+  ) {
+    final selected =
+        _selectedIngredients
+            .map((id) => byId[id])
+            .whereType<Ingredient>()
+            .toList()
+          ..sort((a, b) => _trCompare(a.name, b.name));
     return SizedBox(
       height: context.rs(44),
       child: ListView.separated(
@@ -330,8 +342,7 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
               ),
               child: Row(
                 children: [
-                  Text(ing.emoji,
-                      style: TextStyle(fontSize: context.sp(13))),
+                  Text(ing.emoji, style: TextStyle(fontSize: context.sp(13))),
                   SizedBox(width: context.rs(5)),
                   Text(
                     ing.name,
@@ -342,8 +353,11 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                     ),
                   ),
                   SizedBox(width: context.rs(5)),
-                  Icon(Icons.close_rounded,
-                      size: context.rs(14), color: AppColors.primaryText),
+                  Icon(
+                    Icons.close_rounded,
+                    size: context.rs(14),
+                    color: AppColors.primaryText,
+                  ),
                 ],
               ),
             ),
@@ -355,12 +369,15 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
 
   /// Arama sonuçları — kategorilerden bağımsız düz liste (Türkçe katlamalı eşleşme).
   Widget _buildSearchResults(
-      BuildContext context, List<Ingredient> ingredients) {
+    BuildContext context,
+    List<Ingredient> ingredients,
+  ) {
     final q = RecipeService.foldTurkish(_searchQuery.trim());
-    final results = ingredients
-        .where((ing) => RecipeService.foldTurkish(ing.name).contains(q))
-        .toList()
-      ..sort((a, b) => _trCompare(a.name, b.name));
+    final results =
+        ingredients
+            .where((ing) => RecipeService.foldTurkish(ing.name).contains(q))
+            .toList()
+          ..sort((a, b) => _trCompare(a.name, b.name));
 
     if (results.isEmpty) {
       return Padding(
@@ -403,13 +420,15 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
           child: GestureDetector(
-            onTap: () => ref
-                .read(expandedIngredientCategoryProvider.notifier)
-                .state = isExpanded ? null : category,
+            onTap: () =>
+                ref.read(expandedIngredientCategoryProvider.notifier).state =
+                    isExpanded ? null : category,
             behavior: HitTestBehavior.opaque,
             child: Container(
               padding: EdgeInsets.symmetric(
-                  horizontal: context.rs(14), vertical: context.rs(12)),
+                horizontal: context.rs(14),
+                vertical: context.rs(12),
+              ),
               decoration: BoxDecoration(
                 color: context.palette.g50,
                 borderRadius: BorderRadius.circular(14),
@@ -422,8 +441,10 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
               ),
               child: Row(
                 children: [
-                  Text(category.emoji,
-                      style: TextStyle(fontSize: context.sp(16))),
+                  Text(
+                    category.emoji,
+                    style: TextStyle(fontSize: context.sp(16)),
+                  ),
                   SizedBox(width: context.rs(8)),
                   Expanded(
                     child: Text(
@@ -438,8 +459,9 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
                   if (selectedCount > 0) ...[
                     Container(
                       padding: EdgeInsets.symmetric(
-                          horizontal: context.rs(8),
-                          vertical: context.rs(2)),
+                        horizontal: context.rs(8),
+                        vertical: context.rs(2),
+                      ),
                       decoration: BoxDecoration(
                         color: AppColors.primary,
                         borderRadius: BorderRadius.circular(12),
@@ -491,12 +513,12 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
   }
 
   Widget _emojiBox(BuildContext context, String emoji) => SizedBox(
-        width: context.rs(26),
-        height: context.rs(26),
-        child: Center(
-            child: Text(emoji,
-                style: TextStyle(fontSize: context.sp(15)))),
-      );
+    width: context.rs(26),
+    height: context.rs(26),
+    child: Center(
+      child: Text(emoji, style: TextStyle(fontSize: context.sp(15))),
+    ),
+  );
 
   Widget _buildIngredientChip(BuildContext context, Ingredient ing) {
     final isSelected = _selectedIngredients.contains(ing.id);
@@ -505,7 +527,9 @@ class _IngredientsScreenState extends ConsumerState<IngredientsScreen> {
       onTap: () => _toggleIngredient(ing.id),
       child: Container(
         padding: EdgeInsets.symmetric(
-            horizontal: context.rs(10), vertical: context.rs(7)),
+          horizontal: context.rs(10),
+          vertical: context.rs(7),
+        ),
         decoration: BoxDecoration(
           color: isSelected ? AppColors.primary : context.palette.g50,
           borderRadius: BorderRadius.circular(20),
