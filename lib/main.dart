@@ -21,19 +21,10 @@ import 'providers/theme_provider.dart';
 import 'services/notification_service.dart';
 import 'services/ad_consent_service.dart';
 import 'services/recipe_cache_service.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  if (kDebugMode) {
-    try {
-      await MobileAds.instance.initialize().timeout(const Duration(seconds: 4));
-    } catch (_) {}
-  } else {
-    await AdConsentService.initialize();
-  }
-
   // table_calendar'ın Türkçe ay/gün adları için tarih sembollerini yükle
   await initializeDateFormatting('tr_TR');
 
@@ -136,6 +127,10 @@ class _TarifliAppState extends ConsumerState<TarifliApp> {
 
     // Uygulama kapalıyken tıklanmış rota varsa ilk frame'de işle
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Gizlilik/ATT istemleri ancak ilk ekran çizildikten sonra sunulmalıdır.
+      // İşlem arka planda ilerler; kullanıcı açılış ekranında bekletilmez.
+      unawaited(AdConsentService.initialize());
+
       final pending = NotificationService.pendingRoute;
       if (pending != null) {
         NotificationService.pendingRoute = null;

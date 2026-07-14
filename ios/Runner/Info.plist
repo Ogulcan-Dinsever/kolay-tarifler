@@ -4,6 +4,12 @@
 <dict>
 	<key>GADApplicationIdentifier</key>
 	<string>$(ADMOB_APP_ID)</string>
+	<!-- Uygulama yalnızca Apple'ın ve üçüncü taraf SDK'ların standart HTTPS/TLS
+	     şifrelemesini kullanır; özel veya ihracata tabi kripto algoritması yoktur. -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Bu izin, size daha uygun reklamlar göstermek ve reklam performansını ölçmek için cihaz tanımlayıcısının kullanılmasına olanak verir.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Tarifinize fotoğraf eklemek için galeri erişimi gerekiyor</string>
 	<key>NSCameraUsageDescription</key>

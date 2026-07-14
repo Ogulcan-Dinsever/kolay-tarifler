@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../services/ad_config.dart';
+import '../services/ad_consent_service.dart';
 
 /// A fixed-height banner that sits above the app navigation. It is only shown
 /// on routes that contain browseable recipe content.
@@ -48,30 +49,36 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd> {
 
   @override
   Widget build(BuildContext context) {
-    if (AdConfig.anchoredBannerId == null) return const SizedBox.shrink();
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final width = constraints.maxWidth.truncate();
-        if (width > 0 && width != _loadedWidth) {
-          WidgetsBinding.instance.addPostFrameCallback((_) => _load(width));
+    return ValueListenableBuilder<bool>(
+      valueListenable: AdConsentService.canRequestAdsNotifier,
+      builder: (context, canRequestAds, _) {
+        if (!canRequestAds || AdConfig.anchoredBannerId == null) {
+          return const SizedBox.shrink();
         }
-        final ad = _ad;
-        // Mobile anchored banners are 50dp tall; reserve the separator too so
-        // content does not jump when the ad finishes loading.
-        if (ad == null) return const SizedBox(height: 58);
-        return Container(
-          alignment: Alignment.center,
-          decoration: const BoxDecoration(
-            border: Border(top: BorderSide(color: Color(0x1A000000))),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: SizedBox(
-              width: ad.size.width.toDouble(),
-              height: ad.size.height.toDouble(),
-              child: AdWidget(ad: ad),
-            ),
-          ),
+        return LayoutBuilder(
+          builder: (context, constraints) {
+            final width = constraints.maxWidth.truncate();
+            if (width > 0 && width != _loadedWidth) {
+              WidgetsBinding.instance.addPostFrameCallback((_) => _load(width));
+            }
+            final ad = _ad;
+            // Reklam yüklenirken alanı koru; alt navigasyon zıplamasın.
+            if (ad == null) return const SizedBox(height: 58);
+            return Container(
+              alignment: Alignment.center,
+              decoration: const BoxDecoration(
+                border: Border(top: BorderSide(color: Color(0x1A000000))),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: SizedBox(
+                  width: ad.size.width.toDouble(),
+                  height: ad.size.height.toDouble(),
+                  child: AdWidget(ad: ad),
+                ),
+              ),
+            );
+          },
         );
       },
     );
