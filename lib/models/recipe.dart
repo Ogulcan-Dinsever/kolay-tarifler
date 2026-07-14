@@ -49,8 +49,10 @@ class Recipe {
   final DateTime createdAt;
   @HiveField(20)
   final DateTime? modifiedAt;
-  @HiveField(21)
+  @HiveField(21, defaultValue: '')
   final String servings;
+  @HiveField(22, defaultValue: [])
+  final List<Map<String, dynamic>> imageSources;
 
   const Recipe({
     required this.id,
@@ -75,6 +77,7 @@ class Recipe {
     required this.createdAt,
     this.modifiedAt,
     this.servings = '',
+    this.imageSources = const [],
   });
 
   bool get communityLeads =>
@@ -97,6 +100,7 @@ class Recipe {
       servings: data['servings'] as String? ?? '',
       emoji: data['emoji'] as String? ?? '🍽️',
       imageUrls: List<String>.from(data['imageUrls'] ?? []),
+      imageSources: _imageSourcesFrom(data['imageSources']),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
           .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
           .toList(),
@@ -131,6 +135,7 @@ class Recipe {
     'servings': servings,
     'emoji': emoji,
     'imageUrls': imageUrls,
+    'imageSources': imageSources,
     'ingredients': ingredients.map((e) => e.toMap()).toList(),
     'steps': steps.map((e) => e.toMap()).toList(),
     'tags': tags,
@@ -165,6 +170,7 @@ class Recipe {
       imageUrls: ((data['imageUrls'] as List<dynamic>?) ?? [])
           .map((e) => e.toString())
           .toList(),
+      imageSources: _imageSourcesFrom(data['imageSources']),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
           .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
           .toList(),
@@ -203,6 +209,7 @@ class Recipe {
     'servings': servings,
     'emoji': emoji,
     'imageUrls': imageUrls,
+    'imageSources': imageSources,
     'ingredients': ingredients.map((e) => e.toMap()).toList(),
     'steps': steps.map((e) => e.toMap()).toList(),
     'tags': tags,
@@ -217,6 +224,17 @@ class Recipe {
     'createdAt': Timestamp.fromDate(createdAt),
     if (modifiedAt != null) 'modifiedAt': Timestamp.fromDate(modifiedAt!),
   };
+
+  static List<Map<String, dynamic>> _imageSourcesFrom(dynamic raw) {
+    if (raw is! List) return const [];
+    return raw
+        .whereType<Map>()
+        .map(
+          (source) =>
+              source.map((key, value) => MapEntry(key.toString(), value)),
+        )
+        .toList();
+  }
 }
 
 class MockCuisines {

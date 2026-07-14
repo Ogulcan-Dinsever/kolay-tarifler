@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/tutorial/tutorial_overlay.dart';
@@ -245,6 +246,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
     final user = userAsync.valueOrNull;
     final isAuth = user != null && !user.isAnonymous;
     final isAdmin = ref.watch(isAdminProvider).valueOrNull ?? false;
+    final imageCredit = _imageCreditFor(_currentPage);
 
     final isLiked = isAuth
         ? ref
@@ -315,6 +317,39 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                         color: _currentPage == i
                             ? Colors.white
                             : Colors.white.withValues(alpha: 0.45),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            if (imageCredit != null)
+              Positioned(
+                top: topPadding + 10,
+                left: 58,
+                right: 56,
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: GestureDetector(
+                    onTap: () => _openImageCredit(imageCredit),
+                    child: Container(
+                      constraints: const BoxConstraints(maxWidth: 250),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 5,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.black.withValues(alpha: 0.48),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        _imageCreditLabel(imageCredit),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ),
                   ),
@@ -452,6 +487,51 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
         child: Text(recipe.emoji, style: const TextStyle(fontSize: 100)),
       ),
     );
+  }
+
+  Map<String, dynamic>? _imageCreditFor(int index) {
+    if (index < 0 || index >= recipe.imageUrls.length) return null;
+    final imageUrl = recipe.imageUrls[index];
+    Map<String, dynamic>? source;
+
+    for (final candidate in recipe.imageSources) {
+      if (candidate['storageUrl']?.toString() == imageUrl) {
+        source = candidate;
+        break;
+      }
+    }
+    source ??= index < recipe.imageSources.length
+        ? recipe.imageSources[index]
+        : null;
+    if (source == null) return null;
+
+    final provider = source['provider']?.toString().toLowerCase() ?? '';
+    final license = source['license']?.toString().toLowerCase() ?? '';
+    final needsCredit =
+        provider.contains('wikimedia') ||
+        license.startsWith('cc ') ||
+        license.contains('creative commons');
+    return needsCredit ? source : null;
+  }
+
+  String _imageCreditLabel(Map<String, dynamic> source) {
+    final artist = source['artist']?.toString().trim().isNotEmpty == true
+        ? source['artist'].toString().trim()
+        : source['author']?.toString().trim().isNotEmpty == true
+        ? source['author'].toString().trim()
+        : 'Wikimedia Commons';
+    final license = source['license']?.toString().trim() ?? '';
+    return license.isEmpty
+        ? 'Fotoğraf: $artist'
+        : 'Fotoğraf: $artist • $license';
+  }
+
+  Future<void> _openImageCredit(Map<String, dynamic> source) async {
+    final target =
+        source['page']?.toString() ?? source['sourceUrl']?.toString() ?? '';
+    final uri = Uri.tryParse(target);
+    if (uri == null || !uri.hasScheme) return;
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
   void _showFullscreenImage(BuildContext context) {

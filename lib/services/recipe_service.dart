@@ -92,6 +92,13 @@ class RecipeService {
         servings: raw['servings'] as String? ?? '',
         emoji: _safeEmoji(raw['emoji'] as String?),
         imageUrls: List<String>.from(raw['imageUrls'] ?? []),
+        imageSources: (raw['imageSources'] as List<dynamic>? ?? [])
+            .whereType<Map>()
+            .map(
+              (source) =>
+                  source.map((key, value) => MapEntry(key.toString(), value)),
+            )
+            .toList(),
         ingredients: ingredients,
         steps: steps,
         tags: List<String>.from(raw['tags'] ?? []),
@@ -422,12 +429,19 @@ class RecipeService {
   /// Kullanıcılar sıklıkla "corba" gibi aksansız yazar; "Çorba" ile eşleşmeli.
   static String foldTurkish(String input) {
     const map = {
-      'ç': 'c', 'Ç': 'c',
-      'ğ': 'g', 'Ğ': 'g',
-      'ı': 'i', 'I': 'i', 'İ': 'i',
-      'ö': 'o', 'Ö': 'o',
-      'ş': 's', 'Ş': 's',
-      'ü': 'u', 'Ü': 'u',
+      'ç': 'c',
+      'Ç': 'c',
+      'ğ': 'g',
+      'Ğ': 'g',
+      'ı': 'i',
+      'I': 'i',
+      'İ': 'i',
+      'ö': 'o',
+      'Ö': 'o',
+      'ş': 's',
+      'Ş': 's',
+      'ü': 'u',
+      'Ü': 'u',
     };
     final sb = StringBuffer();
     for (final rune in input.runes) {

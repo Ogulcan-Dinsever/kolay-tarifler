@@ -27,7 +27,9 @@ val releaseStorePassword = signingValue("KEYSTORE_PASSWORD", "storePassword")
 val releaseKeyAlias = signingValue("KEY_ALIAS", "keyAlias")
 val releaseKeyPassword = signingValue("KEY_PASSWORD", "keyPassword")
 val debugAdMobAppId = "ca-app-pub-3940256099942544~3347511713"
-val releaseAdMobAppId = System.getenv("ADMOB_ANDROID_APP_ID") ?: ""
+val releaseAdMobAppId = System.getenv("ADMOB_ANDROID_APP_ID")
+    ?.takeIf { it.isNotBlank() }
+    ?: "ca-app-pub-1746933154428344~9019893864"
 
 android {
     namespace = "com.kolaytarifler.app"

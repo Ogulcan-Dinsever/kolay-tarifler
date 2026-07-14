@@ -38,14 +38,19 @@ class RecipeAdapter extends TypeAdapter<Recipe> {
       commentCount: fields[18] as int,
       createdAt: fields[19] as DateTime,
       modifiedAt: fields[20] as DateTime?,
-      servings: fields[21] as String? ?? '',
+      servings: fields[21] == null ? '' : fields[21] as String,
+      imageSources: fields[22] == null
+          ? []
+          : (fields[22] as List)
+              .map((dynamic e) => (e as Map).cast<String, dynamic>())
+              .toList(),
     );
   }
 
   @override
   void write(BinaryWriter writer, Recipe obj) {
     writer
-      ..writeByte(22)
+      ..writeByte(23)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -89,7 +94,9 @@ class RecipeAdapter extends TypeAdapter<Recipe> {
       ..writeByte(20)
       ..write(obj.modifiedAt)
       ..writeByte(21)
-      ..write(obj.servings);
+      ..write(obj.servings)
+      ..writeByte(22)
+      ..write(obj.imageSources);
   }
 
   @override

@@ -11,6 +11,7 @@ class AdConfig {
 
   static const _androidReleaseBannerId = String.fromEnvironment(
     'ADMOB_ANDROID_BANNER_ID',
+    defaultValue: 'ca-app-pub-1746933154428344/9848805510',
   );
   static const _iosReleaseBannerId = String.fromEnvironment(
     'ADMOB_IOS_BANNER_ID',
