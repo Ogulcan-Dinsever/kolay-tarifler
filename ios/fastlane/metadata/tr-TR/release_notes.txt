@@ -1,0 +1,7 @@
+Kolay Tarifler'in ilk sürümü:
+
+• 700'den fazla tarif ve dünya mutfakları
+• Malzemeye göre tarif bulma
+• Yemek takvimi
+• Otomatik alışveriş listesi
+• Favoriler ve kişisel tarif notları
