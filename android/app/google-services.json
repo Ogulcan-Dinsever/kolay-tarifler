@@ -22,6 +22,22 @@
           }
         },
         {
+          "client_id": "129219992136-8jdpdgabbsq3vu2aijsr278946csv5ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kolaytarifler.app",
+            "certificate_hash": "6a8bcb7a629ffbf1cfc7272207d0938786870cf9"
+          }
+        },
+        {
+          "client_id": "129219992136-uqflng1ithfv31jq5246ou95nc4h8sqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kolaytarifler.app",
+            "certificate_hash": "9dee8c2c4b382ecf0643d6261b98f5905be54f9f"
+          }
+        },
+        {
           "client_id": "129219992136-qm06g0kikal0f8c9akfhl9lofu2i7h7q.apps.googleusercontent.com",
           "client_type": 3
         }

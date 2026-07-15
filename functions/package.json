@@ -4,6 +4,7 @@
   "engines": { "node": "22" },
   "main": "index.js",
   "scripts": {
+    "test": "node --test notification_helpers.test.js",
     "deploy": "firebase deploy --only functions --project kolaytarifler-37c45",
     "logs": "firebase functions:log --project kolaytarifler-37c45"
   },

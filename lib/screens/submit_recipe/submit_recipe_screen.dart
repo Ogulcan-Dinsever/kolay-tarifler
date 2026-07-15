@@ -14,6 +14,7 @@ import '../../models/recipe_ingredient.dart';
 import '../../models/recipe_step.dart';
 import '../../providers/pending_recipe_provider.dart';
 import '../../providers/recipe_provider.dart';
+import '../../services/notification_service.dart';
 import '../../widgets/ingredient_picker_sheet.dart';
 
 class _IngredientEntry {
@@ -207,7 +208,7 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Tarifin inceleme kuyruğuna alındı. Admin onayladıktan sonra yayına girecek. Durumu "Başvurularım" ekranından takip edebilirsin.',
+              'Tarifin inceleme kuyruğuna alındı. Sonucu her zaman zil ekranında görebilirsin. Telefonuna da haber vermemiz için bildirimleri açabilirsin.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 13,
@@ -220,25 +221,62 @@ class _SubmitRecipeScreenState extends ConsumerState<SubmitRecipeScreen> {
         actions: [
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
-                foregroundColor: AppColors.primaryText,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+            child: Column(
+              children: [
+                OutlinedButton.icon(
+                  style: OutlinedButton.styleFrom(
+                    minimumSize: const Size.fromHeight(44),
+                    foregroundColor: AppColors.primaryDark,
+                    side: const BorderSide(color: AppColors.primary),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: _enableResultNotifications,
+                  icon: const Icon(Icons.notifications_active_outlined),
+                  label: const Text('Sonuç Bildirimini Aç'),
                 ),
-              ),
-              onPressed: () {
-                Navigator.pop(ctx);
-                context.pop();
-              },
-              child: const Text(
-                'Tamam',
-                style: TextStyle(fontWeight: FontWeight.w700),
-              ),
+                const SizedBox(height: 8),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size.fromHeight(44),
+                    backgroundColor: AppColors.primary,
+                    foregroundColor: AppColors.primaryText,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                    context.pop();
+                  },
+                  child: const Text(
+                    'Tamam',
+                    style: TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Future<void> _enableResultNotifications() async {
+    final granted = await NotificationService.requestPermission();
+    final user = FirebaseAuth.instance.currentUser;
+    if (granted && user != null && !user.isAnonymous) {
+      await NotificationService.saveToken(user.uid);
+    }
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          granted
+              ? 'Telefon bildirimleri açıldı.'
+              : 'Bildirim izni verilmedi. Profil > Bildirimleri Aç bölümünden daha sonra açabilirsin.',
+        ),
       ),
     );
   }

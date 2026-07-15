@@ -52,27 +52,42 @@ class AuthService {
     final user = cred.user;
     if (user == null) return;
     await CrashService.setUser(user.uid);
-    await NotificationService.saveToken(user.uid);
     // Profil belgesi yoksa oluştur — eski/dış hesaplarda users/{uid} eksik
     // olabilir; bu durumda yorum/etkileşim akışları kırılmasın.
     await _ensureUserDoc(user);
+    await NotificationService.saveToken(user.uid);
   }
 
-  /// users/{uid} belgesi yoksa auth bilgisinden minimal bir profil oluşturur.
-  Future<void> _ensureUserDoc(User user) async {
+  /// users/{uid} belgesi yoksa veya yalnızca cihaz tokenı içeriyorsa auth
+  /// bilgisinden eksik profil alanlarını tamamlar.
+  Future<AppUser> _ensureUserDoc(
+    User user, {
+    String? fallbackDisplayName,
+    String? fallbackUsername,
+  }) async {
     final ref = _db.collection('users').doc(user.uid);
     final doc = await ref.get();
-    if (doc.exists) return;
+    final data = doc.data();
+    final hasProfile =
+        doc.exists &&
+        data?['displayName'] is String &&
+        (data!['displayName'] as String).isNotEmpty &&
+        data['username'] is String;
+    if (hasProfile) return AppUser.fromFirestore(doc);
+
     final appUser = AppUser(
       id: user.uid,
       displayName: (user.displayName?.isNotEmpty == true)
           ? user.displayName!
+          : (fallbackDisplayName?.isNotEmpty == true)
+          ? fallbackDisplayName!
           : (user.email?.split('@').first ?? 'Kullanıcı'),
-      username: user.email?.split('@').first ?? '',
+      username: fallbackUsername ?? user.email?.split('@').first ?? '',
       avatarUrl: user.photoURL,
       createdAt: DateTime.now(),
     );
-    await ref.set(appUser.toFirestore());
+    await ref.set(appUser.toFirestore(), SetOptions(merge: true));
+    return appUser;
   }
 
   Future<AppUser?> signInWithGoogle() async {
@@ -92,21 +107,13 @@ class AuthService {
     if (user == null) throw Exception('Google girişi başarısız');
 
     await CrashService.setUser(user.uid);
+    final appUser = await _ensureUserDoc(
+      user,
+      fallbackDisplayName: googleUser.displayName,
+      fallbackUsername: googleUser.email.split('@').first,
+    );
     await NotificationService.saveToken(user.uid);
-
-    // Firestore'da kayıt yoksa oluştur
-    final doc = await _db.collection('users').doc(user.uid).get();
-    if (!doc.exists) {
-      final appUser = AppUser(
-        id: user.uid,
-        displayName: user.displayName ?? googleUser.displayName ?? 'Kullanıcı',
-        username: googleUser.email.split('@').first,
-        createdAt: DateTime.now(),
-      );
-      await _db.collection('users').doc(user.uid).set(appUser.toFirestore());
-      return appUser;
-    }
-    return AppUser.fromFirestore(doc);
+    return appUser;
   }
 
   // ── Apple ile Giriş ──────────────────────────────────────────────────────
@@ -123,28 +130,18 @@ class AuthService {
     if (user == null) throw Exception('Apple girişi başarısız');
 
     await CrashService.setUser(user.uid);
-    await NotificationService.saveToken(user.uid);
-
-    final ref = _db.collection('users').doc(user.uid);
-    final doc = await ref.get();
-    if (!doc.exists) {
-      final displayName = user.displayName?.isNotEmpty == true
-          ? user.displayName!
-          : (user.email?.split('@').first ?? 'Kullanıcı');
-      if (user.displayName == null || user.displayName!.isEmpty) {
-        await user.updateDisplayName(displayName);
-      }
-      final appUser = AppUser(
-        id: user.uid,
-        displayName: displayName,
-        username: user.email?.split('@').first ?? '',
-        avatarUrl: user.photoURL,
-        createdAt: DateTime.now(),
-      );
-      await ref.set(appUser.toFirestore());
-      return appUser;
+    final displayName = user.displayName?.isNotEmpty == true
+        ? user.displayName!
+        : (user.email?.split('@').first ?? 'Kullanıcı');
+    if (user.displayName == null || user.displayName!.isEmpty) {
+      await user.updateDisplayName(displayName);
     }
-    return AppUser.fromFirestore(doc);
+    final appUser = await _ensureUserDoc(
+      user,
+      fallbackDisplayName: displayName,
+    );
+    await NotificationService.saveToken(user.uid);
+    return appUser;
   }
 
   Future<void> continueAsGuest() async {

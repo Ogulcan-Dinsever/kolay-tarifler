@@ -1,5 +1,10 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const {
+  normalizeTokens,
+  stringifyData,
+  invalidTokensFromResponses,
+} = require('./notification_helpers');
 
 admin.initializeApp();
 const db = admin.firestore();
@@ -8,16 +13,16 @@ const db = admin.firestore();
 
 async function sendToUser(userId, { title, body }, data = {}) {
   const snap = await db.collection('users').doc(userId).get();
-  const token = snap.data()?.fcmToken;
-  if (!token) return null;
-
-  const stringData = Object.fromEntries(
-    Object.entries(data).map(([k, v]) => [k, String(v)])
-  );
+  const userData = snap.data() || {};
+  const tokens = normalizeTokens(userData);
+  if (tokens.length === 0) {
+    console.info('FCM atlandı: kayıtlı cihaz tokenı yok', { userId });
+    return null;
+  }
 
   try {
-    return await admin.messaging().send({
-      token,
+    const result = await admin.messaging().sendEachForMulticast({
+      tokens,
       notification: { title, body },
       android: {
         notification: { channelId: 'kt_main', sound: 'default' },
@@ -25,20 +30,50 @@ async function sendToUser(userId, { title, body }, data = {}) {
       apns: {
         payload: { aps: { sound: 'default' } },
       },
-      data: stringData,
+      data: stringifyData(data),
     });
-  } catch (err) {
-    // Geçersiz/kaldırılmış token → users belgesinden temizle, birikmesin.
-    if (
-      err.code === 'messaging/registration-token-not-registered' ||
-      err.code === 'messaging/invalid-registration-token'
-    ) {
-      await db
-        .collection('users')
-        .doc(userId)
-        .update({ fcmToken: admin.firestore.FieldValue.delete() })
-        .catch(() => {});
+
+    console.info('FCM gönderim sonucu', {
+      userId,
+      deviceCount: tokens.length,
+      successCount: result.successCount,
+      failureCount: result.failureCount,
+    });
+
+    const invalidTokens = invalidTokensFromResponses(tokens, result.responses);
+    if (invalidTokens.length > 0) {
+      const update = {
+        fcmTokens: admin.firestore.FieldValue.arrayRemove(...invalidTokens),
+      };
+      if (invalidTokens.includes(userData.fcmToken)) {
+        update.fcmToken = admin.firestore.FieldValue.delete();
+      }
+      await snap.ref.update(update).catch((err) => {
+        console.error('Geçersiz FCM tokenları temizlenemedi', {
+          userId,
+          errorCode: err.code,
+          errorMessage: err.message,
+        });
+      });
     }
+
+    for (const response of result.responses) {
+      if (!response.success) {
+        console.error('FCM cihaz gönderimi başarısız', {
+          userId,
+          errorCode: response.error?.code,
+          errorMessage: response.error?.message,
+        });
+      }
+    }
+    return result;
+  } catch (err) {
+    console.error('FCM toplu gönderimi başarısız', {
+      userId,
+      deviceCount: tokens.length,
+      errorCode: err.code,
+      errorMessage: err.message,
+    });
     return null;
   }
 }
@@ -57,7 +92,12 @@ async function addInApp(userId, { title, body }, data = {}) {
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
   } catch (err) {
-    console.error('addInApp yazılamadı:', userId, err.message);
+    console.error('Uygulama içi bildirim yazılamadı', {
+      userId,
+      errorCode: err.code,
+      errorMessage: err.message,
+    });
+    throw err;
   }
 }
 

@@ -23,6 +23,7 @@ class NotificationService {
 
   // Her saveToken çağrısında önceki listener cancel edilir — memory leak önlenir
   static StreamSubscription<String>? _tokenRefreshSub;
+  static String? _currentToken;
 
   static Future<void> init() async {
     FirebaseMessaging.onBackgroundMessage(_onBackgroundMessage);
@@ -90,29 +91,52 @@ class NotificationService {
     await _tokenRefreshSub?.cancel();
     final token = await _fcm.getToken();
     if (token == null) return;
-    await _upsert(userId, token);
-    _tokenRefreshSub = _fcm.onTokenRefresh.listen((t) => _upsert(userId, t));
+    await _upsert(userId, token, previousToken: _currentToken);
+    _tokenRefreshSub = _fcm.onTokenRefresh.listen((token) async {
+      await _upsert(userId, token, previousToken: _currentToken);
+    });
   }
 
   // Çıkış yaparken çağır
   static Future<void> clearToken(String userId) async {
     await _tokenRefreshSub?.cancel();
     _tokenRefreshSub = null;
+    final token = _currentToken ?? await _fcm.getToken();
     try {
-      await FirebaseFirestore.instance.collection('users').doc(userId).update({
-        'fcmToken': FieldValue.delete(),
-      });
+      final update = <String, dynamic>{'fcmToken': FieldValue.delete()};
+      if (token != null) {
+        update['fcmTokens'] = FieldValue.arrayRemove([token]);
+      }
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .update(update);
     } catch (_) {}
+    _currentToken = null;
     await _fcm.deleteToken();
   }
 
   // ── Dahili ──────────────────────────────────────────────────────────────────
 
-  static Future<void> _upsert(String userId, String token) => FirebaseFirestore
-      .instance
-      .collection('users')
-      .doc(userId)
-      .set({'fcmToken': token}, SetOptions(merge: true));
+  static Future<void> _upsert(
+    String userId,
+    String token, {
+    String? previousToken,
+  }) async {
+    final ref = FirebaseFirestore.instance.collection('users').doc(userId);
+    if (previousToken != null && previousToken != token) {
+      await ref.set({
+        'fcmTokens': FieldValue.arrayRemove([previousToken]),
+      }, SetOptions(merge: true));
+    }
+    await ref.set({
+      // Eski fonksiyon sürümüyle geriye dönük uyumluluk.
+      'fcmToken': token,
+      // Aynı hesap birden fazla telefonda kullanıldığında tüm cihazlara gönder.
+      'fcmTokens': FieldValue.arrayUnion([token]),
+    }, SetOptions(merge: true));
+    _currentToken = token;
+  }
 
   static void _showLocal(RemoteMessage message) {
     final n = message.notification;
