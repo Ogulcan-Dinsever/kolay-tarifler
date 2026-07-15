@@ -15,6 +15,7 @@ class AdConfig {
   );
   static const _iosReleaseBannerId = String.fromEnvironment(
     'ADMOB_IOS_BANNER_ID',
+    defaultValue: 'ca-app-pub-1746933154428344/9045794078',
   );
 
   /// Debug builds always use Google's test units. Release builds render no ad

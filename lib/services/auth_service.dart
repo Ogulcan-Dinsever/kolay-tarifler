@@ -174,6 +174,33 @@ class AuthService {
     }
     final uid = user.uid;
 
+    // Apple, Sign in with Apple kullanan hesaplar silinirken verilen yetkinin
+    // de iptal edilmesini ister. Yeniden kimlik doğrulama hem güncel bir
+    // authorization code üretir hem de Firebase'in recent-login şartını
+    // karşılar.
+    if (!kIsWeb && user.providerData.any((p) => p.providerId == 'apple.com')) {
+      try {
+        final provider = AppleAuthProvider()
+          ..addScope('email')
+          ..addScope('name');
+        final credential = await user.reauthenticateWithProvider(provider);
+        final authorizationCode =
+            credential.additionalUserInfo?.authorizationCode;
+        if (authorizationCode == null || authorizationCode.isEmpty) {
+          throw FirebaseAuthException(
+            code: 'missing-apple-authorization-code',
+            message: 'Apple yetkilendirme kodu alınamadı.',
+          );
+        }
+        await _auth.revokeTokenWithAuthorizationCode(authorizationCode);
+      } on FirebaseAuthException catch (e) {
+        if (e.code == 'requires-recent-login') {
+          throw AccountDeletionException.requiresRecentLogin;
+        }
+        rethrow;
+      }
+    }
+
     // FCM token'ını temizle ki silinen kullanıcıya bildirim gönderilmeye
     // çalışılmasın.
     await NotificationService.clearToken(uid);
