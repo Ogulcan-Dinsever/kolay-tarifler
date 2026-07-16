@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -32,11 +33,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   String _randomizedFor = '';
 
   // Tutorial GlobalKey'leri
-  final _searchKey    = GlobalKey();
-  final _cuisineKey   = GlobalKey();
-  final _recipeKey    = GlobalKey();
-  final _featuredKey  = GlobalKey();
-  final _bellKey      = GlobalKey();
+  final _searchKey = GlobalKey();
+  final _cuisineKey = GlobalKey();
+  final _recipeKey = GlobalKey();
+  final _featuredKey = GlobalKey();
+  final _bellKey = GlobalKey();
 
   OverlayEntry? _tutorialEntry;
 
@@ -69,9 +70,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ),
           TutorialStep(
             emoji: '🌍',
-            title: '10 Dünya Mutfağı',
+            title: 'Dünya Mutfakları',
             description:
-                'Türk, İtalyan, Japon, Meksika… Chip\'lere tıklayarak mutfak değiştir; liste her seferinde farklı tariflerle karışır.',
+                'Tarifi olan mutfaklar önce gelir. Bir mutfak seç; 10 farklı tarife göz at veya Tümünü gör ile hepsini keşfet.',
             targetKey: _cuisineKey,
             spotlightPadding: 8,
           ),
@@ -139,7 +140,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           imageUrl: recipe.imageUrls.isNotEmpty ? recipe.imageUrls.first : null,
           badgeText: '✦ HAFTANIN TARİFİ',
           title: recipe.name,
-          meta: '⏱ ${recipe.duration}   ❤️ ${formatCount(recipe.likeCount)} beğeni',
+          meta:
+              '⏱ ${recipe.duration}   ❤️ ${formatCount(recipe.likeCount)} beğeni',
           onTap: () => context.push('/recipe/${recipe.id}'),
         );
       },
@@ -150,15 +152,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     if (_searchQuery.isEmpty) return all;
     final q = RecipeService.foldTurkish(_searchQuery);
     return all
-        .where((r) =>
-            RecipeService.foldTurkish(r.name).contains(q) ||
-            RecipeService.foldTurkish(r.type).contains(q))
+        .where(
+          (r) =>
+              RecipeService.foldTurkish(r.name).contains(q) ||
+              RecipeService.foldTurkish(r.type).contains(q),
+        )
         .toList();
   }
 
   @override
   Widget build(BuildContext context) {
     final recipesAsync = ref.watch(recipesByCuisineProvider(_selectedCuisine));
+    final allRecipes =
+        ref.watch(allRecipesProvider).valueOrNull ?? const <Recipe>[];
+    final cuisines = MockCuisines.orderedForRecipes(allRecipes);
 
     return Column(
       children: [
@@ -190,12 +197,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 const SizedBox(height: 12),
                 CuisineChipRow(
                   key: _cuisineKey,
-                  items: MockCuisines.all,
-                  selectedIndex: MockCuisines.all
-                      .indexWhere((c) => c['name'] == _selectedCuisine),
+                  items: cuisines,
+                  selectedIndex: cuisines.indexWhere(
+                    (c) => c['name'] == _selectedCuisine,
+                  ),
                   onSelected: (i) {
                     setState(() {
-                      _selectedCuisine = MockCuisines.all[i]['name']!;
+                      _selectedCuisine = cuisines[i]['name']!;
                       _searchQuery = '';
                       _randomizedFor = '';
                     });
@@ -205,9 +213,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   },
                 ),
                 const SizedBox(height: 12),
-                const SectionHeader(
-                  title: 'Öne Çıkan Tarif',
-                ),
+                const SectionHeader(title: 'Öne Çıkan Tarif'),
                 KeyedSubtree(key: _featuredKey, child: _buildFeatured(ref)),
                 recipesAsync.when(
                   loading: () => const Padding(
@@ -233,7 +239,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         : _filterRecipes(all);
 
                     final actionText = _searchQuery.isEmpty
-                        ? '${all.length} tariften 10 tanesi'
+                        ? '${all.length} tariften ${recipes.length} tanesi'
                         : '${recipes.length} sonuç';
 
                     return Column(
@@ -251,8 +257,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           )
                         else
                           Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
                             child: Column(
                               children: [
                                 // Spotlight yalnız ilk kartı hedefler
@@ -261,11 +266,30 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                                     key: i == 0 ? _recipeKey : null,
                                     child: RecipeCard(
                                       recipe: recipes[i],
-                                      onTap: () => context
-                                          .push('/recipe/${recipes[i].id}'),
+                                      onTap: () => context.push(
+                                        '/recipe/${recipes[i].id}',
+                                      ),
                                     ),
                                   ),
                               ],
+                            ),
+                          ),
+                        if (_searchQuery.isEmpty && all.length > recipes.length)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
+                            child: Align(
+                              alignment: Alignment.centerRight,
+                              child: TextButton.icon(
+                                onPressed: () => context.push(
+                                  Uri(
+                                    path: '/cuisine',
+                                    queryParameters: {'name': _selectedCuisine},
+                                  ).toString(),
+                                ),
+                                iconAlignment: IconAlignment.end,
+                                icon: const Icon(Icons.arrow_forward_rounded),
+                                label: const Text('Tümünü gör'),
+                              ),
                             ),
                           ),
                       ],
@@ -278,6 +302,180 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           ),
         ),
       ],
+    );
+  }
+}
+
+class CuisineRecipesScreen extends ConsumerStatefulWidget {
+  final String cuisine;
+
+  const CuisineRecipesScreen({super.key, required this.cuisine});
+
+  @override
+  ConsumerState<CuisineRecipesScreen> createState() =>
+      _CuisineRecipesScreenState();
+}
+
+class _CuisineRecipesScreenState extends ConsumerState<CuisineRecipesScreen> {
+  static const _pageSize = 20;
+
+  final _scrollController = ScrollController();
+  final _recipes = <Recipe>[];
+  DocumentSnapshot<Map<String, dynamic>>? _lastDocument;
+  bool _isLoading = false;
+  bool _hasMore = true;
+  Object? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _loadNextPage());
+  }
+
+  void _onScroll() {
+    if (_scrollController.position.extentAfter < 500) _loadNextPage();
+  }
+
+  Future<void> _loadNextPage() async {
+    if (_isLoading || !_hasMore) return;
+    setState(() {
+      _isLoading = true;
+      _error = null;
+    });
+
+    try {
+      final page = await ref
+          .read(recipeServiceProvider)
+          .fetchCuisineRecipePage(
+            widget.cuisine,
+            pageSize: _pageSize,
+            startAfter: _lastDocument,
+          );
+      if (!mounted) return;
+      final existingIds = _recipes.map((recipe) => recipe.id).toSet();
+      setState(() {
+        _recipes.addAll(
+          page.recipes.where((recipe) => existingIds.add(recipe.id)),
+        );
+        _lastDocument = page.lastDocument;
+        _hasMore = page.hasMore;
+      });
+    } catch (error) {
+      if (mounted) setState(() => _error = error);
+    } finally {
+      if (mounted) setState(() => _isLoading = false);
+    }
+  }
+
+  @override
+  void dispose() {
+    _scrollController
+      ..removeListener(_onScroll)
+      ..dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        AppHeader(
+          title: '${widget.cuisine} Mutfağı',
+          showBackButton: true,
+          showProfileAvatar: false,
+        ),
+        Expanded(child: _buildBody()),
+      ],
+    );
+  }
+
+  Widget _buildBody() {
+    if (_recipes.isEmpty && _isLoading) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    if (_recipes.isEmpty && _error != null) {
+      return _PageMessage(
+        icon: Icons.cloud_off_rounded,
+        message: 'Tarifler yüklenemedi',
+        actionLabel: 'Tekrar dene',
+        onAction: _loadNextPage,
+      );
+    }
+    if (_recipes.isEmpty) {
+      return const _PageMessage(
+        icon: Icons.restaurant_menu_rounded,
+        message: 'Bu mutfakta henüz tarif yok',
+      );
+    }
+
+    return ListView.builder(
+      controller: _scrollController,
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+      itemCount: _recipes.length + 1,
+      itemBuilder: (context, index) {
+        if (index < _recipes.length) {
+          final recipe = _recipes[index];
+          return RecipeCard(
+            recipe: recipe,
+            onTap: () => context.push('/recipe/${recipe.id}'),
+          );
+        }
+        if (_error != null) {
+          return Center(
+            child: TextButton.icon(
+              onPressed: _loadNextPage,
+              icon: const Icon(Icons.refresh_rounded),
+              label: const Text('Sonraki 20 tarifi tekrar yükle'),
+            ),
+          );
+        }
+        if (_isLoading) {
+          return const Padding(
+            padding: EdgeInsets.all(20),
+            child: Center(child: CircularProgressIndicator()),
+          );
+        }
+        if (!_hasMore) {
+          return const Padding(
+            padding: EdgeInsets.all(16),
+            child: Center(child: Text('Tüm tarifleri gördünüz')),
+          );
+        }
+        return const SizedBox(height: 1);
+      },
+    );
+  }
+}
+
+class _PageMessage extends StatelessWidget {
+  final IconData icon;
+  final String message;
+  final String? actionLabel;
+  final VoidCallback? onAction;
+
+  const _PageMessage({
+    required this.icon,
+    required this.message,
+    this.actionLabel,
+    this.onAction,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 48),
+          const SizedBox(height: 12),
+          Text(message),
+          if (actionLabel != null && onAction != null) ...[
+            const SizedBox(height: 12),
+            FilledButton(onPressed: onAction, child: Text(actionLabel!)),
+          ],
+        ],
+      ),
     );
   }
 }

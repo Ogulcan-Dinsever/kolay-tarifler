@@ -104,6 +104,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             path: '/notifications',
             builder: (context, state) => const NotificationsScreen(),
           ),
+          GoRoute(
+            path: '/cuisine',
+            builder: (context, state) => CuisineRecipesScreen(
+              cuisine: state.uri.queryParameters['name'] ?? 'Türk',
+            ),
+          ),
         ],
       ),
       GoRoute(

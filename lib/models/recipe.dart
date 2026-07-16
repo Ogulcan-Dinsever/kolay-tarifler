@@ -242,10 +242,110 @@ class MockCuisines {
     {'flag': '🇹🇷', 'name': 'Türk'},
     {'flag': '🇮🇹', 'name': 'İtalyan'},
     {'flag': '🇯🇵', 'name': 'Japon'},
+    {'flag': '🇮🇳', 'name': 'Hint'},
+    {'flag': '🇰🇷', 'name': 'Kore'},
+    {'flag': '🇨🇳', 'name': 'Çin'},
+    {'flag': '🇬🇷', 'name': 'Yunan'},
+    {'flag': '🇺🇸', 'name': 'Amerikan'},
+    {'flag': '🇪🇸', 'name': 'İspanyol'},
+    {'flag': '🇱🇧', 'name': 'Lübnan'},
+    {'flag': '🇹🇭', 'name': 'Tayland'},
+    {'flag': '🇻🇳', 'name': 'Vietnam'},
     {'flag': '🇲🇽', 'name': 'Meksika'},
     {'flag': '🇫🇷', 'name': 'Fransız'},
-    {'flag': '🇮🇳', 'name': 'Hint'},
+    {'flag': '🇩🇪', 'name': 'Alman'},
+    {'flag': '🇬🇧', 'name': 'İngiliz'},
+    {'flag': '🇵🇹', 'name': 'Portekiz'},
+    {'flag': '🇧🇷', 'name': 'Brezilya'},
+    {'flag': '🇦🇷', 'name': 'Arjantin'},
+    {'flag': '🇵🇪', 'name': 'Peru'},
+    {'flag': '🇲🇦', 'name': 'Fas'},
+    {'flag': '🇪🇬', 'name': 'Mısır'},
+    {'flag': '🇮🇷', 'name': 'İran'},
+    {'flag': '🇮🇶', 'name': 'Irak'},
+    {'flag': '🇸🇾', 'name': 'Suriye'},
+    {'flag': '🇮🇱', 'name': 'İsrail'},
+    {'flag': '🇬🇪', 'name': 'Gürcü'},
+    {'flag': '🇦🇿', 'name': 'Azeri'},
+    {'flag': '🇦🇲', 'name': 'Ermeni'},
+    {'flag': '🇷🇺', 'name': 'Rus'},
+    {'flag': '🇺🇦', 'name': 'Ukrayna'},
+    {'flag': '🇵🇱', 'name': 'Polonya'},
+    {'flag': '🇭🇺', 'name': 'Macar'},
+    {'flag': '🇨🇿', 'name': 'Çek'},
+    {'flag': '🇦🇹', 'name': 'Avusturya'},
+    {'flag': '🇨🇭', 'name': 'İsviçre'},
+    {'flag': '🇧🇪', 'name': 'Belçika'},
+    {'flag': '🇳🇱', 'name': 'Hollanda'},
+    {'flag': '🇸🇪', 'name': 'İsveç'},
+    {'flag': '🇳🇴', 'name': 'Norveç'},
+    {'flag': '🇩🇰', 'name': 'Danimarka'},
+    {'flag': '🇫🇮', 'name': 'Finlandiya'},
+    {'flag': '🇮🇩', 'name': 'Endonezya'},
+    {'flag': '🇲🇾', 'name': 'Malezya'},
+    {'flag': '🇵🇭', 'name': 'Filipin'},
+    {'flag': '🇵🇰', 'name': 'Pakistan'},
+    {'flag': '🇧🇩', 'name': 'Bangladeş'},
+    {'flag': '🇱🇰', 'name': 'Sri Lanka'},
+    {'flag': '🇳🇵', 'name': 'Nepal'},
+    {'flag': '🇲🇳', 'name': 'Moğol'},
+    {'flag': '🇪🇹', 'name': 'Etiyopya'},
+    {'flag': '🇿🇦', 'name': 'Güney Afrika'},
+    {'flag': '🇳🇬', 'name': 'Nijerya'},
+    {'flag': '🇹🇳', 'name': 'Tunus'},
+    {'flag': '🇩🇿', 'name': 'Cezayir'},
+    {'flag': '🇸🇦', 'name': 'Suudi Arabistan'},
+    {'flag': '🇾🇪', 'name': 'Yemen'},
+    {'flag': '🇯🇴', 'name': 'Ürdün'},
+    {'flag': '🇨🇺', 'name': 'Küba'},
+    {'flag': '🇨🇴', 'name': 'Kolombiya'},
+    {'flag': '🇨🇱', 'name': 'Şili'},
+    {'flag': '🇨🇦', 'name': 'Kanada'},
+    {'flag': '🇦🇺', 'name': 'Avustralya'},
+    {'flag': '🇳🇿', 'name': 'Yeni Zelanda'},
   ];
+
+  /// Tarif bulunan mutfakları başa, henüz boş olanları sona taşır.
+  ///
+  /// Firestore'a katalogda olmayan yeni bir mutfak eklenirse onu da otomatik
+  /// olarak listeye dahil eder; böylece statik katalog veri kaybına yol açmaz.
+  static List<Map<String, String>> orderedForRecipes(Iterable<Recipe> recipes) {
+    final counts = <String, int>{};
+    for (final recipe in recipes) {
+      final cuisine = recipe.cuisine.trim();
+      if (cuisine.isEmpty) continue;
+      counts.update(
+        cuisine,
+        (currentCount) => currentCount + 1,
+        ifAbsent: () => 1,
+      );
+    }
+
+    final result = all.map((item) => Map<String, String>.from(item)).toList();
+    final knownNames = result.map((item) => item['name']!).toSet();
+    for (final cuisine in counts.keys.where(
+      (name) => !knownNames.contains(name),
+    )) {
+      result.add({'flag': '🌍', 'name': cuisine});
+    }
+
+    final originalOrder = <String, int>{
+      for (var i = 0; i < result.length; i++) result[i]['name']!: i,
+    };
+    result.sort((a, b) {
+      final aName = a['name']!;
+      final bName = b['name']!;
+      final aCount = counts[aName] ?? 0;
+      final bCount = counts[bName] ?? 0;
+      final aHasRecipes = aCount > 0;
+      final bHasRecipes = bCount > 0;
+
+      if (aHasRecipes != bHasRecipes) return aHasRecipes ? -1 : 1;
+      if (aHasRecipes && aCount != bCount) return bCount.compareTo(aCount);
+      return originalOrder[aName]!.compareTo(originalOrder[bName]!);
+    });
+    return result;
+  }
 }
 
 class RecipeTypes {

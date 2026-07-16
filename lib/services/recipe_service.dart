@@ -11,6 +11,18 @@ import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
 import 'recipe_cache_service.dart';
 
+class RecipePage {
+  final List<Recipe> recipes;
+  final DocumentSnapshot<Map<String, dynamic>>? lastDocument;
+  final bool hasMore;
+
+  const RecipePage({
+    required this.recipes,
+    required this.lastDocument,
+    required this.hasMore,
+  });
+}
+
 class RecipeService {
   final _db = FirebaseFirestore.instance;
 
@@ -297,6 +309,31 @@ class RecipeService {
       unawaited(cache.saveRecipes(list));
       yield list;
     }
+  }
+
+  /// Bir mutfağın tariflerini sabit 20'lik sayfalar halinde getirir.
+  /// Belge kimliği ile sıralama, sayfalar arasında tekrar/atlama olmadan
+  /// kararlı bir Firestore cursor'ı sağlar.
+  Future<RecipePage> fetchCuisineRecipePage(
+    String cuisine, {
+    int pageSize = 20,
+    DocumentSnapshot<Map<String, dynamic>>? startAfter,
+  }) async {
+    Query<Map<String, dynamic>> query = _db
+        .collection('recipes')
+        .where('cuisine', isEqualTo: cuisine)
+        .orderBy(FieldPath.documentId)
+        .limit(pageSize);
+    if (startAfter != null) query = query.startAfterDocument(startAfter);
+
+    final snapshot = await query.get();
+    final recipes = snapshot.docs.map(Recipe.fromFirestore).toList();
+    unawaited(RecipeCacheService().saveRecipes(recipes));
+    return RecipePage(
+      recipes: recipes,
+      lastDocument: snapshot.docs.isEmpty ? startAfter : snapshot.docs.last,
+      hasMore: snapshot.docs.length == pageSize,
+    );
   }
 
   Stream<List<Recipe>> allRecipesStream() async* {
