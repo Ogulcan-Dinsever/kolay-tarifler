@@ -14,8 +14,10 @@ class AnchoredBannerAd extends StatefulWidget {
 }
 
 class _AnchoredBannerAdState extends State<AnchoredBannerAd> {
+  static const _bannerSize = AdSize.banner;
+
   BannerAd? _ad;
-  int? _loadedWidth;
+  bool _loadStarted = false;
 
   @override
   void dispose() {
@@ -23,18 +25,16 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd> {
     super.dispose();
   }
 
-  Future<void> _load(int width) async {
-    if (_loadedWidth == width || AdConfig.anchoredBannerId == null) return;
-    _loadedWidth = width;
-    final size = await AdSize.getLargeAnchoredAdaptiveBannerAdSize(width);
-    if (!mounted || size == null) return;
+  Future<void> _load() async {
+    if (_loadStarted || AdConfig.anchoredBannerId == null) return;
+    _loadStarted = true;
 
     final previousAd = _ad;
     late final BannerAd nextAd;
     nextAd = BannerAd(
       adUnitId: AdConfig.anchoredBannerId!,
       request: const AdRequest(),
-      size: size,
+      size: _bannerSize,
       listener: BannerAdListener(
         onAdLoaded: (ad) {
           if (!mounted || ad != nextAd) return;
@@ -55,32 +55,53 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd> {
         if (!canRequestAds || AdConfig.anchoredBannerId == null) {
           return const SizedBox.shrink();
         }
-        return LayoutBuilder(
-          builder: (context, constraints) {
-            final width = constraints.maxWidth.truncate();
-            if (width > 0 && width != _loadedWidth) {
-              WidgetsBinding.instance.addPostFrameCallback((_) => _load(width));
-            }
-            final ad = _ad;
-            // Reklam yüklenirken alanı koru; alt navigasyon zıplamasın.
-            if (ad == null) return const SizedBox(height: 58);
-            return Container(
-              alignment: Alignment.center,
-              decoration: const BoxDecoration(
-                border: Border(top: BorderSide(color: Color(0x1A000000))),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: SizedBox(
-                  width: ad.size.width.toDouble(),
-                  height: ad.size.height.toDouble(),
-                  child: AdWidget(ad: ad),
-                ),
-              ),
-            );
-          },
+        if (!_loadStarted) {
+          WidgetsBinding.instance.addPostFrameCallback((_) => _load());
+        }
+        final ad = _ad;
+        // Reklam yüklenirken standart banner kadar alanı koru; alt navigasyon
+        // zıplamasın ve reklam ekrandan gereksiz yer kaplamasın.
+        if (ad == null) {
+          return SizedBox(height: _bannerSize.height.toDouble());
+        }
+        return AnchoredBannerFrame(
+          size: ad.size,
+          child: AdWidget(ad: ad),
         );
       },
+    );
+  }
+}
+
+/// Keeps the banner slot exactly as tall as the creative supplied by AdMob.
+///
+/// Public so the layout contract can be covered by a widget regression test.
+class AnchoredBannerFrame extends StatelessWidget {
+  const AnchoredBannerFrame({
+    super.key,
+    required this.size,
+    required this.child,
+  });
+
+  final AdSize size;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: size.height.toDouble(),
+      child: DecoratedBox(
+        decoration: const BoxDecoration(
+          border: Border(top: BorderSide(color: Color(0x1A000000))),
+        ),
+        child: Center(
+          child: SizedBox(
+            width: size.width.toDouble(),
+            height: size.height.toDouble(),
+            child: child,
+          ),
+        ),
+      ),
     );
   }
 }

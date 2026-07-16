@@ -311,9 +311,9 @@ class RecipeService {
     }
   }
 
-  /// Bir mutfağın tariflerini sabit 20'lik sayfalar halinde getirir.
-  /// Belge kimliği ile sıralama, sayfalar arasında tekrar/atlama olmadan
-  /// kararlı bir Firestore cursor'ı sağlar.
+  /// Bir mutfağın tariflerini alfabetik sırayla, sabit 20'lik sayfalar halinde
+  /// getirir. Belge snapshot cursor'ı aynı isimli tariflerde belge kimliğini de
+  /// kullanarak sayfalar arasında tekrar/atlama olmamasını sağlar.
   Future<RecipePage> fetchCuisineRecipePage(
     String cuisine, {
     int pageSize = 20,
@@ -322,7 +322,7 @@ class RecipeService {
     Query<Map<String, dynamic>> query = _db
         .collection('recipes')
         .where('cuisine', isEqualTo: cuisine)
-        .orderBy(FieldPath.documentId)
+        .orderBy('name')
         .limit(pageSize);
     if (startAfter != null) query = query.startAfterDocument(startAfter);
 
@@ -334,6 +334,11 @@ class RecipeService {
       lastDocument: snapshot.docs.isEmpty ? startAfter : snapshot.docs.last,
       hasMore: snapshot.docs.length == pageSize,
     );
+  }
+
+  static int compareRecipesAlphabetically(Recipe a, Recipe b) {
+    final nameComparison = a.name.compareTo(b.name);
+    return nameComparison != 0 ? nameComparison : a.id.compareTo(b.id);
   }
 
   Stream<List<Recipe>> allRecipesStream() async* {

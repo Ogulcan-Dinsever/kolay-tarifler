@@ -358,6 +358,7 @@ class _CuisineRecipesScreenState extends ConsumerState<CuisineRecipesScreen> {
         _recipes.addAll(
           page.recipes.where((recipe) => existingIds.add(recipe.id)),
         );
+        _recipes.sort(RecipeService.compareRecipesAlphabetically);
         _lastDocument = page.lastDocument;
         _hasMore = page.hasMore;
       });
