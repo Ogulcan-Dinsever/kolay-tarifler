@@ -1,4 +1,8 @@
 const functions = require('firebase-functions/v1');
+const {
+  onDocumentCreated,
+  onDocumentDeleted,
+} = require('firebase-functions/v2/firestore');
 const { initializeApp } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const { getMessaging } = require('firebase-admin/messaging');
@@ -151,25 +155,32 @@ exports.onPendingRecipeStatusChange = functions
 
 // Eski istemciler recipeKind göndermez. Sunucu filtreli yeni sorgularda bu
 // tariflerin kaybolmaması için alanı oluşturma sonrasında tamamla.
-exports.onRecipeCreated = functions
-  .region('europe-west1')
-  .firestore.document('recipes/{recipeId}')
-  .onCreate((snap) => {
+exports.onRecipeCreatedV2 = onDocumentCreated(
+  {
+    document: 'recipes/{recipeId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  (event) => {
+    const snap = event.data;
     const recipe = snap.data() || {};
     if (recipe.recipeKind === 'main' || recipe.recipeKind === 'variation') {
       return null;
     }
     return snap.ref.update({ recipeKind: recipeKindFor(recipe) });
-  });
+  },
+);
 
 // Eski ve yeni istemciler aynı anda kullanılırken veya kötü niyetli bir sayaç
 // nudgesi geldiğinde alanları gerçek alt koleksiyon sayılarıyla uzlaştırır.
-exports.onRecipeLiked = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipes/{recipeId}/likes/{likerId}')
-  .onCreate(async (snap, context) => {
-    const { recipeId, likerId } = context.params;
+exports.onRecipeLikedV2 = onDocumentCreated(
+  {
+    document: 'recipes/{recipeId}/likes/{likerId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const { recipeId, likerId } = event.params;
     await reconcileRecipeCounters(recipeId, ['likeCount']);
     const recipe = (await db.collection('recipes').doc(recipeId).get()).data();
 
@@ -189,24 +200,29 @@ exports.onRecipeLiked = functions
       },
       { type: 'recipe_liked', recipeId },
     );
-  });
+  },
+);
 
-exports.onRecipeUnliked = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipes/{recipeId}/likes/{likerId}')
-  .onDelete((snap, context) =>
-    reconcileRecipeCounters(context.params.recipeId, ['likeCount']),
-  );
+exports.onRecipeUnlikedV2 = onDocumentDeleted(
+  {
+    document: 'recipes/{recipeId}/likes/{likerId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  (event) => reconcileRecipeCounters(event.params.recipeId, ['likeCount']),
+);
 
 // ── 3. Yorum bildirimi ───────────────────────────────────────────────────────
 
-exports.onCommentAdded = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipes/{recipeId}/comments/{commentId}')
-  .onCreate(async (snap, context) => {
-    const { recipeId } = context.params;
+exports.onCommentAddedV2 = onDocumentCreated(
+  {
+    document: 'recipes/{recipeId}/comments/{commentId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const snap = event.data;
+    const { recipeId } = event.params;
     const comment = snap.data();
 
     await reconcileRecipeCounters(recipeId, ['commentCount']);
@@ -230,22 +246,26 @@ exports.onCommentAdded = functions
       },
       { type: 'comment', recipeId },
     );
-  });
+  },
+);
 
-exports.onCommentDeleted = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipes/{recipeId}/comments/{commentId}')
-  .onDelete((snap, context) =>
-    reconcileRecipeCounters(context.params.recipeId, ['commentCount']),
-  );
+exports.onCommentDeletedV2 = onDocumentDeleted(
+  {
+    document: 'recipes/{recipeId}/comments/{commentId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  (event) => reconcileRecipeCounters(event.params.recipeId, ['commentCount']),
+);
 
-exports.onVariationLiked = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipe_variations/{recipeId}/likes/{likerId}')
-  .onCreate(async (snap, context) => {
-    const { recipeId, likerId } = context.params;
+exports.onVariationLikedV2 = onDocumentCreated(
+  {
+    document: 'recipe_variations/{recipeId}/likes/{likerId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const { recipeId, likerId } = event.params;
     await reconcileRecipeCounters(
       recipeId,
       ['likeCount'],
@@ -266,26 +286,32 @@ exports.onVariationLiked = functions
       },
       { type: 'recipe_liked', recipeId },
     );
-  });
+  },
+);
 
-exports.onVariationUnliked = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipe_variations/{recipeId}/likes/{likerId}')
-  .onDelete((snap, context) =>
+exports.onVariationUnlikedV2 = onDocumentDeleted(
+  {
+    document: 'recipe_variations/{recipeId}/likes/{likerId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  (event) =>
     reconcileRecipeCounters(
-      context.params.recipeId,
+      event.params.recipeId,
       ['likeCount'],
       'recipe_variations',
     ),
-  );
+);
 
-exports.onVariationCommentAdded = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipe_variations/{recipeId}/comments/{commentId}')
-  .onCreate(async (snap, context) => {
-    const { recipeId } = context.params;
+exports.onVariationCommentAddedV2 = onDocumentCreated(
+  {
+    document: 'recipe_variations/{recipeId}/comments/{commentId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const snap = event.data;
+    const { recipeId } = event.params;
     const comment = snap.data();
     await reconcileRecipeCounters(
       recipeId,
@@ -311,19 +337,22 @@ exports.onVariationCommentAdded = functions
       },
       { type: 'comment', recipeId },
     );
-  });
+  },
+);
 
-exports.onVariationCommentDeleted = functions
-  .runWith({ failurePolicy: true })
-  .region('europe-west1')
-  .firestore.document('recipe_variations/{recipeId}/comments/{commentId}')
-  .onDelete((snap, context) =>
+exports.onVariationCommentDeletedV2 = onDocumentDeleted(
+  {
+    document: 'recipe_variations/{recipeId}/comments/{commentId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  (event) =>
     reconcileRecipeCounters(
-      context.params.recipeId,
+      event.params.recipeId,
       ['commentCount'],
       'recipe_variations',
     ),
-  );
+);
 
 // Hesap silindiğinde kullanıcıya bağlı Firestore ve Storage verilerini temizle.
 // İstemci hesabı sildikten sonra Admin SDK ile çalıştığı için alt koleksiyonlar
