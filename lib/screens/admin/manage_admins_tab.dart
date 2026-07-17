@@ -27,9 +27,7 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
     if (!_formKey.currentState!.validate()) return;
     setState(() => _adding = true);
     try {
-      await ref
-          .read(adminServiceProvider)
-          .addAdmin(_emailCtrl.text.trim());
+      await ref.read(adminServiceProvider).addAdmin(_emailCtrl.text.trim());
       if (!mounted) return;
       _emailCtrl.clear();
       _showSnack('Admin eklendi!', success: true);
@@ -53,8 +51,7 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
           ),
           TextButton(
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Kaldır',
-                style: TextStyle(color: Colors.red)),
+            child: const Text('Kaldır', style: TextStyle(color: Colors.red)),
           ),
         ],
       ),
@@ -69,19 +66,31 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
   }
 
   void _showSnack(String msg, {bool success = false}) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(msg),
-      backgroundColor: success ? AppColors.primary : Colors.red[700],
-    ));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(msg),
+        backgroundColor: success ? AppColors.primary : Colors.red[700],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final adminsAsync = ref.watch(
-      StreamProvider<List<Map<String, dynamic>>>(
-        (ref) => ref.read(adminServiceProvider).adminsStream(),
-      ),
-    );
+    final canManageAdmins = ref.watch(isSuperAdminProvider);
+    if (!canManageAdmins) {
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Text(
+            'Admin yetkilerini yalnızca ${AdminService.initialAdminEmail} yönetebilir.',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: context.palette.textSecondary),
+          ),
+        ),
+      );
+    }
+
+    final adminsAsync = ref.watch(adminUsersProvider);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(20),
@@ -115,17 +124,20 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
           const SizedBox(height: 12),
           adminsAsync.when(
             data: (admins) => admins.isEmpty
-                ? Text('Henüz admin yok.',
-                    style: TextStyle(color: context.palette.textTertiary))
+                ? Text(
+                    'Henüz admin yok.',
+                    style: TextStyle(color: context.palette.textTertiary),
+                  )
                 : Column(
                     children: admins
                         .map((a) => _buildAdminTile(a['email'] as String))
                         .toList(),
                   ),
             loading: () => const Center(
-                child: CircularProgressIndicator(color: AppColors.primary)),
-            error: (e, _) => Text('Hata: $e',
-                style: const TextStyle(color: Colors.red)),
+              child: CircularProgressIndicator(color: AppColors.primary),
+            ),
+            error: (e, _) =>
+                Text('Hata: $e', style: const TextStyle(color: Colors.red)),
           ),
         ],
       ),
@@ -148,37 +160,51 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
             Text(
               'Yeni Admin Ekle',
               style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w700,
-                  color: context.palette.textPrimary),
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: context.palette.textPrimary,
+              ),
             ),
             const SizedBox(height: 12),
             TextFormField(
               controller: _emailCtrl,
               keyboardType: TextInputType.emailAddress,
-              style: TextStyle(fontSize: 14, color: context.palette.textPrimary),
+              style: TextStyle(
+                fontSize: 14,
+                color: context.palette.textPrimary,
+              ),
               decoration: InputDecoration(
                 labelText: 'E-posta adresi',
                 labelStyle: TextStyle(
-                    fontSize: 13, color: context.palette.textTertiary),
+                  fontSize: 13,
+                  color: context.palette.textTertiary,
+                ),
                 filled: true,
                 fillColor: context.palette.card,
                 contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 14, vertical: 12),
+                  horizontal: 14,
+                  vertical: 12,
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: context.palette.border, width: 1.5),
+                    color: context.palette.border,
+                    width: 1.5,
+                  ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide(
-                      color: context.palette.border, width: 1.5),
+                    color: context.palette.border,
+                    width: 1.5,
+                  ),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
-                  borderSide:
-                      const BorderSide(color: AppColors.primary, width: 2),
+                  borderSide: const BorderSide(
+                    color: AppColors.primary,
+                    width: 2,
+                  ),
                 ),
               ),
               validator: (v) {
@@ -197,7 +223,8 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
                   foregroundColor: AppColors.primaryText,
                   padding: const EdgeInsets.symmetric(vertical: 12),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12)),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                   elevation: 0,
                 ),
                 child: _adding
@@ -205,12 +232,17 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
                         width: 18,
                         height: 18,
                         child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.primaryText),
+                          strokeWidth: 2,
+                          color: AppColors.primaryText,
+                        ),
                       )
-                    : const Text('Admin Olarak Ekle',
+                    : const Text(
+                        'Admin Olarak Ekle',
                         style: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.w700)),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
               ),
             ),
           ],
@@ -243,8 +275,11 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
               color: isInitial ? context.palette.g100 : context.palette.g50,
               shape: BoxShape.circle,
             ),
-            child: const Icon(Icons.admin_panel_settings_rounded,
-                size: 18, color: AppColors.primaryDark),
+            child: const Icon(
+              Icons.admin_panel_settings_rounded,
+              size: 18,
+              color: AppColors.primaryDark,
+            ),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -254,15 +289,18 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
                 Text(
                   email,
                   style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w600,
-                      color: context.palette.textPrimary),
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: context.palette.textPrimary,
+                  ),
                 ),
                 if (isInitial)
                   const Text(
                     'Süper Admin',
                     style: TextStyle(
-                        fontSize: 11, color: AppColors.primaryDark),
+                      fontSize: 11,
+                      color: AppColors.primaryDark,
+                    ),
                   ),
               ],
             ),
@@ -270,8 +308,11 @@ class _ManageAdminsTabState extends ConsumerState<ManageAdminsTab> {
           if (!isInitial)
             IconButton(
               onPressed: () => _removeAdmin(email),
-              icon: const Icon(Icons.delete_outline_rounded,
-                  color: Colors.red, size: 20),
+              icon: const Icon(
+                Icons.delete_outline_rounded,
+                color: Colors.red,
+                size: 20,
+              ),
               tooltip: 'Admin yetkisini kaldır',
             ),
         ],

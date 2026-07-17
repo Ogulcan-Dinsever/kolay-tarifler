@@ -7,6 +7,7 @@ const {
   initializeTestEnvironment,
 } = require("@firebase/rules-unit-testing");
 const {
+  collection,
   collectionGroup,
   doc,
   getDocs,
@@ -441,6 +442,53 @@ describe("comment and activity rules", () => {
       getDocs(
         query(collectionGroup(db, "comments"), where("userId", "==", "other")),
       ),
+    );
+  });
+});
+
+describe("admin management rules", () => {
+  const ownerEmail = "ogulcandnsvr@gmail.com";
+
+  test("only the owner account can list and grant admin access", async () => {
+    await seed({
+      [`admins/${ownerEmail}`]: { role: "owner" },
+      "admins/delegated@example.com": { role: "admin" },
+    });
+
+    const ownerDb = userDb("owner-id", ownerEmail);
+    await assertSucceeds(getDocs(collection(ownerDb, "admins")));
+    await assertSucceeds(
+      setDoc(doc(ownerDb, "admins/new-admin@example.com"), {
+        email: "new-admin@example.com",
+      }),
+    );
+    const ownerDelete = writeBatch(ownerDb);
+    ownerDelete.delete(doc(ownerDb, "admins/new-admin@example.com"));
+    await assertSucceeds(ownerDelete.commit());
+
+    const delegatedDb = userDb("delegated-id", "delegated@example.com");
+    await assertFails(getDocs(collection(delegatedDb, "admins")));
+    await assertFails(
+      setDoc(doc(delegatedDb, "admins/attacker@example.com"), {
+        email: "attacker@example.com",
+      }),
+    );
+    const delegatedDelete = writeBatch(delegatedDb);
+    delegatedDelete.delete(doc(delegatedDb, "admins/delegated@example.com"));
+    await assertFails(delegatedDelete.commit());
+  });
+
+  test("only the owner can bootstrap the protected owner record", async () => {
+    await assertFails(
+      setDoc(doc(userDb("other-id"), `admins/${ownerEmail}`), {
+        email: ownerEmail,
+      }),
+    );
+
+    await assertSucceeds(
+      setDoc(doc(userDb("owner-id", ownerEmail), `admins/${ownerEmail}`), {
+        email: ownerEmail,
+      }),
     );
   });
 });

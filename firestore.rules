@@ -12,10 +12,17 @@ service cloud.firestore {
              request.auth.token.firebase.sign_in_provider != 'anonymous';
     }
 
+    function isSuperAdmin() {
+      return isSignedIn() &&
+             request.auth.token.email != null &&
+             request.auth.token.email.lower() == 'ogulcandnsvr@gmail.com';
+    }
+
     function isAdmin() {
       return isSignedIn() &&
              request.auth.token.email != null &&
-             exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower()));
+             (isSuperAdmin() ||
+              exists(/databases/$(database)/documents/admins/$(request.auth.token.email.lower())));
     }
 
     function acceptedCommunityTerms() {
@@ -296,22 +303,17 @@ service cloud.firestore {
     }
 
     // ── Admin koleksiyonu ────────────────────────────────────────────────────────
-    // Giriş yapan herkes okuyabilir (kendi admin durumunu kontrol etmek için).
-    // İlk admin seed'i: SADECE kurucunun e-postası için, o belge henüz yoksa,
-    // giriş yapan herhangi bir kullanıcı yazabilir (bootstrap). Başka hiçbir
-    // e-posta için bu istisna geçerli değil — yoksa herkes kendini admin yapabilir.
+    // Her kullanıcı kendi admin durumunu belge yolu ile kontrol edebilir.
+    // Listeleme ve admin yetkisi verme/kaldırma yalnızca kurucu hesabına aittir.
     match /admins/{email} {
       // get: herkes kendi admin durumunu tek belgeyle kontrol edebilir.
-      // list: e-posta adreslerinin toplu sızmasını önlemek için sadece admin.
+      // list: e-posta adreslerinin toplu sızmasını önlemek için sadece kurucu.
       allow get: if isSignedIn();
-      allow list: if isAdmin();
-      allow create, update: if isAdmin() ||
-                      (isSignedIn() &&
-                       email == 'ogulcandnsvr@gmail.com' &&
-                       !exists(/databases/$(database)/documents/admins/$(email)));
+      allow list: if isSuperAdmin();
+      allow create, update: if isSuperAdmin();
       // Kurucunun admin belgesi hiçbir admin tarafından (kendisi dahil) silinemez —
       // hesap kurtarma yolu olmadan yanlışlıkla ya da kötü niyetle kilitlenmeyi önler.
-      allow delete: if isAdmin() && email != 'ogulcandnsvr@gmail.com';
+      allow delete: if isSuperAdmin() && email != 'ogulcandnsvr@gmail.com';
     }
   }
 }
