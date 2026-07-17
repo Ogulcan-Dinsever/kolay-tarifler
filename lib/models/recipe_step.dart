@@ -20,7 +20,9 @@ class RecipeStep {
   factory RecipeStep.fromMap(Map<String, dynamic> data) {
     // Firestore'daki tip tutarsızlıklarına dayanıklı oku (bkz. RecipeIngredient.fromMap).
     return RecipeStep(
-      order: (data['order'] as num?)?.toInt() ?? 0,
+      order: data['order'] is num
+          ? (data['order'] as num).toInt()
+          : int.tryParse(data['order']?.toString() ?? '') ?? 0,
       text: data['text']?.toString() ?? '',
       imageUrl: data['imageUrl']?.toString(),
     );

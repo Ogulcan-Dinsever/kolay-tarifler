@@ -1,0 +1,4 @@
+• Profilindeki yeni “Yorum ve Beğenilerim” ekranından yorumlarını ve beğendiğin tarifleri görebilirsin.
+• Kendi yorumlarını artık silebilirsin.
+• Onaylanan tariflerin adınla bağımsız tarif olarak yayımlanır.
+• Topluluk varyasyonları yalnızca ilgili ana tarifin altında gösterilir.

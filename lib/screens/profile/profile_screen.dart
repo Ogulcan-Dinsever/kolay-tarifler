@@ -166,6 +166,11 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 label: 'Başvurularım',
                 onTap: () => context.push('/my-submissions'),
               ),
+              _SettingItem(
+                icon: Icons.forum_outlined,
+                label: 'Yorum ve Beğenilerim',
+                onTap: () => context.push('/profile/activity'),
+              ),
             ],
           ),
         ),
@@ -641,7 +646,9 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
         title: const Text('Hesabımı Sil'),
         content: const Text(
           'Hesabın ve tüm verilerin (beğeniler, profil) kalıcı olarak '
-          'silinecek. Bu işlem geri alınamaz. Devam etmek istiyor musun?',
+          'silinecek. Daha önce onaylanıp ana tarif olarak yayımlanan '
+          'tariflerin, adın kaldırılarak yayında kalır. Bu işlem geri '
+          'alınamaz. Devam etmek istiyor musun?',
         ),
         actions: [
           TextButton(

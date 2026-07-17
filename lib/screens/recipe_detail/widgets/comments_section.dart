@@ -5,6 +5,7 @@ import '../../../core/community/community_terms.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../models/comment.dart';
+import '../../../providers/admin_provider.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/community_safety_provider.dart';
 import '../../../providers/recipe_provider.dart';
@@ -87,6 +88,7 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
     final blockedIds =
         ref.watch(blockedUserIdsProvider).valueOrNull ?? const {};
     final currentUserId = ref.watch(firebaseUserProvider).valueOrNull?.uid;
+    final isAdmin = ref.watch(isAdminProvider).valueOrNull ?? false;
 
     return Column(
       children: [
@@ -124,6 +126,9 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
                 itemBuilder: (_, i) => _CommentTile(
                   comment: visibleComments[i],
                   currentUserId: currentUserId,
+                  canDelete:
+                      isAdmin || currentUserId == visibleComments[i].userId,
+                  onDelete: () => _deleteComment(visibleComments[i]),
                   onReport: () => _reportComment(visibleComments[i]),
                   onBlock: () => _blockUser(visibleComments[i]),
                 ),
@@ -259,6 +264,48 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
     }
   }
 
+  Future<void> _deleteComment(Comment comment) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Yorumu sil'),
+        content: const Text('Bu yorum kalıcı olarak silinecek.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: const Text('Vazgeç'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(dialogContext, true),
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.red.shade700,
+              foregroundColor: Colors.white,
+            ),
+            child: const Text('Sil'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+
+    try {
+      await ref
+          .read(recipeServiceProvider)
+          .deleteComment(recipeId: widget.recipeId, commentId: comment.id);
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(const SnackBar(content: Text('Yorum silindi.')));
+      }
+    } catch (error) {
+      if (mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Yorum silinemedi: $error')));
+      }
+    }
+  }
+
   Future<void> _blockUser(Comment comment) async {
     final currentUser = ref.read(firebaseUserProvider).valueOrNull;
     if (currentUser == null || currentUser.uid == comment.userId) return;
@@ -292,12 +339,16 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
 class _CommentTile extends StatelessWidget {
   final Comment comment;
   final String? currentUserId;
+  final bool canDelete;
+  final VoidCallback onDelete;
   final VoidCallback onReport;
   final VoidCallback onBlock;
 
   const _CommentTile({
     required this.comment,
     required this.currentUserId,
+    required this.canDelete,
+    required this.onDelete,
     required this.onReport,
     required this.onBlock,
   });
@@ -353,25 +404,35 @@ class _CommentTile extends StatelessWidget {
                         color: context.palette.textTertiary,
                       ),
                     ),
-                    if (currentUserId != null &&
-                        currentUserId != comment.userId)
+                    if (canDelete ||
+                        (currentUserId != null &&
+                            currentUserId != comment.userId))
                       PopupMenuButton<String>(
                         tooltip: 'Yorum seçenekleri',
                         padding: EdgeInsets.zero,
                         iconSize: 19,
                         onSelected: (value) {
+                          if (value == 'delete') onDelete();
                           if (value == 'report') onReport();
                           if (value == 'block') onBlock();
                         },
-                        itemBuilder: (_) => const [
-                          PopupMenuItem(
-                            value: 'report',
-                            child: Text('Yorumu bildir'),
-                          ),
-                          PopupMenuItem(
-                            value: 'block',
-                            child: Text('Kullanıcıyı engelle'),
-                          ),
+                        itemBuilder: (_) => [
+                          if (canDelete)
+                            const PopupMenuItem(
+                              value: 'delete',
+                              child: Text('Yorumu sil'),
+                            ),
+                          if (currentUserId != null &&
+                              currentUserId != comment.userId) ...[
+                            const PopupMenuItem(
+                              value: 'report',
+                              child: Text('Yorumu bildir'),
+                            ),
+                            const PopupMenuItem(
+                              value: 'block',
+                              child: Text('Kullanıcıyı engelle'),
+                            ),
+                          ],
                         ],
                       ),
                   ],

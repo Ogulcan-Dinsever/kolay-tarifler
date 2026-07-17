@@ -66,7 +66,10 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   @override
   void initState() {
     super.initState();
-    _tabs = TabController(length: recipe.isOfficial ? 5 : 4, vsync: this);
+    _tabs = TabController(
+      length: recipe.canHaveVariations ? 5 : 4,
+      vsync: this,
+    );
     _pageCtrl = PageController();
     WidgetsBinding.instance.addPostFrameCallback((_) => _checkTutorial());
   }
@@ -97,14 +100,15 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
             targetKey: _tabBarKey,
             spotlightPadding: 6,
           ),
-          TutorialStep(
-            emoji: '👥',
-            title: 'Topluluk Sürümleri',
-            description:
-                'Topluluk sekmesinde üyelerin bu tarife kendi yorumunu kattığı sürümler var. Sen de kendi sürümünü yayınlayabilirsin!',
-            targetKey: _tabBarKey,
-            spotlightPadding: 6,
-          ),
+          if (recipe.canHaveVariations)
+            TutorialStep(
+              emoji: '👥',
+              title: 'Topluluk Varyasyonları',
+              description:
+                  'Topluluk sekmesinde üyelerin bu tarife kendi yorumunu kattığı varyasyonlar var. Sen de kendi varyasyonunu yayınlayabilirsin!',
+              targetKey: _tabBarKey,
+              spotlightPadding: 6,
+            ),
           TutorialStep(
             emoji: '📅',
             title: 'Takvimine Ekle',
@@ -126,13 +130,13 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
   @override
   void didUpdateWidget(_RecipeDetailView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.recipe.isOfficial != widget.recipe.isOfficial) {
+    if (oldWidget.recipe.canHaveVariations != widget.recipe.canHaveVariations) {
       final prevIndex = _tabs.index;
       _tabs.dispose();
       _tabs = TabController(
-        length: recipe.isOfficial ? 5 : 4,
+        length: recipe.canHaveVariations ? 5 : 4,
         vsync: this,
-        initialIndex: prevIndex.clamp(0, recipe.isOfficial ? 4 : 3),
+        initialIndex: prevIndex.clamp(0, recipe.canHaveVariations ? 4 : 3),
       );
     }
   }
@@ -202,7 +206,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                         StepsTab(steps: recipe.steps),
                         CommentsSection(recipeId: recipe.id, isAuth: isAuth),
                         NotesTab(recipeId: recipe.id),
-                        if (recipe.isOfficial)
+                        if (recipe.canHaveVariations)
                           CommunityTab(parentRecipeId: recipe.id),
                       ],
                     ),
@@ -412,16 +416,20 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
                               vertical: 3,
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.orange.withValues(alpha: 0.85),
+                              color: Colors.black.withValues(alpha: 0.78),
                               borderRadius: BorderRadius.circular(6),
                             ),
-                            child: const Text(
-                              '👥 Topluluk Tarifi',
-                              style: TextStyle(
-                                fontSize: 10,
+                            child: Text(
+                              recipe.isVariation
+                                  ? '👥 Topluluk varyasyonu · ${recipe.authorName}'
+                                  : '👤 ${recipe.authorName}',
+                              style: const TextStyle(
+                                fontSize: 12,
                                 fontWeight: FontWeight.w700,
                                 color: Colors.white,
                               ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                             ),
                           ),
                         Text(
@@ -700,8 +708,8 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
         color: AppColors.primaryDarker,
         child: TabBar(
           controller: _tabs,
-          isScrollable: recipe.isOfficial,
-          tabAlignment: recipe.isOfficial
+          isScrollable: recipe.canHaveVariations,
+          tabAlignment: recipe.canHaveVariations
               ? TabAlignment.start
               : TabAlignment.fill,
           indicator: const UnderlineTabIndicator(
@@ -719,7 +727,7 @@ class _RecipeDetailViewState extends ConsumerState<_RecipeDetailView>
             const Tab(text: 'Tarif'),
             const Tab(text: 'Yorumlar'),
             const Tab(text: 'Notlarım'),
-            if (recipe.isOfficial) const Tab(text: 'Topluluk'),
+            if (recipe.canHaveVariations) const Tab(text: 'Topluluk'),
           ],
         ),
       ),

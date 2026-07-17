@@ -2,6 +2,7 @@ import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'recipe_service.dart';
 
 class AdminService {
   final _db = FirebaseFirestore.instance;
@@ -9,6 +10,14 @@ class AdminService {
   final _storage = FirebaseStorage.instance;
 
   static const String initialAdminEmail = 'ogulcandnsvr@gmail.com';
+
+  Future<DocumentReference<Map<String, dynamic>>> _recipeReferenceForId(
+    String id,
+  ) async {
+    final mainRef = _db.collection('recipes').doc(id);
+    if ((await mainRef.get()).exists) return mainRef;
+    return _db.collection(RecipeService.variationsCollection).doc(id);
+  }
 
   // ── Admin kontrol ───────────────────────────────────────────────────────────
 
@@ -101,18 +110,12 @@ class AdminService {
     if (type == 'comment') {
       final recipeId = report['recipeId'] as String?;
       if (recipeId == null) throw Exception('Tarif bilgisi bulunamadı');
-      final recipeRef = _db.collection('recipes').doc(recipeId);
+      final recipeRef = await _recipeReferenceForId(recipeId);
       final commentRef = recipeRef.collection('comments').doc(targetId);
-      await _db.runTransaction((transaction) async {
-        final comment = await transaction.get(commentRef);
-        if (!comment.exists) return;
-        transaction.delete(commentRef);
-        transaction.update(recipeRef, {
-          'commentCount': FieldValue.increment(-1),
-        });
-      });
+      await commentRef.delete();
     } else if (type == 'recipe') {
-      await _db.collection('recipes').doc(targetId).delete();
+      final recipeRef = await _recipeReferenceForId(targetId);
+      await recipeRef.delete();
     } else {
       throw Exception('Bu rapor türünde silinecek tekil içerik yok');
     }
@@ -187,6 +190,7 @@ class AdminService {
           .toList(),
       'tags': tags,
       'isOfficial': true,
+      'recipeKind': 'main',
       'authorId': currentUser?.uid ?? 'admin',
       'authorName': currentUser?.displayName ?? 'Admin',
       'officialLikeCount': 0,

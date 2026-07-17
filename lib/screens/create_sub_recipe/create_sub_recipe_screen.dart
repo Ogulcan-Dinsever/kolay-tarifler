@@ -70,15 +70,32 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
   Future<List<String>> _uploadImages(String userId) async {
     final storage = FirebaseStorage.instance;
     final urls = <String>[];
-    for (var i = 0; i < _selectedImages.length; i++) {
-      final file = File(_selectedImages[i].path);
-      final ref = storage.ref().child(
-        'recipe_images/$userId/${DateTime.now().millisecondsSinceEpoch}_$i.jpg',
-      );
-      await ref.putFile(file);
-      urls.add(await ref.getDownloadURL());
+    try {
+      for (var i = 0; i < _selectedImages.length; i++) {
+        final file = File(_selectedImages[i].path);
+        final ref = storage.ref().child(
+          'recipe_images/$userId/${DateTime.now().millisecondsSinceEpoch}_$i.jpg',
+        );
+        await ref.putFile(file);
+        urls.add(await ref.getDownloadURL());
+      }
+      return urls;
+    } catch (_) {
+      await _deleteUploadedImages(urls);
+      rethrow;
     }
-    return urls;
+  }
+
+  Future<void> _deleteUploadedImages(List<String> urls) async {
+    await Future.wait(
+      urls.map((url) async {
+        try {
+          await FirebaseStorage.instance.refFromURL(url).delete();
+        } catch (_) {
+          // En iyi çaba: asıl kayıt hatasını gölgelememek için temizlik hatası yutulur.
+        }
+      }),
+    );
   }
 
   Future<void> _submit() async {
@@ -112,8 +129,20 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
 
     setState(() => _saving = true);
 
+    var uploadedImageUrls = <String>[];
+    var recipeCreated = false;
     try {
-      final imageUrls = await _uploadImages(user.uid);
+      final parent = await ref.read(
+        recipeByIdProvider(widget.parentRecipeId).future,
+      );
+      if (parent == null) {
+        throw StateError('Ana tarif bulunamadı.');
+      }
+      if (!parent.canHaveVariations) {
+        throw StateError('Bir topluluk varyasyonuna yeni varyasyon eklenemez.');
+      }
+
+      uploadedImageUrls = await _uploadImages(user.uid);
 
       final ingredients = <RecipeIngredient>[];
       for (var i = 0; i < _ingredientRows.length; i++) {
@@ -136,10 +165,6 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
         }
       }
 
-      final parent = await ref.read(
-        recipeByIdProvider(widget.parentRecipeId).future,
-      );
-
       final authorName = user.displayName?.isNotEmpty == true
           ? user.displayName!
           : user.email?.split('@').first ?? 'Kullanıcı';
@@ -150,26 +175,32 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
             parentRecipeId: widget.parentRecipeId,
             authorId: user.uid,
             authorName: authorName,
-            name: parent?.name ?? 'Tarif',
+            name: parent.name,
             description: _descCtrl.text.trim(),
-            emoji: parent?.emoji ?? '🍳',
+            emoji: parent.emoji,
             duration: _durationCtrl.text.trim(),
-            cuisine: parent?.cuisine ?? 'Türk',
+            cuisine: parent.cuisine,
             ingredients: ingredients,
             steps: steps,
-            imageUrls: imageUrls,
+            imageUrls: uploadedImageUrls,
           );
+      recipeCreated = true;
 
       if (mounted) {
         context.pop();
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Tarifiniz eklendi! Topluluk sekmesinde görünecek.'),
+            content: Text(
+              'Varyasyonunuz eklendi! Topluluk sekmesinde görünecek.',
+            ),
             backgroundColor: AppColors.primaryDark,
           ),
         );
       }
     } catch (e) {
+      if (!recipeCreated && uploadedImageUrls.isNotEmpty) {
+        await _deleteUploadedImages(uploadedImageUrls);
+      }
       if (mounted) {
         ScaffoldMessenger.of(
           context,
@@ -183,7 +214,6 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
   @override
   Widget build(BuildContext context) {
     final parentAsync = ref.watch(recipeByIdProvider(widget.parentRecipeId));
-    final parentName = parentAsync.valueOrNull?.name ?? '...';
     final allIngredients = ref.watch(ingredientsProvider).valueOrNull ?? [];
 
     return Scaffold(
@@ -193,187 +223,227 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
         foregroundColor: Colors.white,
         elevation: 0,
         title: const Text(
-          'Kendi Versiyonumu Paylaş',
+          'Kendi Varyasyonumu Paylaş',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
         ),
       ),
-      body: Form(
-        key: _formKey,
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // ─── Tarif adı ─────────────────────────────────────────────────
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                decoration: BoxDecoration(
-                  color: AppColors.primary.withValues(alpha: 0.12),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: AppColors.primary.withValues(alpha: 0.35),
-                  ),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Tarif',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.primary,
+      body: parentAsync.when(
+        loading: () => const Center(
+          child: CircularProgressIndicator(color: AppColors.primary),
+        ),
+        error: (_, _) => _ParentUnavailable(
+          icon: Icons.cloud_off_rounded,
+          title: 'Ana tarif yüklenemedi',
+          detail: 'Bağlantını kontrol edip tekrar dene.',
+          actionLabel: 'Tekrar Dene',
+          onAction: () =>
+              ref.invalidate(recipeByIdProvider(widget.parentRecipeId)),
+        ),
+        data: (parent) {
+          if (parent == null) {
+            return _ParentUnavailable(
+              icon: Icons.search_off_rounded,
+              title: 'Ana tarif bulunamadı',
+              detail: 'Bu tarif kaldırılmış olabilir.',
+              actionLabel: 'Geri Dön',
+              onAction: () => context.pop(),
+            );
+          }
+          if (!parent.canHaveVariations) {
+            return _ParentUnavailable(
+              icon: Icons.account_tree_outlined,
+              title: 'Bu bir topluluk varyasyonu',
+              detail: 'Bir varyasyonun altına yeni varyasyon eklenemez.',
+              actionLabel: 'Geri Dön',
+              onAction: () => context.pop(),
+            );
+          }
+
+          return Form(
+            key: _formKey,
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // ─── Tarif adı ─────────────────────────────────────────────────
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 14,
+                      vertical: 12,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColors.primary.withValues(alpha: 0.12),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: AppColors.primary.withValues(alpha: 0.35),
                       ),
                     ),
-                    const SizedBox(height: 2),
-                    Text(
-                      parentName,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w800,
-                        color: context.palette.textPrimary,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Tarif',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.primary,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          parent.name,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w800,
+                            color: context.palette.textPrimary,
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 14),
-
-              // ─── Açıklama & Süre ───────────────────────────────────────────
-              _field(
-                controller: _descCtrl,
-                hint: 'Tarifin kısa açıklaması...',
-                label: 'Açıklama',
-                maxLines: 2,
-                validator: (v) =>
-                    v!.trim().isEmpty ? 'Açıklama boş olamaz' : null,
-              ),
-              const SizedBox(height: 10),
-              _field(
-                controller: _durationCtrl,
-                hint: 'örn. 45 dk',
-                label: 'Süre',
-                validator: (v) => v!.trim().isEmpty ? 'Süre boş olamaz' : null,
-              ),
-              const SizedBox(height: 20),
-
-              // ─── Fotoğraflar ───────────────────────────────────────────────
-              _sectionTitle('Fotoğraflar'),
-              const SizedBox(height: 4),
-              Text(
-                'En fazla 6 fotoğraf ekleyebilirsiniz',
-                style: TextStyle(
-                  fontSize: 11,
-                  color: context.palette.textTertiary,
-                ),
-              ),
-              const SizedBox(height: 10),
-              _buildPhotoRow(context),
-              const SizedBox(height: 20),
-
-              // ─── Malzemeler ────────────────────────────────────────────────
-              _sectionTitle('Malzemeler'),
-              const SizedBox(height: 4),
-              if (allIngredients.isEmpty)
-                Container(
-                  margin: const EdgeInsets.only(bottom: 8),
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: context.palette.g50,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: context.palette.border),
                   ),
-                  child: Text(
-                    'Sisteme henüz malzeme eklenmemiş.',
+                  const SizedBox(height: 14),
+
+                  // ─── Açıklama & Süre ───────────────────────────────────────────
+                  _field(
+                    controller: _descCtrl,
+                    hint: 'Tarifin kısa açıklaması...',
+                    label: 'Açıklama',
+                    maxLines: 2,
+                    validator: (v) =>
+                        v!.trim().isEmpty ? 'Açıklama boş olamaz' : null,
+                  ),
+                  const SizedBox(height: 10),
+                  _field(
+                    controller: _durationCtrl,
+                    hint: 'örn. 45 dk',
+                    label: 'Süre',
+                    validator: (v) =>
+                        v!.trim().isEmpty ? 'Süre boş olamaz' : null,
+                  ),
+                  const SizedBox(height: 20),
+
+                  // ─── Fotoğraflar ───────────────────────────────────────────────
+                  _sectionTitle('Fotoğraflar'),
+                  const SizedBox(height: 4),
+                  Text(
+                    'En fazla 6 fotoğraf ekleyebilirsiniz',
                     style: TextStyle(
-                      fontSize: 12,
+                      fontSize: 11,
                       color: context.palette.textTertiary,
                     ),
                   ),
-                ),
-              const SizedBox(height: 6),
-              ..._ingredientRows.asMap().entries.map((entry) {
-                final i = entry.key;
-                final row = entry.value;
-                return _IngredientRowWidget(
-                  key: ObjectKey(row),
-                  row: row,
-                  allIngredients: allIngredients,
-                  canDelete: _ingredientRows.length > 1,
-                  onDelete: () => setState(() => _ingredientRows.removeAt(i)),
-                  onChanged: () => setState(() {}),
-                );
-              }),
-              TextButton.icon(
-                onPressed: () =>
-                    setState(() => _ingredientRows.add(_IngredientRow())),
-                icon: const Icon(Icons.add, size: 16),
-                label: const Text('Malzeme Ekle'),
-                style: TextButton.styleFrom(foregroundColor: AppColors.primary),
-              ),
-              const SizedBox(height: 16),
+                  const SizedBox(height: 10),
+                  _buildPhotoRow(context),
+                  const SizedBox(height: 20),
 
-              // ─── Yapılış Adımları ──────────────────────────────────────────
-              _sectionTitle('Yapılış Adımları'),
-              const SizedBox(height: 10),
-              ..._stepCtrls.asMap().entries.map((entry) {
-                final i = entry.key;
-                return _StepWidget(
-                  key: ObjectKey(_stepCtrls[i]),
-                  number: i + 1,
-                  controller: _stepCtrls[i],
-                  canDelete: _stepCtrls.length > 1,
-                  onDelete: () => setState(() => _stepCtrls.removeAt(i)),
-                );
-              }),
-              TextButton.icon(
-                onPressed: () =>
-                    setState(() => _stepCtrls.add(TextEditingController())),
-                icon: const Icon(Icons.add, size: 16),
-                label: const Text('Adım Ekle'),
-                style: TextButton.styleFrom(foregroundColor: AppColors.primary),
-              ),
-
-              const SizedBox(height: 28),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: _saving ? null : _submit,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    foregroundColor: AppColors.primaryText,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 0,
-                  ),
-                  child: _saving
-                      ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: Colors.white,
-                          ),
-                        )
-                      : const Text(
-                          'Tarifi Kaydet',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 15,
-                          ),
+                  // ─── Malzemeler ────────────────────────────────────────────────
+                  _sectionTitle('Malzemeler'),
+                  const SizedBox(height: 4),
+                  if (allIngredients.isEmpty)
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: context.palette.g50,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: context.palette.border),
+                      ),
+                      child: Text(
+                        'Sisteme henüz malzeme eklenmemiş.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: context.palette.textTertiary,
                         ),
-                ),
+                      ),
+                    ),
+                  const SizedBox(height: 6),
+                  ..._ingredientRows.asMap().entries.map((entry) {
+                    final i = entry.key;
+                    final row = entry.value;
+                    return _IngredientRowWidget(
+                      key: ObjectKey(row),
+                      row: row,
+                      allIngredients: allIngredients,
+                      canDelete: _ingredientRows.length > 1,
+                      onDelete: () =>
+                          setState(() => _ingredientRows.removeAt(i)),
+                      onChanged: () => setState(() {}),
+                    );
+                  }),
+                  TextButton.icon(
+                    onPressed: () =>
+                        setState(() => _ingredientRows.add(_IngredientRow())),
+                    icon: const Icon(Icons.add, size: 16),
+                    label: const Text('Malzeme Ekle'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppColors.primary,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // ─── Yapılış Adımları ──────────────────────────────────────────
+                  _sectionTitle('Yapılış Adımları'),
+                  const SizedBox(height: 10),
+                  ..._stepCtrls.asMap().entries.map((entry) {
+                    final i = entry.key;
+                    return _StepWidget(
+                      key: ObjectKey(_stepCtrls[i]),
+                      number: i + 1,
+                      controller: _stepCtrls[i],
+                      canDelete: _stepCtrls.length > 1,
+                      onDelete: () => setState(() => _stepCtrls.removeAt(i)),
+                    );
+                  }),
+                  TextButton.icon(
+                    onPressed: () =>
+                        setState(() => _stepCtrls.add(TextEditingController())),
+                    icon: const Icon(Icons.add, size: 16),
+                    label: const Text('Adım Ekle'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppColors.primary,
+                    ),
+                  ),
+
+                  const SizedBox(height: 28),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: _saving ? null : _submit,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        foregroundColor: AppColors.primaryText,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 0,
+                      ),
+                      child: _saving
+                          ? const SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: Colors.white,
+                              ),
+                            )
+                          : const Text(
+                              'Tarifi Kaydet',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                              ),
+                            ),
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                ],
               ),
-              const SizedBox(height: 24),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -508,6 +578,58 @@ class _CreateSubRecipeScreenState extends ConsumerState<CreateSubRecipeScreen> {
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: Colors.red, width: 1.5),
+        ),
+      ),
+    );
+  }
+}
+
+class _ParentUnavailable extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String detail;
+  final String actionLabel;
+  final VoidCallback onAction;
+
+  const _ParentUnavailable({
+    required this.icon,
+    required this.title,
+    required this.detail,
+    required this.actionLabel,
+    required this.onAction,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(28),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 52, color: context.palette.textSecondary),
+            const SizedBox(height: 12),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w800,
+                color: context.palette.textPrimary,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              detail,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                color: context.palette.textSecondary,
+              ),
+            ),
+            const SizedBox(height: 18),
+            FilledButton(onPressed: onAction, child: Text(actionLabel)),
+          ],
         ),
       ),
     );

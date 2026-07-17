@@ -23,21 +23,23 @@ class Comment {
     final data = (doc.data() as Map<String, dynamic>?) ?? {};
     return Comment(
       id: doc.id,
-      recipeId: data['recipeId'] as String? ?? '',
-      userId: data['userId'] as String? ?? '',
-      userDisplayName: data['userDisplayName'] as String? ?? 'Kullanıcı',
-      userAvatarUrl: data['userAvatarUrl'] as String?,
-      text: data['text'] as String? ?? '',
-      createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
+      recipeId: data['recipeId']?.toString() ?? '',
+      userId: data['userId']?.toString() ?? '',
+      userDisplayName: data['userDisplayName']?.toString() ?? 'Kullanıcı',
+      userAvatarUrl: data['userAvatarUrl']?.toString(),
+      text: data['text']?.toString() ?? '',
+      createdAt: data['createdAt'] is Timestamp
+          ? (data['createdAt'] as Timestamp).toDate()
+          : DateTime.now(),
     );
   }
 
   Map<String, dynamic> toFirestore() => {
-        'recipeId': recipeId,
-        'userId': userId,
-        'userDisplayName': userDisplayName,
-        if (userAvatarUrl != null) 'userAvatarUrl': userAvatarUrl,
-        'text': text,
-        'createdAt': Timestamp.fromDate(createdAt),
-      };
+    'recipeId': recipeId,
+    'userId': userId,
+    'userDisplayName': userDisplayName,
+    if (userAvatarUrl != null) 'userAvatarUrl': userAvatarUrl,
+    'text': text,
+    'createdAt': Timestamp.fromDate(createdAt),
+  };
 }

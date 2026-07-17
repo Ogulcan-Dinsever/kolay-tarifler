@@ -7,6 +7,9 @@ part 'recipe.g.dart';
 
 @HiveType(typeId: 4)
 class Recipe {
+  static const mainKind = 'main';
+  static const variationKind = 'variation';
+
   @HiveField(0)
   final String id;
   @HiveField(1)
@@ -80,12 +83,32 @@ class Recipe {
     this.imageSources = const [],
   });
 
+  /// A recipe without a parent is a discoverable main recipe. This includes
+  /// both official recipes and recipes submitted from the profile and
+  /// approved by an admin.
+  bool get isMainRecipe => !isVariation;
+
+  /// Community recipes are one-level variations of a main recipe.
+  /// `isOfficial` describes authorship, not hierarchy, so hierarchy must be
+  /// derived from the parent relationship.
+  bool get isVariation => parentRecipeId?.trim().isNotEmpty == true;
+
+  bool get isUserSubmittedMain => isMainRecipe && !isOfficial;
+
+  bool get canHaveVariations => isMainRecipe;
+
+  String get recipeKind => isVariation ? variationKind : mainKind;
+
   bool get communityLeads =>
-      !isOfficial &&
+      isVariation &&
       officialLikeCount > 0 &&
       communityLikeCount / officialLikeCount >= 1.5;
 
   int get totalLikes => officialLikeCount + communityLikeCount;
+
+  /// Lets official and user-submitted main recipes compete in one
+  /// recommendation pool. New interactions are stored in `likeCount`.
+  int get recommendationScore => totalLikes + likeCount + commentCount;
 
   // ─── JSON (legacy — artık kullanılmıyor, Hive doğrudan binary saklar) ────────
 
@@ -102,10 +125,12 @@ class Recipe {
       imageUrls: List<String>.from(data['imageUrls'] ?? []),
       imageSources: _imageSourcesFrom(data['imageSources']),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
-          .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
+          .whereType<Map>()
+          .map((e) => RecipeIngredient.fromMap(Map<String, dynamic>.from(e)))
           .toList(),
       steps: (data['steps'] as List<dynamic>? ?? [])
-          .map((e) => RecipeStep.fromMap(e as Map<String, dynamic>))
+          .whereType<Map>()
+          .map((e) => RecipeStep.fromMap(Map<String, dynamic>.from(e)))
           .toList(),
       tags: List<String>.from(data['tags'] ?? []),
       officialLikeCount: data['officialLikeCount'] as int? ?? 0,
@@ -145,6 +170,7 @@ class Recipe {
     'authorId': authorId,
     'authorName': authorName,
     'isOfficial': isOfficial,
+    'recipeKind': recipeKind,
     if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
     'commentCount': commentCount,
     'createdAt': createdAt.toIso8601String(),
@@ -172,10 +198,12 @@ class Recipe {
           .toList(),
       imageSources: _imageSourcesFrom(data['imageSources']),
       ingredients: (data['ingredients'] as List<dynamic>? ?? [])
-          .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
+          .whereType<Map>()
+          .map((e) => RecipeIngredient.fromMap(Map<String, dynamic>.from(e)))
           .toList(),
       steps: (data['steps'] as List<dynamic>? ?? [])
-          .map((e) => RecipeStep.fromMap(e as Map<String, dynamic>))
+          .whereType<Map>()
+          .map((e) => RecipeStep.fromMap(Map<String, dynamic>.from(e)))
           .toList(),
       tags: ((data['tags'] as List<dynamic>?) ?? [])
           .map((e) => e.toString())
@@ -219,6 +247,7 @@ class Recipe {
     'authorId': authorId,
     'authorName': authorName,
     'isOfficial': isOfficial,
+    'recipeKind': recipeKind,
     if (parentRecipeId != null) 'parentRecipeId': parentRecipeId,
     'commentCount': commentCount,
     'createdAt': Timestamp.fromDate(createdAt),

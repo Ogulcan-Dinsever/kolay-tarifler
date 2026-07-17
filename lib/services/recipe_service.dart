@@ -9,6 +9,7 @@ import '../models/ingredient.dart';
 import '../models/recipe.dart';
 import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
+import '../models/user_activity.dart';
 import 'recipe_cache_service.dart';
 
 class RecipePage {
@@ -24,7 +25,29 @@ class RecipePage {
 }
 
 class RecipeService {
-  final _db = FirebaseFirestore.instance;
+  static const profileActivityLimit = 250;
+  static const serverCounterMarker = 'server_v1';
+  static const variationsCollection = 'recipe_variations';
+
+  final FirebaseFirestore _db;
+
+  RecipeService({FirebaseFirestore? firestore})
+    : _db = firestore ?? FirebaseFirestore.instance;
+
+  static List<Recipe> discoverableRecipes(Iterable<Recipe> recipes) {
+    return recipes.where((recipe) => recipe.isMainRecipe).toList();
+  }
+
+  Future<DocumentReference<Map<String, dynamic>>> _recipeReferenceForId(
+    String id,
+  ) async {
+    final mainRef = _db.collection('recipes').doc(id);
+    final variationRef = _db.collection(variationsCollection).doc(id);
+    final snapshots = await Future.wait([mainRef.get(), variationRef.get()]);
+    if (snapshots.first.exists) return mainRef;
+    if (snapshots.last.exists) return variationRef;
+    return mainRef;
+  }
 
   // ─── SEED ───────────────────────────────────────────────────────────────────
 
@@ -280,32 +303,27 @@ class RecipeService {
 
   // ─── RECIPES ────────────────────────────────────────────────────────────────
 
-  Stream<Recipe?> featuredRecipeStream() {
-    return _db
-        .collection('recipes')
-        .orderBy('officialLikeCount', descending: true)
-        .limit(1)
-        .snapshots()
-        .map(
-          (snap) =>
-              snap.docs.isEmpty ? null : Recipe.fromFirestore(snap.docs.first),
-        );
-  }
-
   Stream<List<Recipe>> recipesStream(String cuisine) async* {
     final cache = RecipeCacheService();
     final cached =
-        cache.loadRecipes().where((r) => r.cuisine == cuisine).toList()
-          ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
+        cache
+            .loadRecipes()
+            .where((r) => r.isMainRecipe && r.cuisine == cuisine)
+            .toList()
+          ..sort(
+            (a, b) => b.recommendationScore.compareTo(a.recommendationScore),
+          );
     if (cached.isNotEmpty) yield cached;
 
     await for (final snap
         in _db
             .collection('recipes')
             .where('cuisine', isEqualTo: cuisine)
+            .where('recipeKind', isEqualTo: Recipe.mainKind)
             .snapshots()) {
-      final list = snap.docs.map(Recipe.fromFirestore).toList()
-        ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
+      final list = discoverableRecipes(
+        snap.docs.map(Recipe.fromFirestore),
+      )..sort((a, b) => b.recommendationScore.compareTo(a.recommendationScore));
       unawaited(cache.saveRecipes(list));
       yield list;
     }
@@ -319,21 +337,38 @@ class RecipeService {
     int pageSize = 20,
     DocumentSnapshot<Map<String, dynamic>>? startAfter,
   }) async {
-    Query<Map<String, dynamic>> query = _db
-        .collection('recipes')
-        .where('cuisine', isEqualTo: cuisine)
-        .orderBy('name')
-        .limit(pageSize);
-    if (startAfter != null) query = query.startAfterDocument(startAfter);
+    final recipes = <Recipe>[];
+    var cursor = startAfter;
+    var hasMore = true;
 
-    final snapshot = await query.get();
-    final recipes = snapshot.docs.map(Recipe.fromFirestore).toList();
+    // Variations share the recipes collection for direct detail access, but
+    // they must never consume a visible slot in the discoverable list. Scan
+    // forward until this page contains `pageSize` main recipes or the query is
+    // exhausted.
+    while (recipes.length < pageSize && hasMore) {
+      final remaining = pageSize - recipes.length;
+      Query<Map<String, dynamic>> query = _db
+          .collection('recipes')
+          .where('cuisine', isEqualTo: cuisine)
+          .where('recipeKind', isEqualTo: Recipe.mainKind)
+          .orderBy('name')
+          .limit(remaining);
+      if (cursor != null) query = query.startAfterDocument(cursor);
+
+      final snapshot = await query.get();
+      if (snapshot.docs.isEmpty) {
+        hasMore = false;
+        break;
+      }
+      cursor = snapshot.docs.last;
+      recipes.addAll(
+        discoverableRecipes(snapshot.docs.map(Recipe.fromFirestore)),
+      );
+      hasMore = snapshot.docs.length == remaining;
+    }
+
     unawaited(RecipeCacheService().saveRecipes(recipes));
-    return RecipePage(
-      recipes: recipes,
-      lastDocument: snapshot.docs.isEmpty ? startAfter : snapshot.docs.last,
-      hasMore: snapshot.docs.length == pageSize,
-    );
+    return RecipePage(recipes: recipes, lastDocument: cursor, hasMore: hasMore);
   }
 
   static int compareRecipesAlphabetically(Recipe a, Recipe b) {
@@ -343,12 +378,17 @@ class RecipeService {
 
   Stream<List<Recipe>> allRecipesStream() async* {
     final cache = RecipeCacheService();
-    final cached = cache.loadRecipes();
+    final cached = discoverableRecipes(cache.loadRecipes());
     if (cached.isNotEmpty) yield cached;
 
-    await for (final snap in _db.collection('recipes').snapshots()) {
-      final list = snap.docs.map(Recipe.fromFirestore).toList()
-        ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
+    await for (final snap
+        in _db
+            .collection('recipes')
+            .where('recipeKind', isEqualTo: Recipe.mainKind)
+            .snapshots()) {
+      final list = discoverableRecipes(
+        snap.docs.map(Recipe.fromFirestore),
+      )..sort((a, b) => b.recommendationScore.compareTo(a.recommendationScore));
       unawaited(cache.saveRecipes(list));
       yield list;
     }
@@ -356,9 +396,12 @@ class RecipeService {
 
   /// Tüm tarifleri tek seferlik çeker — splash pre-warm için kullanılır.
   Future<List<Recipe>> fetchAllRecipesOnce() async {
-    final snap = await _db.collection('recipes').get();
-    return snap.docs.map(Recipe.fromFirestore).toList()
-      ..sort((a, b) => b.officialLikeCount.compareTo(a.officialLikeCount));
+    final snap = await _db
+        .collection('recipes')
+        .where('recipeKind', isEqualTo: Recipe.mainKind)
+        .get();
+    return discoverableRecipes(snap.docs.map(Recipe.fromFirestore))
+      ..sort((a, b) => b.recommendationScore.compareTo(a.recommendationScore));
   }
 
   /// Cache-first tarif stream'i.
@@ -368,7 +411,7 @@ class RecipeService {
   ///    - modifiedAt farklıysa: yeni içeriği önbelleğe kaydet, yield et
   Stream<Recipe?> cachedRecipeStream(String id) async* {
     final cache = RecipeCacheService();
-    final docRef = _db.collection('recipes').doc(id);
+    final docRef = await _recipeReferenceForId(id);
 
     Recipe? current = cache.loadRecipeById(id);
     if (current != null) yield current;
@@ -403,17 +446,22 @@ class RecipeService {
   }
 
   Future<Recipe?> fetchById(String id) async {
-    final doc = await _db.collection('recipes').doc(id).get();
-    if (!doc.exists) return null;
-    return Recipe.fromFirestore(doc);
+    final snapshots = await Future.wait([
+      _db.collection('recipes').doc(id).get(),
+      _db.collection(variationsCollection).doc(id).get(),
+    ]);
+    final doc = snapshots.firstWhere(
+      (snapshot) => snapshot.exists,
+      orElse: () => snapshots.first,
+    );
+    return doc.exists ? Recipe.fromFirestore(doc) : null;
   }
 
-  Stream<Recipe?> recipeStream(String id) {
-    return _db
-        .collection('recipes')
-        .doc(id)
-        .snapshots()
-        .map((doc) => doc.exists ? Recipe.fromFirestore(doc) : null);
+  Stream<Recipe?> recipeStream(String id) async* {
+    final docRef = await _recipeReferenceForId(id);
+    yield* docRef.snapshots().map(
+      (doc) => doc.exists ? Recipe.fromFirestore(doc) : null,
+    );
   }
 
   // ─── LIKES ──────────────────────────────────────────────────────────────────
@@ -433,10 +481,9 @@ class RecipeService {
         );
   }
 
-  Stream<bool> isLikedStream(String recipeId, String userId) {
-    return _db
-        .collection('recipes')
-        .doc(recipeId)
+  Stream<bool> isLikedStream(String recipeId, String userId) async* {
+    final recipeRef = await _recipeReferenceForId(recipeId);
+    yield* recipeRef
         .collection('likes')
         .doc(userId)
         .snapshots()
@@ -444,25 +491,22 @@ class RecipeService {
   }
 
   Future<void> toggleLike(String recipeId, String userId) async {
-    final likeRef = _db
-        .collection('recipes')
-        .doc(recipeId)
-        .collection('likes')
-        .doc(userId);
-    final recipeRef = _db.collection('recipes').doc(recipeId);
-
+    final recipeRef = await _recipeReferenceForId(recipeId);
+    final likeRef = recipeRef.collection('likes').doc(userId);
     await _db.runTransaction((tx) async {
       final likeDoc = await tx.get(likeRef);
       if (likeDoc.exists) {
         tx.delete(likeRef);
-        tx.update(recipeRef, {'likeCount': FieldValue.increment(-1)});
+        if (likeDoc.data()?['counterManagedBy'] != serverCounterMarker) {
+          tx.update(recipeRef, {'likeCount': FieldValue.increment(-1)});
+        }
       } else {
         // userId alanı collectionGroup sorgusu için gerekli (userLikedIdsStream).
         tx.set(likeRef, {
           'userId': userId,
           'createdAt': FieldValue.serverTimestamp(),
+          'counterManagedBy': serverCounterMarker,
         });
-        tx.update(recipeRef, {'likeCount': FieldValue.increment(1)});
       }
     });
   }
@@ -499,9 +543,14 @@ class RecipeService {
     // Önce yerel cache'den ara — Firestore'dan tüm koleksiyonu indirmekten kaçın
     final cached = RecipeCacheService().loadRecipes();
     final source = cached.isNotEmpty
-        ? cached
-        : (await _db.collection('recipes').get()).docs
+        ? discoverableRecipes(cached)
+        : (await _db
+                  .collection('recipes')
+                  .where('recipeKind', isEqualTo: Recipe.mainKind)
+                  .get())
+              .docs
               .map(Recipe.fromFirestore)
+              .where((recipe) => recipe.isMainRecipe)
               .toList();
     return source
         .where(
@@ -517,9 +566,14 @@ class RecipeService {
     // Önce yerel cache'den filtrele — Firestore'dan tüm koleksiyonu indirmekten kaçın
     final cached = RecipeCacheService().loadRecipes();
     final source = cached.isNotEmpty
-        ? cached
-        : (await _db.collection('recipes').get()).docs
+        ? discoverableRecipes(cached)
+        : (await _db
+                  .collection('recipes')
+                  .where('recipeKind', isEqualTo: Recipe.mainKind)
+                  .get())
+              .docs
               .map(Recipe.fromFirestore)
+              .where((recipe) => recipe.isMainRecipe)
               .toList();
     final idSet = ingredientIds.toSet();
     return source.where((recipe) {
@@ -540,11 +594,14 @@ class RecipeService {
 
   Stream<List<Recipe>> communityRecipesStream(String parentRecipeId) {
     return _db
-        .collection('recipes')
+        .collection(variationsCollection)
         .where('parentRecipeId', isEqualTo: parentRecipeId)
         .snapshots()
         .map((snap) {
-          final list = snap.docs.map(Recipe.fromFirestore).toList();
+          final list = snap.docs
+              .map(Recipe.fromFirestore)
+              .where((recipe) => recipe.isVariation)
+              .toList();
           // Beğeni + yorum toplamına göre sırala
           list.sort(
             (a, b) => (b.likeCount + b.commentCount).compareTo(
@@ -568,25 +625,37 @@ class RecipeService {
     required List<RecipeStep> steps,
     List<String> imageUrls = const [],
   }) async {
-    final docRef = _db.collection('recipes').doc();
-    final recipe = Recipe(
-      id: docRef.id,
-      name: name,
-      description: description,
-      cuisine: cuisine,
-      type: 'Topluluk',
-      duration: duration,
-      emoji: emoji,
-      imageUrls: imageUrls,
-      ingredients: ingredients,
-      steps: steps,
-      authorId: authorId,
-      authorName: authorName,
-      isOfficial: false,
-      parentRecipeId: parentRecipeId,
-      createdAt: DateTime.now(),
-    );
-    await docRef.set(recipe.toFirestore());
+    final parentRef = _db.collection('recipes').doc(parentRecipeId);
+    final docRef = _db.collection(variationsCollection).doc();
+    await _db.runTransaction((transaction) async {
+      final parentSnapshot = await transaction.get(parentRef);
+      if (!parentSnapshot.exists) {
+        throw StateError('Ana tarif bulunamadı.');
+      }
+      final parent = Recipe.fromFirestore(parentSnapshot);
+      if (!parent.canHaveVariations) {
+        throw StateError('Bir topluluk varyasyonuna yeni varyasyon eklenemez.');
+      }
+
+      final recipe = Recipe(
+        id: docRef.id,
+        name: name,
+        description: description,
+        cuisine: cuisine,
+        type: 'Topluluk',
+        duration: duration,
+        emoji: emoji,
+        imageUrls: imageUrls,
+        ingredients: ingredients,
+        steps: steps,
+        authorId: authorId,
+        authorName: authorName,
+        isOfficial: false,
+        parentRecipeId: parentRecipeId,
+        createdAt: DateTime.now(),
+      );
+      transaction.set(docRef, recipe.toFirestore());
+    });
     return docRef.id;
   }
 
@@ -605,7 +674,8 @@ class RecipeService {
     required List<String> imageUrls,
     required List<String> tags,
   }) async {
-    await _db.collection('recipes').doc(id).update({
+    final recipeRef = await _recipeReferenceForId(id);
+    await recipeRef.update({
       'name': name,
       'description': description,
       'emoji': emoji,
@@ -633,26 +703,138 @@ class RecipeService {
   // ─── COMMENTS ───────────────────────────────────────────────────────────────
 
   Future<void> addComment(Comment comment) async {
-    final batch = _db.batch();
-    final commentRef = _db
-        .collection('recipes')
-        .doc(comment.recipeId)
-        .collection('comments')
-        .doc();
-    batch.set(commentRef, comment.toFirestore());
-    batch.update(_db.collection('recipes').doc(comment.recipeId), {
-      'commentCount': FieldValue.increment(1),
+    final recipeRef = await _recipeReferenceForId(comment.recipeId);
+    final commentRef = recipeRef.collection('comments').doc();
+    await commentRef.set({
+      ...comment.toFirestore(),
+      'counterManagedBy': serverCounterMarker,
     });
-    await batch.commit();
   }
 
-  Stream<List<Comment>> commentsStream(String recipeId) {
-    return _db
-        .collection('recipes')
-        .doc(recipeId)
+  Future<void> deleteComment({
+    required String recipeId,
+    required String commentId,
+  }) async {
+    final recipeRef = await _recipeReferenceForId(recipeId);
+    final commentRef = recipeRef.collection('comments').doc(commentId);
+    await commentRef.delete();
+  }
+
+  Stream<List<Comment>> commentsStream(String recipeId) async* {
+    final recipeRef = await _recipeReferenceForId(recipeId);
+    yield* recipeRef
         .collection('comments')
         .orderBy('createdAt')
         .snapshots()
         .map((snap) => snap.docs.map(Comment.fromFirestore).toList());
+  }
+
+  Stream<List<UserCommentActivity>> userCommentActivitiesStream(String userId) {
+    final recipeCache = <String, Recipe?>{};
+    return _db
+        .collectionGroup('comments')
+        .where('userId', isEqualTo: userId)
+        .orderBy('createdAt', descending: true)
+        .limit(profileActivityLimit)
+        .snapshots()
+        .asyncMap((snapshot) async {
+          final recipeIds = snapshot.docs
+              .map((doc) => doc.reference.parent.parent?.id)
+              .whereType<String>()
+              .toSet();
+          final missingIds = recipeIds
+              .where((recipeId) => !recipeCache.containsKey(recipeId))
+              .toSet();
+          recipeCache.addAll(await _recipesById(missingIds));
+          final activities =
+              snapshot.docs.map((doc) {
+                final comment = Comment.fromFirestore(doc);
+                final recipeId =
+                    doc.reference.parent.parent?.id ?? comment.recipeId;
+                return UserCommentActivity(
+                  comment: comment,
+                  recipeId: recipeId,
+                  recipe: recipeCache[recipeId],
+                );
+              }).toList()..sort(
+                (a, b) => b.comment.createdAt.compareTo(a.comment.createdAt),
+              );
+          return activities;
+        });
+  }
+
+  Stream<List<UserLikeActivity>> userLikeActivitiesStream(String userId) {
+    final recipeCache = <String, Recipe?>{};
+    return _db
+        .collectionGroup('likes')
+        .where('userId', isEqualTo: userId)
+        .orderBy('createdAt', descending: true)
+        .limit(profileActivityLimit)
+        .snapshots()
+        .asyncMap((snapshot) async {
+          final recipeIds = snapshot.docs
+              .map((doc) => doc.reference.parent.parent?.id)
+              .whereType<String>()
+              .toSet();
+          final missingIds = recipeIds
+              .where((recipeId) => !recipeCache.containsKey(recipeId))
+              .toSet();
+          recipeCache.addAll(await _recipesById(missingIds));
+          final activities =
+              snapshot.docs
+                  .map((doc) {
+                    final recipeId = doc.reference.parent.parent?.id ?? '';
+                    final data = doc.data();
+                    final createdAt = data['createdAt'] is Timestamp
+                        ? (data['createdAt'] as Timestamp).toDate()
+                        : DateTime.fromMillisecondsSinceEpoch(0);
+                    return UserLikeActivity(
+                      recipeId: recipeId,
+                      createdAt: createdAt,
+                      recipe: recipeCache[recipeId],
+                    );
+                  })
+                  .where((activity) => activity.recipeId.isNotEmpty)
+                  .toList()
+                ..sort((a, b) => b.createdAt.compareTo(a.createdAt));
+          return activities;
+        });
+  }
+
+  Future<Map<String, Recipe?>> _recipesById(Set<String> recipeIds) async {
+    if (recipeIds.isEmpty) return const {};
+
+    const whereInLimit = 30;
+    final ids = recipeIds.toList(growable: false);
+    final recipes = <String, Recipe?>{
+      for (final recipeId in ids) recipeId: null,
+    };
+
+    final queries = <Future<QuerySnapshot<Map<String, dynamic>>>>[];
+    for (var start = 0; start < ids.length; start += whereInLimit) {
+      final end = (start + whereInLimit < ids.length)
+          ? start + whereInLimit
+          : ids.length;
+      queries.add(
+        _db
+            .collection('recipes')
+            .where(FieldPath.documentId, whereIn: ids.sublist(start, end))
+            .get(),
+      );
+      queries.add(
+        _db
+            .collection(variationsCollection)
+            .where(FieldPath.documentId, whereIn: ids.sublist(start, end))
+            .get(),
+      );
+    }
+
+    for (final snapshot in await Future.wait(queries)) {
+      for (final doc in snapshot.docs) {
+        recipes[doc.id] = Recipe.fromFirestore(doc);
+      }
+    }
+
+    return recipes;
   }
 }
