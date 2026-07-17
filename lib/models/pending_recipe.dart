@@ -44,50 +44,77 @@ class PendingRecipe {
   });
 
   factory PendingRecipe.fromFirestore(DocumentSnapshot doc) {
-    final d = doc.data() as Map<String, dynamic>;
+    final raw = doc.data();
+    final d = raw is Map<String, dynamic> ? raw : <String, dynamic>{};
+    String stringValue(String key, [String fallback = '']) =>
+        d[key] is String ? d[key] as String : fallback;
+    final ingredients = d['ingredients'] is List
+        ? (d['ingredients'] as List)
+              .whereType<Map>()
+              .map(
+                (item) => RecipeIngredient.fromMap(
+                  item.map((key, value) => MapEntry(key.toString(), value)),
+                ),
+              )
+              .toList()
+        : <RecipeIngredient>[];
+    final steps = d['steps'] is List
+        ? (d['steps'] as List)
+              .whereType<Map>()
+              .map(
+                (item) => RecipeStep.fromMap(
+                  item.map((key, value) => MapEntry(key.toString(), value)),
+                ),
+              )
+              .toList()
+        : <RecipeStep>[];
+    final createdAt = d['createdAt'];
+    final reviewedAt = d['reviewedAt'];
     return PendingRecipe(
       id: doc.id,
-      name: d['name'] as String? ?? '',
-      description: d['description'] as String? ?? '',
-      cuisine: d['cuisine'] as String? ?? '',
-      type: d['type'] as String? ?? '',
-      duration: d['duration'] as String? ?? '',
-      emoji: d['emoji'] as String? ?? '🍽️',
-      imageUrls: List<String>.from(d['imageUrls'] ?? []),
-      ingredients: (d['ingredients'] as List<dynamic>? ?? [])
-          .map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
-          .toList(),
-      steps: (d['steps'] as List<dynamic>? ?? [])
-          .map((e) => RecipeStep.fromMap(e as Map<String, dynamic>))
-          .toList(),
-      tags: List<String>.from(d['tags'] ?? []),
-      authorId: d['authorId'] as String? ?? '',
-      authorName: d['authorName'] as String? ?? '',
-      status: _parseStatus(d['status'] as String? ?? 'pending'),
-      rejectionComment: d['rejectionComment'] as String?,
-      createdAt: (d['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
-      reviewedAt: (d['reviewedAt'] as Timestamp?)?.toDate(),
+      name: stringValue('name'),
+      description: stringValue('description'),
+      cuisine: stringValue('cuisine'),
+      type: stringValue('type'),
+      duration: stringValue('duration'),
+      emoji: stringValue('emoji', '🍽️'),
+      imageUrls: d['imageUrls'] is List
+          ? (d['imageUrls'] as List).whereType<String>().toList()
+          : const [],
+      ingredients: ingredients,
+      steps: steps,
+      tags: d['tags'] is List
+          ? (d['tags'] as List).whereType<String>().toList()
+          : const [],
+      authorId: stringValue('authorId'),
+      authorName: stringValue('authorName'),
+      status: _parseStatus(stringValue('status', 'pending')),
+      rejectionComment: d['rejectionComment'] is String
+          ? d['rejectionComment'] as String
+          : null,
+      createdAt: createdAt is Timestamp ? createdAt.toDate() : DateTime.now(),
+      reviewedAt: reviewedAt is Timestamp ? reviewedAt.toDate() : null,
     );
   }
 
   Map<String, dynamic> toFirestore() => {
-        'name': name,
-        'description': description,
-        'cuisine': cuisine,
-        'type': type,
-        'duration': duration,
-        'emoji': emoji,
-        'imageUrls': imageUrls,
-        'ingredients': ingredients.map((e) => e.toMap()).toList(),
-        'steps': steps.map((e) => e.toMap()).toList(),
-        'tags': tags,
-        'authorId': authorId,
-        'authorName': authorName,
-        'status': status.name,
-        'rejectionComment': rejectionComment,
-        'createdAt': FieldValue.serverTimestamp(),
-        'reviewedAt': reviewedAt != null ? Timestamp.fromDate(reviewedAt!) : null,
-      };
+    'name': name,
+    'description': description,
+    'cuisine': cuisine,
+    'type': type,
+    'duration': duration,
+    'emoji': emoji,
+    'imageUrls': imageUrls,
+    'ingredients': ingredients.map((e) => e.toMap()).toList(),
+    'steps': steps.map((e) => e.toMap()).toList(),
+    'tags': tags,
+    'authorId': authorId,
+    'authorName': authorName,
+    'status': status.name,
+    'rejectionComment': rejectionComment,
+    'createdAt': FieldValue.serverTimestamp(),
+    'reviewedAt': reviewedAt != null ? Timestamp.fromDate(reviewedAt!) : null,
+  };
 
   static PendingStatus _parseStatus(String s) {
     switch (s) {

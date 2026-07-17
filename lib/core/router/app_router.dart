@@ -10,6 +10,7 @@ import '../../screens/types/types_screen.dart';
 import '../../screens/search/search_screen.dart';
 import '../../screens/calendar/calendar_screen.dart';
 import '../../screens/profile/profile_screen.dart';
+import '../../screens/profile/profile_activity_screen.dart';
 import '../../screens/recipe_detail/recipe_detail_screen.dart';
 import '../../screens/shopping/shopping_list_screen.dart';
 import '../../screens/splash/splash_screen.dart';
@@ -52,10 +53,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ShellRoute(
         builder: (context, state, child) => MainShell(child: child),
         routes: [
-          GoRoute(
-            path: '/',
-            builder: (context, state) => const HomeScreen(),
-          ),
+          GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
           GoRoute(
             path: '/ingredients',
             builder: (context, state) => const IngredientsScreen(),
@@ -77,10 +75,13 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             builder: (context, state) => const ProfileScreen(),
           ),
           GoRoute(
+            path: '/profile/activity',
+            builder: (context, state) => const ProfileActivityScreen(),
+          ),
+          GoRoute(
             path: '/recipe/:id',
-            builder: (context, state) => RecipeDetailScreen(
-              recipeId: state.pathParameters['id']!,
-            ),
+            builder: (context, state) =>
+                RecipeDetailScreen(recipeId: state.pathParameters['id']!),
           ),
           GoRoute(
             path: '/shopping',
@@ -112,10 +113,7 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           ),
         ],
       ),
-      GoRoute(
-        path: '/auth',
-        builder: (context, state) => const AuthScreen(),
-      ),
+      GoRoute(path: '/auth', builder: (context, state) => const AuthScreen()),
       GoRoute(
         path: '/recipe/:parentId/create-version',
         builder: (context, state) => CreateSubRecipeScreen(
@@ -124,9 +122,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: '/recipe/:id/edit',
-        builder: (context, state) => EditRecipeScreen(
-          recipe: state.extra as Recipe,
-        ),
+        builder: (context, state) =>
+            EditRecipeScreen(recipe: state.extra as Recipe),
       ),
     ],
   );

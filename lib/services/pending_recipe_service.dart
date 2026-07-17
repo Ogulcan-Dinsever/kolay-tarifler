@@ -8,9 +8,20 @@ import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
 
 class PendingRecipeService {
-  final _db = FirebaseFirestore.instance;
-  final _auth = FirebaseAuth.instance;
-  final _storage = FirebaseStorage.instance;
+  final FirebaseFirestore _db;
+  final FirebaseAuth? _authOverride;
+  final FirebaseStorage? _storageOverride;
+
+  PendingRecipeService({
+    FirebaseFirestore? firestore,
+    FirebaseAuth? auth,
+    FirebaseStorage? storage,
+  }) : _db = firestore ?? FirebaseFirestore.instance,
+       _authOverride = auth,
+       _storageOverride = storage;
+
+  FirebaseAuth get _auth => _authOverride ?? FirebaseAuth.instance;
+  FirebaseStorage get _storage => _storageOverride ?? FirebaseStorage.instance;
 
   // ── Fotoğraf yükleme ───────────────────────────────────────────────────────
 
@@ -100,20 +111,42 @@ class PendingRecipeService {
   // ── Admin: onayla ──────────────────────────────────────────────────────────
 
   Future<void> approveRecipe(PendingRecipe pending) async {
-    final batch = _db.batch();
-
-    // pending_recipes koleksiyonunda status güncelle
     final pendingRef = _db.collection('pending_recipes').doc(pending.id);
-    batch.update(pendingRef, {
-      'status': 'approved',
-      'reviewedAt': FieldValue.serverTimestamp(),
-    });
+    final recipeRef = _db.collection('recipes').doc('submission_${pending.id}');
 
-    // recipes koleksiyonuna ekle
-    final recipeRef = _db.collection('recipes').doc();
-    final now = DateTime.now();
-    final recipe = Recipe(
-      id: recipeRef.id,
+    await _db.runTransaction((transaction) async {
+      final pendingSnapshot = await transaction.get(pendingRef);
+      if (!pendingSnapshot.exists) {
+        throw StateError('Tarif başvurusu bulunamadı.');
+      }
+      final currentStatus = pendingSnapshot.data()?['status'];
+      if (currentStatus == 'approved') return;
+      if (currentStatus != 'pending') {
+        throw StateError('Bu tarif başvurusu artık onaylanamaz.');
+      }
+
+      final current = PendingRecipe.fromFirestore(pendingSnapshot);
+      final recipe = recipeFromApprovedSubmission(
+        current,
+        recipeId: recipeRef.id,
+      );
+      transaction.set(recipeRef, recipe.toFirestore());
+      transaction.update(pendingRef, {
+        'status': 'approved',
+        'reviewedAt': FieldValue.serverTimestamp(),
+        'publishedRecipeId': recipeRef.id,
+      });
+    });
+  }
+
+  static Recipe recipeFromApprovedSubmission(
+    PendingRecipe pending, {
+    required String recipeId,
+    DateTime? approvedAt,
+  }) {
+    final now = approvedAt ?? DateTime.now();
+    return Recipe(
+      id: recipeId,
       name: pending.name,
       description: pending.description,
       cuisine: pending.cuisine,
@@ -134,9 +167,6 @@ class PendingRecipeService {
       createdAt: now,
       modifiedAt: now,
     );
-    batch.set(recipeRef, recipe.toFirestore());
-
-    await batch.commit();
   }
 
   // ── Admin: reddet ──────────────────────────────────────────────────────────

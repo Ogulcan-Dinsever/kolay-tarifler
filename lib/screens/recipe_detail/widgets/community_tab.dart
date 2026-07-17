@@ -52,7 +52,7 @@ class CommunityTab extends ConsumerWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: const Text(
-                      '+ Versiyonumu Ekle',
+                      '+ Varyasyonumu Ekle',
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w700,
@@ -146,8 +146,8 @@ class CommunityTab extends ConsumerWidget {
                   const SizedBox(height: 6),
                   Text(
                     isAuth
-                        ? 'İlk versiyonu sen ekle!'
-                        : 'Kendi versiyonunu paylaşmak için\ngiriş yapmanız gerekiyor.',
+                        ? 'İlk varyasyonu sen ekle!'
+                        : 'Kendi varyasyonunu paylaşmak için\ngiriş yapmanız gerekiyor.',
                     style: TextStyle(
                       fontSize: 13,
                       color: context.palette.textTertiary,
@@ -168,7 +168,7 @@ class CommunityTab extends ConsumerWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: const Text(
-                          'Versiyonumu Ekle',
+                          'Varyasyonumu Ekle',
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
                             color: AppColors.primaryText,

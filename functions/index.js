@@ -1,13 +1,21 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
+const functions = require('firebase-functions/v1');
+const { initializeApp } = require('firebase-admin/app');
+const { getFirestore, FieldValue } = require('firebase-admin/firestore');
+const { getMessaging } = require('firebase-admin/messaging');
+const { getDownloadURL, getStorage } = require('firebase-admin/storage');
 const {
   normalizeTokens,
   stringifyData,
   invalidTokensFromResponses,
 } = require('./notification_helpers');
+const {
+  createRecipeCounterReconciler,
+  recipeKindFor,
+} = require('./counter_helpers');
 
-admin.initializeApp();
-const db = admin.firestore();
+initializeApp();
+const db = getFirestore();
+const reconcileRecipeCounters = createRecipeCounterReconciler({ db });
 
 // ── Yardımcı: FCM gönder ────────────────────────────────────────────────────
 
@@ -21,7 +29,7 @@ async function sendToUser(userId, { title, body }, data = {}) {
   }
 
   try {
-    const result = await admin.messaging().sendEachForMulticast({
+    const result = await getMessaging().sendEachForMulticast({
       tokens,
       notification: { title, body },
       android: {
@@ -43,10 +51,10 @@ async function sendToUser(userId, { title, body }, data = {}) {
     const invalidTokens = invalidTokensFromResponses(tokens, result.responses);
     if (invalidTokens.length > 0) {
       const update = {
-        fcmTokens: admin.firestore.FieldValue.arrayRemove(...invalidTokens),
+        fcmTokens: FieldValue.arrayRemove(...invalidTokens),
       };
       if (invalidTokens.includes(userData.fcmToken)) {
-        update.fcmToken = admin.firestore.FieldValue.delete();
+        update.fcmToken = FieldValue.delete();
       }
       await snap.ref.update(update).catch((err) => {
         console.error('Geçersiz FCM tokenları temizlenemedi', {
@@ -89,7 +97,7 @@ async function addInApp(userId, { title, body }, data = {}) {
       type: data.type || null,
       targetId: data.recipeId || data.id || null,
       read: false,
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      createdAt: FieldValue.serverTimestamp(),
     });
   } catch (err) {
     console.error('Uygulama içi bildirim yazılamadı', {
@@ -141,14 +149,29 @@ exports.onPendingRecipeStatusChange = functions
 
 // ── 2. Tarif beğeni bildirimi ────────────────────────────────────────────────
 
+// Eski istemciler recipeKind göndermez. Sunucu filtreli yeni sorgularda bu
+// tariflerin kaybolmaması için alanı oluşturma sonrasında tamamla.
+exports.onRecipeCreated = functions
+  .region('europe-west1')
+  .firestore.document('recipes/{recipeId}')
+  .onCreate((snap) => {
+    const recipe = snap.data() || {};
+    if (recipe.recipeKind === 'main' || recipe.recipeKind === 'variation') {
+      return null;
+    }
+    return snap.ref.update({ recipeKind: recipeKindFor(recipe) });
+  });
+
+// Eski ve yeni istemciler aynı anda kullanılırken veya kötü niyetli bir sayaç
+// nudgesi geldiğinde alanları gerçek alt koleksiyon sayılarıyla uzlaştırır.
 exports.onRecipeLiked = functions
+  .runWith({ failurePolicy: true })
   .region('europe-west1')
   .firestore.document('recipes/{recipeId}/likes/{likerId}')
-  .onCreate(async (_, context) => {
+  .onCreate(async (snap, context) => {
     const { recipeId, likerId } = context.params;
-
-    const recipeSnap = await db.collection('recipes').doc(recipeId).get();
-    const recipe = recipeSnap.data();
+    await reconcileRecipeCounters(recipeId, ['likeCount']);
+    const recipe = (await db.collection('recipes').doc(recipeId).get()).data();
 
     // Resmi tariflerin veya kendi beğenisinin bildirimi yok
     if (!recipe || recipe.isOfficial || !recipe.authorId || recipe.authorId === likerId) {
@@ -168,17 +191,26 @@ exports.onRecipeLiked = functions
     );
   });
 
+exports.onRecipeUnliked = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipes/{recipeId}/likes/{likerId}')
+  .onDelete((snap, context) =>
+    reconcileRecipeCounters(context.params.recipeId, ['likeCount']),
+  );
+
 // ── 3. Yorum bildirimi ───────────────────────────────────────────────────────
 
 exports.onCommentAdded = functions
+  .runWith({ failurePolicy: true })
   .region('europe-west1')
   .firestore.document('recipes/{recipeId}/comments/{commentId}')
   .onCreate(async (snap, context) => {
     const { recipeId } = context.params;
     const comment = snap.data();
 
-    const recipeSnap = await db.collection('recipes').doc(recipeId).get();
-    const recipe = recipeSnap.data();
+    await reconcileRecipeCounters(recipeId, ['commentCount']);
+    const recipe = (await db.collection('recipes').doc(recipeId).get()).data();
 
     // Resmi tariflerin veya kendi yorumunun bildirimi yok
     if (!recipe || recipe.isOfficial || !recipe.authorId || recipe.authorId === comment.userId) {
@@ -200,52 +232,164 @@ exports.onCommentAdded = functions
     );
   });
 
+exports.onCommentDeleted = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipes/{recipeId}/comments/{commentId}')
+  .onDelete((snap, context) =>
+    reconcileRecipeCounters(context.params.recipeId, ['commentCount']),
+  );
+
+exports.onVariationLiked = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipe_variations/{recipeId}/likes/{likerId}')
+  .onCreate(async (snap, context) => {
+    const { recipeId, likerId } = context.params;
+    await reconcileRecipeCounters(
+      recipeId,
+      ['likeCount'],
+      'recipe_variations',
+    );
+    const recipe = (
+      await db.collection('recipe_variations').doc(recipeId).get()
+    ).data();
+    if (!recipe || !recipe.authorId || recipe.authorId === likerId) return null;
+
+    const likerSnap = await db.collection('users').doc(likerId).get();
+    const likerName = likerSnap.data()?.displayName || 'Biri';
+    return notifyUser(
+      recipe.authorId,
+      {
+        title: '❤️ Yeni Beğeni',
+        body: `${likerName}, "${recipe.name}" tarifini beğendi.`,
+      },
+      { type: 'recipe_liked', recipeId },
+    );
+  });
+
+exports.onVariationUnliked = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipe_variations/{recipeId}/likes/{likerId}')
+  .onDelete((snap, context) =>
+    reconcileRecipeCounters(
+      context.params.recipeId,
+      ['likeCount'],
+      'recipe_variations',
+    ),
+  );
+
+exports.onVariationCommentAdded = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipe_variations/{recipeId}/comments/{commentId}')
+  .onCreate(async (snap, context) => {
+    const { recipeId } = context.params;
+    const comment = snap.data();
+    await reconcileRecipeCounters(
+      recipeId,
+      ['commentCount'],
+      'recipe_variations',
+    );
+    const recipe = (
+      await db.collection('recipe_variations').doc(recipeId).get()
+    ).data();
+    if (!recipe || !recipe.authorId || recipe.authorId === comment.userId) {
+      return null;
+    }
+
+    const authorName = comment.userDisplayName || 'Biri';
+    const preview = comment.text?.length > 60
+      ? `${comment.text.substring(0, 60)}…`
+      : comment.text;
+    return notifyUser(
+      recipe.authorId,
+      {
+        title: '💬 Yeni Yorum',
+        body: `${authorName}: "${preview}"`,
+      },
+      { type: 'comment', recipeId },
+    );
+  });
+
+exports.onVariationCommentDeleted = functions
+  .runWith({ failurePolicy: true })
+  .region('europe-west1')
+  .firestore.document('recipe_variations/{recipeId}/comments/{commentId}')
+  .onDelete((snap, context) =>
+    reconcileRecipeCounters(
+      context.params.recipeId,
+      ['commentCount'],
+      'recipe_variations',
+    ),
+  );
+
 // Hesap silindiğinde kullanıcıya bağlı Firestore ve Storage verilerini temizle.
 // İstemci hesabı sildikten sonra Admin SDK ile çalıştığı için alt koleksiyonlar
 // ve kullanıcının doğrudan silemeyeceği yayımlanmış içerikler de kapsanır.
-async function deleteQuery(query, beforeDelete) {
+async function deleteQuery(query) {
   while (true) {
-    const snapshot = await query.limit(300).get();
+    const snapshot = await query.limit(400).get();
     if (snapshot.empty) return;
 
     const batch = db.batch();
     for (const doc of snapshot.docs) {
-      if (beforeDelete) await beforeDelete(doc, batch);
       batch.delete(doc.ref);
     }
     await batch.commit();
-    if (snapshot.size < 300) return;
+    if (snapshot.size < 400) return;
   }
 }
 
+function storageObjectName(downloadUrl) {
+  if (typeof downloadUrl !== 'string' || !downloadUrl) return null;
+  if (downloadUrl.startsWith('gs://')) {
+    const firstSlash = downloadUrl.indexOf('/', 5);
+    return firstSlash < 0 ? null : downloadUrl.substring(firstSlash + 1);
+  }
+  try {
+    const url = new URL(downloadUrl);
+    const marker = '/o/';
+    const markerIndex = url.pathname.indexOf(marker);
+    if (markerIndex < 0) return null;
+    return decodeURIComponent(url.pathname.substring(markerIndex + marker.length));
+  } catch (_) {
+    return null;
+  }
+}
+
+async function promotePendingImages(bucket, uid, recipe) {
+  const imageUrls = Array.isArray(recipe.data().imageUrls)
+    ? recipe.data().imageUrls
+    : [];
+  return Promise.all(
+    imageUrls.map(async (imageUrl) => {
+      const objectName = storageObjectName(imageUrl);
+      const pendingPrefix = `pending_recipes/${uid}/`;
+      if (!objectName?.startsWith(pendingPrefix)) return imageUrl;
+
+      const fileName = objectName.substring(pendingPrefix.length);
+      const destination = bucket.file(
+        `recipes/submissions/${recipe.id}/${fileName}`,
+      );
+      await bucket.file(objectName).copy(destination);
+      return getDownloadURL(destination);
+    }),
+  );
+}
+
 exports.onAuthUserDeleted = functions
+  .runWith({ failurePolicy: true, timeoutSeconds: 540, memory: '1GB' })
   .region('europe-west1')
   .auth.user()
   .onDelete(async (user) => {
     const uid = user.uid;
+    const bucket = getStorage().bucket();
 
-    await deleteQuery(
-      db.collectionGroup('likes').where('userId', '==', uid),
-      async (doc, batch) => {
-        const recipeRef = doc.ref.parent.parent;
-        if (recipeRef) {
-          batch.update(recipeRef, {
-            likeCount: admin.firestore.FieldValue.increment(-1),
-          });
-        }
-      },
-    );
-
+    await deleteQuery(db.collectionGroup('likes').where('userId', '==', uid));
     await deleteQuery(
       db.collectionGroup('comments').where('userId', '==', uid),
-      async (doc, batch) => {
-        const recipeRef = doc.ref.parent.parent;
-        if (recipeRef) {
-          batch.update(recipeRef, {
-            commentCount: admin.firestore.FieldValue.increment(-1),
-          });
-        }
-      },
     );
 
     const authoredRecipes = await db
@@ -253,7 +397,21 @@ exports.onAuthUserDeleted = functions
       .where('authorId', '==', uid)
       .get();
     for (const recipe of authoredRecipes.docs) {
-      await db.recursiveDelete(recipe.ref);
+      const imageUrls = await promotePendingImages(bucket, uid, recipe);
+      // Moderasyondan geçmiş ana tarif keşifte kalır; kişisel atıf silinir.
+      await recipe.ref.update({
+        authorId: 'deleted-user',
+        imageUrls,
+        authorName: 'Silinmiş kullanıcı',
+      });
+    }
+
+    const authoredVariations = await db
+      .collection('recipe_variations')
+      .where('authorId', '==', uid)
+      .get();
+    for (const variation of authoredVariations.docs) {
+      await db.recursiveDelete(variation.ref);
     }
 
     await deleteQuery(
@@ -264,12 +422,12 @@ exports.onAuthUserDeleted = functions
 
     await db.recursiveDelete(db.collection('users').doc(uid));
 
-    const bucket = admin.storage().bucket();
-    await Promise.all([
+    const storageCleanup = [
+      bucket.deleteFiles({ prefix: `avatars/${uid}/` }),
       bucket.deleteFiles({ prefix: `recipe_images/${uid}/` }),
       bucket.deleteFiles({ prefix: `pending_recipes/${uid}/` }),
-      bucket.deleteFiles({ prefix: `avatars/${uid}/` }),
-    ]);
+    ];
+    await Promise.all(storageCleanup);
 
     console.log(`Kullanıcı verileri temizlendi: ${uid}`);
   });

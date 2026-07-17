@@ -7,6 +7,11 @@ service cloud.firestore {
       return request.auth != null;
     }
 
+    function isRegisteredUser() {
+      return isSignedIn() &&
+             request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
     function isAdmin() {
       return isSignedIn() &&
              request.auth.token.email != null &&
@@ -14,56 +19,210 @@ service cloud.firestore {
     }
 
     function acceptedCommunityTerms() {
-      return isSignedIn() &&
+      return isRegisteredUser() &&
              get(/databases/$(database)/documents/users/$(request.auth.uid)).data.communityTermsVersion == '2026-07-13';
     }
 
-    // Sayaç alanı en fazla ±1 değişebilir (beğeni/yorum toggle'ı).
-    // İstemcinin likeCount'u keyfi bir değere (örn. 999999) yazmasını engeller.
-    function isCounterNudge(field) {
-      return !request.resource.data.diff(resource.data).affectedKeys().hasAny([field]) ||
-             (request.resource.data[field] is int &&
-              resource.data[field] is int &&
-              request.resource.data[field] >= resource.data[field] - 1 &&
-              request.resource.data[field] <= resource.data[field] + 1);
+    // Mağazadaki 1.0.3 istemcilerinin beğeni transaction'ını yalnız aynı
+    // kullanıcının like belgesi gerçekten değişiyorsa kabul et.
+    function isLegacyLikeNudge(recipeCollection, recipeId) {
+      let changed = request.resource.data.diff(resource.data).affectedKeys().hasAny(['likeCount']);
+      let likePath = /databases/$(database)/documents/$(recipeCollection)/$(recipeId)/likes/$(request.auth.uid);
+      return !changed ||
+             (request.resource.data.likeCount == resource.data.likeCount + 1 &&
+              !exists(likePath) && existsAfter(likePath)) ||
+             (request.resource.data.likeCount == resource.data.likeCount - 1 &&
+              exists(likePath) && !existsAfter(likePath));
+    }
+
+    function isValidLikeCreate(userId) {
+      return isRegisteredUser() && request.auth.uid == userId &&
+             request.resource.data.keys().hasOnly([
+               'userId', 'createdAt', 'counterManagedBy'
+             ]) &&
+             request.resource.data.userId == request.auth.uid &&
+             request.resource.data.createdAt is timestamp &&
+             (!request.resource.data.keys().hasAny(['counterManagedBy']) ||
+               request.resource.data.counterManagedBy == 'server_v1');
+    }
+
+    function isValidCommentCreate(recipeId) {
+      return acceptedCommunityTerms() &&
+             request.resource.data.keys().hasOnly([
+               'recipeId', 'userId', 'userDisplayName',
+               'userAvatarUrl', 'text', 'createdAt', 'counterManagedBy'
+             ]) &&
+             request.resource.data.userId == request.auth.uid &&
+             request.resource.data.recipeId == recipeId &&
+             request.resource.data.userDisplayName is string &&
+             request.resource.data.userDisplayName.size() <= 100 &&
+             request.resource.data.text is string &&
+             request.resource.data.text.size() > 0 &&
+             request.resource.data.text.size() <= 1000 &&
+             request.resource.data.createdAt is timestamp &&
+             (!request.resource.data.keys().hasAny(['userAvatarUrl']) ||
+               request.resource.data.userAvatarUrl is string) &&
+             (!request.resource.data.keys().hasAny(['counterManagedBy']) ||
+               request.resource.data.counterManagedBy == 'server_v1');
+    }
+
+    function isValidPendingRecipeCreate() {
+      let data = request.resource.data;
+      return data.keys().hasOnly([
+               'name', 'description', 'cuisine', 'type', 'duration', 'emoji',
+               'imageUrls', 'ingredients', 'steps', 'tags', 'authorId',
+               'authorName', 'status', 'rejectionComment', 'createdAt',
+               'reviewedAt'
+             ]) &&
+             data.keys().hasAll([
+               'name', 'description', 'cuisine', 'type', 'duration', 'emoji',
+               'imageUrls', 'ingredients', 'steps', 'tags', 'authorId',
+               'authorName', 'status', 'createdAt'
+             ]) &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 150 &&
+             data.description is string && data.description.size() <= 2000 &&
+             data.cuisine is string && data.cuisine.size() <= 80 &&
+             data.type is string && data.type.size() <= 80 &&
+             data.duration is string && data.duration.size() <= 80 &&
+             data.emoji is string && data.emoji.size() <= 32 &&
+             data.imageUrls is list && data.imageUrls.size() <= 6 &&
+             data.ingredients is list && data.ingredients.size() > 0 && data.ingredients.size() <= 100 &&
+             data.steps is list && data.steps.size() > 0 && data.steps.size() <= 100 &&
+             data.tags is list && data.tags.size() <= 30 &&
+             data.authorId == request.auth.uid &&
+             data.authorName is string && data.authorName.size() <= 100 &&
+             data.status == 'pending' && data.createdAt is timestamp &&
+             (!data.keys().hasAny(['rejectionComment']) || data.rejectionComment == null) &&
+             (!data.keys().hasAny(['reviewedAt']) || data.reviewedAt == null);
+    }
+
+    function isValidVariationDocument() {
+      let data = request.resource.data;
+      return data.keys().hasOnly([
+               'name', 'description', 'cuisine', 'type', 'duration', 'servings',
+               'emoji', 'imageUrls', 'imageSources', 'ingredients', 'steps',
+               'tags', 'officialLikeCount', 'communityLikeCount', 'likeCount',
+               'authorId', 'authorName', 'isOfficial', 'recipeKind',
+               'parentRecipeId', 'commentCount', 'createdAt', 'modifiedAt'
+             ]) &&
+             data.keys().hasAll([
+               'name', 'description', 'cuisine', 'type', 'duration', 'servings',
+               'emoji', 'imageUrls', 'imageSources', 'ingredients', 'steps',
+               'tags', 'officialLikeCount', 'communityLikeCount', 'likeCount',
+               'authorId', 'authorName', 'isOfficial', 'recipeKind', 'parentRecipeId',
+               'commentCount', 'createdAt'
+             ]) &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 150 &&
+             data.description is string && data.description.size() <= 2000 &&
+             data.cuisine is string && data.cuisine.size() <= 80 &&
+             data.type is string && data.duration is string && data.servings is string &&
+             data.emoji is string && data.emoji.size() <= 32 &&
+             data.imageUrls is list && data.imageUrls.size() <= 6 &&
+             data.imageSources is list && data.imageSources.size() <= 6 &&
+             data.ingredients is list && data.ingredients.size() <= 100 &&
+             data.steps is list && data.steps.size() <= 100 &&
+             data.tags is list && data.tags.size() <= 30 &&
+             data.officialLikeCount is int && data.officialLikeCount >= 0 &&
+             data.communityLikeCount is int && data.communityLikeCount >= 0 &&
+             data.likeCount is int && data.likeCount >= 0 &&
+             data.commentCount is int && data.commentCount >= 0 &&
+             data.authorId is string && data.authorName is string && data.authorName.size() <= 100 &&
+             data.isOfficial == false && data.parentRecipeId is string &&
+             data.parentRecipeId.size() > 0 && data.createdAt is timestamp &&
+             (!data.keys().hasAny(['modifiedAt']) || data.modifiedAt is timestamp) &&
+             data.recipeKind == 'variation';
+    }
+
+    function isValidVariationCreate(recipeId) {
+      return isValidVariationDocument() &&
+             request.resource.data.officialLikeCount == 0 &&
+             request.resource.data.communityLikeCount == 0 &&
+             request.resource.data.likeCount == 0 &&
+             request.resource.data.commentCount == 0 &&
+             request.resource.data.parentRecipeId is string &&
+             request.resource.data.parentRecipeId.size() > 0 &&
+             request.resource.data.parentRecipeId != recipeId &&
+             exists(/databases/$(database)/documents/recipes/$(request.resource.data.parentRecipeId)) &&
+             get(/databases/$(database)/documents/recipes/$(request.resource.data.parentRecipeId)).data.recipeKind == 'main' &&
+             !get(/databases/$(database)/documents/recipes/$(request.resource.data.parentRecipeId)).data.keys().hasAny(['parentRecipeId']);
     }
 
     // ── Tarifler ────────────────────────────────────────────────────────────────
     match /recipes/{recipeId} {
       allow read: if true;
-      allow create: if isAdmin() ||
-                       (acceptedCommunityTerms() &&
-                        request.resource.data.authorId == request.auth.uid &&
-                        request.resource.data.isOfficial == false);
+      allow create: if isAdmin();
       allow update: if isSignedIn() &&
-                       (isAdmin() ||
-                        request.auth.uid == resource.data.authorId ||
-                        (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount', 'commentCount']) &&
-                         isCounterNudge('likeCount') &&
-                         isCounterNudge('commentCount')));
+                        (isAdmin() ||
+                         (isRegisteredUser() &&
+                          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likeCount']) &&
+                          isLegacyLikeNudge('recipes', recipeId)));
       allow delete: if isAdmin();
 
       // Beğeniler — kullanıcı sadece kendi beğeni dokümanını okur/yazar (belge yolu ile)
       match /likes/{userId} {
-        allow read, write: if isSignedIn() && request.auth.uid == userId;
+        allow read: if isSignedIn() && request.auth.uid == userId;
+        allow delete: if isRegisteredUser() && request.auth.uid == userId;
+        allow create: if isValidLikeCreate(userId);
+        allow update: if false;
       }
 
       // Yorumlar — herkes okur, giriş yapan yazar
       match /comments/{commentId} {
         allow read: if true;
-        allow create: if acceptedCommunityTerms() &&
-                         request.resource.data.userId == request.auth.uid &&
-                         request.resource.data.recipeId == recipeId;
-        allow update, delete: if isSignedIn() &&
-                                  (isAdmin() || request.auth.uid == resource.data.userId);
+        allow create: if isValidCommentCreate(recipeId);
+        allow update: if isAdmin();
+        allow delete: if isRegisteredUser() &&
+                         (isAdmin() || request.auth.uid == resource.data.userId);
       }
     }
 
     // ── Beğeni collectionGroup sorgusu ───────────────────────────────────────────
     // userLikedIdsStream tüm 'likes' alt koleksiyonlarını tek sorguda tarar.
     // Kullanıcı yalnızca userId alanı kendi uid'i olan beğenileri listeleyebilir.
+    match /recipe_variations/{recipeId} {
+      allow read: if true;
+      allow create: if acceptedCommunityTerms() &&
+                       request.resource.data.authorId == request.auth.uid &&
+                       request.resource.data.isOfficial == false &&
+                       isValidVariationCreate(recipeId);
+      allow update: if isSignedIn() &&
+                        (isAdmin() ||
+                         (isRegisteredUser() &&
+                          request.auth.uid == resource.data.authorId &&
+                          resource.data.recipeKind == 'variation' &&
+                          isValidVariationDocument() &&
+                          !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+                            'authorId', 'isOfficial', 'parentRecipeId', 'recipeKind',
+                            'likeCount', 'commentCount', 'officialLikeCount',
+                            'communityLikeCount', 'createdAt'
+                          ])));
+      allow delete: if isAdmin();
+
+      match /likes/{userId} {
+        allow read: if isSignedIn() && request.auth.uid == userId;
+        allow delete: if isRegisteredUser() && request.auth.uid == userId;
+        allow create: if isValidLikeCreate(userId);
+        allow update: if false;
+      }
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if isValidCommentCreate(recipeId);
+        allow update: if isAdmin();
+        allow delete: if isRegisteredUser() &&
+                         (isAdmin() || request.auth.uid == resource.data.userId);
+      }
+    }
+
     match /{path=**}/likes/{likeId} {
       allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    // Profil collectionGroup sorgusu yalnız hesap sahibinin kendi yorumlarını
+    // (veya adminin moderasyon verisini) toplu okuyabilir.
+    match /{path=**}/comments/{commentId} {
+      allow read: if isSignedIn() &&
+                    (resource.data.userId == request.auth.uid || isAdmin());
     }
 
     // ── Malzemeler ───────────────────────────────────────────────────────────────
@@ -130,7 +289,8 @@ service cloud.firestore {
                      (request.auth.uid == resource.data.authorId || isAdmin());
       allow create: if acceptedCommunityTerms() &&
                        request.resource.data.authorId == request.auth.uid &&
-                       !request.auth.token.firebase.sign_in_provider.matches('anonymous');
+                       isRegisteredUser() &&
+                       isValidPendingRecipeCreate();
       allow update: if isAdmin();
       allow delete: if isAdmin();
     }
