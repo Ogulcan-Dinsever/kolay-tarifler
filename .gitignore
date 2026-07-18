@@ -68,3 +68,15 @@ scripts/ingredient_image_candidates.json
 scripts/ingredient_image_work/
 scripts/ingredient_contact_sheets/
 scripts/ingredient_repair_backups/
+
+# Local emulator/UI capture artifacts saved at the repository root
+/*.png
+/*.xml
+
+# Superseded store screenshot experiments (kept locally, not used by builder)
+/store_assets/raw/creator_*.png
+/store_assets/raw/lahanasarmasi.jpg
+/store_assets/raw/real_community.png
+/store_assets/raw/real_icli_*.png
+/store_assets/raw/real_submit_filled.png
+/store_assets/raw/real_submit_lower.png
