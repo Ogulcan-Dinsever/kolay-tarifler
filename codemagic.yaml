@@ -74,7 +74,11 @@ workflows:
         script: keychain add-certificates
 
       - name: Set up App Store code signing
-        script: xcode-project use-profiles
+        script: |
+          xcode-project use-profiles \
+            --project ios/Runner.xcodeproj \
+            --warn-only \
+            --verbose
 
       - name: Build signed IPA
         script: |
