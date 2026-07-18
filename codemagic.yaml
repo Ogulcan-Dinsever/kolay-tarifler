@@ -1,0 +1,89 @@
+workflows:
+  ios-testflight:
+    name: Kolay Tarifler - iOS TestFlight
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    inputs:
+      ios_marketing_version:
+        description: App Store Connect version for this build
+        type: string
+        default: "1.0"
+
+    integrations:
+      app_store_connect: "Kolay Tarifler App Store"
+
+    environment:
+      flutter: 3.44.6
+      xcode: 26.4
+      cocoapods: 1.16.2
+      node: 22
+      java: 21
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.kolaytarifler.app
+      vars:
+        APP_STORE_APPLE_ID: "6790800121"
+
+    cache:
+      cache_paths:
+        - $FLUTTER_ROOT/.pub-cache
+        - $HOME/Library/Caches/CocoaPods
+
+    scripts:
+      - name: Validate required iOS configuration
+        script: |
+          set -e
+          test -f ios/Runner/GoogleService-Info.plist
+          test -f ios/Runner/Runner.entitlements
+          grep -q "com.kolaytarifler.app" ios/Runner.xcodeproj/project.pbxproj
+          grep -q "ADMOB_APP_ID=ca-app-pub-" ios/Flutter/Release.xcconfig
+          grep -q "<key>aps-environment</key>" ios/Runner/Runner.entitlements
+          grep -q "<key>com.apple.developer.applesignin</key>" ios/Runner/Runner.entitlements
+
+      - name: Get Flutter packages
+        script: flutter pub get
+
+      - name: Install CocoaPods dependencies
+        script: find . -name "Podfile" -execdir pod install \;
+
+      - name: Analyze source
+        script: flutter analyze
+
+      - name: Run tests
+        script: flutter test
+
+      - name: Install Cloud Functions dependencies
+        script: npm --prefix functions ci
+
+      - name: Test notification functions
+        script: npm --prefix functions test
+
+      - name: Test Firestore security rules
+        script: npm --prefix functions run test:rules
+
+      - name: Set up App Store code signing
+        script: xcode-project use-profiles
+
+      - name: Build signed IPA
+        script: |
+          set -e
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID")
+          case "$LATEST_BUILD_NUMBER" in
+            ''|*[!0-9]*) echo "Invalid TestFlight build number: $LATEST_BUILD_NUMBER" >&2; exit 1 ;;
+          esac
+          BUILD_NUMBER=$((${LATEST_BUILD_NUMBER:-0} + 1))
+          flutter build ipa --release \
+            --build-name="${{ inputs.ios_marketing_version }}" \
+            --build-number="$BUILD_NUMBER" \
+            --export-options-plist=/Users/builder/export_options.plist
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - build/ios/archive/*.xcarchive
+      - /tmp/xcodebuild_logs/*.log
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_app_store: false

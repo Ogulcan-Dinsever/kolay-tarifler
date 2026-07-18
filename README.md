@@ -2,6 +2,10 @@
 
 Türkçe ve dünya mutfaklarından tarifleri bir araya getiren, evdeki malzemeye göre tarif önerebilen, haftalık yemek planlaması yapıp otomatik alışveriş listesi çıkaran bir Flutter uygulaması. Firebase üzerinde çalışıyor ve Google Play yayın hazırlığı aşamasında.
 
+## Yayın belgeleri
+
+- [Windows'tan iOS geliştirme ve yayınlama](docs/WINDOWS-GELISTIRICI.md) — Codemagic, TestFlight ve iPhone 11 akışı
+
 Bu README'yi hem "bir kullanıcı gibi uygulamayı gezersem ne görürüm" hem de "kod tabanına ilk kez bakan bir geliştirici olsam neyi fark ederim" diye iki gözle yazdım. Aşağısı kısa bir tanıtım değil, dürüst bir döküm — neyin iyi oturduğu, neyin yarım kaldığı, neyin borç olarak biriktiği dahil.
 
 ## Kullanıcı gözünden
@@ -37,11 +41,12 @@ Uygulamayı açtığında önce kısa bir splash ekranı karşılıyor (arka pla
 
 **Güvenlik kuralları** (`firestore.rules`) genel olarak makul: tarifler herkese açık okunur, yazma admin/yazar/sadece-beğeni-alanı ile sınırlı; kullanıcı profilleri sadece sahibi tarafından okunabilir; misafir (anonim) kullanıcılar tarif gönderemiyor ama beğenebiliyor/yorum yapabiliyor. `_meta/{id}` koleksiyonu herhangi bir girişli kullanıcının yazabildiği tek gevşek nokta — bugün sadece tohum-sürümü belgeleri tuttuğu için risksiz ama ileride dikkat gerektirir.
 
-**Versiyon kontrolü konusunda dürüst olmak gerekirse:** proje henüz bir git deposu değil. `lib/` altında 70 Dart dosyası ve dosya değişiklik tarihlerine bakılırsa yaklaşık 2.5 aydır aktif geliştiriliyor — yani epey iş var ama hiçbir commit geçmişi/geri alma güvenliği yok. Kök dizindeki `TODOS.md`, üzerinde düşünülen ama henüz yapılmayan işleri tutuyor — örneğin "Mutfak Karnesi" (kişisel pişirme günlüğü) özelliği tasarım+mimari incelemesinden geçti ama profil/auth modeli netleşene kadar bilinçli olarak beklemede tutuluyor.
+**Versiyon kontrolü ve dağıtım:** proje GitHub'daki `Ogulcan-Dinsever/kolay-tarifler` deposunda sürümleniyor. Android yayın adayları Google Play kapalı testinde doğrulanıyor; iOS tarafında Windows'tan Codemagic ile imzalı IPA üretip TestFlight'a yükleme akışı kullanılıyor. Kök dizindeki `TODOS.md`, üzerinde düşünülen ama henüz yapılmayan işleri tutuyor — örneğin "Mutfak Karnesi" (kişisel pişirme günlüğü) özelliği tasarım+mimari incelemesinden geçti ama profil/auth modeli netleşene kadar bilinçli olarak beklemede tutuluyor.
 
 ## Şu an nerede duruyoruz
 
 - Kod seviyesinde uygulama olgun ve büyük ölçüde bitmiş — ana akışların hepsi çalışıyor.
-- Henüz dağıtım (App Store / Play Store) planlanmadı, git deposu bile yok.
-- Bilinen açık uçlar: bildirim ayarları ekranının bağlanması, `notes_provider`'ın modern Riverpod deseniyle güncellenmesi, ve `TODOS.md`'deki bekleyen kararlar.
-- Kısacası: ürün tarafı zaten epey düşünülmüş, sırada dağıtım ve gerçek kullanıcıyla test var.
+- Google Play kapalı testi sürüyor; iOS için Codemagic/TestFlight yayın hattı hazırlanmış durumda.
+- App Review öncesinde TestFlight build'i iPhone 11'de doğrulanmalı ve Android sistem çubuğu görünen taslak mağaza görselleri gerçek iPhone görüntüleriyle değiştirilmelidir.
+- Bilinen teknik borçlar arasında `notes_provider`'ın modern Riverpod deseniyle güncellenmesi ve `TODOS.md`'deki bekleyen kararlar bulunuyor.
+- Kısacası: ürün geliştirmeden kontrollü mağaza yayını ve gerçek cihaz doğrulamasına geçilmiş durumda.
