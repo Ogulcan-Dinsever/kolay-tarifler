@@ -184,23 +184,20 @@ proje klasörüne koyma.
 
 ## 5. Codemagic'i Apple hesabına bağla
 
-Codemagic'te **Team settings → Integrations → Developer Portal** bölümünde:
+Codemagic uygulama ayarlarındaki **Environment variables** bölümünde
+`appstore_credentials` adlı şifreli bir grup oluştur ve şu dört değişkeni ekle:
 
-1. Issuer ID'yi gir.
-2. Key ID'yi gir.
-3. `.p8` dosyasını yükle.
-4. Entegrasyona `Kolay Tarifler App Store` adını ver.
-5. Bağlantıyı kaydet.
+- `APP_STORE_CONNECT_ISSUER_ID`: App Store Connect Issuer ID
+- `APP_STORE_CONNECT_KEY_IDENTIFIER`: App Store Connect Key ID
+- `APP_STORE_CONNECT_PRIVATE_KEY`: indirilen `.p8` dosyasının tüm metin içeriği
+- `CERTIFICATE_PRIVATE_KEY`: Apple Distribution sertifikası için oluşturulan
+  RSA 2048 özel anahtarının tüm PEM içeriği
 
-Ardından uygulamanın iOS code signing ayarlarında:
-
-- Signing: **Automatic**
-- Distribution type: **App Store**
-- Bundle ID: `com.kolaytarifler.app`
-- App Store Connect App: `Kolay Tarifler` / `6790800121`
-
-Codemagic uygun Apple Distribution sertifikasını ve provisioning profile'ı
-oluşturabilir. Fiziksel Mac veya Keychain gerekmez.
+Dört değişkende de **Secret** seçili olmalıdır. Özel anahtarları GitHub'a veya
+proje klasörüne ekleme. `codemagic.yaml`, bu grubu build sırasında içe aktarır;
+`app-store-connect fetch-signing-files --type IOS_APP_STORE --create` komutu
+uygun Apple Distribution sertifikasını ve `com.kolaytarifler.app` provisioning
+profile'ını oluşturup indirir. Fiziksel Mac veya yerel Keychain gerekmez.
 
 ## 6. Apple capabilities ayarlarını doğrula
 

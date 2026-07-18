@@ -12,20 +12,17 @@ workflows:
         type: string
         default: "1.0"
 
-    integrations:
-      app_store_connect: "Kolay Tarifler App Store"
-
     environment:
+      groups:
+        - appstore_credentials
       flutter: 3.44.6
       xcode: 26.4
       cocoapods: 1.16.2
       node: 22
       java: 21
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.kolaytarifler.app
       vars:
         APP_STORE_APPLE_ID: "6790800121"
+        BUNDLE_ID: "com.kolaytarifler.app"
 
     cache:
       cache_paths:
@@ -64,6 +61,18 @@ workflows:
       - name: Test Firestore security rules
         script: npm --prefix functions run test:rules
 
+      - name: Initialize iOS signing keychain
+        script: keychain initialize
+
+      - name: Fetch or create App Store signing files
+        script: |
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create
+
+      - name: Add signing certificate to keychain
+        script: keychain add-certificates
+
       - name: Set up App Store code signing
         script: xcode-project use-profiles
 
@@ -87,5 +96,7 @@ workflows:
 
     publishing:
       app_store_connect:
-        auth: integration
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
         submit_to_app_store: false
