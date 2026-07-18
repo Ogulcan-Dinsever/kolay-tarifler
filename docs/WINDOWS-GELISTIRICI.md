@@ -151,6 +151,20 @@ Store Connect'e yükleme adımlarını tanımlar. Codemagic uygulamayı eklediğ
 **Use codemagic.yaml** iş akışını seç. Entegrasyon adı aşağıdaki Apple bağlantısı
 oluşturulurken tam olarak `Kolay Tarifler App Store` olmalıdır.
 
+### Ücretsiz kota güvenliği
+
+- Kişisel Codemagic hesabında yalnızca ücretsiz macOS M2 makinesini kullan.
+- **Billing / Enable billing** seçeneğini açma ve Codemagic'e kredi kartı ekleme.
+- Bu depoda otomatik GitHub tetikleyicisi yoktur; build yalnızca arayüzden elle
+  başlatılır.
+- `max_build_duration` 60 dakikadır. Takılan bir işlem varsa sonucu beklemeden
+  build'i durdur.
+- Her yeni denemeden önce **Billing / Usage** ekranındaki kalan ücretsiz dakikayı
+  kontrol et. Kalan kota 60 dakikanın altındaysa yeni build başlatma.
+- macOS M4, Linux, Windows, App Preview ve ek concurrency özelliklerini açma.
+- Ücretsiz 500 dakika biterse bir sonraki ayın ilk günündeki yenilenmeyi bekle;
+  ek dakika satın alma veya ücretli plana geçme.
+
 ## 4. App Store Connect API anahtarı oluştur
 
 App Store Connect içinde:
