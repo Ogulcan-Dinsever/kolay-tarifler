@@ -11,6 +11,10 @@ include: package:flutter_lints/flutter.yaml
 
 analyzer:
   exclude:
+    # Xcode 16+ can resolve Swift packages inside build/ios/SourcePackages.
+    # They contain third-party Dart test fixtures and must not be analyzed as
+    # part of this Flutter application.
+    - build/**
     - functions/node_modules/**
     - scripts/node_modules/**
 
