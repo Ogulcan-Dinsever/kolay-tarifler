@@ -134,7 +134,9 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         'cancelled-popup-request',
       };
       if (!cancelledCodes.contains(e.code)) {
-        _showError(_firebaseError(e.code));
+        _showError(
+          'Apple ile giriş yapılamadı (${e.code}). Lütfen tekrar dene.',
+        );
       }
     } on Exception catch (_) {
       if (mounted) {
@@ -177,7 +179,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       case 'network-request-failed':
         return 'İnternet bağlantısı yok.';
       default:
-        return 'Bir hata oluştu. Lütfen tekrar dene.';
+        return 'Bir hata oluştu ($code). Lütfen tekrar dene.';
     }
   }
 

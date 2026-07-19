@@ -627,6 +627,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
 
   Future<void> _requestNotificationPermission(BuildContext context) async {
     final granted = await NotificationService.requestPermission();
+    final user = ref.read(authServiceProvider).currentUser;
+    if (granted && user != null && !user.isAnonymous) {
+      await NotificationService.saveToken(user.uid);
+    }
     if (!context.mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

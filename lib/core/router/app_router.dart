@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../layouts/main_layout.dart';
@@ -29,6 +29,13 @@ class _AuthNotifier extends ChangeNotifier {
   }
 }
 
+/// Alt menü sekmeleri bağımsız sayfalar gibi kayarak açılmamalı. iOS'un
+/// varsayılan route animasyonu önceki ekranı geçiş boyunca altta tuttuğu için
+/// sekmeler arasında kısa süreli üst üste binme oluşturuyordu.
+@visibleForTesting
+NoTransitionPage<void> buildMainTabPage(GoRouterState state, Widget child) =>
+    NoTransitionPage<void>(key: state.pageKey, child: child);
+
 final appRouterProvider = Provider<GoRouter>((ref) {
   final notifier = _AuthNotifier();
   ref.onDispose(notifier.dispose);
@@ -53,26 +60,35 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       ShellRoute(
         builder: (context, state, child) => MainShell(child: child),
         routes: [
-          GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+          GoRoute(
+            path: '/',
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const HomeScreen()),
+          ),
           GoRoute(
             path: '/ingredients',
-            builder: (context, state) => const IngredientsScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const IngredientsScreen()),
           ),
           GoRoute(
             path: '/types',
-            builder: (context, state) => const TypesScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const TypesScreen()),
           ),
           GoRoute(
             path: '/search',
-            builder: (context, state) => const SearchScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const SearchScreen()),
           ),
           GoRoute(
             path: '/calendar',
-            builder: (context, state) => const CalendarScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const CalendarScreen()),
           ),
           GoRoute(
             path: '/profile',
-            builder: (context, state) => const ProfileScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const ProfileScreen()),
           ),
           GoRoute(
             path: '/profile/activity',
@@ -89,7 +105,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           ),
           GoRoute(
             path: '/admin',
-            builder: (context, state) => const AdminScreen(),
+            pageBuilder: (context, state) =>
+                buildMainTabPage(state, const AdminScreen()),
           ),
           GoRoute(
             path: '/submit-recipe',

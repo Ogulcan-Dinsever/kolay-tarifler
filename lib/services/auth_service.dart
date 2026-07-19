@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb, visibleForTesting;
 import 'package:google_sign_in/google_sign_in.dart';
 import '../models/app_user.dart';
 import 'crash_service.dart';
@@ -9,6 +9,25 @@ import 'notification_service.dart';
 /// Hesap silme akışında kullanıcının yeniden giriş yapması gerektiğini bildirir.
 enum AccountDeletionException { requiresRecentLogin }
 
+/// Kimlik doğrulama tamamlandıktan sonraki yardımcı işlemler oturumu geri
+/// almamalı. Özellikle iOS'ta APNs token'ı ilk açılışta henüz hazır olmayabilir.
+@visibleForTesting
+Future<void> runPostSignInSideEffect(
+  Future<void> Function() operation, {
+  Future<void> Function(Object error, StackTrace stack)? onError,
+}) async {
+  try {
+    await operation();
+  } catch (error, stack) {
+    if (onError == null) return;
+    try {
+      await onError(error, stack);
+    } catch (_) {
+      // Hata raporlama servisi de oturum açmayı engellememeli.
+    }
+  }
+}
+
 class AuthService {
   final _auth = FirebaseAuth.instance;
   final _db = FirebaseFirestore.instance;
@@ -16,6 +35,15 @@ class AuthService {
   Stream<User?> get authStateChanges => _auth.authStateChanges();
   User? get currentUser => _auth.currentUser;
   bool get isLoggedIn => currentUser != null && !currentUser!.isAnonymous;
+
+  Future<void> _saveNotificationToken(String userId) => runPostSignInSideEffect(
+    () => NotificationService.saveToken(userId),
+    onError: (error, stack) => CrashService.recordError(
+      error,
+      stack,
+      context: 'Bildirim tokenı giriş sonrasında kaydedilemedi',
+    ),
+  );
 
   Future<AppUser> signUp({
     required String email,
@@ -40,7 +68,7 @@ class AuthService {
     );
     await _db.collection('users').doc(user.id).set(user.toFirestore());
     await CrashService.setUser(uid);
-    await NotificationService.saveToken(uid);
+    await _saveNotificationToken(uid);
     return user;
   }
 
@@ -55,7 +83,7 @@ class AuthService {
     // Profil belgesi yoksa oluştur — eski/dış hesaplarda users/{uid} eksik
     // olabilir; bu durumda yorum/etkileşim akışları kırılmasın.
     await _ensureUserDoc(user);
-    await NotificationService.saveToken(user.uid);
+    await _saveNotificationToken(user.uid);
   }
 
   /// users/{uid} belgesi yoksa veya yalnızca cihaz tokenı içeriyorsa auth
@@ -112,7 +140,7 @@ class AuthService {
       fallbackDisplayName: googleUser.displayName,
       fallbackUsername: googleUser.email.split('@').first,
     );
-    await NotificationService.saveToken(user.uid);
+    await _saveNotificationToken(user.uid);
     return appUser;
   }
 
@@ -140,7 +168,7 @@ class AuthService {
       user,
       fallbackDisplayName: displayName,
     );
-    await NotificationService.saveToken(user.uid);
+    await _saveNotificationToken(user.uid);
     return appUser;
   }
 

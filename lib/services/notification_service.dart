@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'crash_service.dart';
 
 // Background handler top-level fonksiyon olmalı
 @pragma('vm:entry-point')
@@ -89,12 +90,38 @@ class NotificationService {
 
   static Future<void> saveToken(String userId) async {
     await _tokenRefreshSub?.cancel();
+    _tokenRefreshSub = _fcm.onTokenRefresh.listen(
+      (token) async {
+        try {
+          await _upsert(userId, token, previousToken: _currentToken);
+        } catch (error, stack) {
+          await CrashService.recordError(
+            error,
+            stack,
+            context: 'Yenilenen bildirim tokenı kaydedilemedi',
+          );
+        }
+      },
+      onError: (Object error, StackTrace stack) {
+        CrashService.recordError(
+          error,
+          stack,
+          context: 'Bildirim tokenı yenileme akışı başarısız',
+        );
+      },
+    );
+
+    // Firebase, Apple platformlarında FCM API çağrısından önce APNs token'ının
+    // hazır olmasını ister. İlk açılışta henüz hazır değilse onTokenRefresh
+    // daha sonra token'ı kaydeder; giriş akışı bekletilmez.
+    if (Platform.isIOS || Platform.isMacOS) {
+      final apnsToken = await _fcm.getAPNSToken();
+      if (apnsToken == null) return;
+    }
+
     final token = await _fcm.getToken();
     if (token == null) return;
     await _upsert(userId, token, previousToken: _currentToken);
-    _tokenRefreshSub = _fcm.onTokenRefresh.listen((token) async {
-      await _upsert(userId, token, previousToken: _currentToken);
-    });
   }
 
   // Çıkış yaparken çağır

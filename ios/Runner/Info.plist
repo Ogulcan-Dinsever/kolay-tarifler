@@ -15,6 +15,8 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Tarifinize fotoğraf çekmek için kamera erişimi gerekiyor</string>
 	<!-- Google Sign-In URL scheme -->
+	<key>GIDClientID</key>
+	<string>129219992136-knrtegd77404mvd82380fn0bu2hvfhlc.apps.googleusercontent.com</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
