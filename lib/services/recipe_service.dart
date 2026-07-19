@@ -304,11 +304,16 @@ class RecipeService {
   // ─── RECIPES ────────────────────────────────────────────────────────────────
 
   Stream<List<Recipe>> recipesStream(String cuisine) async* {
+    final storageCuisine = MockCuisines.storageName(cuisine);
     final cache = RecipeCacheService();
     final cached =
         cache
             .loadRecipes()
-            .where((r) => r.isMainRecipe && r.cuisine == cuisine)
+            .where(
+              (r) =>
+                  r.isMainRecipe &&
+                  MockCuisines.canonicalName(r.cuisine) == cuisine,
+            )
             .toList()
           ..sort(
             (a, b) => b.recommendationScore.compareTo(a.recommendationScore),
@@ -318,7 +323,7 @@ class RecipeService {
     await for (final snap
         in _db
             .collection('recipes')
-            .where('cuisine', isEqualTo: cuisine)
+            .where('cuisine', isEqualTo: storageCuisine)
             .where('recipeKind', isEqualTo: Recipe.mainKind)
             .snapshots()) {
       final list = discoverableRecipes(
@@ -337,6 +342,7 @@ class RecipeService {
     int pageSize = 20,
     DocumentSnapshot<Map<String, dynamic>>? startAfter,
   }) async {
+    final storageCuisine = MockCuisines.storageName(cuisine);
     final recipes = <Recipe>[];
     var cursor = startAfter;
     var hasMore = true;
@@ -349,7 +355,7 @@ class RecipeService {
       final remaining = pageSize - recipes.length;
       Query<Map<String, dynamic>> query = _db
           .collection('recipes')
-          .where('cuisine', isEqualTo: cuisine)
+          .where('cuisine', isEqualTo: storageCuisine)
           .where('recipeKind', isEqualTo: Recipe.mainKind)
           .orderBy('name')
           .limit(remaining);

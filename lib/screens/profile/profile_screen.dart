@@ -614,9 +614,18 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             child: const Text('İptal'),
           ),
           TextButton(
-            onPressed: () {
-              ref.read(authServiceProvider).signOut();
+            onPressed: () async {
               Navigator.pop(ctx);
+              try {
+                await ref.read(authServiceProvider).signOut();
+              } catch (_) {
+                if (!context.mounted) return;
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Çıkış yapılamadı. Lütfen tekrar deneyin.'),
+                  ),
+                );
+              }
             },
             child: const Text('Çıkış Yap', style: TextStyle(color: Colors.red)),
           ),

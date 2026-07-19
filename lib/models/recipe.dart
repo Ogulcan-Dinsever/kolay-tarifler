@@ -117,7 +117,7 @@ class Recipe {
       id: data['id'] as String,
       name: data['name'] as String,
       description: data['description'] as String,
-      cuisine: data['cuisine'] as String,
+      cuisine: MockCuisines.canonicalName(data['cuisine'] as String),
       type: data['type'] as String,
       duration: data['duration'] as String,
       servings: data['servings'] as String? ?? '',
@@ -154,7 +154,7 @@ class Recipe {
     'id': id,
     'name': name,
     'description': description,
-    'cuisine': cuisine,
+    'cuisine': MockCuisines.storageName(cuisine),
     'type': type,
     'duration': duration,
     'servings': servings,
@@ -188,7 +188,9 @@ class Recipe {
       id: doc.id,
       name: data['name']?.toString() ?? '',
       description: data['description']?.toString() ?? '',
-      cuisine: data['cuisine']?.toString() ?? 'Türk',
+      cuisine: MockCuisines.canonicalName(
+        data['cuisine']?.toString() ?? 'Türk',
+      ),
       type: data['type']?.toString() ?? 'Ana Yemek',
       duration: data['duration']?.toString() ?? '',
       servings: data['servings']?.toString() ?? '',
@@ -231,7 +233,7 @@ class Recipe {
   Map<String, dynamic> toFirestore() => {
     'name': name,
     'description': description,
-    'cuisine': cuisine,
+    'cuisine': MockCuisines.storageName(cuisine),
     'type': type,
     'duration': duration,
     'servings': servings,
@@ -295,8 +297,8 @@ class MockCuisines {
     {'flag': '🇸🇾', 'name': 'Suriye'},
     {'flag': '🇮🇱', 'name': 'İsrail'},
     {'flag': '🇬🇪', 'name': 'Gürcü'},
-    {'flag': '🇦🇿', 'name': 'Azeri'},
-    {'flag': '🇦🇲', 'name': 'Ermeni'},
+    {'flag': '🇦🇿', 'name': 'Azerbaycan'},
+    {'flag': '🇦🇲', 'name': 'Ermenistan'},
     {'flag': '🇷🇺', 'name': 'Rus'},
     {'flag': '🇺🇦', 'name': 'Ukrayna'},
     {'flag': '🇵🇱', 'name': 'Polonya'},
@@ -334,6 +336,23 @@ class MockCuisines {
     {'flag': '🇳🇿', 'name': 'Yeni Zelanda'},
   ];
 
+  static const Map<String, String> _canonicalNames = {
+    'Azeri': 'Azerbaycan',
+    'Ermeni': 'Ermenistan',
+  };
+
+  static const Map<String, String> _storageNames = {
+    'Azerbaycan': 'Azeri',
+    'Ermenistan': 'Ermeni',
+  };
+
+  /// Eski Firestore verilerini kullanıcıya güncel ve nötr ülke adlarıyla
+  /// gösterir. Böylece veri göçü gerekmeden mevcut tarifler korunur.
+  static String canonicalName(String name) => _canonicalNames[name] ?? name;
+
+  /// Mevcut Firestore sorgu ve indeksleriyle geriye dönük uyumluluğu korur.
+  static String storageName(String name) => _storageNames[name] ?? name;
+
   /// Tarif bulunan mutfakları başa, henüz boş olanları sona taşır.
   ///
   /// Firestore'a katalogda olmayan yeni bir mutfak eklenirse onu da otomatik
@@ -341,7 +360,7 @@ class MockCuisines {
   static List<Map<String, String>> orderedForRecipes(Iterable<Recipe> recipes) {
     final counts = <String, int>{};
     for (final recipe in recipes) {
-      final cuisine = recipe.cuisine.trim();
+      final cuisine = canonicalName(recipe.cuisine.trim());
       if (cuisine.isEmpty) continue;
       counts.update(
         cuisine,

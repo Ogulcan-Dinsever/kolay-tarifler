@@ -25,4 +25,21 @@ void main() {
       completes,
     );
   });
+
+  test('temizlik hatası Firebase çıkışını engellemez', () async {
+    var signedOut = false;
+    Object? reportedError;
+
+    await runSignOutFlow(
+      cleanupOperations: [
+        () async => throw StateError('APNs token is not set'),
+        () async {},
+      ],
+      signOut: () async => signedOut = true,
+      onCleanupError: (error, stack) async => reportedError = error,
+    );
+
+    expect(signedOut, isTrue);
+    expect(reportedError, isA<StateError>());
+  });
 }

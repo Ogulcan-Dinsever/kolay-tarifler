@@ -28,6 +28,21 @@ Future<void> runPostSignInSideEffect(
   }
 }
 
+/// Çıkış öncesi temizlik işlemleri başarısız olsa bile gerçek oturum kapatma
+/// adımını çalıştırır. FCM/APNs gibi yardımcı servisler kullanıcıyı uygulamada
+/// kilitli bırakamaz.
+@visibleForTesting
+Future<void> runSignOutFlow({
+  required List<Future<void> Function()> cleanupOperations,
+  required Future<void> Function() signOut,
+  Future<void> Function(Object error, StackTrace stack)? onCleanupError,
+}) async {
+  for (final cleanup in cleanupOperations) {
+    await runPostSignInSideEffect(cleanup, onError: onCleanupError);
+  }
+  await signOut();
+}
+
 class AuthService {
   final _auth = FirebaseAuth.instance;
   final _db = FirebaseFirestore.instance;
@@ -177,12 +192,21 @@ class AuthService {
   }
 
   Future<void> signOut() async {
-    final uid = currentUser?.uid;
-    if (uid != null && !currentUser!.isAnonymous) {
-      await NotificationService.clearToken(uid);
-    }
-    await CrashService.clearUser();
-    await _auth.signOut();
+    final user = currentUser;
+    final uid = user?.uid;
+    await runSignOutFlow(
+      cleanupOperations: [
+        if (uid != null && !user!.isAnonymous)
+          () => NotificationService.clearToken(uid),
+        CrashService.clearUser,
+      ],
+      signOut: _auth.signOut,
+      onCleanupError: (error, stack) => CrashService.recordError(
+        error,
+        stack,
+        context: 'Çıkış öncesi temizlik tamamlanamadı',
+      ),
+    );
   }
 
   // ── Hesap silme ────────────────────────────────────────────────────────────

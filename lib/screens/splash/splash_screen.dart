@@ -1,11 +1,24 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../services/admin_service.dart';
 import '../../services/notification_service.dart';
-import '../../services/recipe_cache_service.dart';
 import '../../services/recipe_service.dart';
+
+const splashLogoAsset = 'assets/images/app_header_logo.png';
+
+Future<void> waitForSplashNavigation({
+  required Future<void> animation,
+  required Future<void> preparation,
+}) async {
+  // Hazırlık görevlerinin hatası veya ağ gecikmesi splash navigasyonunu
+  // kilitlememeli. Görevler uygulama açıldıktan sonra arka planda tamamlanır.
+  unawaited(preparation.catchError((_) {}));
+  await animation;
+}
 
 class SplashScreen extends ConsumerStatefulWidget {
   const SplashScreen({super.key});
@@ -28,20 +41,19 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       duration: const Duration(milliseconds: 900),
     );
     _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeIn);
-    _scale = Tween<double>(begin: 0.88, end: 1.0).animate(
-      CurvedAnimation(parent: _ctrl, curve: Curves.easeOutCubic),
-    );
+    _scale = Tween<double>(
+      begin: 0.88,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutCubic));
     _ctrl.forward();
     _init();
   }
 
   Future<void> _init() async {
-    // Minimum bekleme = logo animasyonunun süresi. Hazırlık daha uzun sürerse
-    // onu bekler; yapay ekstra gecikme yok.
-    await Future.wait([
-      Future.delayed(const Duration(milliseconds: 900)),
-      _prepareApp(),
-    ]);
+    await waitForSplashNavigation(
+      animation: Future.delayed(const Duration(milliseconds: 900)),
+      preparation: _prepareApp(),
+    );
     if (mounted) context.go('/');
   }
 
@@ -64,16 +76,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
     try {
       final service = RecipeService();
-      final cache = RecipeCacheService();
       await service.seedIngredientsIfEmpty();
       await service.seedIfEmpty();
       await AdminService().seedInitialAdmin();
-
-      final cached = cache.loadRecipes();
-      if (cached.isEmpty) {
-        final recipes = await service.fetchAllRecipesOnce();
-        await cache.saveRecipes(recipes);
-      }
     } catch (_) {}
   }
 
@@ -94,10 +99,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
             scale: _scale,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
-              child: Image.asset(
-                'assets/images/logo_slogan.png',
-                fit: BoxFit.contain,
-              ),
+              child: Image.asset(splashLogoAsset, fit: BoxFit.contain),
             ),
           ),
         ),

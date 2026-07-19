@@ -2,6 +2,19 @@
 
 Kolay Tarifler'in kullanıcıya yansıyan önemli değişiklikleri bu dosyada listelenir.
 
+## [1.1.3] - 2026-07-19
+
+### Changed
+
+- Ana ekrandaki Azeri ve Ermeni mutfak etiketleri Azerbaycan ve Ermenistan olarak güncellendi; mevcut tarif verileriyle geriye dönük uyumluluk korundu.
+
+### Fixed
+
+- iOS açılışında font, bildirim ve tarif hazırlığı nedeniyle oluşan uzun beyaz ekran beklemesi kaldırıldı.
+- Başlangıç animasyonu ağ işlemlerinden bağımsız çalışacak şekilde düzenlendi ve arka planı görünen logo yerine şeffaf uygulama logosu kullanıldı.
+- Ana sayfadaki tarif beğeni düğmeleri hizalandı ve beğeni durumu işlem tamamlanmadan kullanıcıya anında yansıtıldı.
+- Google ve Apple oturumları dahil olmak üzere hesaptan çıkış işleminin tamamlanması güvence altına alındı.
+
 ## [1.1.2] - 2026-07-19
 
 ### Fixed

@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:kolay_tarifler/models/recipe.dart';
+import 'package:kolay_tarifler/screens/splash/splash_screen.dart';
 
 Recipe _recipe(String id, String cuisine) => Recipe(
   id: id,
@@ -14,7 +17,48 @@ Recipe _recipe(String id, String cuisine) => Recipe(
 );
 
 void main() {
+  group('Splash startup', () {
+    test('navigasyon arka plan hazirligini beklemez', () async {
+      final animation = Completer<void>();
+      final preparation = Completer<void>();
+      var navigationReady = false;
+
+      final navigation = waitForSplashNavigation(
+        animation: animation.future,
+        preparation: preparation.future,
+      ).then((_) => navigationReady = true);
+
+      await Future<void>.delayed(Duration.zero);
+      expect(navigationReady, isFalse);
+
+      animation.complete();
+      await navigation;
+
+      expect(navigationReady, isTrue);
+      expect(preparation.isCompleted, isFalse);
+      preparation.complete();
+    });
+
+    test('splash seffaf logoyu kullanir', () {
+      expect(splashLogoAsset, 'assets/images/app_header_logo.png');
+    });
+  });
+
   group('MockCuisines.orderedForRecipes', () {
+    test('eski mutfak adlarini ulke adlariyla gosterir', () {
+      final ordered = MockCuisines.orderedForRecipes([
+        _recipe('1', 'Azeri'),
+        _recipe('2', 'Ermeni'),
+      ]);
+      final names = ordered.map((item) => item['name']).toList();
+
+      expect(names, containsAll(<String>['Azerbaycan', 'Ermenistan']));
+      expect(names, isNot(contains('Azeri')));
+      expect(names, isNot(contains('Ermeni')));
+      expect(MockCuisines.storageName('Azerbaycan'), 'Azeri');
+      expect(MockCuisines.storageName('Ermenistan'), 'Ermeni');
+    });
+
     test('tarif bulunan mutfakları boş mutfaklardan önce sıralar', () {
       final ordered = MockCuisines.orderedForRecipes([
         _recipe('1', 'Kore'),

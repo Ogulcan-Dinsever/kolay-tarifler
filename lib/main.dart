@@ -28,15 +28,6 @@ void main() async {
   // table_calendar'ın Türkçe ay/gün adları için tarih sembollerini yükle
   await initializeDateFormatting('tr_TR');
 
-  // Fontu önceden indir — sonraki açılışlarda disk cache'ten anında yükler.
-  try {
-    await GoogleFonts.pendingFonts([
-      GoogleFonts.nunito(),
-    ]).timeout(const Duration(seconds: 4));
-  } catch (_) {
-    // İlk açılış çevrimdışıyken sistem fontuyla devam et.
-  }
-
   if (!kDebugMode) {
     FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
     PlatformDispatcher.instance.onError = (error, stack) {
@@ -82,13 +73,6 @@ void main() async {
     }
   }
 
-  // FCM + yerel bildirimler
-  try {
-    await NotificationService.init().timeout(const Duration(seconds: 4));
-  } catch (_) {
-    // Bildirim hazırlığı uygulamanın açılmasını engellememeli.
-  }
-
   final savedTheme = prefs.getString('theme_mode') == 'dark'
       ? ThemeMode.dark
       : ThemeMode.light;
@@ -103,6 +87,27 @@ void main() async {
   );
   // İzin ağı yavaşsa splash ekranını bekletme; izin tamamlanmadan reklam
   // istenmez ve hazır olduğunda banner kendiliğinden yüklenir.
+}
+
+Future<void> _ignoreStartupFailure(Future<void> operation) async {
+  try {
+    await operation;
+  } catch (_) {
+    // Ağ veya izin hataları ilk ekranın çizilmesini engellememeli.
+  }
+}
+
+Future<void> _initializeDeferredServices() async {
+  await Future.wait([
+    _ignoreStartupFailure(
+      GoogleFonts.pendingFonts([
+        GoogleFonts.nunito(),
+      ]).timeout(const Duration(seconds: 4)),
+    ),
+    _ignoreStartupFailure(
+      NotificationService.init().timeout(const Duration(seconds: 4)),
+    ),
+  ]);
 }
 
 class TarifliApp extends ConsumerStatefulWidget {
@@ -127,6 +132,10 @@ class _TarifliAppState extends ConsumerState<TarifliApp> {
 
     // Uygulama kapalıyken tıklanmış rota varsa ilk frame'de işle
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Font indirme ve bildirim kurulumu ağ/izin bekletebilir. Bunları ancak
+      // ilk Flutter karesi çizildikten sonra paralel başlat.
+      unawaited(_initializeDeferredServices());
+
       // Gizlilik/ATT istemleri ancak ilk ekran çizildikten sonra sunulmalıdır.
       // İşlem arka planda ilerler; kullanıcı açılış ekranında bekletilmez.
       unawaited(AdConsentService.initialize());
