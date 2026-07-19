@@ -42,7 +42,7 @@ TestFlight → iPhone 11 → App Review → App Store
 | Uygulama adı | Kolay Tarifler |
 | GitHub deposu | `Ogulcan-Dinsever/kolay-tarifler` |
 | Doğrulanan Flutter sürümü | `3.44.6` stable / Dart `3.12.2` |
-| Uygulama sürümü | `1.1.1+6` |
+| Uygulama sürümü | `1.1.2+7` |
 | iOS Bundle ID | `com.kolaytarifler.app` |
 | Apple uygulama ID'si | `6790800121` |
 | Apple Team ID | `M9NTSXWYFS` |
@@ -234,20 +234,20 @@ hizmet eder; birbirinin yerine kullanılmamalı ve ikisi de GitHub'a eklenmemeli
 Projede şu an:
 
 ```yaml
-version: 1.1.1+6
+version: 1.1.2+7
 ```
 
 Bu değer iOS'ta şu alanlara dönüşür:
 
-- `1.1.1` → `CFBundleShortVersionString`
-- `6` → `CFBundleVersion`
+- `1.1.2` → `CFBundleShortVersionString`
+- `7` → `CFBundleVersion`
 
 App Store Connect'teki sürüm kaydı şu anda `1.0` ise build doğrudan o sürüme
 bağlanmaz. Derlemeden önce iki yöntemden biri seçilmelidir:
 
 ### Önerilen: mağaza sürümünü proje ile eşleştir
 
-App Store Connect'teki düzenlenebilir sürüm numarasını `1.1.1` yap ve normal
+App Store Connect'teki düzenlenebilir sürüm numarasını `1.1.2` yap ve normal
 derleme al:
 
 ```bash
@@ -268,9 +268,10 @@ flutter build ipa --release --build-name=1.0 --build-number=$PROJECT_BUILD_NUMBE
 Her yeni yüklemede build numarası benzersiz ve öncekinden yüksek olmalıdır.
 Depodaki `codemagic.yaml` build başlatılırken `ios_marketing_version` alanını
 gösterir ve ilk iOS yayını için `1.0` değerini varsayılan getirir. Sonraki App
-Store sürümlerinde bu alan hedef sürümle (örneğin `1.1.1`) değiştirilmelidir.
+Store sürümlerinde bu alan hedef sürümle (örneğin `1.1.2`) değiştirilmelidir.
 TestFlight'taki son build numarası otomatik artırılır; Apple kimlik doğrulaması
-veya build numarası sorgusu başarısız olursa iş akışı hatayı gizlemeden durur.
+veya build numarası sorgusu boş sonuç döndürürse iş akışı ilk build numarası
+olarak `1` değerini dener. Sayı olmayan bir sonuç alınırsa iş akışı durur.
 Android sürüm numarası ve `pubspec.yaml` bu işlemden etkilenmez.
 
 # Codemagic yayın iş akışı
@@ -341,7 +342,8 @@ Her yayın adayında en az şu senaryolar denenmelidir:
 - E-posta/şifre ile giriş ve çıkış
 - Hesap silme
 - ATT ve UMP reklam izinleri
-- Banner reklamın içeriği veya alt gezinme çubuğunu kapatmaması
+- Banner reklamın içeriği veya alt gezinme çubuğunu kapatmaması, 320×50 alanı
+  aşmaması ve geçici ağ/“no fill” hatasından sonra yeniden yüklenmesi
 - Kendi reklamına tıklamadan test reklamı kontrolü
 - Kamera ve galeriden tarif fotoğrafı seçme
 - Ana tarif gönderme ve yönetici onay/red bildirimi

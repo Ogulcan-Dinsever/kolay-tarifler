@@ -25,7 +25,8 @@ Yeni kişisel geliştirici hesabında üretim erişimine başvurmadan önce en a
 - Tarif gönderme, fotoğraf yükleme ve başvuru durumu
 - Beğeni, bildirim, takvim ve alışveriş listesi
 - Açık/koyu tema, küçük/büyük ekran ve geri tuşu
-- Alt banner'ın tüm kullanıcı sayfalarında gezinmeyi kapatmaması
+- Alt banner'ın tüm kullanıcı sayfalarında gezinmeyi kapatmaması, 320×50 alanı
+  aşmaması ve geçici ağ/reklam stoğu hatasından sonra yeniden yüklenmesi
 - Profilde gizlilik, koşullar, destek ve hesap silme bağlantıları
 - Uygulama içi hesap silme ve silinen hesapla yeniden giriş davranışı
 - Çevrimdışı/zayıf ağ, izin reddi, yükleme hatası ve tekrar deneme

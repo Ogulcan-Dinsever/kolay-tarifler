@@ -8,6 +8,10 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../services/ad_config.dart';
 import '../services/ad_consent_service.dart';
 
+/// Starts one banner load and reports its terminal callback.
+///
+/// This seam lets widget tests drive AdMob success and failure paths without a
+/// platform channel.
 typedef AnchoredBannerLoadStarter =
     Future<void> Function({
       required String adUnitId,
@@ -16,17 +20,19 @@ typedef AnchoredBannerLoadStarter =
       required ValueChanged<Object> onFailed,
     });
 
+/// Computes the delay before the next banner request in widget tests.
 typedef AnchoredBannerRetryDelay =
     Duration Function(int failedAttempts, Object error);
 
-/// A fixed-height banner that sits above the app navigation. It is only shown
-/// on routes that contain browseable recipe content.
+/// A fixed-height banner that sits above app navigation on non-admin shell
+/// routes.
 class AnchoredBannerAd extends StatefulWidget {
   const AnchoredBannerAd({super.key})
     : adUnitIdOverride = null,
       loadStarter = null,
       retryDelay = null;
 
+  /// Creates a banner with injectable loading and retry behavior for tests.
   @visibleForTesting
   const AnchoredBannerAd.test({
     super.key,
@@ -35,8 +41,13 @@ class AnchoredBannerAd extends StatefulWidget {
     this.retryDelay,
   });
 
+  /// Overrides the production AdMob unit identifier in tests.
   final String? adUnitIdOverride;
+
+  /// Replaces the native Google Mobile Ads loader in tests.
   final AnchoredBannerLoadStarter? loadStarter;
+
+  /// Replaces the production retry schedule in tests.
   final AnchoredBannerRetryDelay? retryDelay;
 
   @override
