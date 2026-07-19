@@ -2,6 +2,15 @@
 
 Kolay Tarifler'in kullanıcıya yansıyan önemli değişiklikleri bu dosyada listelenir.
 
+## [1.1.2] - 2026-07-19
+
+### Fixed
+
+- Banner reklamlar geçici ağ veya reklam stoğu hatalarından sonra güvenli aralıklarla yeniden yüklenir.
+- Android ve iOS reklam hata kodları platforma göre değerlendirilerek geçici iOS “no fill” yanıtlarında reklam alanının kalıcı olarak kapanması önlendi.
+- Uygulama arka plana alındığında ya da reklam izni kaldırıldığında bekleyen reklam istekleri ve yeniden denemeler temizlenir.
+- Yüklenemeyen banner alanı ekranı kaplamaz; başarılı reklam yalnızca gerçek 320 × 50 boyutu kadar yer kullanır.
+
 ## [1.1.0] - 2026-07-17
 
 ### Added
