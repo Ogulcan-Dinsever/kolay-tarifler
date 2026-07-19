@@ -6,6 +6,8 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 class AdConsentService {
   AdConsentService._();
 
+  static const _buildUsesTestAds = bool.fromEnvironment('ADMOB_USE_TEST_ADS');
+
   static final ValueNotifier<bool> canRequestAdsNotifier = ValueNotifier(false);
   static bool get canRequestAds => canRequestAdsNotifier.value;
   static bool privacyOptionsRequired = false;
@@ -19,13 +21,18 @@ class AdConsentService {
       (defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS);
 
+  static bool get _usesTestAdsWithoutConsent => shouldBypassAdConsentForTestAds(
+    isDebugBuild: kDebugMode,
+    buildUsesTestAds: _buildUsesTestAds,
+  );
+
   static Future<void> initialize() async {
     if (!_isMobile || _initialized || _initializing) return;
     _initializing = true;
     try {
       // Debug sürümü yalnız Google test reklamı kullanır. UMP test coğrafyası ve
       // AdMob mesajı ayrıca yapılandırılmadan emülatörde boş bir form açılmasın.
-      if (kDebugMode) {
+      if (_usesTestAdsWithoutConsent) {
         _consentAllowsAds = true;
         await _activateAdsIfAllowed();
         _initialized = true;
@@ -65,7 +72,9 @@ class AdConsentService {
     // ATT reddedilirse Google Mobile Ads IDFA göndermeden reklam istemeye
     // devam eder. UMP seçimi de kişiselleştirilmiş / kişiselleştirilmemiş /
     // sınırlı reklam sunum modunu belirler.
-    await _requestTrackingPermissionIfNeeded();
+    if (!_usesTestAdsWithoutConsent) {
+      await _requestTrackingPermissionIfNeeded();
+    }
     if (!_mobileAdsInitialized) {
       await MobileAds.instance.initialize();
       _mobileAdsInitialized = true;
@@ -106,3 +115,11 @@ class AdConsentService {
     return result;
   }
 }
+
+/// Test reklamları kişiselleştirilmiş reklam verisi kullanmaz. Debug ve
+/// TestFlight test-ad derlemelerinde UMP/ATT formunu beklemeden SDK'yı açar.
+@visibleForTesting
+bool shouldBypassAdConsentForTestAds({
+  required bool isDebugBuild,
+  required bool buildUsesTestAds,
+}) => isDebugBuild || buildUsesTestAds;

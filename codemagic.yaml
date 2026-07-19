@@ -11,6 +11,10 @@ workflows:
         description: App Store Connect version for this build
         type: string
         default: "1.0"
+      use_test_ads:
+        description: Use Google test ads for TestFlight; set false only for App Store review
+        type: string
+        default: "true"
 
     environment:
       groups:
@@ -85,9 +89,20 @@ workflows:
             *[!0-9]*) echo "Invalid TestFlight build number: $LATEST_BUILD_NUMBER" >&2; exit 1 ;;
           esac
           BUILD_NUMBER=$((LATEST_BUILD_NUMBER + 1))
+          # TestFlight testçileri canlı reklamlara tıklayarak geçersiz trafik
+          # oluşturmamalı. App Store inceleme derlemesinde use_test_ads=false
+          # seçilir ve uygulamadaki canlı iOS reklam birimi kullanılır.
+          case "${{ inputs.use_test_ads }}" in
+            true)
+              ADMOB_BUILD_ARGS="--dart-define=ADMOB_USE_TEST_ADS=true --dart-define=ADMOB_IOS_BANNER_ID=ca-app-pub-3940256099942544/2435281174"
+              ;;
+            false) ADMOB_BUILD_ARGS="" ;;
+            *) echo "use_test_ads must be true or false" >&2; exit 1 ;;
+          esac
           flutter build ipa --release \
             --build-name="${{ inputs.ios_marketing_version }}" \
             --build-number="$BUILD_NUMBER" \
+            $ADMOB_BUILD_ARGS \
             --export-options-plist=/Users/builder/export_options.plist
 
     artifacts:

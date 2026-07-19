@@ -1,0 +1,47 @@
+import 'dart:io';
+
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:kolay_tarifler/providers/ingredient_selection_provider.dart';
+import 'package:kolay_tarifler/services/ad_consent_service.dart';
+
+void main() {
+  test('malzeme akordeonu ilk açılışta kapalıdır', () {
+    final container = ProviderContainer();
+    addTearDown(container.dispose);
+
+    expect(container.read(expandedIngredientCategoryProvider), isNull);
+  });
+
+  test('TestFlight test reklamı izin formunu beklemeden başlayabilir', () {
+    expect(
+      shouldBypassAdConsentForTestAds(
+        isDebugBuild: false,
+        buildUsesTestAds: true,
+      ),
+      isTrue,
+    );
+    expect(
+      shouldBypassAdConsentForTestAds(
+        isDebugBuild: false,
+        buildUsesTestAds: false,
+      ),
+      isFalse,
+    );
+  });
+
+  test('Codemagic TestFlight derlemesi Google iOS test bannerını kullanır', () {
+    final yaml = File('codemagic.yaml').readAsStringSync();
+
+    expect(yaml, contains('use_test_ads:'));
+    expect(yaml, contains('default: "true"'));
+    expect(yaml, contains('ADMOB_USE_TEST_ADS=true'));
+    expect(
+      yaml,
+      contains(
+        '--dart-define=ADMOB_IOS_BANNER_ID='
+        'ca-app-pub-3940256099942544/2435281174',
+      ),
+    );
+  });
+}
