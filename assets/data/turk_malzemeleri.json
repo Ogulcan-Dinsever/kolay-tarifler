@@ -2164,5 +2164,293 @@
   "emoji": "🍜",
   "imageUrl": "",
   "name": "Erişte"
+ },
+ {
+  "category": "et",
+  "emoji": "🍖",
+  "imageUrl": "",
+  "name": "Kuzu kol"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🌾",
+  "imageUrl": "",
+  "name": "Arpa şehriye"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🍞",
+  "imageUrl": "",
+  "name": "Ayvalık tost ekmeği"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "Dana salam"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🥒",
+  "imageUrl": "",
+  "name": "Salatalık turşusu"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🥗",
+  "imageUrl": "",
+  "name": "Rus salatası"
+ },
+ {
+  "category": "diger",
+  "emoji": "🧂",
+  "imageUrl": "",
+  "name": "Kuru maya"
+ },
+ {
+  "category": "yag",
+  "emoji": "🫗",
+  "imageUrl": "",
+  "name": "Ayçiçek yağı"
+ },
+ {
+  "category": "sut",
+  "emoji": "🥛",
+  "imageUrl": "",
+  "name": "Ilık süt"
+ },
+ {
+  "category": "diger",
+  "emoji": "🧂",
+  "imageUrl": "",
+  "name": "Kaya tuzu"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🫓",
+  "imageUrl": "",
+  "name": "Tırnak pide"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "Kuzu gömleği"
+ },
+ {
+  "category": "et",
+  "emoji": "🍖",
+  "imageUrl": "",
+  "name": "Kuzu ciğeri"
+ },
+ {
+  "category": "kuruyemis",
+  "emoji": "🥜",
+  "imageUrl": "",
+  "name": "Dolmalık fıstık"
+ },
+ {
+  "category": "et",
+  "emoji": "🍖",
+  "imageUrl": "",
+  "name": "Kuzu kol ve kaburga"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "İç yağı"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "Dana antrikot"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🧅",
+  "imageUrl": "",
+  "name": "Kuru soğan suyu"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "Dana ciğeri"
+ },
+ {
+  "category": "baharat",
+  "emoji": "🌶️",
+  "imageUrl": "",
+  "name": "Kuru acı biber"
+ },
+ {
+  "category": "diger",
+  "emoji": "🥣",
+  "imageUrl": "",
+  "name": "Et suyu"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🌾",
+  "imageUrl": "",
+  "name": "Firik bulguru"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🫘",
+  "imageUrl": "",
+  "name": "Haşlanmış nohut"
+ },
+ {
+  "category": "kuruyemis",
+  "emoji": "🌰",
+  "imageUrl": "",
+  "name": "Haşhaş ezmesi"
+ },
+ {
+  "category": "diger",
+  "emoji": "🥣",
+  "imageUrl": "",
+  "name": "Kemik suyu"
+ },
+ {
+  "category": "baharat",
+  "emoji": "🌶️",
+  "imageUrl": "",
+  "name": "Toz kırmızı biber"
+ },
+ {
+  "category": "et",
+  "emoji": "🍖",
+  "imageUrl": "",
+  "name": "Kuzu kaburga"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🌾",
+  "imageUrl": "",
+  "name": "Döğme buğday"
+ },
+ {
+  "category": "sut",
+  "emoji": "🥛",
+  "imageUrl": "",
+  "name": "Kurut"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🥬",
+  "imageUrl": "",
+  "name": "Pazı"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🌾",
+  "imageUrl": "",
+  "name": "Kuru yufka"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🍃",
+  "imageUrl": "",
+  "name": "Salamura asma yaprağı"
+ },
+ {
+  "category": "et",
+  "emoji": "🥩",
+  "imageUrl": "",
+  "name": "Yağsız kıyma"
+ },
+ {
+  "category": "baharat",
+  "emoji": "🌿",
+  "imageUrl": "",
+  "name": "Taze nane"
+ },
+ {
+  "category": "sut",
+  "emoji": "🧀",
+  "imageUrl": "",
+  "name": "Tuzsuz taze peynir"
+ },
+ {
+  "category": "tahil",
+  "emoji": "🍝",
+  "imageUrl": "",
+  "name": "Kalın çubuk makarna"
+ },
+ {
+  "category": "et",
+  "emoji": "🍗",
+  "imageUrl": "",
+  "name": "Kaz eti"
+ },
+ {
+  "category": "diger",
+  "emoji": "🥣",
+  "imageUrl": "",
+  "name": "Kaz suyu"
+ },
+ {
+  "category": "yag",
+  "emoji": "🫗",
+  "imageUrl": "",
+  "name": "Kaz yağı"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🧅",
+  "imageUrl": "",
+  "name": "Arpacık soğan"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🍅",
+  "imageUrl": "",
+  "name": "Çeri domates"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🫑",
+  "imageUrl": "",
+  "name": "Kapya biber"
+ },
+ {
+  "category": "diger",
+  "emoji": "🍬",
+  "imageUrl": "",
+  "name": "Çöven köpüğü"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🌿",
+  "imageUrl": "",
+  "name": "Deniz börülcesi"
+ },
+ {
+  "category": "diger",
+  "emoji": "🍇",
+  "imageUrl": "",
+  "name": "Üzüm sirkesi"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🌿",
+  "imageUrl": "",
+  "name": "Bütün enginar"
+ },
+ {
+  "category": "sebze",
+  "emoji": "🧅",
+  "imageUrl": "",
+  "name": "Taze soğan"
+ },
+ {
+  "category": "sut",
+  "emoji": "🧀",
+  "imageUrl": "",
+  "name": "Çökelek"
  }
 ]
