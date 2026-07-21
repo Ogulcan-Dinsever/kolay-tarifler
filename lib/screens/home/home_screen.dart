@@ -12,6 +12,7 @@ import '../../services/recipe_service.dart';
 import '../../widgets/app_header.dart';
 import '../../widgets/cuisine_chip.dart';
 import '../../widgets/featured_card.dart';
+import '../../widgets/in_feed_native_ad.dart';
 import '../../widgets/recipe_card.dart';
 import '../../widgets/search_bar_widget.dart';
 import '../../widgets/section_header.dart';
@@ -237,6 +238,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     final recipes = _searchQuery.isEmpty
                         ? _randomRecipes
                         : _filterRecipes(all);
+                    final feedEntries = buildInFeedEntries(recipes);
 
                     final actionText = _searchQuery.isEmpty
                         ? '${all.length} tariften ${recipes.length} tanesi'
@@ -261,16 +263,25 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             child: Column(
                               children: [
                                 // Spotlight yalnız ilk kartı hedefler
-                                for (var i = 0; i < recipes.length; i++)
-                                  KeyedSubtree(
-                                    key: i == 0 ? _recipeKey : null,
-                                    child: RecipeCard(
-                                      recipe: recipes[i],
-                                      onTap: () => context.push(
-                                        '/recipe/${recipes[i].id}',
+                                for (final entry in feedEntries)
+                                  if (entry is InFeedContent<Recipe>)
+                                    KeyedSubtree(
+                                      key: entry.contentIndex == 0
+                                          ? _recipeKey
+                                          : null,
+                                      child: RecipeCard(
+                                        recipe: entry.item,
+                                        onTap: () => context.push(
+                                          '/recipe/${entry.item.id}',
+                                        ),
+                                      ),
+                                    )
+                                  else if (entry is InFeedAdSlot<Recipe>)
+                                    InFeedNativeAd(
+                                      key: ValueKey(
+                                        'home-native-$_selectedCuisine-${entry.slotIndex}',
                                       ),
                                     ),
-                                  ),
                               ],
                             ),
                           ),
@@ -410,13 +421,22 @@ class _CuisineRecipesScreenState extends ConsumerState<CuisineRecipesScreen> {
       );
     }
 
+    final feedEntries = buildInFeedEntries(_recipes);
     return ListView.builder(
       controller: _scrollController,
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-      itemCount: _recipes.length + 1,
+      itemCount: feedEntries.length + 1,
       itemBuilder: (context, index) {
-        if (index < _recipes.length) {
-          final recipe = _recipes[index];
+        if (index < feedEntries.length) {
+          final entry = feedEntries[index];
+          if (entry is InFeedAdSlot<Recipe>) {
+            return InFeedNativeAd(
+              key: ValueKey(
+                'cuisine-native-${widget.cuisine}-${entry.slotIndex}',
+              ),
+            );
+          }
+          final recipe = (entry as InFeedContent<Recipe>).item;
           return RecipeCard(
             recipe: recipe,
             onTap: () => context.push('/recipe/${recipe.id}'),

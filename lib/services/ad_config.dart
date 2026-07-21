@@ -10,6 +10,8 @@ class AdConfig {
 
   static const _androidTestBannerId = 'ca-app-pub-3940256099942544/9214589741';
   static const _iosTestBannerId = 'ca-app-pub-3940256099942544/2435281174';
+  static const _androidTestNativeId = 'ca-app-pub-3940256099942544/2247696110';
+  static const _iosTestNativeId = 'ca-app-pub-3940256099942544/3986624511';
 
   static const _androidReleaseBannerId = String.fromEnvironment(
     'ADMOB_ANDROID_BANNER_ID',
@@ -18,6 +20,14 @@ class AdConfig {
   static const _iosReleaseBannerId = String.fromEnvironment(
     'ADMOB_IOS_BANNER_ID',
     defaultValue: 'ca-app-pub-1746933154428344/9045794078',
+  );
+  static const _androidReleaseNativeId = String.fromEnvironment(
+    'ADMOB_ANDROID_NATIVE_ID',
+    defaultValue: 'ca-app-pub-1746933154428344/2107924599',
+  );
+  static const _iosReleaseNativeId = String.fromEnvironment(
+    'ADMOB_IOS_NATIVE_ID',
+    defaultValue: 'ca-app-pub-1746933154428344/1367622794',
   );
 
   /// Debug builds always use Google's test units. Release builds render no ad
@@ -40,6 +50,31 @@ class AdConfig {
         ? _iosReleaseBannerId.isEmpty
               ? null
               : _iosReleaseBannerId
+        : null;
+  }
+
+  /// Native advanced unit used between recipe cards.
+  ///
+  /// Debug and explicit test-ad builds always use Google's sample units so
+  /// development traffic can never create invalid activity on the live units.
+  static String? get inFeedNativeId {
+    if (kIsWeb) return null;
+    if (kDebugMode || usesTestAds) {
+      return Platform.isAndroid
+          ? _androidTestNativeId
+          : Platform.isIOS
+          ? _iosTestNativeId
+          : null;
+    }
+    if (!AdConsentService.canRequestAds) return null;
+    return Platform.isAndroid
+        ? _androidReleaseNativeId.isEmpty
+              ? null
+              : _androidReleaseNativeId
+        : Platform.isIOS
+        ? _iosReleaseNativeId.isEmpty
+              ? null
+              : _iosReleaseNativeId
         : null;
   }
 }
