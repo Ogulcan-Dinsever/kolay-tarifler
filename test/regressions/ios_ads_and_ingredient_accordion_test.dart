@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:kolay_tarifler/providers/ingredient_selection_provider.dart';
@@ -30,7 +31,23 @@ void main() {
     );
   });
 
-  test('Codemagic TestFlight derlemesi Google iOS test bannerını kullanır', () {
+  test('reklam isteği SDK başlatması tamamlanmadan açılır', () {
+    final notifier = ValueNotifier(false);
+    addTearDown(notifier.dispose);
+    var initializationStarted = false;
+
+    enableAdRequestsWhileSdkInitializes(
+      notifier: notifier,
+      startInitialization: () {
+        expect(notifier.value, isTrue);
+        initializationStarted = true;
+      },
+    );
+
+    expect(initializationStarted, isTrue);
+  });
+
+  test('Codemagic TestFlight derlemesi sabit iOS test bannerını kullanır', () {
     final yaml = File('codemagic.yaml').readAsStringSync();
     final adConfig = File('lib/services/ad_config.dart').readAsStringSync();
 
@@ -38,7 +55,8 @@ void main() {
     expect(yaml, contains('default: "true"'));
     expect(yaml, contains('ADMOB_USE_TEST_ADS=true'));
     expect(adConfig, contains('kDebugMode || usesTestAds'));
-    expect(adConfig, contains('ca-app-pub-3940256099942544/2435281174'));
+    expect(adConfig, contains('ca-app-pub-3940256099942544/2934735716'));
+    expect(adConfig, isNot(contains('ca-app-pub-3940256099942544/2435281174')));
     expect(
       yaml,
       contains('ADMOB_APP_ID=ca-app-pub-3940256099942544~1458002511'),

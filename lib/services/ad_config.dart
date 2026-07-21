@@ -8,8 +8,11 @@ class AdConfig {
 
   static const usesTestAds = bool.fromEnvironment('ADMOB_USE_TEST_ADS');
 
-  static const _androidTestBannerId = 'ca-app-pub-3940256099942544/9214589741';
-  static const _iosTestBannerId = 'ca-app-pub-3940256099942544/2435281174';
+  // AnchoredBannerAd renders the fixed 320x50 AdSize.banner creative. Keep
+  // these IDs paired with that format; the adaptive-banner sample units are
+  // a different inventory type and can fail to fill on iOS.
+  static const _androidTestBannerId = 'ca-app-pub-3940256099942544/6300978111';
+  static const _iosTestBannerId = 'ca-app-pub-3940256099942544/2934735716';
   static const _androidTestNativeId = 'ca-app-pub-3940256099942544/2247696110';
   static const _iosTestNativeId = 'ca-app-pub-3940256099942544/3986624511';
 

@@ -17,6 +17,7 @@ class AdConsentService {
   static bool _initialized = false;
   static bool _consentAllowsAds = false;
   static bool _mobileAdsInitialized = false;
+  static bool _mobileAdsInitializationStarted = false;
   static Timer? _initializationRetryTimer;
   static int _initializationFailures = 0;
 
@@ -76,7 +77,7 @@ class AdConsentService {
   }
 
   static void _scheduleInitializationRetry() {
-    if (_initialized || _initializationRetryTimer != null) return;
+    if (_initializationRetryTimer != null) return;
     final delay = switch (_initializationFailures) {
       <= 1 => const Duration(seconds: 5),
       2 => const Duration(seconds: 15),
@@ -85,7 +86,11 @@ class AdConsentService {
     };
     _initializationRetryTimer = Timer(delay, () {
       _initializationRetryTimer = null;
-      unawaited(initialize());
+      if (_consentAllowsAds) {
+        _startMobileAdsInitialization();
+      } else {
+        unawaited(initialize());
+      }
     });
   }
 
@@ -120,14 +125,34 @@ class AdConsentService {
     if (!_usesTestAdsWithoutConsent) {
       await _requestTrackingPermissionIfNeeded();
     }
-    if (!_mobileAdsInitialized) {
+    // Google Mobile Ads initialization can take up to 30 seconds on iOS. The
+    // plugin also auto-initializes on the first ad request, so consented ad
+    // requests must not be hidden behind that Future. Start initialization in
+    // parallel and let banner/native loaders report and retry real failures.
+    enableAdRequestsWhileSdkInitializes(
+      notifier: canRequestAdsNotifier,
+      startInitialization: _startMobileAdsInitialization,
+    );
+  }
+
+  static void _startMobileAdsInitialization() {
+    if (_mobileAdsInitialized || _mobileAdsInitializationStarted) return;
+    _mobileAdsInitializationStarted = true;
+    unawaited(_initializeMobileAds());
+  }
+
+  static Future<void> _initializeMobileAds() async {
+    try {
       await MobileAds.instance.initialize();
       _mobileAdsInitialized = true;
       _initializationFailures = 0;
       unawaited(_logInitializationSuccess());
+    } catch (error, stack) {
+      _mobileAdsInitializationStarted = false;
+      _initializationFailures += 1;
+      _scheduleInitializationRetry();
+      unawaited(_recordInitializationFailure(error, stack));
     }
-    // Banner ancak SDK tamamen hazır olduğunda yükleme isteği gönderebilir.
-    canRequestAdsNotifier.value = true;
   }
 
   static Future<void> _logInitializationSuccess() async {
@@ -178,3 +203,14 @@ bool shouldBypassAdConsentForTestAds({
   required bool isDebugBuild,
   required bool buildUsesTestAds,
 }) => isDebugBuild || buildUsesTestAds;
+
+/// Opens the request gate before starting the SDK's potentially slow iOS
+/// initialization. Kept as a seam so this ordering cannot regress silently.
+@visibleForTesting
+void enableAdRequestsWhileSdkInitializes({
+  required ValueNotifier<bool> notifier,
+  required VoidCallback startInitialization,
+}) {
+  notifier.value = true;
+  startInitialization();
+}
