@@ -221,7 +221,7 @@ void main() {
     debugDefaultTargetPlatformOverride = null;
   });
 
-  testWidgets('iOS invalid request is not retried', (tester) async {
+  testWidgets('iOS startup invalid request is retried', (tester) async {
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
     final loader = _ControlledBannerLoader();
 
@@ -240,9 +240,9 @@ void main() {
 
     loader.failCurrent(_TestLoadAdError(0));
     await tester.pump();
-    await tester.pump(const Duration(minutes: 10));
+    await tester.pump(const Duration(seconds: 5));
 
-    expect(loader.loadCount, 1);
+    expect(loader.loadCount, 2);
     debugDefaultTargetPlatformOverride = null;
   });
 

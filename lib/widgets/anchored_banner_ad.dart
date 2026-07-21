@@ -7,6 +7,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../services/ad_config.dart';
 import '../services/ad_consent_service.dart';
+import '../services/crash_service.dart';
 
 /// Starts one banner load and reports its terminal callback.
 ///
@@ -79,6 +80,10 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
     _isAppActive =
         lifecycleState == null || lifecycleState == AppLifecycleState.resumed;
     AdConsentService.canRequestAdsNotifier.addListener(_handleConsentChanged);
+    // Do not rely solely on the app-shell post-frame callback. On iOS the
+    // shell can be rebuilt while the first SDK initialization is still
+    // pending; initialize() is idempotent and safely joins that state.
+    unawaited(AdConsentService.initialize());
   }
 
   @override
@@ -107,6 +112,7 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
       _cancelPendingLoad(disposeLoadedAd: false);
       return;
     }
+    unawaited(AdConsentService.initialize());
     if (mounted &&
         AdConsentService.canRequestAds &&
         _ad == null &&
@@ -209,6 +215,7 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
     if (!mounted || generation != _loadGeneration || !_loadInProgress) return;
     _failedAttempts = min(_failedAttempts + 1, _maxBackoffAttempt);
     debugPrint('Banner ad failed to load (attempt $_failedAttempts): $error');
+    unawaited(_recordLoadFailure(error));
     setState(() {
       _loadInProgress = false;
       _hasLoadFailed = true;
@@ -221,11 +228,34 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
 
     // Google Mobile Ads uses different numeric error mappings on Android and
     // iOS. Code 1 is invalid-request on Android but ordinary no-fill on iOS.
+    // An iOS code 0 can also be emitted while the scene/root controller is
+    // settling during startup. The identifiers are build-time validated, so
+    // a bounded retry is safer than disabling ads for the entire app session.
     return switch (defaultTargetPlatform) {
       TargetPlatform.android => error.code != 1 && error.code != 8,
-      TargetPlatform.iOS => error.code != 0,
+      TargetPlatform.iOS => true,
       _ => true,
     };
+  }
+
+  Future<void> _recordLoadFailure(Object error) async {
+    try {
+      await CrashService.setKey('ad_platform', defaultTargetPlatform.name);
+      await CrashService.setKey('ad_load_attempt', _failedAttempts);
+      await CrashService.setKey('ad_uses_test_unit', AdConfig.usesTestAds);
+      if (error is LoadAdError) {
+        await CrashService.setKey('ad_error_code', error.code);
+        await CrashService.setKey('ad_error_domain', error.domain);
+        await CrashService.setKey('ad_error_message', error.message);
+      }
+      await CrashService.recordError(
+        error,
+        StackTrace.current,
+        context: 'anchored_banner_load_failed',
+      );
+    } catch (_) {
+      // Diagnostics must never interfere with banner retries.
+    }
   }
 
   void _scheduleRetry(Object error) {

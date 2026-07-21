@@ -3,6 +3,8 @@ import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import 'crash_service.dart';
+
 class AdConsentService {
   AdConsentService._();
 
@@ -15,6 +17,8 @@ class AdConsentService {
   static bool _initialized = false;
   static bool _consentAllowsAds = false;
   static bool _mobileAdsInitialized = false;
+  static Timer? _initializationRetryTimer;
+  static int _initializationFailures = 0;
 
   static bool get _isMobile =>
       !kIsWeb &&
@@ -28,6 +32,8 @@ class AdConsentService {
 
   static Future<void> initialize() async {
     if (!_isMobile || _initialized || _initializing) return;
+    _initializationRetryTimer?.cancel();
+    _initializationRetryTimer = null;
     _initializing = true;
     try {
       // Debug sürümü yalnız Google test reklamı kullanır. UMP test coğrafyası ve
@@ -59,8 +65,47 @@ class AdConsentService {
       );
       await _activateAdsIfAllowed();
       _initialized = true;
+    } catch (error, stack) {
+      canRequestAdsNotifier.value = false;
+      _initializationFailures += 1;
+      _scheduleInitializationRetry();
+      unawaited(_recordInitializationFailure(error, stack));
     } finally {
       _initializing = false;
+    }
+  }
+
+  static void _scheduleInitializationRetry() {
+    if (_initialized || _initializationRetryTimer != null) return;
+    final delay = switch (_initializationFailures) {
+      <= 1 => const Duration(seconds: 5),
+      2 => const Duration(seconds: 15),
+      3 => const Duration(seconds: 30),
+      _ => const Duration(minutes: 1),
+    };
+    _initializationRetryTimer = Timer(delay, () {
+      _initializationRetryTimer = null;
+      unawaited(initialize());
+    });
+  }
+
+  static Future<void> _recordInitializationFailure(
+    Object error,
+    StackTrace stack,
+  ) async {
+    try {
+      await CrashService.setKey(
+        'ad_sdk_initialization_failures',
+        _initializationFailures,
+      );
+      await CrashService.setKey('ad_sdk_test_mode', _usesTestAdsWithoutConsent);
+      await CrashService.recordError(
+        error,
+        stack,
+        context: 'mobile_ads_initialization_failed',
+      );
+    } catch (_) {
+      // Diagnostics must never block the SDK retry path.
     }
   }
 
@@ -78,9 +123,19 @@ class AdConsentService {
     if (!_mobileAdsInitialized) {
       await MobileAds.instance.initialize();
       _mobileAdsInitialized = true;
+      _initializationFailures = 0;
+      unawaited(_logInitializationSuccess());
     }
     // Banner ancak SDK tamamen hazır olduğunda yükleme isteği gönderebilir.
     canRequestAdsNotifier.value = true;
+  }
+
+  static Future<void> _logInitializationSuccess() async {
+    try {
+      await CrashService.log('Google Mobile Ads SDK initialized');
+    } catch (_) {
+      // Ad delivery must not depend on diagnostics availability.
+    }
   }
 
   static Future<void> _requestTrackingPermissionIfNeeded() async {
