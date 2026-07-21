@@ -32,16 +32,17 @@ void main() {
 
   test('Codemagic TestFlight derlemesi Google iOS test bannerını kullanır', () {
     final yaml = File('codemagic.yaml').readAsStringSync();
+    final adConfig = File('lib/services/ad_config.dart').readAsStringSync();
 
     expect(yaml, contains('use_test_ads:'));
     expect(yaml, contains('default: "true"'));
     expect(yaml, contains('ADMOB_USE_TEST_ADS=true'));
+    expect(adConfig, contains('kDebugMode || usesTestAds'));
+    expect(adConfig, contains('ca-app-pub-3940256099942544/2435281174'));
     expect(
       yaml,
-      contains(
-        '--dart-define=ADMOB_IOS_BANNER_ID='
-        'ca-app-pub-3940256099942544/2435281174',
-      ),
+      contains('ADMOB_APP_ID=ca-app-pub-3940256099942544~1458002511'),
     );
+    expect(yaml, contains('Verified archived AdMob app ID:'));
   });
 }

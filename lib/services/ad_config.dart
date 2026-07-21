@@ -6,6 +6,8 @@ import 'ad_consent_service.dart';
 class AdConfig {
   const AdConfig._();
 
+  static const usesTestAds = bool.fromEnvironment('ADMOB_USE_TEST_ADS');
+
   static const _androidTestBannerId = 'ca-app-pub-3940256099942544/9214589741';
   static const _iosTestBannerId = 'ca-app-pub-3940256099942544/2435281174';
 
@@ -22,7 +24,7 @@ class AdConfig {
   /// until a real unit ID is supplied at build time.
   static String? get anchoredBannerId {
     if (kIsWeb) return null;
-    if (kDebugMode) {
+    if (kDebugMode || usesTestAds) {
       return Platform.isAndroid
           ? _androidTestBannerId
           : Platform.isIOS
