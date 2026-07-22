@@ -125,14 +125,16 @@ class AdConsentService {
     if (!_usesTestAdsWithoutConsent) {
       await _requestTrackingPermissionIfNeeded();
     }
-    // Google Mobile Ads initialization can take up to 30 seconds on iOS. The
-    // plugin also auto-initializes on the first ad request, so consented ad
-    // requests must not be hidden behind that Future. Start initialization in
-    // parallel and let banner/native loaders report and retry real failures.
-    enableAdRequestsWhileSdkInitializes(
-      notifier: canRequestAdsNotifier,
-      startInitialization: _startMobileAdsInitialization,
-    );
+    // Google requires the Mobile Ads SDK to finish initialization before the
+    // first ad is loaded. Android often tolerates an early request, while iOS
+    // can reject it during scene/controller setup. Keep the request gate shut
+    // until initialization completes; the widgets react to the notifier and
+    // load immediately afterwards.
+    if (_mobileAdsInitialized) {
+      canRequestAdsNotifier.value = true;
+      return;
+    }
+    _startMobileAdsInitialization();
   }
 
   static void _startMobileAdsInitialization() {
@@ -143,7 +145,12 @@ class AdConsentService {
 
   static Future<void> _initializeMobileAds() async {
     try {
-      await MobileAds.instance.initialize();
+      await enableAdRequestsAfterSdkInitialization(
+        notifier: canRequestAdsNotifier,
+        initializeSdk: () async {
+          await MobileAds.instance.initialize();
+        },
+      );
       _mobileAdsInitialized = true;
       _initializationFailures = 0;
       unawaited(_logInitializationSuccess());
@@ -204,13 +211,15 @@ bool shouldBypassAdConsentForTestAds({
   required bool buildUsesTestAds,
 }) => isDebugBuild || buildUsesTestAds;
 
-/// Opens the request gate before starting the SDK's potentially slow iOS
-/// initialization. Kept as a seam so this ordering cannot regress silently.
+/// Opens the request gate only after Google Mobile Ads has initialized.
+///
+/// Kept as a seam so the iOS initialization ordering cannot regress silently.
 @visibleForTesting
-void enableAdRequestsWhileSdkInitializes({
+Future<void> enableAdRequestsAfterSdkInitialization({
   required ValueNotifier<bool> notifier,
-  required VoidCallback startInitialization,
-}) {
+  required Future<void> Function() initializeSdk,
+}) async {
+  notifier.value = false;
+  await initializeSdk();
   notifier.value = true;
-  startInitialization();
 }

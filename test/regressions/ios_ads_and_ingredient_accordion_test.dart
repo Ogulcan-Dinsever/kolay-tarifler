@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
@@ -31,20 +32,20 @@ void main() {
     );
   });
 
-  test('reklam isteği SDK başlatması tamamlanmadan açılır', () {
+  test('reklam isteği SDK başlatması tamamlanana kadar kapalı kalır', () async {
     final notifier = ValueNotifier(false);
     addTearDown(notifier.dispose);
-    var initializationStarted = false;
+    final initialization = Completer<void>();
 
-    enableAdRequestsWhileSdkInitializes(
+    final activation = enableAdRequestsAfterSdkInitialization(
       notifier: notifier,
-      startInitialization: () {
-        expect(notifier.value, isTrue);
-        initializationStarted = true;
-      },
+      initializeSdk: () => initialization.future,
     );
 
-    expect(initializationStarted, isTrue);
+    expect(notifier.value, isFalse);
+    initialization.complete();
+    await activation;
+    expect(notifier.value, isTrue);
   });
 
   test('Codemagic TestFlight derlemesi sabit iOS test bannerını kullanır', () {

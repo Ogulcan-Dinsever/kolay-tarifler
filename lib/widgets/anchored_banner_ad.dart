@@ -83,7 +83,11 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
     // Do not rely solely on the app-shell post-frame callback. On iOS the
     // shell can be rebuilt while the first SDK initialization is still
     // pending; initialize() is idempotent and safely joins that state.
-    unawaited(AdConsentService.initialize());
+    // Injectable loaders are used by widget tests and must not start the real
+    // platform SDK, which would overwrite the test's consent gate.
+    if (widget.loadStarter == null) {
+      unawaited(AdConsentService.initialize());
+    }
   }
 
   @override
@@ -112,7 +116,9 @@ class _AnchoredBannerAdState extends State<AnchoredBannerAd>
       _cancelPendingLoad(disposeLoadedAd: false);
       return;
     }
-    unawaited(AdConsentService.initialize());
+    if (widget.loadStarter == null) {
+      unawaited(AdConsentService.initialize());
+    }
     if (mounted &&
         AdConsentService.canRequestAds &&
         _ad == null &&
