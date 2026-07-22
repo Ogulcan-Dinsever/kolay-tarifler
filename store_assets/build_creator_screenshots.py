@@ -1,8 +1,7 @@
-"""Build four contribution-focused, App Store-sized draft screenshots.
+"""Build four contribution-focused, App Store-sized screenshots.
 
-The source captures are real Kolay Tarifler Android screens. This script only
-adds the store headline, background, rounded frame, and shadow. Replace these
-drafts with iOS captures before App Review if Android system chrome is visible.
+The app interface is cross-platform. Android status and navigation chrome are
+removed before the capture is placed in the device-neutral store frame.
 """
 
 from pathlib import Path
@@ -58,6 +57,22 @@ def add_shadow(
     canvas.alpha_composite(layer.filter(ImageFilter.GaussianBlur(blur)))
 
 
+def crop_device_chrome(image: Image.Image) -> Image.Image:
+    border = 4
+    status_bar = round(image.width * 0.09)
+    # Contribution captures were taken with a test banner at the bottom.
+    # Keep only the actual app form/content above that banner.
+    content_bottom = round(image.height * 0.84)
+    return image.crop(
+        (
+            border,
+            max(border, status_bar),
+            image.width - border,
+            content_bottom,
+        )
+    )
+
+
 def build_screenshots() -> None:
     items = [
         (
@@ -92,7 +107,7 @@ def build_screenshots() -> None:
         draw.text((64, 48), title, font=font(58, True), fill=DARK)
         draw.text((66, 128), subtitle, font=font(28), fill=MUTED)
 
-        capture = Image.open(RAW / source).convert("RGB")
+        capture = crop_device_chrome(Image.open(RAW / source).convert("RGB"))
         target_width = 1120
         target_height = round(capture.height * target_width / capture.width)
         capture = capture.resize(

@@ -6,7 +6,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "node --test notification_helpers.test.js",
+    "test": "node --test notification_helpers.test.js content_moderation.test.js",
     "test:rules": "firebase emulators:exec --only firestore \"node --test --test-concurrency=1 firestore_rules.test.js counter_helpers.test.js\" --project demo-kolay-tarifler",
     "deploy": "firebase deploy --only functions --project kolaytarifler-37c45",
     "logs": "firebase functions:log --project kolaytarifler-37c45"

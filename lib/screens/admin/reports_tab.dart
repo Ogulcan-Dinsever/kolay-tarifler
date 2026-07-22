@@ -85,6 +85,17 @@ class _ReportCard extends ConsumerWidget {
                   icon: const Icon(Icons.delete_outline, size: 18),
                   label: const Text('İçeriği Sil'),
                 ),
+              FilledButton.icon(
+                style: FilledButton.styleFrom(
+                  backgroundColor: Colors.red.shade900,
+                ),
+                onPressed: () =>
+                    _confirmSuspend(context, ref, removeContent: canDelete),
+                icon: const Icon(Icons.person_off_outlined, size: 18),
+                label: Text(
+                  canDelete ? 'Sil ve Uzaklaştır' : 'Kullanıcıyı Uzaklaştır',
+                ),
+              ),
             ],
           ),
         ],
@@ -118,6 +129,56 @@ class _ReportCard extends ConsumerWidget {
         ScaffoldMessenger.of(
           context,
         ).showSnackBar(SnackBar(content: Text('İçerik silinemedi: $error')));
+      }
+    }
+  }
+
+  Future<void> _confirmSuspend(
+    BuildContext context,
+    WidgetRef ref, {
+    required bool removeContent,
+  }) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Kullanıcıyı uzaklaştır'),
+        content: Text(
+          removeContent
+              ? 'Bildirilen içerik silinecek ve kullanıcı yeni topluluk '
+                    'içeriği paylaşamayacak.'
+              : 'Kullanıcı yeni topluluk içeriği paylaşamayacak.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: const Text('Vazgeç'),
+          ),
+          FilledButton(
+            style: FilledButton.styleFrom(backgroundColor: Colors.red.shade900),
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: const Text('Uzaklaştır'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+
+    try {
+      await ref
+          .read(adminServiceProvider)
+          .suspendReportedUser(report, removeContent: removeContent);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Kullanıcı topluluktan uzaklaştırıldı.'),
+          ),
+        );
+      }
+    } catch (error) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Kullanıcı uzaklaştırılamadı: $error')),
+        );
       }
     }
   }

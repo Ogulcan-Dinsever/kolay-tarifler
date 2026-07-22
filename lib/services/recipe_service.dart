@@ -10,6 +10,7 @@ import '../models/recipe.dart';
 import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
 import '../models/user_activity.dart';
+import 'content_moderation_service.dart';
 import 'recipe_cache_service.dart';
 
 class RecipePage {
@@ -631,6 +632,20 @@ class RecipeService {
     required List<RecipeStep> steps,
     List<String> imageUrls = const [],
   }) async {
+    ContentModerationService.validate(
+      description,
+      fieldName: 'Tarif açıklaması',
+    );
+    ContentModerationService.validate(duration, fieldName: 'Hazırlama süresi');
+    ContentModerationService.validateAll(
+      ingredients.expand((ingredient) => [ingredient.name, ingredient.amount]),
+      fieldName: 'Malzeme bilgisi',
+    );
+    ContentModerationService.validateAll(
+      steps.map((step) => step.text),
+      fieldName: 'Yapılış adımı',
+    );
+
     final parentRef = _db.collection('recipes').doc(parentRecipeId);
     final docRef = _db.collection(variationsCollection).doc();
     await _db.runTransaction((transaction) async {
@@ -709,6 +724,7 @@ class RecipeService {
   // ─── COMMENTS ───────────────────────────────────────────────────────────────
 
   Future<void> addComment(Comment comment) async {
+    ContentModerationService.validate(comment.text, fieldName: 'Yorum');
     final recipeRef = await _recipeReferenceForId(comment.recipeId);
     final commentRef = recipeRef.collection('comments').doc();
     await commentRef.set({

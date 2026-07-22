@@ -123,6 +123,35 @@ class AdminService {
     await resolveReport(report['id'] as String, contentRemoved: true);
   }
 
+  Future<void> suspendReportedUser(
+    Map<String, dynamic> report, {
+    bool removeContent = false,
+  }) async {
+    final reportId = report['id'] as String?;
+    final targetUserId = report['targetUserId'] as String?;
+    if (reportId == null || targetUserId == null || targetUserId.isEmpty) {
+      throw Exception('Hedef kullanıcı bulunamadı');
+    }
+
+    if (removeContent) {
+      await removeReportedContent(report);
+    } else {
+      await resolveReport(reportId);
+    }
+
+    await _db.collection('moderation_bans').doc(targetUserId).set({
+      'userId': targetUserId,
+      'reason': report['reason'] ?? 'Topluluk kuralları ihlali',
+      'sourceReportId': reportId,
+      'bannedAt': FieldValue.serverTimestamp(),
+      'bannedBy': _auth.currentUser?.email ?? 'admin',
+      'active': true,
+    });
+    await _db.collection('reports').doc(reportId).set({
+      'userSuspended': true,
+    }, SetOptions(merge: true));
+  }
+
   // ── Resim yükleme ───────────────────────────────────────────────────────────
 
   Future<String> uploadImage({

@@ -21,8 +21,10 @@ Future<bool> ensureCommunityTermsAccepted(
       title: const Text('Topluluk kuralları'),
       content: const Text(
         'Tarif veya yorum paylaşmadan önce Kullanım ve Topluluk '
-        'Koşulları’nı kabul etmen gerekiyor. Uygunsuz içerikler '
-        'kaldırılabilir ve hesaplar kısıtlanabilir.',
+        'Koşulları’nı kabul etmen gerekiyor. Uygunsuz içerik ve kötüye '
+        'kullanıma sıfır tolerans uygulanır. İçerikler otomatik olarak '
+        'filtrelenebilir; bildirimler 24 saat içinde incelenerek içerik '
+        'kaldırılabilir ve hesaplar askıya alınabilir.',
       ),
       actions: [
         TextButton(

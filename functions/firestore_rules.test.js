@@ -19,7 +19,7 @@ const {
 } = require("firebase/firestore");
 
 const projectId = "demo-kolay-tarifler";
-const acceptedTermsVersion = "2026-07-13";
+const acceptedTermsVersion = "2026-07-22";
 let testEnv;
 
 function userDb(uid, email = `${uid}@example.com`) {
@@ -488,6 +488,33 @@ describe("admin management rules", () => {
     await assertSucceeds(
       setDoc(doc(userDb("owner-id", ownerEmail), `admins/${ownerEmail}`), {
         email: ownerEmail,
+      }),
+    );
+  });
+
+  test("prevents a suspended user from creating community content", async () => {
+    await seed({
+      "recipes/main": {
+        authorId: "official",
+        isOfficial: true,
+        recipeKind: "main",
+        likeCount: 0,
+        commentCount: 0,
+      },
+      "users/suspended": { communityTermsVersion: acceptedTermsVersion },
+      "moderation_bans/suspended": {
+        userId: "suspended",
+        active: true,
+      },
+    });
+
+    await assertFails(
+      setDoc(doc(userDb("suspended"), "recipes/main/comments/blocked"), {
+        recipeId: "main",
+        userId: "suspended",
+        userDisplayName: "Suspended user",
+        text: "Normal görünen yorum",
+        createdAt: new Date("2026-07-22T10:00:00Z"),
       }),
     );
   });

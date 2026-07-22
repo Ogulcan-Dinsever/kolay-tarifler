@@ -73,7 +73,8 @@ def main() -> None:
 
     # Remove the emulator status bar so the promotional frame contains only
     # the app interface and remains device-neutral on the App Store page.
-    capture = Image.open(SOURCE).convert("RGB").crop((4, 100, 1076, 1771))
+    source = Image.open(SOURCE).convert("RGB")
+    capture = source.crop((4, 100, source.width - 4, source.height - 55))
     target_width = 1500
     target_height = round(capture.height * target_width / capture.width)
     capture = capture.resize((target_width, target_height), Image.Resampling.LANCZOS)

@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show PlatformException;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_theme.dart';
 import '../../providers/auth_provider.dart';
+import '../../providers/community_safety_provider.dart';
 
 class AuthScreen extends ConsumerStatefulWidget {
   const AuthScreen({super.key});
@@ -32,6 +34,14 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   bool _loading = false;
   bool _obscureLogin = true;
   bool _obscureReg = true;
+  bool _termsAccepted = false;
+
+  static final _termsUrl = Uri.parse(
+    'https://kolaytarifler-37c45.web.app/terms',
+  );
+  static final _privacyUrl = Uri.parse(
+    'https://kolaytarifler-37c45.web.app/privacy',
+  );
 
   @override
   void initState() {
@@ -53,11 +63,13 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Future<void> _signIn() async {
     if (!_loginFormKey.currentState!.validate()) return;
+    if (!_ensureTermsAccepted()) return;
     setState(() => _loading = true);
     try {
       await ref
           .read(authServiceProvider)
           .signIn(email: _emailCtrl.text.trim(), password: _passwordCtrl.text);
+      await _recordTermsAcceptance();
       if (mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       if (mounted) _showError(_firebaseError(e.code));
@@ -70,6 +82,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Future<void> _signUp() async {
     if (!_registerFormKey.currentState!.validate()) return;
+    if (!_ensureTermsAccepted()) return;
     setState(() => _loading = true);
     try {
       await ref
@@ -80,6 +93,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
             displayName: _nameCtrl.text.trim(),
             username: _usernameCtrl.text.trim(),
           );
+      await _recordTermsAcceptance();
       if (mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       if (mounted) _showError(_firebaseError(e.code));
@@ -91,9 +105,11 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   }
 
   Future<void> _signInWithGoogle() async {
+    if (!_ensureTermsAccepted()) return;
     setState(() => _loading = true);
     try {
       final user = await ref.read(authServiceProvider).signInWithGoogle();
+      if (user != null) await _recordTermsAcceptance();
       if (user != null && mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       if (mounted) _showError(_firebaseError(e.code));
@@ -122,9 +138,11 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   }
 
   Future<void> _signInWithApple() async {
+    if (!_ensureTermsAccepted()) return;
     setState(() => _loading = true);
     try {
       final user = await ref.read(authServiceProvider).signInWithApple();
+      if (user != null) await _recordTermsAcceptance();
       if (user != null && mounted) context.go('/');
     } on FirebaseAuthException catch (e) {
       if (!mounted) return;
@@ -148,6 +166,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   }
 
   Future<void> _continueAsGuest() async {
+    if (!_ensureTermsAccepted()) return;
     setState(() => _loading = true);
     try {
       await ref.read(authServiceProvider).continueAsGuest();
@@ -159,6 +178,20 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     } finally {
       if (mounted) setState(() => _loading = false);
     }
+  }
+
+  bool _ensureTermsAccepted() {
+    if (_termsAccepted) return true;
+    _showError(
+      'Devam etmek için Kullanım ve Topluluk Koşulları’nı kabul etmelisin.',
+    );
+    return false;
+  }
+
+  Future<void> _recordTermsAcceptance() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null || user.isAnonymous) return;
+    await ref.read(communitySafetyServiceProvider).acceptTerms(user.uid);
   }
 
   String _firebaseError(String code) {
@@ -176,6 +209,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         return 'Geçersiz e-posta adresi.';
       case 'too-many-requests':
         return 'Çok fazla deneme. Lütfen biraz bekle.';
+      case 'user-disabled':
+        return 'Bu hesap topluluk kurallarını ihlal ettiği için askıya alınmıştır.';
       case 'network-request-failed':
         return 'İnternet bağlantısı yok.';
       default:
@@ -210,6 +245,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                   children: [_buildLoginForm(), _buildRegisterForm()],
                 ),
               ),
+              const SizedBox(height: 16),
+              _buildTermsAcceptance(),
               const SizedBox(height: 16),
               _buildDivider(),
               const SizedBox(height: 16),
@@ -318,7 +355,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 (v == null || v.length < 6) ? 'En az 6 karakter' : null,
           ),
           const SizedBox(height: 20),
-          _primaryButton(label: 'Giriş Yap', onTap: _loading ? null : _signIn),
+          _primaryButton(
+            label: 'Giriş Yap',
+            onTap: _loading || !_termsAccepted ? null : _signIn,
+          ),
         ],
       ),
     );
@@ -368,7 +408,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 (v == null || v.length < 6) ? 'En az 6 karakter' : null,
           ),
           const SizedBox(height: 16),
-          _primaryButton(label: 'Kayıt Ol', onTap: _loading ? null : _signUp),
+          _primaryButton(
+            label: 'Kayıt Ol',
+            onTap: _loading || !_termsAccepted ? null : _signUp,
+          ),
         ],
       ),
     );
@@ -390,12 +433,97 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     );
   }
 
+  Widget _buildTermsAcceptance() {
+    return Semantics(
+      checked: _termsAccepted,
+      label: 'Kullanım ve Topluluk Koşulları kabulü',
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(10, 8, 12, 10),
+        decoration: BoxDecoration(
+          color: context.palette.g50,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: _termsAccepted ? AppColors.primary : context.palette.border,
+            width: 1.5,
+          ),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Checkbox(
+              value: _termsAccepted,
+              activeColor: AppColors.primary,
+              onChanged: _loading
+                  ? null
+                  : (value) => setState(() => _termsAccepted = value ?? false),
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 4),
+                  Text(
+                    'Giriş yapmadan veya hesap oluşturmadan önce Kullanım ve '
+                    'Topluluk Koşulları’nı okudum ve kabul ediyorum.',
+                    style: TextStyle(
+                      fontSize: 12,
+                      height: 1.35,
+                      color: context.palette.textPrimary,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    'Uygunsuz içerik ve kötüye kullanıma sıfır tolerans uygulanır.',
+                    style: TextStyle(
+                      fontSize: 11,
+                      height: 1.3,
+                      color: context.palette.textTertiary,
+                    ),
+                  ),
+                  Wrap(
+                    spacing: 4,
+                    children: [
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          minimumSize: const Size(0, 32),
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        onPressed: () => launchUrl(
+                          _termsUrl,
+                          mode: LaunchMode.externalApplication,
+                        ),
+                        child: const Text('Koşulları oku'),
+                      ),
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          minimumSize: const Size(0, 32),
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        onPressed: () => launchUrl(
+                          _privacyUrl,
+                          mode: LaunchMode.externalApplication,
+                        ),
+                        child: const Text('Gizlilik Politikası'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _buildAppleButton() {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final bg = isDark ? Colors.white : Colors.black;
     final fg = isDark ? Colors.black : Colors.white;
     return GestureDetector(
-      onTap: _loading ? null : _signInWithApple,
+      onTap: _loading || !_termsAccepted ? null : _signInWithApple,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
@@ -424,7 +552,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Widget _buildGoogleButton() {
     return GestureDetector(
-      onTap: _loading ? null : _signInWithGoogle,
+      onTap: _loading || !_termsAccepted ? null : _signInWithGoogle,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
@@ -473,7 +601,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Widget _buildGuestButton() {
     return GestureDetector(
-      onTap: _loading ? null : _continueAsGuest,
+      onTap: _loading || !_termsAccepted ? null : _continueAsGuest,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),

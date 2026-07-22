@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -44,6 +45,21 @@ def fit_cover(image, size):
     return resized.crop((left, top, left + size[0], top + size[1]))
 
 
+def crop_device_chrome(image: Image.Image) -> Image.Image:
+    """Remove Android status/navigation chrome from cross-platform captures."""
+    border = 4
+    status_bar = round(image.width * 0.09)
+    navigation_bar = round(image.width * 0.05)
+    return image.crop(
+        (
+            border,
+            max(border, status_bar),
+            image.width - border,
+            image.height - max(border, navigation_bar),
+        )
+    )
+
+
 def rounded_image(image, size, radius):
     image = fit_cover(image, size).convert("RGBA")
     mask = Image.new("L", size, 0)
@@ -79,8 +95,7 @@ def build_screenshot(source, output, title, subtitle, badge):
     draw_headline(draw, title, subtitle, badge)
 
     raw = Image.open(RAW / source).convert("RGB")
-    # Emulator debug capture has a thin lime device-outline; remove it.
-    raw = raw.crop((4, 4, raw.width - 4, raw.height - 4))
+    raw = crop_device_chrome(raw)
     phone_w = 1058
     phone_h = round(phone_w * raw.height / raw.width)
     x, y = (W - phone_w) // 2, 430
@@ -111,7 +126,7 @@ def build_promo_portrait():
     canvas.alpha_composite(overlay)
 
     screen = Image.open(RAW / "01_home_world_cuisines.png").convert("RGB")
-    screen = screen.crop((4, 4, screen.width - 4, screen.height - 4))
+    screen = crop_device_chrome(screen)
     phone_w = 900
     phone_h = round(phone_w * screen.height / screen.width)
     x, y = (W - phone_w) // 2, 760
@@ -151,7 +166,7 @@ def build_google_play_portraits():
         image.save(GOOGLE_PLAY / target_name, quality=96)
 
 
-def main():
+def main(*, app_store_only: bool = False):
     items = [
         ("01_home_world_cuisines.png", "01_700_plus_world_cuisines_1242x2688.png", "700+ tarif,\ndünyanın lezzetleri", "Türk mutfağından Japonya'ya her gün yeni fikir.", "DÜNYA MUTFAKLARI"),
         ("01_ingredients_result2.png", "02_ingredient_based_recipes_1242x2688.png", "Dolabındakileri seç,\ntarifini bul", "Eksik malzemeyi de anında gör.", "MALZEMEYE GÖRE TARİF"),
@@ -162,9 +177,17 @@ def main():
     for item in items:
         build_screenshot(*item)
     build_promo_portrait()
-    build_feature_graphic()
-    build_google_play_portraits()
+    if not app_store_only:
+        build_feature_graphic()
+        build_google_play_portraits()
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--app-store-only",
+        action="store_true",
+        help="Generate only App Store screenshots and leave Google Play assets unchanged.",
+    )
+    args = parser.parse_args()
+    main(app_store_only=args.app_store_only)

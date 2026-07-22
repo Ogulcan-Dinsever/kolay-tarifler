@@ -7,9 +7,15 @@ service cloud.firestore {
       return request.auth != null;
     }
 
+    function isSuspended() {
+      return isSignedIn() &&
+             exists(/databases/$(database)/documents/moderation_bans/$(request.auth.uid));
+    }
+
     function isRegisteredUser() {
       return isSignedIn() &&
-             request.auth.token.firebase.sign_in_provider != 'anonymous';
+             request.auth.token.firebase.sign_in_provider != 'anonymous' &&
+             !isSuspended();
     }
 
     function isSuperAdmin() {
@@ -27,7 +33,7 @@ service cloud.firestore {
 
     function acceptedCommunityTerms() {
       return isRegisteredUser() &&
-             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.communityTermsVersion == '2026-07-13';
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.communityTermsVersion == '2026-07-22';
     }
 
     // Mağazadaki 1.0.3 istemcilerinin beğeni transaction'ını yalnız aynı
@@ -286,6 +292,14 @@ service cloud.firestore {
                        request.resource.data.reason.size() <= 500 &&
                        request.resource.data.status == 'open';
       allow read, update, delete: if isAdmin();
+    }
+
+    // Admin tarafından topluluktan uzaklaştırılan hesaplar UGC oluşturamaz.
+    // Kullanıcı kendi durumunu tek belge yoluyla okuyabilir; liste gizlidir.
+    match /moderation_bans/{userId} {
+      allow get: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+      allow list: if isAdmin();
+      allow create, update, delete: if isAdmin();
     }
 
     // ── Bekleyen tarifler ────────────────────────────────────────────────────────

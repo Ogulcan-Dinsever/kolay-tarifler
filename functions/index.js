@@ -16,6 +16,10 @@ const {
   createRecipeCounterReconciler,
   recipeKindFor,
 } = require('./counter_helpers');
+const {
+  findContentViolation,
+  recipeTextValues,
+} = require('./content_moderation');
 
 initializeApp();
 const db = getFirestore();
@@ -119,6 +123,36 @@ async function notifyUser(userId, message, data = {}) {
   return sendToUser(userId, message, data);
 }
 
+async function removeFilteredContent(event, { targetType, targetUserId, values, recipeId }) {
+  const violation = findContentViolation(values);
+  if (!violation) return false;
+
+  const snap = event.data;
+  const targetId = event.params.commentId || event.params.recipeId || snap.id;
+  const reportRef = db.collection('reports').doc(`automatic_${event.id}`);
+  const batch = db.batch();
+  batch.delete(snap.ref);
+  batch.set(reportRef, {
+    reporterId: 'automatic-content-filter',
+    targetType,
+    targetId,
+    targetUserId: targetUserId || '',
+    reason: `Otomatik içerik filtresi: ${violation}`,
+    ...(recipeId ? { recipeId } : {}),
+    status: 'open',
+    automatic: true,
+    createdAt: FieldValue.serverTimestamp(),
+  });
+  await batch.commit();
+  console.warn('Uygunsuz kullanıcı içeriği otomatik olarak kaldırıldı', {
+    targetType,
+    targetId,
+    targetUserId,
+    violation,
+  });
+  return true;
+}
+
 // ── 1. Tarif onay / red bildirimi ────────────────────────────────────────────
 
 exports.onPendingRecipeStatusChange = functions
@@ -168,6 +202,54 @@ exports.onRecipeCreatedV2 = onDocumentCreated(
       return null;
     }
     return snap.ref.update({ recipeKind: recipeKindFor(recipe) });
+  },
+);
+
+exports.onVariationCreatedModerationV2 = onDocumentCreated(
+  {
+    document: 'recipe_variations/{recipeId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const recipe = event.data.data() || {};
+    await removeFilteredContent(event, {
+      targetType: 'recipe',
+      targetUserId: recipe.authorId,
+      values: recipeTextValues(recipe),
+      recipeId: event.params.recipeId,
+    });
+  },
+);
+
+exports.onPendingRecipeCreatedModerationV2 = onDocumentCreated(
+  {
+    document: 'pending_recipes/{recipeId}',
+    region: 'europe-west1',
+    retry: true,
+  },
+  async (event) => {
+    const recipe = event.data.data() || {};
+    const violation = findContentViolation(recipeTextValues(recipe));
+    if (!violation) return null;
+
+    await event.data.ref.update({
+      status: 'rejected',
+      rejectionComment: `Otomatik içerik filtresi: ${violation}`,
+      reviewedAt: FieldValue.serverTimestamp(),
+    });
+    await db.collection('reports').doc(`automatic_${event.id}`).set({
+      reporterId: 'automatic-content-filter',
+      targetType: 'recipe',
+      targetId: event.params.recipeId,
+      targetUserId: recipe.authorId || '',
+      reason: `Otomatik içerik filtresi: ${violation}`,
+      recipeId: event.params.recipeId,
+      status: 'open',
+      automatic: true,
+      createdAt: FieldValue.serverTimestamp(),
+    });
+    return null;
   },
 );
 
@@ -224,6 +306,14 @@ exports.onCommentAddedV2 = onDocumentCreated(
     const snap = event.data;
     const { recipeId } = event.params;
     const comment = snap.data();
+
+    const filtered = await removeFilteredContent(event, {
+      targetType: 'comment',
+      targetUserId: comment.userId,
+      values: [comment.text],
+      recipeId,
+    });
+    if (filtered) return null;
 
     await reconcileRecipeCounters(recipeId, ['commentCount']);
     const recipe = (await db.collection('recipes').doc(recipeId).get()).data();
@@ -313,6 +403,13 @@ exports.onVariationCommentAddedV2 = onDocumentCreated(
     const snap = event.data;
     const { recipeId } = event.params;
     const comment = snap.data();
+    const filtered = await removeFilteredContent(event, {
+      targetType: 'comment',
+      targetUserId: comment.userId,
+      values: [comment.text],
+      recipeId,
+    });
+    if (filtered) return null;
     await reconcileRecipeCounters(
       recipeId,
       ['commentCount'],

@@ -6,6 +6,7 @@ import '../models/pending_recipe.dart';
 import '../models/recipe.dart';
 import '../models/recipe_ingredient.dart';
 import '../models/recipe_step.dart';
+import 'content_moderation_service.dart';
 
 class PendingRecipeService {
   final FirebaseFirestore _db;
@@ -65,6 +66,19 @@ class PendingRecipeService {
     if (user == null || user.isAnonymous) {
       throw Exception('Tarif göndermek için giriş yapmalısınız');
     }
+    ContentModerationService.validate(name, fieldName: 'Tarif adı');
+    ContentModerationService.validate(
+      description,
+      fieldName: 'Tarif açıklaması',
+    );
+    ContentModerationService.validateAll(
+      ingredients.expand((ingredient) => [ingredient.name, ingredient.amount]),
+      fieldName: 'Malzeme bilgisi',
+    );
+    ContentModerationService.validateAll(
+      steps.map((step) => step.text),
+      fieldName: 'Yapılış adımı',
+    );
     final docRef = _db.collection('pending_recipes').doc();
     final recipe = PendingRecipe(
       id: docRef.id,

@@ -60,6 +60,18 @@ class AuthService {
     ),
   );
 
+  Future<void> _ensureNotSuspended(String userId) async {
+    final ban = await _db.collection('moderation_bans').doc(userId).get();
+    if (!ban.exists) return;
+
+    await _auth.signOut();
+    throw FirebaseAuthException(
+      code: 'user-disabled',
+      message:
+          'Bu hesap topluluk kurallarını ihlal ettiği için askıya alınmıştır.',
+    );
+  }
+
   Future<AppUser> signUp({
     required String email,
     required String password,
@@ -94,6 +106,7 @@ class AuthService {
     );
     final user = cred.user;
     if (user == null) return;
+    await _ensureNotSuspended(user.uid);
     await CrashService.setUser(user.uid);
     // Profil belgesi yoksa oluştur — eski/dış hesaplarda users/{uid} eksik
     // olabilir; bu durumda yorum/etkileşim akışları kırılmasın.
@@ -149,6 +162,7 @@ class AuthService {
     final user = cred.user;
     if (user == null) throw Exception('Google girişi başarısız');
 
+    await _ensureNotSuspended(user.uid);
     await CrashService.setUser(user.uid);
     final appUser = await _ensureUserDoc(
       user,
@@ -172,6 +186,7 @@ class AuthService {
     final user = cred.user;
     if (user == null) throw Exception('Apple girişi başarısız');
 
+    await _ensureNotSuspended(user.uid);
     await CrashService.setUser(user.uid);
     final displayName = user.displayName?.isNotEmpty == true
         ? user.displayName!

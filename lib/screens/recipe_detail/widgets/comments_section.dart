@@ -332,7 +332,22 @@ class _CommentsSectionState extends ConsumerState<CommentsSection> {
     if (confirmed != true) return;
     await ref
         .read(communitySafetyServiceProvider)
-        .blockUser(userId: currentUser.uid, blockedUserId: comment.userId);
+        .blockAndReportUser(
+          userId: currentUser.uid,
+          blockedUserId: comment.userId,
+          targetType: 'comment',
+          targetId: comment.id,
+          recipeId: widget.recipeId,
+        );
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Kullanıcı engellendi, içerikleri gizlendi ve moderasyona bildirildi.',
+          ),
+        ),
+      );
+    }
   }
 }
 

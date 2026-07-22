@@ -251,6 +251,21 @@ class CommunityTab extends ConsumerWidget {
     if (confirmed != true) return;
     await ref
         .read(communitySafetyServiceProvider)
-        .blockUser(userId: user.uid, blockedUserId: recipe.authorId);
+        .blockAndReportUser(
+          userId: user.uid,
+          blockedUserId: recipe.authorId,
+          targetType: 'recipe',
+          targetId: recipe.id,
+          recipeId: recipe.id,
+        );
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Kullanıcı engellendi, içerikleri gizlendi ve moderasyona bildirildi.',
+          ),
+        ),
+      );
+    }
   }
 }
