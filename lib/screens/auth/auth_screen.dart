@@ -35,6 +35,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   bool _obscureLogin = true;
   bool _obscureReg = true;
   bool _termsAccepted = false;
+  bool _showTermsRequired = false;
 
   static final _termsUrl = Uri.parse(
     'https://kolaytarifler-37c45.web.app/terms',
@@ -182,10 +183,19 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   bool _ensureTermsAccepted() {
     if (_termsAccepted) return true;
+    setState(() => _showTermsRequired = true);
     _showError(
       'Devam etmek için Kullanım ve Topluluk Koşulları’nı kabul etmelisin.',
     );
     return false;
+  }
+
+  void _setTermsAccepted(bool value) {
+    if (_loading) return;
+    setState(() {
+      _termsAccepted = value;
+      if (value) _showTermsRequired = false;
+    });
   }
 
   Future<void> _recordTermsAcceptance() async {
@@ -355,10 +365,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 (v == null || v.length < 6) ? 'En az 6 karakter' : null,
           ),
           const SizedBox(height: 20),
-          _primaryButton(
-            label: 'Giriş Yap',
-            onTap: _loading || !_termsAccepted ? null : _signIn,
-          ),
+          _primaryButton(label: 'Giriş Yap', onTap: _loading ? null : _signIn),
         ],
       ),
     );
@@ -408,10 +415,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                 (v == null || v.length < 6) ? 'En az 6 karakter' : null,
           ),
           const SizedBox(height: 16),
-          _primaryButton(
-            label: 'Kayıt Ol',
-            onTap: _loading || !_termsAccepted ? null : _signUp,
-          ),
+          _primaryButton(label: 'Kayıt Ol', onTap: _loading ? null : _signUp),
         ],
       ),
     );
@@ -437,82 +441,94 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     return Semantics(
       checked: _termsAccepted,
       label: 'Kullanım ve Topluluk Koşulları kabulü',
-      child: Container(
-        padding: const EdgeInsets.fromLTRB(10, 8, 12, 10),
-        decoration: BoxDecoration(
-          color: context.palette.g50,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          key: const Key('terms_acceptance_card'),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: _termsAccepted ? AppColors.primary : context.palette.border,
-            width: 1.5,
-          ),
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Checkbox(
-              value: _termsAccepted,
-              activeColor: AppColors.primary,
-              onChanged: _loading
-                  ? null
-                  : (value) => setState(() => _termsAccepted = value ?? false),
+          onTap: _loading ? null : () => _setTermsAccepted(!_termsAccepted),
+          child: Container(
+            padding: const EdgeInsets.fromLTRB(10, 8, 12, 10),
+            decoration: BoxDecoration(
+              color: context.palette.g50,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _showTermsRequired
+                    ? Colors.red.shade600
+                    : _termsAccepted
+                    ? AppColors.primary
+                    : context.palette.border,
+                width: _showTermsRequired ? 2 : 1.5,
+              ),
             ),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(height: 4),
-                  Text(
-                    'Giriş yapmadan veya hesap oluşturmadan önce Kullanım ve '
-                    'Topluluk Koşulları’nı okudum ve kabul ediyorum.',
-                    style: TextStyle(
-                      fontSize: 12,
-                      height: 1.35,
-                      color: context.palette.textPrimary,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    'Uygunsuz içerik ve kötüye kullanıma sıfır tolerans uygulanır.',
-                    style: TextStyle(
-                      fontSize: 11,
-                      height: 1.3,
-                      color: context.palette.textTertiary,
-                    ),
-                  ),
-                  Wrap(
-                    spacing: 4,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Checkbox(
+                  value: _termsAccepted,
+                  activeColor: AppColors.primary,
+                  onChanged: _loading
+                      ? null
+                      : (value) => _setTermsAccepted(value ?? false),
+                ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          padding: EdgeInsets.zero,
-                          minimumSize: const Size(0, 32),
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      const SizedBox(height: 4),
+                      Text(
+                        'Giriş yapmadan veya hesap oluşturmadan önce Kullanım ve '
+                        'Topluluk Koşulları’nı okudum ve kabul ediyorum.',
+                        style: TextStyle(
+                          fontSize: 12,
+                          height: 1.35,
+                          color: context.palette.textPrimary,
                         ),
-                        onPressed: () => launchUrl(
-                          _termsUrl,
-                          mode: LaunchMode.externalApplication,
-                        ),
-                        child: const Text('Koşulları oku'),
                       ),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          padding: EdgeInsets.zero,
-                          minimumSize: const Size(0, 32),
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      const SizedBox(height: 2),
+                      Text(
+                        'Uygunsuz içerik ve kötüye kullanıma sıfır tolerans uygulanır.',
+                        style: TextStyle(
+                          fontSize: 11,
+                          height: 1.3,
+                          color: context.palette.textTertiary,
                         ),
-                        onPressed: () => launchUrl(
-                          _privacyUrl,
-                          mode: LaunchMode.externalApplication,
-                        ),
-                        child: const Text('Gizlilik Politikası'),
+                      ),
+                      Wrap(
+                        spacing: 4,
+                        children: [
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.zero,
+                              minimumSize: const Size(0, 32),
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            onPressed: () => launchUrl(
+                              _termsUrl,
+                              mode: LaunchMode.externalApplication,
+                            ),
+                            child: const Text('Koşulları oku'),
+                          ),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.zero,
+                              minimumSize: const Size(0, 32),
+                              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            onPressed: () => launchUrl(
+                              _privacyUrl,
+                              mode: LaunchMode.externalApplication,
+                            ),
+                            child: const Text('Gizlilik Politikası'),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -523,7 +539,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     final bg = isDark ? Colors.white : Colors.black;
     final fg = isDark ? Colors.black : Colors.white;
     return GestureDetector(
-      onTap: _loading || !_termsAccepted ? null : _signInWithApple,
+      onTap: _loading ? null : _signInWithApple,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
@@ -552,7 +568,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Widget _buildGoogleButton() {
     return GestureDetector(
-      onTap: _loading || !_termsAccepted ? null : _signInWithGoogle,
+      onTap: _loading ? null : _signInWithGoogle,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
@@ -601,7 +617,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
 
   Widget _buildGuestButton() {
     return GestureDetector(
-      onTap: _loading || !_termsAccepted ? null : _continueAsGuest,
+      onTap: _loading ? null : _continueAsGuest,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
