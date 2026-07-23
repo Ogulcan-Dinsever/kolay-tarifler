@@ -5,10 +5,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import '../core/theme/app_colors.dart';
 import '../services/ad_config.dart';
 import '../services/ad_consent_service.dart';
 import '../services/crash_service.dart';
+
+/// Native factories reserve a 120x120 media view plus 8 points of padding.
+@visibleForTesting
+const inFeedNativeAdHeight = 136.0;
 
 sealed class InFeedEntry<T> {
   const InFeedEntry();
@@ -58,7 +61,7 @@ class InFeedNativeAd extends StatefulWidget {
 
 class _InFeedNativeAdState extends State<InFeedNativeAd>
     with WidgetsBindingObserver {
-  static const _height = 112.0;
+  static const _factoryId = 'inFeed';
   static const _maxBackoffAttempt = 5;
 
   final _random = Random();
@@ -138,32 +141,8 @@ class _InFeedNativeAdState extends State<InFeedNativeAd>
     nextAd = NativeAd(
       adUnitId: adUnitId,
       request: const AdRequest(),
-      nativeTemplateStyle: NativeTemplateStyle(
-        templateType: TemplateType.small,
-        mainBackgroundColor: isDark ? AppColors.darkCard : Colors.white,
-        cornerRadius: 12,
-        callToActionTextStyle: NativeTemplateTextStyle(
-          textColor: Colors.white,
-          backgroundColor: AppColors.primary,
-          size: 14,
-        ),
-        primaryTextStyle: NativeTemplateTextStyle(
-          textColor: isDark ? AppColors.darkText : AppColors.lightText,
-          size: 15,
-        ),
-        secondaryTextStyle: NativeTemplateTextStyle(
-          textColor: isDark
-              ? AppColors.darkTextSecondary
-              : AppColors.lightTextSecondary,
-          size: 12,
-        ),
-        tertiaryTextStyle: NativeTemplateTextStyle(
-          textColor: isDark
-              ? AppColors.darkTextTertiary
-              : AppColors.lightTextTertiary,
-          size: 11,
-        ),
-      ),
+      factoryId: _factoryId,
+      customOptions: {'isDark': isDark},
       listener: NativeAdListener(
         onAdLoaded: (ad) {
           if (_loadingAd == nextAd) _loadingAd = null;
@@ -257,7 +236,7 @@ class _InFeedNativeAdState extends State<InFeedNativeAd>
               constraints: const BoxConstraints(maxWidth: 400),
               child: SizedBox(
                 width: double.infinity,
-                height: _height,
+                height: inFeedNativeAdHeight,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: AdWidget(ad: ad),

@@ -35,4 +35,8 @@ void main() {
     expect(inFeedNativeRetryDelay(1), const Duration(seconds: 10));
     expect(inFeedNativeRetryDelay(99), const Duration(minutes: 5));
   });
+
+  test('native card reserves enough height for a 120-point media view', () {
+    expect(inFeedNativeAdHeight, greaterThanOrEqualTo(136));
+  });
 }
