@@ -7,9 +7,9 @@ private final class InFeedNativeAdFactory: NSObject, FLTNativeAdFactory {
   private static let cardHeight: CGFloat = 136
 
   func createNativeAd(
-    _ nativeAd: GADNativeAd,
+    _ nativeAd: NativeAd,
     customOptions: [AnyHashable: Any]? = nil
-  ) -> GADNativeAdView? {
+  ) -> NativeAdView? {
     let isDark = customOptions?["isDark"] as? Bool ?? false
     let background = isDark
       ? UIColor(red: 29 / 255, green: 45 / 255, blue: 61 / 255, alpha: 1)
@@ -21,12 +21,12 @@ private final class InFeedNativeAdFactory: NSObject, FLTNativeAdFactory {
       ? UIColor(red: 169 / 255, green: 180 / 255, blue: 195 / 255, alpha: 1)
       : UIColor(red: 102 / 255, green: 112 / 255, blue: 133 / 255, alpha: 1)
 
-    let adView = GADNativeAdView()
+    let adView = NativeAdView()
     adView.backgroundColor = background
     adView.layer.cornerRadius = 12
     adView.clipsToBounds = true
 
-    let mediaView = GADMediaView()
+    let mediaView = MediaView()
     mediaView.translatesAutoresizingMaskIntoConstraints = false
     adView.addSubview(mediaView)
     adView.mediaView = mediaView
