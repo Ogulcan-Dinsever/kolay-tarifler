@@ -48,6 +48,17 @@ void main() {
     expect(notifier.value, isTrue);
   });
 
+  test('iOS ATT izni Google izin akışından önce istenir', () async {
+    final calls = <String>[];
+
+    await runAdPrivacyFlowBeforeAds(
+      requestTrackingPermission: () async => calls.add('att'),
+      requestConsent: () async => calls.add('ump'),
+    );
+
+    expect(calls, ['att', 'ump']);
+  });
+
   test('Codemagic TestFlight derlemesi sabit iOS test bannerını kullanır', () {
     final yaml = File('codemagic.yaml').readAsStringSync();
     final adConfig = File('lib/services/ad_config.dart').readAsStringSync();

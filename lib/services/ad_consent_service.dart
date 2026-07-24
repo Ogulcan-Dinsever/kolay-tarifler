@@ -45,24 +45,9 @@ class AdConsentService {
         _initialized = true;
         return;
       }
-      final completer = Completer<void>();
-      ConsentInformation.instance.requestConsentInfoUpdate(
-        ConsentRequestParameters(tagForUnderAgeOfConsent: false),
-        () async {
-          await ConsentForm.loadAndShowConsentFormIfRequired((_) async {
-            await _refreshStatus();
-            if (!completer.isCompleted) completer.complete();
-          });
-        },
-        (_) async {
-          // Önceki oturumda geçerli izin varsa geçici ağ hatasında kullanılabilir.
-          await _refreshStatus();
-          if (!completer.isCompleted) completer.complete();
-        },
-      );
-      await completer.future.timeout(
-        const Duration(seconds: 12),
-        onTimeout: () {},
+      await runAdPrivacyFlowBeforeAds(
+        requestTrackingPermission: _requestTrackingPermissionIfNeeded,
+        requestConsent: _requestConsentAndRefresh,
       );
       await _activateAdsIfAllowed();
       _initialized = true;
@@ -74,6 +59,28 @@ class AdConsentService {
     } finally {
       _initializing = false;
     }
+  }
+
+  static Future<void> _requestConsentAndRefresh() async {
+    final completer = Completer<void>();
+    ConsentInformation.instance.requestConsentInfoUpdate(
+      ConsentRequestParameters(tagForUnderAgeOfConsent: false),
+      () async {
+        await ConsentForm.loadAndShowConsentFormIfRequired((_) async {
+          await _refreshStatus();
+          if (!completer.isCompleted) completer.complete();
+        });
+      },
+      (_) async {
+        // Önceki oturumda geçerli izin varsa geçici ağ hatasında kullanılabilir.
+        await _refreshStatus();
+        if (!completer.isCompleted) completer.complete();
+      },
+    );
+    await completer.future.timeout(
+      const Duration(seconds: 12),
+      onTimeout: () {},
+    );
   }
 
   static void _scheduleInitializationRetry() {
@@ -122,9 +129,6 @@ class AdConsentService {
     // ATT reddedilirse Google Mobile Ads IDFA göndermeden reklam istemeye
     // devam eder. UMP seçimi de kişiselleştirilmiş / kişiselleştirilmemiş /
     // sınırlı reklam sunum modunu belirler.
-    if (!_usesTestAdsWithoutConsent) {
-      await _requestTrackingPermissionIfNeeded();
-    }
     // Google requires the Mobile Ads SDK to finish initialization before the
     // first ad is loaded. Android often tolerates an early request, while iOS
     // can reject it during scene/controller setup. Keep the request gate shut
@@ -201,6 +205,19 @@ class AdConsentService {
     await _activateAdsIfAllowed();
     return result;
   }
+}
+
+/// Runs Apple's system tracking authorization before any Google consent UI.
+///
+/// App Review rejects a Google/custom consent prompt shown before ATT because
+/// it appears to replace the system tracking authorization request.
+@visibleForTesting
+Future<void> runAdPrivacyFlowBeforeAds({
+  required Future<void> Function() requestTrackingPermission,
+  required Future<void> Function() requestConsent,
+}) async {
+  await requestTrackingPermission();
+  await requestConsent();
 }
 
 /// Test reklamları kişiselleştirilmiş reklam verisi kullanmaz. Debug ve
